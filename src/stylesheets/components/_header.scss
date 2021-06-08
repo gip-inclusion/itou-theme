@@ -1,0 +1,235 @@
+$header-height: 100px;
+
+.c-header {
+  background-color: $white;
+  box-shadow: $box-shadow-lg;
+  position: static;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  + main {
+    margin-top: $header-height;
+  }
+
+  &.is-opened {
+    #burgerNav {
+      display: block;
+    }
+
+    #close {
+      display: inline;
+    }
+
+    #burger {
+      display: none;
+    }
+  }
+
+  &__container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__row {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__col {
+    min-height: $header-height;
+
+    &--logo {
+
+      img {
+        height: auto;
+        max-width: 140px;
+
+        @include media-breakpoint-up(sm) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &--nav {
+      nav {
+        ul {
+          @extend .list-inline;
+          @extend .list-unstyled;
+          @extend .m-0;
+          @extend .p-0;
+          width: 100%;
+
+          li {
+            position: relative;
+            @extend .list-inline-item;
+            @extend .mr-4;
+            @extend .ml-1;
+
+            &:last-child {
+              @extend .mr-0;
+            }
+
+            &:first-child:before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              height: 20px;
+              width: 5px;
+              top: 2px;
+              left: -12px;
+              border-radius: 2px;
+              background-color: $blue;
+            }
+
+            &:nth-child(2):before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              height: 20px;
+              width: 5px;
+              top: 2px;
+              left: -12px;
+              border-radius: 2px;
+              background-color: $green;
+            }
+
+            &:nth-child(3):before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              height: 20px;
+              width: 5px;
+              top: 2px;
+              left: -12px;
+              border-radius: 2px;
+              background-color: $pink;
+            }
+
+            &:nth-child(4):before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              height: 20px;
+              width: 5px;
+              top: 2px;
+              left: -12px;
+              border-radius: 2px;
+              background-color: $yellow;
+            }
+
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    &--burger {
+      span {
+        @extend .mr-3;
+      }
+
+      #burger {
+        display: inline;
+      }
+
+      #close {
+        display: none;
+      }
+    }
+
+    &--title {
+
+      span {
+        @extend .mb-0;
+        @extend .mr-3;
+        font-size: $h4-font-size;
+      }
+    }
+  }
+
+  &__logo-ministere {
+    transform: translateX(-12px);
+  }
+
+  #burgerNav {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: $header-height;
+    right: 0;
+    width: 75vw;
+    height: calc(100vh - #{$header-height});
+    background-color: $white;
+    @extend .p-5;
+    box-shadow: 0 19px 19px 0 rgba($black, 0.1);
+
+    nav {
+      ul {
+        @extend .list-unstyled;
+        @extend .m-0;
+        width: 100%;
+
+        li {
+          position: relative;
+          @extend .my-4;
+          @extend .mr-4;
+
+          &:first-child:before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: 20px;
+            width: 5px;
+            top: 2px;
+            left: -12px;
+            border-radius: 2px;
+            background-color: $blue;
+          }
+
+          &:nth-child(2):before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: 20px;
+            width: 5px;
+            top: 2px;
+            left: -12px;
+            border-radius: 2px;
+            background-color: $green;
+          }
+
+          &:nth-child(3):before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: 20px;
+            width: 5px;
+            top: 2px;
+            left: -12px;
+            border-radius: 2px;
+            background-color: $pink;
+          }
+
+          &:nth-child(4):before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: 20px;
+            width: 5px;
+            top: 2px;
+            left: -12px;
+            border-radius: 2px;
+            background-color: $yellow;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.c-breadcrumb {
+
+  .container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  .breadcrumb {
+    @extend .m-0;
+    font-size: $font-size-sm;
+  }
+
+  .breadcrumb-item {
+
+    &.active {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: map-get($spacers, 4);
+        bottom: - map-get($spacers, 2);
+        height: 5px;
+        width: calc(100% - 1.5rem);
+        border-radius: 5px;
+        background-color: $gray-700;
+      }
+    }
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '';
+    width: 11px;
+    height: 100%;
+    padding-right: map-get($spacers, 3);
+    background-image: url('./../images/picto-light-fleche.svg');
+    background-repeat: no-repeat;
+    background-position: left -3px center;
+  }
+}
