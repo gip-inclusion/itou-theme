@@ -1,7 +1,15 @@
 //  margin-right: calc(50% - 50vw);
 
+.container {
+  max-width: map-get($container-max-widths, 'xl');
+}
+
 figure {
   @extend .mb-0;
+}
+
+ul {
+  @extend .pl-4;
 }
 
 .btn-ico {
@@ -41,32 +49,6 @@ figure {
     color: $primary;
     box-shadow: none;
     text-decoration: none;
-  }
-}
-
-h1 {
-  font-weight: $font-weight-normal;
-  font-size: $h2-font-size-xs;
-
-  @include media-breakpoint-up(sm) {
-    font-size: $h2-font-size-sm;
-  }
-
-  @include media-breakpoint-up(lg) {
-    font-size: $h2-font-size;
-  }
-}
-
-h2 {
-  font-weight: $font-weight-bolder;
-  font-size: $h2-font-size-xs;
-
-  @include media-breakpoint-up(sm) {
-    font-size: $h2-font-size-sm;
-  }
-
-  @include media-breakpoint-up(lg) {
-    font-size: $h2-font-size;
   }
 }
 

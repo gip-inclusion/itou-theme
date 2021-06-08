@@ -33,44 +33,51 @@ $grays: map-merge(
   $grays
 );
 
-$blue: #006adc;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #fe5455;
-$red: #dc3545 !default;
-$orange: #fd7e14 !default;
-$yellow: #ffad1d;
-$green: #46b697;
-$teal: #20c997 !default;
-$cyan: #b8ceff;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
 
-$colors: ();
+$colors: () !default;
 $colors: map-merge(
   (
-    'blue': $blue,
-    'indigo': $indigo,
-    'purple': $purple,
-    'pink': $pink,
-    'red': $red,
-    'orange': $orange,
-    'yellow': $yellow,
-    'green': $green,
-    'teal': $teal,
-    'cyan': $cyan,
-    'white': $white,
-    'gray': $gray-600,
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
   ),
   $colors
 );
 
-$primary: $gray-800;
-$secondary: $blue;
-$success: $green !default;
-$info: $cyan !default;
-$warning: $yellow !default;
-$danger: $red !default;
-$light: $gray-100 !default;
-$dark: $gray-900;
+$primary:       $gray-900;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $black;
+
+$marche: #FE5455;
+$communaute: #18A47D;
+$pilotage: #FFAD1D;
+$emploi: #006ADC;
+
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -83,6 +90,19 @@ $theme-colors: map-merge(
     'danger': $danger,
     'light': $light,
     'dark': $dark,
+    'marche': $marche,
+    'communaute': $communaute,
+    'pilotage': $pilotage,
+    'emploi': $emploi,
+    'gray-100': $gray-100,
+    'gray-200': $gray-200,
+    'gray-300': $gray-300,
+    'gray-400': $gray-400,
+    'gray-500': $gray-500,
+    'gray-600': $gray-600,
+    'gray-700': $gray-700,
+    'gray-800': $gray-800,
+    'gray-900': $gray-900,
   ),
   $theme-colors
 );
@@ -336,33 +356,31 @@ $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5 !default;
 
 $h1-font-size: $font-size-base * 3.75; // 60px
-$h2-font-size: $font-size-base * 3.75; // 60px
-$h2-font-size-sm: $font-size-base * 3.125; // 50px
-$h2-font-size-xs: $font-size-base * 2.75; // 44px
-$h3-font-size: $font-size-base * 2; // 32px
-$h4-font-size: $font-size-base * 1.5; // 24px
-$h5-font-size: $font-size-base * 1.375; // 22px
-$h6-font-size: $font-size-base * 1.25; // 20px
+$h2-font-size: $font-size-base * 2; // 32px
+$h3-font-size: $font-size-base * 1.375; // 22px
+$h4-font-size: $font-size-base; // 16px
+$h5-font-size: $font-size-base; // 16px
+$h6-font-size: $font-size-base; // 16px
 
 $headings-margin-bottom: $spacer;
 $headings-font-family: $font-family-heading;
-$headings-font-weight: 400;
-$headings-line-height: 1.1;
-$headings-color: $gray-800;
+$headings-font-weight: 700;
+$headings-line-height: 1.2;
+$headings-color: null;
 
-$display1-size: 6rem !default;
-$display2-size: 5.5rem !default;
-$display3-size: 4.5rem !default;
-$display4-size: 3.5rem !default;
+$display1-size: $font-size-base * 3.75; // 60px
+$display2-size: $font-size-base * 2; // 32px
+$display3-size: $font-size-base * 1.375; // 22px
+$display4-size: $font-size-base; // 16px
 
-$display1-weight: 300 !default;
-$display2-weight: 300 !default;
-$display3-weight: 300 !default;
-$display4-weight: 300 !default;
+$display1-weight: 400;
+$display2-weight: 400;
+$display3-weight: 400;
+$display4-weight: 400;
 $display-line-height: $headings-line-height !default;
 
 $lead-font-size: $font-size-base * 1.25;
-$lead-font-weight: 300 !default;
+$lead-font-weight: 300;
 
 $small-font-size: 80% !default;
 
@@ -1124,7 +1142,7 @@ $thumbnail-box-shadow: 0 1px 2px rgba($black, 0.075) !default;
 
 // Figures
 
-$figure-caption-font-size: 90% !default;
+$figure-caption-font-size: 100%;
 $figure-caption-color: $gray-600 !default;
 
 // Breadcrumbs
