@@ -74,10 +74,24 @@ $light:         $gray-100 !default;
 $dark:          $black;
 
 $marche: #FE5455;
-$communaute: #18A47D;
-$pilotage: #FFAD1D;
-$emploi: #006ADC;
+$marche-light: rgba(#FE5455, .5);
+$marche-lighter: rgba(#FE5455, .3);
+$marche-lightest: rgba(#FE5455, .1);
 
+$communaute: #18A47D;
+$communaute-light: rgba(#18A47D, .5);
+$communaute-lighter: rgba(#18A47D, .3);
+$communaute-lightest: rgba(#18A47D, .1);
+
+$pilotage: #FFAD1D;
+$pilotage-light: rgba(#FFAD1D, .5);
+$pilotage-lighter: rgba(#FFAD1D, .3);
+$pilotage-lightest: rgba(#FFAD1D, .1);
+
+$emploi: #006ADC;
+$emploi-light: rgba(#006ADC, .5);
+$emploi-lighter: rgba(#006ADC, .3);
+$emploi-lightest: rgba(#006ADC, .1);
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -91,9 +105,21 @@ $theme-colors: map-merge(
     'light': $light,
     'dark': $dark,
     'marche': $marche,
+    'marche-light': $marche-light,
+    'marche-lighter': $marche-lighter,
+    'marche-lightest': $marche-lightest,
     'communaute': $communaute,
+    'communaute-light': $communaute-light,
+    'communaute-lighter': $communaute-lighter,
+    'communaute-lightest': $communaute-lightest,
     'pilotage': $pilotage,
+    'pilotage-light': $pilotage-light,
+    'pilotage-lighter': $pilotage-lighter,
+    'pilotage-lightest': $pilotage-lightest,
     'emploi': $emploi,
+    'emploi-light': $emploi-light,
+    'emploi-lighter': $emploi-lighter,
+    'emploi-lightest': $emploi-lightest,
     'gray-100': $gray-100,
     'gray-200': $gray-200,
     'gray-300': $gray-300,
@@ -202,12 +228,12 @@ $body-color: $primary;
 //
 // Style anchor elements.
 
-$link-color: theme-color('primary') !default;
-$link-decoration: none !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-color: theme-color('primary');
+$link-decoration: underline;
+$link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
-$emphasized-link-hover-darken-percentage: 15% !default;
+$emphasized-link-hover-darken-percentage: 10% !default;
 
 // Paragraphs
 //

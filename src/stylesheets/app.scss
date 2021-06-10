@@ -43,16 +43,20 @@
 @import 'node_modules/bootstrap/scss/print';
 
 // Base
-@import "base/base";
+@import "base/mixins";
+@import 'base/custom';
+@import 'base/utilities';
 
 // Vendors
-@import "vendors/vendors";
+
 
 // Components
-@import 'components/components';
+@import 'components/breadcrumb';
 
 // Sections
-@import 'sections/sections';
+@import 'sections/main';
+@import 'sections/header';
+@import 'sections/footer';
 
 // Layout
-@import 'layouts/layouts';
+@import 'layouts/page';
