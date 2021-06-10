@@ -1,4 +1,4 @@
-# itou-styleguide Parent
+# itou-styleguide-parent
 
 ## Consignes et commandes d'intégration et de modification du html
 
