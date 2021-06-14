@@ -137,7 +137,7 @@ $theme-colors: map-merge(
 $theme-color-interval: 8% !default;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold: 150 !default;
+$yiq-contrasted-threshold: 200;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark: $primary;
@@ -1173,13 +1173,13 @@ $figure-caption-color: $gray-600 !default;
 
 // Breadcrumbs
 
-$breadcrumb-font-size: null !default;
+$breadcrumb-font-size: $font-size-sm;
 
 $breadcrumb-padding-y: map-get($spacers, 4);
 $breadcrumb-padding-x: 0;
 $breadcrumb-item-padding: 0.5rem !default;
 
-$breadcrumb-margin-bottom: 1rem !default;
+$breadcrumb-margin-bottom: 0;
 
 $breadcrumb-bg: transparent;
 $breadcrumb-divider-color: $gray-900;
