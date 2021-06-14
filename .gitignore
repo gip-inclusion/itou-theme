@@ -15,6 +15,5 @@ deploy.sh
 .idea
 node_modules/
 .vscode
-dist/
 
 # App
