@@ -3,12 +3,14 @@ $header-height: 100px;
 .c-header {
   background-color: $white;
   box-shadow: $box-shadow-lg;
-  position: static;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+
+  .is-fixed {
+    position: fixed;
+  }
 
   + main {
     margin-top: $header-height;
@@ -21,6 +23,7 @@ $header-height: 100px;
 
     #close {
       display: inline;
+      z-index: 100;
     }
 
     #burger {
@@ -46,7 +49,7 @@ $header-height: 100px;
         max-width: 140px;
 
         @include media-breakpoint-up(sm) {
-          max-width: 100%;
+          max-width: 160px;
         }
       }
     }
@@ -70,54 +73,6 @@ $header-height: 100px;
               @extend .mr-0;
             }
 
-            &:first-child:before {
-              content: '';
-              position: absolute;
-              display: inline-block;
-              height: 20px;
-              width: 5px;
-              top: 2px;
-              left: -12px;
-              border-radius: 2px;
-              background-color: $blue;
-            }
-
-            &:nth-child(2):before {
-              content: '';
-              position: absolute;
-              display: inline-block;
-              height: 20px;
-              width: 5px;
-              top: 2px;
-              left: -12px;
-              border-radius: 2px;
-              background-color: $green;
-            }
-
-            &:nth-child(3):before {
-              content: '';
-              position: absolute;
-              display: inline-block;
-              height: 20px;
-              width: 5px;
-              top: 2px;
-              left: -12px;
-              border-radius: 2px;
-              background-color: $pink;
-            }
-
-            &:nth-child(4):before {
-              content: '';
-              position: absolute;
-              display: inline-block;
-              height: 20px;
-              width: 5px;
-              top: 2px;
-              left: -12px;
-              border-radius: 2px;
-              background-color: $yellow;
-            }
-
             a {
               text-decoration: none;
             }
@@ -137,6 +92,7 @@ $header-height: 100px;
 
       #close {
         display: none;
+        z-index: 100;
       }
     }
 
@@ -177,56 +133,491 @@ $header-height: 100px;
           @extend .my-4;
           @extend .mr-4;
 
-          &:first-child:before {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            height: 20px;
-            width: 5px;
-            top: 2px;
-            left: -12px;
-            border-radius: 2px;
-            background-color: $blue;
-          }
-
-          &:nth-child(2):before {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            height: 20px;
-            width: 5px;
-            top: 2px;
-            left: -12px;
-            border-radius: 2px;
-            background-color: $green;
-          }
-
-          &:nth-child(3):before {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            height: 20px;
-            width: 5px;
-            top: 2px;
-            left: -12px;
-            border-radius: 2px;
-            background-color: $pink;
-          }
-
-          &:nth-child(4):before {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            height: 20px;
-            width: 5px;
-            top: 2px;
-            left: -12px;
-            border-radius: 2px;
-            background-color: $yellow;
-          }
-
           a {
             text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &--plateforme {
+    .c-header__col--nav {
+      nav ul li {
+        &:first-child:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $emploi;
+        }
+
+        &:nth-child(2):before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $communaute;
+        }
+
+        &:nth-child(3):before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $marche;
+        }
+
+        &:nth-child(4):before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $pilotage;
+        }
+      }
+    }
+
+    #burgerNav {
+
+      nav ul li {
+        &:first-child:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $emploi;
+        }
+
+        &:nth-child(2):before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $communaute;
+        }
+
+        &:nth-child(3):before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $marche;
+        }
+
+        &:nth-child(4):before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $pilotage;
+        }
+      }
+    }
+  }
+
+  &--pilotage {
+    .c-header__col--nav {
+      nav ul li {
+        position: relative;
+        @extend .list-inline-item;
+        @extend .mr-5;
+        @extend .ml-1;
+
+        &:last-child {
+          @extend .mr-0;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $pilotage;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($pilotage, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    #burgerNav {
+
+      nav ul li {
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $pilotage;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($pilotage, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &--marche {
+    .c-header__col--nav {
+      nav ul li {
+        position: relative;
+        @extend .list-inline-item;
+        @extend .mr-5;
+        @extend .ml-1;
+
+        &:last-child {
+          @extend .mr-0;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $marche;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($marche, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    #burgerNav {
+
+      nav ul li {
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $marche;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($marche, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &--emploi {
+    .c-header__col--nav {
+      nav ul li {
+        position: relative;
+        @extend .list-inline-item;
+        @extend .mr-5;
+        @extend .ml-1;
+
+        &:last-child {
+          @extend .mr-0;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $emploi;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($emploi, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    #burgerNav {
+
+      nav ul li {
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $emploi;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($emploi, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &--communaute {
+    .c-header__col--nav {
+      nav ul li {
+        position: relative;
+        @extend .list-inline-item;
+        @extend .mr-5;
+        @extend .ml-1;
+
+        &:last-child {
+          @extend .mr-0;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $communaute;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($communaute, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    #burgerNav {
+
+      nav ul li {
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          height: 20px;
+          width: 5px;
+          top: 2px;
+          left: -16px;
+          border-radius: 2px;
+          background-color: $communaute;
+        }
+
+        &.is-current a::after {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            left: -16px;
+            bottom: -16px;
+            height: 5px;
+            width: calc(100% + 32px);
+            border-radius: 5px 5px 0 0;
+            background-color: rgba($communaute, 0.5);
+          }
+
+          &:hover::after {
+            display: block;
           }
         }
       }

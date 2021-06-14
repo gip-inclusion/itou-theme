@@ -21,7 +21,6 @@ ul {
 }
 
 .btn-primary {
-  transition: $transition-base;
 
   &.hover,
   &:hover {
@@ -30,13 +29,37 @@ ul {
     border-color: $primary;
   }
 
+  &.active,
+  &:active, 
   &.focus,
   &:focus {
-    box-shadow: $box-shadow;
+    color: $white !important;
+    background-color: lighten($primary, 17.5%) !important;
+    border-color: lighten($primary, 12.5%) !important;
+  }
+}
+
+.btn-outline-primary {
+
+  &.hover,
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+
+  &.active,
+  &:active, 
+  &.focus,
+  &:focus {
+    color: lighten($primary, 17.5%) !important;
+    background-color: $white !important;
+    border-color: lighten($primary, 12.5%) !important;
   }
 }
 
 .btn-link {
+  text-decoration: none;
 
   &.hover,
   &:hover {

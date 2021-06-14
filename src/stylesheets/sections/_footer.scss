@@ -30,6 +30,7 @@
     @extend .list-unstyled;
     @extend .list-inline;
     @extend .mb-0;
+    @extend .p-0;
 
     @include media-breakpoint-up(md) {
       flex-direction: row;
@@ -46,6 +47,7 @@
   a:hover,
   a:focus,
   a:link {
+    @extend .text-decoration-none;
     font-weight: $font-weight-bold;
     color: $black;
   }
@@ -74,6 +76,7 @@
     @extend .list-unstyled;
     @extend .list-inline;
     @extend .mb-0;
+    @extend .p-0;
 
     li {
       display: inline-block;
