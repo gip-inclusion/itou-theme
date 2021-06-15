@@ -8,10 +8,6 @@ $header-height: 100px;
   width: 100%;
   z-index: 100;
 
-  .is-fixed {
-    position: fixed;
-  }
-
   + main {
     margin-top: $header-height;
   }

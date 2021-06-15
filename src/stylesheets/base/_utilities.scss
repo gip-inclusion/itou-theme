@@ -6,3 +6,19 @@
   object-fit: cover;
   width: 100%;
 }
+
+.fs-base {
+  font-size: $font-size-base;
+}
+
+.fs-lg {
+  font-size: $font-size-lg;
+}
+
+.fs-sm {
+  font-size: $font-size-sm;
+}
+
+.fs-xs {
+  font-size: $font-size-xs;
+}
