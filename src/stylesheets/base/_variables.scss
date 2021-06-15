@@ -161,7 +161,7 @@ $escaped-characters: (
 
 $enable-caret: true;
 $enable-rounded: true !default;
-$enable-shadows: false !default;
+$enable-shadows: true;
 $enable-gradients: false !default;
 $enable-transitions: true !default;
 $enable-prefers-reduced-motion-media-query: true !default;
@@ -300,9 +300,9 @@ $border-radius-sm: 0.125rem;
 $rounded-pill: 50rem !default;
 
 $box-shadow-sm: 0 2px 9px 0 rgba($black, 0.1);
-$box-shadow: 0 2px 9px 0 rgba($black, 0.5);
+$box-shadow: 0 2px 9px 0 rgba($black, 0.3);
 $box-shadow-lg: 0 2px 19px 0 rgba($black, 0.1);
-$box-shadow-xl: 0 2px 19px 0 rgba($black, 0.4);
+$box-shadow-xl: 0 2px 19px 0 rgba($black, 0.3);
 
 $component-active-color: $white !default;
 $component-active-bg: theme-color('primary') !default;
