@@ -30,12 +30,12 @@ ul {
   }
 
   &.active,
-  &:active, 
+  &:active,
   &.focus,
   &:focus {
     color: $white !important;
-    background-color: lighten($primary, 17.5%) !important;
-    border-color: lighten($primary, 12.5%) !important;
+    background-color: $secondary !important;
+    border-color:  $secondary !important;
   }
 }
 
@@ -49,12 +49,12 @@ ul {
   }
 
   &.active,
-  &:active, 
+  &:active,
   &.focus,
   &:focus {
-    color: lighten($primary, 17.5%) !important;
+    color: $secondary !important;
     background-color: $white !important;
-    border-color: lighten($primary, 12.5%) !important;
+    border-color:  $secondary !important;
   }
 }
 
@@ -72,6 +72,19 @@ ul {
     color: $primary;
     box-shadow: none;
     text-decoration: none;
+  }
+}
+
+.alert {
+  color: $secondary !important;
+}
+
+.alert-link {
+  color: $secondary !important;
+
+  &:hover,
+  &:focus {
+    color: $primary !important;
   }
 }
 
