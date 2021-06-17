@@ -1,6 +1,64 @@
+.c-footer {
+  background-color: $white;
+}
+
+.c-footer-help {
+  padding-top: map-get($spacers, 3);
+  font-size: $font-size-base;
+  color: $white;
+  background-color: $primary;
+
+  &__container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__col {
+    padding-bottom: map-get($spacers, 3);
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:link {
+    @extend .text-decoration-none;
+    font-weight: $font-weight-bold;
+    color: $white;
+    display: inline-block;
+
+    &.is-external {
+      @include picto-external-link($white);
+    }
+  }
+
+  ul {
+    @extend .list-unstyled;
+    @extend .list-inline;
+    @extend .mb-0;
+    @extend .p-0;
+
+    li {
+      display: inline-flex;
+      @extend .align-items-center;
+      @extend .mr-2;
+      margin-bottom: 0;
+    }
+  }
+
+  nav ul  li {
+    display: flex;
+    @extend .align-items-center;
+    @extend .mr-3;
+    margin-bottom: map-get($spacers, 2);
+
+    @include media-breakpoint-up(sm) {
+      display: inline-flex;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .c-footer-nav {
   padding-top : map-get($spacers, 3);
-  border-top: 2px solid $gray-100;
   color: $black;
 
   @include media-breakpoint-up(lg) {
@@ -21,7 +79,11 @@
   }
 
   &__logo {
-    transform: translateX(-22px);
+    transform: translateX(-1rem);
+
+    @include media-breakpoint-up(lg) {
+      transform: translateX(-22px);
+    }
   }
 
   ul {
@@ -53,10 +115,8 @@
   }
 }
 
-
 .c-footer-legal {
   padding: map-get($spacers, 3) 0;
-  border-top: 1px solid $gray-200;
   font-size: $font-size-xs;
   color: $gray-300;
 
@@ -69,7 +129,8 @@
   a:focus,
   a:link {
     color: $gray-300;
-    line-height: 1
+    line-height: 1;
+    @extend .text-decoration-none;
   }
 
   ul {
@@ -79,16 +140,24 @@
     @extend .p-0;
 
     li {
-      display: inline-block;
-      @extend .list-inline-item;
-      @extend .mr-3;
-      @extend .mb-3;
+      display: block;
+      @extend .mr-2;
+      margin-bottom: map-get($spacers, 2);
+
+      @include media-breakpoint-up(sm) {
+        display: inline-block;
+        margin-bottom: map-get($spacers, 3);
+      }
 
       &:after {
         content: '|';
-        display: inline-block;
-        @extend .ml-3;
+        @extend .ml-2;
         color: $gray-200;
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+          display: inline-block;
+        }
       }
 
       &:last-child:after {

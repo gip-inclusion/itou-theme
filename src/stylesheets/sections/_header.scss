@@ -42,7 +42,7 @@ $header-height: 100px;
 
       img {
         height: auto;
-        max-width: 140px;
+        max-width: 130px;
 
         @include media-breakpoint-up(sm) {
           max-width: 160px;

@@ -1,0 +1,72 @@
+.c-prefooter {
+  background-color: $white;
+  padding-top : map-get($spacers, 3);
+  color: $black;
+
+  @include media-breakpoint-up(lg) {
+    padding-top : map-get($spacers, 3);
+    padding-bottom : map-get($spacers, 3);
+  }
+
+  &__container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__col {
+    margin-bottom: map-get($spacers, 3);
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    @extend .mb-3;
+
+    img {
+      height: auto;
+      min-width: 200px;
+      max-width: 200px;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 230px;
+      }
+    }
+  }
+
+  &__gridlist {
+    @extend .list-unstyled;
+    @extend .m-0;
+    @extend .p-0;
+    @extend .w-100;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: map-get($spacers, 2);
+    grid-column-gap: 0;
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: map-get($spacers, 3);
+      grid-column-gap: map-get($spacers, 3);
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:link {
+      @extend .text-decoration-none;
+      font-weight: $font-weight-bold;
+      color: $black;
+      display: inline-block;
+
+      &.is-external {
+        @include picto-external-link($black);
+      }
+    }
+  }
+}

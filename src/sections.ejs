@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
   </head>
 
-  <body id="top">
+  <body id="top" class="bg-gray-100">
 
     <header class="bg-primary py-3">
       <div class="container">
@@ -41,7 +41,32 @@
       <%- include('_sections/header') %>
 
       <br>
+      <br>
 
+      <%- include('_sections/footer') %>
+
+      <br>
+      <br>
+
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'aux emplois', currentPrefooterLogo: 'logo-emploi-inclusion.svg'}) %>
+      <%- include('_sections/footer') %>
+
+      <br>
+      <br>
+
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'à la communauté', currentPrefooterLogo: 'logo-communaute-inclusion.svg'}) %>
+      <%- include('_sections/footer') %>
+
+      <br>
+      <br>
+
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'au pilotage', currentPrefooterLogo: 'logo-pilotage-inclusion.svg'}) %>
+      <%- include('_sections/footer') %>
+
+      <br>
+      <br>
+
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'au marché', currentPrefooterLogo: 'logo-marche-inclusion.svg'}) %>
       <%- include('_sections/footer') %>
 
     </main>
