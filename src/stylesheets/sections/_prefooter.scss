@@ -1,11 +1,12 @@
 .c-prefooter {
   background-color: $white;
-  padding-top : map-get($spacers, 3);
+  padding-top: map-get($spacers, 3);
+  border-top: 2px solid $black;
   color: $black;
 
   @include media-breakpoint-up(lg) {
-    padding-top : map-get($spacers, 3);
-    padding-bottom : map-get($spacers, 3);
+    padding-top: map-get($spacers, 3);
+    padding-bottom: map-get($spacers, 3);
   }
 
   &__container {
@@ -68,5 +69,21 @@
         @include picto-external-link($black);
       }
     }
+  }
+
+  &--communaute {
+    border-top-color: $communaute;
+  }
+
+  &--pilotage {
+    border-top-color: $pilotage;
+  }
+
+  &--emploi {
+    border-top-color: $emploi;
+  }
+
+  &--marche {
+    border-top-color: $marche;
   }
 }
