@@ -79,6 +79,10 @@ ul {
   color: $secondary !important;
 }
 
+.alert-light {
+  @extend .bg-light;
+}
+
 .alert-link {
   color: $secondary !important;
 
