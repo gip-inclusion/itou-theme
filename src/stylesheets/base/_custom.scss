@@ -12,6 +12,10 @@ ul {
   @extend .pl-4;
 }
 
+.btn {
+  transition: $transition-base;
+}
+
 .btn-ico {
 
   span {
