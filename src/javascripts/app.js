@@ -5,7 +5,6 @@ const bootstrap = require('bootstrap');
 
 // Vars
 const stickyNav = $('#header');
-stickyNav.data('top', stickyNav.offset().top);
 
 // Initialisation
 $(window).on('load', function() {
@@ -23,5 +22,6 @@ $(window).on('scroll', function() {
 
 $('[data-toggle=burger]').on('click tap', function(e) {
   e.preventDefault();
+  stickyNav.data('top', stickyNav.offset().top);
   stickyNav.toggleClass('is-opened');
 });
