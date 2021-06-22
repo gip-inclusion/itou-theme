@@ -16,6 +16,11 @@ ul {
   transition: $transition-base;
 }
 
+.btn.disabled,
+.btn:disabled {
+  pointer-events: none;
+}
+
 .btn-ico {
 
   span {
@@ -37,9 +42,9 @@ ul {
   &:active,
   &.focus,
   &:focus {
-    color: $white !important;
-    background-color: $secondary !important;
-    border-color:  $secondary !important;
+    color: $primary !important;
+    background-color: $emploi-light !important;
+    border-color:  $primary !important;
   }
 }
 
@@ -56,9 +61,105 @@ ul {
   &:active,
   &.focus,
   &:focus {
-    color: $secondary !important;
-    background-color: $white !important;
-    border-color:  $secondary !important;
+    color: $primary !important;
+    background-color: $emploi-light !important;
+    border-color:  $primary !important;
+  }
+}
+
+.btn-marche {
+  background-color: $marche-lighter;
+  border-color: $marche-lighter;
+  color: $primary;
+
+  &.hover,
+  &:hover,
+  &.disabled,
+  &:disabled {
+    background-color: $marche-light;
+    border-color: $marche-light;
+    color: $primary;
+  }
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    background-color: $marche-light !important;
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+}
+
+.btn-communaute {
+  background-color: $communaute-lighter;
+  border-color: $communaute-lighter;
+  color: $primary;
+
+  &.hover,
+  &:hover,
+  &.disabled,
+  &:disabled {
+    background-color: $communaute-light;
+    border-color: $communaute-light;
+    color: $primary;
+  }
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    background-color: $communaute-light !important;
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+}
+
+.btn-emploi {
+  background-color: $emploi-lighter;
+  border-color: $emploi-lighter;
+  color: $primary;
+
+  &.hover,
+  &:hover,
+  &.disabled,
+  &:disabled {
+    background-color: $emploi-light;
+    border-color: $emploi-light;
+    color: $primary;
+  }
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    background-color: $emploi-light !important;
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+}
+
+.btn-pilotage {
+  background-color: $pilotage-lighter;
+  border-color: $pilotage-lighter;
+  color: $primary;
+
+  &.hover,
+  &:hover,
+  &.disabled,
+  &:disabled {
+    background-color: $pilotage-light;
+    border-color: $pilotage-light;
+    color: $primary;
+  }
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    background-color: $pilotage-light !important;
+    border-color: $primary !important;
+    color: $primary !important;
   }
 }
 
