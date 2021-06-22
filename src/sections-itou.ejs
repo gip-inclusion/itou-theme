@@ -38,36 +38,60 @@
 
     <main class="s-main" role="main">
 
+      <br>
+      <br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Header <code>.s-header</code></h3>
+          </div>
+        </div>
+      </div>
       <%- include('_sections/header') %>
 
       <br>
       <br>
+      <div class="container">
+        <div class="row" id="footer">
+          <div class="col-12">
+            <h3>Footer <code>.s-footer</code></h3>
+          </div>
+        </div>
+      </div>
+      <%- include('_sections/footer') %>
 
+      <br>
+      <br>
+      <div class="container">
+        <div class="row" id="footer">
+          <div class="col-12">
+            <h3>Prefooter + Footer <code>.s-prefooter + .s-footer</code></h3>
+          </div>
+        </div>
+      </div>
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'aux emplois', currentPrefooterLogo: 'logo-emploi-inclusion.svg', modifier: 's-prefooter--emploi'} ) %>
       <%- include('_sections/footer') %>
 
       <br>
       <br>
 
-      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'aux emplois', currentPrefooterLogo: 'logo-emploi-inclusion.svg', modifier: 'c-prefooter--emploi'} ) %>
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'à la communauté', currentPrefooterLogo: 'logo-communaute-inclusion.svg', modifier: 's-prefooter--communaute'}) %>
       <%- include('_sections/footer') %>
 
       <br>
       <br>
 
-      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'à la communauté', currentPrefooterLogo: 'logo-communaute-inclusion.svg', modifier: 'c-prefooter--communaute'}) %>
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'au pilotage', currentPrefooterLogo: 'logo-pilotage-inclusion.svg', modifier: 's-prefooter--pilotage'}) %>
       <%- include('_sections/footer') %>
 
       <br>
       <br>
 
-      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'au pilotage', currentPrefooterLogo: 'logo-pilotage-inclusion.svg', modifier: 'c-prefooter--pilotage'}) %>
+      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'au marché', currentPrefooterLogo: 'logo-marche-inclusion.svg', modifier: 's-prefooter--marche'}) %>
       <%- include('_sections/footer') %>
 
-      <br>
-      <br>
 
-      <%- include('_sections/prefooter', {currentPrefooterBaseline: 'au marché', currentPrefooterLogo: 'logo-marche-inclusion.svg', modifier: 'c-prefooter--marche'}) %>
-      <%- include('_sections/footer') %>
 
     </main>
 

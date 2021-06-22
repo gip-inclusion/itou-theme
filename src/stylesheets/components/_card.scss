@@ -1,0 +1,28 @@
+.c-card {
+  border-bottom: map-get($spacers, 2) solid $primary;
+
+  &--marche {
+    border-bottom: map-get($spacers, 2) solid $marche;
+  }
+
+  &--pilotage {
+    border-bottom: map-get($spacers, 2) solid $pilotage;
+  }
+
+  &--communaute {
+    border-bottom: map-get($spacers, 2) solid $communaute;
+  }
+
+  &--emploi {
+    border-bottom: map-get($spacers, 2) solid $emploi;
+  }
+
+  .card-header {
+    @extend .pb-0;
+  }
+
+  .card-header,
+  .card-footer {
+    @extend .bg-white;
+  }
+}

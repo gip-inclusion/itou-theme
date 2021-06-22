@@ -1,8 +1,8 @@
-.c-footer {
+.s-footer {
   background-color: $white;
 }
 
-.c-footer-help {
+.s-footer-help {
   padding-top: map-get($spacers, 3);
   font-size: $font-size-base;
   color: $white;
@@ -57,7 +57,7 @@
   }
 }
 
-.c-footer-nav {
+.s-footer-nav {
   padding-top : map-get($spacers, 3);
   color: $black;
 
@@ -115,7 +115,7 @@
   }
 }
 
-.c-footer-legal {
+.s-footer-legal {
   padding: map-get($spacers, 3) 0;
   font-size: $font-size-xs;
   color: $gray-300;

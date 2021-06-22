@@ -1,6 +1,6 @@
 $header-height: 115px;
 
-.c-header {
+.s-header {
   background-color: $white;
   box-shadow: $box-shadow-lg;
   top: 0;
@@ -257,7 +257,7 @@ $header-height: 115px;
 
   &--plateforme {
 
-    .c-header__col--nav {
+    .s-header__col--nav {
       nav > ul > li > a.is-pilotage {
 
         &::before {
@@ -471,7 +471,7 @@ $header-height: 115px;
   }
 
   &--pilotage {
-    .c-header__col--nav {
+    .s-header__col--nav {
 
       nav > ul > li > a:not(.btn) {
 
@@ -531,7 +531,7 @@ $header-height: 115px;
   }
 
   &--marche {
-    .c-header__col--nav {
+    .s-header__col--nav {
 
       nav > ul > li > a:not(.btn) {
 
@@ -591,7 +591,7 @@ $header-height: 115px;
   }
 
   &--emploi {
-    .c-header__col--nav {
+    .s-header__col--nav {
 
       nav > ul > li > a:not(.btn) {
 
@@ -651,7 +651,7 @@ $header-height: 115px;
   }
 
   &--communaute {
-    .c-header__col--nav {
+    .s-header__col--nav {
 
       nav > ul > li > a:not(.btn) {
 

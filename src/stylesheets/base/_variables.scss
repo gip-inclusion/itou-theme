@@ -175,7 +175,7 @@ $enable-deprecation-messages: true !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 $spacer: 1rem;
-$spacers: () !default;
+$spacers: ();
 $spacers: map-merge(
   (
     0: 0,
@@ -203,7 +203,7 @@ $spacers: map-merge(
 );
 
 // This variable affects the `.h-*` and `.w-*` classes.
-$sizes: () !default;
+$sizes: ();
 $sizes: map-merge(
   (
     25: 25%,
@@ -947,29 +947,29 @@ $jumbotron-bg: $gray-200 !default;
 
 // Cards
 
-$card-spacer-y: 0.75rem !default;
-$card-spacer-x: 1.25rem !default;
-$card-border-width: $border-width !default;
-$card-border-radius: $border-radius !default;
-$card-border-color: rgba($black, 0.125) !default;
+$card-spacer-y: 1rem;
+$card-spacer-x: 1rem;
+$card-border-width: 0;
+$card-border-radius: $border-radius;
+$card-border-color: transparent;
 $card-inner-border-radius: subtract(
   $card-border-radius,
   $card-border-width
 ) !default;
-$card-cap-bg: rgba($black, 0.03) !default;
-$card-cap-color: null !default;
-$card-height: null !default;
-$card-color: null !default;
-$card-bg: $white !default;
+$card-cap-bg: rgba($black, 0.03);
+$card-cap-color: null;
+$card-height: null;
+$card-color: null;
+$card-bg: $white;
 
 $card-img-overlay-padding: 1rem;
 
-$card-group-margin: $grid-gutter-width / 2 !default;
-$card-deck-margin: $card-group-margin !default;
+$card-group-margin: $grid-gutter-width / 2;
+$card-deck-margin: $card-group-margin;
 
-$card-columns-count: 3 !default;
+$card-columns-count: 3;
 $card-columns-gap: 1rem;
-$card-columns-margin: $card-spacer-y !default;
+$card-columns-margin: $card-spacer-y;
 
 // Tooltips
 

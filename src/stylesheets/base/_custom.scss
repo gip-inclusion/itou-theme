@@ -12,6 +12,11 @@ ul {
   @extend .pl-4;
 }
 
+* > p:last-of-type,
+* > ul:last-of-type {
+  @extend .mb-0;
+}
+
 .btn {
   transition: $transition-base;
 }
@@ -164,7 +169,8 @@ ul {
 }
 
 .btn-link {
-  text-decoration: none;
+  @extend .text-decoration-none;
+  font-weight: $font-weight-bold;
 
   &.hover,
   &:hover {
