@@ -1,0 +1,48 @@
+$header-height: 115px;
+
+.c-postheader {
+  box-shadow: $box-shadow-sm;
+
+  &__container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__col {
+    @extend .py-2;
+
+    &--nav {
+
+      nav {
+
+        > ul {
+          @extend .list-inline;
+          @extend .list-unstyled;
+          @extend .m-0;
+          @extend .p-0;
+          width: 100%;
+
+          > li {
+            @extend .list-inline-item;
+            @extend .m-0;
+            @extend .py-1;
+
+            &:last-child > a,
+            &:last-child > button {
+              @extend .mr-0;
+            }
+
+            > a,
+            > button {
+              @extend .text-decoration-none;
+              @extend .mr-4;
+
+              > svg {
+                @extend .ml-1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
