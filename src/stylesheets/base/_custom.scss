@@ -197,6 +197,23 @@ ul {
   }
 }
 
+.list-group {
+  @extend .pl-0;
+}
+
+.card {
+  transition: $transition-base;
+  box-shadow: $box-shadow-lg;
+
+  &:hover {
+    box-shadow: $box-shadow-xl;
+  }
+}
+
+.card-link {
+  @extend .text-decoration-underline;
+}
+
 [data-toggle],
 [data-btn] {
   cursor: pointer;

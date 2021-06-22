@@ -479,8 +479,8 @@ $input-btn-focus-width: 0.2rem;
 $input-btn-focus-color: rgba($component-active-bg, 0.30);
 $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
 
-$input-btn-padding-y-sm: 0.5;
-$input-btn-padding-x-sm: 0.5;
+$input-btn-padding-y-sm: 0.5rem;
+$input-btn-padding-x-sm: 0.5rem;
 $input-btn-font-size-sm: $font-size-sm;
 $input-btn-line-height-sm: $line-height-sm;
 
@@ -962,13 +962,13 @@ $card-height: null !default;
 $card-color: null !default;
 $card-bg: $white !default;
 
-$card-img-overlay-padding: 1.25rem !default;
+$card-img-overlay-padding: 1rem;
 
 $card-group-margin: $grid-gutter-width / 2 !default;
 $card-deck-margin: $card-group-margin !default;
 
 $card-columns-count: 3 !default;
-$card-columns-gap: 1.25rem !default;
+$card-columns-gap: 1rem;
 $card-columns-margin: $card-spacer-y !default;
 
 // Tooltips
