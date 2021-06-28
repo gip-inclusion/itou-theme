@@ -422,7 +422,7 @@
                   <p>Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.</p>
                   <p><strong>The <code>.active</code> class needs to be added to one of the slides</strong> otherwise the carousel will not be visible. Also be sure to set a unique id on the <code>.carousel</code> for optional controls, especially if you’re using multiple carousels on a single page. Control and indicator elements must have a <code>data-target</code> attribute (or <code>href</code> for links) that matches the id of the <code>.carousel</code> element.</p>
                   <br>
-                  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <div id="carouselExampleCaptions" class="carousel slide">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -459,6 +459,64 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="row py-5" id="carousel">
+              <div class="col-12 col-lg-3">
+                <h3>Collapse</h3>
+                <a href="https://getbootstrap.com/docs/4.6/components/collapse/" target="_blank">Documentation</a>
+              </div>
+              <div class="col-12 col-lg-9">
+                <div class="mb-5">
+                  <p>Click the buttons below to show and hide another element via class changes:</p>
+                  <ul>
+                    <li><code>.collapse</code> hides content</li>
+                    <li><code>.collapsing</code> is applied during transitions</li>
+                    <li><code>.collapse.show</code> shows content</li>
+                  </ul>
+                  <p>Generally, we recommend using a button with the <code>data-target</code> attribute. While not recommended from a semantic point of view, you can also use a link with the <code>href</code> attribute (and a <code>role="button"</code>). In both cases, the <code>data-toggle="collapse"</code> is required.</p>
+                  <br>
+                  <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Button with data-target
+                    </button>
+                  </p>
+                  <br>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="row py-5" id="dropdowns">
+              <div class="col-12 col-lg-3">
+                <h3>Dropdowns</h3>
+                <a href="https://getbootstrap.com/docs/4.6/components/dropdowns/" target="_blank">Documentation</a>
+              </div>
+              <div class="col-12 col-lg-9">
+                <div class="mb-5">
+                  <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code>&lt;button&gt;</code> elements:</p>
+                  <br>
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item active" href="#">Action active</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
                   </div>
                 </div>
               </div>
