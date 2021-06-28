@@ -8,7 +8,8 @@ const stickyNav = $('#header');
 
 // Initialisation
 $(window).on('load', function() {
-  //console.log('load');
+  $('[data-toggle="popover"]').popover();
+  $('[data-toggle="tooltip"]').tooltip();
 });
 
 // Re-initialisation au resize
