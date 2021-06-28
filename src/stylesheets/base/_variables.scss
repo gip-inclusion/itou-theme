@@ -390,7 +390,7 @@ $headings-margin-bottom: $spacer;
 $headings-font-family: $font-family-heading;
 $headings-font-weight: 700;
 $headings-line-height: 1.2;
-$headings-color: $primary;
+$headings-color: inherit;
 
 $display1-size: $font-size-base * 3.75; // 60px
 $display2-size: $font-size-base * 2; // 32px
@@ -1010,7 +1010,7 @@ $popover-inner-border-radius: subtract(
 $popover-box-shadow: 0 0.25rem 0.5rem rgba($black, 0.2) !default;
 
 $popover-header-bg: darken($popover-bg, 3%) !default;
-$popover-header-color: $headings-color !default;
+$popover-header-color: $headings-color;
 $popover-header-padding-y: 0.5rem !default;
 $popover-header-padding-x: 0.75rem !default;
 
@@ -1187,15 +1187,15 @@ $breadcrumb-border-radius: none;
 // Carousel
 
 $carousel-control-color: $white !default;
-$carousel-control-width: 15% !default;
+$carousel-control-width: 10%;
 $carousel-control-opacity: 0.5 !default;
 $carousel-control-hover-opacity: 0.9 !default;
 $carousel-control-transition: opacity 0.15s ease !default;
 
-$carousel-indicator-width: 30px !default;
-$carousel-indicator-height: 3px !default;
+$carousel-indicator-width: 32px;
+$carousel-indicator-height: 3px;
 $carousel-indicator-hit-area-height: 10px !default;
-$carousel-indicator-spacer: 3px !default;
+$carousel-indicator-spacer: 3px;
 $carousel-indicator-active-bg: $white !default;
 $carousel-indicator-transition: opacity 0.6s ease !default;
 
