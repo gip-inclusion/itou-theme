@@ -12,33 +12,68 @@
   }
 
   &__col {
+
     &--article {
       article {
         @extend .w-100;
       }
 
+      .h2,
       h2 {
         position: relative;
-        @extend .mb-2;
+        @extend .mb-4;
 
         &:after {
           content: '';
           display: block;
           width: 50px;
           height: 10px;
-          background-color: $cyan;
+          background-color: $primary;
           border-radius: 5px;
           @extend .mt-3;
         }
       }
 
+      ol {
+        @extend .d-flex;
+        flex-direction: column;
+        @extend .mb-0;
+        @extend .p-0;
+        @extend .mb-4;
+
+        @include media-breakpoint-up(lg) {
+          flex-direction: row;
+        }
+
+        > li {
+          list-style: none;
+          @extend .pr-3;
+          @extend .flex-lg-fill;
+
+          > ul {
+            @extend .pl-3;
+            @extend .mb-0;
+            list-style: disc;
+          }
+        }
+      }
+
+      ul {
+        @extend .pl-3;
+        @extend .mb-4;
+      }
+
       p {
-        margin-bottom: map-get($spacers, 4);
+        @extend .mb-4;
+      }
+
+      > *:last-of-type {
+        @extend .mb-0;
       }
     }
 
-    &--figure {
-      figure {
+    &--picture {
+      picture {
         @extend .mb-3;
 
         @include media-breakpoint-up(lg) {
@@ -48,12 +83,48 @@
     }
 
     &__cta {
-      @extend .mb-0;
       text-align: center;
 
       @include media-breakpoint-up(lg) {
         text-align: left;
       }
     }
+  }
+
+  &--marche {
+    .s-article-picture-01__col--article h2::after {
+      background-color: $marche;
+    }
+  }
+
+  &--emploi {
+    .s-article-picture-01__col--article h2::after {
+      background-color: $emploi;
+    }
+  }
+
+  &--pilotage {
+    .s-article-picture-01__col--article h2::after {
+      background-color: $pilotage;
+    }
+  }
+
+  &--communaute {
+    .s-article-picture-01__col--article h2::after {
+      background-color: $communaute;
+    }
+  }
+
+  &--ltr {
+   .s-article-picture-01__col--picture {
+    @include media-breakpoint-up(lg) {
+      order: 2;
+    }
+   }
+   .s-article-picture-01__col-article {
+    @include media-breakpoint-up(lg) {
+      order: 1;
+    }
+   }
   }
 }

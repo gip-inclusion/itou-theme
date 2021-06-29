@@ -390,7 +390,7 @@ $headings-margin-bottom: $spacer;
 $headings-font-family: $font-family-heading;
 $headings-font-weight: 700;
 $headings-line-height: 1.2;
-$headings-color: inherit;
+$headings-color: $primary;
 
 $display1-size: $font-size-base * 3.75; // 60px
 $display2-size: $font-size-base * 2; // 32px

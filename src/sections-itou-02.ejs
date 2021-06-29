@@ -44,11 +44,28 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3>Article + Picture 01  <code>.s-article-picture-01</code></h3>
+            <h3>Article + Picture 01 <code>.s-article-picture-01</code></h3>
+            <h4>__modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code>, <code>--ltr</code></h4>
           </div>
         </div>
       </div>
       <%- include('_sections/article-picture-01') %>
+      <br>
+      <br>
+      <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--marche'} ) %>
+      <br>
+      <br>
+      <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--emploi'} ) %>
+      <br>
+      <br>
+      <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--communaute'} ) %>
+      <br>
+      <br>
+      <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--pilotage'} ) %>
+      <br>
+      <br>
+      <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--ltr'} ) %>
+
 
     </main>
 
