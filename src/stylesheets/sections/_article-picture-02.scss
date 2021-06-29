@@ -1,4 +1,4 @@
-.s-article-picture-01 {
+.s-article-picture-02 {
   padding-top: map-get($spacers, 6);
   padding-bottom: map-get($spacers, 4);
 
@@ -8,7 +8,7 @@
   }
 
   &__container {
-    max-width: map-get($container-max-widths, 'lg');
+    max-width: map-get($container-max-widths, 'xl');
   }
 
   &__col {
@@ -26,10 +26,9 @@
         &:after {
           content: '';
           display: block;
-          width: 50px;
-          height: 10px;
+          width: 100%;
+          height: 2px;
           background-color: $primary;
-          border-radius: 5px;
           @extend .mt-3;
         }
       }
@@ -92,38 +91,38 @@
   }
 
   &--marche {
-    .s-article-picture-01__col--article h2::after {
+    .s-article-picture-02__col--article h2::after {
       background-color: $marche;
     }
   }
 
   &--emploi {
-    .s-article-picture-01__col--article h2::after {
+    .s-article-picture-02__col--article h2::after {
       background-color: $emploi;
     }
   }
 
   &--pilotage {
-    .s-article-picture-01__col--article h2::after {
+    .s-article-picture-02__col--article h2::after {
       background-color: $pilotage;
     }
   }
 
   &--communaute {
-    .s-article-picture-01__col--article h2::after {
+    .s-article-picture-02__col--article h2::after {
       background-color: $communaute;
     }
   }
 
   &--ltr {
-   .s-article-picture-01__col--picture {
-    @include media-breakpoint-up(lg) {
-      order: 2;
-    }
-   }
-   .s-article-picture-01__col-article {
+   .s-article-picture-02__col--picture {
     @include media-breakpoint-up(lg) {
       order: 1;
+    }
+   }
+   .s-article-picture-02__col--article {
+    @include media-breakpoint-up(lg) {
+      order: 2;
     }
    }
   }

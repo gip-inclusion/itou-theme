@@ -282,7 +282,7 @@ $grid-row-columns: 6 !default;
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-lg: 1.5 !default;
+$line-height-lg: 1.5;
 $line-height-sm: 1.2;
 
 $border-width: 1px !default;
@@ -377,7 +377,7 @@ $font-weight-bold: 700;
 $font-weight-bolder: 900;
 
 $font-weight-base: $font-weight-normal;
-$line-height-base: 1.5 !default;
+$line-height-base: 1.5;
 
 $h1-font-size: $font-size-base * 3.75; // 60px
 $h2-font-size: $font-size-base * 2; // 32px
@@ -389,7 +389,7 @@ $h6-font-size: $font-size-base; // 16px
 $headings-margin-bottom: $spacer;
 $headings-font-family: $font-family-heading;
 $headings-font-weight: 700;
-$headings-line-height: 1.2;
+$headings-line-height: 1.3;
 $headings-color: $primary;
 
 $display1-size: $font-size-base * 3.75; // 60px
@@ -401,7 +401,7 @@ $display1-weight: 400;
 $display2-weight: 400;
 $display3-weight: 400;
 $display4-weight: 400;
-$display-line-height: $headings-line-height !default;
+$display-line-height: $headings-line-height;
 
 $lead-font-size: $font-size-base * 1.25;
 $lead-font-weight: 300;
@@ -839,8 +839,8 @@ $navbar-nav-link-padding-x: 0.5rem !default;
 
 $navbar-brand-font-size: $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-$nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
-$navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;
+$nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2;
+$navbar-brand-height: $navbar-brand-font-size * $line-height-base;
 $navbar-brand-padding-y: ($nav-link-height - $navbar-brand-height) / 2 !default;
 
 $navbar-toggler-padding-y: 0.25rem !default;
@@ -991,7 +991,7 @@ $tooltip-arrow-color: $tooltip-bg !default;
 $form-feedback-tooltip-padding-y: $tooltip-padding-y !default;
 $form-feedback-tooltip-padding-x: $tooltip-padding-x !default;
 $form-feedback-tooltip-font-size: $tooltip-font-size !default;
-$form-feedback-tooltip-line-height: $line-height-base !default;
+$form-feedback-tooltip-line-height: $line-height-base;
 $form-feedback-tooltip-opacity: $tooltip-opacity !default;
 $form-feedback-tooltip-border-radius: $tooltip-border-radius !default;
 
@@ -1043,11 +1043,11 @@ $toast-header-border-color: rgba(0, 0, 0, 0.05) !default;
 
 // Badges
 
-$badge-font-size: 75% !default;
-$badge-font-weight: $font-weight-bold !default;
-$badge-padding-y: 0.25em !default;
-$badge-padding-x: 0.4em !default;
-$badge-border-radius: $border-radius !default;
+$badge-font-size: inherit;
+$badge-font-weight: $font-weight-bold;
+$badge-padding-y: 0.25rem;
+$badge-padding-x: 0.5rem;
+$badge-border-radius: $border-radius;
 
 $badge-transition: $btn-transition !default;
 $badge-focus-width: $input-btn-focus-width !default;
@@ -1055,7 +1055,7 @@ $badge-focus-width: $input-btn-focus-width !default;
 $badge-pill-padding-x: 0.6em !default;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
-$badge-pill-border-radius: 10rem !default;
+$badge-pill-border-radius: 10rem;
 
 // Modals
 
