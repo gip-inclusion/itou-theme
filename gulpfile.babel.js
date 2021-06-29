@@ -13,6 +13,7 @@ import cleanCSS from 'gulp-clean-css';
 import purgecss from 'gulp-purgecss';
 import ejs from'gulp-ejs';
 import rename from'gulp-rename';
+import clean from 'gulp-clean';
 
 const server = browserSync.create();
 
@@ -120,6 +121,12 @@ export function html() {
     .pipe(gulp.dest(paths.distHtml));
 }
 
+// Clean dist directory
+export function cleandist() {
+  return gulp.src(paths.distDir + '*')
+  .pipe(clean({force: true}));
+}
+
 // BrowserSync Reload Task
 function reload(done) {
   server.reload();
@@ -148,10 +155,10 @@ function watch() {
   gulp.watch(paths.srcImages, gulp.series(images, reload));
 }
 
-const dev = gulp.series(html, scripts, styles, images, fonts, serve, watch);
+const dev = gulp.series(cleandist, html, scripts, styles, images, fonts, serve, watch);
 gulp.task('dev', dev);
 
-const build = gulp.series(html, scripts, purgestyles, images, fonts);
+const build = gulp.series(cleandist, html, scripts, purgestyles, images, fonts);
 gulp.task('build', build);
 
 export default dev;
