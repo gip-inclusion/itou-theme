@@ -7,10 +7,6 @@
     padding-bottom: map-get($spacers, 6);
   }
 
-  &__container {
-    max-width: map-get($container-max-widths, 'xl');
-  }
-
   &__col {
 
     &--article {
@@ -18,10 +14,9 @@
         @extend .w-100;
       }
 
-      .h2,
-      h2 {
-        position: relative;
+      &__title {
         @extend .mb-4;
+        position: relative;
 
         &:after {
           content: '';
@@ -33,10 +28,18 @@
         }
       }
 
+
+      &__cta {
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+          text-align: left;
+        }
+      }
+
       ol {
         @extend .d-flex;
         flex-direction: column;
-        @extend .mb-0;
         @extend .p-0;
         margin-bottom: map-get($spacers, 4);
 
@@ -51,7 +54,7 @@
 
           > ul {
             @extend .pl-3;
-            @extend .mb-0;
+            margin-bottom: 0;
             list-style: disc;
           }
         }
@@ -66,7 +69,7 @@
         margin-bottom: map-get($spacers, 4);
       }
 
-      > *:last-of-type {
+      > *:last-of-type:not(:first-of-type) {
         @extend .mb-0;
       }
     }
@@ -78,14 +81,6 @@
         @include media-breakpoint-up(lg) {
           margin-bottom: 0 !important;
         }
-      }
-    }
-
-    &__cta {
-      text-align: center;
-
-      @include media-breakpoint-up(lg) {
-        text-align: left;
       }
     }
   }

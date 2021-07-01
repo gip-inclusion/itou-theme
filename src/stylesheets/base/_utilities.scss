@@ -1,3 +1,9 @@
+@each $breakpoint, $container-max-width in $container-max-widths {
+  .container-max-#{$breakpoint} {
+    max-width: $container-max-width !important;
+  }
+}
+
 .text-decoration-underline {
   text-decoration: underline !important;
 }
@@ -21,6 +27,18 @@
 
 .fs-xs {
   font-size: $font-size-xs;
+}
+
+.ff-base {
+  font-family: $font-family-base;
+}
+
+.ff-heading {
+  font-family: $font-family-heading;
+}
+
+.ff-extra-01 {
+  font-family: $font-family-extra-01;
 }
 
 .shadow-xl { box-shadow: $box-shadow-xl !important; }
