@@ -1,0 +1,26 @@
+.s-cards-grid-01 {
+	padding-top: map-get($spacers, 4);
+  padding-bottom: map-get($spacers, 4);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 6);
+  }
+
+	&__container {
+		max-width: map-get($container-max-widths, 'xl');
+	}
+
+	&__col {
+
+		&--title {
+			.h3 {
+				margin-bottom: map-get($spacers, 3);
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: map-get($spacers, 5);
+				}
+			}
+		}
+	}
+}

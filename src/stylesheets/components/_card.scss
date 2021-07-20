@@ -1,20 +1,20 @@
 .c-card {
-  border-bottom: map-get($spacers, 2) solid $primary;
+  border-bottom: 10px solid $primary;
 
   &--marche {
-    border-bottom: map-get($spacers, 2) solid $marche;
+    border-bottom: 10px solid $marche;
   }
 
   &--pilotage {
-    border-bottom: map-get($spacers, 2) solid $pilotage;
+    border-bottom: 10px solid $pilotage;
   }
 
   &--communaute {
-    border-bottom: map-get($spacers, 2) solid $communaute;
+    border-bottom: 10px solid $communaute;
   }
 
   &--emploi {
-    border-bottom: map-get($spacers, 2) solid $emploi;
+    border-bottom: 10px solid $emploi;
   }
 
   .card-header {
@@ -24,5 +24,12 @@
   .card-header,
   .card-footer {
     @extend .bg-white;
+  }
+
+  .card-body {
+    > p:last-child,
+    > ul:last-child {
+      @extend .mb-0;
+    }
   }
 }
