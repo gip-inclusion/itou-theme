@@ -66,11 +66,11 @@ export function purgestyles() {
       )
       .pipe(sass())
       .pipe(cleanCSS())
-      .pipe(
-        purgecss({
-          content: [paths.distHtml + '*.html', paths.distScripts + 'app.js']
-        }),
-      )
+      // .pipe(
+      //   purgecss({
+      //     content: [paths.distHtml + '*.html', paths.distScripts + 'app.js']
+      //   }),
+      // )
       .pipe(gulp.dest(paths.distStyles))
   );
 }

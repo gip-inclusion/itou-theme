@@ -19,6 +19,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-ejs": "^5.1.0",
@@ -32,13 +33,10 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "prettier": "^2.2.1",
-    "purgecss-from-html": "^4.0.2",
-    "gulp-clean": "^0.4.0"
+    "purgecss-from-html": "^4.0.2"
   },
   "dependencies": {
     "bootstrap": "4.6.0",
-    "bootstrap-icons": "^1.5.0",
-    "jquery": "3.6.0",
-    "popper.js": "1.16.1"
+    "bootstrap-icons": "^1.5.0"
   }
 }
