@@ -18,13 +18,13 @@ figure {
 }
 
 ul {
-  @extend .pl-4;
+  @extend .pl-3;
 }
 
-* > p:last-of-type:not(:first-of-type),
-* > ul:last-of-type:not(:first-of-type) {
-  @extend .mb-0;
-}
+// * > p:last-of-type:not(:first-of-type),
+// * > ul:last-of-type:not(:first-of-type) {
+//   @extend .mb-0;
+// }
 
 .badge-lg {
   padding: ($badge-padding-y * 2) ($badge-padding-x * 2);
