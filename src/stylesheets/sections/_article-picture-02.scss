@@ -75,11 +75,15 @@
     }
 
     &--picture {
+      @include media-breakpoint-up(lg) {
+        padding-left: map-get($spacers, 5);
+      }
+
       picture {
-        @extend .mb-3;
+        margin-top: map-get($spacers, 5);
 
         @include media-breakpoint-up(lg) {
-          margin-bottom: 0 !important;
+          margin-top: 0;
         }
       }
     }
@@ -112,6 +116,8 @@
   &--ltr {
    .s-article-picture-02__col--picture {
     @include media-breakpoint-up(lg) {
+      padding-left: map-get($spacers, 3);
+      padding-right: map-get($spacers, 5);
       order: 1;
     }
    }

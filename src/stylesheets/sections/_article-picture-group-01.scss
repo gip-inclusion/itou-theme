@@ -1,0 +1,143 @@
+.s-article-picture-group-01 {
+	padding-top: map-get($spacers, 4);
+  padding-bottom: map-get($spacers, 4);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 6);
+  }
+
+	&__container {
+		max-width: map-get($container-max-widths, 'xl');
+	}
+
+	&__row {
+		@extend .no-gutters;
+    padding-bottom: map-get($spacers, 3);
+
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 0;
+    }
+
+		&:nth-child(odd) {
+			@include media-breakpoint-up(lg) {
+				.s-article-picture-group-01__col--picture {
+					order: 1;
+				}
+
+				.s-article-picture-group-01__col--article {
+					order: 2;
+
+					article {
+						padding-right: 0;
+					}
+				}
+			}
+		}
+
+		&:nth-child(even) {
+			@include media-breakpoint-up(lg) {
+				.s-article-picture-group-01__col--picture {
+					order: 2;
+				}
+
+				.s-article-picture-group-01__col--article {
+					order: 1;
+
+					article {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__col {
+
+		&--article {
+
+			.h3 {
+				display: inline-block;
+				padding-bottom: map-get($spacers, 2);
+				margin-bottom: map-get($spacers, 3);
+				border-bottom: 2px solid $primary;
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: map-get($spacers, 5);
+				}
+
+				&::before {
+					content: "S'INFORMER SUR";
+					font-size: $font-size-base;
+					line-height: $line-height-sm;
+					display: block;
+					margin-bottom: map-get($spacers, 1);
+					color: $primary;
+
+					@include media-breakpoint-up(lg) {
+						margin-bottom: map-get($spacers, 2);
+					}
+				}
+			}
+
+			article {
+				padding-top: map-get($spacers, 3);
+				padding-bottom: map-get($spacers, 3);
+
+				@include media-breakpoint-up(lg) {
+					padding: map-get($spacers, 5);
+				}
+			}
+		}
+	}
+
+  &--marche {
+    .s-article-picture-group-01__col--article .h3 {
+      border-bottom: 2px solid $marche;
+
+      &::before {
+        color: $marche;
+      }
+    }
+  }
+
+  &--emploi {
+    .s-article-picture-group-01__col--article .h3 {
+      border-bottom: 2px solid $emploi;
+
+      &::before {
+        color: $emploi;
+      }
+    }
+  }
+
+  &--communaute {
+    .s-article-picture-group-01__col--article .h3 {
+      border-bottom: 2px solid $communaute;
+
+      &::before {
+        color: $communaute;
+      }
+    }
+  }
+
+  &--emploi {
+    .s-article-picture-group-01__col--article .h3 {
+      border-bottom: 2px solid $emploi;
+
+      &::before {
+        color: $emploi;
+      }
+    }
+  }
+
+  &--pilotage {
+    .s-article-picture-group-01__col--article .h3 {
+      border-bottom: 2px solid $pilotage;
+
+      &::before {
+        color: $pilotage;
+      }
+    }
+  }
+}

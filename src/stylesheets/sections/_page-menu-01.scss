@@ -1,0 +1,86 @@
+.s-page-menu-01 {
+  padding-top: map-get($spacers, 4);
+  padding-bottom: map-get($spacers, 4);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 4);
+  }
+
+	&__container {
+		max-width: map-get($container-max-widths, 'xl');
+	}
+
+	&__col {
+
+		&--title {
+
+			.h1 {
+				position: relative;
+				margin-bottom: map-get($spacers, 3);
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: map-get($spacers, 5);
+				}
+
+				&::after {
+					content: '';
+					display: block;
+					width: 50px;
+					height: 10px;
+					border-radius: 5px;
+					margin-top: map-get($spacers, 3);
+					background-color: $primary;
+				}
+			}
+		}
+
+		&--grid {
+
+			> ul {
+				@extend .list-unstyled;
+				@extend .m-0;
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-column-gap: 0;
+				grid-row-gap: map-get($spacers, 3);
+
+				@include media-breakpoint-up(lg) {
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: map-get($spacers, 5);
+					grid-row-gap: map-get($spacers, 3);
+				}
+
+				span,
+				a {
+          @extend .text-decoration-none;
+					font-weight: $font-weight-bold;
+				}
+			}
+		}
+	}
+
+  &--marche {
+    .s-page-menu-01__col--title h1::after {
+      background-color: $marche;
+    }
+  }
+
+  &--pilotage {
+    .s-page-menu-01__col--title h1::after {
+      background-color: $pilotage;
+    }
+  }
+
+  &--emploi {
+    .s-page-menu-01__col--title h1::after {
+      background-color: $emploi;
+    }
+  }
+
+  &--communaute {
+    .s-page-menu-01__col--title h1::after {
+      background-color: $communaute;
+    }
+  }
+}
