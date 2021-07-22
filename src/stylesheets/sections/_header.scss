@@ -8,10 +8,6 @@ $header-height: 115px;
   width: 100%;
   z-index: 100;
 
-  + main {
-    margin-top: $header-height;
-  }
-
   &.is-opened {
     #burgerNav {
       display: block;

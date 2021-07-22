@@ -14,19 +14,19 @@
 }
 
 .fs-base {
-  font-size: $font-size-base;
+  font-size: $font-size-base !important;
 }
 
 .fs-lg {
-  font-size: $font-size-lg;
+  font-size: $font-size-lg !important;
 }
 
 .fs-sm {
-  font-size: $font-size-sm;
+  font-size: $font-size-sm !important;
 }
 
 .fs-xs {
-  font-size: $font-size-xs;
+  font-size: $font-size-xs !important;
 }
 
 .ff-base {
@@ -42,3 +42,16 @@
 }
 
 .shadow-xl { box-shadow: $box-shadow-xl !important; }
+
+
+.lh-base {
+  line-height: $line-height-base !important;
+}
+
+.lh-lg {
+  line-height: $line-height-lg !important;
+}
+
+.lh-sm {
+  line-height: $line-height-sm !important;
+}

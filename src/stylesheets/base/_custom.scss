@@ -18,7 +18,7 @@ figure {
 }
 
 ul {
-  @extend .pl-3;
+  padding-left: map-get($spacers, 3);
 }
 
 // * > p:last-of-type:not(:first-of-type),
