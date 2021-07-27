@@ -392,7 +392,7 @@ $line-height-base: 1.5;
 $h1-font-size: $font-size-base * 3.75; // 60px
 $h2-font-size: $font-size-base * 2; // 32px
 $h3-font-size: $font-size-base * 1.375; // 22px
-$h4-font-size: $font-size-base; // 16px
+$h4-font-size: $font-size-base * 1.25; // 20px Chapo
 $h5-font-size: $font-size-base; // 16px
 $h6-font-size: $font-size-base; // 16px
 
@@ -413,7 +413,7 @@ $display3-weight: 400;
 $display4-weight: 400;
 $display-line-height: $headings-line-height;
 
-$lead-font-size: $font-size-base * 1.25;
+$lead-font-size: $font-size-base * 1.25; // 20px Chapo
 $lead-font-weight: 300;
 
 $small-font-size: 80% !default;
