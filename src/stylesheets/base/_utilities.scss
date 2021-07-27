@@ -8,6 +8,10 @@
   text-decoration: underline !important;
 }
 
+.hidden-if-empty:empty {
+  @extend .d-none;
+}
+
 .img-fitcover {
   object-fit: cover;
   width: 100%;
@@ -42,7 +46,6 @@
 }
 
 .shadow-xl { box-shadow: $box-shadow-xl !important; }
-
 
 .lh-base {
   line-height: $line-height-base !important;

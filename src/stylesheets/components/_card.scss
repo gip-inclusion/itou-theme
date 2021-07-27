@@ -17,8 +17,12 @@
     border-bottom: 10px solid $emploi;
   }
 
+  &--mini {
+    border-bottom: 0;
+  }
+
   .card-header {
-    @extend .pb-0;
+    @extend .pb-2;
   }
 
   .card-header,

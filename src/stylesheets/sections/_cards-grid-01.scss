@@ -10,4 +10,30 @@
 	&__container {
 		max-width: map-get($container-max-widths, 'xl');
 	}
+
+  &.has-illustration-bg-01 {
+    overflow-x: hidden;
+
+    .container {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 174px;
+        height: 280px;
+        z-index: -1;
+        bottom: -5px;
+        right: -55px;
+        background-image: url('../images/illustration-bg-01.png');
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+          display: block;
+        }
+      }
+    }
+  }
 }
