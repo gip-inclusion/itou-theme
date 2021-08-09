@@ -39,6 +39,12 @@ ul {
   pointer-events: none;
 }
 
+.form-control:disabled,
+.form-control[readonly] {
+  pointer-events: none;
+  opacity: $btn-disabled-opacity;
+}
+
 .btn-ico {
 
   span {
@@ -82,6 +88,30 @@ ul {
     color: $primary !important;
     background-color: $emploi-light !important;
     border-color:  $primary !important;
+  }
+}
+
+.btn-input {
+  color: $input-color;
+  border-color: $input-border-color;
+  background-color: $input-bg;
+  font-weight: $font-weight-base !important;
+  @extend .text-left;
+
+  &.hover,
+  &:hover,
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    color: $input-color;
+    border-color: $input-focus-border-color;
+    background-color: $input-bg;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $gray-400;
   }
 }
 
