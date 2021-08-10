@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-import babel from 'gulp-babel';
 import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import browserify from 'gulp-browserify';
@@ -7,7 +6,8 @@ import browserSync from 'browser-sync';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import imagemin from 'gulp-imagemin';
-import sass from 'gulp-sass';
+import gulpSass from 'gulp-sass';
+import nodeSass from 'node-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import cleanCSS from 'gulp-clean-css';
 import purgecss from 'gulp-purgecss';
@@ -15,6 +15,7 @@ import ejs from'gulp-ejs';
 import rename from'gulp-rename';
 import clean from 'gulp-clean';
 
+const sass = gulpSass(nodeSass);
 const server = browserSync.create();
 
 const paths = {
