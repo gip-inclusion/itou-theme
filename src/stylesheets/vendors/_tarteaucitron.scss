@@ -603,10 +603,12 @@ span#tarteaucitronDisclaimerAlert {
  */
 .tarteaucitronAlertBigTop {
     top: 0;
+    border-radius: node !important;
 }
 
 .tarteaucitronAlertBigBottom {
     bottom: 0;
+    border-radius: node !important;
 }
 
 #tarteaucitronRoot #tarteaucitronAlertBig {

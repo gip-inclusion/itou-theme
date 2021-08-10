@@ -1,7 +1,4 @@
 // Require libraries
-//$ = require('jquery');
-//const popper = require('popper.js');
-//const bootstrap = require('bootstrap');
 
 // Vars
 const stickyNav = $('#header');
