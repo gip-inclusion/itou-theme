@@ -601,16 +601,6 @@ span#tarteaucitronDisclaimerAlert {
 /***
  * Big alert
  */
-.tarteaucitronAlertBigTop {
-    top: 0;
-    border-radius: node !important;
-}
-
-.tarteaucitronAlertBigBottom {
-    bottom: 0;
-    border-radius: node !important;
-}
-
 #tarteaucitronRoot #tarteaucitronAlertBig {
     background: $primary;
     color: #fff;
@@ -626,6 +616,16 @@ span#tarteaucitronDisclaimerAlert {
     width: 100%;
     box-shadow: $box-shadow !important;
     border-radius: $border-radius-lg !important
+}
+
+#tarteaucitronRoot #tarteaucitronAlertBig.tarteaucitronAlertBigTop {
+  top: 0;
+  border-radius: 0 !important;
+}
+
+#tarteaucitronRoot #tarteaucitronAlertBig.tarteaucitronAlertBigBottom {
+  bottom: 0;
+  border-radius: 0 !important;
 }
 
 #tarteaucitronAlertBig #tarteaucitronPrivacyUrl,
