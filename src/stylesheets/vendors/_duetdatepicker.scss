@@ -1,0 +1,45 @@
+:root {
+  --duet-color-primary: var(--blue);
+  --duet-color-text: var(--gray-800);
+  --duet-color-text-active: var(--white);
+  --duet-color-placeholder: var(--gray-600);
+  --duet-color-button: var(--gray-100);
+  --duet-color-surface: var(--white);
+  --duet-color-overlay: var(--primary);
+  --duet-color-border: var(--gray-600);
+
+  --duet-font: var(--font-family-sans-serif);
+  --duet-font-normal: 400;
+  --duet-font-bold: 700;
+
+  --duet-radius: 0.25rem;
+  --duet-z-index: 1000;
+}
+
+.duet-date__input {
+  @extend .form-control;
+}
+
+.duet-date__toggle {
+  @extend .btn-outline-secondary;
+  background-color: var(--white);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: none;
+  border-left: 1px solid var(--gray-600);
+  transition: $transition-base;
+}
+
+.duet-date__dialog-content {
+  box-shadow: $box-shadow-lg;
+  border: none;
+}
+
+/*
+Force the display of `.invalid-feedback` for Duet Date Picker with Bootstrap 4.
+See also `duet_date_picker.html`.
+https://getbootstrap.com/docs/4.6/components/forms/#server-side
+*/
+duet-date-picker.is-invalid ~ .invalid-feedback {
+  display:block
+}
