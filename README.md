@@ -1,5 +1,8 @@
 # itou-theme
 
+## Remarques
+Le `itou-theme` est un theme basé sur la [version 4.6 de Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
 ## Consignes et commandes d'intégration et de modification du html
 
 Nécessite node `v12.22.0` ou supérieur pour installer les dépendances `npm install`.

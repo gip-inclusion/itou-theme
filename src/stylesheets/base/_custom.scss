@@ -4,15 +4,6 @@
   max-width: map-get($container-max-widths, 'xl');
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-font-size: inherit;
-}
-
 figure {
   @extend .mb-0;
 }
