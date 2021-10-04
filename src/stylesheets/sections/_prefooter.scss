@@ -64,7 +64,6 @@
       @extend .text-decoration-none;
       font-weight: $font-weight-bold;
       color: $black;
-      display: inline-block;
 
       &.is-external {
         @include picto-external-link($black);

@@ -43,6 +43,12 @@ ul {
   opacity: $btn-disabled-opacity;
 }
 
+.form-control:focus {
+  + .input-group-append > .input-group-text {
+    border-color: $input-focus-color;
+  }
+}
+
 .btn-ico {
 
   span {
