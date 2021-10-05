@@ -49,6 +49,20 @@ ul {
   }
 }
 
+select.form-control {
+  @extend .custom-select;
+}
+
+select.form-control.form-control-sm {
+  @extend .custom-select;
+  @extend .custom-select-sm;
+}
+
+select.form-control.form-control-lg {
+  @extend .custom-select;
+  @extend .custom-select-lg;
+}
+
 .btn-ico {
 
   span {
