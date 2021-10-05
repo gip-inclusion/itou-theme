@@ -1,0 +1,128 @@
+.s-article-picture-03 {
+  padding-top: map-get($spacers, 6);
+  padding-bottom: map-get($spacers, 4);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 6);
+  }
+
+  &__col {
+
+		&--article {
+
+      &__title {
+				display: inline-block;
+				padding-bottom: map-get($spacers, 2);
+				margin-bottom: map-get($spacers, 3);
+				border-bottom: 2px solid $primary;
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: map-get($spacers, 5);
+				}
+
+				&::before {
+          content: attr(data-subtitle);
+					font-size: $font-size-base;
+          text-transform: uppercase;
+					line-height: $line-height-sm;
+					display: block;
+					margin-bottom: map-get($spacers, 1);
+					color: $primary;
+
+					@include media-breakpoint-up(lg) {
+						margin-bottom: map-get($spacers, 2);
+					}
+				}
+			}
+
+			article {
+        @extend .w-100;
+				padding-top: map-get($spacers, 3);
+				padding-bottom: map-get($spacers, 3);
+			}
+		}
+
+    &--picture {
+      @include media-breakpoint-up(lg) {
+        padding-left: map-get($spacers, 5);
+      }
+
+      picture {
+        @extend .w-100;
+        @extend .mb-3;
+
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  &--marche {
+    .s-article-picture-03__col--article__title::before {
+      color: $marche;
+    }
+
+    .s-article-picture-03__col--article__title {
+      border-bottom-color: $marche;
+    }
+  }
+
+  &--emploi {
+    .s-article-picture-03__col--article__title::before {
+      color: $emploi;
+    }
+
+    .s-article-picture-03__col--article__title {
+      border-bottom-color: $emploi;
+    }
+  }
+
+  &--pilotage {
+    .s-article-picture-03__col--article__title::before {
+      color: $pilotage;
+    }
+
+    .s-article-picture-03__col--article__title {
+      border-bottom-color: $pilotage;
+    }
+  }
+
+  &--communaute {
+    .s-article-picture-03__col--article__title::before {
+      color: $communaute;
+    }
+
+    .s-article-picture-03__col--article__title {
+      border-bottom-color: $communaute;
+    }
+  }
+
+
+  &.has-illustration-bg-01 {
+    overflow-x: hidden;
+
+    .container {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 174px;
+        height: 280px;
+        z-index: -1;
+        bottom: -5px;
+        right: -55px;
+        background-image: url('../images/illustration-bg-01.png');
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+          display: block;
+        }
+      }
+    }
+  }
+}

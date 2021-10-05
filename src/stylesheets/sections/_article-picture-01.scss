@@ -85,6 +85,7 @@
 
     &--picture {
       picture {
+        @extend .w-100;
         @extend .mb-3;
 
         @include media-breakpoint-up(lg) {
