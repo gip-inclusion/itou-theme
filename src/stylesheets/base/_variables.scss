@@ -566,7 +566,7 @@ $input-font-size-lg: $input-btn-font-size-lg;
 $input-line-height-lg: $input-btn-line-height-lg;
 
 $input-bg: $white;
-$input-disabled-bg: $gray-400;
+$input-disabled-bg: $gray-100;
 
 $input-color: $gray-800;
 $input-border-color: $gray-600;
@@ -702,7 +702,7 @@ $custom-select-line-height: $input-line-height;
 $custom-select-color: $input-color;
 $custom-select-disabled-color: $gray-600;
 $custom-select-bg: $input-bg;
-$custom-select-disabled-bg: $gray-400;
+$custom-select-disabled-bg: $gray-100;
 $custom-select-bg-size: 8px 10px; // In pixels because image dimensions
 $custom-select-indicator-color: $gray-800;
 $custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
