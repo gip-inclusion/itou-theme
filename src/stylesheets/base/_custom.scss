@@ -1,11 +1,7 @@
-html,
-body {
-  height: 100%;
-}
-
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 
   > .s-main {
     flex: 1 0 auto;
