@@ -20,7 +20,7 @@ const server = browserSync.create();
 
 const paths = {
   distDir: './dist/',
-  srcImages: 'src/images/**/*.{jpg,jpeg,png,svg,ico}',
+  srcImages: 'src/images/**/*.{jpg,jpeg,png,svg,gif,ico}',
   distImages: 'dist/images/',
   srcFonts: 'src/fonts/**/*',
   distFonts: 'dist/fonts/',

@@ -12,8 +12,8 @@
 $slick-arrow-color: $primary !default;
 $slick-dot-color: $primary !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "←" !default;
-$slick-next-character: "→" !default;
+$slick-prev-character: "" !default;
+$slick-next-character: "" !default;
 $slick-dot-character: "" !default;
 $slick-pause-character: "⏸" !default;
 $slick-play-character: "▶" !default;
@@ -173,15 +173,13 @@ $slick-opacity-not-active: 0.25 !default;
   li {
     position: relative;
     display: inline-block;
-    margin: 0 4px;
+    margin: 0;
     padding: 0;
 
     button {
       display: block;
       height: 32px;
       width: 32px;
-      margin-top: -4px;
-      margin-left: -4px;
 
       line-height: 0px;
       color: transparent;
