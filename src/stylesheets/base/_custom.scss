@@ -310,3 +310,26 @@ ul.pagination {
 .custom-select:disabled {
   opacity: 0.5;
 }
+
+.custom-switch.is-rtl {
+  padding-left: 0 !important;
+  padding-right: $custom-switch-width + $custom-control-gutter;
+
+  .custom-control-label {
+
+    &::before {
+      left: initial;
+      right: -($custom-switch-width + $custom-control-gutter);
+    }
+
+    &::after {
+      left: initial;
+      right: add(-($custom-switch-width + $custom-control-gutter), $custom-control-indicator-border-width * 2);
+      transform: translateX(- .75rem);
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(0);
+  }
+}
