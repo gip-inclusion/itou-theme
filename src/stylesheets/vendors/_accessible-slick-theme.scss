@@ -28,11 +28,9 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
   .slick-loading & {
-    background: $white url('../../images/ajax-loader.gif') center center no-repeat;
+    background: $white url('../images/ajax-loader.gif') center center no-repeat;
   }
 }
-
-
 
 /*=================================
   Previous and Next icon buttons

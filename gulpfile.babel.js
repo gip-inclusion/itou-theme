@@ -97,14 +97,17 @@ export function images() {
     .pipe(plumber({
       errorHandler: notifyOnError
     }))
-    .pipe(imagemin({
-      optimizationLevel: 3,
-      progressive: true,
-      interlaced: true,
-      svgoPlugins: [{
-        removeViewBox: false
-      }]
-    }))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false},
+          {cleanupIDs: true}
+        ]
+      })
+    ]))
     .pipe(gulp.dest(paths.distImages));
 }
 
