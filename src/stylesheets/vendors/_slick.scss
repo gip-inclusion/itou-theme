@@ -16,7 +16,15 @@
 
     &.align-slide-center {
       .slick-track {
+        @extend .d-flex;
         @extend .align-items-center;
+      }
+    }
+
+    &.align-slide-stretch {
+      .slick-track {
+        @extend .d-flex;
+        @extend .align-items-stretch;
       }
     }
 }
@@ -28,13 +36,9 @@
     margin-left: -1rem;
     margin-right: -1rem;
 
-    &:focus {
-        outline: none;
-    }
-
     &.dragging {
-        cursor: pointer;
-        cursor: hand;
+      cursor: pointer;
+      cursor: hand;
     }
 }
 .slick-slider .slick-track,

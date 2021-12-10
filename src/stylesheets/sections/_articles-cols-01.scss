@@ -11,7 +11,7 @@
 		position: relative;
 		max-width: map-get($container-max-widths, 'xl');
 
-		&::before {
+		&.has-illustation::before {
 			content: '';
 			position: absolute;
 			z-index: -1;
@@ -42,7 +42,7 @@
 		&--article {
 
 			> article {
-				margin-bottom: map-get($spacers, 6);
+				margin-bottom: map-get($spacers, 5);
 			}
 
 			p + ul {
@@ -51,10 +51,19 @@
 		}
 	}
 
+  &--plateforme {
+    .s-articles-cols-01__container {
+
+      &.has-illustation::before {
+        background-image: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="416" height="416"><path fill="#{$secondary}" fill-rule="evenodd" d="M237.285 413.902C123.557 430.077 18.239 350.982 2.1 237.26-14.08 123.57 64.977 18.245 178.699 2.107c113.734-16.211 219.015 62.877 235.19 176.605 16.18 113.691-62.907 218.972-176.604 235.19z"/></svg>'));
+      }
+    }
+  }
+
   &--marche {
     .s-articles-cols-01__container {
 
-      &::before {
+      &.has-illustation::before {
         background-image: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="416" height="416"><path fill="#{$marche-light}" fill-rule="evenodd" d="M237.285 413.902C123.557 430.077 18.239 350.982 2.1 237.26-14.08 123.57 64.977 18.245 178.699 2.107c113.734-16.211 219.015 62.877 235.19 176.605 16.18 113.691-62.907 218.972-176.604 235.19z"/></svg>'));
       }
     }
@@ -63,7 +72,7 @@
   &--pilotage {
     .s-articles-cols-01__container {
 
-      &::before {
+      &.has-illustation::before {
         background-image: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="416" height="416"><path fill="#{$pilotage-light}" fill-rule="evenodd" d="M237.285 413.902C123.557 430.077 18.239 350.982 2.1 237.26-14.08 123.57 64.977 18.245 178.699 2.107c113.734-16.211 219.015 62.877 235.19 176.605 16.18 113.691-62.907 218.972-176.604 235.19z"/></svg>'));
       }
     }
@@ -72,7 +81,7 @@
   &--emploi {
     .s-articles-cols-01__container {
 
-      &::before {
+      &.has-illustation::before {
         background-image: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="416" height="416"><path fill="#{$emploi-light}" fill-rule="evenodd" d="M237.285 413.902C123.557 430.077 18.239 350.982 2.1 237.26-14.08 123.57 64.977 18.245 178.699 2.107c113.734-16.211 219.015 62.877 235.19 176.605 16.18 113.691-62.907 218.972-176.604 235.19z"/></svg>'));
       }
     }
@@ -81,7 +90,7 @@
   &--communaute {
     .s-articles-cols-01__container {
 
-      &::before {
+      &.has-illustation::before {
         background-image: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="416" height="416"><path fill="#{$communaute-light}" fill-rule="evenodd" d="M237.285 413.902C123.557 430.077 18.239 350.982 2.1 237.26-14.08 123.57 64.977 18.245 178.699 2.107c113.734-16.211 219.015 62.877 235.19 176.605 16.18 113.691-62.907 218.972-176.604 235.19z"/></svg>'));
       }
     }

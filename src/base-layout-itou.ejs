@@ -25,8 +25,14 @@
   </head>
 
   <body id="top">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="sr-only">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
 
-    <header class="s-header s-header--emploi" role="banner" id="header">
+    <header class="s-header s-header--plateforme" role="banner" id="header">
       <section class="s-header__container container">
         <div class="s-header__row row">
           <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
@@ -36,7 +42,7 @@
             <a href=""/><img src="images/logo-plateforme-inclusion.svg" alt="La Plateforme de l'inclusion"></a>
           </div>
           <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
-            <nav role="navigation">
+            <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
               <ul>
                 <li>
                   <a href="" class="is-active" rel="noopener" target="_blank">

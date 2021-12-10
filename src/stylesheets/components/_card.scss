@@ -1,5 +1,7 @@
 .c-card {
-  border-bottom: 10px solid $primary;
+  &--plateforme {
+    border-bottom: 10px solid $primary;
+  }
 
   &--marche {
     border-bottom: 10px solid $marche;
