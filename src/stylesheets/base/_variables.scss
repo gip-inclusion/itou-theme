@@ -33,7 +33,7 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #0c2c78;
+$blue:    #000091;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -98,6 +98,7 @@ $theme-colors: map-merge(
   (
     'primary': $primary,
     'secondary': $secondary,
+    'tertiary': $blue,
     'success': $success,
     'info': $info,
     'warning': $warning,
