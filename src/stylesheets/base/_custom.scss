@@ -154,15 +154,6 @@ ul.pagination {
   @extend .bg-light;
 }
 
-.alert-link {
-  color: $secondary !important;
-
-  &:hover,
-  &:focus {
-    color: $primary !important;
-  }
-}
-
 .list-group {
   @extend .pl-0;
 }
@@ -235,4 +226,8 @@ ul.pagination {
 .page-link {
   transition: $transition-base;
   font-weight: $font-weight-bold;
+}
+
+.close {
+  opacity: 1;
 }
