@@ -10,7 +10,7 @@ $gray-100: #eff1ff;
 $gray-200: #cccccc;
 $gray-300: #6a6a6a;
 $gray-400: #FBFBFB;
-$gray-500: #b2b4c3;
+$gray-500: #b2b4c4;
 $gray-600: #999baf;
 $gray-700: #7f829b;
 $gray-800: #3F3E62;
@@ -236,9 +236,9 @@ $body-color: $secondary;
 //
 // Style anchor elements.
 
-$link-color: $secondary;
+$link-color: $primary;
 $link-decoration: underline;
-$link-hover-color: $primary;
+$link-hover-color: $tertiary;
 $link-hover-decoration: underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 10% !default;
@@ -310,7 +310,7 @@ $box-shadow-lg: 0 2px 19px 0 rgba($black, 0.1);
 $box-shadow-xl: 0 2px 19px 0 rgba($black, 0.3);
 
 $component-active-color: $white;
-$component-active-bg: $secondary;
+$component-active-bg: $primary;
 
 $caret-width: 0.3em !default;
 $caret-vertical-align: $caret-width * 0.85 !default;
@@ -922,35 +922,35 @@ $dropdown-header-padding: $dropdown-padding-y $dropdown-item-padding-x !default;
 // Pagination
 
 $pagination-padding-y: 0.5rem !default;
-$pagination-padding-x: 0.75rem !default;
+$pagination-padding-x: 1rem;
 $pagination-padding-y-sm: 0.25rem !default;
 $pagination-padding-x-sm: 0.5rem !default;
 $pagination-padding-y-lg: 0.75rem !default;
 $pagination-padding-x-lg: 1.5rem !default;
 $pagination-line-height: 1.25 !default;
 
-$pagination-color: $link-color !default;
-$pagination-bg: $white !default;
-$pagination-border-width: $border-width !default;
-$pagination-border-color: $gray-300 !default;
+$pagination-color: $link-color;
+$pagination-bg: $white;
+$pagination-border-width: 2px;
+$pagination-border-color: $primary;
 
 $pagination-focus-box-shadow: $input-btn-focus-box-shadow;
 $pagination-focus-outline: initial;
 
-$pagination-hover-color: $link-hover-color !default;
-$pagination-hover-bg: $gray-200 !default;
-$pagination-hover-border-color: $gray-300 !default;
+$pagination-hover-color: $white;
+$pagination-hover-bg: $tertiary;
+$pagination-hover-border-color: $tertiary;
 
 $pagination-active-color: $component-active-color;
 $pagination-active-bg: $component-active-bg;
 $pagination-active-border-color: $pagination-active-bg;
 
-$pagination-disabled-color: $gray-600 !default;
-$pagination-disabled-bg: $white !default;
-$pagination-disabled-border-color: $gray-300 !default;
+$pagination-disabled-color: $gray-500;
+$pagination-disabled-bg: $white;
+$pagination-disabled-border-color: $gray-500;
 
-$pagination-border-radius-sm: $border-radius-sm !default;
-$pagination-border-radius-lg: $border-radius-lg !default;
+$pagination-border-radius-sm: $border-radius-sm;
+$pagination-border-radius-lg: $border-radius-lg;
 
 // Jumbotron
 

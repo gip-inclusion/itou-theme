@@ -205,7 +205,6 @@ ul.pagination {
   padding-right: 0;
 }
 
-
 .custom-select:disabled {
   opacity: 0.5;
 }
@@ -231,4 +230,9 @@ ul.pagination {
   .custom-control-input:checked ~ .custom-control-label::after {
     transform: translateX(0);
   }
+}
+
+.page-link {
+  transition: $transition-base;
+  font-weight: $font-weight-bold;
 }
