@@ -1,4 +1,5 @@
 ::selection {
+  color: $white;
   background-color: $tertiary;
 }
 
@@ -226,6 +227,102 @@ ul.pagination {
     transform: translateX(0);
   }
 }
+
+.custom-switch-lg {
+  padding-left: $custom-switch-width-lg + $custom-control-gutter;
+  min-height: 2.1rem;
+
+  .custom-control-label {
+    &::before {
+      left: -($custom-switch-width-lg + $custom-control-gutter);
+      width: $custom-switch-width-lg;
+      pointer-events: all;
+      height: 27px;
+      border-radius: $custom-switch-indicator-border-radius-lg;
+    }
+
+    &::after {
+      top: add(($font-size-base * $line-height-base - $custom-control-indicator-size) * .5, $custom-control-indicator-border-width * 2);
+      left: add(-($custom-switch-width-lg + $custom-control-gutter), $custom-control-indicator-border-width * 2);
+      width: $custom-switch-indicator-size-lg;
+      height: $custom-switch-indicator-size-lg;
+      background-color: $custom-control-indicator-border-color;
+      border-radius: $custom-switch-indicator-border-radius-lg;
+      @include transition(transform .15s ease-in-out, $custom-forms-transition);
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      background-color: $custom-control-indicator-bg;
+      transform: translateX($custom-switch-width-lg - $custom-control-indicator-size-lg);
+      background-image: escape-svg($custom-switch-indicator-icon-checked);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ .custom-control-label::before {
+      @include gradient-bg($custom-control-indicator-checked-disabled-bg);
+    }
+  }
+
+  &.is-rtl {
+    padding-left: 0 !important;
+    padding-right: $custom-switch-width-lg + $custom-control-gutter;
+
+    .custom-control-label {
+
+      &::before {
+        left: initial;
+        right: -($custom-switch-width-lg + $custom-control-gutter);
+      }
+
+      &::after {
+        left: initial;
+        right: add(-($custom-switch-width-lg + $custom-control-gutter), $custom-control-indicator-border-width * 2);
+        transform: translateX(- 1.25rem);
+      }
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::after {
+      transform: translateX(0);
+    }
+  }
+
+  &.has-state-label {
+    min-height: 3rem;
+
+    .custom-control-label {
+      &::before {
+        transition: $transition-base;
+        color: $primary;
+        content: 'Désactivé';
+        font-size: $small-font-size;
+        text-align: center;
+        line-height: 4.5rem;
+      }
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+      &::before {
+        content: 'Activé';
+      }
+    }
+  }
+}
+
+.custom-control-input:disabled ~ .custom-control-label::before,
+.custom-control-input[disabled] ~ .custom-control-label::before {
+  border-color: $custom-control-indicator-disabled-bg;
+}
+
+.custom-control-input:disabled ~ .custom-control-label::after,
+.custom-control-input[disabled] ~ .custom-control-label::after {
+  background-color: $white;
+}
+
 
 .page-link {
   transition: $transition-base;
