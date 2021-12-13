@@ -49,8 +49,44 @@
               <div class="col-12 col-lg-9">
                 <div class="mb-5">
                   <h6>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</h6>
-                  <div class="alert alert-marche" role="status">
-                      A simple <b>marché</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                  <div class="alert alert-marche alert-dismissible fade show" role="status">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+                      </svg>
+                    </button>
+                    <div class="row">
+                      <div class="col-auto text-marche pr-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"/>
+                        </svg>
+                      </div>
+                      <div class="col">
+                        <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                        <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="alert alert-emploi alert-dismissible fade show" role="status">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+                      </svg>
+                    </button>
+                    <div class="row align-items-center">
+                      <div class="d-none d-md-inline-flex col-auto text-marche pr-0">
+                        <img src="images/ico-bicro-emploi-prescripteur.svg" alt="" height="90">
+                      </div>
+                      <div class="col">
+                        <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                        <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                      </div>
+                      <div class="col-12 col-md-auto text-center text-md-left mt-3 mt-md-0">
+                        <button class="btn btn-primary">Label boutton</button>
+                      </div>
+                    </div>
                   </div>
                   <div class="alert alert-communaute" role="status">
                     A simple <b>communaute</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
@@ -87,8 +123,8 @@
                   <h6>Using the alert JavaScript plugin, it’s possible to dismiss any alert inline.</h6>
                   <div class="alert alert-warning alert-dismissible fade show" role="status">
                     <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"/>
                         <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
                       </svg>
