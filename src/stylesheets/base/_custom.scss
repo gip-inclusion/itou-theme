@@ -70,10 +70,13 @@ select.form-control.form-control-lg {
 }
 
 .btn-ico {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
 
   span {
     @extend .d-inline-block;
-    @extend .mr-1;
+    @extend .mx-2;
   }
 }
 
