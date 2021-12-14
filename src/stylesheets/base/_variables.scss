@@ -70,11 +70,11 @@ $colors: map-merge(
 $primary:       $gray-900;
 $secondary:     $gray-800;
 $tertiary:      #000091;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
 $dark:          $black;
 
 $marche: #FE5455;
@@ -241,7 +241,7 @@ $body-color: $secondary;
 $link-color: $primary;
 $link-decoration: underline;
 $link-hover-color: $tertiary;
-$link-hover-decoration: underline !default;
+$link-hover-decoration: underline;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 10% !default;
 
@@ -306,10 +306,10 @@ $border-radius-sm: 0.125rem;
 
 $rounded-pill: 50rem !default;
 
-$box-shadow-sm: 0 2px 9px 0 rgba($black, 0.1);
-$box-shadow: 0 2px 9px 0 rgba($black, 0.3);
-$box-shadow-lg: 0 2px 19px 0 rgba($black, 0.1);
-$box-shadow-xl: 0 2px 19px 0 rgba($black, 0.3);
+$box-shadow-sm: 0 2px 9px 0 rgba($primary, 0.1);
+$box-shadow: 0 2px 9px 0 rgba($primary, 0.3);
+$box-shadow-lg: 0 2px 19px 0 rgba($primary, 0.1);
+$box-shadow-xl: 0 2px 19px 0 rgba($primary, 0.3);
 
 $component-active-color: $white;
 $component-active-bg: $primary;
@@ -395,10 +395,11 @@ $font-weight-bolder: 900;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5;
 
-$h1-font-size: $font-size-base * 3.75; // 60px
-$h2-font-size: $font-size-base * 2; // 32px
-$h3-font-size: $font-size-base * 1.375; // 22px
-$h4-font-size: $font-size-base * 1.25; // 20px Chapo
+$h1-hero-font-size: $font-size-base * 3.75; // 60px
+$h1-font-size: $font-size-base * 2; // 32px
+$h2-font-size: $font-size-base * 1.375; // 22px
+$h3-font-size: $font-size-base * 1.25; // 20px Chapo
+$h4-font-size: $font-size-base * 1.125; // 18px
 $h5-font-size: $font-size-base; // 16px
 $h6-font-size: $font-size-base; // 16px
 
@@ -408,9 +409,9 @@ $headings-font-weight: 700;
 $headings-line-height: 1.2;
 $headings-color: $primary;
 
-$display1-size: $font-size-base * 3.75; // 60px
-$display2-size: $font-size-base * 2; // 32px
-$display3-size: $font-size-base * 1.375; // 22px
+$display1-size: $font-size-base * 2; // 32px
+$display2-size: $font-size-base * 1.375; // 22px
+$display3-size: $font-size-base * 1.25; // 20px
 $display4-size: $font-size-base; // 16px
 
 $display1-weight: 400;
@@ -442,9 +443,9 @@ $nested-kbd-font-weight: $font-weight-bold !default;
 
 $list-inline-padding: 0.5rem !default;
 
-$mark-bg: #fcf8e3 !default;
+$mark-bg: $yellow;
 
-$hr-margin-y: $spacer !default;
+$hr-margin-y: $spacer;
 
 // Tables
 //
@@ -851,12 +852,12 @@ $nav-pills-link-active-color: $component-active-color;
 $nav-pills-link-active-bg: $component-active-bg;
 
 $nav-divider-color: $gray-200 !default;
-$nav-divider-margin-y: $spacer / 2 !default;
+$nav-divider-margin-y: $spacer / 2;
 
 // Navbar
 
-$navbar-padding-y: $spacer / 2 !default;
-$navbar-padding-x: $spacer !default;
+$navbar-padding-y: $spacer / 2;
+$navbar-padding-x: $spacer;
 
 $navbar-nav-link-padding-x: 0.5rem !default;
 
@@ -1252,8 +1253,8 @@ $close-text-shadow: none;
 
 // Code
 
-$code-font-size: 87.5% !default;
-$code-color: $pink !default;
+$code-font-size: 80%;
+$code-color: $pink;
 
 $kbd-padding-y: 0.2rem !default;
 $kbd-padding-x: 0.4rem !default;

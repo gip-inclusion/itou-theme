@@ -17,6 +17,15 @@ body {
   max-width: map-get($container-max-widths, 'xl');
 }
 
+.h1-hero {
+  font-size: $h1-hero-font-size;
+  color: $headings-color;
+  font-family: $headings-font-family;
+  margin-bottom: $headings-margin-bottom;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
 figure {
   @extend .mb-0;
 }
