@@ -353,3 +353,21 @@ ul.pagination {
     }
   }
 }
+
+
+hr {
+  position: relative;
+  color: $primary;
+
+  &[data-text]::after {
+    content: attr(data-text);
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: $font-size-sm;
+    line-height: 1;
+    background-color: $white;
+    @extend .px-2;
+  }
+}
