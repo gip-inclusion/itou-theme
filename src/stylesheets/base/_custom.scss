@@ -70,7 +70,7 @@ select.form-control.form-control-lg {
 }
 
 .btn-ico {
-  @extend .d-flex;
+  @extend .d-inline-flex;
   @extend .align-items-center;
   @extend .justify-content-center;
 
@@ -80,12 +80,13 @@ select.form-control.form-control-lg {
   }
 }
 
-*:focus,
+*:focus-visible,
 *.focus {
   outline: $blue 1px solid !important;
   outline-offset: 2px;
 }
 
+.form-control,
 .btn {
   &:focus,
   &.focus {
@@ -93,6 +94,7 @@ select.form-control.form-control-lg {
     outline-offset: 2px;
   }
 }
+
 .btn-primary {
 
   &.hover,
@@ -342,5 +344,12 @@ ul.pagination {
 }
 
 .close {
-  opacity: 1;
+  transition: $transition-base;
+  opacity: $btn-disabled-opacity;
+
+  &:not(:disabled):not(.disabled) {
+    @include hover-focus() {
+      opacity: 1;
+    }
+  }
 }

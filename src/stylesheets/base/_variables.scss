@@ -828,8 +828,8 @@ $form-validation-states: map-merge(
 $zindex-dropdown: 1000 !default;
 $zindex-sticky: 1020 !default;
 $zindex-fixed: 1030 !default;
-$zindex-modal-backdrop: 1040 !default;
-$zindex-modal: 1050 !default;
+$zindex-modal-backdrop: 3040;
+$zindex-modal: 3050;
 $zindex-popover: 1060 !default;
 $zindex-tooltip: 1070 !default;
 
@@ -1087,7 +1087,7 @@ $badge-pill-border-radius: 10rem;
 $modal-inner-padding: 1rem !default;
 
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
-$modal-footer-margin-between: 0.5rem !default;
+$modal-footer-margin-between: 1rem;
 
 $modal-dialog-margin: 0.5rem !default;
 $modal-dialog-margin-y-sm-up: 1.75rem !default;
