@@ -742,18 +742,21 @@
               <div class="col-12 col-lg-9">
                 <div class="mb-5">
                   <h6>Modal components</h6>
-                  <p>Below is a <em>static</em> modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
+                  <p>Deux variations de modales possibles. <br><code>.modal</code> avec un titre dans un <code>.modal-title</code> ou <code>.modal .modal--mini</code> sans titre et sans <code>.modal-title</code></p>
                   <br>
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Launch demo modal
+                    Launch basic .modal
+                  </button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalMini">
+                    Launch .modal .modal--mini
                   </button>
                   <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
+                          <h3 class="modal-title" id="exampleModalLabel">Modal title in .modal-header</h3>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                               <path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
@@ -766,6 +769,27 @@
                         <div class="modal-footer">
                           <button type="button" class="btn btn-sm btn-outline-primary" data-dismiss="modal">Close</button>
                           <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal Mini -->
+                  <div class="modal modal--mini fade" id="exampleModalMini" tabindex="-1" aria-labelledby="exampleModalMiniLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                              <path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="font-weight-bold" id="exampleModalMiniLabel">Voulez vous valider votre changement ?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-sm btn-outline-primary" data-dismiss="modal">Annuler</button>
+                          <button type="button" class="btn btn-sm btn-primary">Confirmer</button>
                         </div>
                       </div>
                     </div>

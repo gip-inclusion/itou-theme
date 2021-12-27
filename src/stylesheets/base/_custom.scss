@@ -371,3 +371,20 @@ hr {
     @extend .px-2;
   }
 }
+
+.modal--mini {
+
+  .modal-header {
+    @extend .pb-0;
+    border-bottom: none;
+  }
+
+  .modal-body {
+    @extend .py-0;
+  }
+
+  .modal-footer {
+    border-top: none;
+    justify-content: center;
+  }
+}
