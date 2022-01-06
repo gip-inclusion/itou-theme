@@ -372,19 +372,13 @@ hr {
   }
 }
 
-.modal--mini {
+.modal {
 
-  .modal-header {
-    @extend .pb-0;
-    border-bottom: none;
-  }
-
-  .modal-body {
-    @extend .py-0;
+  .modal-body > *:last-child {
+    @extend .mb-0;
   }
 
   .modal-footer {
-    border-top: none;
-    justify-content: center;
+    @extend .pt-0;
   }
 }
