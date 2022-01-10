@@ -76,7 +76,7 @@ select.form-control.form-control-lg {
 
   span {
     @extend .d-inline-block;
-    @extend .mx-2;
+    margin: 0 map-get($spacers, 2);
   }
 }
 
