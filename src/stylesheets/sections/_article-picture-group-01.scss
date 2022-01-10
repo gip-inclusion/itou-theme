@@ -56,7 +56,7 @@
 
 		&--article {
 
-      .h2 {
+      .h1 {
 				display: inline-block;
 				padding-bottom: map-get($spacers, 2);
 				margin-bottom: map-get($spacers, 3);
@@ -92,7 +92,7 @@
 	}
 
   &--marche {
-    .s-article-picture-group-01__col--article .h2 {
+    .s-article-picture-group-01__col--article .h1 {
       border-bottom: 2px solid $marche;
 
       &::before {
@@ -102,7 +102,7 @@
   }
 
   &--emploi {
-    .s-article-picture-group-01__col--article .h2 {
+    .s-article-picture-group-01__col--article .h1 {
       border-bottom: 2px solid $emploi;
 
       &::before {
@@ -112,7 +112,7 @@
   }
 
   &--communaute {
-    .s-article-picture-group-01__col--article .h2 {
+    .s-article-picture-group-01__col--article .h1 {
       border-bottom: 2px solid $communaute;
 
       &::before {
@@ -122,7 +122,7 @@
   }
 
   &--emploi {
-    .s-article-picture-group-01__col--article .h2 {
+    .s-article-picture-group-01__col--article .h1 {
       border-bottom: 2px solid $emploi;
 
       &::before {
@@ -132,7 +132,7 @@
   }
 
   &--pilotage {
-    .s-article-picture-group-01__col--article .h2 {
+    .s-article-picture-group-01__col--article .h1 {
       border-bottom: 2px solid $pilotage;
 
       &::before {

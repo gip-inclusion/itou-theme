@@ -61,25 +61,25 @@
 	}
 
   &--marche {
-    .s-page-menu-01__col--title h1::after {
+    .s-page-menu-01__col--title .h1-hero::after {
       background-color: $marche;
     }
   }
 
   &--pilotage {
-    .s-page-menu-01__col--title h1::after {
+    .s-page-menu-01__col--title .h1-hero::after {
       background-color: $pilotage;
     }
   }
 
   &--emploi {
-    .s-page-menu-01__col--title h1::after {
+    .s-page-menu-01__col--title .h1-hero::after {
       background-color: $emploi;
     }
   }
 
   &--communaute {
-    .s-page-menu-01__col--title h1::after {
+    .s-page-menu-01__col--title .h1-hero::after {
       background-color: $communaute;
     }
   }
