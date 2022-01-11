@@ -78,6 +78,7 @@ $header-height: 115px;
               text-decoration: none;
               @extend .mr-4;
               @extend .ml-3;
+              color: $link-color;
 
               > svg {
                 @extend .ml-1;
@@ -118,6 +119,7 @@ $header-height: 115px;
 
               &:hover,
               &:focus {
+                color: $link-color;
 
                 &::after {
                   background-color: $secondary;
@@ -199,7 +201,7 @@ $header-height: 115px;
             text-decoration: none;
             @extend .mr-4;
             @extend .ml-3;
-            transition: $transition-base;
+            color: $link-color;
 
             > svg {
               @extend .ml-1;
@@ -239,6 +241,7 @@ $header-height: 115px;
 
             &:hover,
             &:focus {
+              color: $link-color;
 
               &::after {
                 display: block;
