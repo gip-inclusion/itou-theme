@@ -88,7 +88,7 @@ select.form-control.form-control-lg {
 
 .form-control,
 .btn {
-  &:focus,
+  &:focus-visible,
   &.focus {
     outline: $blue 2px solid !important;
     outline-offset: 2px;
