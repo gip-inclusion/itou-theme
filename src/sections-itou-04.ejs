@@ -70,6 +70,30 @@
       <br>
       <br>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="banniere-01">
+            <h3>Bannière 01 <code>.s-banniere-01</code></h3>
+            <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
+          </div>
+        </div>
+      </div>
+      <%- include('_sections/banniere-01') %>
+      <br>
+      <br>
+      <%- include('_sections/banniere-01', {modifier: 's-banniere-01--marche'} ) %>
+      <br>
+      <br>
+      <%- include('_sections/banniere-01', {modifier: 's-banniere-01--emploi'} ) %>
+      <br>
+      <br>
+      <%- include('_sections/banniere-01', {modifier: 's-banniere-01--pilotage'} ) %>
+      <br>
+      <br>
+      <%- include('_sections/banniere-01', {modifier: 's-banniere-01--communaute'} ) %>
+      <br>
+      <br>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
