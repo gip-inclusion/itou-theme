@@ -374,10 +374,19 @@ hr {
 
 .modal {
 
+  .modal-header {
+    .close {
+      margin: (-$modal-header-padding-y) (-$modal-header-padding-y * 2) (-$modal-header-padding-y) auto !important;
+    }
+
+    + .modal-body {
+      @extend .pt-2;
+    }
+  }
+
   .modal-body > *:last-child {
     @extend .mb-0;
   }
-
   .modal-footer {
     @extend .pt-0;
   }
