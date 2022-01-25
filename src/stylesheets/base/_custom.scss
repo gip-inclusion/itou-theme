@@ -18,12 +18,16 @@ body {
 }
 
 .h1-hero {
-  font-size: $h1-hero-font-size;
   color: $headings-color;
   font-family: $headings-font-family;
   margin-bottom: $headings-margin-bottom;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
+  font-size: $h1-hero-font-size-sm;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $h1-hero-font-size;
+  }
 }
 
 figure {
