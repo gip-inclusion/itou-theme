@@ -65,8 +65,10 @@
                       <label for="exampleFormControlTextarea1">Example textarea</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <div class="text-right">
+                      <button type="reset" class="btn btn-outline-primary mr-2">Reset</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                   </form>
                 </div>
                 <div class="mb-5">
@@ -79,7 +81,7 @@
                 <div class="mb-5">
                   <h6>Readonly</h6>
                   <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
-                  <input class="form-control mb-5" type="text" placeholder="Readonly input here..." readonly>
+                  <input class="form-control mb-5" type="text" value="Readonly input here..." readonly>
                   <p>If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, use the <code>.form-control-plaintext</code> class to remove the default form field styling and preserve the correct margin and padding.</p>
                   <form>
                     <div class="form-group row">
@@ -119,7 +121,7 @@
                   <p>Custom checkboxes and radios can also be disabled. Add the <code>disabled</code> boolean attribute to the <code>&lt;input&gt;</code> and the custom indicator and label description will be automatically styled.</p>
                   <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
-                    <label class="custom-control-label" for="customCheckDisabled1">Check this custom checkbox</label>
+                    <label class="custom-control-label" for="customCheckDisabled1" checked>Check this custom checkbox</label>
                   </div>
                   <div class="custom-control custom-radio">
                     <input type="radio" name="radioDisabled" id="customRadioDisabled2" class="custom-control-input" disabled>
@@ -260,7 +262,9 @@
                         <label class="custom-control-label" for="customRadio20">Check me out</label>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <div class="text-right">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
                   </form>
                 </div>
                 <div class="mb-5">
@@ -275,12 +279,6 @@
                         <div class="input-group-text">@</div>
                       </div>
                       <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
-                    </div>
-                    <div class="form-check mb-2 mr-sm-2">
-                      <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                      <label class="form-check-label" for="inlineFormCheck">
-                        Remember me
-                      </label>
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">Submit</button>
                   </form>
@@ -315,7 +313,9 @@
                           <option value="3">Three</option>
                         </select>
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <div class="text-right">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
                     </fieldset>
                   </form>
                 </div>
@@ -367,17 +367,17 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                          Agree to terms and conditions
-                        </label>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="invalidCheck"  required>
+                        <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
                         <div class="invalid-feedback">
                           You must agree before submitting.
                         </div>
                       </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <div class="text-right">
+                      <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
                   </form>
 
                   <script>
@@ -456,7 +456,7 @@
                   <h6>Button addons</h6>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                      <button class="btn btn-outline-primary" type="button" id="button-addon1">Button</button>
                     </div>
                     <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                   </div>
@@ -470,8 +470,8 @@
 
                   <div class="input-group mb-3">
                     <div class="input-group-prepend" id="button-addon3">
-                      <button class="btn btn-outline-secondary" type="button">Button</button>
-                      <button class="btn btn-outline-secondary" type="button">Button</button>
+                      <button class="btn btn-outline-primary" type="button">Button</button>
+                      <button class="btn btn-outline-primary" type="button">Button</button>
                     </div>
                     <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3">
                   </div>
@@ -479,8 +479,8 @@
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
                     <div class="input-group-append" id="button-addon4">
-                      <button class="btn btn-outline-secondary" type="button">Button</button>
-                      <button class="btn btn-outline-secondary" type="button">Button</button>
+                      <button class="btn btn-outline-primary" type="button">Button</button>
+                      <button class="btn btn-outline-primary" type="button">Button</button>
                     </div>
                   </div>
                 </div>
