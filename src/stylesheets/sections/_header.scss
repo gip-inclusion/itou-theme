@@ -80,7 +80,8 @@ $header-height: 115px;
               @extend .ml-3;
               color: $link-color;
 
-              > svg {
+              > svg,
+              > i {
                 @extend .ml-1;
               }
 
@@ -203,7 +204,8 @@ $header-height: 115px;
             @extend .ml-3;
             color: $link-color;
 
-            > svg {
+            > svg,
+            > i {
               @extend .ml-1;
             }
 

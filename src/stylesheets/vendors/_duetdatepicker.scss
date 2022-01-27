@@ -21,13 +21,16 @@
 }
 
 .duet-date__toggle {
-  @extend .btn-outline-secondary;
+  @extend .btn-outline-primary;
   background-color: var(--white);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: none;
-  border-left: 1px solid var(--gray-600);
   transition: $transition-base;
+  border-top: 1px solid var(--gray-600);
+  border-right: 1px solid var(--gray-600);
+  border-bottom: 1px solid var(--gray-600);
+  border-left: none;
 }
 
 .duet-date__dialog-content {
@@ -41,5 +44,5 @@ See also `duet_date_picker.html`.
 https://getbootstrap.com/docs/4.6/components/forms/#server-side
 */
 duet-date-picker.is-invalid ~ .invalid-feedback {
-  display:block
+  display:block;
 }

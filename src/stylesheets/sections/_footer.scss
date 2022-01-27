@@ -24,10 +24,6 @@
     font-weight: $font-weight-bold;
     color: $white;
     display: inline-block;
-
-    &.is-external {
-      @include picto-external-link($white);
-    }
   }
 
   ul {

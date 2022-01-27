@@ -147,7 +147,8 @@ select.form-control.form-control-lg {
   }
 
   &.disabled,
-  &:disabled {
+  &:disabled,
+  &[readonly] {
     background-color: $gray-400;
   }
 }
@@ -162,6 +163,14 @@ select.form-control.form-control-lg {
   &.focus,
   &:focus {
     color: $tertiary;
+  }
+
+  &.btn-ico {
+    text-decoration: none;
+
+    span {
+      text-decoration: underline
+    }
   }
 }
 
@@ -336,8 +345,8 @@ ul.pagination {
   border-color: $custom-control-indicator-disabled-bg;
 }
 
-.custom-control-input:disabled ~ .custom-control-label::after,
-.custom-control-input[disabled] ~ .custom-control-label::after {
+.custom-switch .custom-control-input:disabled ~ .custom-control-label::after,
+.custom-switch .custom-control-input[disabled] ~ .custom-control-label::after {
   background-color: $white;
 }
 
