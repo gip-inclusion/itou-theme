@@ -313,9 +313,9 @@ $box-shadow-xl: 0 2px 19px 0 rgba($primary, 0.3);
 $component-active-color: $white;
 $component-active-bg: $primary;
 
-$caret-width: 0.3em !default;
-$caret-vertical-align: $caret-width * 0.85 !default;
-$caret-spacing: $caret-width * 0.85 !default;
+$caret-width: 0.4rem;
+$caret-vertical-align: $caret-width * 0.45;
+$caret-spacing: 0.5rem;
 
 $transition-base: all 0.3s ease-in-out;
 $transition-fade: opacity 0.15s linear !default;
@@ -716,7 +716,7 @@ $custom-select-color: $input-color;
 $custom-select-disabled-color: $gray-800;
 $custom-select-bg: $input-bg;
 $custom-select-disabled-bg: $gray-600;
-$custom-select-bg-size: 8px 10px; // In pixels because image dimensions
+$custom-select-bg-size: 10px 12px; // In pixels because image dimensions
 $custom-select-indicator-color: $gray-800;
 $custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
 $custom-select-background: escape-svg($custom-select-indicator) right
@@ -1226,7 +1226,7 @@ $carousel-indicator-transition: opacity 0.6s ease !default;
 $carousel-caption-width: 70% !default;
 $carousel-caption-color: $white !default;
 
-$carousel-control-icon-width: 16px;
+$carousel-control-icon-width: 20px;
 
 $carousel-control-prev-icon-bg: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M14.036 8.95H3.00601L6.49001 12.737C6.53081 12.7814 6.56229 12.8336 6.58257 12.8904C6.60285 12.9473 6.61152 13.0076 6.60807 13.0678C6.60462 13.1281 6.58912 13.187 6.56248 13.2411C6.53585 13.2953 6.49862 13.3435 6.45301 13.383C6.35984 13.464 6.23875 13.5054 6.11549 13.4985C5.99224 13.4916 5.87654 13.4369 5.79301 13.346L1.61401 8.8L1.57901 8.757L1.54601 8.707L1.53301 8.657V8.539C1.53301 8.527 1.50001 8.519 1.50001 8.495V8.344L1.51401 8.294L1.53301 8.264L1.56701 8.219L5.76001 3.653C5.84354 3.5621 5.95924 3.50738 6.08249 3.50047C6.20575 3.49356 6.32684 3.53501 6.42001 3.616C6.46543 3.65564 6.50247 3.70397 6.52894 3.75813C6.5554 3.8123 6.57077 3.87122 6.57412 3.93141C6.57747 3.99161 6.56875 4.05187 6.54847 4.10864C6.52818 4.16542 6.49675 4.21756 6.45601 4.262L3.00601 8.039H14.037C14.1588 8.03793 14.2761 8.08524 14.3631 8.17054C14.4501 8.25585 14.4997 8.37217 14.501 8.494C14.4997 8.61583 14.4501 8.73215 14.3631 8.81746C14.2761 8.90276 14.1588 8.95007 14.037 8.949L14.036 8.95Z" fill="#{$carousel-control-color}" stroke="#{$carousel-control-color}"/></svg>'));
 $carousel-control-next-icon-bg: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$carousel-control-color}" fill-rule="nonzero" stroke="#{$carousel-control-color}" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"></path></svg>'));
