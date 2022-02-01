@@ -84,18 +84,34 @@ select.form-control.form-control-lg {
   }
 }
 
-*:focus-visible,
-*.focus {
-  outline: $blue 1px solid !important;
+:focus {
   outline-offset: 2px;
+  outline: $blue 1px solid;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+:focus-visible {
+  outline-offset: 2px;
+  outline: $blue 1px solid;
 }
 
 .form-control,
 .btn {
-  &:focus-visible,
-  &.focus {
-    outline: $blue 2px solid !important;
+  &:focus {
     outline-offset: 2px;
+    outline: $blue 2px solid;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: $blue 2px solid;
   }
 }
 
