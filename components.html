@@ -78,30 +78,30 @@
                         <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
                       </div>
                       <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
-                        <button class="btn btn-primary">Label boutton</button>
+                        <button class="btn btn-sm btn-primary">Label boutton</button>
                       </div>
                     </div>
                   </div>
                   <div class="alert alert-communaute" role="status">
-                    A simple <b>communaute</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    A simple <b>communaute</b> alert with <a href="#">an example link</a>. Give it a click if you like.
                   </div>
                   <div class="alert alert-pilotage" role="status">
-                    A simple <b>pilotage</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    A simple <b>pilotage</b> alert with <a href="#">an example link</a>. Give it a click if you like.
                   </div>
                   <div class="alert alert-emploi" role="status">
-                    A simple <b>emploi</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    A simple <b>emploi</b> alert with <a href="#">an example link</a>. Give it a click if you like.
                   </div>
                   <div class="alert alert-info" role="status">
-                    A simple <b>info</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    A simple <b>info</b> alert with <a href="#">an example link</a>. Give it a click if you like.
                   </div>
                   <div class="alert alert-success" role="status">
-                    A simple <b>success</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    A simple <b>success</b> alert with <a href="#">an example link</a>. Give it a click if you like.
                   </div>
                   <div class="alert alert-warning" role="alert">
-                    A simple <b>warning</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    A simple <b>warning</b> alert with <a href="#">an example link</a>. Give it a click if you like.
                   </div>
                   <div class="alert alert-danger" role="alert">
-                    A simple <b>danger</b> alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    A simple <b>danger</b> alert with <a href="#">an example link</a>. Give it a click if you like.
                   </div>
                 </div>
                 <div class="mb-5">
@@ -613,7 +613,7 @@
                   <p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
                   <p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code>aria-label</code> for the <code>&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label="Search results pages"</code>.</p>
                   <br>
-                  <nav aria-label="Page navigation example">
+                  <nav role="navigation" aria-label="Page navigation example">
                     <ul class="pagination">
                       <li class="page-item"><a class="page-link" href="#">Précédent</a></li>
                       <li class="page-item"><a class="page-link" href="#" aria-label="Page 1">1</a></li>
@@ -627,7 +627,7 @@
                   <h6>Working with icons</h6>
                   <p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code>aria</code> attributes.</p>
                   <br>
-                  <nav aria-label="Page navigation example">
+                  <nav role="navigation" aria-label="Page navigation example">
                     <ul class="pagination">
                       <li class="page-item">
                         <a class="page-link" href="#" aria-label="Précédent">
@@ -650,7 +650,7 @@
                   <p>Pagination links are customizable for different circumstances. Use <code>.disabled</code> for links that appear un-clickable and <code>.active</code> to indicate the current page.</p>
                   <p>While the <code>.disabled</code> class uses <code>pointer-events: none</code> to <em>try</em> to disable the link functionality of <code>&lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code>tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
                   <br>
-                  <nav aria-label="Page navigation example">
+                  <nav role="navigation"  aria-label="Page navigation example">
                     <ul class="pagination">
                       <li class="page-item disabled">
                         <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Précédent</a>
