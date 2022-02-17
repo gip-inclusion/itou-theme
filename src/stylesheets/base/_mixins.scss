@@ -37,7 +37,7 @@
 }
 
 @each $color, $value in $theme-colors {
-  .progress-#{$color} {
+  .progress--#{$color} {
 
     .progress-bar {
       background-color: map-get($theme-colors, $color) !important;

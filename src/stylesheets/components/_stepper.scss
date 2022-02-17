@@ -1,0 +1,19 @@
+.c-stepper {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow-lg;
+  padding: map-get($spacers, 3);
+
+  @include media-breakpoint-up(lg) {
+    padding: map-get($spacers, 5);
+  }
+
+  p {
+    @extend .mb-0;
+    @extend .mt-2;
+
+    strong {
+      color: $primary;
+    }
+  }
+}
