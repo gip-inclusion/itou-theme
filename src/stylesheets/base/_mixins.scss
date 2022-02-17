@@ -35,3 +35,61 @@
     }
   }
 }
+
+@each $color, $value in $theme-colors {
+  .progress-#{$color} {
+
+    .progress-bar {
+      background-color: map-get($theme-colors, $color) !important;
+    }
+
+
+    @if $color == "marche" {
+      &::before {
+        background-color: $marche-light !important;
+      }
+    }
+
+    @if $color == "emploi" {
+      &::before {
+        background-color: $emploi-light !important;
+      }
+    }
+
+    @if $color == "communaute" {
+      &::before {
+        background-color: $communaute-light !important;
+      }
+    }
+
+    @if $color == "pilotage" {
+      &::before {
+        background-color: $pilotage-light !important;
+      }
+    }
+
+    @if $color == "success" {
+      &::before {
+        background-color: $green-light !important;
+      }
+    }
+
+    @if $color == "warning" {
+      &::before {
+        background-color: $orange-light !important;
+      }
+    }
+
+    @if $color == "danger" {
+      &::before {
+        background-color: $red-light !important;
+      }
+    }
+
+    @if $color == "info" {
+      &::before {
+        background-color: $gray-350 !important;
+      }
+    }
+  }
+}

@@ -420,3 +420,27 @@ hr {
     @extend .pt-0;
   }
 }
+
+.progress {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 0;
+    border-radius: 1px;
+    background-color: $gray-500;
+  }
+
+  .progress-bar {
+    position: relative;
+    z-index: 1;
+    border-radius: $border-radius;
+  }
+}
+
