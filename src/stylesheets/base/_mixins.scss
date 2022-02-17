@@ -17,5 +17,21 @@
     @if $color == "pilotage" {
       background-color: $pilotage-light !important;
     }
+
+    @if $color == "success" {
+      background-color: $green-light !important;
+    }
+
+    @if $color == "warning" {
+      background-color: $orange-light !important;
+    }
+
+    @if $color == "danger" {
+      background-color: $red-light !important;
+    }
+
+    @if $color == "info" {
+      background-color: $gray-350 !important;
+    }
   }
 }
