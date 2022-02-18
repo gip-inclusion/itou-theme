@@ -224,6 +224,10 @@ ul.pagination {
   cursor: pointer;
 }
 
+.form-group > label {
+  font-weight: $font-weight-bold
+}
+
 .form-control.is-valid:focus,
 .was-validated .form-control:valid:focus,
 .form-control.is-invalid:focus,
@@ -374,7 +378,7 @@ ul.pagination {
 
 .close {
   transition: $transition-base;
-  opacity: $btn-disabled-opacity;
+  opacity: .75;
 
   &:not(:disabled):not(.disabled) {
     @include hover-focus() {
@@ -399,6 +403,12 @@ hr {
     background-color: $white;
     @extend .px-2;
   }
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 
 .modal {
