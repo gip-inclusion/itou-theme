@@ -23,6 +23,12 @@ $('[data-toggle=burger]').on('click tap', function(e) {
   e.preventDefault();
   stickyNav.data('top', stickyNav.offset().top);
   stickyNav.toggleClass('is-opened');
+}).on('keypress', function(e) {
+  if ( e.which == 13 ) {
+    e.preventDefault();
+    stickyNav.data('top', stickyNav.offset().top);
+    stickyNav.toggleClass('is-opened');
+ }
 });
 
 $('.input-group .form-control').on('focus', function(e) {
