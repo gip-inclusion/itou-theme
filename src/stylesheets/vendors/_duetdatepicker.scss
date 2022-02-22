@@ -16,7 +16,9 @@
   --duet-z-index: 1000;
 }
 
-.duet-date__input {
+.duet-date__input,
+.autocomplete__input,
+.autocomplete__input--default {
   @extend .form-control;
 }
 
