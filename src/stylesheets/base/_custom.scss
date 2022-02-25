@@ -53,12 +53,6 @@ ul {
   opacity: $btn-disabled-opacity;
 }
 
-.form-control:focus {
-  + .input-group-append > .input-group-text {
-    border-color: $input-focus-color;
-  }
-}
-
 select.form-control {
   @extend .custom-select;
 }
@@ -99,6 +93,7 @@ select.form-control.form-control-lg {
 }
 
 .form-control,
+.custom-select,
 .btn {
   &:focus {
     outline-offset: 2px;
@@ -112,6 +107,23 @@ select.form-control.form-control-lg {
   &:focus-visible {
     outline-offset: 2px;
     outline: $blue 2px solid;
+  }
+}
+
+.input-group {
+
+  .form-control {
+    outline: 0 !important;
+  }
+
+  &.has-focus {
+    border-radius: $input-border-radius;
+    outline-offset: 2px;
+    outline: $blue 2px solid;
+
+    .input-group-text {
+      border-color: $input-focus-color;
+    }
   }
 }
 
