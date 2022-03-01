@@ -35,6 +35,23 @@ $grays: map-merge(
   $grays
 );
 
+$nuance: ();
+$nuance: map-merge(
+  (
+    '01': #1A1F4C,
+    '02': #333860,
+    '03': #4D5174,
+    '04': #80829B,
+    '05': #999BAF,
+    '06': #B3B4C3,
+    '07': #CCCDD7,
+    '08': #E6E6EB,
+    '09': #F2F3F5,
+    '10': #F2F3F5,
+  ),
+  $nuance
+);
+
 $blue:    #0A76F6;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -49,6 +66,20 @@ $green-light:   #f0fff8;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
+$nuance-01: #1A1F4C;
+$nuance-02: #333860;
+$nuance-03: #4D5174;
+$nuance-04: #80829B;
+$nuance-05: #999BAF;
+$nuance-06: #B3B4C3;
+$nuance-07: #CCCDD7;
+$nuance-08: #E6E6EB;
+$nuance-09: #F2F3F5;
+$nuance-10: #F2F3F5;
+
+$accent-01: #6C38D9;
+$accent-02: #C3A7FF;
+$accent-03: #8ADCFF;
 
 $colors: () !default;
 $colors: map-merge(
@@ -107,9 +138,12 @@ $theme-colors: map-merge(
     'secondary': $secondary,
     'tertiary': $tertiary,
     'success': $success,
+    'success-light': $green-light,
     'info': $info,
     'warning': $warning,
+    'warning-light': $orange-light,
     'danger': $danger,
+    'danger-light': $red-light,
     'light': $light,
     'dark': $dark,
     'marche': $marche,
@@ -136,16 +170,19 @@ $theme-colors: map-merge(
     'gray-600': $gray-600,
     'gray-700': $gray-700,
     'gray-800': $gray-800,
-    'nuance-01': #1A1F4C,
-    'nuance-02': #333860,
-    'nuance-03': #4D5174,
-    'nuance-04': #80829B,
-    'nuance-05': #999BAF,
-    'nuance-06': #B3B4C3,
-    'nuance-07': #CCCDD7,
-    'nuance-08': #E6E6EB,
-    'nuance-09': #F2F3F5,
-    'nuance-10': #F2F3F5,
+    'nuance-01': $nuance-01,
+    'nuance-02': $nuance-02,
+    'nuance-03': $nuance-03,
+    'nuance-04': $nuance-04,
+    'nuance-05': $nuance-05,
+    'nuance-06': $nuance-06,
+    'nuance-07': $nuance-07,
+    'nuance-08': $nuance-08,
+    'nuance-09': $nuance-09,
+    'nuance-10': $nuance-10,
+    'accent-01': $accent-01,
+    'accent-02': $accent-02,
+    'accent-03': $accent-03,
   ),
   $theme-colors
 );
@@ -1083,14 +1120,14 @@ $toast-header-border-color: rgba(0, 0, 0, 0.05) !default;
 
 $badge-font-size: inherit;
 $badge-font-weight: $font-weight-bold;
-$badge-padding-y: 0.25rem;
-$badge-padding-x: 0.5rem;
+$badge-padding-y: 0.4rem;
+$badge-padding-x: 0.6rem;
 $badge-border-radius: $border-radius;
 
-$badge-transition: $btn-transition !default;
-$badge-focus-width: $input-btn-focus-width !default;
+$badge-transition: $btn-transition;
+$badge-focus-width: $input-btn-focus-width;
 
-$badge-pill-padding-x: 0.6em !default;
+$badge-pill-padding-x: 0.6em;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
 $badge-pill-border-radius: 10rem;
