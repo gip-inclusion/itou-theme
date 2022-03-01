@@ -1,4 +1,4 @@
-.s-hero-titre-01 {
+.s-hero-title-01 {
   padding-top: map-get($spacers, 6);
   padding-bottom: map-get($spacers, 4);
 
@@ -54,25 +54,25 @@
   }
 
   &--marche {
-    .s-hero-titre-01__col--article h2::after {
+    .s-hero-title-01__col--article h2::after {
       background-color: $marche;
     }
   }
 
   &--emploi {
-    .s-hero-titre-01__col--article h2::after {
+    .s-hero-title-01__col--article h2::after {
       background-color: $emploi;
     }
   }
 
   &--pilotage {
-    .s-hero-titre-01__col--article h2::after {
+    .s-hero-title-01__col--article h2::after {
       background-color: $pilotage;
     }
   }
 
   &--communaute {
-    .s-hero-titre-01__col--article h2::after {
+    .s-hero-title-01__col--article h2::after {
       background-color: $communaute;
     }
   }
