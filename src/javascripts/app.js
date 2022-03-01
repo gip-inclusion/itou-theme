@@ -39,3 +39,11 @@ $('.input-group .form-control').on('blur', function(e) {
   e.preventDefault();
   $(this).parent('.input-group').toggleClass('has-focus');
 });
+
+$('body').on('keydown input', 'textarea[data-expandable]', function() {
+  this.style.removeProperty('height');
+  this.style.height = (this.scrollHeight+2) + 'px';
+}).on('mousedown focus', 'textarea[data-expandable]', function() {
+  this.style.removeProperty('height');
+  this.style.height = (this.scrollHeight+2) + 'px';
+});
