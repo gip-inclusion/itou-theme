@@ -26,11 +26,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
-  vertical-align: -.1950rem;
+  vertical-align: middle;
 }
 
-.ri-xl { font-size: $font-size-base * 1.25; line-height: 0.6666rem; }
-.ri-lg { font-size: $font-size-base * 1.125; line-height: 0.75rem; }
+.ri-xxl { font-size: $font-size-base * 1.5; }
+.ri-xl { font-size: $font-size-base * 1.25; }
+.ri-lg { font-size: $font-size-base * 1.125; }
 .ri-sm { font-size: $font-size-sm; }
 .ri-xs { font-size: $font-size-xs; }
 .ri-1x { font-size: 1rem; }
