@@ -138,6 +138,23 @@ select.form-control.form-control-lg {
   }
 }
 
+.custom-control-input {
+  &:focus + .custom-control-label::before {
+    outline-offset: 2px;
+    outline: $blue 2px solid;
+  }
+
+  &:focus:not(:focus-visible) + .custom-control-label::before {
+    outline: 0;
+  }
+
+  &:focus-visible + .custom-control-label::before {
+    outline-offset: 2px;
+    outline: $blue 2px solid;
+  }
+}
+
+
 .input-group {
 
   .form-control {
