@@ -18,7 +18,6 @@ $gray-800: #3F3E62;
 $gray-900: #000638;
 $black:    #383838;
 
-
 $grays: ();
 $grays: map-merge(
   (
@@ -886,17 +885,17 @@ $zindex-tooltip: 1070 !default;
 
 // Navs
 
-$nav-link-padding-y: 0.5rem !default;
-$nav-link-padding-x: 1rem !default;
-$nav-link-disabled-color: $gray-600 !default;
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 1rem;
+$nav-link-disabled-color: $gray-600;
 
-$nav-tabs-border-color: $gray-300 !default;
-$nav-tabs-border-width: $border-width !default;
-$nav-tabs-border-radius: $border-radius !default;
-$nav-tabs-link-hover-border-color: $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color: $gray-700 !default;
-$nav-tabs-link-active-bg: $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-border-color: transparent;
+$nav-tabs-border-width: 0;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-color: $primary;
+$nav-tabs-link-active-bg: transparent;
+$nav-tabs-link-active-border-color: transparent;
 
 $nav-pills-border-radius: $border-radius !default;
 $nav-pills-link-active-color: $component-active-color;
@@ -1007,9 +1006,9 @@ $pagination-active-color: $component-active-color;
 $pagination-active-bg: $component-active-bg;
 $pagination-active-border-color: $pagination-active-bg;
 
-$pagination-disabled-color: $gray-500;
+$pagination-disabled-color: $gray-600;
 $pagination-disabled-bg: $white;
-$pagination-disabled-border-color: $gray-500;
+$pagination-disabled-border-color: $gray-600;
 
 $pagination-border-radius-sm: $border-radius-sm;
 $pagination-border-radius-lg: $border-radius-lg;
@@ -1208,7 +1207,7 @@ $progress-bar-transition: width 0.6s ease !default;
 
 $list-group-color: null !default;
 $list-group-bg: $white !default;
-$list-group-border-color: rgba($black, 0.125) !default;
+$list-group-border-color: $gray-600;
 $list-group-border-width: $border-width !default;
 $list-group-border-radius: $border-radius !default;
 
@@ -1220,7 +1219,7 @@ $list-group-active-color: $component-active-color;
 $list-group-active-bg: $component-active-bg;
 $list-group-active-border-color: $list-group-active-bg;
 
-$list-group-disabled-color: $gray-600 !default;
+$list-group-disabled-color: $gray-600;
 $list-group-disabled-bg: $list-group-bg !default;
 
 $list-group-action-color: $gray-900;
