@@ -1212,15 +1212,15 @@ $list-group-border-color: $border-color;
 $list-group-border-width: $border-width !default;
 $list-group-border-radius: $border-radius !default;
 
-$list-group-item-padding-y: 0.75rem !default;
-$list-group-item-padding-x: 1.25rem !default;
+$list-group-item-padding-y: 0.75rem;
+$list-group-item-padding-x: 1rem;
 
 $list-group-hover-bg: $gray-100 !default;
 $list-group-active-color: $component-active-color;
 $list-group-active-bg: $component-active-bg;
 $list-group-active-border-color: $list-group-active-bg;
 
-$list-group-disabled-color: $gray-600;
+$list-group-disabled-color: $gray-500;
 $list-group-disabled-bg: $list-group-bg !default;
 
 $list-group-action-color: $gray-900;

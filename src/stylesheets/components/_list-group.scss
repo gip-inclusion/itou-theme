@@ -1,0 +1,8 @@
+.c-list-group {
+  background-color: $white;
+  box-shadow: $box-shadow-sm;
+
+  &-item {
+    @extend .py-3;
+  }
+}

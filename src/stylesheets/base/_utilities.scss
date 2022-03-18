@@ -68,3 +68,10 @@
 .white-space-nowrap {
   white-space: nowrap !important;
 }
+
+.has-ellipsis {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
