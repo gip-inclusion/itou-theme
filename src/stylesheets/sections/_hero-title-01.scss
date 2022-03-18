@@ -54,25 +54,25 @@
   }
 
   &--marche {
-    .s-hero-title-01__col--article h2::after {
+    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
       background-color: $marche;
     }
   }
 
   &--emploi {
-    .s-hero-title-01__col--article h2::after {
+    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
       background-color: $emploi;
     }
   }
 
   &--pilotage {
-    .s-hero-title-01__col--article h2::after {
+    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
       background-color: $pilotage;
     }
   }
 
   &--communaute {
-    .s-hero-title-01__col--article h2::after {
+    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
       background-color: $communaute;
     }
   }

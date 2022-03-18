@@ -281,8 +281,9 @@ ul.pagination {
   cursor: pointer;
 }
 
-.form-group > label {
-  font-weight: $font-weight-bold
+.form-group > label,
+.input-group > label {
+  font-weight: $font-weight-bold;
 }
 
 .form-control.is-valid:focus,
