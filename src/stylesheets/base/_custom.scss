@@ -286,6 +286,14 @@ ul.pagination {
   font-weight: $font-weight-bold;
 }
 
+.form-group-required > label::after,
+.form-group-required > div > label::after,
+label.required::after {
+  content: " *";
+  font-weight: $font-weight-bold;
+  font-size: $font-size-base;
+}
+
 .form-control.is-valid:focus,
 .was-validated .form-control:valid:focus,
 .form-control.is-invalid:focus,
@@ -514,7 +522,7 @@ iframe {
 
 .nav-tabs {
   justify-content: center;
-  border-bottom: 1px solid $gray-600;
+  border-bottom: 1px solid $border-color;
   @extend .pb-4;
   @extend .pt-3;
 

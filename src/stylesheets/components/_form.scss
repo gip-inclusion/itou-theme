@@ -1,0 +1,31 @@
+.c-form {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow-lg;
+  padding: map-get($spacers, 3);
+
+  @include media-breakpoint-up(lg) {
+    padding: map-get($spacers, 5);
+  }
+
+  legend {
+    @extend .h2;
+    @extend .mb-0;
+  }
+
+  fieldset {
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: map-get($spacers, 3);
+    }
+  }
+
+  .alerts-sticky-top {
+    @include media-breakpoint-up(lg) {
+      position: sticky;
+      z-index: 1020;
+      top: 131px;
+    }
+  }
+}
