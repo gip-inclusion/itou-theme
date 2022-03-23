@@ -318,15 +318,6 @@ label.required::after {
   opacity: 0.5;
 }
 
-.custom-switch {
-  .custom-control-input:checked ~ .custom-control-label {
-    &::after {
-      background-color: $success;
-      border: 2px solid $white;
-    }
-  }
-}
-
 .custom-switch.is-rtl {
   padding-left: 0 !important;
   padding-right: $custom-switch-width + $custom-control-gutter;
@@ -433,6 +424,11 @@ label.required::after {
       }
     }
   }
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $success;
+  border-color: $success;
 }
 
 .custom-control-input:disabled ~ .custom-control-label::before,
