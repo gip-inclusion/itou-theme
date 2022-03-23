@@ -318,26 +318,30 @@ label.required::after {
   opacity: 0.5;
 }
 
-.custom-switch.is-rtl {
-  padding-left: 0 !important;
-  padding-right: $custom-switch-width + $custom-control-gutter;
+.custom-checkbox,
+.custom-radio {
+  .custom-control-input:disabled ~ .custom-control-label::before,
+  .custom-control-input[disabled] ~ .custom-control-label::before {
+    border-color: $gray-600;
+    background-color: $white;
+  }
+}
 
-  .custom-control-label {
+.custom-switch {
 
-    &::before {
-      left: initial;
-      right: -($custom-switch-width + $custom-control-gutter);
-    }
-
-    &::after {
-      left: initial;
-      right: add(-($custom-switch-width + $custom-control-gutter), $custom-control-indicator-border-width * 2);
-      transform: translateX(- .75rem);
-    }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $success;
+    border-color: $success;
   }
 
-  .custom-control-input:checked ~ .custom-control-label::after {
-    transform: translateX(0);
+  .custom-control-input:disabled ~ .custom-control-label::before,
+  .custom-control-input[disabled] ~ .custom-control-label::before {
+    border-color: $custom-control-indicator-disabled-bg;
+  }
+
+  .custom-control-input:disabled ~ .custom-control-label::after,
+  .custom-control-input[disabled] ~ .custom-control-label::after {
+    background-color: $white;
   }
 }
 
@@ -426,21 +430,28 @@ label.required::after {
   }
 }
 
-.custom-control-input:checked ~ .custom-control-label::before {
-  background-color: $success;
-  border-color: $success;
-}
+.custom-switch.is-rtl {
+  padding-left: 0 !important;
+  padding-right: $custom-switch-width + $custom-control-gutter;
 
-.custom-control-input:disabled ~ .custom-control-label::before,
-.custom-control-input[disabled] ~ .custom-control-label::before {
-  border-color: $custom-control-indicator-disabled-bg;
-}
+  .custom-control-label {
 
-.custom-switch .custom-control-input:disabled ~ .custom-control-label::after,
-.custom-switch .custom-control-input[disabled] ~ .custom-control-label::after {
-  background-color: $white;
-}
+    &::before {
+      left: initial;
+      right: -($custom-switch-width + $custom-control-gutter);
+    }
 
+    &::after {
+      left: initial;
+      right: add(-($custom-switch-width + $custom-control-gutter), $custom-control-indicator-border-width * 2);
+      transform: translateX(- .75rem);
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(0);
+  }
+}
 
 .page-link {
   transition: $transition-base;
