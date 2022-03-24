@@ -602,45 +602,6 @@ iframe {
   }
 }
 
-
-.list-group {
-
-  .list-group-collapse-link {
-    position: relative;
-    display: block;
-    text-decoration: none;
-
-    &::before {
-      @extend .mr-1;
-      content: '\ea6e';
-      font-family: remixicon !important;
-      font-style: normal;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      line-height: 1;
-      vertical-align: text-bottom;
-      font-size: 1.25rem;
-      font-weight: $font-weight-bold;
-    }
-
-    &[aria-expanded=true]::before {
-      content: '\ea4e';
-    }
-  }
-
-  .list-group-collapse-content {
-    ul {
-      @extend .list-unstyled;
-      padding-top: $list-group-item-padding-y;
-
-      li {
-        padding-bottom: $list-group-item-padding-y / 2;
-        padding-left: 20px;
-      }
-    }
-  }
-}
-
 .dropdown-toggle {
   &::after {
     border: none;

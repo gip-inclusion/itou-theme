@@ -2,3 +2,55 @@
   background-color: $white;
   box-shadow: $box-shadow-sm;
 }
+
+.c-list-group-collapse {
+
+  .list-group-item {
+
+    > [data-toggle=collapse] {
+      @extend .d-flex;
+      @extend .justify-content-between;
+      position: relative;
+      text-decoration: none;
+
+      &::after {
+        @extend .mr-1;
+        content: '\ea4e';
+        font-family: remixicon !important;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1;
+        vertical-align: text-bottom;
+        font-size: 1.25rem;
+        font-weight: $font-weight-bold;
+      }
+
+      &[aria-expanded=true]::after {
+        content: '\ea78';
+      }
+    }
+
+    ul {
+      @extend .list-unstyled;
+      padding-top: $list-group-item-padding-y;
+
+      li {
+        padding-bottom: $list-group-item-padding-y / 2;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.c-list-group-form {
+
+  .list-group-item {
+    border-color: $gray-700;
+    border-width: 2px;
+
+    + .list-group-item {
+      border-top-width: 0;
+    }
+  }
+}
