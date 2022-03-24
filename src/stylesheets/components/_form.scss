@@ -12,21 +12,28 @@
     @extend .h2;
   }
 
-  fieldset {
-    border-bottom: 1px solid $border-color;
-    margin-bottom: map-get($spacers, 3);
-
-    @include media-breakpoint-up(lg) {
-      padding-bottom: map-get($spacers, 2);
-      margin-bottom: map-get($spacers, 5);
-    }
+  hr {
+    margin-top: 0;
+    margin-bottom: map-get($spacers, 5);
   }
 
-  .alerts-sticky-top {
+  .alert p.has-ellipsis {
+    display: initial;
+    text-overflow: initial;
+    white-space: initial;
+    overflow: initial;
+
     @include media-breakpoint-up(lg) {
-      position: sticky;
-      z-index: 1020;
-      top: 131px;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      &:hover {
+        text-overflow: initial;
+        white-space: initial;
+        overflow: initial;
+      }
     }
   }
 }

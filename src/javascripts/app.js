@@ -34,8 +34,7 @@ $('[data-toggle=burger]').on('click tap', function(e) {
 $('.input-group .form-control').on('focus', function(e) {
   e.preventDefault();
   $(this).parent('.input-group').toggleClass('has-focus');
-});
-$('.input-group .form-control').on('blur', function(e) {
+}).on('blur', function(e) {
   e.preventDefault();
   $(this).parent('.input-group').toggleClass('has-focus');
 });
@@ -46,4 +45,14 @@ $('body').on('keydown input', 'textarea[data-expandable]', function() {
 }).on('mousedown focus', 'textarea[data-expandable]', function() {
   this.style.removeProperty('height');
   this.style.height = (this.scrollHeight+2) + 'px';
+});
+
+$('[data-target-conseil]').on('focus', function(e) {
+  e.preventDefault();
+  let thisTarget = $(this).data('target-conseil');
+  $('#'+thisTarget).toggleClass('has-ellipsis');
+}).on('blur', function(e) {
+  e.preventDefault();
+  let thisTarget = $(this).data('target-conseil');
+  $('#'+thisTarget).toggleClass('has-ellipsis');
 });

@@ -246,9 +246,9 @@
                 </li>
               </ul>
               <form class="pt-3 pt-lg-5 js-needs-validation" novalidate>
-                <div class="row">
-                  <div class="col-12 col-lg-7">
-                    <fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
                       <legend>Titre de ce fieldset</legend>
                       <div class="form-group">
                         <div class="custom-control custom-radio">
@@ -260,22 +260,37 @@
                           <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
                         </div>
                       </div>
-                    </fieldset>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-lg-7">
-                    <fieldset>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
+                      <hr>
                       <legend>Titre de ce fieldset (Optionnel)</legend>
                       <div class="form-group form-group-required">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
                       <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="text" class="form-control" id="exampleInputPassword1" data-target-conseil="exampleInputPassword1Conseil">
                       </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                      <div class="alert alert-info mt-lg-3">
+                        <p class="mb-1"><i class="ri-information-line ri-xl text-info mr-2"></i><strong>Conseil Password</strong></p>
+                        <p class="mb-0 has-ellipsis" id="exampleInputPassword1Conseil">Because I want to feel motivated and like I’m working hard and doing something good!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
                       <div class="form-group">
                         <div class="custom-control custom-checkbox">
                           <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -290,27 +305,13 @@
                         <label for="exampleFormControlTextarea1">Example expendable textarea</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-expandable="true"></textarea>
                       </div>
-                    </fieldset>
-                  </div>
-                  <div class="col-12 col-lg-5">
-                    <div class="alerts-sticky-top">
-                      <div class="alert alert-info mb-5 mt-lg-6">
-                        <div class="row">
-                          <div class="col-auto pr-0">
-                            <i class="ri-information-line ri-xl text-info"></i>
-                          </div>
-                          <div class="col">
-                            <p class="mb-0"><strong>Bloc d'infos du 1er fieldset</strong></p>
-                            <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-lg-7">
-                    <fieldset>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
+                      <hr>
                       <legend>Titre de ce fieldset (Optionnel)</legend>
                       <div class="form-row">
                         <div class="form-group col-md-6">
@@ -322,10 +323,24 @@
                           <input type="password" class="form-control" id="inputPassword4">
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
                       <div class="form-group">
                         <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"  data-target-conseil="exampleInputAddres1Conseil">
                       </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                      <div class="alert alert-info mt-lg-3">
+                        <p class="mb-1"><i class="ri-information-line ri-xl text-info mr-2"></i> <strong>Conseil address</strong></p>
+                        <p class="mb-0 has-ellipsis" id="exampleInputAddres1Conseil">Because I want to feel motivated and like I’m working hard and doing something good!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
                       <div class="form-group">
                         <label for="inputAddress2">Address 2</label>
                         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
@@ -505,150 +520,127 @@
                             <p>Le Ministère du Travail (DGEFP) et Pôle emploi traitent vos données personnelles. Ce site est ouvert aux acteurs de l'inclusion et permet de simplifier le recrutement des personnes éligibles aux structures de l'Insertion par l'Activité Économique (IAE). Il est une composante du Pacte ambition IAE.
                               Pour plus d'information sur le traitement de vos données personnelles ou pour exercer vos droits, consultez la section Protection des données. En cliquant sur le bouton "Valider la demande", vous acceptez les conditions générales d'utilisation.</p>
                               <a href="" class="font-weight-bold">Label lien</a>
+                            </div>
                           </div>
-                        </div>
                       </div>
-                    </fieldset>
+                    </div>
                   </div>
-                  <div class="col-12 col-lg-5">
-                    <div class="alerts-sticky-top">
-                      <div class="alert alert-info mt-lg-6">
-                        <div class="row">
-                          <div class="col-auto pr-0">
-                            <i class="ri-information-line ri-xl text-info"></i>
+                  </fieldset>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-12 col-lg-7">
+                        <hr>
+                        <legend>Titre de ce fieldset (Optionnel)</legend>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom01">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
                           </div>
-                          <div class="col">
-                            <p class="mb-0"><strong>Bloc d'infos du 2eme fieldset</strong></p>
-                            <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good!</p>
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
                           </div>
                         </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom05">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid zip.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
+                            <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
+                            <div class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
                       </div>
-                      <div class="alert alert-info mb-5">
-                        <div class="row">
-                          <div class="col-auto pr-0">
-                            <i class="ri-information-line ri-xl text-info"></i>
-                          </div>
-                          <div class="col">
-                            <p class="mb-0">Bloc 2 d'infos du 2eme fieldset</p>
-                          </div>
+                    </div>
+                  </fieldset>
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
+                      <div class="form-row align-items-center">
+                        <div class="form-group col-12 col-lg order-3 order-lg-1">
+                          <a href="" class="btn btn-link btn-ico pl-0" title="Retour à l'étape précédente">
+                            <i class="ri-arrow-go-back-line ri-lg"></i>
+                            <span>Retour</span>
+                          </a>
+                        </div>
+                        <div class="form-group col-6 col-lg-auto order-1 order-lg-2">
+                          <button type="reset" class="btn btn-block btn-outline-primary">Annuler</button>
+                        </div>
+                        <div class="form-group col-6 col-lg-auto order-2 order-lg-3">
+                          <button type="submit" class="btn btn-block btn-primary">Envoyer</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-lg-7">
-                    <fieldset>
-                      <legend>Titre de ce fieldset (Optionnel)</legend>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom01">First name</label>
-                          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom02">Last name</label>
-                          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom03">City</label>
-                          <input type="text" class="form-control" id="validationCustom03" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom05">Zip</label>
-                          <input type="text" class="form-control" id="validationCustom05" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
-                          <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
-                          <div class="invalid-feedback">
-                            You must agree before submitting.
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-lg-7">
-                    <div class="form-row align-items-center">
-                      <div class="form-group col-12 col-lg order-3 order-lg-1">
-                        <a href="" class="btn btn-link btn-ico pl-0" title="Retour à l'étape précédente">
-                          <i class="ri-arrow-go-back-line ri-lg"></i>
-                          <span>Retour</span>
-                        </a>
-                      </div>
-                      <div class="form-group col-6 col-lg-auto order-1 order-lg-2">
-                        <button type="reset" class="btn btn-block btn-outline-primary">Annuler</button>
-                      </div>
-                      <div class="form-group col-6 col-lg-auto order-2 order-lg-3">
-                        <button type="submit" class="btn btn-block btn-primary">Envoyer</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="s-section">
-      <div class="s-section__container container">
-        <div class="s-section__row row">
-          <div class="s-section__col col-12">
-            <p>Base section content</p>
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <div class="s-section__col col-12">
+              <p>Base section content</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+    </main>
 
-  <%- include('_sections/prefooter', {currentPrefooterBaseline: 'aux emplois', currentPrefooterLogo: 'logo-emploi-inclusion.svg', modifier: 's-prefooter--emploi'} ) %>
-  <%- include('_sections/footer') %>
+    <%- include('_sections/prefooter', {currentPrefooterBaseline: 'aux emplois', currentPrefooterLogo: 'logo-emploi-inclusion.svg', modifier: 's-prefooter--emploi'} ) %>
+    <%- include('_sections/footer') %>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  <script src="javascripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="javascripts/app.js"></script>
 
 
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('js-needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('js-needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
     </script>
-</body>
+  </body>
 
-</html>
+  </html>
