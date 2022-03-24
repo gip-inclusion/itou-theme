@@ -640,3 +640,18 @@ iframe {
     }
   }
 }
+
+.dropdown-toggle {
+  &::after {
+    border: none;
+    content: '\ea4e';
+    font-family: remixicon !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    vertical-align: text-bottom;
+    font-size: 1.25rem;
+    font-weight: $font-weight-bold;
+  }
+}
