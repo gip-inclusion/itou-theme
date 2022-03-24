@@ -10,14 +10,15 @@
 
   legend {
     @extend .h2;
-    @extend .mb-0;
   }
 
   fieldset {
-    margin-bottom: 0;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: map-get($spacers, 3);
 
     @include media-breakpoint-up(lg) {
-      margin-bottom: map-get($spacers, 3);
+      padding-bottom: map-get($spacers, 2);
+      margin-bottom: map-get($spacers, 5);
     }
   }
 
