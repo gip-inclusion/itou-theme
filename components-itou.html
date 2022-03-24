@@ -251,7 +251,7 @@
                 <div class="row">
                   <div class="col-12 col-md-10 mb-3 mb-md-5">
                     <ul class="list-group c-list-group">
-                      <li class="list-group-item c-list-group-item">
+                      <li class="list-group-item">
                         <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
                           <span class="d-flex align-items-center">
                             <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
@@ -260,7 +260,7 @@
                           <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Le Bouscat - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
                         </a>
                       </li>
-                      <li class="list-group-item c-list-group-item">
+                      <li class="list-group-item">
                         <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
                           <span class="d-flex align-items-center">
                             <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
@@ -269,7 +269,7 @@
                           <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Beychac-et-Caillau - 72<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
                         </a>
                       </li>
-                      <li class="list-group-item c-list-group-item">
+                      <li class="list-group-item">
                         <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
                           <span class="d-flex align-items-center">
                             <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
@@ -278,7 +278,7 @@
                           <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Belvès-de-Castillon - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
                         </a>
                       </li>
-                      <li class="list-group-item c-list-group-item">
+                      <li class="list-group-item">
                         <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
                           <span class="d-flex align-items-center">
                             <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
@@ -287,7 +287,7 @@
                           <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Belvès-de-Castillon - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
                         </a>
                       </li>
-                      <li class="list-group-item c-list-group-item">
+                      <li class="list-group-item">
                         <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
                           <span class="d-flex align-items-center">
                             <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
@@ -296,7 +296,7 @@
                           <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Belvès-de-Castillon - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
                         </a>
                       </li>
-                      <li class="list-group-item c-list-group-item">
+                      <li class="list-group-item">
                         <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
                           <span class="d-flex align-items-center">
                             <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
@@ -309,13 +309,13 @@
                   </div>
                 </div>
                 <br>
-                <p>Une variante itou avec un collapse de BS4.</p>
+                <p>Une variante itou avec un <code>c-list-group-collapse</code> de BS4.</p>
                 <div class="row">
                   <div class="col-12 col-md-10 mb-3 mb-md-5">
-                    <ul class="list-group">
+                    <ul class="list-group c-list-group-collapse">
                       <li class="list-group-item">
-                        <a class="list-group-collapse-link font-weight-bold" data-toggle="collapse" href="#collapseExample01" role="button" aria-expanded="false" aria-controls="collapseExample01">Hygiène et propreté</a>
-                        <div class="list-group-collapse-content collapse" id="collapseExample01">
+                        <a class="font-weight-bold" data-toggle="collapse" href="#collapseExample01" role="button" aria-expanded="false" aria-controls="collapseExample01">Hygiène et propreté</a>
+                        <div class="collapse" id="collapseExample01">
                           <ul>
                             <li>
                               <div class="custom-control custom-checkbox">
@@ -351,8 +351,8 @@
                         </div>
                       </li>
                       <li class="list-group-item">
-                        <a class="list-group-collapse-link font-weight-bold" data-toggle="collapse" href="#collapseExample02" role="button" aria-expanded="false" aria-controls="collapseExample02">Bâtiment et travaux publics</a>
-                        <div class="list-group-collapse-content collapse" id="collapseExample02">
+                        <a class="font-weight-bold" data-toggle="collapse" href="#collapseExample02" role="button" aria-expanded="false" aria-controls="collapseExample02">Bâtiment et travaux publics</a>
+                        <div class="collapse" id="collapseExample02">
                           <ul>
                             <li>
                               <div class="custom-control custom-checkbox">
@@ -388,8 +388,89 @@
                         </div>
                       </li>
                       <li class="list-group-item">
-                        <a class="list-group-collapse-link font-weight-bold" data-toggle="collapse" href="#collapseExample03" role="button" aria-expanded="false" aria-controls="collapseExample03">Entretiens du linge</a>
-                        <div class="list-group-collapse-content collapse" id="collapseExample03">
+                        <a class="font-weight-bold" data-toggle="collapse" href="#collapseExample03" role="button" aria-expanded="false" aria-controls="collapseExample03">Entretiens du linge</a>
+                        <div class="collapse" id="collapseExample03">
+                          <ul>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Une variante itou a placer dans un formulaire <code>.c-list-group-form</code>.</p>
+                <div class="row">
+                  <div class="col-12 col-md-10 mb-3 mb-md-5">
+                    <ul class="list-group c-list-group-collapse c-list-group-form">
+                      <li class="list-group-item">
+                        <a class="font-weight-bold" data-toggle="collapse" href="#collapseExample04" role="button" aria-expanded="false" aria-controls="collapseExample04">Hygiène et propreté</a>
+                        <div class="collapse" id="collapseExample04">
+                          <ul>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <a class="font-weight-bold" data-toggle="collapse" href="#collapseExample06" role="button" aria-expanded="false" aria-controls="collapseExample06">Entretiens du linge</a>
+                        <div class="collapse" id="collapseExample06">
                           <ul>
                             <li>
                               <div class="custom-control custom-checkbox">
