@@ -17,6 +17,15 @@
     margin-bottom: map-get($spacers, 5);
   }
 
+  .alert-sticky-top {
+
+    @include media-breakpoint-up(lg) {
+      position: sticky;
+      top: 130px;
+      z-index: 1020;
+    }
+  }
+
   .alert p.has-ellipsis {
     display: initial;
     text-overflow: initial;
