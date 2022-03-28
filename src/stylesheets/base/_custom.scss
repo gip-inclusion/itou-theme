@@ -563,40 +563,51 @@ iframe {
       @extend .px-0;
       line-height: $line-height-sm;
       position: relative;
+      color: $primary;
 
-      &.active::after {
+      &::after {
         content: '';
         position: absolute;
         bottom: 0;
         left: -5px;
         width: calc(100% + 10px);
         height: 5px;
-        background-color: $primary;
         border-radius: $rounded-pill;
+        transition: $transition-base;
+        background-color: transparent;
+      }
+
+      &.active::after,
+      &:hover::after {
+        background-color: $primary;
       }
     }
   }
 
   &--marche {
-    .nav-item .nav-link.active::after {
+    .nav-item .nav-link.active::after,
+    .nav-item .nav-link:hover:after {
       background-color: $marche;
     }
   }
 
   &--communaute {
-    .nav-item .nav-link.active::after {
+    .nav-item .nav-link.active::after,
+    .nav-item .nav-link:hover::after {
       background-color: $communaute;
     }
   }
 
   &--pilotage {
-    .nav-item .nav-link.active::after {
+    .nav-item .nav-link.active::after,
+    .nav-item .nav-link:hover::after {
       background-color: $pilotage;
     }
   }
 
   &--emploi {
-    .nav-item .nav-link.active::after {
+    .nav-item .nav-link.active::after,
+    .nav-item .nav-link:hover::after {
       background-color: $emploi;
     }
   }
