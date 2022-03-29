@@ -197,7 +197,7 @@
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Accueil</a></li>
                 <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Formulaire</li>
+                <li class="breadcrumb-item active" aria-current="page">Formulaire simple</li>
               </ol>
             </nav>
           </div>
@@ -229,70 +229,18 @@
           </div>
         </div>
         <div class="s-section__row row">
-          <div class="s-section__col col-12">
-            <div class="c-form pt-0">
-              <ul class="nav nav-tabs nav-tabs--marche">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Critères de recherche</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Votre structure</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Votre offre commerciale</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Groupements</a>
-                </li>
-              </ul>
-              <form class="pt-3 pt-lg-5 js-needs-validation" novalidate>
+          <div class="s-section__col col-12 col-lg-7">
+            <div class="c-form">
+              <form class="js-needs-validation" novalidate>
                 <fieldset>
                   <div class="row">
-                    <div class="col-12 col-lg-7">
-                      <legend>Titre de ce fieldset 1 (Optionnel)</legend>
-                      <div class="form-group">
-                        <div class="custom-control custom-radio">
-                          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                          <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <div class="row">
-                    <div class="col-12 col-lg-7">
-                      <hr>
+                    <div class="col-12">
                       <legend>Titre de ce fieldset 2 (Optionnel)</legend>
                       <div class="form-group form-group-required">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                       </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-lg-7">
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" data-target-conseil="#exampleInputPassword1Conseil">
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-5">
-                      <div class="c-form-conseil">
-                        <div id="exampleInputPassword1Conseil">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam! Labore inventore facere ipsa a magnam ipsam illo illum perspiciatis. Voluptatum qui at laboriosam odit doloremque amet fugiat reiciendis dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam laudantium alias blanditiis qui magni vel. Sunt, animi. Consequuntur rerum in dolor hic corrupti incidunt maiores explicabo dolores eligendi eaque?</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam! Labore inventore facere ipsa a magnam ipsam illo illum perspiciatis. odit doloremque amet fugiat reiciendis dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam laudantium alias blanditiis qui magni vel. Sunt, animi. Consequuntur rerum in dolor hic corrupti incidunt maiores explicabo dolores eligendi eaque?</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-lg-7">
                       <div class="form-group">
                         <div class="custom-control custom-checkbox">
                           <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -312,7 +260,7 @@
                 </fieldset>
                 <fieldset>
                   <div class="row">
-                    <div class="col-12 col-lg-7">
+                    <div class="col-12">
                       <hr>
                       <legend>Titre de ce fieldset 3 (Optionnel)</legend>
                       <div class="form-row">
@@ -508,101 +456,204 @@
                             <p>Le Ministère du Travail (DGEFP) et Pôle emploi traitent vos données personnelles. Ce site est ouvert aux acteurs de l'inclusion et permet de simplifier le recrutement des personnes éligibles aux structures de l'Insertion par l'Activité Économique (IAE). Il est une composante du Pacte ambition IAE.
                               Pour plus d'information sur le traitement de vos données personnelles ou pour exercer vos droits, consultez la section Protection des données. En cliquant sur le bouton "Valider la demande", vous acceptez les conditions générales d'utilisation.</p>
                               <a href="" class="font-weight-bold">Label lien</a>
+                            </div>
                           </div>
-                        </div>
                       </div>
                     </div>
                   </div>
-                </fieldset>
-                <fieldset>
+                  </fieldset>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-12">
+                        <hr>
+                        <legend>Titre de ce fieldset (Optionnel)</legend>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom01">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="validationCustom05">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid zip.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
+                            <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
+                            <div class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </fieldset>
                   <div class="row">
-                    <div class="col-12 col-lg-7">
-                      <hr>
-                      <legend>Titre de ce fieldset 4 (Optionnel)</legend>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom01">First name</label>
-                          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
+                    <div class="col-12">
+                      <div class="form-row align-items-center">
+                        <div class="form-group col-12 col-lg order-3 order-lg-1">
+                          <a href="" class="btn btn-link btn-ico pl-0" title="Retour à l'étape précédente">
+                            <i class="ri-arrow-go-back-line ri-lg"></i>
+                            <span>Retour</span>
+                          </a>
                         </div>
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom02">Last name</label>
-                          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
+                        <div class="form-group col-6 col-lg-auto order-1 order-lg-2">
+                          <button type="reset" class="btn btn-block btn-outline-primary">Annuler</button>
                         </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom03">City</label>
-                          <input type="text" class="form-control" id="validationCustom03" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
+                        <div class="form-group col-6 col-lg-auto order-2 order-lg-3">
+                          <button type="submit" class="btn btn-block btn-primary">Envoyer</button>
                         </div>
-                        <div class="form-group col-md-6">
-                          <label for="validationCustom05">Zip</label>
-                          <input type="text" class="form-control" id="validationCustom05" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
-                          <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
-                          <div class="invalid-feedback">
-                            You must agree before submitting.
-                          </div>
-                        </div>
-                      </div>
-                      <hr>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="row">
-                  <div class="col-12 col-lg-7">
-                    <div class="form-row align-items-center">
-                      <div class="form-group col-12 col-lg order-3 order-lg-1">
-                        <a href="" class="btn btn-link btn-ico pl-0" title="Retour à l'étape précédente">
-                          <i class="ri-arrow-go-back-line ri-lg"></i>
-                          <span>Retour</span>
-                        </a>
-                      </div>
-                      <div class="form-group col-6 col-lg-auto order-1 order-lg-2">
-                        <button type="reset" class="btn btn-block btn-outline-primary">Annuler</button>
-                      </div>
-                      <div class="form-group col-6 col-lg-auto order-2 order-lg-3">
-                        <button type="submit" class="btn btn-block btn-primary">Envoyer</button>
                       </div>
                     </div>
                   </div>
-                </div>
-                </form>
-              </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="s-section">
-        <div class="s-section__container container">
-          <div class="s-section__row row">
-            <div class="s-section__col col-12">
-              <p>Base section content</p>
-            </div>
+    <section class="s-section">
+      <div class="s-section__container container">
+        <div class="s-section__row row">
+          <div class="s-section__col col-12">
+            <p>Base section content</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     </main>
 
-    <%- include('_sections/prefooter', {currentPrefooterBaseline: 'aux emplois', currentPrefooterLogo: 'logo-emploi-inclusion.svg', modifier: 's-prefooter--emploi'} ) %>
-    <%- include('_sections/footer') %>
+    <section class="s-prefooter s-prefooter--emploi">
+  <div class="s-prefooter__container container">
+    <div class="s-prefooter__row row">
+      <div class="s-prefooter__col col-12 col-sm-auto d-flex align-items-center">
+        <div class="s-prefooter__logo">
+          <img src="images/logo-emploi-inclusion.svg" alt="">
+        </div>
+      </div>
+      <div class="s-prefooter__col col-12 col-sm d-flex align-items-center justify-content-start justify-content-sm-end justify-content-lg-start">
+        <p class="mb-0">Le site de la plateforme <br class="d-none d-xl-inline">de l'inclusion dédiée <br class="d-none d-xl-inline">aux emplois</p>
+      </div>
+      <div class="s-prefooter__col col-12 col-lg-6 d-flex align-items-center">
+        <ul class="s-prefooter__gridlist">
+          <li><a href="" rel="noopener" target="_blank" title="Item lien footer (lien externe)">Item lien footer</a><i class="ri-external-link-line ml-1 font-weight-bold"></i></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="" rel="noopener" target="_blank" title="Item lien footer (lien externe)">Item lien footer sur deux lignes</a><i class="ri-external-link-line ml-1 font-weight-bold"></i></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="" rel="noopener" target="_blank" title="Item lien footer (lien externe)">Item lien footer</a><i class="ri-external-link-line ml-1 font-weight-bold"></i></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="">Item lien footer</a></li>
+          <li><a href="" rel="noopener" target="_blank" title="Item lien footer (lien externe)">Item lien footer</a><i class="ri-external-link-line ml-1 font-weight-bold"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="s-footer" role="contentinfo" id="footer">
+  <section class="s-footer-help">
+    <div class="s-footer-help__container container">
+      <div class="s-footer-help__row row">
+        <div class="s-footer-help__col col-12 col-lg">
+          <ul>
+            <li><a href="#" rel="noopener" target="_blank" title="Besoin d'aide ? (lien externe)">Besoin d'aide ?</a><i class="ri-external-link-line ml-1 font-weight-bold"></i></li>
+            <li><a href="#" rel="noopener" target="_blank" title="Nous contacter (lien externe)">Nous contacter</a><i class="ri-external-link-line ml-1 font-weight-bold"></i></li>
+            <li><a href="#" rel="noopener" target="_blank" title="Inscription Newsletter (lien externe)">Inscription Newsletter</a><i class="ri-external-link-line ml-1 font-weight-bold"></i></li>
+          </ul>
+        </div>
+        <div class="s-footer-help__col col-12 col-lg-auto">
+          <ul>
+            <li><span>Nous suivre</span></li>
+            <li><a href="https://twitter.com/inclusion_gouv" rel="noopener" target="_blank"><img src="images/picto-twitter.svg" height="25" alt="Rejoignez-nous sur Twitter (lien externe)"></a></li>
+            <li><a href="https://www.linkedin.com/company/inclusion-gouv/" rel="noopener" target="_blank"><img src="images/picto-linkedin.svg" height="25" alt="Rejoignez-nous sur Linkedin (lien externe)"></a></li>
+            <li><a href="https://www.facebook.com/inclusion.gouv/" rel="noopener" target="_blank"><img src="images/picto-facebook.svg" height="25" alt="Rejoignez-nous sur Facebook (lien externe)"></a></li>
+            <li><a href="https://www.instagram.com/inclusion_gouv/" rel="noopener" target="_blank"><img src="images/picto-instagram.svg" height="25" alt="Rejoignez-nous sur Instagram (lien externe)"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC06_yIYfzAiDOMTemH9q3OQ" rel="noopener" target="_blank"><img src="images/picto-youtube.svg" height="25" alt="Rejoignez-nous sur Youtube (lien externe)"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-footer-nav">
+    <div class="s-footer-nav__container container">
+      <div class="s-footer-nav__row row">
+        <div class="s-footer-nav__col col-5 col-lg-2 d-flex align-items-center">
+          <div class="s-footer-nav__logo">
+            <img src="images/logo-republique-francaise.svg" alt="Rébublique Française" class="img-fluid">
+          </div>
+        </div>
+        <div class="s-footer-nav__col col-7 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start">
+          <div class="d-inline-block text-center">
+            <span class="d-block">
+              <img src="images/logo-plateforme-inclusion.svg" height="60" alt="Plateforme de l'inclusion">
+            </span>
+            <span class="d-block mt-2">
+              <img src="images/logo-accelere-betagouv.svg" alt="Accéléré par Beta.gouv.fr">
+            </span>
+          </div>
+        </div>
+        <div class="s-footer-nav__col col-12 col-lg-6 d-flex align-items-center">
+          <div>
+            <p class="mb-3">Notre mantra issu du Pacte Ambition IAE : Permettre à chacun de trouver sa place. Libérons notre potentiel d'inclusion pour créer 100 000 emplois de plus.</p>
+            <ul>
+              <li><a href="https://emplois.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="Les emplois (lien externe)">Les emplois</a></li>
+              <li><a href="https://communaute.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="La communauté (lien externe)">La communauté</a></li>
+              <li><a href="https://pilotage.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="Le pilotage (lien externe)">Le pilotage</a></li>
+              <li><a href="https://lemarche.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="Le marché (lien externe)">Le marché</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-footer-legal">
+    <div class="s-footer-legal__container container">
+      <div class="s-footer-legal__row row">
+        <div class="s-footer-legal__col col-12 col-lg">
+          <ul>
+            <li><a href="#" rel="noopener" target="_blank">Mentions légales</a></li>
+            <li><a href="#" rel="noopener" target="_blank">Gestion des cookies</a></li>
+            <li><a href="#" rel="noopener" target="_blank">Accessibilité : non conforme</a></li>
+          </ul>
+        </div>
+        <div class="s-footer-legal__col col-12 col-lg text-lg-right"><span>© République Française 2021</span></div>
+      </div>
+    </div>
+  </section>
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
