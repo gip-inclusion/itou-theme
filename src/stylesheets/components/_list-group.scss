@@ -46,7 +46,7 @@
 .c-list-group-form {
 
   .list-group-item {
-    border-color: $gray-700;
+    border-color: $input-border-color;
     border-width: 2px;
 
     + .list-group-item {
