@@ -30,14 +30,6 @@
 
       @include media-breakpoint-up(lg) {
         margin-top: map-get($spacers, 5);
-        position: absolute;
-        line-height: $line-height-base;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        max-height: 52px;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
       }
 
       p {
@@ -48,13 +40,18 @@
         }
       }
 
-      &.is-opened {
-        overflow: initial;
-        text-overflow: initial;
-        display: block;
-        max-height: initial;
-        -webkit-line-clamp: initial;
-        -webkit-box-orient: initial;
+      &.is-openable {
+
+        @include media-breakpoint-up(lg) {
+          position: absolute;
+          line-height: $line-height-base;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          max-height: 52px;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
       }
     }
   }

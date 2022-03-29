@@ -50,9 +50,9 @@ $('body').on('keydown input', 'textarea[data-expandable]', function() {
 $('[data-target-conseil]').on('focus', function(e) {
   e.preventDefault();
   let thisTarget = $(this).data('target-conseil');
-  $(thisTarget).toggleClass('is-opened');
+  $(thisTarget).toggleClass('is-openable');
 }).on('blur', function(e) {
   e.preventDefault();
   let thisTarget = $(this).data('target-conseil');
-  $(thisTarget).toggleClass('is-opened');
+  $(thisTarget).toggleClass('is-openable');
 });
