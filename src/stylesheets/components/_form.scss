@@ -29,21 +29,21 @@
       font-size: $font-size-base;
 
       @include media-breakpoint-up(lg) {
+        position: absolute;
         margin-top: map-get($spacers, 5);
       }
 
       p {
-        @extend .mb-0;
+        margin-bottom: 0;
 
         + p {
-          @extend .mt-3;
+          margin-top: map-get($spacers, 3);
         }
       }
 
       &.is-openable {
 
         @include media-breakpoint-up(lg) {
-          position: absolute;
           line-height: $line-height-base;
           overflow: hidden;
           text-overflow: ellipsis;
