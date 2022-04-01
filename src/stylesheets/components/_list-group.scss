@@ -34,10 +34,10 @@
     ul {
       @extend .list-unstyled;
       padding-top: $list-group-item-padding-y;
+      padding-left: map-get($spacers, 3);
 
-      li {
-        padding-bottom: $list-group-item-padding-y / 2;
-        padding-left: 20px;
+      li + li {
+        padding-top: $list-group-item-padding-y / 2;
       }
     }
   }
