@@ -1,14 +1,15 @@
-.select2-container--bootstrap4 {
+.select2-container {
   .select2-selection--multiple {
-
     // height of input box
     min-height: $input-height !important; // stylelint-disable-line declaration-no-important
+    padding-bottom: 0 !important;
 
     // input box
     .select2-selection__rendered {
+      display: inline-block !important;
       box-sizing: border-box;
       width: 100%;
-      padding: 0 $input-padding-x / 2;
+      padding: $input-padding-x / 2 $input-padding-x / 2 0 $input-padding-x / 2 !important;
       margin: 0;
       list-style: none;
     }
@@ -17,13 +18,14 @@
     .select2-selection__choice {
       float: left;
       padding: 0;
-      padding-right: $input-padding-x;
+      padding-right: $input-padding-x / 2 !important;
       margin-top: calc(#{$input-padding-y} - 2px);
-      margin-right: $input-padding-x / 2;
-      color: $input-color;
+      margin-right: 0.25rem !important;
+      color: $component-active-color !important;
       cursor: pointer;
-      border: 1px solid darken($light, 20%);
-      @include border-radius($input-border-radius-sm);
+      border: none !important;
+      border-radius: 50rem !important;
+      background-color: $component-active-bg !important;
     }
 
     // search field
@@ -43,10 +45,13 @@
       padding-left: 3px;
       margin-right: 1px;
       margin-left: 3px;
-      font-weight: 700;
-      color: darken($light, 20%);
+      font-weight: 400 !important;
+      color: $list-group-hover-bg !important;
+      border-right: none !important;
+
       &:hover {
-        color: $dark;
+        background-color: $component-active-bg !important;
+        color: $white !important;
       }
     }
 
@@ -54,7 +59,7 @@
     .select2-selection__clear {
       position: absolute !important; // stylelint-disable-line declaration-no-important
       top: 0;
-      right: .7em;
+      right: 0.7em;
       // overwrite layout.scss
       float: none;
       margin-right: 0;
