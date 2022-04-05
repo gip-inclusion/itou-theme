@@ -79,3 +79,25 @@
 .has-ratio-16-9 {
   aspect-ratio: 16 / 9;
 }
+
+.has-collapse-caret {
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    @extend .ml-1;
+    content: '\ea4e';
+    font-family: remixicon !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    vertical-align: text-bottom;
+    font-size: 1.25rem;
+    font-weight: $font-weight-bold;
+  }
+
+  &[aria-expanded=true]::after {
+    content: '\ea78';
+  }
+}
