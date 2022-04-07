@@ -21,12 +21,25 @@
     position: relative;
 
     > div {
+      position: relative;
       @extend .pl-3;
       @extend .mb-3;
       background-color: $white;
       color: $text-muted;
-      border-left: 2px solid $border-color;
       font-size: $font-size-base;
+
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 5px;
+        border-radius: 5px 0 0 5px;
+        background-color: $primary;
+        transition: all .3s ease-in-out;
+      }
 
       @include media-breakpoint-up(lg) {
         position: absolute;
