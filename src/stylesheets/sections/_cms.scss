@@ -1,0 +1,37 @@
+.s-cms {
+  margin-top: map-get($spacers, 4);
+  margin-bottom: map-get($spacers, 4);
+
+  @include media-breakpoint-up(lg) {
+    margin-top: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 9);
+  }
+
+
+  p + h2 {
+    margin-top: map-get($spacers, 5);
+  }
+
+  p,
+  ul {
+    @include media-breakpoint-up(lg) {
+     font-size: $font-size-lg;
+    }
+  }
+
+
+  &__blockquote {
+    @extend .text-center;
+    @extend .my-5;
+    @extend .bg-marche-lightest;
+    margin-left: calc(50% - 50vw + 10px);
+    margin-right: calc(50% - 50vw + 10px);
+    padding-top: map-get($spacers, 3);
+    padding-bottom: map-get($spacers, 3);
+
+    @include media-breakpoint-up(lg) {
+      padding-top: map-get($spacers, 6);
+      padding-bottom: map-get($spacers, 6);
+    }
+  }
+}

@@ -289,9 +289,9 @@ ul.pagination {
   font-weight: $font-weight-bold;
 }
 
-.form-group-required > label::after,
-.form-group-required > div > label::after,
-label.required::after {
+.form-group-required > label:not(.custom-control-label)::after,
+.form-group-required > div > label:not(.custom-control-label)::after,
+label.required:not(.custom-control-label)::after {
   content: ' *';
   font-weight: $font-weight-bold;
   font-size: $font-size-base;
