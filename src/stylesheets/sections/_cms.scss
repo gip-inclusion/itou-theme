@@ -19,6 +19,26 @@
     }
   }
 
+  .richtext-image {
+    @extend .img-fluid;
+
+    &.full-width {
+      @extend .img-fitcover;
+      @extend .mb-3;
+    }
+
+    &.left {
+      @extend .float-left;
+      @extend .mb-2;
+      @extend .mr-5;
+    }
+
+    &.right {
+      @extend .float-right;
+      @extend .mb-2;
+      @extend .ml-5;
+    }
+  }
 
   &__blockquote {
     @extend .text-center;
