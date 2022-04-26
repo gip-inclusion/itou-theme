@@ -1,4 +1,6 @@
-::selection {
+::selection,
+mark,
+mark  {
   color: $white;
   background-color: $tertiary;
 }
@@ -304,15 +306,25 @@ label.required:not(.custom-control-label)::after {
   box-shadow: none;
 }
 
+.form-group.is-invalid {
+  .invalid-feedback {
+    display: block;
+  }
+}
+
+.form-group.is-invalid .custom-select,
+.form-group.is-invalid .autocomplete__input,
+.custom-select.is-invalid {
+  border-color: $form-feedback-invalid-color !important;
+}
+
 .input-group > .custom-select:not(:first-child),
 .input-group > .form-control:not(:first-child) {
   border-left: transparent;
   padding-left: 0;
 }
 
-.input-group:not(.has-validation)
-  > .custom-file:not(:last-child)
-  .custom-file-label::after,
+.input-group:not(.has-validation) > .custom-file:not(:last-child)  .custom-file-label::after,
 .input-group:not(.has-validation) > .custom-select:not(:last-child),
 .input-group:not(.has-validation) > .form-control:not(:last-child) {
   border-right: transparent;
