@@ -1,4 +1,29 @@
 .c-card {
+
+  .card-header {
+    padding-bottom: map-get($spacers, 3);
+  }
+
+  .card-header,
+  .card-footer {
+    @extend .bg-white;
+  }
+
+  .card-footer {
+    padding: 0 map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 3);
+
+    > * {
+      margin: $modal-footer-margin-between * .5;
+    }
+  }
+
+  .card-body {
+    > p:last-child,
+    > ul:last-child {
+      @extend .mb-0;
+    }
+  }
+
   &--plateforme {
     border-bottom: 10px solid $primary;
   }
@@ -21,21 +46,22 @@
 
   &--mini {
     border-bottom: 0;
-  }
 
-  .card-header {
-    @extend .pb-2;
-  }
-
-  .card-header,
-  .card-footer {
-    @extend .bg-white;
-  }
-
-  .card-body {
-    > p:last-child,
-    > ul:last-child {
-      @extend .mb-0;
+    .card-header,
+    .card-body,
+    .card-footer {
+      padding: map-get($spacers, 3);
     }
+
+    .card-header {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &--noshadow {
+    box-shadow: none !important;
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
   }
 }
