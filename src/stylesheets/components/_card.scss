@@ -1,7 +1,7 @@
 .c-card {
 
   .card-header {
-    padding-bottom: map-get($spacers, 3);
+    padding-bottom: 0 !important;
   }
 
   .card-header,
@@ -10,7 +10,7 @@
   }
 
   .card-footer {
-    padding: 0 map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 3);
+    padding: 0 map-get($spacers, 2) map-get($spacers, 2) map-get($spacers, 2) !important;
 
     > * {
       margin: $modal-footer-margin-between * .5;
@@ -46,16 +46,6 @@
 
   &--mini {
     border-bottom: 0;
-
-    .card-header,
-    .card-body,
-    .card-footer {
-      padding: map-get($spacers, 3);
-    }
-
-    .card-header {
-      padding-bottom: 0 !important;
-    }
   }
 
   &--noshadow {
