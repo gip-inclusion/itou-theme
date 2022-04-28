@@ -1,5 +1,7 @@
 .s-postheader {
-  box-shadow: $box-shadow-sm;
+  position: relative;
+  border-bottom: 1px solid $nuance-08;
+  background-color: $white;
 
   &__container {
     max-width: map-get($container-max-widths, 'xl');

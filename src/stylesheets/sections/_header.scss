@@ -1,8 +1,8 @@
 $header-height: 115px;
 
 .s-header {
+  box-shadow: 0px 12px 19px -10px rgba($primary, 0.1);
   background-color: $white;
-  box-shadow: $box-shadow-lg;
   top: 0;
   left: 0;
   width: 100%;
@@ -93,7 +93,7 @@ $header-height: 115px;
                 width: 6px;
                 top: 2px;
                 left: -16px;
-                border-radius: 10px;
+                border-radius: $rounded-pill;
                 background-color: $primary;
               }
 
@@ -171,7 +171,7 @@ $header-height: 115px;
     height: calc(100vh - #{$header-height});
     background-color: $white;
     @extend .p-5;
-    box-shadow: 0 19px 19px 0 rgba($black, 0.1);
+    box-shadow: 0 19px 19px 0 rgba($primary, 0.1);
 
     nav {
       > ul {

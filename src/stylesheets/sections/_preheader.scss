@@ -1,0 +1,91 @@
+.s-preheader {
+  background-color: $nuance-09;
+  border-bottom: 1px solid $nuance-08;
+  font-size: $font-size-sm;
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+
+  &__container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__col {
+    @extend .py-2;
+
+    > ul {
+      @extend .list-inline;
+      @extend .list-unstyled;
+      @extend .m-0;
+      @extend .p-0;
+
+      > li {
+        @extend .list-inline-item;
+        @extend .m-0;
+        @extend .p-0;
+
+        &:last-child > a {
+          @extend .mr-0;
+        }
+
+        > a {
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
+          @extend .mr-3;
+          @extend .ml-3;
+          color: $link-color;
+
+          &::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: 20px;
+            width: 4px;
+            top: 2px;
+            left: -16px;
+            border-radius: $rounded-pill;
+            background-color: $primary;
+          }
+
+          &.is-plateforme {
+
+            &::before {
+              background-color: $primary;
+            }
+          }
+
+          &.is-emploi {
+
+            &::before {
+              background-color: $emploi;
+            }
+          }
+
+          &.is-communaute {
+
+            &::before {
+              background-color: $communaute;
+            }
+          }
+
+          &.is-pilotage {
+
+            &::before {
+              background-color: $pilotage;
+            }
+          }
+
+          &.is-marche {
+
+            &::before {
+              background-color: $marche;
+            }
+          }
+        }
+      }
+    }
+  }
+}

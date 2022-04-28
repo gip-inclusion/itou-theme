@@ -1,8 +1,8 @@
 .s-prefooter {
   background-color: $white;
   padding-top: map-get($spacers, 3);
-  border-top: 2px solid $black;
-  color: $black;
+  border-top: 2px solid $primary;
+  color: $primary;
 
   @include media-breakpoint-up(lg) {
     padding-top: map-get($spacers, 3);
