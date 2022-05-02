@@ -15,7 +15,7 @@
     content: '\ea6e';
     width: auto;
     height: auto;
-    padding-right: map-get($spacers, 2);
+    padding-right: map-get($spacers, 1);
     padding-top: map-get($spacers, 1);
     font-family: remixicon !important;
     font-style: normal;
@@ -24,6 +24,6 @@
     line-height: 1;
     vertical-align: middle;
     font-weight: $font-weight-bold;
-    font-size: $font-size-lg;
+    font-size: $font-size-base;
   }
 }
