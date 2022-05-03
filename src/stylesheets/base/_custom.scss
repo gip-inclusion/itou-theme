@@ -79,14 +79,35 @@ ol {
 }
 
 .btn.disabled,
-.btn:disabled {
+.btn:disabled,
+.custom-select:disabled {
   pointer-events: none;
 }
 
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: $white !important;
+  background-color: $nuance-06 !important;
+  border-color: $nuance-06 !important;
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: $nuance-06 !important;
+  background-color: $white !important;
+  border-color: $nuance-06 !important;
+}
+
 .form-control:disabled,
-.form-control[readonly] {
+.form-control[readonly],
+.custom-select:disabled {
   pointer-events: none;
-  opacity: $btn-disabled-opacity;
+  border-color: $nuance-06 !important;
+}
+
+.custom-select:disabled,
+select.form-control:disabled {
+  background: $custom-select-disabled-bg $custom-select-disabled-background;
 }
 
 select.form-control {
@@ -329,10 +350,6 @@ label.required:not(.custom-control-label)::after {
 .input-group:not(.has-validation) > .form-control:not(:last-child) {
   border-right: transparent;
   padding-right: 0;
-}
-
-.custom-select:disabled {
-  opacity: 0.5;
 }
 
 .custom-checkbox,
