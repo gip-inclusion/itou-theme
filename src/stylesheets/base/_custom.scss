@@ -364,6 +364,12 @@ label.required:not(.custom-control-label)::after {
   }
 }
 
+.custom-radio {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: transparent;
+  }
+}
+
 .custom-switch {
   .custom-control-input:checked ~ .custom-control-label::before {
     background-color: $success;

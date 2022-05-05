@@ -736,10 +736,8 @@ $custom-checkbox-indicator-indeterminate-color: $custom-control-indicator-checke
 $custom-checkbox-indicator-icon-indeterminate: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'><path stroke='#{$custom-checkbox-indicator-indeterminate-color}' d='M0 2h4'/></svg>");
 $custom-checkbox-indicator-indeterminate-box-shadow: null;
 $custom-checkbox-indicator-indeterminate-border-color: $custom-checkbox-indicator-indeterminate-bg;
-
 $custom-radio-indicator-border-radius: 50%;
-$custom-radio-indicator-icon-checked: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'><circle r='3' fill='#{$custom-control-indicator-checked-color}'/></svg>");
-
+$custom-radio-indicator-icon-checked: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='8' fill='#{$primary}'/></svg>");
 $custom-switch-width: $custom-control-indicator-size * 1.75;
 $custom-switch-indicator-border-radius: $custom-control-indicator-size / 2;
 $custom-switch-indicator-size: subtract(
@@ -768,10 +766,8 @@ $custom-select-bg: $input-bg;
 $custom-select-disabled-bg: $input-disabled-bg;
 $custom-select-bg-size: 24px 24px; // In pixels because image dimensions
 $custom-select-indicator-color: $gray-800;
-//$custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
 $custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='#{$custom-select-indicator-color}' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/></svg>");
-
-$custom-select-disabled-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-disabled-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+$custom-select-disabled-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='#{$custom-select-disabled-color}' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/></svg>");
 $custom-select-background: escape-svg($custom-select-indicator) right $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 $custom-select-disabled-background: escape-svg($custom-select-disabled-indicator) right $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
