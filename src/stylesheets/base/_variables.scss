@@ -501,33 +501,33 @@ $hr-margin-y: $spacer;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding: 0.75rem !default;
-$table-cell-padding-sm: 0.3rem !default;
+$table-cell-padding: 0.75rem;
+$table-cell-padding-sm: 0.5rem;
 
-$table-color: $body-color !default;
-$table-bg: null !default;
-$table-accent-bg: rgba($black, 0.05) !default;
-$table-hover-color: $table-color !default;
-$table-hover-bg: rgba($black, 0.075) !default;
-$table-active-bg: $table-hover-bg !default;
+$table-color: $body-color;
+$table-bg: null;
+$table-accent-bg: $gray-400;
+$table-hover-color: $table-color;
+$table-hover-bg: $gray-400;
+$table-active-bg: $table-hover-bg;
 
 $table-border-width: $border-width;
 $table-border-color: $border-color;
 
-$table-head-bg: $gray-200 !default;
-$table-head-color: $gray-700 !default;
+$table-head-bg: $nuance-10;
+$table-head-color: $body-color;
 $table-th-font-weight: null !default;
 
 $table-dark-color: $white !default;
-$table-dark-bg: $gray-800 !default;
+$table-dark-bg: $primary;
 $table-dark-accent-bg: rgba($white, 0.05) !default;
 $table-dark-hover-color: $table-dark-color !default;
 $table-dark-hover-bg: rgba($white, 0.075) !default;
 $table-dark-border-color: lighten($table-dark-bg, 7.5%) !default;
 
-$table-striped-order: odd !default;
+$table-striped-order: odd;
 
-$table-caption-color: $text-muted !default;
+$table-caption-color: $text-muted;
 
 $table-bg-level: -9 !default;
 $table-border-level: -6 !default;
@@ -1038,19 +1038,19 @@ $card-columns-margin: $card-spacer-y;
 
 // Tooltips
 
-$tooltip-font-size: $font-size-sm !default;
+$tooltip-font-size: $font-size-sm;
 $tooltip-max-width: 200px !default;
-$tooltip-color: $white !default;
-$tooltip-bg: $black !default;
-$tooltip-border-radius: $border-radius !default;
-$tooltip-opacity: 0.9 !default;
+$tooltip-color: $white;
+$tooltip-bg: $tertiary;
+$tooltip-border-radius: $border-radius;
+$tooltip-opacity: 1;
 $tooltip-padding-y: 0.25rem !default;
 $tooltip-padding-x: 0.5rem !default;
 $tooltip-margin: 0 !default;
 
 $tooltip-arrow-width: 0.8rem !default;
 $tooltip-arrow-height: 0.4rem !default;
-$tooltip-arrow-color: $tooltip-bg !default;
+$tooltip-arrow-color: $tooltip-bg;
 
 // Form tooltips must come after regular tooltips
 $form-feedback-tooltip-padding-y: $tooltip-padding-y !default;
@@ -1058,21 +1058,21 @@ $form-feedback-tooltip-padding-x: $tooltip-padding-x !default;
 $form-feedback-tooltip-font-size: $tooltip-font-size !default;
 $form-feedback-tooltip-line-height: $line-height-base;
 $form-feedback-tooltip-opacity: $tooltip-opacity !default;
-$form-feedback-tooltip-border-radius: $tooltip-border-radius !default;
+$form-feedback-tooltip-border-radius: $tooltip-border-radius;
 
 // Popovers
 
-$popover-font-size: $font-size-sm !default;
+$popover-font-size: $font-size-sm;
 $popover-bg: $white !default;
 $popover-max-width: 276px !default;
-$popover-border-width: $border-width !default;
+$popover-border-width: $border-width;
 $popover-border-color: $border-color;
-$popover-border-radius: $border-radius-lg !default;
+$popover-border-radius: $border-radius;
 $popover-inner-border-radius: subtract(
   $popover-border-radius,
   $popover-border-width
 ) !default;
-$popover-box-shadow: 0 0.25rem 0.5rem rgba($black, 0.2) !default;
+$popover-box-shadow: $box-shadow-sm;
 
 $popover-header-bg: darken($popover-bg, 3%) !default;
 $popover-header-color: $headings-color;
