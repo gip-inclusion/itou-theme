@@ -105,9 +105,12 @@ ol {
   border-color: $nuance-06 !important;
 }
 
-.custom-select:disabled,
-select.form-control:disabled {
-  background: $custom-select-disabled-bg $custom-select-disabled-background;
+.custom-select,
+select.form-control {
+
+  &:disabled {
+    background: $custom-select-disabled-bg $custom-select-disabled-background;
+  }
 }
 
 select.form-control {
@@ -378,7 +381,7 @@ label.required:not(.custom-control-label)::after {
   }
 }
 
-.custom-switch-lg {
+.custom-switch.custom-switch-lg {
   padding-left: $custom-switch-width-lg + $custom-control-gutter;
   min-height: 2.1rem;
 

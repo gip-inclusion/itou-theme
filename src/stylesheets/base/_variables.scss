@@ -759,29 +759,25 @@ $custom-select-padding-x: $input-padding-x;
 $custom-select-font-family: $input-font-family;
 $custom-select-font-size: $input-font-size;
 $custom-select-height: $input-height;
-$custom-select-indicator-padding: 1rem; // Extra padding to account for the presence of the background-image based indicator
+$custom-select-indicator-padding: 1.5rem; // Extra padding to account for the presence of the background-image based indicator
 $custom-select-font-weight: $input-font-weight;
 $custom-select-line-height: $input-line-height;
 $custom-select-color: $input-color;
 $custom-select-disabled-color: $gray-700;
 $custom-select-bg: $input-bg;
 $custom-select-disabled-bg: $input-disabled-bg;
-$custom-select-bg-size: 10px 12px; // In pixels because image dimensions
+$custom-select-bg-size: 24px 24px; // In pixels because image dimensions
 $custom-select-indicator-color: $gray-800;
-$custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+//$custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+$custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='#{$custom-select-indicator-color}' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/></svg>");
+
 $custom-select-disabled-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-disabled-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
 $custom-select-background: escape-svg($custom-select-indicator) right $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 $custom-select-disabled-background: escape-svg($custom-select-disabled-indicator) right $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
-$custom-select-feedback-icon-padding-right: add(
-  1em * 0.75,
-  (2 * $custom-select-padding-y * 0.75) + $custom-select-padding-x +
-    $custom-select-indicator-padding
-);
-$custom-select-feedback-icon-position: center right
-  ($custom-select-padding-x + $custom-select-indicator-padding);
-$custom-select-feedback-icon-size: $input-height-inner-half
-  $input-height-inner-half;
+$custom-select-feedback-icon-padding-right: add(1em * 0.75, (2 * $custom-select-padding-y * 0.75) + $custom-select-padding-x + $custom-select-indicator-padding);
+$custom-select-feedback-icon-position: center right ($custom-select-padding-x + $custom-select-indicator-padding);
+$custom-select-feedback-icon-size: $input-height-inner-half $input-height-inner-half;
 
 $custom-select-border-width: $input-border-width;
 $custom-select-border-color: $input-border-color;
