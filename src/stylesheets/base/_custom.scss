@@ -365,9 +365,14 @@ label.required:not(.custom-control-label)::after {
 }
 
 .custom-radio {
-  .custom-control-input:checked ~ .custom-control-label::before {
+  .custom-control-input:checked ~ .custom-control-label::before,
+  .custom-control-input:disabled:checked ~ .custom-control-label::before {
     background-color: transparent;
   }
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: escape-svg($custom-radio-indicator-icon-checked-disabled);
 }
 
 .custom-switch {
