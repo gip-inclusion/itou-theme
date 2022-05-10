@@ -718,10 +718,7 @@ $custom-control-indicator-focus-box-shadow: $input-focus-box-shadow;
 $custom-control-indicator-focus-border-color: $input-focus-border-color;
 
 $custom-control-indicator-active-color: $component-active-color;
-$custom-control-indicator-active-bg: lighten(
-  $component-active-bg,
-  35%
-);
+$custom-control-indicator-active-bg: $primary;
 $custom-control-indicator-active-box-shadow: null;
 $custom-control-indicator-active-border-color: $custom-control-indicator-active-bg;
 
