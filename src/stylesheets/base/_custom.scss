@@ -57,14 +57,26 @@ ol {
 
     > i {
       @extend .mr-1;
-      @extend .ri-xs;
       font-weight: $font-weight-base;
     }
   }
 
   &-sm {
     font-size: $font-size-sm;
-    padding: 0.4rem $badge-padding-x;
+    font-weight: $font-weight-bold;
+    padding: $badge-padding-y $badge-padding-x;
+
+    > i {
+      @extend .mr-1;
+      @extend .ri-xs;
+      font-weight: $font-weight-base;
+    }
+  }
+
+  &-xs {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-normal;
+    padding: 0.25rem $badge-padding-x;
 
     > i {
       @extend .mr-1;
