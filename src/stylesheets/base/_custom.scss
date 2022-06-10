@@ -46,50 +46,6 @@ ol {
   padding-left: map-get($spacers, 3);
 }
 
-.badge {
-  @extend .d-inline-flex;
-  @extend .flex-row;
-  @extend .align-items-center;
-
-  &-base {
-    font-size: $font-size-base;
-    padding: $badge-padding-y $badge-padding-x;
-
-    > i {
-      @extend .mr-1;
-      font-weight: $font-weight-base;
-    }
-  }
-
-  &-sm {
-    font-size: $font-size-sm;
-    font-weight: $font-weight-bold;
-    padding: $badge-padding-y $badge-padding-x;
-
-    > i {
-      @extend .mr-1;
-      @extend .ri-xs;
-      font-weight: $font-weight-base;
-    }
-  }
-
-  &-xs {
-    font-size: $font-size-xs;
-    font-weight: $font-weight-normal;
-    padding: 0.25rem $badge-padding-x;
-
-    > i {
-      @extend .mr-1;
-      @extend .ri-xs;
-      font-weight: $font-weight-base;
-    }
-  }
-
-  + .badge {
-    @extend .ml-1;
-  }
-}
-
 .btn.disabled,
 .btn:disabled,
 .custom-select:disabled {

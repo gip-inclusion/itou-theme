@@ -93,3 +93,22 @@
     }
   }
 }
+
+@mixin badge-outline-variant($bg) {
+  color: $bg;
+  border: 2px solid $bg;
+  background-color: transparent;
+
+  @at-root a#{&} {
+    @include hover-focus() {
+      color: color-yiq($bg);
+      border: 2px solid darken($bg, 10%);
+    }
+
+    &:focus,
+    &.focus {
+      outline: 0;
+      box-shadow: 0 0 0 $badge-focus-width rgba($bg, .5);
+    }
+  }
+}
