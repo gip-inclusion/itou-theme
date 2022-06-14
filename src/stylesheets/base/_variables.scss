@@ -355,10 +355,10 @@ $border-radius-xl: 1rem; // 16px
 
 $rounded-pill: 50rem !default;
 
-$box-shadow-sm: 0 2px 9px 0 rgba($primary, 0.1);
-$box-shadow: 0 2px 9px 0 rgba($primary, 0.2);
-$box-shadow-lg: 0 2px 19px 0 rgba($primary, 0.1);
-$box-shadow-xl: 0 2px 19px 0 rgba($primary, 0.2);
+$box-shadow-sm: 0 2px 8px 0 rgba($primary, 0.1);
+$box-shadow: 0 2px 8px 0 rgba($primary, 0.2);
+$box-shadow-lg: 0 2px 16px 0 rgba($primary, 0.1);
+$box-shadow-xl: 0 2px 16px 0 rgba($primary, 0.2);
 
 $component-active-color: $white;
 $component-active-bg: $primary;
