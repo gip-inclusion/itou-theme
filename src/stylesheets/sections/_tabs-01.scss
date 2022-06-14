@@ -27,6 +27,7 @@
         box-shadow: $box-shadow-lg;
         background-color: $nuance-10;
         font-size: $font-size-base;
+        font-weight: $font-weight-base;
 
         @include media-breakpoint-up(lg) {
           padding: map-get($spacers, 3) !important;
@@ -41,6 +42,7 @@
         }
 
         &.active {
+          font-weight: $font-weight-bold;
           background-color: $white;
 
           &::before {
