@@ -2,11 +2,6 @@
   background-color: $nuance-09;
   border-bottom: 1px solid $nuance-08;
   font-size: $font-size-sm;
-  display: none;
-
-  @include media-breakpoint-up(md) {
-    display: block;
-  }
 
   &__container {
     max-width: map-get($container-max-widths, 'xl');

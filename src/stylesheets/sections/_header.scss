@@ -1,6 +1,7 @@
 $header-height: 115px;
 
 .s-header {
+  position: relative;
   box-shadow: 0px 12px 19px -10px rgba($primary, 0.1);
   background-color: $white;
   top: 0;
@@ -8,9 +9,13 @@ $header-height: 115px;
   width: 100%;
   z-index: $zindex-fixed;
 
+  &.sticky-top {
+    position: sticky !important;
+  }
+
   &.is-opened {
     #burgerNav {
-      display: block;
+      display: flex;
     }
 
     #close {
@@ -163,6 +168,7 @@ $header-height: 115px;
 
   #burgerNav {
     display: none;
+    flex-direction: column;
     position: fixed;
     z-index: 10;
     top: $header-height;
@@ -170,10 +176,12 @@ $header-height: 115px;
     width: 75vw;
     height: calc(100vh - #{$header-height});
     background-color: $white;
-    @extend .p-5;
     box-shadow: 0 19px 19px 0 rgba($primary, 0.1);
 
-    nav {
+    > nav {
+      @extend .p-4;
+      @extend .flex-grow-1;
+
       > ul {
         @extend .list-unstyled;
         @extend .m-0;
@@ -191,9 +199,9 @@ $header-height: 115px;
 
           > a,
           > button {
-            @extend .mr-3;
-            @extend .mb-3;
-            @extend .mt-3;
+            @extend .mr-2;
+            @extend .mb-2;
+            @extend .mt-2;
           }
 
           > a:not(.btn) {
@@ -226,7 +234,7 @@ $header-height: 115px;
               content: '';
               position: absolute;
               left: 0;
-              bottom: - map-get($spacers, 3);
+              bottom: - map-get($spacers, 2);
               height: 5px;
               width: 100%;
               border-radius: 5px 5px 0 0;
@@ -248,6 +256,86 @@ $header-height: 115px;
               &::after {
                 display: block;
                 background-color: $secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > div {
+      background-color: $nuance-09;
+      font-size: $font-size-sm;
+      @extend .p-4;
+
+      > ul {
+        @extend .list-unstyled;
+        @extend .m-0;
+        @extend .p-0;
+
+        > li {
+          @extend .d-block;
+          @extend .m-0;
+          @extend .p-0;
+
+          &:last-child > a {
+            @extend .mr-0;
+          }
+
+          > a {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            @extend .mr-2;
+            @extend .mb-2;
+            @extend .mt-2;
+            @extend .ml-3;
+            color: $link-color;
+
+            &::before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              height: 20px;
+              width: 6px;
+              top: 2px;
+              left: -16px;
+              border-radius: $rounded-pill;
+              background-color: $primary;
+            }
+
+            &.is-plateforme {
+
+              &::before {
+                background-color: $primary;
+              }
+            }
+
+            &.is-emploi {
+
+              &::before {
+                background-color: $emploi;
+              }
+            }
+
+            &.is-communaute {
+
+              &::before {
+                background-color: $communaute;
+              }
+            }
+
+            &.is-pilotage {
+
+              &::before {
+                background-color: $pilotage;
+              }
+            }
+
+            &.is-marche {
+
+              &::before {
+                background-color: $marche;
               }
             }
           }
