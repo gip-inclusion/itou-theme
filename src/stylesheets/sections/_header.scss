@@ -180,7 +180,6 @@ $header-height: 115px;
 
     > nav {
       @extend .p-4;
-      @extend .flex-grow-1;
 
       > ul {
         @extend .list-unstyled;
@@ -264,9 +263,10 @@ $header-height: 115px;
     }
 
     > div {
+      @extend .flex-grow-1;
+      @extend .p-4;
       background-color: $nuance-09;
       font-size: $font-size-sm;
-      @extend .p-4;
 
       > ul {
         @extend .list-unstyled;
