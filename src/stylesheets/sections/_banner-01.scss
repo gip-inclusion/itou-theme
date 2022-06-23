@@ -28,7 +28,7 @@
       &:before {
         content: '';
         position: absolute;
-        z-index: -1;
+        z-index: 1;
         bottom: 0;
         right: 0;
         width: 230px;
@@ -37,6 +37,11 @@
         background-size: 416px;
         background-position: top left;
         background-image: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="416" height="416"><path fill="#{$gray-100}" fill-rule="evenodd" d="M237.285 413.902C123.557 430.077 18.239 350.982 2.1 237.26-14.08 123.57 64.977 18.245 178.699 2.107c113.734-16.211 219.015 62.877 235.19 176.605 16.18 113.691-62.907 218.972-176.604 235.19z"/></svg>'));
+      }
+
+      > * {
+        position: relative;
+        z-index: 2;
       }
     }
 
