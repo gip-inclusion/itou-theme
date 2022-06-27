@@ -68,4 +68,35 @@
       }
     }
   }
+
+  &-uploaded-img-list {
+    @extend .list-unstyled;
+
+    > li {
+      @extend .mb-3;
+
+      div {
+        @extend .align-items-center;
+
+        > *:nth-child(2) {
+          @extend .flex-grow-1;
+          @extend .mx-3;
+        }
+      }
+    }
+
+    &__btn-img {
+      background-color: transparent;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &__viewzone {
+      display: flex;
+    }
+
+    &__editzone {
+      display: none;
+    }
+  }
 }

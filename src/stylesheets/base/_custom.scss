@@ -106,6 +106,22 @@ select.form-control.form-control-lg {
   }
 }
 
+.btn-ico-only {
+  @extend .d-inline-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  @extend .px-1;
+  width: 50px;
+
+  &.btn-sm {
+    width: 40px;
+  }
+
+  &.btn-lg {
+    width: 62px;
+  }
+}
+
 :focus {
   outline-offset: 2px;
   outline: $blue 1px solid;
