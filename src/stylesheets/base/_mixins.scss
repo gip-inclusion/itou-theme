@@ -19,15 +19,15 @@
     }
 
     @if $color == "success" {
-      background-color: $green-light !important;
+      background-color: $success-light !important;
     }
 
     @if $color == "warning" {
-      background-color: $orange-light !important;
+      background-color: $warning-light !important;
     }
 
     @if $color == "danger" {
-      background-color: $red-light !important;
+      background-color: $danger-light !important;
     }
 
     @if $color == "info" {
@@ -70,19 +70,19 @@
 
     @if $color == "success" {
       &::before {
-        background-color: $green-light !important;
+        background-color: $success-light !important;
       }
     }
 
     @if $color == "warning" {
       &::before {
-        background-color: $orange-light !important;
+        background-color: $warning-light !important;
       }
     }
 
     @if $color == "danger" {
       &::before {
-        background-color: $red-light !important;
+        background-color: $danger-light !important;
       }
     }
 

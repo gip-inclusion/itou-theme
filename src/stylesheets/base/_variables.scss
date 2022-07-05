@@ -51,16 +51,13 @@ $nuance: map-merge(
 );
 
 $blue:    #0A76F6;
-$indigo:  #6610f2 !default;
+$indigo:  #1890FF;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #FF5655;
-$red-light:     #fff2f2;
-$orange:  #FC5D00;
-$orange-light:  #fff2e9;
+$red:     #DA0000;
+$orange:  #FF7A00;
 $yellow:  #ffc107 !default;
-$green:   #27A658;
-$green-light:   #f0fff8;
+$green:   #038800;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -74,10 +71,6 @@ $nuance-07: #CCCDD7;
 $nuance-08: #E6E6EB;
 $nuance-09: #F2F3F5;
 $nuance-10: #F2F3F5;
-
-$accent-01: #6C38D9;
-$accent-02: #C3A7FF;
-$accent-03: #8ADCFF;
 
 $colors: () !default;
 $colors: map-merge(
@@ -102,12 +95,49 @@ $colors: map-merge(
 $primary:       $gray-900;
 $secondary:     $gray-800;
 $tertiary:      #000091;
-$success:       $green;
-$info:          $gray-900;
-$warning:       $orange;
-$danger:        $red;
 $light:         $gray-400;
 $dark:          $black;
+
+$success:       $green;
+$success-light: #CEEFDB;
+$success-lighter: #E0F7E9;
+$success-lightest: #F3FFF8;
+
+
+$warning:       $orange;
+$warning-light: #FFE7C0;
+$warning-lighter: #FFF3DF;
+$warning-lightest: #FFFBF3;
+
+$danger:        $red;
+$danger-light:  #FFCFCD;
+$danger-lighter:  #FFE1E0;
+$danger-lightest:  #FFF3F2;
+
+$info:          $indigo;
+$info-light:      #99CEFF;
+$info-lighter:    #CBE6FF;
+$info-lightest:   #E2F1FF;
+
+$important:     #6C38D9;
+$important-light:     #CFBFF5;
+$important-lighter:    #E9DFFC;
+$important-lightest:   #F4F2FF;
+
+$accent-01:     #F42AD4;
+$accent-01-light:     #FDCDF6;
+$accent-01-lighter:  #FEDFF9;
+$accent-01-lightest:   #FFF1FD;
+
+$accent-02:     #8ADCFF;
+$accent-02-light:  #D1F1FF;
+$accent-02-lighter: #E2F6FF;
+$accent-02-lightest: #EBF9FF;
+
+$accent-03: #FFBE18;
+$accent-03-light: #FFE8AD;
+$accent-03-lighter: #FFF2CF;
+$accent-03-lightest:  #FFF7E0;
 
 $marche: #FE5455;
 $marche-light: #FFDDDD;
@@ -135,15 +165,40 @@ $theme-colors: map-merge(
     'primary': $primary,
     'secondary': $secondary,
     'tertiary': $tertiary,
-    'success': $success,
-    'success-light': $green-light,
-    'info': $info,
-    'warning': $warning,
-    'warning-light': $orange-light,
-    'danger': $danger,
-    'danger-light': $red-light,
     'light': $light,
     'dark': $dark,
+    'success': $success,
+    'success-light': $success-light,
+    'success-lighter': $success-lighter,
+    'success-lightest': $success-lightest,
+    'warning': $warning,
+    'warning-light': $warning-light,
+    'warning-lighter': $warning-lighter,
+    'warning-lightest': $warning-lightest,
+    'danger': $danger,
+    'danger-light': $danger-light,
+    'danger-lighter': $danger-lighter,
+    'danger-lightest': $danger-lightest,
+    'info': $info,
+    'info-light': $info-light,
+    'info-lighter': $info-lighter,
+    'info-lightest': $info-lightest,
+    'important': $important,
+    'important-light': $important-light,
+    'important-lighter': $important-lighter,
+    'important-lightest': $important-lightest,
+    'accent-01': $accent-01,
+    'accent-01-light': $accent-01-light,
+    'accent-01-lighter': $accent-01-lighter,
+    'accent-01-lightest': $accent-01-lightest,
+    'accent-02': $accent-02,
+    'accent-02-light': $accent-02-light,
+    'accent-02-lighter': $accent-02-lighter,
+    'accent-02-lightest': $accent-02-lightest,
+    'accent-03': $accent-03,
+    'accent-03-light': $accent-03-light,
+    'accent-03-lighter': $accent-03-lighter,
+    'accent-03-lightest': $accent-03-lightest,
     'marche': $marche,
     'marche-light': $marche-light,
     'marche-lighter': $marche-lighter,
@@ -177,10 +232,7 @@ $theme-colors: map-merge(
     'nuance-07': $nuance-07,
     'nuance-08': $nuance-08,
     'nuance-09': $nuance-09,
-    'nuance-10': $nuance-10,
-    'accent-01': $accent-01,
-    'accent-02': $accent-02,
-    'accent-03': $accent-03,
+    'nuance-10': $nuance-10
   ),
   $theme-colors
 );
