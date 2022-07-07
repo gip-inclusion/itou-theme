@@ -19,18 +19,26 @@
     }
 
     @if $color == "success" {
-      background-color: $success-light !important;
+      background-color: $success-lighter !important;
     }
 
     @if $color == "warning" {
-      background-color: $warning-light !important;
+      background-color: $warning-lighter !important;
     }
 
     @if $color == "danger" {
-      background-color: $danger-light !important;
+      background-color: $danger-lighter !important;
     }
 
     @if $color == "info" {
+      background-color: $info-lightest !important;
+    }
+
+    @if $color == "important" {
+      background-color: $important-lighter !important;
+    }
+
+    @if $color == "primary" {
       background-color: $nuance-09 !important;
     }
   }
