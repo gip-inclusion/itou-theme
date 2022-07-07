@@ -37,10 +37,6 @@
     @if $color == "important" {
       background-color: $important-lighter !important;
     }
-
-    @if $color == "primary" {
-      background-color: $nuance-09 !important;
-    }
   }
 }
 
@@ -96,7 +92,7 @@
 
     @if $color == "info" {
       &::before {
-        background-color: $nuance-09 !important;
+        background-color: $info-lightest !important;
       }
     }
   }
