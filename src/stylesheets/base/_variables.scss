@@ -116,8 +116,8 @@ $danger-lightest:  #FFF3F2;
 
 $info:          $indigo;
 $info-light:      #99CEFF;
-$info-lighter:    #CBE6FF;
-$info-lightest:   #E2F1FF;
+$info-lighter:    #E2F1FF;
+$info-lightest:   #EFF7FF;
 
 $important:     #6C38D9;
 $important-light:     #CFBFF5;
@@ -398,7 +398,8 @@ $line-height-lg: 1.5;
 $line-height-sm: 1.2;
 
 $border-width: 1px;
-$border-color: $nuance-07;
+$border-color: $nuance-08;
+$border-color-hover: $nuance-07;
 
 $border-radius-sm: 0.125rem; // 2px
 $border-radius: 0.25rem; // 4px

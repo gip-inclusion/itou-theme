@@ -19,8 +19,9 @@
       .nav-link {
         @extend .d-inline-flex;
         @extend .align-items-center;
-        @extend .py-2;
         @extend .px-3;
+        @extend .py-2;
+        @extend .h-100;
         white-space: nowrap;
         border-top-left-radius: $border-radius-lg;
         border-top-right-radius: $border-radius-lg;
@@ -77,5 +78,9 @@
     border-top-left-radius: 0 !important;
     box-shadow: $box-shadow-lg;
     padding: map-get($spacers, 3);
+
+    @include media-breakpoint-up(lg) {
+      padding: map-get($spacers, 4) map-get($spacers, 3);
+    }
   }
 }
