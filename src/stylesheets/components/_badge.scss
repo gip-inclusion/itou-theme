@@ -8,9 +8,10 @@
     padding: $badge-padding-y $badge-padding-x;
 
     > i {
-      @extend .mr-1;
+      margin-right: map-get($spacers, 1);
       font-weight: $font-weight-base;
     }
+
   }
 
   &-sm {
@@ -19,8 +20,8 @@
     padding: $badge-padding-y $badge-padding-x;
 
     > i {
-      @extend .mr-1;
       @extend .ri-xs;
+      margin-right: map-get($spacers, 1);
       font-weight: $font-weight-base;
     }
   }
@@ -31,8 +32,8 @@
     padding: 0.25rem $badge-padding-x;
 
     > i {
-      @extend .mr-1;
       @extend .ri-xs;
+      margin-right: map-get($spacers, 1);
       font-weight: $font-weight-base;
     }
   }

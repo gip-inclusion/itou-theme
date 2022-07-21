@@ -95,33 +95,6 @@ select.form-control.form-control-lg {
   @extend .custom-select-lg;
 }
 
-.btn-ico {
-  @extend .d-inline-flex;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-
-  span {
-    @extend .d-inline-block;
-    margin: 0 map-get($spacers, 2);
-  }
-}
-
-.btn-ico-only {
-  @extend .d-inline-flex;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-  @extend .px-1;
-  width: 50px;
-
-  &.btn-sm {
-    width: 40px;
-  }
-
-  &.btn-lg {
-    width: 62px;
-  }
-}
-
 :focus {
   outline-offset: 2px;
   outline: $blue 1px solid;
@@ -257,6 +230,39 @@ select.form-control.form-control-lg {
     span {
       text-decoration: underline;
     }
+  }
+}
+
+.btn-ico {
+  @extend .d-inline-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+
+  span {
+    @extend .d-inline-block;
+  }
+
+  *:first-child:not(:only-child) {
+    margin-right: map-get($spacers, 2);
+  }
+}
+
+.btn-ico-only {
+  @extend .d-inline-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  @extend .px-0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  max-width: 50px;
+
+  &.btn-sm {
+    max-width: 40px;
+  }
+
+  &.btn-lg {
+    max-width: 62px;
   }
 }
 

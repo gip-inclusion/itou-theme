@@ -116,3 +116,128 @@
     }
   }
 }
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+
+    @if $color == "success" {
+      color: $success  !important;
+      background-color: $success-lighter  !important;
+      border-color: $success-lighter !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $success !important;
+        background-color: $success-light !important;
+        border-color: $success-light !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $white !important;
+        background-color: $nuance-06 !important;
+        border-color: $nuance-06 !important;
+      }
+    }
+
+    @if $color == "warning" {
+      color: $warning  !important;
+      background-color: $warning-lighter  !important;
+      border-color: $warning-lighter !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $warning !important;
+        background-color: $warning-light !important;
+        border-color: $warning-light !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $white !important;
+        background-color: $nuance-06 !important;
+        border-color: $nuance-06 !important;
+      }
+    }
+
+    @if $color == "danger" {
+      color: $danger  !important;
+      background-color: $danger-lighter  !important;
+      border-color: $danger-lighter !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $danger !important;
+        background-color: $danger-light !important;
+        border-color: $danger-light !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $white !important;
+        background-color: $nuance-06 !important;
+        border-color: $nuance-06 !important;
+      }
+    }
+
+    @if $color == "info" {
+      color: $info  !important;
+      background-color: $info-lighter  !important;
+      border-color: $info-lighter !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $info !important;
+        background-color: $info-light !important;
+        border-color: $info-light !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $white !important;
+        background-color: $nuance-06 !important;
+        border-color: $nuance-06 !important;
+      }
+    }
+
+    @if $color == "important" {
+      color: $important  !important;
+      background-color: $important-lighter  !important;
+      border-color: $important-lighter !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $important !important;
+        background-color: $important-light !important;
+        border-color: $important-light !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $white !important;
+        background-color: $nuance-06 !important;
+        border-color: $nuance-06 !important;
+      }
+    }
+  }
+}

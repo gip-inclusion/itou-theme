@@ -1,0 +1,29 @@
+.c-breadcrumb {
+
+  .breadcrumb-item {
+
+    a {
+      text-decoration: underline;
+    }
+
+    &.active {
+      @extend .text-decoration-none;
+    }
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '\ea6e';
+    width: auto;
+    height: auto;
+    padding-right: map-get($spacers, 1);
+    padding-top: map-get($spacers, 1);
+    font-family: remixicon !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    vertical-align: middle;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+  }
+}

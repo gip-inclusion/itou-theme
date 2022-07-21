@@ -506,6 +506,9 @@
               </div>
               <div class="col-12 col-lg-9">
                 <div class="mb-5">
+                  <h6>Button display</h6>
+                </div>
+                <div class="mb-5">
                   <h6>Button sized</h6>
                   <div class="row">
                     <div class="col-12 col-md-4 mb-3">
@@ -518,6 +521,11 @@
                       <button type="button" class="btn btn-lg btn-block btn-primary">.btn .btn-lg</button>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <button type="button" class="btn btn-block btn-primary">.btn .btn-block</button>
+                    </div>
+                  </div>
                 </div>
                 <div class="mb-5">
                   <h6>Button ico <code>.btn .btn-ico</code></h6>
@@ -525,7 +533,7 @@
                     <div class="col-12 col-md-4 mb-3">
                       <button class="btn btn-block btn-primary btn-sm btn-ico">
                         <span>.btn .btn-ico</span>
-                        <i class="ri-arrow-right-up-line ri-lg"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
@@ -546,18 +554,18 @@
                   <h6>Button ico only <code>.btn .btn-ico-only</code></h6>
                   <div class="row">
                     <div class="col-12 col-md-4 mb-3">
-                      <button class="btn btn-primary btn-sm btn-ico-only">
-                        <i class="ri-arrow-right-up-line ri-lg"></i>
+                      <button class="btn btn-primary btn-sm btn-ico-only" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
-                      <button class="btn btn-primary btn-ico-only">
-                        <i class="ri-arrow-right-up-line ri-lg"></i>
+                      <button class="btn btn-primary btn-ico-only" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
-                      <button class="btn btn-primary btn-lg btn-ico-only">
-                        <i class="ri-arrow-right-up-line ri-xl"></i>
+                      <button class="btn btn-primary btn-lg btn-ico-only" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-xl font-weight-normal"></i>
                       </button>
                     </div>
                   </div>
@@ -630,6 +638,132 @@
                     </div>
                   </div>
                 </div>
+                <hr>
+                <div class="mb-5">
+                  <h6>Button success <code>.btn .btn-success</code></h6>
+                  <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-success">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <span>default</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-success hover focus">
+                        <span>:hover / focus </span>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-ico-only btn-success" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-success" disabled>disabled</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <h6>Button warning <code>.btn .btn-warning</code></h6>
+                  <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-warning">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <span>default</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-warning hover focus">
+                        <span>:hover / focus </span>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-ico-only btn-warning" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-warning" disabled>disabled</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <h6>Button danger <code>.btn .btn-danger</code></h6>
+                  <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-danger">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <span>default</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-danger hover focus">
+                        <span>:hover / focus </span>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-ico-only btn-danger" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-danger" disabled>disabled</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <h6>Button info <code>.btn .btn-info</code></h6>
+                  <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-info">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <span>default</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-info hover focus">
+                        <span>:hover / focus </span>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-ico-only btn-info" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-info" disabled>disabled</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <h6>Button important <code>.btn .btn-important</code></h6>
+                  <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-important">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <span>default</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-important hover focus">
+                        <span>:hover / focus </span>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-ico-only btn-important" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-info" disabled>disabled</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </article>
 
@@ -644,7 +778,7 @@
                   <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>. Add on optional JavaScript radio and checkbox style behavior with <a href="/docs/4.6/components/buttons/#button-plugin">our buttons plugin</a>.</p>
                   <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-primary">Left</button>
-                    <button type="button" class="btn btn-primary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
                     <button type="button" class="btn btn-primary">Right</button>
                   </div>
                 </div>
@@ -652,23 +786,23 @@
                   <h6>Sizing</h6>
                   <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
                   <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary">Left</button>
-                    <button type="button" class="btn btn-primary">Middle</button>
-                    <button type="button" class="btn btn-primary">Right</button>
+                    <button type="button" class="btn btn-success">Left</button>
+                    <button type="button" class="btn btn-info">Middle</button>
+                    <button type="button" class="btn btn-important">Right</button>
                   </div>
                   <br>
                   <br>
                   <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary">Left</button>
-                    <button type="button" class="btn btn-primary">Middle</button>
-                    <button type="button" class="btn btn-primary">Right</button>
+                    <button type="button" class="btn btn-success">Left</button>
+                    <button type="button" class="btn btn-info">Middle</button>
+                    <button type="button" class="btn btn-important">Right</button>
                   </div>
                   <br>
                   <br>
                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary">Left</button>
-                    <button type="button" class="btn btn-primary">Middle</button>
-                    <button type="button" class="btn btn-primary">Right</button>
+                    <button type="button" class="btn btn-success btn-icon-only"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
+                    <button type="button" class="btn btn-info btn-icon-only"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
+                    <button type="button" class="btn btn-important btn-icon-only"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
                   </div>
                 </div>
               </div>
