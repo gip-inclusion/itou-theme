@@ -49,51 +49,35 @@
 
 
     @if $color == "marche" {
-      &::before {
-        background-color: $marche-light !important;
-      }
+      background-color: $marche-light !important;
     }
 
     @if $color == "emploi" {
-      &::before {
-        background-color: $emploi-light !important;
-      }
+      background-color: $emploi-light !important;
     }
 
     @if $color == "communaute" {
-      &::before {
-        background-color: $communaute-light !important;
-      }
+      background-color: $communaute-light !important;
     }
 
     @if $color == "pilotage" {
-      &::before {
-        background-color: $pilotage-light !important;
-      }
+      background-color: $pilotage-light !important;
     }
 
     @if $color == "success" {
-      &::before {
-        background-color: $success-light !important;
-      }
+      background-color: $success-light !important;
     }
 
     @if $color == "warning" {
-      &::before {
-        background-color: $warning-light !important;
-      }
+      background-color: $warning-light !important;
     }
 
     @if $color == "danger" {
-      &::before {
-        background-color: $danger-light !important;
-      }
+      background-color: $danger-light !important;
     }
 
     @if $color == "info" {
-      &::before {
-        background-color: $info-lightest !important;
-      }
+      background-color: $info-lightest !important;
     }
   }
 }
