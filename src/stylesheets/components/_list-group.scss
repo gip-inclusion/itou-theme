@@ -1,20 +1,52 @@
-.c-list-group {
+.list-group {
   background-color: $white;
-  box-shadow: $box-shadow-sm;
 }
 
-.c-list-group-collapse {
+.list-group-sm {
+  .list-group-item {
+    @extend .py-2;
+  }
+}
+
+.list-group-link {
+
+  .list-group-item {
+    @extend .d-flex;
+    @extend .align-items-center;
+    position: relative;
+    text-decoration: none;
+
+    > *:first-child {
+      @extend .flex-grow-1;
+    }
+
+    &::after {
+      @extend .ml-2;
+      content: '\ea6e';
+      font-family: remixicon !important;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: inherit;
+      font-size: 1.25rem;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.list-group-collapse {
 
   .list-group-item {
 
     > [data-toggle=collapse] {
       @extend .d-flex;
       @extend .justify-content-between;
+      @extend .align-items-center;
       position: relative;
       text-decoration: none;
 
       &::after {
-        @extend .ml-1;
+        @extend .ml-2;
         content: '\ea4e';
         font-family: remixicon !important;
         font-style: normal;
@@ -43,7 +75,7 @@
   }
 }
 
-.c-list-group-form {
+.list-group-form {
 
   .list-group-item {
     border-color: $input-border-color;

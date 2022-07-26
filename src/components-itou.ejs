@@ -332,85 +332,76 @@
 
         <article class="row py-5" id="listgroup">
           <div class="col-12">
-            <h3>Listgroup<code>.c-list-group</code></h3>
-            <p>Des variantees itou du <a href="https://getbootstrap.com/docs/4.6/components/list-group/" target="_blank">.list-group</a> de BS4.</p>
+            <h3>Listgroup<code>.list-group</code></h3>
+            <h4>Des variantes supplémentaires itou du <a href="https://getbootstrap.com/docs/4.6/components/list-group/" target="_blank">.list-group</a> de BS4</h4>
+            <p>Le <code>.list-group</code> normal.</p>
             <div class="row">
-              <div class="col-12 col-md-10 mb-3 mb-md-5">
+              <div class="col-12 col-md-10 mb-3 mb-md-6">
                 <ul class="list-group">
                   <li class="list-group-item">An item</li>
                   <li class="list-group-item">A second item</li>
                   <li class="list-group-item">A third item</li>
-                  <li class="list-group-item">A fourth item</li>
-                  <li class="list-group-item">And a fifth one</li>
                 </ul>
               </div>
             </div>
-            <p>La variante <code>c-list-group</code> avec box shadow.</p>
+            <p>Le <code>.list-group .list-group-sm</code> avec moins de padding.</p>
+            <div class="row">
+              <div class="col-12 col-md-10 mb-3 mb-md-6">
+                <ul class="list-group list-group-sm">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+              </div>
+            </div>
+            <p>Le <code>.list-group .list-group-flush</code> sans bordures externes.</p>
+            <div class="row">
+              <div class="col-12 col-md-10 mb-3 mb-md-6">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+              </div>
+            </div>
+            <p>Le <code>.list-group .list-group-link</code> avec lien unique sur toute la zone de l'item.</p>
             <div class="row">
               <div class="col-12 col-md-10 mb-3 mb-md-5">
-                <ul class="list-group c-list-group">
+                <ul class="list-group list-group-flush list-group-link">
                   <li class="list-group-item list-group-item-action">
-                    <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
+                    <div class="d-flex flex-column flex-lg-row">
                       <span class="d-flex align-items-center">
                         <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
-                        <strong class="font-weight-bold text-decoration-underline">Préparateur/préparatrice de commande </strong>
+                        <a href="" class="font-weight-bold stretched-link">Préparateur/préparatrice de commande</a>
                       </span>
-                      <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Le Bouscat - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
-                    </a>
+                      <span class="fs-sm mt-1 mt-lg-0 ml-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Le Bouscat - 33</span>
+                    </div>
                   </li>
                   <li class="list-group-item list-group-item-action">
-                    <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
+                    <div class="d-flex flex-column flex-lg-row">
                       <span class="d-flex align-items-center">
                         <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
-                        <strong class="font-weight-bold text-decoration-underline">Chargé(e) d'affaires commerciales et marketing opérationnel</strong>
+                        <a href="" class="font-weight-bold stretched-link">Chargé(e) d'affaires commerciales et marketing opérationnel</a>
                       </span>
-                      <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Beychac-et-Caillau - 72<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
-                    </a>
+                      <span class="fs-sm mt-1 mt-lg-0 ml-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Beychac-et-Caillau - 72</span>
+                    </div>
                   </li>
                   <li class="list-group-item list-group-item-action">
-                    <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
+                    <div class="d-flex flex-column flex-lg-row">
                       <span class="d-flex align-items-center">
                         <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
-                        <strong class="font-weight-bold text-decoration-underline">Préparateur/préparatrice de commande</strong>
+                        <a href="" class="font-weight-bold stretched-link">Préparateur/préparatrice de commande</a>
                       </span>
-                      <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Belvès-de-Castillon - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
-                      <span class="d-flex align-items-center">
-                        <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
-                        <strong class="font-weight-bold text-decoration-underline">Ouvrier en pépinère horticole</strong>
-                      </span>
-                      <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Belvès-de-Castillon - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
-                      <span class="d-flex align-items-center">
-                        <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
-                        <strong class="font-weight-bold text-decoration-underline">Ouvrier paysagiste création des espaces verts </strong>
-                      </span>
-                      <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Belvès-de-Castillon - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a href="" class="d-flex flex-column flex-lg-row text-decoration-none">
-                      <span class="d-flex align-items-center">
-                        <i class="ri-checkbox-blank-circle-fill ri-xs mr-2 text-success"></i>
-                        <strong class="font-weight-bold text-decoration-underline">Ouvrier en pépinère horticole</strong>
-                      </span>
-                      <span class="fs-sm ml-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Bordeaux - 33<i class="ri-arrow-right-s-line ri-xl font-weight-bold ml-1"></i></span>
-                    </a>
+                      <span class="fs-sm mt-1 mt-lg-0 ml-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm mr-1"></i>Belvès-de-Castillon - 33</span>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
-            <br>
-            <p>La variante <code>c-list-group-collapse</code> avec collapse.</p>
+            <p>Le <code>.list-group .list-group-collapse</code> avec collapse.</p>
             <div class="row">
-              <div class="col-12 col-md-10 mb-3 mb-md-5">
-                <ul class="list-group c-list-group-collapse">
+              <div class="col-12 col-md-10 mb-3 mb-md-6">
+                <ul class="list-group list-group-collapse">
                   <li class="list-group-item list-group-item-action">
                     <a class="font-weight-bold" data-toggle="collapse" href="#collapseExample01" role="button" aria-expanded="false" aria-controls="collapseExample01">Hygiène et propreté</a>
                     <div class="collapse" id="collapseExample01">
@@ -525,10 +516,10 @@
                 </ul>
               </div>
             </div>
-            <p>La variante <code>.c-list-group-form</code> a placer dans un formulaire avec les input.</p>
+            <p>Le <code>.list-group .list-group-collapse .list-group-form</code> a placer dans un formulaire contenant des input.</p>
             <div class="row">
-              <div class="col-12 col-md-10 mb-3 mb-md-5">
-                <ul class="list-group c-list-group-collapse c-list-group-form">
+              <div class="col-12 col-md-10 mb-3 mb-md-6">
+                <ul class="list-group list-group-collapse list-group-form">
                   <li class="list-group-item list-group-item-action">
                     <a class="font-weight-bold" data-toggle="collapse" href="#collapseExample04" role="button" aria-expanded="false" aria-controls="collapseExample04">Hygiène et propreté</a>
                     <div class="collapse" id="collapseExample04">
@@ -601,6 +592,73 @@
                           </div>
                         </li>
                       </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>Exemples de <code>.list-group .list-group-flush .list-group-link</code> avec différents contenus possibles.</p>
+            <div class="row">
+              <div class="col-12 col-md-10 mb-3 mb-md-5">
+                <ul class="list-group list-group-flush list-group-link">
+                  <li class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                          <a href="" class="font-weight-bold stretched-link order-2 order-md-1">Lorem ipsum dolor sit amet</a>
+                          <div class="order-1 order-md-2">
+                            <span class="badge badge-sm badge-pill badge-accent-03 text-primary ml-0 ml-lg-2 mt-1 mt-lg-0"><i class="ri-group-line"></i>20+ candidatures</span>
+                          </div>
+                        </div>
+                        <span class="fs-sm mt-1 d-flex align-items-center">
+                          <i class="ri-map-pin-2-line ri-sm mr-1"></i>Le Bouscat - 33</i>
+                        </span>
+                      </div>
+                      <div class="mt-lg-0 ml-auto d-flex flex-column align-items-end justify-content-center">
+                        <span class="badge badge-xs badge-pill badge-accent-02-light text-primary">CDI</span>
+                        <span class="badge badge-xs badge-pill badge-accent-02-light text-primary mt-1">35h/semaine</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                          <a href="" class="font-weight-bold stretched-link order-2 order-md-1">Lorem ipsum dolor sit amet</a>
+                          <div class="order-1 order-md-2">
+                            <span class="badge badge-sm badge-pill badge-accent-03 text-primary ml-0 ml-lg-2 mt-1 mt-lg-0"><i class="ri-group-line"></i>20+ candidatures</span>
+                          </div>
+                        </div>
+                        <span class="fs-sm mt-1 d-flex align-items-center">
+                          <i class="ri-map-pin-2-line ri-sm mr-1"></i>Le Bouscat - 33</i>
+                        </span>
+                      </div>
+                      <div class="mt-lg-0 ml-auto d-flex flex-column align-items-end justify-content-center">
+                        <span class="badge badge-xs badge-pill badge-accent-02-light text-primary">CDI</span>
+                        <span class="badge badge-xs badge-pill badge-accent-02-light text-primary mt-1">35h/semaine</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                      <picture class="d-none d-lg-inline-flex mr-2">
+                        <img src="https://via.placeholder.com/100x60" alt="">
+                      </picture>
+                      <div>
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                          <a href="" class="font-weight-bold stretched-link order-2 order-md-1">Lorem ipsum dolor sit amet</a>
+                          <div class="order-1 order-md-2">
+                            <span class="badge badge-sm badge-pill badge-accent-03 text-primary ml-0 ml-lg-2 mt-1 mt-lg-0"><i class="ri-group-line"></i>20+ candidatures</span>
+                          </div>
+                        </div>
+                        <span class="fs-sm mt-1 d-flex align-items-center">
+                          <i class="ri-map-pin-2-line ri-sm mr-1"></i>Le Bouscat - 33</i>
+                        </span>
+                      </div>
+                      <div class="mt-lg-0 ml-auto d-flex flex-column align-items-end justify-content-center">
+                        <span class="badge badge-xs badge-pill badge-accent-02-light text-primary">CDI</span>
+                        <span class="badge badge-xs badge-pill badge-accent-02-light text-primary mt-1">35h/semaine</span>
+                      </div>
                     </div>
                   </li>
                 </ul>
