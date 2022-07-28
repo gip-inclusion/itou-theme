@@ -111,14 +111,14 @@ select.form-control.form-control-lg {
   @extend .align-items-center;
   @extend .justify-content-center;
   @extend .px-1;
-  width: 50px;
+  width: 48px;
 
   &.btn-sm {
     width: 40px;
   }
 
   &.btn-lg {
-    width: 62px;
+    width: 56px;
   }
 }
 
