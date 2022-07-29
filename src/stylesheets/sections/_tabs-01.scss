@@ -19,20 +19,18 @@
       .nav-link {
         @extend .d-inline-flex;
         @extend .align-items-center;
+        @extend .lh-base;
         @extend .px-3;
         @extend .py-2;
         @extend .h-100;
+        border: 1px solid $border-color;
+        border-bottom: 0;
         white-space: nowrap;
         border-top-left-radius: $border-radius-lg;
         border-top-right-radius: $border-radius-lg;
-        box-shadow: $box-shadow-lg;
         background-color: $nuance-10;
         font-size: $font-size-base;
         font-weight: $font-weight-base;
-
-        @include media-breakpoint-up(lg) {
-          padding: map-get($spacers, 3) !important;
-        }
 
         &::after {
           display: none;
@@ -76,7 +74,7 @@
     background-color: $white;
     border-radius: $border-radius-lg;
     border-top-left-radius: 0 !important;
-    box-shadow: $box-shadow-lg;
+    border: 1px solid $border-color;
     padding: map-get($spacers, 3);
 
     @include media-breakpoint-up(lg) {
