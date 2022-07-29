@@ -108,8 +108,8 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    @each $prop, $abbrev in (width: w, height: h) {
-      @each $size, $length in $sizes2 {
+    @each $prop, $abbrev in (width: width, height: height) {
+      @each $size, $length in $sizes {
         .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
       }
     }

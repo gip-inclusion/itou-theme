@@ -328,19 +328,6 @@ $sizes: map-merge(
   $sizes
 );
 
-$sizes2: ();
-$sizes2: map-merge(
-  (
-    25: 25%,
-    33: 33%,
-    50: 50%,
-    75: 75%,
-    100: 100%,
-    auto: auto,
-  ),
-  $sizes2
-);
-
 // Body
 //
 // Settings for the `<body>` element.
