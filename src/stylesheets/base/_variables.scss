@@ -1113,32 +1113,32 @@ $form-feedback-tooltip-border-radius: $tooltip-border-radius;
 
 // Popovers
 
-$popover-font-size: $font-size-sm;
-$popover-bg: $white !default;
-$popover-max-width: 276px !default;
+$popover-font-size: $font-size-base;
+$popover-bg: $white;
+$popover-max-width: 344px;
 $popover-border-width: $border-width;
 $popover-border-color: $border-color;
 $popover-border-radius: $border-radius;
 $popover-inner-border-radius: subtract(
   $popover-border-radius,
   $popover-border-width
-) !default;
+);
 $popover-box-shadow: $box-shadow-sm;
 
-$popover-header-bg: darken($popover-bg, 3%) !default;
+$popover-header-bg: darken($popover-bg, 3%);
 $popover-header-color: $headings-color;
-$popover-header-padding-y: 0.5rem !default;
-$popover-header-padding-x: 0.75rem !default;
+$popover-header-padding-y: 0.5rem;
+$popover-header-padding-x: 0.75rem;
 
-$popover-body-color: $body-color !default;
-$popover-body-padding-y: $popover-header-padding-y !default;
-$popover-body-padding-x: $popover-header-padding-x !default;
+$popover-body-color: $body-color;
+$popover-body-padding-y: $popover-header-padding-y;
+$popover-body-padding-x: $popover-header-padding-x;
 
-$popover-arrow-width: 1rem !default;
-$popover-arrow-height: 0.5rem !default;
-$popover-arrow-color: $popover-bg !default;
+$popover-arrow-width: 1rem;
+$popover-arrow-height: 0.5rem;
+$popover-arrow-color: $popover-bg;
 
-$popover-arrow-outer-color: fade-in($popover-border-color, 0.05) !default;
+$popover-arrow-outer-color: fade-in($popover-border-color, 0.05);
 
 // Toasts
 
