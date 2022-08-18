@@ -73,14 +73,14 @@
   </div>
 </section>
 
-<header class="s-header s-header--plateforme  sticky-top " role="banner" id="header">
+<header class="s-header s-header--marche  sticky-top " role="banner" id="header">
   <div class="s-header__container container">
     <div class="s-header__row row">
       <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
         <a href="#top" class="s-header__logo-ministere"><img src="images/logo-ministere-emploi.svg" alt="Ministère de l'emploi"></a>
       </div>
       <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center px-0 px-md-3">
-        <a href=""><img src="images/logo-plateforme-inclusion.svg " alt="La plateforme de l inclusion"></a>
+        <a href=""><img src="images/logo-marche-inclusion.svg " alt="Le marché de l inclusion"></a>
       </div>
       <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
         <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
@@ -279,7 +279,7 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Accueil</a></li>
                     <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Formulaire uploads images</li>
+                    <li class="breadcrumb-item active" aria-current="page">Welcome Tour with Bootstrap Tour</li>
                   </ol>
                 </nav>
               </div>
@@ -291,148 +291,192 @@
           <div class="s-title-01__container container">
             <div class="s-title-01__row row">
               <div class="s-title-01__col col-12">
-                <h1 class="s-title-01__title h1"><strong>Base Title Page</strong></h1>
-                <p class="mb-0">Exemple de page avec un formulaire.</p>
+                <h1 class="s-title-01__title h1"><strong>Welcome Tour with Bootstrap Tour</strong></h1>
+                <p class="mb-0">Exemple de page welcome tour construite sur un Dashboard du Marché.</p>
               </div>
             </div>
           </div>
         </section>
 
         <section class="s-section">
-          <div class="s-section__container container">
+          <div class="s-section__container container"  id="welcome01">
             <div class="s-section__row row">
-              <div class="s-section__col col-12 col-lg-7">
-                <div class="c-form">
-                  <form novalidate>
-                    <fieldset>
-                      <div class="row">
-                        <div class="col-12">
-                          <legend>Titre de ce fieldset (Optionnel)</legend>
-                          <div class="form-group">
-                            <label>Références clients <br><span class="small">Renommez l’image par le nom du client dans le cas où elle ne s’afficherait pas.</span></label>
-                            <ul class="c-form-uploaded-img-list">
-                              <li>
-                                <div class="c-form-uploaded-img-list__viewzone">
-                                  <button class="btn btn-ico-only text-white c-form-uploaded-img-list__btn-img" type="button" data-toggle="modal" data-target="#modalImage" data-imgurl="https://placeimg.com/800/600/nature" style="background-image: url('https://placeimg.com/800/600/nature');">
-                                    <i class="ri-zoom-in-line ri-xl"></i>
-                                  </button>
-                                  <span>Photo1.png</span>
-                                  <span>
-                                    <button class="btn btn-ico-only c-form-uploaded-img-list__edit">
-                                      <i class="ri-pencil-line ri-xl"></i>
-                                    </button>
-                                    <button class="btn btn-ico-only c-form-uploaded-img-list__delete">
-                                      <i class="ri-delete-bin-line ri-xl"></i>
-                                    </button>
-                                  </span>
-                                </div>
-                                <div class="c-form-uploaded-img-list__editzone">
-                                  <button class="btn btn-ico-only text-white c-form-uploaded-img-list__btn-img" type="button" data-toggle="modal" data-target="#modalImage" data-imgurl="https://placeimg.com/800/600/nature" style="background-image: url('https://placeimg.com/800/600/nature');">
-                                    <i class="ri-zoom-in-line ri-xl"></i>
-                                  </button>
-                                  <span>
-                                    <input type="text" class="form-control" value="Photo1.png">
-                                  </span>
-                                  <span>
-                                    <button class="btn btn-ico-only text-success c-form-uploaded-img-list__valid">
-                                      <i class="ri-check-fill ri-xl"></i>
-                                    </button>
-                                    <button class="btn btn-ico-only text-danger c-form-uploaded-img-list__cancel">
-                                      <i class="ri-close-fill ri-xl"></i>
-                                    </button>
-                                  </span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="c-form-uploaded-img-list__viewzone">
-                                  <button class="btn btn-ico-only text-white c-form-uploaded-img-list__btn-img" type="button" data-toggle="modal" data-target="#modalImage" data-imgurl="https://placeimg.com/800/600/tech" style="background-image: url('https://placeimg.com/800/600/tech');">
-                                    <i class="ri-zoom-in-line ri-xl"></i>
-                                  </button>
-                                  <span>Photo2.png</span>
-                                  <span>
-                                    <button class="btn btn-ico-only c-form-uploaded-img-list__edit">
-                                      <i class="ri-pencil-line ri-xl"></i>
-                                    </button>
-                                    <button class="btn btn-ico-only c-form-uploaded-img-list__delete">
-                                      <i class="ri-delete-bin-line ri-xl"></i>
-                                    </button>
-                                  </span>
-                                </div>
-                                <div class="c-form-uploaded-img-list__editzone">
-                                  <button class="btn btn-ico-only text-white c-form-uploaded-img-list__btn-img" type="button" data-toggle="modal" data-target="#modalImage" data-imgurl="https://placeimg.com/800/600/tech" style="background-image: url('https://placeimg.com/800/600/tech');">
-                                    <i class="ri-zoom-in-line ri-xl"></i>
-                                  </button>
-                                  <span>
-                                    <input type="text" class="form-control" value="Photo2.png">
-                                  </span>
-                                  <span>
-                                    <button class="btn btn-ico-only text-success c-form-uploaded-img-list__valid">
-                                      <i class="ri-check-fill ri-xl"></i>
-                                    </button>
-                                    <button class="btn btn-ico-only text-danger c-form-uploaded-img-list__cancel">
-                                      <i class="ri-close-fill ri-xl"></i>
-                                    </button>
-                                  </span>
-                                </div>
-                              </li>
-                            </ul>
-                            <div class="js-display-if-javascript-enabled" style="display: block;">
-                              <div id="logo_form" class="c-dropzone dz-clickable">
-                                <div class="dz-message">
-                                  <p class="mb-1 text-nuance-06"><i class="ri-upload-cloud-2-line ri-2x"></i></p>
-                                  <p class="mb-2">Glisser vos fichiers ici ou <strong>rechercher</strong> dans vos fichiers</p>
-                                  <span class="btn btn-primary btn-sm mb-2">Rechercher dans vos fichiers</span>
-                                  <p class="small text-nuance-06">Taille maximale : Mo</p>
-                                </div>
-                              </div>
-                              <p class="small text-muted">Type de fichier : PNG, JPEG, SVG, GIF</p>
-                            </div>
-                          </div>
-                          <div class="alert alert-danger">
-                            <div class="row">
-                              <div class="col-auto pr-0">
-                                <i class="ri-information-line ri-xl text-danger"></i>
-                              </div>
-                              <div class="col">
-                                <p class="mb-2"><strong>Attention</strong></p>
-                                <p>Le Ministère du Travail (DGEFP) et Pôle emploi traitent vos données personnelles. Ce site est ouvert aux acteurs de l'inclusion et permet de simplifier le recrutement des personnes éligibles aux structures de l'Insertion par l'Activité Économique (IAE). Il est une composante du Pacte ambition IAE.
-                                  Pour plus d'information sur le traitement de vos données personnelles ou pour exercer vos droits, consultez la section Protection des données. En cliquant sur le bouton "Valider la demande", vous acceptez les conditions générales d'utilisation.</p>
-                                <a href="" class="font-weight-bold">Label lien</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+              <div class="s-section__col col-12 col-lg-7 pb-5">
+                <div class="card h-100 w-100"  id="welcome02">
+                  <div class="card-body">
+                    <div class="row mb-sm-4">
+                      <div class="col-12 col-md">
+                        <p class="h4 lh-sm">Mes besoins</p>
                       </div>
-                    </fieldset>
-
-                    <hr>
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="form-row align-items-center">
-                          <div class="form-group col-12 col-lg order-3 order-lg-1">
-                            <a href="" class="btn btn-link btn-ico pl-0" title="Retour à l'étape précédente">
-                              <i class="ri-arrow-go-back-line ri-lg"></i>
-                              <span>Retour</span>
-                            </a>
-                          </div>
-                          <div class="form-group col-6 col-lg-auto order-1 order-lg-2">
-                            <button type="reset" class="btn btn-block btn-ico btn-outline-primary">
-                              <i class="ri-close-fill ri-lg"></i>
-                              <span>Annuler</span>
-                            </button>
-                          </div>
-                          <div class="form-group col-6 col-lg-auto order-2 order-lg-3">
-                            <button type="submit" class="btn btn-ico btn-block btn-primary">
-                              <i class="ri-send-plane-line ri-lg"></i>
-                              <span>Envoyer</span>
-                            </button>
-                          </div>
-                        </div>
+                      <div class="col-12 col-md-auto">
+                        <a href="/besoins/ajouter" id="dashboard-tender-create-btn" class="btn btn-primary btn-ico width-100 width-md-auto">
+                          <i class="ri-add-fill ri-lg"></i>
+                          <span>Publier un besoin d'achat</span>
+                        </a>
                       </div>
                     </div>
-
-                  </form>
+                  </div>
+                  <div class="card-footer pt-0 bg-white text-right">
+                    <a href="/besoins/" class="btn btn-link btn-ico">
+                      <span>Accéder à mes besoins</span>
+                      <i class="ri-arrow-right-s-line ri-xl"></i>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="s-section__col col-12 col-lg-5 pb-5">
+                <div class="card h-45 w-100 mb-5">
+                  <div class="card-body">
+                    <p class="h4 lh-sm mb-lg-4">M'informer sur le marché</p>
+                    <div class="d-flex">
+                      <div class="flex-fill text-center">
+                        <span class="h2 text-info d-block mb-1">476</span>
+                        <span class="fs-sm lh-sm d-block">Acheteurs<br>inscrits</span>
+                      </div>
+                      <div class="flex-fill text-center">
+                        <span class="h2 text-info d-block mb-1">8543</span>
+                        <span class="fs-sm lh-sm d-block">Structures<br>référencées</span>
+                      </div>
+                      <div class="flex-fill text-center">
+                        <span class="h2 text-info d-block mb-1">76</span>
+                        <span class="fs-sm lh-sm d-block">Besoins<br>déposés</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card h-45 w-100" id="welcome03">
+                  <div class="card-body">
+                    <p class="h4 lh-sm mb-lg-4">Annuaire des facilitateurs</p>
+                    <p>
+                      Besoin d'aide pour travailler avec des structures de l'insertion ou du handicap ?
+                      Trouvez le partenaire qui pourra vous aider.
+                    </p>
+                  </div>
+                  <div class="card-footer pt-0 bg-white">
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtavj-NHym5wjgDu9KRTIDPVZtujFlaSL9Z_BYQ7nWrmkcbGRuL12-VxiNctaOTsgdjQURuPLr57R/pubhtml" id="track_dashboard_partners_facilitator_list" class="btn btn-outline-primary btn-ico width-100 width-lg-auto" target="_blank" rel="noopener">
+                      <i class="ri-download-2-line ri-lg"></i>
+                      <span>Télécharger l'annuaire</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-section__row row">
+              <div class="s-section__col col-12 col-lg-5 pb-5">
+                <div class="card h-45 w-100 mb-5">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <span class="d-none d-lg-inline-flex mr-3">
+                        <img src="/static/images/dashboard-illu-01.12d551d292e9.svg" alt="" height="100">
+                      </span>
+                      <div>
+                        <p class="h4 lh-sm mb-lg-4">Valoriser mes achats</p>
+                        <p>
+                          Mesurer, et valoriser vos achats grâce à la liste complète des structures réferencées sur le marché.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer pt-0 bg-white text-right">
+                    <a href="/valoriser-achats/" id="track_dashboard_achats" class="btn btn-link btn-ico">
+                      <span>C'est parti</span>
+                      <i class="ri-arrow-right-s-line ri-xl"></i>
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="card h-45 w-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <span class="d-none d-lg-inline-flex mr-3">
+                        <img src="/static/images/dashboard-illu-02.25748c8feb1a.svg" alt="" height="100">
+                      </span>
+                      <div>
+                        <p class="h4 lh-sm mb-lg-4">API</p>
+
+
+                        <p>
+                          Vous souhaitez entrer la liste de toutes les structures dans votre système d'information ? Découvrez comment faire.
+                        </p>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer pt-0 bg-white text-right">
+                    <a href="/api/" class="btn btn-link btn-ico">
+                      <span>Documentation</span>
+                      <i class="ri-arrow-right-s-line ri-xl"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="s-section__col col-12 col-lg-7 pb-5">
+
+
+                <div class="card h-100 w-100">
+                  <div class="card-body">
+                    <p class="h4 lh-sm mb-lg-4">M'informer sur les achats inclusifs</p>
+
+                    <ul class="list-group list-group-flush list-group-link">
+                      <li class="list-group-item list-group-item-action">
+                        <div class="d-flex align-items-center">
+                          <!-- <picture class="d-none d-lg-inline-flex mr-2">
+
+
+
+                              </picture> -->
+                          <div>
+                            <time class="fs-sm d-block" aria-label="Date de publication">20 mai 2022 12:59</time>
+                            <a href="/ressources/14-agences-de-communication-inclusives-pour-une-comm-responsable/" class="d-block font-weight-bold stretched-link">14 agences de communication inclusives pour une comm’ responsable</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush list-group-link">
+                      <li class="list-group-item list-group-item-action">
+                        <div class="d-flex align-items-center">
+                          <!-- <picture class="d-none d-lg-inline-flex mr-2">
+
+
+
+                              </picture> -->
+                          <div>
+                            <time class="fs-sm d-block" aria-label="Date de publication">11 avril 2022 15:08</time>
+                            <a href="/ressources/le-plan-national-pour-des-achats-durables-pnad-2022/" class="d-block font-weight-bold stretched-link">Le Plan National pour des Achats Durables (PNAD) 2022</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush list-group-link">
+                      <li class="list-group-item list-group-item-action">
+                        <div class="d-flex align-items-center">
+                          <!-- <picture class="d-none d-lg-inline-flex mr-2">
+
+
+
+                              </picture> -->
+                          <div>
+                            <time class="fs-sm d-block" aria-label="Date de publication">7 avril 2022 12:02</time>
+                            <a href="/ressources/quest-ce-que-linclusion/" class="d-block font-weight-bold stretched-link">Qu’est-ce que l’inclusion ?</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="card-footer pt-0 bg-white text-right">
+                    <a href="/ressources" class="btn btn-link btn-ico">
+                      <span>Voir toutes les ressources</span>
+                      <i class="ri-arrow-right-s-line ri-xl"></i>
+                    </a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -546,52 +590,42 @@
 </footer>
 
 
-      <!-- Modal Image -->
-      <div class="modal fade" id="modalImage" tabindex="-1" aria-labelledby="modalImageLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                <i class="ri-close-line"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img src="" class="img-fluid img-fitcover" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-tourist@0.3.2/bootstrap-tourist.js"></script>
       <script src="javascripts/app.js"></script>
 
       <script>
-        $('.c-form-uploaded-img-list__edit').on('click tap', function(e) {
-          e.preventDefault();
-          let thisParent = $(this).closest('li');
-          thisParent.find('.c-form-uploaded-img-list__viewzone').css('display', 'none');
-          thisParent.find('.c-form-uploaded-img-list__editzone').css('display', 'flex');
-        });
+          var welcometour = new Tour({
+          framework: 'bootstrap4',
+          template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div><div class="popover-navigation"><div class="btn-group"><button class="btn btn-sm btn-outline-primary" data-role="précédent">PREV</button><button class="btn btn-sm btn-outline-primary" data-role="suivant">NEXT</button><button class="btn btn-sm btn-outline-primary" data-role="pause-resume" data-pause-text="Pause" data-resume-text="Play">PLAY/PAUSE</button></div><button class="btn btn-sm btn-primary" data-role="end">FIN</button></div></div>',
+          showProgressBar: false,
+          showProgressText: false,
+          steps: [
+          {
+            element: "#welcome01",
+            title: "1. Bienvenue sur votre tableau de bord !",
+            content: "Suivez ces quelques étapes pour apprendre à utiliser votre tableau de bord."
+          },
+          {
+            element: "#welcome02",
+            title: "2. J’ai un projet d’achat",
+            content: "Le moteur de recherche vous permet de faire une recherche par lieu d’intervention et secteur d’activité."
+          },
+          {
+            element: "#welcome03",
+            title: "3. Annuaire des facilitateurs",
+            content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dolorum eos sapiente quis veritatis quod iste est tempora, deserunt ea dignissimos doloremque adipisci dolores inventore quia ipsum sequi ducimus fugit."
+          }
+        ]});
 
-        $('.c-form-uploaded-img-list__cancel').on('click tap', function(e) {
-          e.preventDefault();
-          let thisParent = $(this).closest('li');
-          thisParent.find('.c-form-uploaded-img-list__viewzone').css('display', 'flex');
-          thisParent.find('.c-form-uploaded-img-list__editzone').css('display', 'none');
-        });
 
-        $('[data-imgurl]').on('click tap', function(e) {
-          let thisImgUrl = $(this).data('imgurl');
-          let thisModalTarget = $(this).data('target');
-          $(thisModalTarget).find('img').attr('src', thisImgUrl);
-        });
+        welcometour.start();
+        // $(document).ready(function() {
+        //   //
+        // });
       </script>
-
-
-
   </body>
 
 </html>
