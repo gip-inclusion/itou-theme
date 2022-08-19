@@ -1,0 +1,23 @@
+.c-aside-filters {
+  @extend .card;
+  @extend .mb-3;
+
+  &__content {
+    @extend .card-body;
+
+    legend {
+      @extend .fs-base;
+      @extend .font-weight-bold;
+      @extend .mb-3;
+    }
+
+    ul {
+      @extend .list-unstyled;
+      @extend .mb-0;
+
+      li:not(:last-child) {
+        @extend .mb-2;
+      }
+    }
+  }
+}

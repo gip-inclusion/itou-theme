@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
+    <link rel="stylesheet" href="stylesheets/app.css" />
+  </head>
+
+  <body id="top">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="sr-only">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    <%- include('_sections/header', {headerLogo: 'logo-emploi-inclusion.svg', headerLogoAlt: 'Les emploi de l inclusion', modifier: 's-header--emploi', 'sticky': 'sticky-top'} ) %>
+
+    <main class="s-main" role="main">
+      <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <nav class="c-breadcrumb c-breadcrumb--marche" aria-label="Fil d'ariane">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                      <li class="breadcrumb-item"><a href="#">Layout</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Résultats de recherchers C1 & filtres à facettes</li>
+                    </ol>
+                  </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-title-01">
+      <div class="s-title-01__container container">
+        <div class="s-title-01__row row">
+          <div class="s-title-01__col col-12">
+            <h1 class="s-title-01__title h1"><strong>Résultats de recherchers C1 & filtres à facettes</strong></h1>
+            <h2 class="h2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas at eaque ipsa harum, nam quibusdam neque? Fugit necessitatibusi.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-section">
+      <div class="s-section__container container">
+        <div class="s-section__row row">
+          <div class="s-section__col col-12 col-md-4">
+            <aside class="c-aside-filters">
+              <button class="btn btn-primary btn-ico d-block d-md-none" data-toggle="collapse" data-target="#search-filter-form" aria-expanded="false" aria-controls="search-filter-form">
+                <span>Filtres des résultats</span>
+                <i class="ri-filter-line"></i>
+              </button>
+              <div class="c-aside-filters__content" id="search-filter-form">
+
+                <fieldset>
+                  <legend>Distance</legend>
+                  <ul>
+                    <% for (var i =5; i <=50;  i =i+5 ) { %>
+                      <li>
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item<%=i%>">
+                          <label class="custom-control-label" for="customRadio1Item<%=i%>"><%=i%> km</label>
+                        </div>
+                      </li>
+                    <% } %>
+                  </ul>
+                </fieldset>
+                <hr>
+                <fieldset>
+                  <legend>Département</legend>
+                  <ul>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1Item1">
+                        <label class="custom-control-label" for="customCheck1Item1">59 - Nord</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1Item2">
+                        <label class="custom-control-label" for="customCheck1Item2">62 - Pas-de-Calais</label>
+                      </div>
+                    </li>
+                  </ul>
+                </fieldset>
+                <hr>
+                <fieldset>
+                  <legend>Types de structure</legend>
+                  <ul>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item1">
+                        <label class="custom-control-label" for="customCheck2Item1">EI - Entreprise d'insertion</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item2">
+                        <label class="custom-control-label" for="customCheck2Item2">AI - Association intermédiaire</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item3">
+                        <label class="custom-control-label" for="customCheck2Item3">ACI - Atelier chantier d'insertion</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item4">
+                        <label class="custom-control-label" for="customCheck2Item4">ACIPHC - Atelier chantier d'insertion premières heures en chantier</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item5">
+                        <label class="custom-control-label" for="customCheck2Item5">ETTI - Entreprise de travail temporaire d'insertion</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item6">
+                        <label class="custom-control-label" for="customCheck2Item6">EITI - Entreprise d'insertion par le travail indépendant</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item7">
+                        <label class="custom-control-label" for="customCheck2Item7">GEIQ - Groupement d'employeurs pour l'insertion et la qualification</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item8">
+                        <label class="custom-control-label" for="customCheck2Item8">EA - Entreprise adaptée</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item9">
+                        <label class="custom-control-label" for="customCheck2Item9">EATT - Entreprise adaptée de travail temporaire</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item10">
+                        <label class="custom-control-label" for="customCheck2Item10">OPCS - Organisation porteuse de la clause sociale</label>
+                      </div>
+                    </li>
+                  </ul>
+                </fieldset>
+                <hr>
+              </div>
+            </aside>
+          </div>
+          <div class="s-section__col col-12 col-md-8">
+            <p>Base section content cards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+    <%- include('_sections/prefooter', {currentPrefooterBaseline: 'aux emplois', currentPrefooterLogo: 'logo-emploi-inclusion.svg', modifier: 's-prefooter--emploi'} ) %>
+    <%- include('_sections/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+
+</html>
