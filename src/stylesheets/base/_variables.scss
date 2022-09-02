@@ -1125,10 +1125,10 @@ $popover-inner-border-radius: subtract(
 );
 $popover-box-shadow: $box-shadow-sm;
 
-$popover-header-bg: darken($popover-bg, 3%);
+$popover-header-bg: transparent;
 $popover-header-color: $headings-color;
-$popover-header-padding-y: 0.5rem;
-$popover-header-padding-x: 0.75rem;
+$popover-header-padding-y: 1rem;
+$popover-header-padding-x: 1rem;
 
 $popover-body-color: $body-color;
 $popover-body-padding-y: $popover-header-padding-y;
@@ -1237,7 +1237,7 @@ $alert-color-level: 0;
 
 $progress-height: 0.5rem;
 $progress-font-size: $font-size-base * 0.75 !default;
-$progress-bg: transparent;
+$progress-bg: $border-color;
 $progress-border-radius: $border-radius;
 $progress-box-shadow: none;
 $progress-bar-color: $white !default;

@@ -45,7 +45,6 @@
       background-color: map-get($theme-colors, $color) !important;
     }
 
-
     @if $color == "marche" {
       background-color: $marche-light !important;
     }

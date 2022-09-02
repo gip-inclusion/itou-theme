@@ -58,17 +58,22 @@
 }
 
 .popover[class*="tour-"] .progress {
-	margin-top: 8px;
-	margin-bottom: 8px;
+	@extend .mt-0;
+	@extend .mb-3;
+}
+
+.popover[class*="tour-"] .popover-header + .popover-body {
+  padding-top: 0;
 }
 
 .popover[class*="tour-"] .popover-navigation {
-	padding: 0.5rem 0.75rem;
+	padding: $popover-header-padding-y $popover-header-padding-x;
+  padding-top: 0;
 	overflow: hidden;
-}
 
-.popover[class*="tour-"] .popover-navigation *[data-role="end"] {
-	float: right;
+  .btn:not(:first-child) {
+    @extend .ml-3;
+  }
 }
 
 .popover[class*="tour-"] .popover-navigation *[data-role="prev"],
