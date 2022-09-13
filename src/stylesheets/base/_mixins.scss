@@ -1,3 +1,71 @@
+@mixin badge-outline-variant($bg) {
+  color: $bg;
+  border: 2px solid $bg;
+  background-color: transparent;
+
+  @at-root a#{&} {
+    @include hover-focus() {
+      color: color-yiq($bg);
+      border: 2px solid darken($bg, 10%);
+    }
+
+    &:focus,
+    &.focus {
+      outline: 0;
+      box-shadow: 0 0 0 $badge-focus-width rgba($bg, .5);
+    }
+  }
+}
+
+@mixin custom-button-variant($base, $active, $disable, $text) {
+  color: $text;
+  background-color: $base;
+  border-color: $base !important;
+  @include box-shadow($btn-box-shadow);
+
+  @include hover() {
+    color: $text;
+    border-color: $active !important;
+    border-color: $active !important;
+  }
+
+  &:focus,
+  &.focus {
+    color: color-yiq($text);
+    @include gradient-bg($active);
+    border-color: $active;
+    @if $enable-shadows {
+      @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($base), $base, 15%), .5));
+    } @else {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($base), $base, 15%), .5);
+    }
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    color: color-yiq($text);
+    background-color: $disable;
+    border-color: $disable;
+    // Remove CSS gradients if they're enabled
+    @if $enable-gradients {
+      background-image: none;
+    }
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: color-yiq($text);
+    background-color: $active;
+    @if $enable-gradients {
+      background-image: none; // Remove the gradient for the pressed/active state
+    }
+    border-color: $active;
+  }
+}
+
 @each $color, $value in $theme-colors {
   .alert-#{$color} {
     border-left: 5px solid map-get($theme-colors, $color) !important;
@@ -81,29 +149,56 @@
       background-color: $important-lighter !important;
     }
   }
-}
 
-@mixin badge-outline-variant($bg) {
-  color: $bg;
-  border: 2px solid $bg;
-  background-color: transparent;
-
-  @at-root a#{&} {
-    @include hover-focus() {
-      color: color-yiq($bg);
-      border: 2px solid darken($bg, 10%);
-    }
-
-    &:focus,
-    &.focus {
-      outline: 0;
-      box-shadow: 0 0 0 $badge-focus-width rgba($bg, .5);
-    }
-  }
-}
-
-@each $color, $value in $theme-colors {
   .btn-#{$color} {
+
+    @if $color == "primary" {
+      color: $white !important;
+      background-color: $button !important;
+      border-color: $button !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $white !important;
+        background-color: $button-light !important;
+        border-color: $button-light !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $white !important;
+        background-color: $nuance-06 !important;
+        border-color: $nuance-06 !important;
+      }
+    }
+
+    @if $color == "secondary" {
+      color: $button !important;
+      background-color: $button-lightest !important;
+      border-color: $button-lightest !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $button-light !important;
+        background-color: $button-lighter !important;
+        border-color: $button-lighter !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $nuance-06 !important;
+        background-color: $gray-400 !important;
+        border-color: $gray-400 !important;
+      }
+    }
 
     @if $color == "success" {
       color: $success  !important;
@@ -123,9 +218,9 @@
 
       &.disabled,
       &:disabled {
-        color: $white !important;
-        background-color: $nuance-06 !important;
-        border-color: $nuance-06 !important;
+        color: $nuance-06 !important;
+        background-color: $gray-400 !important;
+        border-color: $gray-400 !important;
       }
     }
 
@@ -147,9 +242,9 @@
 
       &.disabled,
       &:disabled {
-        color: $white !important;
-        background-color: $nuance-06 !important;
-        border-color: $nuance-06 !important;
+        color: $nuance-06 !important;
+        background-color: $gray-400 !important;
+        border-color: $gray-400 !important;
       }
     }
 
@@ -171,9 +266,9 @@
 
       &.disabled,
       &:disabled {
-        color: $white !important;
-        background-color: $nuance-06 !important;
-        border-color: $nuance-06 !important;
+        color: $nuance-06 !important;
+        background-color: $gray-400 !important;
+        border-color: $gray-400 !important;
       }
     }
 
@@ -195,9 +290,9 @@
 
       &.disabled,
       &:disabled {
-        color: $white !important;
-        background-color: $nuance-06 !important;
-        border-color: $nuance-06 !important;
+        color: $nuance-06 !important;
+        background-color: $gray-400 !important;
+        border-color: $gray-400 !important;
       }
     }
 
@@ -219,8 +314,34 @@
 
       &.disabled,
       &:disabled {
-        color: $white !important;
-        background-color: $nuance-06 !important;
+        color: $nuance-06 !important;
+        background-color: $gray-400 !important;
+        border-color: $gray-400 !important;
+      }
+    }
+  }
+
+  .btn-outline-#{$color} {
+    @if $color == "primary" {
+      color: $button !important;
+      background-color: transparent !important;
+      border-color: $border-color !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $button-light !important;
+        background-color: $button-lightest !important;
+        border-color: $border-color !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $nuance-06 !important;
+        background-color: $white !important;
         border-color: $nuance-06 !important;
       }
     }

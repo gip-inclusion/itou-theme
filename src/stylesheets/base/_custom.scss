@@ -52,20 +52,6 @@ ol {
   pointer-events: none;
 }
 
-.btn-primary.disabled,
-.btn-primary:disabled {
-  color: $white !important;
-  background-color: $nuance-06 !important;
-  border-color: $nuance-06 !important;
-}
-
-.btn-outline-primary.disabled,
-.btn-outline-primary:disabled {
-  color: $nuance-06 !important;
-  background-color: $white !important;
-  border-color: $nuance-06 !important;
-}
-
 .form-control:disabled,
 .form-control[readonly],
 .custom-select:disabled {
@@ -159,34 +145,6 @@ select.form-control.form-control-lg {
   }
 }
 
-.btn-primary {
-  &.hover,
-  &:hover,
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    color: $white !important;
-    background-color: $tertiary !important;
-    border-color: $tertiary !important;
-  }
-}
-
-.btn-outline-primary {
-  background-color: transparent !important;
-
-  &.hover,
-  &:hover,
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    color: $tertiary !important;
-    background-color: transparent !important;
-    border-color: $tertiary !important;
-  }
-}
-
 .btn-form-control {
   color: $input-color;
   border-color: $input-border-color;
@@ -252,17 +210,16 @@ select.form-control.form-control-lg {
   @extend .align-items-center;
   @extend .justify-content-center;
   @extend .px-0;
-  width: 100%;
   aspect-ratio: 1 / 1;
 
-  max-width: 50px;
+  width: 50px;
 
   &.btn-sm {
-    max-width: 40px;
+    width: 40px;
   }
 
   &.btn-lg {
-    max-width: 62px;
+    width: 62px;
   }
 }
 
