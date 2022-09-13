@@ -1,0 +1,107 @@
+<aside class="c-aside-filters">
+  <button class="c-aside-filters__btn__collapse" data-toggle="collapse" data-target="#search-filter-form" aria-expanded="false" aria-controls="search-filter-form">
+    <i class="ri-filter-line"></i>
+    <span>Filtres des résultats</span>
+  </button>
+  <div class="c-aside-filters__card" id="search-filter-form">
+    <div class="c-aside-filters__card__body">
+      <fieldset>
+        <legend>Distance</legend>
+        <ul>
+          <% for (var i =5; i <=50;  i =i+5 ) { %>
+            <li>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item<%=i%>">
+                <label class="custom-control-label" for="customRadio1Item<%=i%>"><%=i%> km</label>
+              </div>
+            </li>
+          <% } %>
+        </ul>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend>Département</legend>
+        <ul>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1Item1">
+              <label class="custom-control-label" for="customCheck1Item1">59 - Nord</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1Item2">
+              <label class="custom-control-label" for="customCheck1Item2">62 - Pas-de-Calais</label>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend>Types de structure</legend>
+        <ul>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item1">
+              <label class="custom-control-label" for="customCheck2Item1">EI - Entreprise d'insertion</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item2">
+              <label class="custom-control-label" for="customCheck2Item2">AI - Association intermédiaire</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item3">
+              <label class="custom-control-label" for="customCheck2Item3">ACI - Atelier chantier d'insertion</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item4">
+              <label class="custom-control-label" for="customCheck2Item4">ACIPHC - Atelier chantier d'insertion premières heures en chantier</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item5">
+              <label class="custom-control-label" for="customCheck2Item5">ETTI - Entreprise de travail temporaire d'insertion</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item6">
+              <label class="custom-control-label" for="customCheck2Item6">EITI - Entreprise d'insertion par le travail indépendant</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item7">
+              <label class="custom-control-label" for="customCheck2Item7">GEIQ - Groupement d'employeurs pour l'insertion et la qualification</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item8">
+              <label class="custom-control-label" for="customCheck2Item8">EA - Entreprise adaptée</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item9">
+              <label class="custom-control-label" for="customCheck2Item9">EATT - Entreprise adaptée de travail temporaire</label>
+            </div>
+          </li>
+          <li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item10">
+              <label class="custom-control-label" for="customCheck2Item10">OPCS - Organisation porteuse de la clause sociale</label>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+  </div>
+</aside>
