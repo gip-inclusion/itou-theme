@@ -1,16 +1,16 @@
 .c-card {
 
   .card-header {
-    padding-bottom: 0 !important;
+    padding-bottom: 0;
   }
 
   .card-header,
   .card-footer {
-    @extend .bg-white;
+    background-color: transparent;
   }
 
   .card-footer {
-    padding: 0 map-get($spacers, 2) map-get($spacers, 2) map-get($spacers, 2) !important;
+    padding:  map-get($spacers, 2);
 
     > * {
       margin: $modal-footer-margin-between * .5;
