@@ -249,7 +249,7 @@ label.required:not(.custom-control-label)::after {
 .custom-radio {
   .custom-control-input:disabled ~ .custom-control-label::before,
   .custom-control-input[disabled] ~ .custom-control-label::before {
-    border-color: $gray-600;
+    border-color: $nuance-06;
     background-color: $white;
   }
 }
