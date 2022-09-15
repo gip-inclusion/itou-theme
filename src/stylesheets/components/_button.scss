@@ -57,3 +57,22 @@
     width: 62px;
   }
 }
+
+.btn-group-action {
+  // Prevent double borders when buttons are next to each other
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
+    @extend .ml-2;
+  }
+
+  // Reset rounded corners
+  > .btn:not(:last-child):not(.dropdown-toggle),
+  > .btn-group:not(:last-child) > .btn {
+    @include border-right-radius($btn-border-radius);
+  }
+
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) > .btn {
+    @include border-left-radius($btn-border-radius);
+  }
+}
