@@ -1,29 +1,59 @@
-.c-breadcrumb {
+.btn-link {
+  color: $button;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
 
-  .breadcrumb-item {
+  &.hover,
+  &:hover,
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    color: $button-light;
+  }
 
-    a {
+  &.btn-ico {
+    text-decoration: none;
+
+    span {
       text-decoration: underline;
-    }
-
-    &.active {
-      @extend .text-decoration-none;
     }
   }
 
-  .breadcrumb-item + .breadcrumb-item::before {
-    content: '\ea6e';
-    width: auto;
-    height: auto;
-    padding-right: map-get($spacers, 1);
-    padding-top: map-get($spacers, 1);
-    font-family: remixicon !important;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1;
-    vertical-align: middle;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-base;
+  &.disabled,
+  &:disabled {
+    color: $nuance-06;
+  }
+}
+
+.btn-ico {
+  @extend .d-inline-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+
+  span {
+    @extend .d-inline-block;
+  }
+
+  *:first-child:not(:only-child) {
+    margin-right: map-get($spacers, 2);
+  }
+}
+
+.btn-ico-only {
+  @extend .d-inline-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  @extend .px-0;
+  aspect-ratio: 1 / 1;
+
+  width: 50px;
+
+  &.btn-sm {
+    width: 40px;
+  }
+
+  &.btn-lg {
+    width: 62px;
   }
 }

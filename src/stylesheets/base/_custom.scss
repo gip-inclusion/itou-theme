@@ -170,59 +170,6 @@ select.form-control.form-control-lg {
   }
 }
 
-.btn-link {
-  font-weight: $font-weight-bold;
-
-  &.hover,
-  &:hover,
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    color: $tertiary;
-  }
-
-  &.btn-ico {
-    text-decoration: none;
-
-    span {
-      text-decoration: underline;
-    }
-  }
-}
-
-.btn-ico {
-  @extend .d-inline-flex;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-
-  span {
-    @extend .d-inline-block;
-  }
-
-  *:first-child:not(:only-child) {
-    margin-right: map-get($spacers, 2);
-  }
-}
-
-.btn-ico-only {
-  @extend .d-inline-flex;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-  @extend .px-0;
-  aspect-ratio: 1 / 1;
-
-  width: 50px;
-
-  &.btn-sm {
-    width: 40px;
-  }
-
-  &.btn-lg {
-    width: 62px;
-  }
-}
-
 ul.pagination {
   @extend .p-0;
 }
