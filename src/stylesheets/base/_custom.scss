@@ -52,11 +52,18 @@ ol {
   pointer-events: none;
 }
 
-.form-control:disabled,
-.form-control[readonly],
-.custom-select:disabled {
+fieldset:disabled .form-control,
+.form-control:disabled ,
+.custom-select:disabled,
+.form-control[readonly] {
   pointer-events: none;
-  border-color: $nuance-06 !important;
+  border-color: $disable-color !important;
+  color: $input-placeholder-color !important;
+  opacity: 1 !important;
+}
+
+.form-control[readonly] {
+  background-color: transparent !important;
 }
 
 .custom-select,
