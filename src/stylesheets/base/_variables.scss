@@ -412,8 +412,8 @@ $disable-color: $nuance-06;
 $disable-color-light: $nuance-09;
 
 $border-width: 1px;
-$border-color: $nuance-07;
-$border-color-hover: $nuance-08;
+$border-color: $nuance-08;
+$border-color-hover: $nuance-07;
 
 $border-radius-sm: 0.125rem; // 2px
 $border-radius: 0.25rem; // 4px
@@ -1078,9 +1078,9 @@ $jumbotron-bg: $gray-200 !default;
 
 $card-spacer-y: 1rem;
 $card-spacer-x: 1rem;
-$card-border-width: 0;
+$card-border-width: 1px;
 $card-border-radius: $border-radius;
-$card-border-color: transparent;
+$card-border-color: $border-color;
 $card-inner-border-radius: subtract(
   $card-border-radius,
   $card-border-width

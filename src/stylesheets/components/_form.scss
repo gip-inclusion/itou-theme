@@ -1,7 +1,7 @@
 .c-form {
   background-color: $white;
   border-radius: $border-radius-lg;
-  box-shadow: $box-shadow-lg;
+  border: 1px solid $border-color;
   padding: map-get($spacers, 3) map-get($spacers, 3) 0 map-get($spacers, 3);
 
   @include media-breakpoint-up(lg) {

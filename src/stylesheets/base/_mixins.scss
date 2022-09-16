@@ -99,7 +99,7 @@
     }
 
     @if $color == "info" {
-      background-color: $info-lightest !important;
+      background-color: $info-lighter !important;
     }
 
     @if $color == "important" {

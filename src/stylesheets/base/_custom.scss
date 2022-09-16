@@ -186,15 +186,6 @@ ul.pagination {
   @extend .pl-0;
 }
 
-.card {
-  transition: $transition-base;
-  box-shadow: $box-shadow-lg;
-}
-
-.card-link {
-  @extend .text-decoration-underline;
-}
-
 [data-toggle],
 [data-btn] {
   cursor: pointer;
