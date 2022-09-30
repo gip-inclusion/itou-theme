@@ -1,5 +1,6 @@
 .c-card,
 .card {
+  overflow-y: hidden;
   transition: border-color 0.3s ease-in-out;
 
   .card-header {
@@ -32,42 +33,52 @@
   }
 
   &--plateforme {
-    border-bottom: 10px solid $primary;
 
-    &:hover {
-      border-bottom-color: $primary;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 10px;
+      background-color: $primary;
     }
   }
 
   &--marche {
-    border-bottom: 10px solid $marche;
 
-    &:hover {
-      border-bottom-color: $marche;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 10px;
+      background-color: $marche;
     }
   }
 
   &--pilotage {
-    border-bottom: 10px solid $pilotage;
 
-    &:hover {
-      border-bottom-color: $pilotage;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 10px;
+      background-color: $pilotage;
     }
   }
 
   &--communaute {
-    border-bottom: 10px solid $communaute;
 
-    &:hover {
-      border-bottom-color: $communaute;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 10px;
+      background-color: $communaute;
     }
   }
 
   &--emploi {
-    border-bottom: 10px solid $emploi;
 
-    &:hover {
-      border-bottom-color: $emploi;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 10px;
+      background-color: $emploi;
     }
   }
 
@@ -76,82 +87,12 @@
     &:hover {
       border-color: $button-light;
     }
-
-    &.c-card--plateforme {
-
-      &:hover {
-        border-bottom-color: $primary;
-      }
-    }
-
-    &.c-card--marche {
-
-      &:hover {
-        border-bottom-color: $marche;
-      }
-    }
-
-    &.c-card--pilotage {
-
-      &:hover {
-        border-bottom-color: $pilotage;
-      }
-    }
-
-    &.c-card--communaute {
-
-      &:hover {
-        border-bottom-color: $communaute;
-      }
-    }
-
-    &.c-card--emploi {
-
-      &:hover {
-        border-bottom-color: $emploi;
-      }
-    }
   }
 
   &.has-links-inside {
 
     &:hover {
       border-color: $border-color-hover;
-    }
-
-    &.c-card--plateforme {
-
-      &:hover {
-        border-bottom-color: $primary;
-      }
-    }
-
-    &.c-card--marche {
-
-      &:hover {
-        border-bottom-color: $marche;
-      }
-    }
-
-    &.c-card--pilotage {
-
-      &:hover {
-        border-bottom-color: $pilotage;
-      }
-    }
-
-    &.c-card--communaute {
-
-      &:hover {
-        border-bottom-color: $communaute;
-      }
-    }
-
-    &.c-card--emploi {
-
-      &:hover {
-        border-bottom-color: $emploi;
-      }
     }
   }
 }
