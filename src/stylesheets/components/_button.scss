@@ -10,13 +10,13 @@
   &.focus,
   &:focus {
     color: $button-light;
-  }
 
-  &.btn-ico {
-    text-decoration: none;
+    &.btn-ico {
+      text-decoration: none;
 
-    span {
-      text-decoration: underline;
+      span {
+        text-decoration: underline;
+      }
     }
   }
 
