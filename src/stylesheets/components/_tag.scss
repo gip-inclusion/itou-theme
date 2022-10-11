@@ -1,0 +1,45 @@
+.tag {
+  display: inline-block;
+  padding: 0.25rem $badge-padding-x;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  @include border-radius($badge-border-radius);
+  height: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  @at-root a#{&} {
+    @include hover-focus() {
+      text-decoration: none;
+    }
+  }
+
+  > i {
+    margin-right: map-get($spacers, 1);
+    margin-left: -2px;
+    font-weight: $font-weight-bold;
+  }
+
+  + .tag {
+    @extend .ml-2;
+  }
+
+  // Empty tags collapse automatically
+  &:empty {
+    display: none;
+  }
+}
+
+// Colors
+//
+// Contextual variations (linked badges get darker on :hover).
+
+@each $color, $value in $theme-colors {
+  .tag-#{$color} {
+    @include badge-variant($value);
+  }
+}

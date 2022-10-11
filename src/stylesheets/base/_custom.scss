@@ -183,6 +183,10 @@ ul.pagination {
 
 .alert {
   color: $primary !important;
+
+  + .alert {
+    @extend .mt-3;
+  }
 }
 
 .alert-light {
