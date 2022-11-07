@@ -5,17 +5,17 @@
 
 // Color system
 
-$white:    #ffffff;
+$white: #ffffff;
 $gray-100: #eff1ff;
 $gray-200: #cccccc;
 $gray-300: #6a6a6a;
-$gray-400: #F8F8F8;
+$gray-400: #f8f8f8;
 $gray-500: #b2b4c4;
 $gray-600: #999baf;
 $gray-700: #80829c;
-$gray-800: #3F3E62;
+$gray-800: #3f3e62;
 $gray-900: #000638;
-$black:    #383838;
+$black: #383838;
 
 $grays: ();
 $grays: map-merge(
@@ -36,133 +36,132 @@ $grays: map-merge(
 $nuance: ();
 $nuance: map-merge(
   (
-    '01': #1A1F4C,
+    '01': #1a1f4c,
     '02': #333860,
-    '03': #4D5174,
-    '04': #80829B,
-    '05': #999BAF,
-    '06': #B3B4C3,
-    '07': #CCCDD7,
-    '08': #E6E6EB,
-    '09': #F2F3F5,
-    '10': #F2F3F5,
+    '03': #4d5174,
+    '04': #80829b,
+    '05': #999baf,
+    '06': #b3b4c3,
+    '07': #cccdd7,
+    '08': #e6e6eb,
+    '09': #f2f3f5,
+    '10': #f2f3f5,
   ),
   $nuance
 );
 
-$blue:    #0A76F6;
-$indigo:  #1890FF;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #DA0000;
-$orange:  #B34000;
-$yellow:  #ffc107 !default;
-$green:   #038800;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue: #0a76f6;
+$indigo: #1890ff;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #da0000;
+$orange: #b34000;
+$yellow: #ffc107 !default;
+$green: #038800;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 
-$nuance-01: #1A1F4C;
+$nuance-01: #1a1f4c;
 $nuance-02: #333860;
-$nuance-03: #4D5174;
-$nuance-04: #80829B;
-$nuance-05: #999BAF;
-$nuance-06: #B3B4C3;
-$nuance-07: #CCCDD7;
-$nuance-08: #E6E6EB;
-$nuance-09: #F2F3F5;
-$nuance-10: #F2F3F5;
+$nuance-03: #4d5174;
+$nuance-04: #80829b;
+$nuance-05: #999baf;
+$nuance-06: #b3b4c3;
+$nuance-07: #cccdd7;
+$nuance-08: #e6e6eb;
+$nuance-09: #f2f3f5;
+$nuance-10: #f2f3f5;
 
 $colors: () !default;
 $colors: map-merge(
   (
-    "blue":       $blue,
-    "indigo":     $indigo,
-    "purple":     $purple,
-    "pink":       $pink,
-    "red":        $red,
-    "orange":     $orange,
-    "yellow":     $yellow,
-    "green":      $green,
-    "teal":       $teal,
-    "cyan":       $cyan,
-    "white":      $white,
-    "gray":       $gray-600,
-    "gray-dark":  $gray-900
+    'blue': $blue,
+    'indigo': $indigo,
+    'purple': $purple,
+    'pink': $pink,
+    'red': $red,
+    'orange': $orange,
+    'yellow': $yellow,
+    'green': $green,
+    'teal': $teal,
+    'cyan': $cyan,
+    'white': $white,
+    'gray': $gray-600,
+    'gray-dark': $gray-900,
   ),
   $colors
 );
 
-$primary:       $gray-900;
-$secondary:     $gray-800;
-$tertiary:      #000091;
-$light:         $gray-400;
-$dark:          $black;
+$primary: $gray-900;
+$secondary: $gray-800;
+$tertiary: #000091;
+$light: $gray-400;
+$dark: $black;
 
-$button:       $tertiary;
-$button-light: #2323FF;
-$button-lighter: #DAEDFF;
-$button-lightest: #EDF6FF;
+$button: $tertiary;
+$button-light: #2323ff;
+$button-lighter: #daedff;
+$button-lightest: #edf6ff;
 
-$success:       $green;
-$success-light: #CEEFDB;
-$success-lighter: #E0F7E9;
-$success-lightest: #F3FFF8;
+$success: $green;
+$success-light: #ceefdb;
+$success-lighter: #e0f7e9;
+$success-lightest: #f3fff8;
 
+$warning: $orange;
+$warning-light: #ffe7c0;
+$warning-lighter: #fff3df;
+$warning-lightest: #fffbf3;
 
-$warning:       $orange;
-$warning-light: #FFE7C0;
-$warning-lighter: #FFF3DF;
-$warning-lightest: #FFFBF3;
+$danger: $red;
+$danger-light: #ffcfcd;
+$danger-lighter: #ffe1e0;
+$danger-lightest: #fff3f2;
 
-$danger:        $red;
-$danger-light:  #FFCFCD;
-$danger-lighter:  #FFE1E0;
-$danger-lightest:  #FFF3F2;
+$info: $indigo;
+$info-light: #99ceff;
+$info-lighter: #e2f1ff;
+$info-lightest: #eff7ff;
 
-$info:          $indigo;
-$info-light:      #99CEFF;
-$info-lighter:    #E2F1FF;
-$info-lightest:   #EFF7FF;
+$important: #6c38d9;
+$important-light: #cfbff5;
+$important-lighter: #e9dffc;
+$important-lightest: #f4f2ff;
 
-$important:     #6C38D9;
-$important-light:     #CFBFF5;
-$important-lighter:    #E9DFFC;
-$important-lightest:   #F4F2FF;
+$accent-01: #f42ad4;
+$accent-01-light: #fdcdf6;
+$accent-01-lighter: #fedff9;
+$accent-01-lightest: #fff1fd;
 
-$accent-01:     #F42AD4;
-$accent-01-light:     #FDCDF6;
-$accent-01-lighter:  #FEDFF9;
-$accent-01-lightest:   #FFF1FD;
+$accent-02: #8adcff;
+$accent-02-light: #d1f1ff;
+$accent-02-lighter: #e2f6ff;
+$accent-02-lightest: #ebf9ff;
 
-$accent-02:     #8ADCFF;
-$accent-02-light:  #D1F1FF;
-$accent-02-lighter: #E2F6FF;
-$accent-02-lightest: #EBF9FF;
+$accent-03: #ffbe18;
+$accent-03-light: #ffe8ad;
+$accent-03-lighter: #fff2cf;
+$accent-03-lightest: #fff7e0;
 
-$accent-03: #FFBE18;
-$accent-03-light: #FFE8AD;
-$accent-03-lighter: #FFF2CF;
-$accent-03-lightest:  #FFF7E0;
+$marche: #fe5455;
+$marche-light: #ffdddd;
+$marche-lighter: #ffeeee;
+$marche-lightest: #fff6f6;
 
-$marche: #FE5455;
-$marche-light: #FFDDDD;
-$marche-lighter: #FFEEEE;
-$marche-lightest: #FFF6F6;
+$communaute: #18a47d;
+$communaute-light: #d1ede5;
+$communaute-lighter: #e8f6f2;
+$communaute-lightest: #f3faf8;
 
-$communaute: #18A47D;
-$communaute-light: #D1EDE5;
-$communaute-lighter: #E8F6F2;
-$communaute-lightest: #F3FAF8;
+$pilotage: #ffad1d;
+$pilotage-light: #ffefd2;
+$pilotage-lighter: #fff7e8;
+$pilotage-lightest: #fff8ed;
 
-$pilotage: #FFAD1D;
-$pilotage-light: #FFEFD2;
-$pilotage-lighter: #FFF7E8;
-$pilotage-lightest: #FFF8ED;
-
-$emploi: #006ADC;
-$emploi-light: #CCE1F8;
-$emploi-lighter: #E5F0FB;
-$emploi-lightest: #F2F8FD;
+$emploi: #006adc;
+$emploi-light: #cce1f8;
+$emploi-lighter: #e5f0fb;
+$emploi-lightest: #f2f8fd;
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -241,7 +240,7 @@ $theme-colors: map-merge(
     'nuance-07': $nuance-07,
     'nuance-08': $nuance-08,
     'nuance-09': $nuance-09,
-    'nuance-10': $nuance-10
+    'nuance-10': $nuance-10,
   ),
   $theme-colors
 );
@@ -318,7 +317,7 @@ $spacers: map-merge(
     ),
     9: (
       $spacer * 6,
-    )
+    ),
   ),
   $spacers
 );
@@ -407,7 +406,6 @@ $grid-row-columns: 6 !default;
 $line-height-lg: 1.5;
 $line-height-sm: 1.2;
 
-
 $disable-color: $nuance-06;
 $disable-color-light: $nuance-09;
 
@@ -447,54 +445,86 @@ $embed-responsive-aspect-ratios: join(
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Regular.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Regular.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Light.woff2') format('woff2'), url('../fonts/marianne/Marianne-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Medium.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Medium.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Light_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Light_Italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/marianne/Marianne-Regular.woff2') format('woff2'), url('../fonts/marianne/Marianne-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Bold.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Bold.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Regular_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Regular_Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/marianne/Marianne-Medium.woff2') format('woff2'), url('../fonts/marianne/Marianne-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/marianne/Marianne-Medium_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Medium_Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/marianne/Marianne-Bold.woff2') format('woff2'), url('../fonts/marianne/Marianne-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-ExtraBold.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-ExtraBold.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Bold_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Bold_Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/marianne/Marianne-ExtraBold.woff2') format('woff2'), url('../fonts/marianne/Marianne-ExtraBold.woff') format('woff');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-  'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol', 'Noto Color Emoji';
-$font-family-heading: Marianne, Arial, 'Noto Sans', 'Liberation Sans',
-  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-  'Noto Color Emoji';
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  'Liberation Mono', 'Courier New', monospace !default;
+$font-family-sans-serif: Marianne, Arial, sans-serif;
+$font-family-heading: Marianne, Arial, sans-serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif;
-$font-family-extra-01: 'Covered By Your Grace', 'Helvetica Neue', Arial, 'Noto Sans',
-'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-extra-01: 'Covered By Your Grace', Marianne, Arial, sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
@@ -505,6 +535,7 @@ $font-size-xs: $font-size-base * 0.75; // 12px
 $font-weight-lighter: 300;
 $font-weight-light: 300;
 $font-weight-normal: 400;
+$font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-bolder: 900;
 
@@ -542,7 +573,7 @@ $lead-font-weight: 300;
 
 $small-font-size: 75%;
 
-$text-muted: $nuance-03;
+$text-muted: $disable-color;
 
 $blockquote-small-color: $nuance-03;
 $blockquote-small-font-size: $small-font-size !default;
@@ -610,7 +641,7 @@ $input-btn-font-size: $font-size-base;
 $input-btn-line-height: $line-height-sm;
 
 $input-btn-focus-width: 0.2rem;
-$input-btn-focus-color: rgba($component-active-bg, 0.30);
+$input-btn-focus-color: rgba($component-active-bg, 0.3);
 $input-btn-focus-box-shadow: none;
 
 $input-btn-padding-y-sm: 0.6rem;
@@ -664,7 +695,8 @@ $btn-border-radius: $border-radius;
 $btn-border-radius-lg: $border-radius;
 $btn-border-radius-sm: $border-radius;
 
-$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
 // Forms
 
@@ -710,14 +742,8 @@ $input-plaintext-color: $gray-800;
 
 $input-height-border: $input-border-width * 2;
 
-$input-height-inner: add(
-  $input-line-height * 1em,
-  $input-padding-y * 2
-);
-$input-height-inner-half: add(
-  $input-line-height * 0.5em,
-  $input-padding-y
-);
+$input-height-inner: add($input-line-height * 1em, $input-padding-y * 2);
+$input-height-inner-half: add($input-line-height * 0.5em, $input-padding-y);
 $input-height-inner-quarter: add(
   $input-line-height * 0.25em,
   $input-padding-y / 2
@@ -830,12 +856,22 @@ $custom-select-bg-size: 24px 24px; // In pixels because image dimensions
 $custom-select-indicator-color: $gray-800;
 $custom-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='#{$custom-select-indicator-color}' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/></svg>");
 $custom-select-disabled-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='#{$custom-select-disabled-color}' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/></svg>");
-$custom-select-background: escape-svg($custom-select-indicator) right $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
-$custom-select-disabled-background: escape-svg($custom-select-disabled-indicator) right $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
+$custom-select-background: escape-svg($custom-select-indicator) right
+  $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
+$custom-select-disabled-background: escape-svg(
+    $custom-select-disabled-indicator
+  )
+  right $custom-select-padding-x center / $custom-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
-$custom-select-feedback-icon-padding-right: add(1em * 0.75, (2 * $custom-select-padding-y * 0.75) + $custom-select-padding-x + $custom-select-indicator-padding);
-$custom-select-feedback-icon-position: center right ($custom-select-padding-x + $custom-select-indicator-padding);
-$custom-select-feedback-icon-size: $input-height-inner-half $input-height-inner-half;
+$custom-select-feedback-icon-padding-right: add(
+  1em * 0.75,
+  (2 * $custom-select-padding-y * 0.75) + $custom-select-padding-x +
+    $custom-select-indicator-padding
+);
+$custom-select-feedback-icon-position: center right
+  ($custom-select-padding-x + $custom-select-indicator-padding);
+$custom-select-feedback-icon-size: $input-height-inner-half
+  $input-height-inner-half;
 
 $custom-select-border-width: $input-border-width;
 $custom-select-border-color: $input-border-color;
@@ -869,7 +905,8 @@ $custom-range-thumb-bg: $primary;
 $custom-range-thumb-border: 0;
 $custom-range-thumb-border-radius: 1rem;
 $custom-range-thumb-box-shadow: none;
-$custom-range-thumb-focus-box-shadow: 0 0 0 1px $body-bg, $input-focus-box-shadow;
+$custom-range-thumb-focus-box-shadow: 0 0 0 1px $body-bg,
+  $input-focus-box-shadow;
 $custom-range-thumb-focus-box-shadow-width: $input-focus-width; // For focus box shadow issue in IE/Edge
 $custom-range-thumb-active-bg: $tertiary;
 $custom-range-thumb-disabled-bg: $gray-200;
@@ -1217,8 +1254,8 @@ $modal-header-border-color: $white;
 $modal-footer-border-color: $modal-header-border-color;
 $modal-header-border-width: $modal-content-border-width;
 $modal-footer-border-width: $modal-header-border-width !default;
-$modal-header-padding-y: map-get($spacers , 3);
-$modal-header-padding-x: map-get($spacers , 3);
+$modal-header-padding-y: map-get($spacers, 3);
+$modal-header-padding-x: map-get($spacers, 3);
 $modal-header-padding: $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
 
 $modal-xl: 1140px !default;
@@ -1333,8 +1370,12 @@ $carousel-caption-color: $white !default;
 
 $carousel-control-icon-width: 20px;
 
-$carousel-control-prev-icon-bg: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M14.036 8.95H3.00601L6.49001 12.737C6.53081 12.7814 6.56229 12.8336 6.58257 12.8904C6.60285 12.9473 6.61152 13.0076 6.60807 13.0678C6.60462 13.1281 6.58912 13.187 6.56248 13.2411C6.53585 13.2953 6.49862 13.3435 6.45301 13.383C6.35984 13.464 6.23875 13.5054 6.11549 13.4985C5.99224 13.4916 5.87654 13.4369 5.79301 13.346L1.61401 8.8L1.57901 8.757L1.54601 8.707L1.53301 8.657V8.539C1.53301 8.527 1.50001 8.519 1.50001 8.495V8.344L1.51401 8.294L1.53301 8.264L1.56701 8.219L5.76001 3.653C5.84354 3.5621 5.95924 3.50738 6.08249 3.50047C6.20575 3.49356 6.32684 3.53501 6.42001 3.616C6.46543 3.65564 6.50247 3.70397 6.52894 3.75813C6.5554 3.8123 6.57077 3.87122 6.57412 3.93141C6.57747 3.99161 6.56875 4.05187 6.54847 4.10864C6.52818 4.16542 6.49675 4.21756 6.45601 4.262L3.00601 8.039H14.037C14.1588 8.03793 14.2761 8.08524 14.3631 8.17054C14.4501 8.25585 14.4997 8.37217 14.501 8.494C14.4997 8.61583 14.4501 8.73215 14.3631 8.81746C14.2761 8.90276 14.1588 8.95007 14.037 8.949L14.036 8.95Z" fill="#{$carousel-control-color}" stroke="#{$carousel-control-color}"/></svg>'));
-$carousel-control-next-icon-bg: escape-svg(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$carousel-control-color}" fill-rule="nonzero" stroke="#{$carousel-control-color}" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"></path></svg>'));
+$carousel-control-prev-icon-bg: escape-svg(
+  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M14.036 8.95H3.00601L6.49001 12.737C6.53081 12.7814 6.56229 12.8336 6.58257 12.8904C6.60285 12.9473 6.61152 13.0076 6.60807 13.0678C6.60462 13.1281 6.58912 13.187 6.56248 13.2411C6.53585 13.2953 6.49862 13.3435 6.45301 13.383C6.35984 13.464 6.23875 13.5054 6.11549 13.4985C5.99224 13.4916 5.87654 13.4369 5.79301 13.346L1.61401 8.8L1.57901 8.757L1.54601 8.707L1.53301 8.657V8.539C1.53301 8.527 1.50001 8.519 1.50001 8.495V8.344L1.51401 8.294L1.53301 8.264L1.56701 8.219L5.76001 3.653C5.84354 3.5621 5.95924 3.50738 6.08249 3.50047C6.20575 3.49356 6.32684 3.53501 6.42001 3.616C6.46543 3.65564 6.50247 3.70397 6.52894 3.75813C6.5554 3.8123 6.57077 3.87122 6.57412 3.93141C6.57747 3.99161 6.56875 4.05187 6.54847 4.10864C6.52818 4.16542 6.49675 4.21756 6.45601 4.262L3.00601 8.039H14.037C14.1588 8.03793 14.2761 8.08524 14.3631 8.17054C14.4501 8.25585 14.4997 8.37217 14.501 8.494C14.4997 8.61583 14.4501 8.73215 14.3631 8.81746C14.2761 8.90276 14.1588 8.95007 14.037 8.949L14.036 8.95Z" fill="#{$carousel-control-color}" stroke="#{$carousel-control-color}"/></svg>')
+);
+$carousel-control-next-icon-bg: escape-svg(
+  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$carousel-control-color}" fill-rule="nonzero" stroke="#{$carousel-control-color}" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"></path></svg>')
+);
 
 $carousel-transition-duration: 0.6s !default;
 $carousel-transition: transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)

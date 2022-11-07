@@ -5,7 +5,8 @@
   padding: map-get($spacers, 3) map-get($spacers, 3) 0 map-get($spacers, 3);
 
   @include media-breakpoint-up(lg) {
-    padding: map-get($spacers, 5) map-get($spacers, 5) map-get($spacers, 3) map-get($spacers, 5);
+    padding: map-get($spacers, 5) map-get($spacers, 5) map-get($spacers, 3)
+      map-get($spacers, 5);
   }
 
   legend {
@@ -38,7 +39,7 @@
         width: 5px;
         border-radius: 5px 0 0 5px;
         background-color: $primary;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
       }
 
       @include media-breakpoint-up(lg) {
@@ -55,7 +56,6 @@
       }
 
       &.is-openable {
-
         @include media-breakpoint-up(lg) {
           line-height: $line-height-base;
           overflow: hidden;

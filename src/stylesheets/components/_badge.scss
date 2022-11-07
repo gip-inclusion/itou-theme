@@ -16,7 +16,7 @@
 
   &-sm {
     font-size: $font-size-sm;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-medium;
     padding: $badge-padding-y $badge-padding-x;
 
     > i {
@@ -29,7 +29,7 @@
   &-xs {
     font-size: $font-size-xs;
     font-weight: $font-weight-normal;
-    padding: 0.25rem $badge-padding-x;
+    padding: 0.20rem $badge-padding-x 0.30rem $badge-padding-x;
 
     > i {
       @extend .ri-xs;
