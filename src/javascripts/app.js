@@ -77,4 +77,20 @@ function tabsItemsToDropdown() {
       tabsItemsToDropdown();
     }
   }
-}
+};
+
+
+$('[data-clipboard=copy]').on('click tap', function() {
+  $(this).tooltip('show');
+  let thisParent = $(this).parents('.input-group');
+  let thisValue = $(thisParent).find('.form-control').val();
+  navigator.clipboard.writeText(thisValue).then(() => {
+    //console.log('ok: ' + thisValue);
+  }).catch(() => {
+    //console.log('Veillez saisir le texte à copier');
+  });
+});
+
+$('[data-clipboard=copy]').on('blur', function() {
+  $(this).tooltip('hide');
+});

@@ -20,6 +20,11 @@ strong {
   font-weight: $font-weight-bold;
 }
 
+pre {
+  color: $black;
+  background-color: $nuance-09;
+}
+
 .container {
   max-width: map-get($container-max-widths, 'xl');
 }
@@ -150,7 +155,17 @@ select.form-control.form-control-lg {
       border-color: $input-focus-color;
     }
   }
+
+  &-append,
+  &-prepend {
+    .btn-link {
+      border-top: $input-border-width solid $input-border-color;
+      border-bottom: $input-border-width solid $input-border-color;
+      border-right: $input-border-width solid $input-border-color;
+    }
+  }
 }
+
 
 .btn-form-control {
   color: $input-color;
