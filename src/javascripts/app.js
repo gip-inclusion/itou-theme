@@ -9,6 +9,7 @@ $(window).on('load', function() {
   $('[data-toggle="popover"]').popover();
   $('[data-toggle="tooltip"]').tooltip();
   tabsItemsToDropdown();
+  alertCloseOnce();
 });
 
 // Re-initialisation au resize
@@ -82,7 +83,7 @@ function tabsItemsToDropdown() {
 
 $('[data-clipboard=copy]').on('click tap', function() {
   $(this).tooltip('show');
-  let thisParent = $(this).parents('.input-group');
+  let thisParent = $(this).closest('.input-group');
   let thisValue = $(thisParent).find('.form-control').val();
   navigator.clipboard.writeText(thisValue).then(() => {
     //console.log('ok: ' + thisValue);
@@ -93,4 +94,24 @@ $('[data-clipboard=copy]').on('click tap', function() {
 
 $('[data-clipboard=copy]').on('blur', function() {
   $(this).tooltip('hide');
+});
+
+
+
+function alertCloseOnce() {
+  if ($('[data-close=once]').length) {
+    $('[data-close=once]').each(function() {
+      let thisParent = $(this).closest('.alert-dismissible');
+      let thisUniqueID = $(thisParent).attr('id');
+      const showAlert = localStorage.getItem(thisUniqueID) === null;
+      $(thisParent).toggleClass('d-none', !showAlert);
+    });
+  }
+};
+
+$('[data-close=once]').on('click tap',function() {
+  let thisParent = $(this).closest('.alert-dismissible');
+  let thisUniqueID = $(thisParent).attr('id');
+  localStorage.setItem(thisUniqueID, 'seen');
+  $(thisParent).addClass('d-none');
 });
