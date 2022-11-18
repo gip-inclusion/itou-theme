@@ -145,6 +145,7 @@
                     </div>
                   </div>
                 </div>
+                <hr>
                 <div class="mb-5">
                   <h6>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</h6>
                   <div class="alert alert-info" role="status">
@@ -154,7 +155,8 @@
                     <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
                   </div>
                 </div>
-                <div class="mb-5">
+                <hr>
+                <div class="mb-5" id="alert-dismissible">
                   <h6>Using the alert JavaScript plugin, it’s possible to dismiss any alert inline with <code>.alert-dismissible</code>.</h6>
                   <div class="alert alert-info alert-dismissible fade show" role="status">
                     <strong>Holy guacamole!</strong> You should check in on some of those fields below.
@@ -506,13 +508,14 @@
               <div class="col-12 col-lg-9">
                 <div class="mb-5">
                   <h6>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</h6>
-                  <nav class="c-breadcrumb" aria-label="Fil d'ariane">
+                  <nav class="c-breadcrumb c-breadcrumb--communaute" aria-label="Fil d'ariane">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item"><a href="#">Library</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        <li class="breadcrumb-item"><a href="">Accueil</a></li>
+                        <li class="breadcrumb-item"><a href="">Communauté</a></li>
+                        <li class="breadcrumb-item"><a href="">France Travail</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Accompagnement des personnes</li>
                     </ol>
-                  </nav>
+                </nav>
                 </div>
               </div>
             </article>
@@ -750,6 +753,12 @@
                       <button type="button" class="btn btn-block btn-success" disabled>disabled</button>
                     </div>
                   </div>
+                </div>
+                <div class="mb-5" id="btn-like">
+                  <button type="button" class="btn btn-ico btn-link btn-like">
+                    <i></i>
+                    <span>J'aime</span>
+                  </button>
                 </div>
               </div>
             </article>

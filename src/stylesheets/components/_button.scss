@@ -76,3 +76,61 @@
     @include border-left-radius($btn-border-radius);
   }
 }
+
+.btn-like {
+  i {
+    position: relative;
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    vertical-align: middle;
+    @extend .ri-lg;
+    @extend .text-danger;
+
+    &::before {
+      content: '\ee0b';
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      opacity: 0;
+      content: '\ee0a';
+    }
+
+    &::before,
+    &::after {
+      transition: $transition-base;
+    }
+  }
+
+  &:hover {
+    i::before {
+      content: '\ee0a';
+    }
+  }
+
+  &:focus {
+    i::before {
+      content: '\ee0a';
+    }
+
+    i::after {
+      animation: grow .6s ease-out;
+    }
+  }
+
+  @keyframes grow {
+    0%  {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100%  {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+}
