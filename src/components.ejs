@@ -554,19 +554,19 @@
                   <div class="row">
                     <div class="col-12 col-md-4 mb-3">
                       <button class="btn btn-block btn-primary btn-sm btn-ico">
-                        <i class="ri-user-line"></i>
+                        <i class="ri-user-line" aria-hidden="true"></i>
                         <span>.btn .btn-ico</span>
                       </button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                       <button class="btn btn-block btn-primary btn-ico">
-                        <i class="ri-zoom-in-line ri-lg"></i>
+                        <i class="ri-zoom-in-line ri-lg" aria-hidden="true"></i>
                         <span>.btn .btn-ico</span>
                       </button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                       <button class="btn btn-block btn-primary btn-lg btn-ico">
-                        <i class="ri-add-line ri-xl"></i>
+                        <i class="ri-add-line ri-xl" aria-hidden="true"></i>
                         <span>.btn-lg .btn-ico</span>
                       </button>
                     </div>
@@ -576,19 +576,19 @@
                     <div class="col-12 col-md-4 mb-3">
                       <button class="btn btn-block btn-primary btn-sm btn-ico">
                         <span>.btn .btn-ico</span>
-                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                       <button class="btn btn-block btn-primary btn-ico">
                         <span>.btn .btn-ico</span>
-                        <i class="ri-external-link-line ri-lg"></i>
+                        <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                       <button class="btn btn-block btn-primary btn-lg btn-ico">
                         <span>.btn-lg .btn-ico</span>
-                        <i class="ri-arrow-right-s-line xl"></i>
+                        <i class="ri-arrow-right-s-line xl" aria-hidden="true"></i>
                       </button>
                     </div>
                   </div>
@@ -671,7 +671,7 @@
                     <div class="col-12 col-md-3 mb-3">
                       <button type="button" class="btn btn-block btn-ico btn-link">
                         <span>default</span>
-                        <i class="ri-external-link-line ri-lg"></i>
+                        <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
@@ -709,19 +709,19 @@
                   <div class="row">
                     <div class="col-12 col-md-3 mb-3">
                       <button type="button" class="btn btn-block btn-ico btn-danger">
-                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal" aria-hidden="true"></i>
                         <span>default</span>
                       </button>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                       <button type="button" class="btn btn-block btn-ico btn-danger hover focus">
                         <span>:hover / focus </span>
-                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                       <button type="button" class="btn btn-ico-only btn-danger" aria-label="ici le label A11Y du bouton">
-                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
@@ -734,19 +734,19 @@
                   <div class="row">
                     <div class="col-12 col-md-3 mb-3">
                       <button type="button" class="btn btn-block btn-ico btn-success">
-                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal" aria-hidden="true"></i>
                         <span>default</span>
                       </button>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                       <button type="button" class="btn btn-block btn-ico btn-success hover focus">
                         <span>:hover / focus </span>
-                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                       <button type="button" class="btn btn-ico-only btn-success" aria-label="ici le label A11Y du bouton">
-                        <i class="ri-eye-2-line ri-lg font-weight-normal"></i>
+                        <i class="ri-eye-2-line ri-lg font-weight-normal" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
@@ -755,9 +755,11 @@
                   </div>
                 </div>
                 <div class="mb-5" id="btn-like">
-                  <button type="button" class="btn btn-ico btn-link btn-like">
-                    <i></i>
+                  <button type="button" class="btn btn-ico btn-link btn-like pl-0">
+                    <i class="ri-heart-3-line" aria-hidden="true"></i>
                     <span>J'aime</span>
+                    <span class="badge-xs badge-pill badge-button text-white ml-1">9</span>
+                    <span class="sr-only">9 j'aime sur ce sujet</span>
                   </button>
                 </div>
               </div>
@@ -797,9 +799,9 @@
                   <br>
                   <p>With <code>.btn-group-action</code></p>
                   <div class="btn-group btn-group-action btn-group-sm" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-success btn-ico-only"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
-                    <button type="button" class="btn btn-danger btn-ico-only"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
-                    <button type="button" class="btn btn-secondary btn-ico-only"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
+                    <button type="button" class="btn btn-success btn-ico-only" aria-label="ici le label A11Y du bouton"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
+                    <button type="button" class="btn btn-danger btn-ico-only" aria-label="ici le label A11Y du bouton"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
+                    <button type="button" class="btn btn-secondary btn-ico-only" aria-label="ici le label A11Y du bouton"><i class="ri-eye-2-line ri-lg font-weight-normal"></i></button>
                   </div>
                 </div>
               </div>

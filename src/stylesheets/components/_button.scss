@@ -14,7 +14,7 @@
     &.btn-ico {
       text-decoration: none;
 
-      span {
+      span:not([class^='badge-']) {
         text-decoration: underline;
       }
     }
@@ -86,7 +86,7 @@
     -moz-osx-font-smoothing: grayscale;
     line-height: 1;
     vertical-align: middle;
-    @extend .ri-lg;
+    @extend .ri-xl;
     @extend .text-danger;
 
     &::before {
