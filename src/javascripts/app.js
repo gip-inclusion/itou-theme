@@ -1,5 +1,30 @@
 // Require libraries
 
+// Algolia pour la Doc du thème
+// const algoliasearch = require('algoliasearch');
+
+// const searchClient = algoliasearch('64MGCBJUFV', '68384ed86eb813dd37d60cae47715eba');
+// const index = searchClient.initIndex('index_theme');
+
+// const search = instantsearch({
+//   indexName: 'index_theme',
+//   searchClient,
+// });
+
+// search.addWidgets([
+//   instantsearch.widgets.searchBox({
+//     container: '#searchbox',
+//   }),
+
+//   instantsearch.widgets.hits({
+//     container: '#hits',
+//   })
+// ]);
+
+// search.start();
+
+
+
 // Vars
 const stickyNav = $('#header');
 const rootStyle = getComputedStyle(document.body);
