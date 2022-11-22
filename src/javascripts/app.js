@@ -124,18 +124,20 @@ $('[data-clipboard=copy]').on('blur', function() {
 
 
 function alertCloseOnce() {
-  if ($('[data-close=once]').length) {
-    $('[data-close=once]').each(function() {
-      let thisParent = $(this).closest('.alert-dismissible');
-      let thisUniqueID = $(thisParent).attr('id');
-      const showAlert = localStorage.getItem(thisUniqueID) === null;
-      $(thisParent).toggleClass('d-none', !showAlert);
+  if ($('.alert-dismissible-once').length) {
+    $('.alert-dismissible-once').each(function() {
+      let thisAlert = $(this);
+      let thisUniqueID = $(thisAlert).attr('id');
+      const seenAlert = localStorage.getItem(thisUniqueID);
+      if (seenAlert === null) {
+        $(thisAlert).removeClass('d-none');
+      }
     });
   }
 };
 
-$('[data-close=once]').on('click tap',function() {
-  let thisParent = $(this).closest('.alert-dismissible');
+$('.alert-dismissible-once .close').on('click tap',function() {
+  let thisParent = $(this).closest('.alert-dismissible-once');
   let thisUniqueID = $(thisParent).attr('id');
   localStorage.setItem(thisUniqueID, 'seen');
   $(thisParent).addClass('d-none');
