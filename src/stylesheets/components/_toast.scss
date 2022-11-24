@@ -1,8 +1,10 @@
 .toast-placement-wrapper {
   position: fixed;
+  z-index: $zindex-toast;
   top: map-get($spacers, 3);
   right: map-get($spacers, 3);
 }
+
 .toast {
 
   &--info {

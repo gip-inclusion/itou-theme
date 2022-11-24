@@ -1397,7 +1397,6 @@
                   <p>Trois variations de toasts sont possibles.<br><code>.toast--info</code>, <code>.toast--warning</code>, <code>.toast--danger</code>, <code>.toast--success</code></p>
                   <p>Pour le positionnement et le staking des Toasts il faut placer les <code>.toast</code> dans le wrapper <code>toast-placement-wrapper</code>. Pour la gestion du dismiss, du js  voir la <a href="https://getbootstrap.com/docs/4.6/components/toasts/" target="_blank">documentation</a>.</p>
                   <br>
-
                   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
@@ -1410,10 +1409,8 @@
                       Hello, world! This is a toast message.
                     </div>
                   </div>
-
                   <br>
-
-                  <div class="toast toast--info" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast toast--info" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
                       <strong class="mr-auto">Info Toast</strong>
@@ -1425,10 +1422,8 @@
                       Hello, world! This is a toast message.
                     </div>
                   </div>
-
                   <br>
-
-                  <div class="toast toast--danger" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast toast--danger" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
                       <strong class="mr-auto">danger Toast</strong>
@@ -1440,10 +1435,8 @@
                       Hello, world! This is a toast message.
                     </div>
                   </div>
-
                   <br>
-
-                  <div class="toast toast--success show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast toast--success" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
                       <strong class="mr-auto">success Toast</strong>
@@ -1455,10 +1448,8 @@
                       Hello, world! This is a toast message.
                     </div>
                   </div>
-
                   <br>
-
-                  <div class="toast toast--warning show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast toast--warning" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
                       <strong class="mr-auto">warning Toast</strong>
@@ -1470,7 +1461,6 @@
                       Hello, world! This is a toast message.
                     </div>
                   </div>
-
                   <br>
                   <button type="button" class="btn btn-sm btn-primary" id="liveToastBtn">Show live toast</button>
                 </div>
@@ -1482,7 +1472,7 @@
     </main>
 
     <div class="toast-placement-wrapper">
-      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div id="liveToast" class="toast hide" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
         <div class="toast-header">
           <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
           <strong class="mr-auto">Default Toast</strong>
