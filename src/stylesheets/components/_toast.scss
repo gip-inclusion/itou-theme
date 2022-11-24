@@ -1,0 +1,63 @@
+.toast-placement-wrapper {
+  position: fixed;
+  top: map-get($spacers, 3);
+  right: map-get($spacers, 3);
+}
+.toast {
+
+  &--info {
+    color: $info;
+    border-color: $info;
+
+    .toast-header {
+      color: $info;
+      background-color: $info-lightest;
+
+      .close {
+        color: $info;
+      }
+    }
+  }
+
+  &--danger {
+    color: $danger;
+    border-color: $danger;
+
+    .toast-header {
+      color: $danger;
+      background-color: $danger-lightest;
+
+      .close {
+        color: $danger;
+      }
+    }
+  }
+
+  &--success {
+    color: $success;
+    border-color: $success;
+
+    .toast-header {
+      color: $success;
+      background-color: $success-lightest;
+
+      .close {
+        color: $success;
+      }
+    }
+  }
+
+  &--warning {
+    color: $warning;
+    border-color: $warning;
+
+    .toast-header {
+      color: $warning;
+      background-color: $warning-lightest;
+
+      .close {
+        color: $warning;
+      }
+    }
+  }
+}
