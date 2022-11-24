@@ -180,6 +180,7 @@
                 <div id="alert-dismissible-once">
                   <h6>L'état des <code>.alert-dismissible-once</code> peut aussi être gardé en mémoire grace au <code>localStorage</code></h6>
                   <p>Pour celà il faut ajouter un <code>id=""</code> sur le <code>div.alert-dismissible-once</code>.</p>
+                  <p>L'état display par defaut des <code>.alert-dismissible-once</code> est masqué puis affiché apres chargement de page via le js si l'utilisateur n'a jamais cliqué sur le <code>.close</code>.</p>
                   <div class="alert alert-info alert-dismissible-once d-none" role="status" id="alertDismissiblOnce01">
                     <p class="mb-2">
                       <strong>.alert-dismissible-once 01</strong>
@@ -1417,7 +1418,7 @@
                   <p>Pour le positionnement et le staking des Toasts il faut placer les <code>.toast</code> dans le wrapper <code>toast-placement-wrapper</code>. Pour la gestion du dismiss, du js  voir la <a href="https://getbootstrap.com/docs/4.6/components/toasts/" target="_blank">documentation</a>.</p>
                   <br>
 
-                  <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
                       <strong class="mr-auto">Default Toast</strong>
@@ -1432,7 +1433,7 @@
 
                   <br>
 
-                  <div class="toast toast--info show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast toast--info" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
                       <strong class="mr-auto">Info Toast</strong>
@@ -1447,7 +1448,7 @@
 
                   <br>
 
-                  <div class="toast toast--danger show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast toast--danger" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
                       <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
                       <strong class="mr-auto">danger Toast</strong>
@@ -1528,6 +1529,12 @@
         });
       });
     </script>
+
+    <style>
+      #toasts .toast {
+        opacity: 1;
+      }
+    </style>
   </body>
 
 </html>
