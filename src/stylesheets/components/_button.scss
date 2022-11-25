@@ -78,6 +78,7 @@
 }
 
 .btn-like {
+
   i {
     position: relative;
     font-family: 'remixicon' !important;
@@ -88,10 +89,6 @@
     vertical-align: middle;
     @extend .ri-xl;
     @extend .text-danger;
-
-    &::before {
-      content: '\ee0b';
-    }
 
     &::after {
       position: absolute;
