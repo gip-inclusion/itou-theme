@@ -79,6 +79,10 @@
   aspect-ratio: 16 / 9;
 }
 
+.has-no-transition {
+  transition: none !important;
+}
+
 .has-collapse-caret {
   position: relative;
   text-decoration: none;
@@ -100,3 +104,4 @@
     content: '\ea78';
   }
 }
+
