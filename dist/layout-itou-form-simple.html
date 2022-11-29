@@ -555,9 +555,9 @@
 
                         <legend>Titre de ce fieldset (Optionnel)</legend>
                         <div class="form-row">
-                          <div class="form-group col-md-6">
+                          <div class="form-group form-group-required col-md-6">
                             <label for="validationCustom01">First name</label>
-                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required aria-describedby="fieldRequired">
                             <div class="valid-feedback">
                               Looks good!
                             </div>
@@ -600,8 +600,11 @@
                     </div>
                 </fieldset>
 
-                <hr>
+                <hr class="mb-3">
                 <div class="row">
+                  <div class="col-12 mb-3">
+                    <small id="fieldRequired">* champs obligatoires</small>
+                  </div>
                   <div class="col-12">
                     <div class="form-row align-items-center">
                       <div class="form-group col-12 col-lg order-3 order-lg-1">
