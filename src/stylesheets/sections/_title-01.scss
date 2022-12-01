@@ -3,7 +3,7 @@
   margin-bottom: map-get($spacers, 4);
 
   @include media-breakpoint-up(lg) {
-    margin-bottom: map-get($spacers, 6);
+    margin-top: map-get($spacers, 5);
   }
 
   &__col {

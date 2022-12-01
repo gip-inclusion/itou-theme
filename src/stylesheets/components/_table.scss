@@ -1,0 +1,38 @@
+.table {
+  thead th {
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+  }
+
+  // &-bordered {
+  //   border-radius: $border-radius-xl;
+
+  //   tr {
+  //     @include border-top-radius($border-radius-xl);
+
+  //     &:first-child {
+  //       > * {
+  //         &:first-child {
+  //           @include border-top-left-radius($border-radius-xl);
+  //         }
+  //         &:last-child {
+  //           @include border-top-right-radius($border-radius-xl);
+  //         }
+  //       }
+  //     }
+
+  //     &:last-child {
+  //       @include border-bottom-radius($border-radius-xl);
+
+  //       > * {
+  //         &:first-child {
+  //           @include border-bottom-left-radius($border-radius-xl);
+  //         }
+  //         &:last-child {
+  //           @include border-bottom-right-radius($border-radius-xl);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}

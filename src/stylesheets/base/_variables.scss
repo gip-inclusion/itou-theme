@@ -70,7 +70,7 @@ $nuance-06: #b3b4c3;
 $nuance-07: #cccdd7;
 $nuance-08: #e6e6eb;
 $nuance-09: #f2f3f5;
-$nuance-10: #f2f3f5;
+$nuance-10: #f8f8f8;
 
 $colors: () !default;
 $colors: map-merge(
@@ -612,9 +612,9 @@ $table-active-bg: $table-hover-bg;
 $table-border-width: $border-width;
 $table-border-color: $border-color;
 
-$table-head-bg: $nuance-10;
-$table-head-color: $body-color;
-$table-th-font-weight: null !default;
+$table-head-bg: $gray-400;
+$table-head-color: $text-muted;
+$table-th-font-weight: $font-weight-normal;
 
 $table-dark-color: $white !default;
 $table-dark-bg: $primary;
