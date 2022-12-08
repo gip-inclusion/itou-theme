@@ -195,6 +195,27 @@ select.form-control.form-control-lg {
 
 ul.pagination {
   @extend .p-0;
+
+  .page-item {
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    &:not(.active) {
+      .page-link:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.active {
+      .page-link:hover {
+        background-color: $button-light;
+      }
+    }
+  }
+
+  .page-link {
+    transition: none;
+  }
 }
 
 .alert {
