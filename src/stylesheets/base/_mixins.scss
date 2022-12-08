@@ -325,7 +325,7 @@
     @if $color == "primary" {
       color: $button !important;
       background-color: transparent !important;
-      border-color: $border-color !important;
+      border-color: $button !important;
 
       &.hover,
       &:hover,
@@ -333,9 +333,9 @@
       &:active,
       &.focus,
       &:focus {
-        color: $button-light !important;
-        background-color: $button-lightest !important;
-        border-color: $border-color !important;
+        color: $button !important;
+        background-color: $nuance-09 !important;
+        border-color: $button !important;
       }
 
       &.disabled,

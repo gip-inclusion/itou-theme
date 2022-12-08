@@ -31,9 +31,6 @@
   box-shadow: none;
   transition: $transition-base;
   border: none;
-  right: 2px;
-  top: 2px;
-  height: calc(100% - 4px);
 
   &:hover {
     color: var(--tertiary) !important;
