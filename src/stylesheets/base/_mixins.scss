@@ -1,6 +1,6 @@
 @mixin badge-outline-variant($bg) {
   color: $bg;
-  border: 2px solid $bg;
+  border: $input-btn-border-width solid $bg;
   background-color: transparent;
 
   @at-root a#{&} {
