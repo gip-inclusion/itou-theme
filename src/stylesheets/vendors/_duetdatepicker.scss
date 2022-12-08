@@ -6,7 +6,7 @@
   --duet-color-button: var(--gray-100);
   --duet-color-surface: var(--white);
   --duet-color-overlay: var(--primary);
-  --duet-color-border: var(--gray-600);
+  --duet-color-border: var(--gray-800);
 
   --duet-font: var(--font-family-sans-serif);
   --duet-font-normal: 400;
@@ -23,16 +23,23 @@
 }
 
 .duet-date__toggle {
-  @extend .btn-outline-primary;
+  @extend .btn-link;
+  color: var(--tertiary) !important;
   background-color: var(--white);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: none;
   transition: $transition-base;
-  border-top: 1px solid var(--gray-600);
-  border-right: 1px solid var(--gray-600);
-  border-bottom: 1px solid var(--gray-600);
-  border-left: none;
+  border: none;
+  right: 2px;
+  top: 2px;
+  height: calc(100% - 4px);
+
+  &:hover {
+    color: var(--tertiary) !important;
+    background-color: var(--white) !important;
+    border: none !important;
+  }
 }
 
 .duet-date__dialog-content {
