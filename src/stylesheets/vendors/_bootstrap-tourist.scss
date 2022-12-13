@@ -60,6 +60,11 @@
 .popover[class*="tour-"] .progress {
 	@extend .mt-0;
 	@extend .mb-3;
+  @extend .progress--emploi;
+
+  .progress-bar {
+    background-image: none !important;
+  }
 }
 
 .popover[class*="tour-"] .popover-header + .popover-body {
