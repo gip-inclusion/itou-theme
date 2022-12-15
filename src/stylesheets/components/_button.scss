@@ -138,6 +138,7 @@
   height: 58px;
   font-size: 16px;
   line-height: 22px;
+  font-family: Marianne, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
@@ -184,5 +185,12 @@
   &:focus-visible {
     outline-offset: 2px;
     outline: $blue 2px solid;
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    background-color: $disable-color;
+    border-color: $disable-color;
   }
 }
