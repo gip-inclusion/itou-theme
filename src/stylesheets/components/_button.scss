@@ -47,14 +47,42 @@
   @extend .px-0;
   aspect-ratio: 1 / 1;
 
-  width: 46px;
+  min-height: 40px;
+  width: 40px;
 
   &.btn-sm {
-    width: 38px;
+    min-height: 32px;
+    width: 32px;
   }
 
   &.btn-lg {
-    width: 54px;
+    min-height: 48px;
+    width: 48px;
+  }
+}
+
+.btn {
+  min-height: 40px;
+
+  > [class^='ri-'] {
+    @extend .font-weight-medium;
+    @extend .ri-xl;
+  }
+
+  &.btn-sm {
+    min-height: 32px;
+
+    > [class^='ri-'] {
+      @extend .ri-1x;
+    }
+  }
+
+  &.btn-lg {
+    min-height: 48px;
+
+    > [class^='ri-'] {
+      @extend .ri-xxl;
+    }
   }
 }
 

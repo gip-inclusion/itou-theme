@@ -38,7 +38,7 @@ $(window).on('load', function() {
 });
 
 // Re-initialisation au resize
-$(window).on('resize orientationchange', function() {
+$(window).on('resize', function() {
   //console.log('resize');
   tabsItemsToDropdown();
 });
