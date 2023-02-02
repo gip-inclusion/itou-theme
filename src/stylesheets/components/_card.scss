@@ -1,6 +1,5 @@
 .c-card,
 .card {
-  overflow-y: hidden;
   transition: border-color 0.3s ease-in-out;
 
   .card-header {
@@ -39,6 +38,7 @@
       width: 100%;
       height: 10px;
       background-color: $primary;
+      border-radius: $border-radius;
     }
   }
 
@@ -49,6 +49,7 @@
       width: 100%;
       height: 10px;
       background-color: $marche;
+      border-radius: $border-radius;
     }
   }
 
@@ -59,6 +60,7 @@
       width: 100%;
       height: 10px;
       background-color: $pilotage;
+      border-radius: $border-radius;
     }
   }
 
@@ -69,6 +71,7 @@
       width: 100%;
       height: 10px;
       background-color: $communaute;
+      border-radius: $border-radius;
     }
   }
 
@@ -79,6 +82,7 @@
       width: 100%;
       height: 10px;
       background-color: $emploi;
+      border-radius: $border-radius;
     }
   }
 
