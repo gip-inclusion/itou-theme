@@ -62,6 +62,14 @@
       @extend .nav-item;
       visibility: hidden;
 
+      .nav-link {
+
+        &.active::after,
+        &:hover::after {
+          border: 1px solid $border-color;
+        }
+      }
+
       .dropdown-menu a {
         @extend .dropdown-item;
       }
