@@ -16,10 +16,15 @@
 
     > div {
       position: relative;
-      @extend .p-5;
       border-radius: $border-radius-lg;
       background-color: $white;
       border: 1px solid $border-color;
+
+      padding: map-get($spacers, 3);
+
+      @include media-breakpoint-up(lg) {
+        padding: map-get($spacers, 5);
+      }
 
       &:before {
         content: '';
