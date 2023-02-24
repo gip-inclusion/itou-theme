@@ -14,7 +14,7 @@
 
 		&--title {
 
-			.h1-hero {
+			h1 {
 				position: relative;
 				margin-bottom: map-get($spacers, 3);
 
@@ -60,25 +60,25 @@
 	}
 
   &--marche {
-    .s-page-menu-01__col--title .h1-hero::after {
+    .s-page-menu-01__col--title h1::after {
       background-color: $marche;
     }
   }
 
   &--pilotage {
-    .s-page-menu-01__col--title .h1-hero::after {
+    .s-page-menu-01__col--title h1::after {
       background-color: $pilotage;
     }
   }
 
   &--emploi {
-    .s-page-menu-01__col--title .h1-hero::after {
+    .s-page-menu-01__col--title h1::after {
       background-color: $emploi;
     }
   }
 
   &--communaute {
-    .s-page-menu-01__col--title .h1-hero::after {
+    .s-page-menu-01__col--title h1::after {
       background-color: $communaute;
     }
   }
