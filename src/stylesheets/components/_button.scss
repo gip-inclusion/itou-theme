@@ -1,7 +1,7 @@
 .btn-link {
   color: $button;
   font-weight: $font-weight-bold;
-  text-decoration: none;
+  text-decoration: none !important;
 
   &.active,
   &.focus,
