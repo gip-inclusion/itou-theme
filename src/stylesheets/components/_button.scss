@@ -28,8 +28,7 @@
 
 .btn-ico {
   @extend .d-inline-flex;
-  @extend .align-items-center;
-  @extend .justify-content-center;
+  align-items: center;
 
   span {
     @extend .d-inline-block;
@@ -38,6 +37,10 @@
   *:first-child:not(:only-child) {
     margin-right: map-get($spacers, 2);
   }
+}
+
+button.btn-ico {
+  justify-content: center;
 }
 
 .btn-ico-only {
