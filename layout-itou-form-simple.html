@@ -387,7 +387,7 @@
                       </div>
                       <div class="form-group">
                         <label for="">Les secteurs d’activité *</label>
-                        <ul class="list-group c-list-group-collapse c-list-group-form">
+                        <ul class="list-group list-group-collapse list-group-form">
                           <li class="list-group-item list-group-item-action">
                             <a data-toggle="collapse" href="#collapseExample04" role="button" aria-expanded="false" aria-controls="collapseExample04">Hygiène et propreté</a>
                             <div class="collapse" id="collapseExample04">
@@ -519,12 +519,15 @@
                         <input type="range" class="custom-range" id="customRange1">
                       </div>
                       <div class="form-group">
-                        <div class="js-display-if-javascript-enabled" style="display: block;">
-                          <div id="logo_form" class="c-dropzone dz-clickable">
+                        <div class="js-display-if-javascript-enabled d-block">
+                          <div class="c-dropzone dz-clickable" id="logo_form">
                             <div class="dz-message">
                               <p class="mb-1 text-nuance-06"><i class="ri-upload-cloud-2-line ri-2x"></i></p>
                               <p class="mb-2">Glisser vos fichiers ici ou <strong>rechercher</strong> dans vos fichiers</p>
-                              <span class="btn btn-primary btn-sm mb-2">Rechercher dans vos fichiers</span>
+                              <div class="btn btn-link btn-sm btn-ico mb-2">
+                                <i class="ri-folder-line ri-xl"></i>
+                                <span>Rechercher dans vos fichiers</span>
+                              </div>
                               <p class="small text-nuance-06">Taille maximale :  Mo</p>
                             </div>
                           </div>
