@@ -323,6 +323,26 @@ label.required:not(.custom-control-label)::after {
   .custom-control-input[disabled] ~ .custom-control-label::after {
     background-color: $white;
   }
+
+  &.has-state-label {
+
+    .custom-control-label {
+      &::before {
+        content: attr(data-state-label-off);
+        transition: $transition-base;
+        color: $primary;
+        font-size: $font-size-xs;
+        line-height: 1;
+        text-indent: 34px;
+      }
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+      &::before {
+        content: attr(data-state-label-on);
+      }
+    }
+  }
 }
 
 .custom-switch.custom-switch-lg {
@@ -409,16 +429,17 @@ label.required:not(.custom-control-label)::after {
       &::before {
         transition: $transition-base;
         color: $primary;
-        content: 'Désactivé';
-        font-size: $small-font-size;
-        text-align: center;
+        content: attr(data-state-label-off);
+        font-size: $font-size-xs;
         line-height: 4.5rem;
+        text-indent: 0;
+        text-align: center;
       }
     }
 
     .custom-control-input:checked ~ .custom-control-label {
       &::before {
-        content: 'Activé';
+        content: attr(data-state-label-on);
       }
     }
   }
