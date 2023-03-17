@@ -52,6 +52,18 @@ ol {
   padding-left: map-get($spacers, 3);
 }
 
+.blockquote {
+  font-style: italic;
+  padding: map-get($spacers, 3);
+  border: 1px solid $secondary;
+  border-radius: $border-radius;
+
+  &-footer {
+    font-style: normal;
+    margin-top: map-get($spacers, 2);
+  }
+}
+
 .btn.disabled,
 .btn:disabled,
 .custom-select:disabled {

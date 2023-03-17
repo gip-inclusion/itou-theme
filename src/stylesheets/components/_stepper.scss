@@ -5,7 +5,7 @@
   padding: map-get($spacers, 3);
 
   @include media-breakpoint-up(lg) {
-    padding: map-get($spacers, 5);
+    padding: map-get($spacers, 4);
   }
 
   p {

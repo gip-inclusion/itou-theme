@@ -342,7 +342,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg: $white;
-$body-color: $secondary;
+$body-color: $primary;
 
 // Links
 //
@@ -577,8 +577,8 @@ $small-font-size: 75%;
 $text-muted: $nuance-03;
 
 $blockquote-small-color: $nuance-03;
-$blockquote-small-font-size: $small-font-size !default;
-$blockquote-font-size: $font-size-base * 1.25 !default;
+$blockquote-small-font-size: $small-font-size;
+$blockquote-font-size: $font-size-base;
 
 $hr-border-color: $border-color;
 $hr-border-width: $border-width;
