@@ -30,6 +30,9 @@
 
   &-sortable {
     thead th span {
+      display: inline-flex;
+      align-items: center;
+
       &::after {
         @extend .ml-1;
         font-size: $font-size-base;
