@@ -27,4 +27,27 @@
       }
     }
   }
+
+  &-sortable {
+    thead th span {
+      &::after {
+        @extend .ml-1;
+        font-size: $font-size-base;
+        font-family: remixicon !important;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1;
+        vertical-align: middle;
+        content: '\ea74';
+        color: $button;
+        transition: $transition-base;
+      }
+
+      &:hover::after ,
+      &:focus::after  {
+        color: $button-light;
+      }
+    }
+  }
 }
