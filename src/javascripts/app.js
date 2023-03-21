@@ -5,6 +5,7 @@ const stickyNav = $('#header');
 const rootStyle = getComputedStyle(document.body);
 let windowWidth = $(window).width();
 let sTabs01NavItemsWidthArrayInit = [];
+let tablesSortable = $('.table-sortable');
 
 // Initialisation
 $(window).on('load', function() {
@@ -179,7 +180,6 @@ $('[data-clipboard=copy]').on('blur', function() {
 });
 
 
-
 function alertCloseOnce() {
   if ($('.alert-dismissible-once').length) {
     $('.alert-dismissible-once').each(function() {
@@ -199,3 +199,71 @@ $('.alert-dismissible-once .close').on('click tap',function() {
   localStorage.setItem(thisUniqueID, 'seen');
   $(thisParent).addClass('d-none');
 });
+
+
+// Sorts table by column
+function sortTable(header, table) {
+  const SORTABLE_STATES = {
+    none: 0,
+    ascending: -1,
+    descending: 1,
+    ORDER: ['none', 'ascending', 'descending'],
+  };
+
+  let col = [].slice.call(table.tHead.rows[0].cells).indexOf(header);
+
+  let newOrder = SORTABLE_STATES.ORDER.indexOf(header.getAttribute('aria-sort')) + 1;
+  newOrder = newOrder > SORTABLE_STATES.ORDER.length - 1 ? 0 : newOrder;
+  newOrder = SORTABLE_STATES.ORDER[newOrder];
+
+  let headerSorts = table.querySelectorAll('[aria-sort]');
+
+  for (let i = 0, ii = headerSorts.length; i < ii; i += 1) {
+    headerSorts[i].setAttribute('aria-sort', 'none');
+  }
+
+  header.setAttribute('aria-sort', newOrder);
+
+  let direction = SORTABLE_STATES[newOrder];
+  let body = table.tBodies[0];
+
+  let newRows = [].slice.call(body.rows, 0);
+
+  if (direction === 0) {
+    newRows.sort(function (a, b) {
+      return a.getAttribute('data-index') - b.getAttribute('data-index');
+    });
+  } else {
+    newRows.sort(function (rowA, rowB) {
+      let contentA = rowA.cells[col].textContent.trim();
+      let contentB = rowB.cells[col].textContent.trim();
+
+      return contentA < contentB ? direction : -direction;
+    });
+  }
+  for (i = 0, ii = body.rows.length; i < ii; i += 1) {
+    body.appendChild(newRows[i]);
+  }
+};
+
+function setupClickableHeader(table, header) {
+  header.addEventListener('click', function () {
+    sortTable(header, table);
+  });
+};
+
+function setupSortableTable(table) {
+  let rows = table.tBodies[0].rows;
+  for (let row = 0, totalRows = rows.length; row < totalRows; row += 1) {
+    rows[row].setAttribute('data-index', row);
+  }
+
+  let clickableHeaders = table.querySelectorAll('th[aria-sort]');
+  for (let i = 0, ii = clickableHeaders.length; i < ii; i += 1) {
+    setupClickableHeader(table, clickableHeaders[i]);
+  }
+};
+
+for (let i = 0, ii = tablesSortable.length; i < ii; i += 1) {
+  setupSortableTable(tablesSortable[i]);
+}

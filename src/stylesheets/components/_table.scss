@@ -42,15 +42,25 @@
         -moz-osx-font-smoothing: grayscale;
         line-height: 1;
         vertical-align: middle;
-        content: '\ea74';
-        color: $button;
         transition: $transition-base;
+        color: $button;
+        content: '\ea74';
       }
 
       &:hover::after ,
       &:focus::after  {
         color: $button-light;
       }
+    }
+
+    thead th[aria-sort="ascending"] span::after {
+      color: $button-light;
+      content: '\ea76';
+    }
+
+    thead th[aria-sort="descending"] span::after {
+      color: $button-light;
+      content: '\ea4c';
     }
   }
 }
