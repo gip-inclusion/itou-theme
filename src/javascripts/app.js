@@ -5,7 +5,7 @@ const stickyNav = $('#header');
 const rootStyle = getComputedStyle(document.body);
 let windowWidth = $(window).width();
 let sTabs01NavItemsWidthArrayInit = [];
-let tablesSortable = $('.table-sortable');
+let tablesSortable = $('[data-table="sortable"]');
 
 // Initialisation
 $(window).on('load', function() {
