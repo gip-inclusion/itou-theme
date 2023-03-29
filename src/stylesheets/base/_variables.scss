@@ -1043,7 +1043,7 @@ $navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
 
 $dropdown-min-width: 11rem;
 $dropdown-padding-x: 0;
-$dropdown-padding-y: 0.5rem;
+$dropdown-padding-y: 0rem;
 $dropdown-spacer: 0.125rem;
 $dropdown-font-size: $font-size-base;
 $dropdown-color: $body-color;
@@ -1071,7 +1071,7 @@ $dropdown-link-disabled-color: $disable-color;
 $dropdown-item-padding-y: 0.5rem;
 $dropdown-item-padding-x: $btn-padding-x;
 
-$dropdown-header-color: $gray-700;
+$dropdown-header-color: $text-muted;
 $dropdown-header-padding: $dropdown-padding-y $dropdown-item-padding-x;
 
 // Pagination

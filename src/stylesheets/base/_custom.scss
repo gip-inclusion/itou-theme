@@ -564,3 +564,14 @@ iframe {
     font-weight: $font-weight-bold;
   }
 }
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  background-color: $gray-400;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  border-bottom: $border-width solid $border-color;
+}
