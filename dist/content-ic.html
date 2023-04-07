@@ -38,7 +38,6 @@
 
 
     <main class="s-main" role="main">
-
       <section id="content">
           <div class="container">
 
@@ -84,22 +83,32 @@
                 <h3>Boutons Inclusion Connect</h3>
                </div>
               <div class="col-12 col-lg-9">
+                <!-- Version en img srcset mais ne passe pas sur chrome
                 <a href="" class="btn-inclusion-connect" target="_blank">
-                  <img src="images/logo-inclusion-connect-two-lines.svg" height="37" alt="Se connecter avec Inclusion Connect">
-                </a>
+                  <img
+                  src="images/logo-inclusion-connect-two-lines.svg"
+                  srcset="images/logo-inclusion-connect-two-lines.svg 142w,
+                  images/logo-inclusion-connect-one-line.svg 286w"
+                    sizes="(min-width: 420px) 286px, 142px"
+                    alt="Se connecter avec Inclusion Connect"
+                  >
+                </a> -->
+
+                <!-- Version en picture source srcset mais ne passe pas sur les vieux ff -->
+                  <a href="" class="btn-inclusion-connect" target="_blank">
+                    <picture>
+                      <source srcset="https://betagouv.github.io/itou-theme/images/logo-inclusion-connect-one-line.svg" height="14" width="286" type="image/svg+xml" media="(min-width: 420px)">
+                      <img src="https://betagouv.github.io/itou-theme/images/logo-inclusion-connect-two-lines.svg" height="37" width="142" alt="Se connecter avec Inclusion Connect">
+                    </picture>
+                  </a>
                 <hr>
                 <a href="" class="btn-inclusion-connect" target="_blank">
-                  <picture>
-                    <source srcset="images/logo-inclusion-connect-one-line.svg" height="14" type="image/svg+xml" media="(min-width: 30em)">
-                    <img src="images/logo-inclusion-connect-two-lines.svg" height="37" alt="Se connecter avec Inclusion Connect">
-                  </picture>
+                  <img src="images/logo-inclusion-connect-two-lines.svg" height="37" alt="Se connecter avec Inclusion Connect">
                 </a>
                 <hr>
                 <a href="" class="btn-inclusion-connect disabled" target="_blank">
                   <img src="images/logo-inclusion-connect-two-lines.svg" height="37" alt="Se connecter avec Inclusion Connect">
                 </a>
-                <hr>
-
               </div>
             </article>
 
