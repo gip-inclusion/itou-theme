@@ -179,6 +179,22 @@ $('[data-clipboard=copy]').on('blur', function() {
   $(this).tooltip('hide');
 });
 
+$('[data-password=toggle]').on('click tap', function() {
+  let thisIcone = $(this).children('i');
+  let thisSpan = $(this).children('span');
+  let thisParent = $(this).closest('.input-group');
+  let thisInput = $(thisParent).find('.form-control');
+  if (thisIcone.hasClass('ri-eye-off-line')) {
+    thisIcone.removeClass('ri-eye-off-line').addClass('ri-eye-line');
+    thisSpan.html('Masquer');
+    thisInput.attr('type', 'text');
+  } else {
+    thisIcone.removeClass('ri-eye-line').addClass('ri-eye-off-line');
+    thisSpan.html('Afficher');
+    thisInput.attr('type', 'password');
+  }
+});
+
 
 function alertCloseOnce() {
   if ($('.alert-dismissible-once').length) {
