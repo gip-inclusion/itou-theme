@@ -209,8 +209,6 @@ ul.pagination {
   @extend .p-0;
 
   .page-item {
-    border-radius: $border-radius;
-    overflow: hidden;
 
     &:not(.active) {
       .page-link:hover {
@@ -227,6 +225,21 @@ ul.pagination {
 
   .page-link {
     transition: none;
+    border-radius: $border-radius;
+
+    &:focus {
+      outline-offset: 2px;
+      outline: $blue 1px solid;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: 0;
+    }
+
+    &:focus-visible {
+      outline-offset: 2px;
+      outline: $blue 1px solid;
+    }
   }
 }
 
