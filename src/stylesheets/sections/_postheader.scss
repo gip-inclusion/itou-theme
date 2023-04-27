@@ -1,44 +1,51 @@
 .s-postheader {
-  position: relative;
-  border-bottom: 1px solid $nuance-08;
   background-color: $white;
+  position: relative;
+  z-index: 0;
+  border-top: 1px solid $border-color;
+
+  &.it-scrolldown {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  &.it-scrollup {
+    position: relative;
+    right: initial;
+    left: initial;
+    top: initial;
+  }
 
   &__container {
     max-width: map-get($container-max-widths, 'xl');
   }
 
   &__col {
-    @extend .py-2;
 
-    &--nav {
+    nav {
 
-      nav {
+      > ul {
+        @extend .list-inline;
+        @extend .list-unstyled;
+        @extend .m-0;
+        @extend .p-0;
+        width: 100%;
 
-        > ul {
-          @extend .list-inline;
-          @extend .list-unstyled;
+        > li {
+          @extend .list-inline-item;
           @extend .m-0;
           @extend .p-0;
-          width: 100%;
 
-          > li {
-            @extend .list-inline-item;
-            @extend .m-0;
-            @extend .py-1;
+          > a {
+            @extend .d-inline-block;
+            @extend .text-decoration-none;
+            @extend .p-3;
 
-            &:last-child > a,
-            &:last-child > button {
-              @extend .mr-0;
-            }
-
-            > a,
-            > button {
-              @extend .text-decoration-none;
-              @extend .mr-4;
-
-              > svg {
-                @extend .ml-1;
-              }
+            &.is-active {
+              color: $button;
+              border-bottom: 1px solid $button;
             }
           }
         }

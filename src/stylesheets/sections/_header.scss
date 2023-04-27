@@ -1,16 +1,7 @@
-$header-height: 115px;
-
 .s-header {
-  position: relative;
-  box-shadow: 0px 12px 19px -10px rgba($primary, 0.1);
   background-color: $white;
-  top: 0;
-  left: 0;
-  z-index: $zindex-fixed;
-
-  &.sticky-top {
-    position: sticky !important;
-  }
+  position: relative;
+  z-index: 1;
 
   &.is-opened {
     #burgerNav {
@@ -22,7 +13,7 @@ $header-height: 115px;
       z-index: 100;
     }
 
-    #burger {
+    #open {
       display: none;
     }
   }
@@ -36,16 +27,34 @@ $header-height: 115px;
   }
 
   &__col {
-    min-height: $header-height;
+    min-height: $header-height-mobile;
 
-    &--logo {
+    @include media-breakpoint-up(md) {
+      min-height: $header-height;
+    }
+
+    &--logo-ministere {
 
       img {
         height: auto;
-        max-width: 100px;
+        max-width: 80px;
+        transform: translateX(-10px);
 
-        @include media-breakpoint-up(sm) {
-          max-width: 139px;
+        @include media-breakpoint-up(md) {
+          max-width: 100px;
+          transform: translateX(-12px);
+        }
+      }
+    }
+
+    &--logo-service {
+
+      img {
+        height: auto;
+        max-width: 150px;
+
+        @include media-breakpoint-up(md) {
+          max-width: 190px;
         }
       }
     }
@@ -75,79 +84,25 @@ $header-height: 115px;
             > button {
               @extend .mr-3;
             }
-
-            > a:not(.btn) {
-              position: relative;
-              display: inline-block;
-              text-decoration: none;
-              @extend .mr-4;
-              @extend .ml-3;
-              color: $link-color;
-
-              > svg,
-              > i {
-                @extend .ml-1;
-              }
-
-              &::before {
-                content: '';
-                position: absolute;
-                display: inline-block;
-                height: 20px;
-                width: 6px;
-                top: 2px;
-                left: -16px;
-                border-radius: $rounded-pill;
-                background-color: $primary;
-              }
-
-              &::after {
-                display: block;
-                content: '';
-                position: absolute;
-                left: -5px;
-                top: calc(#{$header-height} / 2 + 8px);
-                height: 5px;
-                width: calc(100% + 10px);
-                border-radius: 5px 5px 0 0;
-                background-color: transparent;
-                transition: $transition-base;
-              }
-
-              &.is-active {
-
-                &::after {
-                  display: block;
-                  background-color: $primary;
-                }
-              }
-
-              &:hover,
-              &:focus {
-                color: $link-color;
-
-                &::after {
-                  background-color: $secondary;
-                }
-              }
-            }
           }
         }
       }
     }
 
     &--burger {
-      span {
-        @extend .mr-3;
-      }
 
-      #burger {
-        display: inline;
-      }
+      > i {
+        color: $button;
+        font-size: 32px;
 
-      #close {
-        display: none;
-        z-index: 100;
+        @include media-breakpoint-up(md) {
+          font-size: 42px;
+        }
+
+        &#close {
+          display: none;
+          z-index: 100;
+        }
       }
     }
 
@@ -161,26 +116,31 @@ $header-height: 115px;
     }
   }
 
-  &__logo-ministere {
-    transform: translateX(-12px);
-  }
-
   #burgerNav {
     display: none;
     flex-direction: column;
     position: fixed;
     z-index: 10;
-    top: $header-height;
     right: 0;
-    width: 75vw;
-    height: calc(100vh - #{$header-height});
+    @extend .p-3;
     background-color: $white;
-    box-shadow: 0 19px 19px 0 rgba($primary, 0.1);
+    box-shadow: 12px 12px 19px -10px rgba($primary, 0.1);
+    width: 85vw;
+    top: $header-height-mobile;
+    height: calc(100vh - #{$header-height-mobile});
+
+    @include media-breakpoint-up(sm) {
+      width: 66vw;
+    }
+
+    @include media-breakpoint-up(md) {
+      top: $header-height;
+      height: calc(100vh - #{$header-height});
+    }
 
     > nav {
-      @extend .p-4;
 
-      > ul {
+      ul {
         @extend .list-unstyled;
         @extend .m-0;
         width: 100%;
@@ -197,604 +157,29 @@ $header-height: 115px;
 
           > a,
           > button {
-            @extend .mr-2;
-            @extend .mb-2;
-            @extend .mt-2;
+            @extend .mb-3;
           }
+        }
 
-          > a:not(.btn) {
-            position: relative;
-            display: inline-block;
-            text-decoration: none;
-            @extend .mr-4;
-            @extend .ml-3;
-            color: $link-color;
+        + ul {
+          border-top: 1px solid $border-color;
+          @extend .pt-3;
+          //@extend .mt-3;
 
-            > svg,
-            > i {
-              @extend .ml-1;
-            }
-
-            &::before {
-              content: '';
-              position: absolute;
-              display: inline-block;
-              height: 20px;
-              width: 6px;
-              top: 2px;
-              left: -16px;
-              border-radius: 10px;
-              background-color: $primary;
-            }
-
-            &::after {
-              display: none;
-              content: '';
-              position: absolute;
-              left: 0;
-              bottom: - map-get($spacers, 2);
-              height: 5px;
-              width: 100%;
-              border-radius: 5px 5px 0 0;
-              background-color: $primary;
-            }
+          > li > a {
+            @extend .d-inline-block;
+            @extend .text-decoration-none;
+            @extend .py-1;
 
             &.is-active {
-
-              &::after {
-                display: block;
-                background-color: $primary;
-              }
-            }
-
-            &:hover,
-            &:focus {
-              color: $link-color;
-
-              &::after {
-                display: block;
-                background-color: $secondary;
-              }
+              color: $button;
+              border-bottom: 1px solid $button;
             }
           }
         }
       }
     }
 
-    > div {
-      @extend .flex-grow-1;
-      @extend .p-4;
-      background-color: $nuance-09;
-      font-size: $font-size-sm;
 
-      > ul {
-        @extend .list-unstyled;
-        @extend .m-0;
-        @extend .p-0;
-
-        > li {
-          @extend .d-block;
-          @extend .m-0;
-          @extend .p-0;
-
-          &:last-child > a {
-            @extend .mr-0;
-          }
-
-          > a {
-            position: relative;
-            display: inline-block;
-            text-decoration: none;
-            @extend .mr-2;
-            @extend .mb-2;
-            @extend .mt-2;
-            @extend .ml-3;
-            color: $link-color;
-
-            &::before {
-              content: '';
-              position: absolute;
-              display: inline-block;
-              height: 20px;
-              width: 6px;
-              top: 2px;
-              left: -16px;
-              border-radius: $rounded-pill;
-              background-color: $primary;
-            }
-
-            &.is-plateforme {
-
-              &::before {
-                background-color: $primary;
-              }
-            }
-
-            &.is-emploi {
-
-              &::before {
-                background-color: $emploi;
-              }
-            }
-
-            &.is-communaute {
-
-              &::before {
-                background-color: $communaute;
-              }
-            }
-
-            &.is-pilotage {
-
-              &::before {
-                background-color: $pilotage;
-              }
-            }
-
-            &.is-marche {
-
-              &::before {
-                background-color: $marche;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &--plateforme {
-
-    .s-header__col--nav {
-      nav > ul > li > a.is-pilotage {
-
-        &::before {
-          background-color: $pilotage;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage-light;
-          }
-        }
-      }
-
-      nav > ul > li > a.is-emploi {
-
-        &::before {
-          background-color: $emploi;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi-light;
-          }
-        }
-      }
-
-      nav > ul > li > a.is-marche {
-
-        &::before {
-          background-color: $marche;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche-light;
-          }
-        }
-      }
-
-      nav > ul > li > a.is-communaute {
-
-        &::before {
-          background-color: $communaute;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute-light;
-          }
-        }
-      }
-    }
-
-    #burgerNav {
-      nav > ul > li > a.is-pilotage {
-
-        &::before {
-          background-color: $pilotage;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage-light;
-          }
-        }
-      }
-
-      nav > ul > li > a.is-emploi {
-
-        &::before {
-          background-color: $emploi;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi-light;
-          }
-        }
-      }
-
-      nav > ul > li > a.is-marche {
-
-        &::before {
-          background-color: $marche;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche-light;
-          }
-        }
-      }
-
-      nav > ul > li > a.is-communaute {
-
-        &::before {
-          background-color: $communaute;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute-light;
-          }
-        }
-      }
-    }
-  }
-
-  &--pilotage {
-    .s-header__col--nav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $pilotage;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage-light;
-          }
-        }
-      }
-    }
-
-    #burgerNav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $pilotage;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $pilotage-light;
-          }
-        }
-      }
-    }
-  }
-
-  &--marche {
-    .s-header__col--nav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $marche;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche-light;
-          }
-        }
-      }
-    }
-
-    #burgerNav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $marche;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $marche-light;
-          }
-        }
-      }
-    }
-  }
-
-  &--emploi {
-    .s-header__col--nav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $emploi;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi-light;
-          }
-        }
-      }
-    }
-
-    #burgerNav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $emploi;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $emploi-light;
-          }
-        }
-      }
-    }
-  }
-
-  &--communaute {
-    .s-header__col--nav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $communaute;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute-light;
-          }
-        }
-      }
-    }
-
-    #burgerNav {
-
-      nav > ul > li > a:not(.btn) {
-
-        &::before {
-          background-color: $communaute;
-        }
-
-        &.is-active,
-        &.is-active:hover,
-        &.is-active:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute;
-          }
-        }
-
-        &:hover,
-        &:focus {
-
-          &::after {
-            display: block;
-            background-color: $communaute-light;
-          }
-        }
-      }
-    }
   }
 }

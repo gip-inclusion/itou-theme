@@ -1,5 +1,9 @@
 .c-breadcrumb {
 
+  .breadcrumb {
+    @extend .pb-0;
+  }
+
   .breadcrumb-item {
     max-width: 250px;
     overflow: hidden;

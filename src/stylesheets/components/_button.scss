@@ -68,15 +68,15 @@ button.btn-ico {
   min-height: 40px;
 
   > [class^='ri-'] {
-    @extend .font-weight-medium;
-    @extend .ri-xl;
+    font-weight: $font-weight-medium;
+    @extend .ri-1x;
   }
 
   &.btn-sm {
     min-height: 32px;
 
     > [class^='ri-'] {
-      @extend .ri-1x;
+      @extend .ri-sm;
     }
   }
 
@@ -84,7 +84,8 @@ button.btn-ico {
     min-height: 48px;
 
     > [class^='ri-'] {
-      @extend .ri-xxl;
+      font-weight: $font-weight-bold;
+      @extend .ri-1x;
     }
   }
 }

@@ -1,8 +1,24 @@
+// Custom variables
+$header-height: 125px;
+$header-height-mobile: 85px;
+
 ::selection,
 mark,
 mark  {
   color: $white;
   background-color: $tertiary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: calc(#{$header-height-mobile} + 16px);
+
+  @include media-breakpoint-up(md) {
+    scroll-margin-top: calc(#{$header-height} + 16px);
+  }
 }
 
 body {
@@ -13,6 +29,13 @@ body {
 
   > .s-main {
     flex: 1 0 auto;
+  }
+
+  > #header {
+    @extend .sticky-top;
+    box-shadow: 0px 12px 19px -10px rgba($primary, 0.1);
+    //filter: drop-shadow(0 7px 14px rgba($primary, 0.1));
+    background-color: $white;
   }
 }
 
@@ -572,9 +595,11 @@ iframe {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1;
-    vertical-align: text-bottom;
-    font-size: 1.25rem;
+    vertical-align: middle;
+    font-size: $font-size-base;
     font-weight: $font-weight-bold;
+    margin-left: .4rem;
+    margin-right: -.25rem;
   }
 }
 
