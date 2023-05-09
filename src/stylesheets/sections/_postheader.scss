@@ -42,10 +42,17 @@
             @extend .d-inline-block;
             @extend .text-decoration-none;
             @extend .p-3;
+            border-bottom: 2px solid transparent;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+              background-color: $nuance-09;
+              border-bottom: 2px solid $nuance-08;
+            }
 
             &.is-active {
               color: $button;
-              border-bottom: 1px solid $button;
+              border-bottom: 2px solid $button;
             }
           }
         }

@@ -43,6 +43,10 @@
   }
 }
 
+a.badge {
+  text-decoration: none;
+}
+
 @each $color, $value in $theme-colors {
   .badge-outline-#{$color} {
     @include badge-outline-variant($value);
