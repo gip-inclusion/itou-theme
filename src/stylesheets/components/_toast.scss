@@ -3,6 +3,7 @@
   z-index: $zindex-toast;
   top: map-get($spacers, 3);
   right: map-get($spacers, 3);
+  min-width: $toast-max-width;
 }
 
 .toast {
