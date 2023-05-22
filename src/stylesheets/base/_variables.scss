@@ -1291,8 +1291,8 @@ $progress-font-size: $font-size-base * 0.75 !default;
 $progress-bg: $border-color;
 $progress-border-radius: $border-radius;
 $progress-box-shadow: none;
-$progress-bar-color: $white !default;
-$progress-bar-bg: $primary;
+$progress-bar-color: $white;
+$progress-bar-bg: $button;
 $progress-bar-animation-timing: 1s linear infinite !default;
 $progress-bar-transition: width 0.6s ease !default;
 

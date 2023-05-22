@@ -107,49 +107,6 @@
     }
   }
 
-  .progress--#{$color} {
-
-    .progress-bar {
-      background-color: map-get($theme-colors, $color) !important;
-    }
-
-    @if $color == "marche" {
-      background-color: $marche-light !important;
-    }
-
-    @if $color == "emploi" {
-      background-color: $emploi-light !important;
-    }
-
-    @if $color == "communaute" {
-      background-color: $communaute-light !important;
-    }
-
-    @if $color == "pilotage" {
-      background-color: $pilotage-light !important;
-    }
-
-    @if $color == "success" {
-      background-color: $success-light !important;
-    }
-
-    @if $color == "warning" {
-      background-color: $warning-light !important;
-    }
-
-    @if $color == "danger" {
-      background-color: $danger-light !important;
-    }
-
-    @if $color == "info" {
-      background-color: $info-lighter !important;
-    }
-
-    @if $color == "important" {
-      background-color: $important-lighter !important;
-    }
-  }
-
   .btn-#{$color} {
 
     @if $color == "primary" {
