@@ -46,7 +46,7 @@ function postHeaderNavDisplay() {
 
       if (windowScrollTop >= thisNavTopOffset) {
         if (window.matchMedia('(min-width: ' + breakpointXL + ')').matches) {
-          $('main').css('paddingTop', '58px');
+          $('main').css('paddingTop', '59px');
         }
         if (lastScrollTop > windowScrollTop) {
           postHeaderNav.removeClass('it-scrolldown').addClass('it-scrollup');
