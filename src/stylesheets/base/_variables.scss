@@ -1337,9 +1337,9 @@ $figure-caption-color: $gray-600 !default;
 
 // Breadcrumbs
 
-$breadcrumb-font-size: $font-size-base;
+$breadcrumb-font-size: $font-size-sm;
 
-$breadcrumb-padding-y: map-get($spacers, 4);
+$breadcrumb-padding-y: map-get($spacers, 3);
 $breadcrumb-padding-x: 0;
 $breadcrumb-item-padding: map-get($spacers, 1);
 
