@@ -1193,14 +1193,14 @@ $popover-arrow-outer-color: fade-in($popover-border-color, 0.05);
 
 // Toasts
 
-$toast-max-width: 320px;
+$toast-max-width: 360px;
 $toast-padding-x: map-get($spacers, 3);
 $toast-padding-y: map-get($spacers, 2);
 $toast-font-size: $font-size-sm;
 $toast-color: null !default;
 $toast-background-color: $white;
 $toast-border-width: 1px;
-$toast-border-color: $border-color-hover;
+$toast-border-color: $border-color;
 $toast-border-radius: $border-radius;
 $toast-box-shadow: $box-shadow-lg;
 
