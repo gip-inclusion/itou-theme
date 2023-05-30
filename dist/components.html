@@ -38,6 +38,20 @@
 
 
     <main class="s-main" role="main">
+      <div class="toast-placement-wrapper">
+        <div id="liveToast" class="toast" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
+          <div class="toast-header">
+            <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
+            <strong class="mr-auto">Default Toast</strong>
+            <button type="button" class="close" data-dismiss="toast" aria-label="Fermer">
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
 
       <section id="content">
           <div class="container">
@@ -1602,22 +1616,6 @@
         </section>
 
     </main>
-
-    <div class="toast-placement-wrapper">
-      <div id="liveToast" class="toast" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
-        <div class="toast-header">
-          <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
-          <strong class="mr-auto">Default Toast</strong>
-          <button type="button" class="close" data-dismiss="toast" aria-label="Fermer">
-            <i class="ri-close-line"></i>
-          </button>
-        </div>
-        <div class="toast-body">
-          Hello, world! This is a toast message.
-        </div>
-      </div>
-    </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

@@ -40,6 +40,8 @@ function postHeaderNavDisplay() {
     let thisNavTopOffset = postHeaderNav.offset().top;
     let lastScrollTop = 0;
 
+    if ($('.toast-placement-wrapper').length) {$('.toast-placement-wrapper').css('paddingTop', '59px');}
+
     $(window).on('scroll', function () {
       let $window = $(window);
       let windowScrollTop = $window.scrollTop();
@@ -47,6 +49,7 @@ function postHeaderNavDisplay() {
       if (windowScrollTop >= thisNavTopOffset) {
         if (window.matchMedia('(min-width: ' + breakpointXL + ')').matches) {
           $('main').css('paddingTop', '59px');
+          if ($('.toast-placement-wrapper').length) {$('.toast-placement-wrapper').css('paddingTop', '0px');}
         }
         if (lastScrollTop > windowScrollTop) {
           postHeaderNav.removeClass('it-scrolldown').addClass('it-scrollup');
@@ -57,6 +60,7 @@ function postHeaderNavDisplay() {
         postHeaderNav.removeClass('it-scrollup it-scrolldown');
         if (window.matchMedia('(min-width: ' + breakpointXL + ')').matches) {
           $('main').css('paddingTop', '0px');
+          if ($('.toast-placement-wrapper').length) {$('.toast-placement-wrapper').css('paddingTop', '59px');}
         }
       }
       lastScrollTop = windowScrollTop;
