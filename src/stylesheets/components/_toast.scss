@@ -6,7 +6,6 @@
   max-width: none;
   bottom: 16px;
   top: initial;
-  background-color: $accent-01;
 
   @include media-breakpoint-up(sm) {
     width: auto;
