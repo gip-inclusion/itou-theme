@@ -6,8 +6,10 @@
   max-width: none;
   bottom: 16px;
   top: initial;
+  background-color: $accent-01;
 
   @include media-breakpoint-up(sm) {
+    width: auto;
     max-width: $toast-max-width;
     bottom: initial;
     top: calc(#{$header-height-mobile} + 16px);
@@ -24,6 +26,7 @@
 
 .toast {
   width: 100%;
+  min-width: $toast-max-width;
   max-width: none;
 
   @include media-breakpoint-up(sm) {
