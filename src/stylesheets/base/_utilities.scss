@@ -128,3 +128,14 @@
   color: $disable-color !important;
   pointer-events: none;
 }
+
+.has-external-link::after {
+  content: '\ecaf';
+  font-family: 'remixicon' !important;
+  font-size: inherit;
+  font-style: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: map-get($spacers, 1);
+  display: inline-block;
+}
