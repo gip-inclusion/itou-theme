@@ -28,6 +28,7 @@
       background-color: $white;
       color: $primary;
       font-size: $font-size-sm;
+      line-height: $line-height-sm;
 
       &::before {
         display: block;
@@ -48,6 +49,7 @@
       }
 
       p {
+        line-height: $line-height-sm;
         margin-bottom: 0;
 
         + p {

@@ -8,12 +8,13 @@
 
   &__col {
 
+    > h1,
+    > .h1 {
+      @extend .mb-2;
+    }
+
     > *:last-child {
       @extend .mb-0;
     }
-  }
-
-  &__title {
-    @extend .mb-2;
   }
 }
