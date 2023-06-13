@@ -46,6 +46,7 @@
     @extend .lh-sm;
 
     li {
+      min-height: 17px;
       margin-top: map-get($spacers, 2);
 
       @include media-breakpoint-up(lg) {
@@ -59,6 +60,7 @@
       display: flex;
 
       > ul {
+        min-height: 17px;
         flex-grow: 1;
         padding-right: map-get($spacers, 2);
 
