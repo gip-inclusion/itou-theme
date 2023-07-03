@@ -50,13 +50,13 @@ $nuance: map-merge(
 );
 
 $blue: #0a76f6;
-$indigo: #0063CB;
+$indigo: #0063cb;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
-$red: #CE0500;
+$red: #ce0500;
 $orange: #b34000;
 $yellow: #ffc107 !default;
-$green: #18753C;
+$green: #18753c;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
@@ -118,9 +118,9 @@ $danger-lighter: #ffe1e0;
 $danger-lightest: #fff3f2;
 
 $info: $indigo;
-$info-light: #DDE4FF;
-$info-lighter: #E8EDFF;
-$info-lightest: #FAF9FF;
+$info-light: #dde4ff;
+$info-lighter: #e8edff;
+$info-lightest: #faf9ff;
 
 $important: #6c38d9;
 $important-light: #cfbff5;
@@ -449,7 +449,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Light.woff2') format('woff2'), url('../fonts/marianne/Marianne-Light.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Light.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -457,7 +458,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Light_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Light_Italic.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Light_Italic.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Light_Italic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -465,7 +467,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Regular.woff2') format('woff2'), url('../fonts/marianne/Marianne-Regular.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Regular.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -473,7 +476,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Regular_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Regular_Italic.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Regular_Italic.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Regular_Italic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -481,7 +485,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Medium.woff2') format('woff2'), url('../fonts/marianne/Marianne-Medium.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Medium.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -489,7 +494,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Medium_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Medium_Italic.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Medium_Italic.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Medium_Italic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -497,7 +503,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Bold.woff2') format('woff2'), url('../fonts/marianne/Marianne-Bold.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Bold.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -505,7 +512,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Bold_Italic.woff2') format('woff2'), url('../fonts/marianne/Marianne-Bold_Italic.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-Bold_Italic.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-Bold_Italic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -513,7 +521,8 @@ $embed-responsive-aspect-ratios: join(
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-ExtraBold.woff2') format('woff2'), url('../fonts/marianne/Marianne-ExtraBold.woff') format('woff');
+  src: url('../fonts/marianne/Marianne-ExtraBold.woff2') format('woff2'),
+    url('../fonts/marianne/Marianne-ExtraBold.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -522,7 +531,8 @@ $embed-responsive-aspect-ratios: join(
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: Marianne, Arial, sans-serif;
 $font-family-heading: Marianne, Arial, sans-serif;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif;
 $font-family-extra-01: 'Covered By Your Grace', Marianne, Arial, sans-serif;
 // stylelint-enable value-keyword-case
@@ -985,10 +995,10 @@ $nav-link-disabled-color: $disable-color;
 $nav-tabs-border-color: transparent;
 $nav-tabs-border-width: 0;
 $nav-tabs-border-radius: 0;
-$nav-tabs-link-hover-border-color: transparent;
-$nav-tabs-link-active-color: $primary;
-$nav-tabs-link-active-bg: transparent;
-$nav-tabs-link-active-border-color: $border-color;
+$nav-tabs-link-hover-border-color: $primary;
+$nav-tabs-link-active-color: $button;
+$nav-tabs-link-active-bg: $nuance-09;
+$nav-tabs-link-active-border-color: $button;
 
 $nav-pills-border-radius: $border-radius !default;
 $nav-pills-link-active-color: $component-active-color;
@@ -1077,7 +1087,7 @@ $dropdown-header-padding: $dropdown-padding-y $dropdown-item-padding-x;
 
 $pagination-padding-y: 0.75rem;
 $pagination-padding-x: 1rem;
-$pagination-padding-y-sm: 0.50rem;
+$pagination-padding-y-sm: 0.5rem;
 $pagination-padding-x-sm: 0.75rem;
 $pagination-padding-y-lg: 0.75rem;
 $pagination-padding-x-lg: 1rem;

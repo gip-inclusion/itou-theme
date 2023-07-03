@@ -10,7 +10,6 @@ import gulpSass from 'gulp-sass';
 import nodeSass from 'node-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import cleanCSS from 'gulp-clean-css';
-import purgecss from 'gulp-purgecss';
 import ejs from'gulp-ejs';
 import rename from'gulp-rename';
 import clean from 'gulp-clean';
@@ -67,11 +66,6 @@ export function purgestyles() {
       )
       .pipe(sass())
       .pipe(cleanCSS())
-      // .pipe(
-      //   purgecss({
-      //     content: [paths.distHtml + '*.html', paths.distScripts + 'app.js']
-      //   }),
-      // )
       .pipe(gulp.dest(paths.distStyles))
   );
 }

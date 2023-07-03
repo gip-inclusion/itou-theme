@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
   <head>
@@ -28,23 +29,23 @@
 
     <%- include('_sections/header-theme') %>
 
-    <main class="s-main" role="main">
-      <div class="toast-placement-wrapper">
-        <div id="liveToast" class="toast" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
-          <div class="toast-header">
-            <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
-            <strong class="mr-auto">Default Toast</strong>
-            <button type="button" class="close" data-dismiss="toast" aria-label="Fermer">
-              <i class="ri-close-line"></i>
-            </button>
-          </div>
-          <div class="toast-body">
-            Hello, world! This is a toast message.
+      <main class="s-main" role="main">
+        <div class="toast-placement-wrapper">
+          <div id="liveToast" class="toast" role="status" aria-live="polite" aria-atomic="true" data-delay="2000">
+            <div class="toast-header">
+              <i class="ri-check-line ri-lg mr-1" aria-hidden="true"></i>
+              <strong class="mr-auto">Default Toast</strong>
+              <button type="button" class="close" data-dismiss="toast" aria-label="Fermer">
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
           </div>
         </div>
-      </div>
 
-      <section id="content">
+        <section id="content">
           <div class="container">
 
             <article class="row py-5" id="alerts">
@@ -631,12 +632,12 @@
                   <h6>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</h6>
                   <nav class="c-breadcrumb" aria-label="Fil d'ariane">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="">Accueil</a></li>
-                        <li class="breadcrumb-item"><a href="">Communauté</a></li>
-                        <li class="breadcrumb-item"><a href="">France Travail</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Accompagnement des personnes</li>
+                      <li class="breadcrumb-item"><a href="">Accueil</a></li>
+                      <li class="breadcrumb-item"><a href="">Communauté</a></li>
+                      <li class="breadcrumb-item"><a href="">France Travail</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Accompagnement des personnes</li>
                     </ol>
-                </nav>
+                  </nav>
                 </div>
               </div>
             </article>
@@ -1052,11 +1053,11 @@
                     </a>
                   </p>
                   <p>
-                    <p>Collapse avec <code>.d-flex .justify-content-between .has-collapse-caret </code> pour placer le caret en bout de ligne:</p>
-                    <a class="d-flex justify-content-between font-weight-bold text-decoration-none has-collapse-caret" data-toggle="collapse" href="#collapseExample02" role="button" aria-expanded="false" aria-controls="collapseExample02">
-                      Link with has-collapse-caret on right
-                    </a>
-                   </p>
+                  <p>Collapse avec <code>.d-flex .justify-content-between .has-collapse-caret </code> pour placer le caret en bout de ligne:</p>
+                  <a class="d-flex justify-content-between font-weight-bold text-decoration-none has-collapse-caret" data-toggle="collapse" href="#collapseExample02" role="button" aria-expanded="false" aria-controls="collapseExample02">
+                    Link with has-collapse-caret on right
+                  </a>
+                  </p>
                   <div class="collapse" id="collapseExample02">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis repudiandae libero hic modi veritatis perspiciatis. Quibusdam deserunt consequatur labore natus maiores? Quibusdam eaque nesciunt modi. Nisi soluta aliquid excepturi!</p>
                   </div>
@@ -1127,7 +1128,7 @@
                         <div class="dropdown-menu" id="loginUserDropdown">
                           <ul class="list-unstyled">
                             <li>
-                                <span class="dropdown-header"><i class="ri-dashboard-line ri-lg mr-2"></i>Mise en situation professionnelle </span>
+                              <span class="dropdown-header"><i class="ri-dashboard-line ri-lg mr-2"></i>Mise en situation professionnelle </span>
                             </li>
                             <li>
                               <a class="dropdown-item" href="">
@@ -1212,54 +1213,9 @@
                     </li>
                   </ul>
                   <br>
-                  <ul class="nav nav-tabs nav-tabs--marche">
+                  <ul class="nav nav-tabs flex-column">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Item menu Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Item menu Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                  <br>
-                  <ul class="nav nav-tabs nav-tabs--communaute">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Item menu Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Item menu Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                  <br>
-                  <ul class="nav nav-tabs nav-tabs--pilotage">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Item menu Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Item menu Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                  <br>
-                  <ul class="nav nav-tabs nav-tabs--emploi">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
+                      <a class="nav-link active" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro facilis quo dicta officiis iure, eos beatae maiores ipsum necessitatibus ipsa neque voluptatum. Excepturi, dolorem vel. Iste quibusdam nesciunt fuga recusandae.</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Item menu Link</a>
@@ -1453,51 +1409,63 @@
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="exampleModalLabel">Profitez du Marché en totalité</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                              <i class="ri-close-line"></i>
-                            </button>
+                          <h3 class="modal-title" id="exampleModalLabel">Profitez du Marché en totalité</h3>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                            <i class="ri-close-line"></i>
+                          </button>
                         </div>
                         <div class="modal-body home-content-body">
-                            <p class="mb-4">
-                              Ce ne sera pas long !  Inscrivez-vous et accédez à toutes les fonctionnalités du marché.
-                            </p>
-                            <ul class="list-unstyled mb-5">
-                                <li class="d-flex mb-2">
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z"/></svg>
-                                  </span>
-                                  <span class="font-weight-bold ml-2">Téléchargez la liste complète des structures figurant sur le marché.</span>
-                                </li>
-                                <li class="d-flex mb-2">
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z"/></svg>
-                                  </span>
-                                  <span class="font-weight-bold ml-2">Créez des listes d'achat et sauvegardez vous structures favorites.</span>
-                                </li>
-                                <li class="d-flex mb-2">
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z"/></svg>
-                                  </span>
-                                  <span class="font-weight-bold ml-2">Accédez aux informations complètes des structures pour un sourcing qualifié.</span>
-                                </li>
-                                <li class="d-flex mb-2">
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z"/></svg>
-                                  </span>
-                                  <span class="font-weight-bold ml-2">Accédez aux coordonnées des structures.</span>
-                                </li>
-                            </ul>
-                            <p class="text-center">
-                              <a href="{% url 'auth:signup' %}?next=next-params-to-replace" id="auth-link" class="btn btn-sm btn-primary">Se connecter</a>
-                            </p>
-                            <hr class="my-5" data-text="ou" />
-                            <div class="text-center">
-                              <p class="mb-0">Vous n'avez pas de compte ?</p>
-                              <a href="{% url 'auth:login' %}?next=next-params-to-replace" id="auth-link" class="btn btn-sm btn-link">Créer un compte</a>
-                            </div>
+                          <p class="mb-4">
+                            Ce ne sera pas long ! Inscrivez-vous et accédez à toutes les fonctionnalités du marché.
+                          </p>
+                          <ul class="list-unstyled mb-5">
+                            <li class="d-flex mb-2">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                  <path fill="none" d="M0 0h24v24H0z" />
+                                  <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                                </svg>
+                              </span>
+                              <span class="font-weight-bold ml-2">Téléchargez la liste complète des structures figurant sur le marché.</span>
+                            </li>
+                            <li class="d-flex mb-2">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                  <path fill="none" d="M0 0h24v24H0z" />
+                                  <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                                </svg>
+                              </span>
+                              <span class="font-weight-bold ml-2">Créez des listes d'achat et sauvegardez vous structures favorites.</span>
+                            </li>
+                            <li class="d-flex mb-2">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                  <path fill="none" d="M0 0h24v24H0z" />
+                                  <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                                </svg>
+                              </span>
+                              <span class="font-weight-bold ml-2">Accédez aux informations complètes des structures pour un sourcing qualifié.</span>
+                            </li>
+                            <li class="d-flex mb-2">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                  <path fill="none" d="M0 0h24v24H0z" />
+                                  <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                                </svg>
+                              </span>
+                              <span class="font-weight-bold ml-2">Accédez aux coordonnées des structures.</span>
+                            </li>
+                          </ul>
+                          <p class="text-center">
+                            <a href="{% url 'auth:signup' %}?next=next-params-to-replace" id="auth-link" class="btn btn-sm btn-primary">Se connecter</a>
+                          </p>
+                          <hr class="my-5" data-text="ou" />
+                          <div class="text-center">
+                            <p class="mb-0">Vous n'avez pas de compte ?</p>
+                            <a href="{% url 'auth:login' %}?next=next-params-to-replace" id="auth-link" class="btn btn-sm btn-link">Créer un compte</a>
                           </div>
-                    </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1532,7 +1500,7 @@
               <div class="col-12 col-lg-9">
                 <div class="mb-5">
                   <p>Trois variations de toasts sont possibles.<br><code>.toast--info</code>, <code>.toast--warning</code>, <code>.toast--danger</code>, <code>.toast--success</code></p>
-                  <p>Pour le positionnement et le staking des Toasts il faut placer les <code>.toast</code> dans le wrapper <code>toast-placement-wrapper</code>. Pour la gestion du dismiss, du js  voir la <a href="https://getbootstrap.com/docs/4.6/components/toasts/" target="_blank">documentation</a>.</p>
+                  <p>Pour le positionnement et le staking des Toasts il faut placer les <code>.toast</code> dans le wrapper <code>toast-placement-wrapper</code>. Pour la gestion du dismiss, du js voir la <a href="https://getbootstrap.com/docs/4.6/components/toasts/" target="_blank">documentation</a>.</p>
                   <br>
                   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
@@ -1606,26 +1574,26 @@
           </div>
         </section>
 
-    </main>
+      </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="javascripts/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+      <script src="javascripts/app.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $('#liveToastBtn').click(function () {
-          $('#liveToast').toast('show');
+      <script>
+        $(document).ready(function () {
+          $('#liveToastBtn').click(function () {
+            $('#liveToast').toast('show');
+          });
         });
-      });
-    </script>
+      </script>
 
-    <style>
-      #toasts .toast {
-        opacity: 1;
-      }
-    </style>
+      <style>
+        #toasts .toast {
+          opacity: 1;
+        }
+      </style>
   </body>
 
 </html>

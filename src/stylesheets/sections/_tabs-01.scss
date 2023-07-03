@@ -23,6 +23,9 @@
         @extend .px-3;
         @extend .py-2;
         @extend .h-100;
+        color: $primary;
+        line-height: $line-height-sm;
+        position: relative;
         border: 1px solid $border-color;
         border-bottom: 0;
         white-space: nowrap;
@@ -63,7 +66,6 @@
       visibility: hidden;
 
       .nav-link {
-
         &.active::after,
         &:hover::after {
           border: 1px solid $border-color;
