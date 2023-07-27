@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
   <head>
     <title>Itou Theme</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
@@ -24,40 +24,142 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
   </head>
 
-  <body id="top" class="bg-gray-100">
+  <body id="top" class="bg-light">
 
-    <header class="bg-primary py-3">
+    <header class="bg-primary py-3 sticky-top">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-12">
-        <a href="https://betagouv.github.io/itou-theme/" class="h2 text-white mb-0 text-decoration-none">Itou Theme</a>
+      <div class="col-12 col-lg-3">
+        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.2.0</label>
+      </div>
+      <div class="col-12 col-lg">
+        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
+          <option value="index.html">---</option>
+          <optgroup label="Layout">
+            <option value="layout.html#grid">Flex Grid</option>
+            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
+            <option value="layout.html#spacing">Utilities for spacing</option>
+          </optgroup>
+          <optgroup label="Content">
+            <option value="content.html#bg-colors">Background colors</option>
+            <option value="content.html#colors">Colors</option>
+            <option value="content.html#images">Images</option>
+            <option value="content.html#shadows">Shadows</option>
+            <option value="content.html#tables">Tables</option>
+            <option value="content.html#text-colors">Text colors</option>
+            <option value="content.html#text-utilities">Text utilities</option>
+            <option value="content.html#typography">Typography</option>
+          </optgroup>
+          <optgroup label="Components">
+            <option value="components.html#alerts">Alerts</option>
+            <option value="components.html#badges">Badges</option>
+            <option value="components.html#breadcrumb">Breadcrumb</option>
+            <option value="components.html#buttons">Buttons</option>
+            <option value="components.html#button-group">Button group</option>
+            <option value="components.html#cards">Cards</option>
+            <option value="components.html#collapse">Collapse</option>
+            <option value="components.html#dropdowns">Dropdowns</option>
+            <option value="components.html#progress">Progress</option>
+            <option value="components.html#pagination">Pagination</option>
+            <option value="components.html#popovers">Popovers</option>
+            <option value="components.html#tabs">Tabs</option>
+            <option value="components.html#tooltips">Tooltips</option>
+            <option value="components.html#modal">Modal</option>
+            <option value="components.html#toasts">Toasts</option>
+          </optgroup>
+          <optgroup label="Forms">
+            <option value="forms.html#forms">Forms</option>
+            <option value="forms.html#input-group">Input group</option>
+          </optgroup>
+          <optgroup label="Utilities BS">
+            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
+          </optgroup>
+          <optgroup label="Content Itou">
+            <option value="content-ic.html">Button Inclusion Connect</option>
+            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
+            <option value="content-itou.html#icones">Icones (remix icon 3.4.0)</option>
+            <option value="content-itou.html#logos">Logos</option>
+          </optgroup>
+          <optgroup label="Components Itou">
+            <option value="components-itou.html#cards">Cards</option>
+            <option value="components-itou.html#stepper">Stepper</option>
+            <option value="components-itou.html#listgroup">Listgroup</option>
+            <option value="components-itou.html#tags">Tags</option>
+            <option value="components-itou.html#box">Box</option>
+          </optgroup>
+          <optgroup label="Sections Itou">
+            <option value="sections-itou-01.html#header">Headers + Post Header</option>
+            <option value="sections-itou-01.html#footer">Footer</option>
+            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
+            <option value="sections-itou-02.html#article-picture-02">Article Picture 02</option>
+            <option value="sections-itou-02.html#article-picture-03">Article Picture 03</option>
+            <option value="sections-itou-03.html#article-picture-group-01">Article Picture Group 01</option>
+            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
+            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
+            <option value="sections-itou-05.html#cards-grid-01">Cards Grid 01</option>
+            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
+            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
+            <option value="sections-itou-06.html#title-01">Simple Title 01</option>
+            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
+          </optgroup>
+          <optgroup label="Pages Itou">
+            <option value="layout-itou-base.html">Base layout</option>
+            <option value="layout-itou-form.html">Formulaire full layout</option>
+            <option value="layout-itou-form-simple.html">Formulaire simple layout</option>
+            <option value="layout-itou-cms.html">CMS & Flatpage layout</option>
+            <option value="layout-itou-search-result.html">Résultats de recherche C1, filtres et cartes</option>
+          </optgroup>
+          <optgroup label="Prototypes Itou">
+            <option value="proto-itou-form-uploads-img.html">Formulaire uploads images</option>
+          </optgroup>
+          <optgroup label="External libraries">
+            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
+            <option value="external-libs-itou-bs.html" target="_blank">Bootstrap.js</option>
+            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
+            <option value="https://remixicon.com/">Remix Icon</option>
+            <option value="external-libs-itou-tac.html">Tarte au citron</option>
+            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
+            <option value="external-libs-itou-s2.html">Select 2</option>
+          </optgroup>
+        </select>
       </div>
     </div>
   </div>
 </header>
 
 
-    <main class="s-main" role="main">
+      <main class="s-main" role="main">
 
-      <br>
-      <br>
+        <br>
+        <br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3>Header <code>.s-header</code></h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3>Header <code>.s-header</code></h3>
+            </div>
           </div>
         </div>
-      </div>
-      <header role="banner" id="header">
+        <header role="banner" id="header">
   <section class="s-header">
     <div class="s-header__container container">
       <div class="s-header__row row">
-        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pr-0">
+        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
           <a href="#top" class="s-header__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
         </div>
         <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg " alt="Les emplois de l inclusion"></a>
+          <a href=""><img src="images/logo-emploi-inclusion.svg " alt="Les emplois de l inclusion" height="90"></a>
         </div>
         <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
           <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
@@ -73,7 +175,7 @@
                 </button>
               </li>
               <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
                   Se connecter | S'inscrire
                 </button>
                 <div class="dropdown-menu" id="loginUserDropdown">
@@ -96,7 +198,7 @@
             </ul>
           </nav>
         </div>
-        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-bs-toggle="burger">
           <i class="ri-menu-line" id="open" role="button" tabindex="0" aria-label="Ouverture du menu de navigation principale pour mobile"></i>
           <i class="ri-close-line" id="close" role="button" tabindex="0" aria-label="Fermeture du menu de navigation principale pour mobile"></i>
         </div>
@@ -114,7 +216,7 @@
                 </button>
               </li>
               <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
                   Se connecter | S'inscrire
                 </button>
                 <div class="dropdown-menu" id="loginUserDropdownMobile">
@@ -146,7 +248,7 @@
                 <a href="">Rechercher des prescripteurs habilités</a>
               </li>
               <li>
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdownMobile" aria-expanded="false">Documentation</a>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdownMobile" aria-expanded="false">Documentation</a>
                 <div class="dropdown-menu" id="documentationDropdownMobile">
                   <ul class="list-unstyled">
                     <li>
@@ -186,7 +288,7 @@
                 <a href="">Rechercher des prescripteurs habilités</a>
               </li>
               <li>
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdown" aria-expanded="false">Documentation</a>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdown" aria-expanded="false">Documentation</a>
                 <div class="dropdown-menu" id="documentationDropdown">
                   <ul class="list-unstyled">
                     <li>
@@ -214,16 +316,16 @@
 
 
 
-      <br>
-      <br>
-      <div class="container">
-        <div class="row" id="footer">
-          <div class="col-12">
-            <h3>Footer <code>.s-footer</code></h3>
+          <br>
+          <br>
+          <div class="container">
+            <div class="row" id="footer">
+              <div class="col-12">
+                <h3>Footer <code>.s-footer</code></h3>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <footer role="contentinfo" id="footer">
+          <footer role="contentinfo" id="footer">
   <section class="s-footer-quick">
     <div class="s-footer-quick__container container">
       <div class="s-footer-quick__row row">
@@ -311,17 +413,17 @@
 </footer>
 
 
-      <br>
-      <br>
-      <div class="container">
-        <div class="row" id="footer">
-          <div class="col-12">
-            <h3>Prefooter + Footer <code>.s-prefooter + .s-footer</code></h3>
-          </div>
-        </div>
-      </div>
+            <br>
+            <br>
+            <div class="container">
+              <div class="row" id="footer">
+                <div class="col-12">
+                  <h3>Footer <code>.s-footer</code></h3>
+                </div>
+              </div>
+            </div>
 
-      <footer role="contentinfo" id="footer">
+            <footer role="contentinfo" id="footer">
   <section class="s-footer-quick">
     <div class="s-footer-quick__container container">
       <div class="s-footer-quick__row row">
@@ -408,12 +510,11 @@
   </section>
 </footer>
 
-    </main>
+      </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="javascripts/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
   </body>
 
 </html>

@@ -1,4 +1,4 @@
-.toast-placement-wrapper {
+.toast-container {
   position: fixed;
   z-index: $zindex-toast;
   right: map-get($spacers, 3);
@@ -40,8 +40,10 @@
       color: $info;
       background-color: $info-lightest;
 
-      .close {
-        color: $info;
+      .btn-close {
+        --#{$prefix}btn-close-bg: #{escape-svg(
+            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'  fill='#{$info}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>")
+          )};
       }
     }
   }
@@ -54,8 +56,10 @@
       color: $danger;
       background-color: $danger-lightest;
 
-      .close {
-        color: $danger;
+      .btn-close {
+        --#{$prefix}btn-close-bg: #{escape-svg(
+            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'  fill='#{$danger}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>")
+          )};
       }
     }
   }
@@ -68,8 +72,10 @@
       color: $success;
       background-color: $success-lightest;
 
-      .close {
-        color: $success;
+      .btn-close {
+        --#{$prefix}btn-close-bg: #{escape-svg(
+            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'  fill='#{$success}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>")
+          )};
       }
     }
   }
@@ -82,8 +88,10 @@
       color: $warning;
       background-color: $warning-lightest;
 
-      .close {
-        color: $warning;
+      .btn-close {
+        --#{$prefix}btn-close-bg: #{escape-svg(
+            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'  fill='#{$warning}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>")
+          )};
       }
     }
   }

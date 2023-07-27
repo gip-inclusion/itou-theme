@@ -11,7 +11,6 @@
       margin-right: map-get($spacers, 1);
       font-weight: $font-weight-base;
     }
-
   }
 
   &-sm {
@@ -29,7 +28,7 @@
   &-xs {
     font-size: $font-size-xs;
     font-weight: $font-weight-normal;
-    padding: 0.20rem $badge-padding-x 0.25rem $badge-padding-x;
+    padding: 0.2rem $badge-padding-x 0.25rem $badge-padding-x;
 
     > i {
       @extend .ri-xs;
@@ -39,7 +38,7 @@
   }
 
   + .badge {
-    @extend .ml-1;
+    @extend .ms-1;
   }
 }
 
@@ -47,22 +46,15 @@ a.badge {
   text-decoration: none;
 }
 
-
 .badge-group {
   @extend .mb-n1;
 
   .badge {
-    @extend .mr-1;
+    @extend .me-1;
     @extend .mb-1;
 
     & + .badge {
-      @extend .ml-0;
+      @extend .ms-0;
     }
-  }
-}
-
-@each $color, $value in $theme-colors {
-  .badge-outline-#{$color} {
-    @include badge-outline-variant($value);
   }
 }

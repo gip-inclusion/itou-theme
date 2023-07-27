@@ -23,7 +23,9 @@
   }
 
   &__col {
+
     nav {
+
       > ul {
         @extend .list-inline;
         @extend .list-unstyled;
@@ -40,9 +42,8 @@
             @extend .d-inline-block;
             @extend .text-decoration-none;
             @extend .p-3;
-            line-height: $line-height-sm;
             border-bottom: 2px solid transparent;
-            transition: all 0.3s ease-in-out;
+            transition: all .3s ease-in-out;
 
             &:hover {
               background-color: $nuance-09;

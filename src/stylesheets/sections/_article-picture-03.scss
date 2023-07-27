@@ -8,40 +8,38 @@
   }
 
   &__col {
-
-		&--article {
-
+    &--article {
       &__title {
-				display: inline-block;
-				padding-bottom: map-get($spacers, 2);
-				margin-bottom: map-get($spacers, 3);
-				border-bottom: 2px solid $primary;
+        display: inline-block;
+        padding-bottom: map-get($spacers, 2);
+        margin-bottom: map-get($spacers, 3);
+        border-bottom: 2px solid $primary;
 
-				@include media-breakpoint-up(lg) {
-					margin-bottom: map-get($spacers, 5);
-				}
+        @include media-breakpoint-up(lg) {
+          margin-bottom: map-get($spacers, 5);
+        }
 
-				&::before {
-          content: attr(data-subtitle);
-					font-size: $font-size-base;
+        &::before {
+          content: attr(data-bs-subtitle);
+          font-size: $font-size-base;
           text-transform: uppercase;
-					line-height: $line-height-sm;
-					display: block;
-					margin-bottom: map-get($spacers, 1);
-					color: $primary;
+          line-height: $line-height-sm;
+          display: block;
+          margin-bottom: map-get($spacers, 1);
+          color: $primary;
 
-					@include media-breakpoint-up(lg) {
-						margin-bottom: map-get($spacers, 2);
-					}
-				}
-			}
+          @include media-breakpoint-up(lg) {
+            margin-bottom: map-get($spacers, 2);
+          }
+        }
+      }
 
-			article {
+      article {
         @extend .w-100;
-				padding-top: map-get($spacers, 3);
-				padding-bottom: map-get($spacers, 3);
-			}
-		}
+        padding-top: map-get($spacers, 3);
+        padding-bottom: map-get($spacers, 3);
+      }
+    }
 
     &--picture {
       @include media-breakpoint-up(lg) {
@@ -99,7 +97,6 @@
     }
   }
 
-
   &.has-illustration-bg-01 {
     overflow-x: hidden;
 
@@ -107,7 +104,7 @@
       position: relative;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 174px;
         height: 280px;

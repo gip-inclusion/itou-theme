@@ -1,3 +1,44 @@
+.btn-block {
+  width: 100%;
+  display: block;
+}
+
+.btn-close {
+  float: right;
+  transition: $transition-base;
+}
+
+disabled,
+.btn:disabled,
+select:disabled {
+  pointer-events: none;
+}
+
+.btn-form-control {
+  color: $input-color;
+  border-color: $input-border-color;
+  background-color: $input-bg;
+  font-weight: $font-weight-base !important;
+  @extend .text-start;
+
+  &.hover,
+  &:hover,
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    color: $input-color;
+    border-color: $input-focus-border-color;
+    background-color: $input-bg;
+  }
+
+  &.disabled,
+  &:disabled,
+  &[readonly] {
+    background-color: $gray-400;
+  }
+}
+
 .btn-link {
   color: $button;
   font-weight: $font-weight-bold;
@@ -47,22 +88,22 @@
   @extend .px-0;
   aspect-ratio: 1 / 1;
 
-  min-height: 40px;
-  width: 40px;
+  min-height: $input-height;
+  width: $input-height;
 
   &.btn-sm {
-    min-height: 32px;
-    width: 32px;
+    min-height: $input-height-sm;
+    width: $input-height-sm;
   }
 
   &.btn-lg {
-    min-height: 48px;
-    width: 48px;
+    min-height: $input-height-lg;
+    width: $input-height-lg;
   }
 }
 
 .btn {
-  min-height: 40px;
+  min-height: $input-height;
 
   > [class^='ri-'] {
     font-weight: $font-weight-medium;
@@ -70,7 +111,7 @@
   }
 
   &.btn-sm {
-    min-height: 32px;
+    min-height: $input-height-sm;
 
     > [class^='ri-'] {
       @extend .ri-sm;
@@ -78,7 +119,7 @@
   }
 
   &.btn-lg {
-    min-height: 48px;
+    min-height: $input-height-lg;
 
     > [class^='ri-'] {
       font-weight: $font-weight-bold;
@@ -88,22 +129,23 @@
 }
 
 .btn-group-action {
-
   // Prevent double borders when buttons are next to each other
-  >.btn-group:not(:first-child),
-  >.btn:not(:first-child) {
-    @extend .ml-2;
+  > .btn-group:not(:first-child),
+  > .btn:not(:first-child) {
+    @extend .ms-2;
   }
 
   // Reset rounded corners
-  >.btn-group:not(:last-child)>.btn,
-  >.btn:not(:last-child):not(.dropdown-toggle) {
-    @include border-right-radius($btn-border-radius);
+  > .btn-group:not(:last-child) > .btn,
+  > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: $btn-border-radius;
+    border-bottom-right-radius: $btn-border-radius;
   }
 
-  >.btn-group:not(:first-child)>.btn,
-  >.btn:not(:first-child) {
-    @include border-left-radius($btn-border-radius);
+  > .btn-group:not(:first-child) > .btn,
+  > .btn:not(:first-child) {
+    border-top-left-radius: $btn-border-radius;
+    border-bottom-left-radius: $btn-border-radius;
   }
 }
 
@@ -145,7 +187,7 @@
     }
 
     i::after {
-      animation: grow .6s ease-out;
+      animation: grow 0.6s ease-out;
     }
   }
 

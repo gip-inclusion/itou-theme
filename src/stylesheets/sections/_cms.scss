@@ -7,7 +7,6 @@
     margin-bottom: map-get($spacers, 9);
   }
 
-
   p + h2 {
     margin-top: map-get($spacers, 5);
   }
@@ -15,7 +14,7 @@
   p,
   ul {
     @include media-breakpoint-up(lg) {
-     font-size: $font-size-lg;
+      font-size: $font-size-lg;
     }
   }
 
@@ -28,15 +27,15 @@
     }
 
     &.left {
-      @extend .float-left;
+      @extend .float-start;
       @extend .mb-3;
-      @extend .mr-5;
+      @extend .me-5;
     }
 
     &.right {
-      @extend .float-right;
+      @extend .float-end;
       @extend .mb-3;
-      @extend .ml-5;
+      @extend .ms-5;
     }
   }
 }

@@ -1,0 +1,63 @@
+.alert {
+  color: $primary !important;
+
+  + .alert {
+    @extend .mt-3;
+  }
+}
+
+.alert-light {
+  @extend .bg-light;
+}
+
+.alert-dismissible {
+  .btn-close {
+    padding: $alert-padding-y $alert-padding-x;
+  }
+}
+
+.alert-dismissible-once {
+  @extend .alert-dismissible;
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    border-left: 5px solid map-get($theme-colors, $color) !important;
+
+    @if $color == 'marche' {
+      background-color: $marche-light !important;
+    }
+
+    @if $color == 'emploi' {
+      background-color: $emploi-light !important;
+    }
+
+    @if $color == 'communaute' {
+      background-color: $communaute-light !important;
+    }
+
+    @if $color == 'pilotage' {
+      background-color: $pilotage-light !important;
+    }
+
+    @if $color == 'success' {
+      background-color: $success-lighter !important;
+    }
+
+    @if $color == 'warning' {
+      background-color: $warning-lighter !important;
+    }
+
+    @if $color == 'danger' {
+      background-color: $danger-lighter !important;
+    }
+
+    @if $color == 'info' {
+      background-color: $info-lighter !important;
+    }
+
+    @if $color == 'important' {
+      background-color: $important-lighter !important;
+    }
+  }
+}

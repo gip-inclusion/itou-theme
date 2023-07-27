@@ -5,13 +5,9 @@ $postheader-height: 59px;
 
 ::selection,
 mark,
-mark  {
+mark {
   color: $white;
   background-color: $tertiary;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 [id] {
@@ -88,48 +84,6 @@ ol {
   }
 }
 
-.btn.disabled,
-.btn:disabled,
-.custom-select:disabled {
-  pointer-events: none;
-}
-
-fieldset:disabled .form-control,
-.form-control:disabled ,
-.custom-select:disabled,
-.form-control[readonly] {
-  pointer-events: none;
-  border-color: $disable-color !important;
-  color: $input-placeholder-color !important;
-  opacity: 1 !important;
-}
-
-.form-control[readonly] {
-  background-color: transparent !important;
-}
-
-.custom-select,
-select.form-control {
-
-  &:disabled {
-    background: $custom-select-disabled-bg $custom-select-disabled-background;
-  }
-}
-
-select.form-control {
-  @extend .custom-select;
-}
-
-select.form-control.form-control-sm {
-  @extend .custom-select;
-  @extend .custom-select-sm;
-}
-
-select.form-control.form-control-lg {
-  @extend .custom-select;
-  @extend .custom-select-lg;
-}
-
 :focus {
   outline-offset: 2px;
   outline: $blue 1px solid;
@@ -145,7 +99,8 @@ select.form-control.form-control-lg {
 }
 
 .form-control,
-.custom-select,
+.form-select,
+.form-check-input,
 .btn {
   &:focus {
     outline-offset: 2px;
@@ -162,78 +117,10 @@ select.form-control.form-control-lg {
   }
 }
 
-.custom-control-input {
-  &:focus + .custom-control-label::before {
-    outline-offset: 2px;
-    outline: $blue 2px solid;
-  }
-
-  &:focus:not(:focus-visible) + .custom-control-label::before {
-    outline: 0;
-  }
-
-  &:focus-visible + .custom-control-label::before {
-    outline-offset: 2px;
-    outline: $blue 2px solid;
-  }
-}
-
-.input-group {
-  .form-control {
-    outline: 0 !important;
-  }
-
-  &.has-focus {
-    border-radius: $input-border-radius;
-    outline-offset: 2px;
-    outline: $blue 2px solid;
-
-    .input-group-text {
-      border-color: $input-focus-color;
-    }
-  }
-
-  &-append,
-  &-prepend {
-    .btn-link {
-      border-top: $input-border-width solid $input-border-color;
-      border-bottom: $input-border-width solid $input-border-color;
-      border-right: $input-border-width solid $input-border-color;
-    }
-  }
-}
-
-
-.btn-form-control {
-  color: $input-color;
-  border-color: $input-border-color;
-  background-color: $input-bg;
-  font-weight: $font-weight-base !important;
-  @extend .text-left;
-
-  &.hover,
-  &:hover,
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    color: $input-color;
-    border-color: $input-focus-border-color;
-    background-color: $input-bg;
-  }
-
-  &.disabled,
-  &:disabled,
-  &[readonly] {
-    background-color: $gray-400;
-  }
-}
-
 ul.pagination {
   @extend .p-0;
 
   .page-item {
-
     &:not(.active) {
       .page-link:hover {
         text-decoration: underline;
@@ -267,256 +154,13 @@ ul.pagination {
   }
 }
 
-.alert {
-  color: $primary !important;
-
-  + .alert {
-    @extend .mt-3;
-  }
-}
-
-.alert-light {
-  @extend .bg-light;
-}
-
-.alert-dismissible-once {
-  @extend .alert-dismissible;
-}
-
 .list-group {
-  @extend .pl-0;
+  @extend .ps-0;
 }
 
-[data-toggle],
-[data-btn] {
+[data-bs-toggle],
+[data-bs-btn] {
   cursor: pointer;
-}
-
-.form-group > label,
-.input-group > label {
-  font-weight: $font-weight-bold;
-}
-
-.form-group-required > label:not(.custom-control-label)::after,
-.form-group-required > div > label:not(.custom-control-label)::after,
-label.required:not(.custom-control-label)::after {
-  content: ' *';
-  font-weight: $font-weight-bold;
-  font-size: $font-size-base;
-}
-
-.form-control.is-valid:focus,
-.was-validated .form-control:valid:focus,
-.form-control.is-invalid:focus,
-.was-validated .form-control:invalid:focus {
-  box-shadow: none;
-}
-
-.form-group.is-invalid {
-  .invalid-feedback {
-    display: block;
-  }
-}
-
-.form-group.is-invalid .custom-select,
-.form-group.is-invalid .autocomplete__input,
-.custom-select.is-invalid {
-  border-color: $form-feedback-invalid-color !important;
-}
-
-.input-group > .custom-select:not(:first-child),
-.input-group > .form-control:not(:first-child) {
-  border-left: transparent;
-  padding-left: 0;
-}
-
-.input-group:not(.has-validation) > .custom-file:not(:last-child)  .custom-file-label::after,
-.input-group:not(.has-validation) > .custom-select:not(:last-child),
-.input-group:not(.has-validation) > .form-control:not(:last-child) {
-  border-right: transparent;
-  padding-right: 0;
-}
-
-.custom-checkbox,
-.custom-radio {
-  .custom-control-input:disabled ~ .custom-control-label::before,
-  .custom-control-input[disabled] ~ .custom-control-label::before {
-    border-color: $nuance-06;
-    background-color: $white;
-  }
-}
-
-.custom-radio {
-  .custom-control-input:checked ~ .custom-control-label::before,
-  .custom-control-input:disabled:checked ~ .custom-control-label::before {
-    background-color: transparent;
-  }
-}
-
-.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::after {
-  background-image: escape-svg($custom-radio-indicator-icon-checked-disabled);
-}
-
-.custom-switch {
-  .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: $success;
-    border-color: $success;
-  }
-
-  .custom-control-input:disabled ~ .custom-control-label::before,
-  .custom-control-input[disabled] ~ .custom-control-label::before {
-    border-color: $custom-control-indicator-disabled-bg;
-  }
-
-  .custom-control-input:disabled ~ .custom-control-label::after,
-  .custom-control-input[disabled] ~ .custom-control-label::after {
-    background-color: $white;
-  }
-
-  &.has-state-label {
-
-    .custom-control-label {
-      &::before {
-        content: attr(data-state-label-off);
-        transition: $transition-base;
-        color: $primary;
-        font-size: $font-size-xs;
-        line-height: 1;
-        text-indent: 34px;
-      }
-    }
-
-    .custom-control-input:checked ~ .custom-control-label {
-      &::before {
-        content: attr(data-state-label-on);
-      }
-    }
-  }
-}
-
-.custom-switch.custom-switch-lg {
-  padding-left: $custom-switch-width-lg + $custom-control-gutter;
-  min-height: 2.1rem;
-
-  .custom-control-label {
-    &::before {
-      left: -($custom-switch-width-lg + $custom-control-gutter);
-      width: $custom-switch-width-lg;
-      pointer-events: all;
-      height: 27px;
-      border-radius: $custom-switch-indicator-border-radius-lg;
-    }
-
-    &::after {
-      top: add(
-        ($font-size-base * $line-height-base - $custom-control-indicator-size) *
-          0.5,
-        $custom-control-indicator-border-width * 2
-      );
-      left: add(
-        -($custom-switch-width-lg + $custom-control-gutter),
-        $custom-control-indicator-border-width * 2
-      );
-      width: $custom-switch-indicator-size-lg;
-      height: $custom-switch-indicator-size-lg;
-      background-color: $custom-control-indicator-border-color;
-      border-radius: $custom-switch-indicator-border-radius-lg;
-      @include transition(
-        transform 0.15s ease-in-out,
-        $custom-forms-transition
-      );
-    }
-  }
-
-  .custom-control-input:checked ~ .custom-control-label {
-    &::after {
-      background-color: $custom-control-indicator-bg;
-      transform: translateX(
-        $custom-switch-width-lg - $custom-control-indicator-size-lg
-      );
-      background-image: escape-svg($custom-switch-indicator-icon-checked);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  }
-
-  .custom-control-input:disabled {
-    &:checked ~ .custom-control-label::before {
-      @include gradient-bg($custom-control-indicator-checked-disabled-bg);
-    }
-  }
-
-  &.is-rtl {
-    padding-left: 0 !important;
-    padding-right: $custom-switch-width-lg + $custom-control-gutter;
-
-    .custom-control-label {
-      &::before {
-        left: initial;
-        right: -($custom-switch-width-lg + $custom-control-gutter);
-      }
-
-      &::after {
-        left: initial;
-        right: add(
-          -($custom-switch-width-lg + $custom-control-gutter),
-          $custom-control-indicator-border-width * 2
-        );
-        transform: translateX(-1.25rem);
-      }
-    }
-
-    .custom-control-input:checked ~ .custom-control-label::after {
-      transform: translateX(0);
-    }
-  }
-
-  &.has-state-label {
-    min-height: 3rem;
-
-    .custom-control-label {
-      &::before {
-        transition: $transition-base;
-        color: $primary;
-        content: attr(data-state-label-off);
-        font-size: $font-size-xs;
-        line-height: 4.5rem;
-        text-indent: 0;
-        text-align: center;
-      }
-    }
-
-    .custom-control-input:checked ~ .custom-control-label {
-      &::before {
-        content: attr(data-state-label-on);
-      }
-    }
-  }
-}
-
-.custom-switch.is-rtl {
-  padding-left: 0 !important;
-  padding-right: $custom-switch-width + $custom-control-gutter;
-
-  .custom-control-label {
-    &::before {
-      left: initial;
-      right: -($custom-switch-width + $custom-control-gutter);
-    }
-
-    &::after {
-      left: initial;
-      right: add(
-        -($custom-switch-width + $custom-control-gutter),
-        $custom-control-indicator-border-width * 2
-      );
-      transform: translateX(-0.75rem);
-    }
-  }
-
-  .custom-control-input:checked ~ .custom-control-label::after {
-    transform: translateX(0);
-  }
 }
 
 .page-link {
@@ -524,23 +168,16 @@ label.required:not(.custom-control-label)::after {
   font-weight: $font-weight-bold;
 }
 
-.close {
-  transition: $transition-base;
-  opacity: 0.75;
-
-  &:not(:disabled):not(.disabled) {
-    @include hover-focus() {
-      opacity: 1;
-    }
-  }
-}
-
 hr {
   position: relative;
   color: $primary;
+  box-sizing: border-box;
+  height: 0;
+  overflow: visible;
 
-  &[data-text]::after {
-    content: attr(data-text);
+  &[data-it-text]::after {
+    content: attr(data-it-text);
+    display: inline-block;
     position: absolute;
     top: -9px;
     left: 50%;
@@ -560,10 +197,6 @@ iframe {
 
 .modal {
   .modal-header {
-    .close {
-      margin: (-$modal-header-padding-y) (-$modal-header-padding-y) (-$modal-header-padding-y) auto !important;
-    }
-
     + .modal-body {
       @extend .pt-2;
     }
@@ -572,6 +205,7 @@ iframe {
   .modal-body > *:last-child {
     @extend .mb-0;
   }
+
   .modal-footer {
     @extend .pt-0;
   }
@@ -599,17 +233,17 @@ iframe {
     vertical-align: middle;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
-    margin-left: .4rem;
-    margin-right: -.25rem;
+    margin-left: 0.4rem;
+    margin-right: -0.25rem;
   }
 }
 
 .dropdown-header {
   display: flex;
   align-items: center;
-  background-color: $gray-400;
-  font-weight: $font-weight-normal;
-  font-size: $font-size-sm;
+  background-color: $light;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-xs;
   text-transform: uppercase;
   padding: 0.75rem;
   border-bottom: $border-width solid $border-color;

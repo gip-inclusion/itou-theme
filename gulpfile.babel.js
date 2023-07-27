@@ -6,15 +6,13 @@ import browserSync from 'browser-sync';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import imagemin from 'gulp-imagemin';
-import gulpSass from 'gulp-sass';
-import nodeSass from 'node-sass';
+import sass from 'gulp-dart-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import cleanCSS from 'gulp-clean-css';
-import ejs from'gulp-ejs';
+import ejs from 'gulp-ejs';
 import rename from'gulp-rename';
 import clean from 'gulp-clean';
 
-const sass = gulpSass(nodeSass);
 const server = browserSync.create();
 
 const paths = {

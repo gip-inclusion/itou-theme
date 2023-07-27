@@ -8,9 +8,7 @@
   }
 
   &__col {
-
     &--article {
-
       article {
         @extend .w-100;
       }
@@ -39,7 +37,7 @@
       }
 
       ul {
-        @extend .pl-3;
+        @extend .ps-3;
         margin-bottom: map-get($spacers, 4);
       }
 
@@ -54,25 +52,29 @@
   }
 
   &--marche {
-    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
+    .s-hero-title-01__col--article
+      .s-hero-title-01__col--article__title::after {
       background-color: $marche;
     }
   }
 
   &--emploi {
-    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
+    .s-hero-title-01__col--article
+      .s-hero-title-01__col--article__title::after {
       background-color: $emploi;
     }
   }
 
   &--pilotage {
-    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
+    .s-hero-title-01__col--article
+      .s-hero-title-01__col--article__title::after {
       background-color: $pilotage;
     }
   }
 
   &--communaute {
-    .s-hero-title-01__col--article .s-hero-title-01__col--article__title::after {
+    .s-hero-title-01__col--article
+      .s-hero-title-01__col--article__title::after {
       background-color: $communaute;
     }
   }

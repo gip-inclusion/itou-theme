@@ -2,11 +2,11 @@
   <section class="s-header">
     <div class="s-header__container container">
       <div class="s-header__row row">
-        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pr-0">
+        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
           <a href="#top" class="s-header__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
         </div>
         <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
-          <a href=""><img src="images/<% if (locals.headerLogo != undefined) { %><%= headerLogo %> <% } %>" alt="<% if (locals.headerLogoAlt != undefined) { %><%= headerLogoAlt %><% } %>"></a>
+          <a href=""><img src="images/<% if (locals.headerLogo != undefined) { %><%= headerLogo %> <% } %>" alt="<% if (locals.headerLogoAlt != undefined) { %><%= headerLogoAlt %><% } %>" height="90"></a>
         </div>
         <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
           <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
@@ -22,7 +22,7 @@
                 </button>
               </li>
               <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
                   Se connecter | S'inscrire
                 </button>
                 <div class="dropdown-menu" id="loginUserDropdown">
@@ -45,7 +45,7 @@
             </ul>
           </nav>
         </div>
-        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-bs-toggle="burger">
           <i class="ri-menu-line" id="open" role="button" tabindex="0" aria-label="Ouverture du menu de navigation principale pour mobile"></i>
           <i class="ri-close-line" id="close" role="button" tabindex="0" aria-label="Fermeture du menu de navigation principale pour mobile"></i>
         </div>
@@ -63,7 +63,7 @@
                 </button>
               </li>
               <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
                   Se connecter | S'inscrire
                 </button>
                 <div class="dropdown-menu" id="loginUserDropdownMobile">
@@ -95,7 +95,7 @@
                 <a href="">Rechercher des prescripteurs habilités</a>
               </li>
               <li>
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdownMobile" aria-expanded="false">Documentation</a>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdownMobile" aria-expanded="false">Documentation</a>
                 <div class="dropdown-menu" id="documentationDropdownMobile">
                   <ul class="list-unstyled">
                     <li>
@@ -135,7 +135,7 @@
                 <a href="">Rechercher des prescripteurs habilités</a>
               </li>
               <li>
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdown" aria-expanded="false">Documentation</a>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdown" aria-expanded="false">Documentation</a>
                 <div class="dropdown-menu" id="documentationDropdown">
                   <ul class="list-unstyled">
                     <li>

@@ -34,7 +34,6 @@
     }
 
     &--logo-ministere {
-
       img {
         height: auto;
         max-width: 80px;
@@ -48,7 +47,6 @@
     }
 
     &--logo-service {
-
       img {
         height: auto;
         max-width: 150px;
@@ -60,9 +58,7 @@
     }
 
     &--nav {
-
       nav {
-
         > ul {
           @extend .list-inline;
           @extend .list-unstyled;
@@ -77,12 +73,12 @@
 
             &:last-child > a,
             &:last-child > button {
-              @extend .mr-0;
+              @extend .me-0;
             }
 
             > a,
             > button {
-              @extend .mr-3;
+              @extend .me-3;
             }
           }
         }
@@ -90,7 +86,6 @@
     }
 
     &--burger {
-
       > i {
         color: $button;
         font-size: 32px;
@@ -107,10 +102,9 @@
     }
 
     &--title {
-
       span {
         @extend .mb-0;
-        @extend .mr-3;
+        @extend .me-3;
         font-size: $h4-font-size;
       }
     }
@@ -124,7 +118,7 @@
     right: 0;
     @extend .p-3;
     background-color: $white;
-    box-shadow: 12px 12px 19px -10px rgba($primary, 0.1);
+    box-shadow: -10px 12px 19px -10px rgba($primary, 0.1);
     width: 85vw;
     top: $header-height-mobile;
     height: calc(100vh - #{$header-height-mobile});
@@ -139,7 +133,6 @@
     }
 
     > nav {
-
       ul {
         @extend .list-unstyled;
         @extend .m-0;
@@ -152,7 +145,7 @@
 
           &:last-child > a,
           &:last-child > button {
-            @extend .mr-0;
+            @extend .me-0;
           }
 
           > a,
@@ -179,7 +172,5 @@
         }
       }
     }
-
-
   }
 }

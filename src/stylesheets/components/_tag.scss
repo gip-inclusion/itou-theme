@@ -11,35 +11,26 @@
   height: 20px;
   white-space: nowrap;
   text-transform: uppercase;
-
-  @at-root a#{&} {
-    @include hover-focus() {
-      text-decoration: none;
-    }
-  }
+  text-decoration: none;
 
   > i {
+    @extend .ri-xs;
     margin-right: map-get($spacers, 1);
     margin-left: -2px;
     font-weight: $font-weight-bold;
   }
 
   + .tag {
-    @extend .ml-2;
+    @extend .ms-2;
   }
 
   // Empty tags collapse automatically
   &:empty {
     display: none;
   }
-}
 
-// Colors
-//
-// Contextual variations (linked badges get darker on :hover).
-
-@each $color, $value in $theme-colors {
-  .tag-#{$color} {
-    @include badge-variant($value);
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }

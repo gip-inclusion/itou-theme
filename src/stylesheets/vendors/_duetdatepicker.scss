@@ -1,14 +1,14 @@
 :root {
-  --duet-color-primary: var(--blue);
-  --duet-color-text: var(--gray-800);
-  --duet-color-text-active: var(--white);
-  --duet-color-placeholder: var(--gray-600);
-  --duet-color-button: var(--gray-100);
-  --duet-color-surface: var(--white);
-  --duet-color-overlay: var(--primary);
-  --duet-color-border: var(--gray-800);
+  --duet-color-primary: var(--bs-blue);
+  --duet-color-text: var(--bs-gray-800);
+  --duet-color-text-active: var(--bs-white);
+  --duet-color-placeholder: var(--bs-gray-600);
+  --duet-color-button: var(--bs-gray-100);
+  --duet-color-surface: var(--bs-white);
+  --duet-color-overlay: var(--bs-primary);
+  --duet-color-border: var(--bs-gray-800);
 
-  --duet-font: var(--font-family-sans-serif);
+  --duet-font: $font-family-base;
   --duet-font-normal: 400;
   --duet-font-bold: 700;
 
@@ -22,10 +22,14 @@
   @extend .form-control;
 }
 
+.duet-date__select select {
+  font-size: $font-size-sm !important;
+}
+
 .duet-date__toggle {
   @extend .btn-link;
-  color: var(--tertiary) !important;
-  background-color: var(--white);
+  color: var(--bs-tertiary) !important;
+  background-color: var(--bs-white);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: none;
@@ -33,8 +37,8 @@
   border: none;
 
   &:hover {
-    color: var(--tertiary) !important;
-    background-color: var(--white) !important;
+    color: var(--bs-tertiary) !important;
+    background-color: var(--bs-white) !important;
     border: none !important;
   }
 }
@@ -50,5 +54,5 @@ See also `duet_date_picker.html`.
 https://getbootstrap.com/docs/4.6/components/forms/#server-side
 */
 duet-date-picker.is-invalid ~ .invalid-feedback {
-  display:block;
+  display: block;
 }

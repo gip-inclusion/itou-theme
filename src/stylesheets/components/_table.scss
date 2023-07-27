@@ -1,29 +1,36 @@
 .table {
-  thead th {
-    font-size: $font-size-sm;
-    text-transform: uppercase;
+  thead {
+    &.thead-light {
+      background-color: $table-active-bg;
+      color: $body-color;
+    }
 
-    .is-sortable {
-      display: inline-flex;
-      align-items: center;
+    th {
+      font-size: $font-size-sm;
+      text-transform: uppercase;
 
-      &::after {
-        @extend .ml-1;
-        font-size: $font-size-base;
-        font-family: remixicon !important;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        line-height: 1;
-        vertical-align: middle;
-        content: '\ea74';
-        color: $button;
-        transition: $transition-base;
-      }
+      .is-sortable {
+        display: inline-flex;
+        align-items: center;
 
-      &:hover::after ,
-      &:focus::after  {
-        color: $button-light;
+        &::after {
+          @extend .ms-1;
+          font-size: $font-size-base;
+          font-family: remixicon !important;
+          font-style: normal;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          line-height: 1;
+          vertical-align: middle;
+          content: '\ea74';
+          color: $button;
+          transition: $transition-base;
+        }
+
+        &:hover::after,
+        &:focus::after {
+          color: $button-light;
+        }
       }
     }
   }
@@ -34,7 +41,7 @@
       align-items: center;
 
       &::after {
-        @extend .ml-1;
+        @extend .ms-1;
         font-size: $font-size-base;
         font-family: remixicon !important;
         font-style: normal;
@@ -47,18 +54,18 @@
         content: '\ea74';
       }
 
-      &:hover::after ,
-      &:focus::after  {
+      &:hover::after,
+      &:focus::after {
         color: $button-light;
       }
     }
 
-    thead th[aria-sort="ascending"] span::after {
+    thead th[aria-sort='ascending'] span::after {
       color: $button-light;
       content: '\ea76';
     }
 
-    thead th[aria-sort="descending"] span::after {
+    thead th[aria-sort='descending'] span::after {
       color: $button-light;
       content: '\ea4c';
     }

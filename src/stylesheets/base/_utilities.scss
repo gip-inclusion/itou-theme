@@ -4,22 +4,12 @@
   }
 }
 
-
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-      @each $prop, $abbrev in (width: w, height: h, min-width: mw, min-height: mh) {
-        @each $size, $length in $sizes {
-          .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
-        }
-      }
-  }
-}
-
-
 .font-weight-medium {
   font-weight: $font-weight-medium;
+}
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
 }
 
 .text-decoration-underline {
@@ -55,17 +45,17 @@
   font-family: $font-family-base;
 }
 
-.ff-heading {
-  font-family: $font-family-heading;
-}
-
 .ff-extra-01 {
   font-family: $font-family-extra-01;
 }
 
-.shadow-xl { box-shadow: $box-shadow-xl !important; }
+.shadow-xl {
+  box-shadow: $box-shadow-xl !important;
+}
 
-.rounded-xl { border-radius: $border-radius-xl !important; }
+.rounded-xl {
+  border-radius: $border-radius-xl !important;
+}
 
 .lh-base {
   line-height: $line-height-base !important;
@@ -106,7 +96,7 @@
   text-decoration: none;
 
   &::after {
-    @extend .ml-1;
+    @extend .ms-1;
     content: '\ea4e';
     font-family: remixicon !important;
     font-style: normal;
@@ -118,14 +108,14 @@
     font-weight: $font-weight-bold;
   }
 
-  &[aria-expanded=true]::after {
+  &[aria-expanded='true']::after {
     content: '\ea78';
   }
 }
 
 .text-disabled,
 .disabled {
-  color: $disable-color !important;
+  color: $disabled-color !important;
   pointer-events: none;
 }
 
