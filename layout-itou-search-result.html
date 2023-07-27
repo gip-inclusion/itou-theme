@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
   <head>
     <title>Itou Theme</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
@@ -25,7 +26,7 @@
   </head>
 
   <body id="top">
-    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="sr-only">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="visually-hidden">
       <ul>
         <li><a href="#nav-primary">Aller au menu principal</a></li>
         <li><a href="#main">Aller au contenu principal</a></li>
@@ -36,11 +37,11 @@
   <section class="s-header">
     <div class="s-header__container container">
       <div class="s-header__row row">
-        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pr-0">
+        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
           <a href="#top" class="s-header__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
         </div>
         <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg " alt="Les emploi de l inclusion"></a>
+          <a href=""><img src="images/logo-emploi-inclusion.svg " alt="Les emploi de l inclusion" height="90"></a>
         </div>
         <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
           <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
@@ -56,7 +57,7 @@
                 </button>
               </li>
               <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
                   Se connecter | S'inscrire
                 </button>
                 <div class="dropdown-menu" id="loginUserDropdown">
@@ -79,7 +80,7 @@
             </ul>
           </nav>
         </div>
-        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-bs-toggle="burger">
           <i class="ri-menu-line" id="open" role="button" tabindex="0" aria-label="Ouverture du menu de navigation principale pour mobile"></i>
           <i class="ri-close-line" id="close" role="button" tabindex="0" aria-label="Fermeture du menu de navigation principale pour mobile"></i>
         </div>
@@ -97,7 +98,7 @@
                 </button>
               </li>
               <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
                   Se connecter | S'inscrire
                 </button>
                 <div class="dropdown-menu" id="loginUserDropdownMobile">
@@ -129,7 +130,7 @@
                 <a href="">Rechercher des prescripteurs habilités</a>
               </li>
               <li>
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdownMobile" aria-expanded="false">Documentation</a>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdownMobile" aria-expanded="false">Documentation</a>
                 <div class="dropdown-menu" id="documentationDropdownMobile">
                   <ul class="list-unstyled">
                     <li>
@@ -169,7 +170,7 @@
                 <a href="">Rechercher des prescripteurs habilités</a>
               </li>
               <li>
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdown" aria-expanded="false">Documentation</a>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdown" aria-expanded="false">Documentation</a>
                 <div class="dropdown-menu" id="documentationDropdown">
                   <ul class="list-unstyled">
                     <li>
@@ -196,120 +197,140 @@
 </header>
 
 
-    <main class="s-main bg-gray-400" role="main">
-      <section>
-        <div class="container">
+      <main class="s-main bg-light" role="main">
+        <section>
+          <div class="container">
             <div class="row">
-                <div class="col-12">
-                  <nav class="c-breadcrumb" aria-label="Fil d'ariane">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                      <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Résultats de recherche C1, filtres et cartes</li>
-                    </ol>
-                  </nav>
-                </div>
+              <div class="col-12">
+                <nav class="c-breadcrumb" aria-label="Fil d'ariane">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="#">Layout</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Résultats de recherche C1, filtres et cartes</li>
+                  </ol>
+                </nav>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <section class="s-title-01">
-      <div class="s-title-01__container container">
-        <div class="s-title-01__row row">
-          <div class="s-title-01__col col-12">
-            <h1 class="s-title-01__title h1"><strong>Résultats de recherche C1, filtres et cartes</strong></h1>
-            <h2 class="h2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas at eaque ipsa harum, nam quibusdam neque? Fugit necessitatibusi.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="s-box">
-      <div class="s-box__container container">
-        <div class="s-box__row row">
-          <div class="s-box__col col-12 col-md-4">
-            <aside class="c-aside-filters">
-  <button class="c-aside-filters__btn__collapse" data-toggle="collapse" data-target="#search-filter-form" aria-expanded="false" aria-controls="search-filter-form">
-    <i class="ri-filter-line"></i>
+        <section class="s-title-01">
+          <div class="s-title-01__container container">
+            <div class="s-title-01__row row">
+              <div class="s-title-01__col col-12">
+                <h1 class="s-title-01__title h1"><strong>Résultats de recherche C1, filtres et cartes</strong></h1>
+                <h2 class="h2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas at eaque ipsa harum, nam quibusdam neque? Fugit necessitatibusi.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="s-box">
+          <div class="s-box__container container">
+            <div class="s-box__row row">
+              <div class="s-box__col col-12 col-md-4">
+                <aside class="c-aside-filters">
+  <button class="c-aside-filters__btn__collapse" data-bs-toggle="collapse" data-bs-target="#asideFiltersCollapse" aria-expanded="true" aria-controls="asideFiltersCollapse">
+    <i class="ri-filter-line" aria-hidden="true"></i>
     <span>Filtres des résultats</span>
   </button>
-  <div class="c-aside-filters__card" id="search-filter-form">
+  <div class="c-aside-filters__card collapse show" id="asideFiltersCollapse">
     <div class="c-aside-filters__card__body">
       <fieldset>
         <legend>Distance</legend>
         <ul>
           
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item5">
-                <label class="custom-control-label" for="customRadio1Item5">5 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item5">
+                <label class="form-check-label" for="customRadio1Item5">
+                  5 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item10">
-                <label class="custom-control-label" for="customRadio1Item10">10 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item10">
+                <label class="form-check-label" for="customRadio1Item10">
+                  10 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item15">
-                <label class="custom-control-label" for="customRadio1Item15">15 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item15">
+                <label class="form-check-label" for="customRadio1Item15">
+                  15 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item20">
-                <label class="custom-control-label" for="customRadio1Item20">20 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item20">
+                <label class="form-check-label" for="customRadio1Item20">
+                  20 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item25">
-                <label class="custom-control-label" for="customRadio1Item25">25 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item25">
+                <label class="form-check-label" for="customRadio1Item25">
+                  25 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item30">
-                <label class="custom-control-label" for="customRadio1Item30">30 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item30">
+                <label class="form-check-label" for="customRadio1Item30">
+                  30 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item35">
-                <label class="custom-control-label" for="customRadio1Item35">35 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item35">
+                <label class="form-check-label" for="customRadio1Item35">
+                  35 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item40">
-                <label class="custom-control-label" for="customRadio1Item40">40 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item40">
+                <label class="form-check-label" for="customRadio1Item40">
+                  40 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item45">
-                <label class="custom-control-label" for="customRadio1Item45">45 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item45">
+                <label class="form-check-label" for="customRadio1Item45">
+                  45 km
+                </label>
               </div>
             </li>
-          
+            
             <li>
-              <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1Item50">
-                <label class="custom-control-label" for="customRadio1Item50">50 km</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item50">
+                <label class="form-check-label" for="customRadio1Item50">
+                  50 km
+                </label>
               </div>
             </li>
-          
+            
         </ul>
       </fieldset>
       <hr>
@@ -317,15 +338,15 @@
         <legend>Département</legend>
         <ul>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1Item1">
-              <label class="custom-control-label" for="customCheck1Item1">59 - Nord</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck1" id="customCheck1Item1">
+              <label class="form-check-label" for="customCheck1Item1">59 - Nord</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1Item2">
-              <label class="custom-control-label" for="customCheck1Item2">62 - Pas-de-Calais</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck1" id="customCheck1Item2">
+              <label class="form-check-label" for="customCheck1Item2">62 - Pas-de-Calais</label>
             </div>
           </li>
         </ul>
@@ -335,63 +356,63 @@
         <legend>Types de structure</legend>
         <ul>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item1">
-              <label class="custom-control-label" for="customCheck2Item1">EI - Entreprise d'insertion</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item1">
+              <label class="form-check-label" for="customCheck2Item1">EI - Entreprise d'insertion</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item2">
-              <label class="custom-control-label" for="customCheck2Item2">AI - Association intermédiaire</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item2">
+              <label class="form-check-label" for="customCheck2Item2">AI - Association intermédiaire</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item3">
-              <label class="custom-control-label" for="customCheck2Item3">ACI - Atelier chantier d'insertion</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item3">
+              <label class="form-check-label" for="customCheck2Item3">ACI - Atelier chantier d'insertion</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item4">
-              <label class="custom-control-label" for="customCheck2Item4">ACIPHC - Atelier chantier d'insertion premières heures en chantier</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item4">
+              <label class="form-check-label" for="customCheck2Item4">ACIPHC - Atelier chantier d'insertion premières heures en chantier</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item5">
-              <label class="custom-control-label" for="customCheck2Item5">ETTI - Entreprise de travail temporaire d'insertion</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item5">
+              <label class="form-check-label" for="customCheck2Item5">ETTI - Entreprise de travail temporaire d'insertion</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item6">
-              <label class="custom-control-label" for="customCheck2Item6">EITI - Entreprise d'insertion par le travail indépendant</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item6">
+              <label class="form-check-label" for="customCheck2Item6">EITI - Entreprise d'insertion par le travail indépendant</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item7">
-              <label class="custom-control-label" for="customCheck2Item7">GEIQ - Groupement d'employeurs pour l'insertion et la qualification</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item7">
+              <label class="form-check-label" for="customCheck2Item7">GEIQ - Groupement d'employeurs pour l'insertion et la qualification</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item8">
-              <label class="custom-control-label" for="customCheck2Item8">EA - Entreprise adaptée</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item8">
+              <label class="form-check-label" for="customCheck2Item8">EA - Entreprise adaptée</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item9">
-              <label class="custom-control-label" for="customCheck2Item9">EATT - Entreprise adaptée de travail temporaire</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item9">
+              <label class="form-check-label" for="customCheck2Item9">EATT - Entreprise adaptée de travail temporaire</label>
             </div>
           </li>
           <li>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="customCheck2" id="customCheck2Item10">
-              <label class="custom-control-label" for="customCheck2Item10">OPCS - Organisation porteuse de la clause sociale</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item10">
+              <label class="form-check-label" for="customCheck2Item10">OPCS - Organisation porteuse de la clause sociale</label>
             </div>
           </li>
         </ul>
@@ -400,266 +421,266 @@
   </div>
 </aside>
 
-          </div>
-          <div class="s-box__col col-12 col-md-8">
-            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-between mb-3 mb-md-4">
-              <h3 class="h4 mb-0">
-                  2 métiers exercés
-              </h3>
-              <div class="flex-column flex-md-row btn-group btn-group-sm btn-group-action" role="group" aria-label="Actions sur les xxxx">
-                  <a class="btn btn-primary btn-ico justify-content-center mt-3 mt-md-0" href="">
-                    <i class="ri-add-line ri-lg" aria-hidden="true"></i>
-                    <span>Un bouton d'action</span>
-                  </a>
               </div>
-            </div>
-            <div class="card c-card has-links-inside mb-3 mb-md-4">
-              <div class="card-header bg-emploi-lightest pb-3">
-                <p class="d-flex flex-wrap fs-sm mb-2">
-                  <span class="flex-grow-1 text-primary">
-                    <b>GEIQ</b> - Groupement d'employeurs pour l'insertion et la qualification
-                  </span>
-                </p>
-                <hr>
-                <h3 class="h3 mb-2">
-                  <a href="">GEIQ BTP HDF</a>
-                    <small class="text-muted">(Geiq Btp Hauts-De-France)</small>
-                </h3>
-                <p class="font-weight-bold mb-2 text-muted">11 t Boulevard Robert Schuman, Entrée B, 62000 Arras</p>
-                <p class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mb-0">
-                  <span class="align-self-start">
-                    <span class="badge badge-sm badge-pill badge-primary">à 0,9 km</span>
-                    <span class="text-muted fs-sm ml-1">de votre lieu de recherche.</span>
-                  </span>
-                  <a class="d-none d-md-inline font-weight-bold matomo-event mt-3 mt-md-0" href="">
-                    Voir tous les métiers (1)
-                  </a>
-                </p>
-              </div>
-              <div class="card-body">
-                <p class="h5 mx-2">3 recrutements en cours</p>
-                <ul class="list-group list-group-sm list-group-flush">
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Retoucheur / Retoucheuse en habillement</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Annequin (62)
-                      </span>
+              <div class="s-box__col col-12 col-md-8">
+                <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-between mb-3 mb-md-4">
+                  <h3 class="h4 mb-0">
+                    2 métiers exercés
+                  </h3>
+                  <div class="flex-column flex-md-row btn-group btn-group-sm btn-group-action" role="group" aria-label="Actions sur les xxxx">
+                    <a class="btn btn-primary btn-ico justify-content-center mt-3 mt-md-0" href="">
+                      <i class="ri-add-line ri-lg" aria-hidden="true"></i>
+                      <span>Un bouton d'action</span>
                     </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Agent / Agente de propreté de locaux</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Bapaume (62)
-                      </span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Coupeur / Coupeuse dessus</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Arras (62)
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card c-card has-links-inside mb-3 mb-md-4">
-              <div class="card-body">
-                <div class="fs-sm d-flex align-items-center">
-                  <span class="text-secondary flex-grow-1">
-                    Émise le 14 mai 2022 par <strong>Philippe Blanchard</strong>
-                    <i class="ri-group-line ml-2"></i> Orienteur
-                  </span>
-                  <span class="badge badge-sm badge-pill badge-danger text-white">Déclinée</span>
-                  <span class="badge badge-sm badge-pill badge-success text-white">Acceptée</span>
-                  <span class="badge badge-sm badge-pill badge-nuance-01 text-white">Embauché ailleurs</span>
-                </div>
-                <hr>
-                <p class="mx-2">
-                  <a class="d-flex flex-wrap align-items-center text-decoration-none has-collapse-caret" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <i class="ri-briefcase-line ri-xl mr-1"></i>
-                    <span class="font-weight-bold mr-1 mr-md-2">Retoucheur / Retoucheuse en habillement</span>
-                    <span class="fs-sm text-nowrap">
-                      <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                      Annequin (62)
-                    </span>
-                    <span class="ml-auto fs-sm text-decoration-underline">+ 2 autres postes</span>
-                  </a>
-                </p>
-                <ul class="list-group list-group-sm list-group-flush collapse" id="collapseExample">
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Retoucheur / Retoucheuse en habillement</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Annequin (62)
-                      </span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Agent / Agente de propreté de locaux</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Bapaume (62)
-                      </span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Coupeur / Coupeuse dessus</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Arras (62)
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-footer text-right bg-light">
-                <a href="#" class="btn btn-sm btn-outline-primary">Voir sa candidature</a>
-              </div>
-            </div>
-            <div class="card c-card has-links-inside mb-3 mb-md-4">
-              <div class="card-body">
-                <div class="fs-sm d-flex align-items-center">
-                  <span class="text-secondary flex-grow-1">
-                    Émise le 14 mai 2022 par <strong>Pôle-emploi - Belfort</strong>
-                    <i class="ri-group-line ml-2"></i> Orienteur
-                  </span>
-                  <span class="badge badge-sm badge-pill badge-important text-white">Nouvelle candidature</span>
-                </div>
-                <hr>
-                <p class="mx-2">
-                  <a class="d-flex flex-wrap align-items-center text-decoration-none has-collapse-caret" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <i class="ri-briefcase-line ri-xl mr-1"></i>
-                    <span class="font-weight-bold mr-1 mr-md-2">Retoucheur / Retoucheuse en habillement</span>
-                    <span class="fs-sm text-nowrap">
-                      <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                      Annequin (62)
-                    </span>
-                    <span class="ml-auto fs-sm text-decoration-underline">+ 2 autres postes</span>
-                  </a>
-                </p>
-                <ul class="list-group list-group-sm list-group-flush collapse" id="collapseExample">
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Retoucheur / Retoucheuse en habillement</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Annequin (62)
-                      </span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Agent / Agente de propreté de locaux</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Bapaume (62)
-                      </span>
-                    </a>
-                  </li>
-                  <li class="list-group-item list-group-item-action">
-                    <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
-                      <span class="font-weight-bold mr-1 mr-md-2">Coupeur / Coupeuse dessus</span>
-                      <span class="ml-auto fs-sm text-nowrap">
-                        <i class="ri-map-pin-2-line ri-sm mr-1"></i>
-                        Arras (62)
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-                <hr>
-                <div class="row">
-                  <div class="col-12 col-lg-5 mb-3 mb-lg-0">
-                    <h3 class="h3 mb-1">Lucie <br>RANDRIANAMPOINI</h3>
-                    <span class="d-block mb-2 text-nowrap">
-                      <i class="ri-map-pin-2-line mr-1"></i>
-                      Annequin (62)
-                    </span>
-                    <span class="badge badge-xs badge-pill badge-success-light text-primary">
-                      <i class="ri-check-line"></i>
-                      Éligible à l’IAE
-                    </span>
                   </div>
-                  <div class="col-12 col-lg-7">
-                    <p class="fs-sm font-weight-bold mb-1">Critères administratifs</p>
-                    <ul class="fs-xs mb-0">
-                      <li>Bénéficiaire du RSA</li>
-                      <li>DETLD (+ 24 mois)</li>
-                      <li>Personne sans hébergement / hébergée / ayant un parcours de rue</li>
-                      <li>Sortant de détention ou personne placée sous main de justice</li>
-                      <li>Réfugié statutaire, protégé subsidiaire ou demandeurs d’asile</li>
+                </div>
+                <div class="card c-card has-links-inside mb-3 mb-md-4">
+                  <div class="card-header bg-emploi-lightest pb-3">
+                    <p class="d-flex flex-wrap fs-sm mb-2">
+                      <span class="flex-grow-1 text-primary">
+                        <b>GEIQ</b> - Groupement d'employeurs pour l'insertion et la qualification
+                      </span>
+                    </p>
+                    <hr>
+                    <h3 class="h3 mb-2">
+                      <a href="">GEIQ BTP HDF</a>
+                      <small class="text-muted">(Geiq Btp Hauts-De-France)</small>
+                    </h3>
+                    <p class="font-weight-bold mb-2 text-muted">11 t Boulevard Robert Schuman, Entrée B, 62000 Arras</p>
+                    <p class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mb-0">
+                      <span class="align-self-start">
+                        <span class="badge badge-sm rounded-pill bg-primary">à 0,9 km</span>
+                        <span class="text-muted fs-sm ms-1">de votre lieu de recherche.</span>
+                      </span>
+                      <a class="d-none d-md-inline font-weight-bold matomo-event mt-3 mt-md-0" href="">
+                        Voir tous les métiers (1)
+                      </a>
+                    </p>
+                  </div>
+                  <div class="card-body">
+                    <p class="h5 mx-2">3 recrutements en cours</p>
+                    <ul class="list-group list-group-sm list-group-flush">
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Retoucheur / Retoucheuse en habillement</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Annequin (62)
+                          </span>
+                        </a>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Agent / Agente de propreté de locaux</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Bapaume (62)
+                          </span>
+                        </a>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Coupeur / Coupeuse dessus</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Arras (62)
+                          </span>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div class="card-footer text-right bg-light">
-                <a href="#" class="btn btn-sm btn-ico btn-link pl-0 float-left">
-                  <span>Afficher le PASS IAE</span>
-                  <i class="ri-external-link-line ri-xl"></i>
-                </a>
-                <div class="btn-group btn-group-action btn-group-sm" role="group" aria-label="Basic example">
-                  <button class="btn btn-primary btn-ico-only">
-                    <i class="ri-arrow-right-up-line"></i>
-                  </button>
-                  <button class="btn btn-outline-primary btn-ico-only">
-                    <i class="ri-arrow-right-up-line"></i>
-                  </button>
-                  <button class="btn btn-secondary btn-ico-only">
-                    <i class="ri-arrow-right-up-line"></i>
-                  </button>
-                  <button class="btn btn-danger btn-ico-only">
-                    <i class="ri-arrow-right-up-line"></i>
-                  </button>
+                <div class="card c-card has-links-inside mb-3 mb-md-4">
+                  <div class="card-body">
+                    <div class="fs-sm d-flex align-items-center">
+                      <span class="text-secondary flex-grow-1">
+                        Émise le 14 mai 2022 par <strong>Philippe Blanchard</strong>
+                        <i class="ri-group-line ms-2"></i> Orienteur
+                      </span>
+                      <span class="badge badge-sm rounded-pill bg-danger text-white">Déclinée</span>
+                      <span class="badge badge-sm rounded-pill bg-success text-white">Acceptée</span>
+                      <span class="badge badge-sm rounded-pill bg-nuance-01 text-white">Embauché ailleurs</span>
+                    </div>
+                    <hr>
+                    <p class="mx-2">
+                      <a class="d-flex flex-wrap align-items-center text-decoration-none has-collapse-caret" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="ri-briefcase-line ri-xl me-1"></i>
+                        <span class="font-weight-bold me-1 me-md-2">Retoucheur / Retoucheuse en habillement</span>
+                        <span class="fs-sm text-nowrap">
+                          <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                          Annequin (62)
+                        </span>
+                        <span class="ms-auto fs-sm text-decoration-underline">+ 2 autres postes</span>
+                      </a>
+                    </p>
+                    <ul class="list-group list-group-sm list-group-flush collapse" id="collapseExample">
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Retoucheur / Retoucheuse en habillement</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Annequin (62)
+                          </span>
+                        </a>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Agent / Agente de propreté de locaux</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Bapaume (62)
+                          </span>
+                        </a>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Coupeur / Coupeuse dessus</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Arras (62)
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer text-end bg-light">
+                    <a href="#" class="btn btn-sm btn-outline-primary">Voir sa candidature</a>
+                  </div>
                 </div>
-                <a href="#" class="btn btn-sm btn-outline-primary">Voir sa candidature</a>
-              </div>
-            </div>
-            <div class="card c-card has-links-inside mb-3 mb-md-4">
-              <div class="card-header pb-3 bg-light">
-                <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
-                  <div>
-                    <a class="btn btn-sm btn-ico btn-link text-left p-0 mh-auto">
-                      <span>EATT - Agence Handirect</span>
+                <div class="card c-card has-links-inside mb-3 mb-md-4">
+                  <div class="card-body">
+                    <div class="fs-sm d-flex align-items-center">
+                      <span class="text-secondary flex-grow-1">
+                        Émise le 14 mai 2022 par <strong>Pôle-emploi - Belfort</strong>
+                        <i class="ri-group-line ms-2"></i> Orienteur
+                      </span>
+                      <span class="badge badge-sm rounded-pill bg-important text-white">Nouvelle candidature</span>
+                    </div>
+                    <hr>
+                    <p class="mx-2">
+                      <a class="d-flex flex-wrap align-items-center text-decoration-none has-collapse-caret" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="ri-briefcase-line ri-xl me-1"></i>
+                        <span class="font-weight-bold me-1 me-md-2">Retoucheur / Retoucheuse en habillement</span>
+                        <span class="fs-sm text-nowrap">
+                          <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                          Annequin (62)
+                        </span>
+                        <span class="ms-auto fs-sm text-decoration-underline">+ 2 autres postes</span>
+                      </a>
+                    </p>
+                    <ul class="list-group list-group-sm list-group-flush collapse" id="collapseExample">
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Retoucheur / Retoucheuse en habillement</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Annequin (62)
+                          </span>
+                        </a>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Agent / Agente de propreté de locaux</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Bapaume (62)
+                          </span>
+                        </a>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <a class="d-flex flex-wrap align-items-center text-decoration-none" href="">
+                          <span class="font-weight-bold me-1 me-md-2">Coupeur / Coupeuse dessus</span>
+                          <span class="ms-auto fs-sm text-nowrap">
+                            <i class="ri-map-pin-2-line ri-sm me-1"></i>
+                            Arras (62)
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <hr>
+                    <div class="row">
+                      <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                        <h3 class="h3 mb-1">Lucie <br>RANDRIANAMPOINI</h3>
+                        <span class="d-block mb-2 text-nowrap">
+                          <i class="ri-map-pin-2-line me-1"></i>
+                          Annequin (62)
+                        </span>
+                        <span class="badge badge-xs rounded-pill bg-success-light text-primary">
+                          <i class="ri-check-line"></i>
+                          Éligible à l’IAE
+                        </span>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <p class="fs-sm font-weight-bold mb-1">Critères administratifs</p>
+                        <ul class="fs-xs mb-0">
+                          <li>Bénéficiaire du RSA</li>
+                          <li>DETLD (+ 24 mois)</li>
+                          <li>Personne sans hébergement / hébergée / ayant un parcours de rue</li>
+                          <li>Sortant de détention ou personne placée sous main de justice</li>
+                          <li>Réfugié statutaire, protégé subsidiaire ou demandeurs d’asile</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-end bg-light">
+                    <a href="#" class="btn btn-sm btn-ico btn-link ps-0 float-start">
+                      <span>Afficher le PASS IAE</span>
                       <i class="ri-external-link-line ri-xl"></i>
                     </a>
+                    <div class="btn-group btn-group-action btn-group-sm" role="group" aria-label="Basic example">
+                      <button class="btn btn-primary btn-ico-only">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </button>
+                      <button class="btn btn-outline-primary btn-ico-only">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </button>
+                      <button class="btn btn-secondary btn-ico-only">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </button>
+                      <button class="btn btn-danger btn-ico-only">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </button>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Voir sa candidature</a>
                   </div>
-                  <div>
-                    <span class="badge badge-pill badge-sm badge-accent-01-lightest text-accent-01">Réservé aux bénéficiaires de la RQTH</span>
+                </div>
+                <div class="card c-card has-links-inside mb-3 mb-md-4">
+                  <div class="card-header pb-3 bg-light">
+                    <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                      <div>
+                        <a class="btn btn-sm btn-ico btn-link text-start p-0 mh-auto">
+                          <span>EATT - Agence Handirect</span>
+                          <i class="ri-external-link-line ri-xl"></i>
+                        </a>
+                      </div>
+                      <div>
+                        <span class="badge rounded-pill badge-sm bg-accent-01-lightest text-accent-01">Réservé aux bénéficiaires de la RQTH</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="mb-2">
-                  <span class="badge badge-sm badge-pill badge-accent-03 text-primary"><i class="ri-group-line"></i>20+ candidatures</span>
-                </div>
-                <div class="mb-3">
-                  <a href="" class="d-block h3 mb-2">Préparateur / préparatrice de commande en matériel informatique</a>
-                  <span class="badge badge-xs badge-pill badge-emploi-light text-primary">Accompagnement à la création d'entreprise</span>
-                  <span class="badge badge-xs badge-pill badge-emploi-light text-primary">35H/semaine</span>
-                </div>
-                <div class="fs-sm d-flex flex-column flex-md-row align-items-md-center">
-                  <span class="mr-3"><i class="ri-map-pin-2-line mr-1"></i>Seyssinet (38)</span>
-                  <span class="mr-3"><i class="ri-navigation-line mr-1"></i>à <b>2,7 km</b> de votre lieu de recherche</span>
+                  <div class="card-body">
+                    <div class="mb-2">
+                      <span class="badge badge-sm rounded-pill bg-accent-03 text-primary"><i class="ri-group-line"></i>20+ candidatures</span>
+                    </div>
+                    <div class="mb-3">
+                      <a href="" class="d-block h3 mb-2">Préparateur / préparatrice de commande en matériel informatique</a>
+                      <span class="badge badge-xs rounded-pill badge-emploi-light text-primary">Accompagnement à la création d'entreprise</span>
+                      <span class="badge badge-xs rounded-pill badge-emploi-light text-primary">35H/semaine</span>
+                    </div>
+                    <div class="fs-sm d-flex flex-column flex-md-row align-items-md-center">
+                      <span class="me-3"><i class="ri-map-pin-2-line me-1"></i>Seyssinet (38)</span>
+                      <span class="me-3"><i class="ri-navigation-line me-1"></i>à <b>2,7 km</b> de votre lieu de recherche</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    </main>
+      </main>
 
-    <footer role="contentinfo" id="footer">
+      <footer role="contentinfo" id="footer">
   <section class="s-footer-quick">
     <div class="s-footer-quick__container container">
       <div class="s-footer-quick__row row">
@@ -747,21 +768,9 @@
 </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="javascripts/app.js"></script>
-    <script>
-      // Show or Hide the search-filter-form sidebar based on responsive breakpoint
-      var breakpointMD = getComputedStyle(document.documentElement).getPropertyValue("--breakpoint-md");
-      $(window).on("load resize", function() {
-          if (window.matchMedia("(min-width: "+breakpointMD+")").matches) {
-              $("#search-filter-form").collapse("show");
-          } else {
-              $("#search-filter-form").collapse("hide");
-          }
-      });
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+        <script src="javascripts/app.js"></script>
   </body>
 
 </html>

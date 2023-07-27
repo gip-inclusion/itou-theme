@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
   <head>
     <title>Itou Theme</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
@@ -26,31 +26,133 @@
 
   <body id="top">
 
-    <header class="bg-primary py-3">
+    <header class="bg-primary py-3 sticky-top">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-12">
-        <a href="https://betagouv.github.io/itou-theme/" class="h2 text-white mb-0 text-decoration-none">Itou Theme</a>
+      <div class="col-12 col-lg-3">
+        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.2.0</label>
+      </div>
+      <div class="col-12 col-lg">
+        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
+          <option value="index.html">---</option>
+          <optgroup label="Layout">
+            <option value="layout.html#grid">Flex Grid</option>
+            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
+            <option value="layout.html#spacing">Utilities for spacing</option>
+          </optgroup>
+          <optgroup label="Content">
+            <option value="content.html#bg-colors">Background colors</option>
+            <option value="content.html#colors">Colors</option>
+            <option value="content.html#images">Images</option>
+            <option value="content.html#shadows">Shadows</option>
+            <option value="content.html#tables">Tables</option>
+            <option value="content.html#text-colors">Text colors</option>
+            <option value="content.html#text-utilities">Text utilities</option>
+            <option value="content.html#typography">Typography</option>
+          </optgroup>
+          <optgroup label="Components">
+            <option value="components.html#alerts">Alerts</option>
+            <option value="components.html#badges">Badges</option>
+            <option value="components.html#breadcrumb">Breadcrumb</option>
+            <option value="components.html#buttons">Buttons</option>
+            <option value="components.html#button-group">Button group</option>
+            <option value="components.html#cards">Cards</option>
+            <option value="components.html#collapse">Collapse</option>
+            <option value="components.html#dropdowns">Dropdowns</option>
+            <option value="components.html#progress">Progress</option>
+            <option value="components.html#pagination">Pagination</option>
+            <option value="components.html#popovers">Popovers</option>
+            <option value="components.html#tabs">Tabs</option>
+            <option value="components.html#tooltips">Tooltips</option>
+            <option value="components.html#modal">Modal</option>
+            <option value="components.html#toasts">Toasts</option>
+          </optgroup>
+          <optgroup label="Forms">
+            <option value="forms.html#forms">Forms</option>
+            <option value="forms.html#input-group">Input group</option>
+          </optgroup>
+          <optgroup label="Utilities BS">
+            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
+          </optgroup>
+          <optgroup label="Content Itou">
+            <option value="content-ic.html">Button Inclusion Connect</option>
+            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
+            <option value="content-itou.html#icones">Icones (remix icon 3.4.0)</option>
+            <option value="content-itou.html#logos">Logos</option>
+          </optgroup>
+          <optgroup label="Components Itou">
+            <option value="components-itou.html#cards">Cards</option>
+            <option value="components-itou.html#stepper">Stepper</option>
+            <option value="components-itou.html#listgroup">Listgroup</option>
+            <option value="components-itou.html#tags">Tags</option>
+            <option value="components-itou.html#box">Box</option>
+          </optgroup>
+          <optgroup label="Sections Itou">
+            <option value="sections-itou-01.html#header">Headers + Post Header</option>
+            <option value="sections-itou-01.html#footer">Footer</option>
+            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
+            <option value="sections-itou-02.html#article-picture-02">Article Picture 02</option>
+            <option value="sections-itou-02.html#article-picture-03">Article Picture 03</option>
+            <option value="sections-itou-03.html#article-picture-group-01">Article Picture Group 01</option>
+            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
+            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
+            <option value="sections-itou-05.html#cards-grid-01">Cards Grid 01</option>
+            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
+            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
+            <option value="sections-itou-06.html#title-01">Simple Title 01</option>
+            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
+          </optgroup>
+          <optgroup label="Pages Itou">
+            <option value="layout-itou-base.html">Base layout</option>
+            <option value="layout-itou-form.html">Formulaire full layout</option>
+            <option value="layout-itou-form-simple.html">Formulaire simple layout</option>
+            <option value="layout-itou-cms.html">CMS & Flatpage layout</option>
+            <option value="layout-itou-search-result.html">Résultats de recherche C1, filtres et cartes</option>
+          </optgroup>
+          <optgroup label="Prototypes Itou">
+            <option value="proto-itou-form-uploads-img.html">Formulaire uploads images</option>
+          </optgroup>
+          <optgroup label="External libraries">
+            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
+            <option value="external-libs-itou-bs.html" target="_blank">Bootstrap.js</option>
+            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
+            <option value="https://remixicon.com/">Remix Icon</option>
+            <option value="external-libs-itou-tac.html">Tarte au citron</option>
+            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
+            <option value="external-libs-itou-s2.html">Select 2</option>
+          </optgroup>
+        </select>
       </div>
     </div>
   </div>
 </header>
 
 
-    <main class="s-main" role="main">
+      <main class="s-main" role="main">
 
-      <br>
-      <br>
+        <br>
+        <br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12" id="article-picture-01">
-            <h3>Article + Picture 01 <code>.s-article-picture-01</code></h3>
-            <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code>, <code>--ltr</code></h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-12" id="article-picture-01">
+              <h3>Article + Picture 01 <code>.s-article-picture-01</code></h3>
+              <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code>, <code>--ltr</code></h4>
+            </div>
           </div>
         </div>
-      </div>
-      <section class="s-article-picture-01 ">
+        <section class="s-article-picture-01 ">
   <div class="s-article-picture-01__container container container-max-lg">
     <div class="s-article-picture-01__row row">
       <div class="s-article-picture-01__col s-article-picture-01__col--picture col-12 col-lg-6 d-flex align-items-center px-lg-4">
@@ -154,9 +256,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-01 s-article-picture-01--marche ">
+          <br>
+          <br>
+          <section class="s-article-picture-01 s-article-picture-01--marche ">
   <div class="s-article-picture-01__container container container-max-lg">
     <div class="s-article-picture-01__row row">
       <div class="s-article-picture-01__col s-article-picture-01__col--picture col-12 col-lg-6 d-flex align-items-center px-lg-4">
@@ -260,9 +362,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-01 s-article-picture-01--emploi ">
+            <br>
+            <br>
+            <section class="s-article-picture-01 s-article-picture-01--emploi ">
   <div class="s-article-picture-01__container container container-max-lg">
     <div class="s-article-picture-01__row row">
       <div class="s-article-picture-01__col s-article-picture-01__col--picture col-12 col-lg-6 d-flex align-items-center px-lg-4">
@@ -366,9 +468,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-01 s-article-picture-01--communaute ">
+              <br>
+              <br>
+              <section class="s-article-picture-01 s-article-picture-01--communaute ">
   <div class="s-article-picture-01__container container container-max-lg">
     <div class="s-article-picture-01__row row">
       <div class="s-article-picture-01__col s-article-picture-01__col--picture col-12 col-lg-6 d-flex align-items-center px-lg-4">
@@ -472,9 +574,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-01 s-article-picture-01--pilotage ">
+                <br>
+                <br>
+                <section class="s-article-picture-01 s-article-picture-01--pilotage ">
   <div class="s-article-picture-01__container container container-max-lg">
     <div class="s-article-picture-01__row row">
       <div class="s-article-picture-01__col s-article-picture-01__col--picture col-12 col-lg-6 d-flex align-items-center px-lg-4">
@@ -578,9 +680,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-01 s-article-picture-01--ltr ">
+                  <br>
+                  <br>
+                  <section class="s-article-picture-01 s-article-picture-01--ltr ">
   <div class="s-article-picture-01__container container container-max-lg">
     <div class="s-article-picture-01__row row">
       <div class="s-article-picture-01__col s-article-picture-01__col--picture col-12 col-lg-6 d-flex align-items-center px-lg-4">
@@ -686,26 +788,26 @@
 
 
 
-      <br>
-      <br>
-      <hr>
-      <br>
-      <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12" id="article-picture-02">
-            <h3>Article + Picture 02 <code>.s-article-picture-02</code></h3>
-            <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code>, <code>--ltr</code></h4>
-          </div>
-        </div>
-      </div>
-      <section class="s-article-picture-02 ">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12" id="article-picture-02">
+                          <h3>Article + Picture 02 <code>.s-article-picture-02</code></h3>
+                          <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code>, <code>--ltr</code></h4>
+                        </div>
+                      </div>
+                    </div>
+                    <section class="s-article-picture-02 ">
   <div class="s-article-picture-02__container container">
     <div class="s-article-picture-02__row row">
       <div class="s-article-picture-02__col s-article-picture-02__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg badge-pill badge-primary">S'informer</span></p>
+          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg rounded-pill bg-primary">S'informer</span></p>
           <h2 class="s-article-picture-02__col--article__title h1">Article + Picture 02</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
@@ -726,14 +828,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-02 s-article-picture-02--marche ">
+                      <br>
+                      <br>
+                      <section class="s-article-picture-02 s-article-picture-02--marche ">
   <div class="s-article-picture-02__container container">
     <div class="s-article-picture-02__row row">
       <div class="s-article-picture-02__col s-article-picture-02__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg badge-pill badge-primary">S'informer</span></p>
+          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg rounded-pill bg-primary">S'informer</span></p>
           <h2 class="s-article-picture-02__col--article__title h1">Article + Picture 02</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
@@ -754,14 +856,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-02 s-article-picture-02--emploi ">
+                        <br>
+                        <br>
+                        <section class="s-article-picture-02 s-article-picture-02--emploi ">
   <div class="s-article-picture-02__container container">
     <div class="s-article-picture-02__row row">
       <div class="s-article-picture-02__col s-article-picture-02__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg badge-pill badge-primary">S'informer</span></p>
+          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg rounded-pill bg-primary">S'informer</span></p>
           <h2 class="s-article-picture-02__col--article__title h1">Article + Picture 02</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
@@ -782,14 +884,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-02 s-article-picture-02--communaute ">
+                          <br>
+                          <br>
+                          <section class="s-article-picture-02 s-article-picture-02--communaute ">
   <div class="s-article-picture-02__container container">
     <div class="s-article-picture-02__row row">
       <div class="s-article-picture-02__col s-article-picture-02__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg badge-pill badge-primary">S'informer</span></p>
+          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg rounded-pill bg-primary">S'informer</span></p>
           <h2 class="s-article-picture-02__col--article__title h1">Article + Picture 02</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
@@ -810,14 +912,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-02 s-article-picture-02--pilotage ">
+                            <br>
+                            <br>
+                            <section class="s-article-picture-02 s-article-picture-02--pilotage ">
   <div class="s-article-picture-02__container container">
     <div class="s-article-picture-02__row row">
       <div class="s-article-picture-02__col s-article-picture-02__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg badge-pill badge-primary">S'informer</span></p>
+          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg rounded-pill bg-primary">S'informer</span></p>
           <h2 class="s-article-picture-02__col--article__title h1">Article + Picture 02</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
@@ -838,14 +940,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-02 s-article-picture-02--ltr ">
+                              <br>
+                              <br>
+                              <section class="s-article-picture-02 s-article-picture-02--ltr ">
   <div class="s-article-picture-02__container container">
     <div class="s-article-picture-02__row row">
       <div class="s-article-picture-02__col s-article-picture-02__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg badge-pill badge-primary">S'informer</span></p>
+          <p class="display-2 text-uppercase mb-2"><span class="badge badge-lg rounded-pill bg-primary">S'informer</span></p>
           <h2 class="s-article-picture-02__col--article__title h1">Article + Picture 02</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
@@ -867,26 +969,26 @@
 </section>
 
 
-      <br>
-      <br>
-      <hr>
-      <br>
-      <br>
+                                <br>
+                                <br>
+                                <hr>
+                                <br>
+                                <br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12" id="article-picture-03">
-            <h3>Article + Picture 03 <code>.s-article-picture-03</code></h3>
-            <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
-          </div>
-        </div>
-      </div>
-      <section class="s-article-picture-03 ">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12" id="article-picture-03">
+                                      <h3>Article + Picture 03 <code>.s-article-picture-03</code></h3>
+                                      <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
+                                    </div>
+                                  </div>
+                                </div>
+                                <section class="s-article-picture-03 ">
   <div class="s-article-picture-03__container container">
     <div class="s-article-picture-03__row row">
       <div class="s-article-picture-03__col s-article-picture-03__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <h2 class="s-article-picture-03__col--article__title h1" data-subtitle="zoom sur">Article + Picture 03</h2>
+          <h2 class="s-article-picture-03__col--article__title h1" data-bs-subtitle="zoom sur">Article + Picture 03</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p class="s-article-picture-03__col--article__cta">
@@ -906,14 +1008,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-03 s-article-picture-03--marche ">
+                                  <br>
+                                  <br>
+                                  <section class="s-article-picture-03 s-article-picture-03--marche ">
   <div class="s-article-picture-03__container container">
     <div class="s-article-picture-03__row row">
       <div class="s-article-picture-03__col s-article-picture-03__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <h2 class="s-article-picture-03__col--article__title h1" data-subtitle="zoom sur">Article + Picture 03</h2>
+          <h2 class="s-article-picture-03__col--article__title h1" data-bs-subtitle="zoom sur">Article + Picture 03</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p class="s-article-picture-03__col--article__cta">
@@ -933,14 +1035,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-03 s-article-picture-03--emploi ">
+                                    <br>
+                                    <br>
+                                    <section class="s-article-picture-03 s-article-picture-03--emploi ">
   <div class="s-article-picture-03__container container">
     <div class="s-article-picture-03__row row">
       <div class="s-article-picture-03__col s-article-picture-03__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <h2 class="s-article-picture-03__col--article__title h1" data-subtitle="zoom sur">Article + Picture 03</h2>
+          <h2 class="s-article-picture-03__col--article__title h1" data-bs-subtitle="zoom sur">Article + Picture 03</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p class="s-article-picture-03__col--article__cta">
@@ -960,14 +1062,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-03 s-article-picture-03--communaute ">
+                                      <br>
+                                      <br>
+                                      <section class="s-article-picture-03 s-article-picture-03--communaute ">
   <div class="s-article-picture-03__container container">
     <div class="s-article-picture-03__row row">
       <div class="s-article-picture-03__col s-article-picture-03__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <h2 class="s-article-picture-03__col--article__title h1" data-subtitle="zoom sur">Article + Picture 03</h2>
+          <h2 class="s-article-picture-03__col--article__title h1" data-bs-subtitle="zoom sur">Article + Picture 03</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p class="s-article-picture-03__col--article__cta">
@@ -987,14 +1089,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-article-picture-03 s-article-picture-03--pilotage ">
+                                        <br>
+                                        <br>
+                                        <section class="s-article-picture-03 s-article-picture-03--pilotage ">
   <div class="s-article-picture-03__container container">
     <div class="s-article-picture-03__row row">
       <div class="s-article-picture-03__col s-article-picture-03__col--article col-12 col-lg-6 d-flex align-items-center">
         <article>
-          <h2 class="s-article-picture-03__col--article__title h1" data-subtitle="zoom sur">Article + Picture 03</h2>
+          <h2 class="s-article-picture-03__col--article__title h1" data-bs-subtitle="zoom sur">Article + Picture 03</h2>
           <p class="lead"><code>p.lead</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p><code>p</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odio accusantium aperiam, architecto ducimus eius dicta.</p>
           <p class="s-article-picture-03__col--article__cta">
@@ -1014,12 +1116,11 @@
   </div>
 </section>
 
-    </main>
+      </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="javascripts/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
   </body>
 
 </html>

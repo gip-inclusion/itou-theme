@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
   <head>
     <title>Itou Theme</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
@@ -26,147 +27,258 @@
 
   <body id="top">
 
-    <header class="bg-primary py-3">
+    <header class="bg-primary py-3 sticky-top">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-12">
-        <a href="https://betagouv.github.io/itou-theme/" class="h2 text-white mb-0 text-decoration-none">Itou Theme</a>
+      <div class="col-12 col-lg-3">
+        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.2.0</label>
+      </div>
+      <div class="col-12 col-lg">
+        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
+          <option value="index.html">---</option>
+          <optgroup label="Layout">
+            <option value="layout.html#grid">Flex Grid</option>
+            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
+            <option value="layout.html#spacing">Utilities for spacing</option>
+          </optgroup>
+          <optgroup label="Content">
+            <option value="content.html#bg-colors">Background colors</option>
+            <option value="content.html#colors">Colors</option>
+            <option value="content.html#images">Images</option>
+            <option value="content.html#shadows">Shadows</option>
+            <option value="content.html#tables">Tables</option>
+            <option value="content.html#text-colors">Text colors</option>
+            <option value="content.html#text-utilities">Text utilities</option>
+            <option value="content.html#typography">Typography</option>
+          </optgroup>
+          <optgroup label="Components">
+            <option value="components.html#alerts">Alerts</option>
+            <option value="components.html#badges">Badges</option>
+            <option value="components.html#breadcrumb">Breadcrumb</option>
+            <option value="components.html#buttons">Buttons</option>
+            <option value="components.html#button-group">Button group</option>
+            <option value="components.html#cards">Cards</option>
+            <option value="components.html#collapse">Collapse</option>
+            <option value="components.html#dropdowns">Dropdowns</option>
+            <option value="components.html#progress">Progress</option>
+            <option value="components.html#pagination">Pagination</option>
+            <option value="components.html#popovers">Popovers</option>
+            <option value="components.html#tabs">Tabs</option>
+            <option value="components.html#tooltips">Tooltips</option>
+            <option value="components.html#modal">Modal</option>
+            <option value="components.html#toasts">Toasts</option>
+          </optgroup>
+          <optgroup label="Forms">
+            <option value="forms.html#forms">Forms</option>
+            <option value="forms.html#input-group">Input group</option>
+          </optgroup>
+          <optgroup label="Utilities BS">
+            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
+          </optgroup>
+          <optgroup label="Content Itou">
+            <option value="content-ic.html">Button Inclusion Connect</option>
+            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
+            <option value="content-itou.html#icones">Icones (remix icon 3.4.0)</option>
+            <option value="content-itou.html#logos">Logos</option>
+          </optgroup>
+          <optgroup label="Components Itou">
+            <option value="components-itou.html#cards">Cards</option>
+            <option value="components-itou.html#stepper">Stepper</option>
+            <option value="components-itou.html#listgroup">Listgroup</option>
+            <option value="components-itou.html#tags">Tags</option>
+            <option value="components-itou.html#box">Box</option>
+          </optgroup>
+          <optgroup label="Sections Itou">
+            <option value="sections-itou-01.html#header">Headers + Post Header</option>
+            <option value="sections-itou-01.html#footer">Footer</option>
+            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
+            <option value="sections-itou-02.html#article-picture-02">Article Picture 02</option>
+            <option value="sections-itou-02.html#article-picture-03">Article Picture 03</option>
+            <option value="sections-itou-03.html#article-picture-group-01">Article Picture Group 01</option>
+            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
+            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
+            <option value="sections-itou-05.html#cards-grid-01">Cards Grid 01</option>
+            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
+            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
+            <option value="sections-itou-06.html#title-01">Simple Title 01</option>
+            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
+          </optgroup>
+          <optgroup label="Pages Itou">
+            <option value="layout-itou-base.html">Base layout</option>
+            <option value="layout-itou-form.html">Formulaire full layout</option>
+            <option value="layout-itou-form-simple.html">Formulaire simple layout</option>
+            <option value="layout-itou-cms.html">CMS & Flatpage layout</option>
+            <option value="layout-itou-search-result.html">Résultats de recherche C1, filtres et cartes</option>
+          </optgroup>
+          <optgroup label="Prototypes Itou">
+            <option value="proto-itou-form-uploads-img.html">Formulaire uploads images</option>
+          </optgroup>
+          <optgroup label="External libraries">
+            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
+            <option value="external-libs-itou-bs.html" target="_blank">Bootstrap.js</option>
+            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
+            <option value="https://remixicon.com/">Remix Icon</option>
+            <option value="external-libs-itou-tac.html">Tarte au citron</option>
+            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
+            <option value="external-libs-itou-s2.html">Select 2</option>
+          </optgroup>
+        </select>
       </div>
     </div>
   </div>
 </header>
 
 
-    <main class="s-main bg-gray-400" role="main">
+      <main class="s-main bg-light" role="main">
 
-      <br>
-      <br>
+        <br>
+        <br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12" id="page-menu-01">
-            <h3>Page + Menu 01 <code>.s-page-menu-01</code></h3>
-            <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-12" id="page-menu-01">
+              <h3>Page + Menu 01 <code>.s-page-menu-01</code></h3>
+              <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
+            </div>
           </div>
         </div>
-      </div>
-      <section class="s-page-menu-01 ">
+        <section class="s-page-menu-01 ">
   <div class="s-page-menu-01__container container">
     <div class="s-page-menu-01__row row align-items-center">
-        <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
-          <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
-          Un exemple de <code>.s-page-menu-01</code> .
-        </div>
+      <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
+        <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
+        Un exemple de <code>.s-page-menu-01</code>
+        .
+      </div>
       <div class="s-page-menu-01__col s-page-menu-01__col--grid col-12 col-lg-7">
         <ul>
-            <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ml-1"></i></li>
-            <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
-            <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
+          <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ms-1"></i></li>
+          <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
+          <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-page-menu-01 s-page-menu-01--marche ">
+          <br>
+          <br>
+          <section class="s-page-menu-01 s-page-menu-01--marche ">
   <div class="s-page-menu-01__container container">
     <div class="s-page-menu-01__row row align-items-center">
-        <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
-          <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
-          Un exemple de <code>.s-page-menu-01</code>  et le modifier <code>.s-page-menu-01--marche</code> .
-        </div>
+      <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
+        <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
+        Un exemple de <code>.s-page-menu-01</code>
+         et le modifier <code>.s-page-menu-01--marche</code>
+          .
+      </div>
       <div class="s-page-menu-01__col s-page-menu-01__col--grid col-12 col-lg-7">
         <ul>
-            <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ml-1"></i></li>
-            <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
-            <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
+          <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ms-1"></i></li>
+          <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
+          <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-page-menu-01 s-page-menu-01--emploi ">
+            <br>
+            <br>
+            <section class="s-page-menu-01 s-page-menu-01--emploi ">
   <div class="s-page-menu-01__container container">
     <div class="s-page-menu-01__row row align-items-center">
-        <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
-          <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
-          Un exemple de <code>.s-page-menu-01</code>  et le modifier <code>.s-page-menu-01--emploi</code> .
-        </div>
+      <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
+        <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
+        Un exemple de <code>.s-page-menu-01</code>
+         et le modifier <code>.s-page-menu-01--emploi</code>
+          .
+      </div>
       <div class="s-page-menu-01__col s-page-menu-01__col--grid col-12 col-lg-7">
         <ul>
-            <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ml-1"></i></li>
-            <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
-            <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
+          <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ms-1"></i></li>
+          <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
+          <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-page-menu-01 s-page-menu-01--communaute ">
+              <br>
+              <br>
+              <section class="s-page-menu-01 s-page-menu-01--communaute ">
   <div class="s-page-menu-01__container container">
     <div class="s-page-menu-01__row row align-items-center">
-        <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
-          <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
-          Un exemple de <code>.s-page-menu-01</code>  et le modifier <code>.s-page-menu-01--communaute</code> .
-        </div>
+      <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
+        <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
+        Un exemple de <code>.s-page-menu-01</code>
+         et le modifier <code>.s-page-menu-01--communaute</code>
+          .
+      </div>
       <div class="s-page-menu-01__col s-page-menu-01__col--grid col-12 col-lg-7">
         <ul>
-            <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ml-1"></i></li>
-            <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
-            <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
+          <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ms-1"></i></li>
+          <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
+          <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-page-menu-01 s-page-menu-01--pilotage ">
+                <br>
+                <br>
+                <section class="s-page-menu-01 s-page-menu-01--pilotage ">
   <div class="s-page-menu-01__container container">
     <div class="s-page-menu-01__row row align-items-center">
-        <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
-          <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
-          Un exemple de <code>.s-page-menu-01</code>  et le modifier <code>.s-page-menu-01--pilotage</code> .
-        </div>
+      <div class="s-page-menu-01__col s-page-menu-01__col--title col-12 col-lg-5">
+        <h1 class="h1-hero"><strong>Les <br class="d-none d-lg-inline">thématiques<br class="d-none d-lg-inline"></strong></h1>
+        Un exemple de <code>.s-page-menu-01</code>
+         et le modifier <code>.s-page-menu-01--pilotage</code>
+          .
+      </div>
       <div class="s-page-menu-01__col s-page-menu-01__col--grid col-12 col-lg-7">
         <ul>
-            <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ml-1"></i></li>
-            <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
-            <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
-            <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ml-1"></i></li>
+          <li><a href="#definition">s-page-menu-01</a><i class="ri-account-circle-line ri-lg ms-1"></i></li>
+          <li><a href="#avantages">Les avantages de l’achat inclusif</a></li>
+          <li><a href="#faq">Les questions fréquentes</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#acteurs">Les acteurs de l’inclusion</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#structures">Les types de structures</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#clauses">Les clauses sociales</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#rse">RSE</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
+          <li><a href="#agefiph">AGEFIPH</a><i class="ri-account-circle-line ri-xl ms-1"></i></li>
         </ul>
       </div>
     </div>
@@ -175,21 +287,21 @@
 
 
 
-      <br>
-      <br>
-      <hr>
-      <br>
-      <br>
+                  <br>
+                  <br>
+                  <hr>
+                  <br>
+                  <br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12" id="banner-01">
-            <h3>Banner 01 <code>.s-banner-01</code></h3>
-            <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
-          </div>
-        </div>
-      </div>
-      <section class="s-banner-01 ">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12" id="banner-01">
+                        <h3>Banner 01 <code>.s-banner-01</code></h3>
+                        <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
+                      </div>
+                    </div>
+                  </div>
+                  <section class="s-banner-01 ">
   <div class="s-banner-01__container container">
     <div class="s-banner-01__row row">
       <div class="s-banner-01__col col-12">
@@ -219,10 +331,10 @@
           <div class="text-center text-md-left">
             <a href="" target="_blank"><img src="images/logo-aides-territoires.svg" width="180" alt="Aides-territoires | Aides publiques pour les collectivités"></a>
           </div>
-          <div class="w-100 mt-3 pl-0 pl-md-3">
+          <div class="w-100 mt-3 ps-0 ps-md-3">
             <p class="h3 mb-2">Trouver des aides financières sur votre territoire pour faciliter votre développement.</p>
             <p>Venez découvrir plus de 2900 aides répertoriés sur tout le territoire.</p>
-            <p class="mb-0 text-right">
+            <p class="mb-0 text-end">
               <a href="" rel="noopener" target="_blank" class="btn btn-sm btn-outline-primary btn-ico">
                 <span>Aides territoires</span>
                 <i class="ri-arrow-right-line ri-lg"></i>
@@ -235,9 +347,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-banner-01 s-banner-01--marche ">
+                    <br>
+                    <br>
+                    <section class="s-banner-01 s-banner-01--marche ">
   <div class="s-banner-01__container container">
     <div class="s-banner-01__row row">
       <div class="s-banner-01__col col-12">
@@ -267,10 +379,10 @@
           <div class="text-center text-md-left">
             <a href="" target="_blank"><img src="images/logo-aides-territoires.svg" width="180" alt="Aides-territoires | Aides publiques pour les collectivités"></a>
           </div>
-          <div class="w-100 mt-3 pl-0 pl-md-3">
+          <div class="w-100 mt-3 ps-0 ps-md-3">
             <p class="h3 mb-2">Trouver des aides financières sur votre territoire pour faciliter votre développement.</p>
             <p>Venez découvrir plus de 2900 aides répertoriés sur tout le territoire.</p>
-            <p class="mb-0 text-right">
+            <p class="mb-0 text-end">
               <a href="" rel="noopener" target="_blank" class="btn btn-sm btn-outline-primary btn-ico">
                 <span>Aides territoires</span>
                 <i class="ri-arrow-right-line ri-lg"></i>
@@ -283,9 +395,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-banner-01 s-banner-01--emploi ">
+                      <br>
+                      <br>
+                      <section class="s-banner-01 s-banner-01--emploi ">
   <div class="s-banner-01__container container">
     <div class="s-banner-01__row row">
       <div class="s-banner-01__col col-12">
@@ -315,10 +427,10 @@
           <div class="text-center text-md-left">
             <a href="" target="_blank"><img src="images/logo-aides-territoires.svg" width="180" alt="Aides-territoires | Aides publiques pour les collectivités"></a>
           </div>
-          <div class="w-100 mt-3 pl-0 pl-md-3">
+          <div class="w-100 mt-3 ps-0 ps-md-3">
             <p class="h3 mb-2">Trouver des aides financières sur votre territoire pour faciliter votre développement.</p>
             <p>Venez découvrir plus de 2900 aides répertoriés sur tout le territoire.</p>
-            <p class="mb-0 text-right">
+            <p class="mb-0 text-end">
               <a href="" rel="noopener" target="_blank" class="btn btn-sm btn-outline-primary btn-ico">
                 <span>Aides territoires</span>
                 <i class="ri-arrow-right-line ri-lg"></i>
@@ -331,9 +443,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-banner-01 s-banner-01--pilotage ">
+                        <br>
+                        <br>
+                        <section class="s-banner-01 s-banner-01--pilotage ">
   <div class="s-banner-01__container container">
     <div class="s-banner-01__row row">
       <div class="s-banner-01__col col-12">
@@ -363,10 +475,10 @@
           <div class="text-center text-md-left">
             <a href="" target="_blank"><img src="images/logo-aides-territoires.svg" width="180" alt="Aides-territoires | Aides publiques pour les collectivités"></a>
           </div>
-          <div class="w-100 mt-3 pl-0 pl-md-3">
+          <div class="w-100 mt-3 ps-0 ps-md-3">
             <p class="h3 mb-2">Trouver des aides financières sur votre territoire pour faciliter votre développement.</p>
             <p>Venez découvrir plus de 2900 aides répertoriés sur tout le territoire.</p>
-            <p class="mb-0 text-right">
+            <p class="mb-0 text-end">
               <a href="" rel="noopener" target="_blank" class="btn btn-sm btn-outline-primary btn-ico">
                 <span>Aides territoires</span>
                 <i class="ri-arrow-right-line ri-lg"></i>
@@ -379,9 +491,9 @@
   </div>
 </section>
 
-      <br>
-      <br>
-      <section class="s-banner-01 s-banner-01--communaute ">
+                          <br>
+                          <br>
+                          <section class="s-banner-01 s-banner-01--communaute ">
   <div class="s-banner-01__container container">
     <div class="s-banner-01__row row">
       <div class="s-banner-01__col col-12">
@@ -411,10 +523,10 @@
           <div class="text-center text-md-left">
             <a href="" target="_blank"><img src="images/logo-aides-territoires.svg" width="180" alt="Aides-territoires | Aides publiques pour les collectivités"></a>
           </div>
-          <div class="w-100 mt-3 pl-0 pl-md-3">
+          <div class="w-100 mt-3 ps-0 ps-md-3">
             <p class="h3 mb-2">Trouver des aides financières sur votre territoire pour faciliter votre développement.</p>
             <p>Venez découvrir plus de 2900 aides répertoriés sur tout le territoire.</p>
-            <p class="mb-0 text-right">
+            <p class="mb-0 text-end">
               <a href="" rel="noopener" target="_blank" class="btn btn-sm btn-outline-primary btn-ico">
                 <span>Aides territoires</span>
                 <i class="ri-arrow-right-line ri-lg"></i>
@@ -427,15 +539,14 @@
   </div>
 </section>
 
-      <br>
-      <br>
+                            <br>
+                            <br>
 
-    </main>
+      </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="javascripts/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
   </body>
 
 </html>

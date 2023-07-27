@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
   <head>
     <title>Itou Theme</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
@@ -26,20 +27,122 @@
 
   <body id="top">
 
-    <header class="bg-primary py-3">
+    <header class="bg-primary py-3 sticky-top">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-12">
-        <a href="https://betagouv.github.io/itou-theme/" class="h2 text-white mb-0 text-decoration-none">Itou Theme</a>
+      <div class="col-12 col-lg-3">
+        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.2.0</label>
+      </div>
+      <div class="col-12 col-lg">
+        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
+          <option value="index.html">---</option>
+          <optgroup label="Layout">
+            <option value="layout.html#grid">Flex Grid</option>
+            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
+            <option value="layout.html#spacing">Utilities for spacing</option>
+          </optgroup>
+          <optgroup label="Content">
+            <option value="content.html#bg-colors">Background colors</option>
+            <option value="content.html#colors">Colors</option>
+            <option value="content.html#images">Images</option>
+            <option value="content.html#shadows">Shadows</option>
+            <option value="content.html#tables">Tables</option>
+            <option value="content.html#text-colors">Text colors</option>
+            <option value="content.html#text-utilities">Text utilities</option>
+            <option value="content.html#typography">Typography</option>
+          </optgroup>
+          <optgroup label="Components">
+            <option value="components.html#alerts">Alerts</option>
+            <option value="components.html#badges">Badges</option>
+            <option value="components.html#breadcrumb">Breadcrumb</option>
+            <option value="components.html#buttons">Buttons</option>
+            <option value="components.html#button-group">Button group</option>
+            <option value="components.html#cards">Cards</option>
+            <option value="components.html#collapse">Collapse</option>
+            <option value="components.html#dropdowns">Dropdowns</option>
+            <option value="components.html#progress">Progress</option>
+            <option value="components.html#pagination">Pagination</option>
+            <option value="components.html#popovers">Popovers</option>
+            <option value="components.html#tabs">Tabs</option>
+            <option value="components.html#tooltips">Tooltips</option>
+            <option value="components.html#modal">Modal</option>
+            <option value="components.html#toasts">Toasts</option>
+          </optgroup>
+          <optgroup label="Forms">
+            <option value="forms.html#forms">Forms</option>
+            <option value="forms.html#input-group">Input group</option>
+          </optgroup>
+          <optgroup label="Utilities BS">
+            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
+            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
+            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
+          </optgroup>
+          <optgroup label="Content Itou">
+            <option value="content-ic.html">Button Inclusion Connect</option>
+            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
+            <option value="content-itou.html#icones">Icones (remix icon 3.4.0)</option>
+            <option value="content-itou.html#logos">Logos</option>
+          </optgroup>
+          <optgroup label="Components Itou">
+            <option value="components-itou.html#cards">Cards</option>
+            <option value="components-itou.html#stepper">Stepper</option>
+            <option value="components-itou.html#listgroup">Listgroup</option>
+            <option value="components-itou.html#tags">Tags</option>
+            <option value="components-itou.html#box">Box</option>
+          </optgroup>
+          <optgroup label="Sections Itou">
+            <option value="sections-itou-01.html#header">Headers + Post Header</option>
+            <option value="sections-itou-01.html#footer">Footer</option>
+            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
+            <option value="sections-itou-02.html#article-picture-02">Article Picture 02</option>
+            <option value="sections-itou-02.html#article-picture-03">Article Picture 03</option>
+            <option value="sections-itou-03.html#article-picture-group-01">Article Picture Group 01</option>
+            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
+            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
+            <option value="sections-itou-05.html#cards-grid-01">Cards Grid 01</option>
+            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
+            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
+            <option value="sections-itou-06.html#title-01">Simple Title 01</option>
+            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
+          </optgroup>
+          <optgroup label="Pages Itou">
+            <option value="layout-itou-base.html">Base layout</option>
+            <option value="layout-itou-form.html">Formulaire full layout</option>
+            <option value="layout-itou-form-simple.html">Formulaire simple layout</option>
+            <option value="layout-itou-cms.html">CMS & Flatpage layout</option>
+            <option value="layout-itou-search-result.html">Résultats de recherche C1, filtres et cartes</option>
+          </optgroup>
+          <optgroup label="Prototypes Itou">
+            <option value="proto-itou-form-uploads-img.html">Formulaire uploads images</option>
+          </optgroup>
+          <optgroup label="External libraries">
+            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
+            <option value="external-libs-itou-bs.html" target="_blank">Bootstrap.js</option>
+            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
+            <option value="https://remixicon.com/">Remix Icon</option>
+            <option value="external-libs-itou-tac.html">Tarte au citron</option>
+            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
+            <option value="external-libs-itou-s2.html">Select 2</option>
+          </optgroup>
+        </select>
       </div>
     </div>
   </div>
 </header>
 
 
-    <main class="s-main" role="main">
+      <main class="s-main" role="main">
 
-      <section id="content">
+        <section id="content">
           <div class="container">
 
             <article class="row py-5" id="forms">
@@ -54,7 +157,7 @@
                   <p>Be sure to explore our <a href="https://getbootstrap.com/docs/4.6/components/forms/#custom-forms" target="_blank">custom forms</a> to further style <code>&lt;select&gt;</code>s.</p>
                   <form>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
+                      <label class="form-label" for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Placeholder text">
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
@@ -67,11 +170,11 @@
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Example expendable textarea <code>data-expandable="true"</code></label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-expandable="true"></textarea>
+                      <label for="exampleFormControlTextarea2">Example expendable textarea <code>data-it-expandable="true"</code></label>
+                      <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" data-it-expandable="true"></textarea>
                     </div>
-                    <div class="text-right">
-                      <button type="reset" class="btn btn-outline-primary mr-2">Reset</button>
+                    <div class="text-end">
+                      <button type="reset" class="btn btn-outline-primary me-2">Reset</button>
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </form>
@@ -80,12 +183,15 @@
                   <h6>Sizing</h6>
                   <p>Set heights using classes like <code>.form-control</code> and <code>.form-control-sm</code>.</p>
                   <input class="form-control mb-3" type="text" placeholder=".form-control">
-                  <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+                  <input class="form-control form-control-sm mb-3" type="text" placeholder=".form-control-sm">
+                  <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
                 </div>
                 <div class="mb-5">
                   <h6>Readonly</h6>
                   <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
-                  <input class="form-control mb-5" type="text" value="Readonly input here..." placeholder="Placeholder" readonly>
+                  <input class="form-control mb-3" type="text" value="Readonly input here..." placeholder="Placeholder" readonly>
+                  <input type="text" readonly class="form-control-plaintext mb-5" value="email@example.com">
+
                   <p>If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, use the <code>.form-control-plaintext</code> class to remove the default form field styling and preserve the correct margin and padding.</p>
                   <form>
                     <div class="form-group row">
@@ -102,109 +208,156 @@
                     </div>
                   </form>
                 </div>
+                <div class="mb-5" id="ranges">
+                  <div>
+                    <label for="customRange1" class="form-label">Input range</label>
+                    <input type="range" class="form-range" id="customRange1">
+                  </div>
+                </div>
                 <div class="mb-5" id="checkbox">
                   <h6>Checkboxes</h6>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="customCheck1">
+                    <label class="form-check-label" for="customCheck1">Check this custom checkbox</label>
                   </div>
                 </div>
                 <div class="mb-5" id="radios">
                   <h6>Radios</h6>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                  <div class="form-check">
+                    <input type="radio" id="customRadio1" name="customRadio" class="form-check-input">
+                    <label class="form-check-label" for="customRadio1">Toggle this custom radio</label>
                   </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-                  </div>
-                </div>
-                <div class="mb-5">
-                  <h6>Disabled</h6>
-                  <p>Custom checkboxes and radios can also be disabled. Add the <code>disabled</code> boolean attribute to the <code>&lt;input&gt;</code> and the custom indicator and label description will be automatically styled.</p>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
-                    <label class="custom-control-label" for="customCheckDisabled1" checked>Check this custom checkbox</label>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled checked>
-                    <label class="custom-control-label" for="customCheckDisabled1" checked>Check this custom checkbox</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" name="radioDisabled" id="customRadioDisabled2" class="custom-control-input" disabled>
-                    <label class="custom-control-label" for="customRadioDisabled2">Toggle this custom radio</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" name="radioDisabled" id="customRadioDisabled2" class="custom-control-input" disabled checked>
-                    <label class="custom-control-label" for="customRadioDisabled2">Toggle this custom radio</label>
+                  <div class="form-check">
+                    <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
+                    <label class="form-check-label" for="customRadio2">Or toggle this other custom radio</label>
                   </div>
                 </div>
                 <div class="mb-5" id="switches">
                   <h6>Switches</h6>
-                  <p>A switch has the markup of a custom checkbox but uses the <code>.custom-switch</code> class to render a toggle switch. Switches also support the <code>disabled</code> attribute.</p>
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1" aria-checked="false">
-                    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
                   </div>
-                  <div class="custom-control custom-switch is-rtl">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch3" aria-checked="false">
-                    <label class="custom-control-label" for="customSwitch3">Toggle this switch element <code>.is-rtl</code></label>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
                   </div>
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" disabled id="customSwitch2" aria-checked="false">
-                    <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
                   </div>
-                  <br>
-                  <div class="custom-control custom-switch custom-switch-lg">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch4" aria-checked="false">
-                    <label class="custom-control-label pt-1" for="customSwitch4">Toggle this large switch element <code>.custom-switch-lg</code></label>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
                   </div>
-                  <div class="custom-control custom-switch custom-switch-lg">
-                    <input type="checkbox" class="custom-control-input" disabled id="customSwitch5" aria-checked="false">
-                    <label class="custom-control-label pt-1" for="customSwitch5">Disabled switch element</label>
-                  </div>
-                  <div class="custom-control custom-switch custom-switch-lg is-rtl">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch6" aria-checked="false">
-                    <label class="custom-control-label pt-1" for="customSwitch6">Toggle this switch element <code>.is-rtl</code></label>
-                  </div>
-                  <br>
-
-                  <div class="custom-control custom-switch custom-switch-lg has-state-label">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch7" aria-checked="false">
-                    <label class="custom-control-label pt-1" for="customSwitch7" data-state-label-off="Désactivé" data-state-label-on="Activé">Toggle this large switch element with label for current state</label>
-                  </div>
-
-
-                  <div class="custom-control custom-switch has-state-label">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch8" aria-checked="false">
-                    <label class="custom-control-label" for="customSwitch8" data-state-label-off="Fermé" data-state-label-on="Ouvert"></label>
-                  </div>
-
-
-
-
                 </div>
-                <div class="mb-5">
+                <div class="mb-5" id="reverse">
+                  <h6>Reverse</h6>
+                  <div class="form-check form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+                    <label class="form-check-label" for="reverseCheck1">
+                      Reverse checkbox
+                    </label>
+                  </div>
+                  <div class="form-check form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
+                    <label class="form-check-label" for="reverseCheck2">
+                      Disabled reverse checkbox
+                    </label>
+                  </div>
+
+                  <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                    <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+                  </div>
+                </div>
+                <div class="mb-5" id="disabled">
+                  <h6>Disabled</h6>
+                  <p>Custom checkboxes and radios can also be disabled. Add the <code>disabled</code> boolean attribute to the <code>&lt;input&gt;</code> and the custom indicator and label description will be automatically styled.</p>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="customCheckDisabled1" disabled>
+                    <label class="form-check-label" for="customCheckDisabled1" checked>Check this custom checkbox</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="customCheckDisabled1" disabled checked>
+                    <label class="form-check-label" for="customCheckDisabled1" checked>Check this custom checkbox</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="radioDisabled" id="customRadioDisabled2" class="form-check-input" disabled>
+                    <label class="form-check-label" for="customRadioDisabled2">Toggle this custom radio</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="radioDisabled" id="customRadioDisabled2" class="form-check-input" disabled checked>
+                    <label class="form-check-label" for="customRadioDisabled2">Toggle this custom radio</label>
+                  </div>
+                </div>
+                <div class="mb-5" id="itouSwitches">
+                  <h6>Itou Switches</h6>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitch02CheckDefault">
+                    <label class="form-check-label" for="flexSwitch02CheckDefault">Default switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitch02CheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitch02CheckChecked">Checked switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitch02CheckDisabled" disabled>
+                    <label class="form-check-label" for="flexSwitch02CheckDisabled">Disabled switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitch02CheckCheckedDisabled" checked disabled>
+                    <label class="form-check-label" for="flexSwitch02CheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                  </div>
+                  <br>
+                  <p>Large with <code>form-switch-lg</code></p>
+                  <div class="form-check form-switch form-switch-lg">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchLGCheckDefault">
+                    <label class="form-check-label" for="flexSwitchLGCheckDefault">Default switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch form-switch-lg form-check-reverse">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchLGCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchLGCheckChecked">Checked switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch form-switch-lg">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchLGCheckDisabled" disabled>
+                    <label class="form-check-label" for="flexSwitchLGCheckDisabled">Disabled switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch form-switch-lg">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchLGCheckCheckedDisabled" checked disabled>
+                    <label class="form-check-label" for="flexSwitchLGCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                  </div>
+                  <br>
+                  <p>With state label <code>has-state-label</code></p>
+                  <div class="form-check form-switch has-state-label">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchHasLabelCheckDefault">
+                    <label class="form-check-label" for="flexSwitchHasLabelCheckDefault" data-it-state-label-off="Fermé" data-it-state-label-on="Ouvert"></label>
+                  </div>
+                  <div class="form-check form-switch form-switch-lg has-state-label">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchHasLabelLGCheckDefault">
+                    <label class="form-check-label" for="flexSwitchHasLabelLGCheckDefault" data-it-state-label-off="Désactivé" data-it-state-label-on="Activé">Toggle this large switch element with label for current state</label>
+                  </div>
+                </div>
+                <div class="mb-5" id="selects">
                   <h6>Select menu</h6>
-                  <p>Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.custom-select</code> or simple <code>select.form-control</code> to trigger the custom styles. Custom styles are limited to the <code>&lt;select&gt;</code>’s initial appearance and cannot modify the <code>&lt;option&gt;</code>s due to browser limitations.</p>
+                  <p>Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> or simple <code>select.form-control</code> to trigger the custom styles. Custom styles are limited to the <code>&lt;select&gt;</code>’s initial appearance and cannot modify the <code>&lt;option&gt;</code>s due to browser limitations.</p>
                   <p>You may also choose from small and large custom selects to match our similarly sized text inputs.</p>
-                  <select class="custom-select mb-3">
-                    <option selected>Open this custom-select menu</option>
+                  <select class="form-select mb-3">
+                    <option selected>Open this form-select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                   <br>
-                  <select class="custom-select custom-select-sm mb-3">
-                    <option selected>Open this custom-select-sm menu</option>
+                  <select class="form-select form-select-sm mb-3">
+                    <option selected>Open this form-select-sm menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                   <br>
                   <p>The <code>multiple</code> attribute is also supported:</p>
-                  <select class="custom-select" multiple>
+                  <select class="form-select" multiple>
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -223,12 +376,16 @@
                       <label for="formGroupExampleInput2">Another label</label>
                       <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
                     </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">File exemple</label>
+                      <input type="file" class="form-control" id="formGroupExampleFile" placeholder="File exemple">
+                    </div>
                   </form>
                 </div>
                 <div class="mb-5">
                   <p>More complex layouts can also be created with the grid system.</p>
                   <form>
-                    <div class="form-row">
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="inputEmail4">Email</label>
                         <input type="email" class="form-control" id="inputEmail4">
@@ -246,14 +403,14 @@
                       <label for="inputAddress2">Address 2</label>
                       <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                     </div>
-                    <div class="form-row">
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="inputCity">City</label>
                         <input type="text" class="form-control" id="inputCity">
                       </div>
                       <div class="form-group col-md-4">
                         <label for="inputState">State</label>
-                        <select class="custom-select mb-3">
+                        <select class="form-select mb-3">
                           <option selected="">This select menu</option>
                           <option value="1">One</option>
                           <option value="2">Two</option>
@@ -266,31 +423,37 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio20" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio20">Check me out</label>
+                      <div class="form-check">
+                        <input type="radio" id="customRadio20" name="customRadio" class="form-check-input">
+                        <label class="form-check-label" for="customRadio20">Check me out</label>
                       </div>
                     </div>
-                    <div class="text-right">
+                    <div class="text-end">
                       <button type="submit" class="btn btn-primary">Sign in</button>
                     </div>
                   </form>
                 </div>
                 <div class="mb-5">
                   <h6>Inline forms</h6>
-                  <p>Use the <code>.form-inline</code> class to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms vary slightly from their default states.</p>
-                  <form class="form-inline">
-                    <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-                    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-                    <div class="input-group mb-2 mr-sm-2">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
-                      </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                  <p>Use our grid and utilities.</p>
+                  <form class="row gx-2">
+                    <div class="form-group col-auto">
+                      <label class="visually-hidden" for="inlineFormInputName2">Name</label>
+                      <input type="text" class="form-control" id="inlineFormInputName2" placeholder="Jane Doe">
                     </div>
-                    <button type="reset" class="btn btn-outline-primary mb-2">Reset</button>
-                    <button type="submit" class="btn btn-primary mb-2 ml-2">Submit</button>
+                    <div class="form-group col-auto">
+                      <label class="visually-hidden" for="inlineFormInputGroupUsername2">Username</label>
+                      <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                      </div>
+                    </div>
+                    <div class="form-group col-auto">
+                      <button type="reset" class="btn btn-outline-primary">Reset</button>
+                    </div>
+                    <div class="form-group col-auto">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                   </form>
                 </div>
                 <div class="mb-5">
@@ -308,6 +471,10 @@
                   <h6>Disabled forms</h6>
                   <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions and make it appear lighter.</p>
                   <form>
+                    <div>
+                      <input class="form-control mb-3" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                      <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+                    </div>
                     <fieldset disabled>
                       <legend>Disabled fieldset example</legend>
                       <div class="form-group">
@@ -316,101 +483,33 @@
                       </div>
                       <div class="form-group">
                         <label for="disabledSelect">Disabled select menu</label>
-                        <select class="custom-select">
+                        <select class="form-select">
                           <option selected="">Disabled select menu</option>
                           <option value="1">One</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
                         </select>
                       </div>
-                      <div class="text-right">
-                        <button type="reset" class="btn btn-outline-primary mr-2" disabled>Reset</button>
+                      <div class="text-end">
+                        <button type="reset" class="btn btn-outline-primary me-2" disabled>Reset</button>
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </div>
                     </fieldset>
                   </form>
                 </div>
                 <div class="mb-5">
-                  <h6>Validation</h6>
-                  <p>For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the <code>:invalid</code> and <code>:valid</code> styles applied to your form controls.</p>
-                  <p>Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for <code>&lt;select&gt;</code>s are only available with <code>.custom-select</code>, and not <code>.form-control</code>.</p>
-                  <form class="needs-validation" novalidate>
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationCustom01">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label for="validationCustom02">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
+                  <h6>Floating labels</h6>
+                  <p>Create beautifully simple form labels that float over your input fields.</p>
+                  <div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
                     </div>
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationCustom03">City</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid city.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom04">State</label>
-                        <select class="custom-select" id="validationCustom04" required>
-                          <option selected disabled value="">Choose...</option>
-                          <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                          Please select a valid state.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom05">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid zip.
-                        </div>
-                      </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
                     </div>
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="invalidCheck"  required>
-                        <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
-                        <div class="invalid-feedback">
-                          You must agree before submitting.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-right">
-                      <button class="btn btn-primary" type="submit">Submit form</button>
-                    </div>
-                  </form>
-
-                  <script>
-                  // Example starter JavaScript for disabling form submissions if there are invalid fields
-                  (function() {
-                    'use strict';
-                    window.addEventListener('load', function() {
-                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                      var forms = document.getElementsByClassName('needs-validation');
-                      // Loop over them and prevent submission
-                      var validation = Array.prototype.filter.call(forms, function(form) {
-                        form.addEventListener('submit', function(event) {
-                          if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                          }
-                          form.classList.add('was-validated');
-                        }, false);
-                      });
-                    }, false);
-                  })();
-                  </script>
+                  </div>
                 </div>
               </div>
             </article>
@@ -425,58 +524,37 @@
                   <h6>Basic</h6>
                   <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input group.</p>
                   <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">@</span>
-                    </div>
+                    <span class="input-group-text" id="basic-addon1">@</span>
                     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
 
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="basic-addon2">@example.com</span>
-                    </div>
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
                   </div>
 
                   <label for="basic-url">Your vanity URL</label>
                   <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                    </div>
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
                     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                   </div>
 
                   <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">$</span>
-                    </div>
+                    <span class="input-group-text">$</span>
                     <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <div class="input-group-append">
-                      <span class="input-group-text">.00</span>
-                    </div>
-                  </div>
-
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">With textarea</span>
-                    </div>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <span class="input-group-text">.00</span>
                   </div>
                 </div>
                 <div class="mb-5">
                   <h6>Button addons</h6>
                   <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <button class="btn btn-primary" type="button" id="button-addon1">Button</button>
-                    </div>
+                    <button class="btn btn-primary" type="button" id="button-addon1">Button</button>
                     <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                   </div>
 
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
-                    </div>
+                    <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
                   </div>
                 </div>
                 <div class="mb-5">
@@ -486,8 +564,8 @@
                     <label for="validationLink01">Copiez le lien pour partager cette ficher métier</label>
                     <div class="input-group">
                       <input type="text" class="form-control" name="validationLink01" value="https://communaute-experimentation.inclusion.beta.gouv.fr/forum" aria-describedby="basic-addon3">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-link btn-ico" type="button" id="basic-addon3" data-clipboard="copy" data-toggle="tooltip" data-placement="top" data-trigger="manual" title="" data-original-title="Lien copié!">
+                      <div class="input-group-text p-0">
+                        <button class="btn btn-sm btn-link btn-ico" type="button" id="basic-addon3" data-it-clipboard="copy" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" title="" data-bs-original-title="Lien copié!">
                           <i class="ri-file-copy-line"></i>
                           <span>Copier</span>
                         </button>
@@ -502,8 +580,8 @@
                     <label for="passwordToShowHide">Mot de passe</label>
                     <div class="input-group">
                       <input type="password" class="form-control" name="passwordToShowHide" value="azerty">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-link btn-ico" type="button" data-password="toggle">
+                      <div class="input-group-text p-0">
+                        <button class="btn btn-sm btn-link btn-ico" type="button" data-it-password="toggle">
                           <i class="ri-eye-line"></i>
                           <span>Afficher</span>
                         </button>
@@ -517,12 +595,11 @@
           </div>
         </section>
 
-    </main>
+      </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="javascripts/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
   </body>
 
 </html>

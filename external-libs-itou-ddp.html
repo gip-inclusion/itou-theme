@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -141,84 +140,113 @@
 
 
       <main class="s-main" role="main">
-        <section id="content">
+
+        <section>
           <div class="container">
 
-            <article class="row py-5" id="logos">
-              <div class="col-12 col-lg-3">
-                <h3>Logo Inclusion Connect</h3>
-              </div>
-              <div class="col-12 col-lg-9">
+            <article class="row py-5" id="ddp">
+              <div class="col-12">
+                <h3>Duet Date Picker 1.4.0</h3>
+                <p>Pour utiliser <a href="https://github.com/duetds/date-picker" target="_blank">Duet Date Picker 1.4.0</a> il suffit d'ajouter l'appel aux cdn du js
+                  <code>
+                &lt;script type=&quot;module&quot; src=&quot;https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.esm.js&quot;&gt;&lt;/script&gt;&#10;                    &lt;script nomodule src=&quot;https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.js&quot;&gt;&lt;/script&gt;
+              </code> puis de copier le code nécessaire à la création du Web Components. Par exemple :
+                </p>
+                <pre class="bg-info-lighter p-3">
+              &lt;label for=&quot;date&quot;&gt;Choisir une date&lt;/label&gt;&#10;                  &lt;duet-date-picker identifier=&quot;date&quot;&gt;&lt;/duet-date-picker&gt;
+            </pre>
+                <p>
+                  Vous pouvez ensuite personnaliser la configuration, par exemple la localisation
+                </p>
+                <pre class="bg-info-lighter p-3">
+              &quot;use strict&quot;&#10;&#10;                  const picker = document.querySelectorAll(&quot;duet-date-picker&quot;)&#10;                  const DATE_FORMAT = /^(\d{2})\/(\d{2})\/(\d{4})$/&#10;                  &#10;                  picker.forEach(pickerInstance =&gt; {&#10;                  &#10;                    pickerInstance.dateAdapter = {&#10;                  &#10;                      parse(value = &quot;&quot;, createDate) {&#10;                        const matches = value.match(DATE_FORMAT)&#10;                        if (matches) {&#10;                          return createDate(matches[3], matches[2], matches[1])&#10;                        }&#10;                      },&#10;                  &#10;                      format(date) {&#10;                        const day = (&apos;0&apos; + date.getDate()).slice(-2)&#10;                        const month = (&apos;0&apos; + `${date.getMonth() + 1}`).slice(-2)&#10;                        return `${day}/${month}/${date.getFullYear()}`&#10;                      },&#10;                  &#10;                    }&#10;                  &#10;                    // Automatically insert slashes &apos;/&apos; in date fields.&#10;                    pickerInstance.addEventListener(&quot;keyup&quot;, event =&gt; {&#10;                      // Do nothing when backspace was pressed.&#10;                      if (event.which !== 8) {&#10;                        const numChars = event.target.value.length&#10;                        if (numChars === 2 || numChars === 5) {&#10;                          event.target.value = `${event.target.value}/`&#10;                        }&#10;                      }&#10;                    })&#10;                  &#10;                    pickerInstance.localization = {&#10;                      buttonLabel: &quot;Choisir une date&quot;,&#10;                      placeholder: &quot;JJ/MM/AAAA&quot;,&#10;                      selectedDateMessage: &quot;La date s&eacute;lectionn&eacute;e est&quot;,&#10;                      prevMonthLabel: &quot;Mois pr&eacute;c&eacute;dent&quot;,&#10;                      nextMonthLabel: &quot;Mois suivant&quot;,&#10;                      monthSelectLabel: &quot;Mois&quot;,&#10;                      yearSelectLabel: &quot;Ann&eacute;e&quot;,&#10;                      closeLabel: &quot;Fermer la fen&ecirc;tre&quot;,&#10;                      calendarHeading: &quot;Choisir une date&quot;,&#10;                      dayNames: [&quot;Dimanche&quot;, &quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;, &quot;Samedi&quot;],&#10;                      monthNames: [&#10;                        &quot;Janvier&quot;,&#10;                        &quot;F&eacute;vrier&quot;,&#10;                        &quot;Mars&quot;,&#10;                        &quot;Avril&quot;,&#10;                        &quot;Mai&quot;,&#10;                        &quot;Juin&quot;,&#10;                        &quot;Juillet&quot;,&#10;                        &quot;Ao&ucirc;t&quot;,&#10;                        &quot;Septembre&quot;,&#10;                        &quot;Octobre&quot;,&#10;                        &quot;Novembre&quot;,&#10;                        &quot;D&eacute;cembre&quot;,&#10;                      ],&#10;                      monthNamesShort: [&quot;Jan&quot;, &quot;F&eacute;v&quot;, &quot;Mar&quot;, &quot;Avr&quot;, &quot;Mai&quot;, &quot;Jun&quot;, &quot;Jui&quot;, &quot;Ao&ucirc;&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;D&eacute;c&quot;],&#10;                      locale: &quot;fr-FR&quot;,&#10;                    }&#10;                  &#10;                  })
+            </pre>
                 <div class="mb-5">
-                  <p>Logo texte</p>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect-simple.svg" height="33" alt="Inclusion Connect"></div>
-                  </div>
-                  <hr>
-                  <div class="mb-5">
-                    <p>Logo monogramme</p>
-                    <div class="d-flex">
-                      <div class="flex-fill px-3"><img src="images/logo-inclusion-connect-mono.svg" height="53" alt="Inclusion Connect"></div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="mb-5">
-                    <p>Logo graphique</p>
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect.svg" height="53" alt="Inclusion Connect"></div>
-                    </div>
-                  </div>
-                  <div class="mb-5 bg-primary p-5">
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect-light.svg" height="53" alt="Inclusion Connect"></div>
-                    </div>
-                  </div>
-                  <div class="mb-5">
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect-dark.svg" height="53" alt="Inclusion Connect"></div>
-                    </div>
-                  </div>
+                  <label for="date">Choisir une date</label>
+                  <duet-date-picker identifier="date"></duet-date-picker>
                 </div>
-            </article>
-
-            <article class="row py-5" id="ic">
-              <div class="col-12 col-lg-3">
-                <h3>Boutons Inclusion Connect</h3>
-              </div>
-              <div class="col-12 col-lg-9">
-                <!-- Version en img srcset mais ne passe pas sur chrome
-                <a href="" class="btn-inclusion-connect" target="_blank">
-                  <img
-                  src="images/logo-inclusion-connect-two-lines.svg"
-                  srcset="images/logo-inclusion-connect-two-lines.svg 142w,
-                  images/logo-inclusion-connect-one-line.svg 286w"
-                    sizes="(min-width: 420px) 286px, 142px"
-                    alt="Se connecter avec Inclusion Connect"
-                  >
-                </a> -->
-
-                <!-- Version en picture source srcset mais ne passe pas sur les vieux ff -->
-                <a href="" class="btn-inclusion-connect" target="_blank">
-                  <picture>
-                    <source srcset="https://betagouv.github.io/itou-theme/images/logo-inclusion-connect-one-line.svg" height="14" width="286" type="image/svg+xml" media="(min-width: 420px)">
-                    <img src="https://betagouv.github.io/itou-theme/images/logo-inclusion-connect-two-lines.svg" height="37" width="142" alt="Se connecter avec Inclusion Connect">
-                  </picture>
-                </a>
-                <hr>
-                <a href="" class="btn-inclusion-connect" target="_blank">
-                  <img src="images/logo-inclusion-connect-two-lines.svg" height="37" alt="Se connecter avec Inclusion Connect">
-                </a>
-                <hr>
-                <a href="" class="btn-inclusion-connect disabled" target="_blank">
-                  <img src="images/logo-inclusion-connect-two-lines.svg" height="37" alt="Se connecter avec Inclusion Connect">
-                </a>
+                <p><i>Les styles seront automatiquement chargés par le thème itou, il est donc inutile d'inclure les styles par défaut.</i></p>
               </div>
             </article>
-
           </div>
         </section>
 
       </main>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
+
+      <script type="module" src="https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.esm.js"></script>
+      <script nomodule src="https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.js"></script>
+
+      <script>
+        "use strict"
+
+        const picker = document.querySelectorAll("duet-date-picker")
+        const DATE_FORMAT = /^(\d{2})\/(\d{2})\/(\d{4})$/
+
+        picker.forEach(pickerInstance => {
+
+          pickerInstance.dateAdapter = {
+
+            parse(value = "", createDate) {
+              const matches = value.match(DATE_FORMAT)
+              if (matches) {
+                return createDate(matches[3], matches[2], matches[1])
+              }
+            },
+
+            format(date) {
+              const day = ('0' + date.getDate()).slice(-2)
+              const month = ('0' + `${date.getMonth() + 1}`).slice(-2)
+              return `${day}/${month}/${date.getFullYear()}`
+            },
+
+          }
+
+          // Automatically insert slashes '/' in date fields.
+          pickerInstance.addEventListener("keyup", event => {
+            // Do nothing when backspace was pressed.
+            if (event.which !== 8) {
+              const numChars = event.target.value.length
+              if (numChars === 2 || numChars === 5) {
+                event.target.value = `${event.target.value}/`
+              }
+            }
+          })
+
+          pickerInstance.localization = {
+            buttonLabel: "Choisir une date",
+            placeholder: "JJ/MM/AAAA",
+            selectedDateMessage: "La date sélectionnée est",
+            prevMonthLabel: "Mois précédent",
+            nextMonthLabel: "Mois suivant",
+            monthSelectLabel: "Mois",
+            yearSelectLabel: "Année",
+            closeLabel: "Fermer la fenêtre",
+            calendarHeading: "Choisir une date",
+            dayNames: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+            monthNames: [
+              "Janvier",
+              "Février",
+              "Mars",
+              "Avril",
+              "Mai",
+              "Juin",
+              "Juillet",
+              "Août",
+              "Septembre",
+              "Octobre",
+              "Novembre",
+              "Décembre",
+            ],
+            monthNamesShort: ["Jan", "Fév", "Mar", "Avr", "Mai", "Jun", "Jui", "Aoû", "Sep", "Oct", "Nov", "Déc"],
+            locale: "fr-FR",
+          }
+
+        })
+      </script>
   </body>
 
 </html>
