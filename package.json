@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "deploy-gh": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "David Deloo <hello@hellodeloo.com>",
