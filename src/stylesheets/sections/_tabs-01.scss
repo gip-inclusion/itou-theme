@@ -19,8 +19,6 @@
       .nav-link {
         @extend .d-inline-flex;
         @extend .align-items-center;
-        @extend .px-3;
-        @extend .py-2;
         @extend .h-100;
         color: $primary;
         line-height: $line-height-sm;
@@ -33,6 +31,11 @@
         background-color: $nuance-10;
         font-size: $font-size-base;
         font-weight: $font-weight-base;
+        padding: map-get($spacers, 2) map-get($spacers, 3);
+
+        @include media-breakpoint-up(lg) {
+          padding: map-get($spacers, 2) map-get($spacers, 4);
+        }
 
         &::after {
           display: none;
@@ -89,7 +92,7 @@
     padding: map-get($spacers, 3);
 
     @include media-breakpoint-up(lg) {
-      padding: map-get($spacers, 4) map-get($spacers, 3);
+      padding: map-get($spacers, 4);
     }
   }
 }
