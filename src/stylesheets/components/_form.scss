@@ -25,6 +25,28 @@ input.form-control {
   }
 }
 
+.input-group {
+  input.form-control,
+  .input-group-text {
+    height: $input-height;
+  }
+
+  &.input-group-sm {
+    input.form-control,
+    .input-group-text {
+      height: $input-height-sm;
+    }
+  }
+
+  &.input-group-lg {
+    input.form-control,
+    .input-group-text {
+      height: $input-height-lg;
+    }
+  }
+}
+
+
 select.form-select {
   min-height: $input-height;
 
