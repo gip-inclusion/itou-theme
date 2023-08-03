@@ -729,6 +729,10 @@ $hr-border-color: $border-color;
 $hr-border-width: var(--#{$prefix}border-width);
 $hr-opacity: 1;
 
+// scss-docs-start vr-variables
+$vr-border-width:             var(--#{$prefix}border-width) !default;
+// scss-docs-end vr-variables
+
 $legend-margin-bottom: 0.5rem !default;
 $legend-font-size: 1.5rem !default;
 $legend-font-weight: null !default;
@@ -753,9 +757,9 @@ $table-cell-padding-x-sm: 0.5rem;
 
 $table-cell-vertical-align: middle;
 
-$table-color: var(--#{$prefix}body-color);
-$table-bg: null;
-$table-accent-bg: null;
+$table-color: var(--#{$prefix}body-color) !default;
+$table-bg: var(--#{$prefix}body-bg) !default;
+$table-accent-bg: transparent !default;
 
 $table-th-font-weight: $font-weight-normal;
 
@@ -1267,6 +1271,7 @@ $navbar-dark-color: rgba($white, 0.55) !default;
 $navbar-dark-hover-color: rgba($white, 0.75) !default;
 $navbar-dark-active-color: $white !default;
 $navbar-dark-disabled-color: rgba($white, 0.25) !default;
+$navbar-dark-icon-color: $navbar-dark-color !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color: rgba($white, 0.1) !default;
 $navbar-dark-brand-color: $navbar-dark-active-color !default;
@@ -1602,9 +1607,6 @@ $alert-margin-bottom: 1rem;
 $alert-border-radius: var(--#{$prefix}border-radius);
 $alert-link-font-weight: $font-weight-base;
 $alert-border-width: 0;
-$alert-bg-scale: -80% !default;
-$alert-border-scale: -70% !default;
-$alert-color-scale: 40% !default;
 $alert-dismissible-padding-r: $alert-padding-x * 3 !default; // 3x covers width of x plus default padding on either side
 // scss-docs-end alert-variables
 
