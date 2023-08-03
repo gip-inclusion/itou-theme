@@ -37,7 +37,6 @@
       }
 
       ul {
-        @extend .ps-3;
         margin-bottom: map-get($spacers, 4);
       }
 
