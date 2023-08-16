@@ -101,7 +101,8 @@ ol {
 .form-control,
 .form-select,
 .form-check-input,
-.btn {
+.btn,
+button {
   &:focus {
     outline-offset: 2px;
     outline: $blue 2px solid;

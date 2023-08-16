@@ -1,0 +1,70 @@
+.c-info {
+  background-color: $info-lightest;
+  border-radius: $border-radius;
+  border: 1px solid $info-light;
+
+  &__summary {
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .w-100;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    padding: map-get($spacers, 3);
+    margin: 0;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-sm;
+
+    > span {
+      @extend .flex-grow-1;
+    }
+
+    &::before {
+      @extend .d-inline-flex;
+      @extend .flex-grow-0;
+      @extend .me-2;
+      width: 16px;
+      content: '\eea9';
+      font-family: remixicon !important;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1;
+      vertical-align: text-bottom;
+      font-size: $font-size-base;
+      font-weight: $font-weight-bold;
+    }
+
+    &[data-bs-toggle="collapse"] {
+      @extend .has-collapse-caret;
+
+      &::after {
+        @extend .flex-grow-0;
+      }
+
+      &:hover {
+        transition: $btn-transition;
+        background-color: $info-lighter;
+
+        + * {
+          transition: $btn-transition;
+          background-color: $info-lighter;
+        }
+      }
+    }
+  }
+
+  &__detail {
+    font-size: $font-size-sm;
+    padding: 0 map-get($spacers, 3) map-get($spacers, 3) 40px;
+
+    > * {
+      margin-bottom: 0;
+    }
+
+    > * + * {
+      margin-top: map-get($spacers, 2);
+    }
+  }
+}
