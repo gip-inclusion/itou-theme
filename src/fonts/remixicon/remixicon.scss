@@ -9,12 +9,12 @@
 * Date: 2023-07-30
 */
 @font-face {font-family: "remixicon";
-  src: url('../fonts/remixicon/remixicon.eot?t=1681573354175'); /* IE9*/
-  src: url('../fonts/remixicon/remixicon.eot?t=1681573354175#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("../fonts/remixicon/remixicon.woff2?t=1681573354175") format("woff2"),
-  url("../fonts/remixicon/remixicon.woff?t=1681573354175") format("woff"),
-  url('../fonts/remixicon/remixicon.ttf?t=1681573354175') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../fonts/remixicon/remixicon.svg?t=1681573354175#remixicon') format('svg'); /* iOS 4.1- */
+  src: url('remixicon.eot?t=1690730386070'); /* IE9*/
+  src: url('remixicon.eot?t=1690730386070#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("remixicon.woff2?t=1690730386070") format("woff2"),
+  url("remixicon.woff?t=1690730386070") format("woff"),
+  url('remixicon.ttf?t=1690730386070') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('remixicon.svg?t=1690730386070#remixicon') format('svg'); /* iOS 4.1- */
 }
 
 [class^="ri-"], [class*=" ri-"] {
@@ -23,70 +23,6 @@
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.ri-spinner {
-  animation: spin 2s infinite linear;
-  display: inline-block;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.ri-xxl {
-  font-size: $font-size-base * 1.5;
-}
-.ri-xl {
-  font-size: $font-size-base * 1.25;
-}
-.ri-lg {
-  font-size: $font-size-base * 1.125;
-}
-.ri-sm {
-  font-size: $font-size-sm;
-}
-.ri-xs {
-  font-size: $font-size-xs;
-}
-.ri-1x {
-  font-size: 1rem;
-}
-.ri-2x {
-  font-size: 2rem;
-}
-.ri-3x {
-  font-size: 3rem;
-}
-.ri-4x {
-  font-size: 4rem;
-}
-.ri-5x {
-  font-size: 5rem;
-}
-.ri-6x {
-  font-size: 6rem;
-}
-.ri-7x {
-  font-size: 7rem;
-}
-.ri-8x {
-  font-size: 8rem;
-}
-.ri-9x {
-  font-size: 9rem;
-}
-.ri-10x {
-  font-size: 10rem;
-}
-.ri-fw {
-  text-align: center;
-  width: 1.25;
 }
 
 .ri-24-hours-fill:before { content: "\ea01"; }
@@ -5164,3 +5100,4 @@ $ri-twitter-x-fill: "\f3e6";
 $ri-twitter-x-line: "\f3e7";
 $ri-verified-badge-fill: "\f3e8";
 $ri-verified-badge-line: "\f3e9";
+
