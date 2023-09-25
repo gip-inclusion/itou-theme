@@ -22,6 +22,7 @@
 
     <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
     <link rel="stylesheet" href="stylesheets/app.css" />
+
   </head>
 
   <body id="top">
@@ -146,14 +147,132 @@
 
             <article class="row py-5" id="bs">
               <div class="col-12">
-                <h3>Select 2 + BS5 thème</h3>
-                <p>https://apalfrey.github.io/select2-bootstrap-5-theme/</p>
-                <pre class="bg-info-lighter p-3">
+                <h3>Select2 4.1.x + Thème pour BS5</h3>
+                <p>Pour utiliser <a href="https://select2.org/" target="_blank" class="has-external-link">Select2 4.1.0</a> avec son <a href="https://apalfrey.github.io/select2-bootstrap-5-theme/" target="_blank" class="has-external-link">thème BS5</a> il suffit d'ajouter l'appel aux cdn du js
+                  <pre class="bg-info-lighter p-3">
 <code>
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js&quot; integrity=&quot;sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&#10;
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&#60;script src=&#34;https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js&#34;&#62;&#60;/script&#62;&#10;&#60;script src=&#34;https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js&#34; integrity=&#34;sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r&#34; crossorigin=&#34;anonymous&#34;&#62;&#60;/script&#62;&#10;&#60;script src=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js&#34; integrity=&#34;sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+&#34; crossorigin=&#34;anonymous&#34;&#62;&#60;/script&#62;&#10;&#60;script src=&#34;https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js&#34;&#62;&#60;/script&#62;
 </code>
                 </pre>
+                <p><i>Les styles seront automatiquement chargés par le thème itou, il est donc inutile d'inclure les styles par défaut.</i></p>
+
+              </div>
+              <div class="col-12 mt-5">
+                <h5>Exemples</h5>
+                <div>
+                  <label>Basic single select</label><br>
+                  <select class="form-select" id="single-select-field" data-placeholder="Choose one thing">
+                    <option></option>
+                    <option>Reactive</option>
+                    <option>Solution</option>
+                    <option>Conglomeration</option>
+                    <option>Algoritm</option>
+                    <option>Holistic</option>
+                  </select>
+                </div>
+
+                <div>
+                  <br>
+                  <label>Single select w/ optgroup</label>
+                  <select class="form-select" id="single-select-optgroup-field" data-placeholder="Choose one thing">
+                    <option></option>
+                    <optgroup label="Group 1">
+                      <option>Reactive</option>
+                      <option>Solution</option>
+                      <option>Conglomeration</option>
+                    </optgroup>
+                    <optgroup label="Group 2">
+                      <option>Algoritm</option>
+                      <option>Holistic</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div>
+                  <br>
+                  <label>Single select w/ allow clear</label>
+                  <select class="form-select" id="single-select-clear-field" data-placeholder="Choose one thing">
+                    <option></option>
+                    <option>Reactive</option>
+                    <option>Solution</option>
+                    <option>Conglomeration</option>
+                    <option>Algoritm</option>
+                    <option>Holistic</option>
+                  </select>
+                </div>
+
+                <div>
+                  <br>
+                  <label>Disabled single select</label>
+                  <select class="form-select" id="single-select-disabled-field" data-placeholder="Choose one thing" disabled>
+                    <option></option>
+                    <option>Reactive</option>
+                    <option>Solution</option>
+                    <option>Conglomeration</option>
+                    <option>Algoritm</option>
+                    <option>Holistic</option>
+                  </select>
+                </div>
+
+                <div>
+                  <br>
+                  <label>Basic multiple select</label>
+                  <select class="form-select" id="multiple-select-field" data-placeholder="Choose anything" multiple>
+                    <option>Christmas Island</option>
+                    <option>South Sudan</option>
+                    <option>Jamaica</option>
+                    <option>Kenya</option>
+                    <option>French Guiana</option>
+                    <option>Mayotta</option>
+                    <option>Liechtenstein</option>
+                    <option>Denmark</option>
+                    <option>Eritrea</option>
+                    <option>Gibraltar</option>
+                    <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option>Haiti</option>
+                    <option>Namibia</option>
+                    <option>South Georgia and the South Sandwich Islands</option>
+                    <option>Vietnam</option>
+                    <option>Yemen</option>
+                    <option>Philippines</option>
+                    <option>Benin</option>
+                    <option>Czech Republic</option>
+                    <option>Russia</option>
+                  </select>
+                </div>
+
+
+                <div>
+                  <br>
+                  <label>Input groups</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-text">Prepend</div>
+                    <select class="form-select" id="prepend-text-single-field" data-placeholder="Choose one thing">
+                      <option></option>
+                      <option>Reactive</option>
+                      <option>Solution</option>
+                      <option>Conglomeration</option>
+                      <option>Algoritm</option>
+                      <option>Holistic</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <br>
+                  <label>Button</label>
+                  <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button">Prepend</button>
+                    <select class="form-select" id="prepend-button-single-field" data-placeholder="Choose one thing">
+                      <option></option>
+                      <option>Reactive</option>
+                      <option>Solution</option>
+                      <option>Conglomeration</option>
+                      <option>Algoritm</option>
+                      <option>Holistic</option>
+                    </select>
+                  </div>
+                </div>
 
               </div>
 
@@ -165,9 +284,57 @@
 
       </main>
 
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
       <script src="javascripts/app.js"></script>
+
+      <script>
+        $('#single-select-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+        });
+
+        $('#single-select-optgroup-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+        });
+
+        $('#single-select-clear-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+          allowClear: true
+        });
+
+        $('#single-select-disabled-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+        });
+
+        $('#multiple-select-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+          closeOnSelect: false,
+        });
+
+        $('#prepend-text-single-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+        });
+
+        $('#prepend-button-single-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+        });
+      </script>
   </body>
 
 </html>

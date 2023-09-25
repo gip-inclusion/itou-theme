@@ -222,7 +222,7 @@ for (let i = 0, ii = textareaExpandableList.length; i < ii; i += 1) {
 // Add global focus on input-group
 for (let i = 0, ii = inputGroupList.length; i < ii; i += 1) {
   const thisInputGroup = inputGroupList[i];
-  const thisFormControl = thisInputGroup.querySelector('.form-control');
+  const thisFormControl = thisInputGroup.querySelector('.form-control, .form-select');
 
   const toggleFocus = function (e) {
     thisInputGroup.classList.toggle('has-focus');
