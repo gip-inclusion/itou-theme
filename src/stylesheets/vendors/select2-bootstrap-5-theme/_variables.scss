@@ -73,10 +73,10 @@ $s2bs5-multi-item-padding-x: $badge-padding-x !default;
 $s2bs5-options-max-height: 15rem !default;
 
 // Clear/Remove
-$s2bs5-clear-width: 0.5rem !default;
-$s2bs5-clear-height: 0.5rem !default;
-$s2bs5-clear-padding-y: $btn-close-padding-y !default;
-$s2bs5-clear-padding-x: $btn-close-padding-x !default;
+$s2bs5-clear-width: 0.5rem;
+$s2bs5-clear-height: 0.5rem;
+$s2bs5-clear-padding-y: calc($btn-close-padding-y * 2);
+$s2bs5-clear-padding-x: calc($btn-close-padding-x * 2);
 $s2bs5-clear-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>");
 $s2bs5-clear-bg: transparent escape-svg($s2bs5-clear-icon) center /
   $s2bs5-clear-height auto no-repeat !default;

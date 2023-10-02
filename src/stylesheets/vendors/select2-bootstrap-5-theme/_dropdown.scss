@@ -32,6 +32,7 @@
       .select2-search__field {
         display: block;
         width: 100%;
+        max-height: $s2bs5-height;
         padding: $s2bs5-padding-y $s2bs5-padding-x;
         font-family: $s2bs5-font-family;
         @include font-size($s2bs5-font-size);
