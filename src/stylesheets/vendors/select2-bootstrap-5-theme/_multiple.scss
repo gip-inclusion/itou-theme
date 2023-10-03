@@ -8,6 +8,7 @@
       padding-left: 0;
       margin: 0;
       list-style: none;
+      padding-top: 2px;
 
       // Items
       .select2-selection__choice {
@@ -17,7 +18,8 @@
         padding: $s2bs5-multi-item-padding-y $s2bs5-multi-item-padding-x;
         margin-right: 0.375rem;
         margin-top: 0.375rem;
-        @include font-size($s2bs5-font-size);
+        margin-bottom: 0.375rem;
+        @include font-size($s2bs5-font-size-sm);
         color: $s2bs5-color;
         cursor: auto;
         border: $s2bs5-border-width solid $s2bs5-border-color;

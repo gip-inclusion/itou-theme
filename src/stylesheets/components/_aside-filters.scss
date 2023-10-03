@@ -16,12 +16,6 @@
     @extend .card;
     @extend .mb-3;
 
-    // @include media-breakpoint-up(md) {
-    //   &.collapse {
-    //     display: block;
-    //   }
-    // }
-
     &__body {
       @extend .card-body;
 
@@ -31,7 +25,7 @@
         @extend .mb-3;
       }
 
-      ul {
+      ul:not(.select2-selection__rendered) {
         @extend .list-unstyled;
         @extend .mb-0;
 

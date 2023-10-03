@@ -105,8 +105,8 @@
 
                 <div>
                   <br>
-                  <label>Basic multiple select</label>
-                  <select class="form-select" id="multiple-select-field" data-placeholder="Choose anything" multiple>
+                  <label>Multiple select w/ allow clear</label>
+                  <select class="form-select" id="multiple-select-clear-field" data-placeholder="Choose anything" multiple>
                     <option>Christmas Island</option>
                     <option>South Sudan</option>
                     <option>Jamaica</option>
@@ -205,11 +205,12 @@
           placeholder: $(this).data('placeholder'),
         });
 
-        $('#multiple-select-field').select2({
+        $('#multiple-select-clear-field').select2({
           theme: "bootstrap-5",
           width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
           placeholder: $(this).data('placeholder'),
           closeOnSelect: false,
+          allowClear: true,
         });
 
         $('#prepend-text-single-field').select2({
