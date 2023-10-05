@@ -198,6 +198,12 @@ iframe {
 
 .modal {
   .modal-header {
+
+    .btn-close {
+      align-self: flex-start;
+      margin-top: 0;
+    }
+
     + .modal-body {
       @extend .pt-2;
     }

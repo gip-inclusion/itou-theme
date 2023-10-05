@@ -1571,7 +1571,7 @@ $modal-footer-margin-between: 1rem;
 $modal-dialog-margin: 0.5rem !default;
 $modal-dialog-margin-y-sm-up: 1.75rem !default;
 
-$modal-title-line-height: $line-height-base !default;
+$modal-title-line-height: $line-height-sm;
 
 $modal-content-color: null !default;
 $modal-content-bg: var(--#{$prefix}body-bg) !default;
