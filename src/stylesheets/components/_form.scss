@@ -1,5 +1,5 @@
 .form-group {
-  @extend .mb-3;
+  margin-bottom: map-get($spacers, 3);
 
   &.form-group-required > .form-label::after,
   &.form-group-required > label::after {

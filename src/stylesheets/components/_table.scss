@@ -1,13 +1,19 @@
 .table {
+
   thead {
+
+    th {
+      font-size: $font-size-sm;
+      text-transform: uppercase;
+      border-top-width: $table-border-width;
+    }
+
     &.thead-light {
       background-color: $table-active-bg;
       color: $body-color;
     }
 
     th {
-      font-size: $font-size-sm;
-      text-transform: uppercase;
 
       .is-sortable {
         display: inline-flex;

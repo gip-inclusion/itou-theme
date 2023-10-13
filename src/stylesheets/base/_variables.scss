@@ -771,7 +771,7 @@ $table-color: var(--#{$prefix}body-color);
 $table-bg: var(--#{$prefix}body-bg) !default;
 $table-accent-bg: transparent !default;
 
-$table-th-font-weight: $font-weight-normal;
+$table-th-font-weight: $font-weight-medium;
 
 $table-striped-color: $table-color;
 $table-striped-bg-factor: 0.05 !default;
