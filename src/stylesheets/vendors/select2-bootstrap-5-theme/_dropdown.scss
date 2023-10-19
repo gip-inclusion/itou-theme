@@ -72,6 +72,7 @@
         // No results message
         &.select2-results__message {
           color: $s2bs5-placeholder-color;
+          @include font-size($font-size-sm);
         }
 
         // Highlighted Item
