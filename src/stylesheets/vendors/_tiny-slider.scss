@@ -9,6 +9,16 @@
 .tns-outer [data-action] {
   cursor: pointer;
 }
+.tns-outer [data-action] {
+  @extend .btn-link;
+  display: block;
+  margin: 8px auto;
+  font-size: 1rem;
+  min-width: 3em;
+  text-align: center;
+  background: transparent;
+  border: 0;
+}
 .tns-slider {
   -webkit-transition: all 0s;
   -moz-transition: all 0s;
@@ -171,7 +181,7 @@
 .tns-controls {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 45%;
   z-index: 0;
   outline: 0;
 
