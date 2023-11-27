@@ -72,6 +72,34 @@ ol {
   padding-left: map-get($spacers, 3);
 }
 
+.list-step {
+  @extend .list-unstyled;
+
+  li {
+    padding: 0 map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 3);
+    border-left: 2px solid $border-color;
+
+    time {
+      @extend .fs-xs;
+      color: $secondary;
+      line-height: $line-height-sm;
+    }
+
+    span {
+      display: block;
+      line-height: $line-height-sm;
+    }
+
+    &:first-of-type {
+      border-left: 2px solid $info;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 .blockquote {
   font-style: italic;
   padding: map-get($spacers, 3);
