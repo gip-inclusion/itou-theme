@@ -126,6 +126,11 @@ ol {
   outline: $blue 1px solid;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .form-control,
 .form-select,
 .form-check-input,
