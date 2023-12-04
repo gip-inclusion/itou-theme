@@ -209,6 +209,7 @@ select:disabled {
   color: $button;
   background-color: $info-lighter;
   padding: 6px 16px;
+  border: none;
 
   &.active,
   &.focus,
@@ -216,8 +217,8 @@ select:disabled {
   &:active,
   &:focus,
   &:hover {
-    color: $button-light;
-    background-color: $info-light;
+    color: $button-light !important;
+    background-color: $info-light !important;
   }
 
   &:focus {
