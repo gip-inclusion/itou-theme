@@ -203,3 +203,49 @@ select:disabled {
     }
   }
 }
+
+.btn-partner {
+  border-radius: 50rem;
+  color: $button;
+  background-color: $info-lighter;
+  padding: 6px 16px;
+
+  &.active,
+  &.focus,
+  &.hover,
+  &:active,
+  &:focus,
+  &:hover {
+    color: $button-light;
+    background-color: $info-light;
+  }
+
+  &:focus {
+    outline-offset: 2px;
+    outline: $blue 2px solid;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: $blue 2px solid;
+  }
+
+  &.disabled,
+  &:disabled {
+    pointer-events: none;
+    background-color: $disabled-color;
+    border-color: $disabled-color;
+    color: $white;
+  }
+
+  &--diagoriante {
+    background-image: url('../images/logo-partner-diagoriante.svg');
+    background-repeat: no-repeat;
+    background-position: top calc(50% - 4px) left 16px;
+    padding: 6px 16px 8px 46px;
+  }
+}
