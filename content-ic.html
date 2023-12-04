@@ -27,119 +27,7 @@
 
   <body id="top">
 
-    <header class="bg-primary py-3 sticky-top">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-3">
-        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.3.2</label>
-      </div>
-      <div class="col-12 col-lg">
-        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
-          <option value="index.html">---</option>
-          <optgroup label="Layout">
-            <option value="layout.html#grid">Flex Grid</option>
-            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
-            <option value="layout.html#spacing">Utilities for spacing</option>
-          </optgroup>
-          <optgroup label="Content">
-            <option value="content.html#bg-colors">Background colors</option>
-            <option value="content.html#colors">Colors</option>
-            <option value="content.html#images">Images</option>
-            <option value="content.html#shadows">Shadows</option>
-            <option value="content.html#tables">Tables</option>
-            <option value="content.html#text-colors">Text colors</option>
-            <option value="content.html#text-utilities">Text utilities</option>
-            <option value="content.html#typography">Typography</option>
-          </optgroup>
-          <optgroup label="Components">
-            <option value="components.html#alerts">Alerts</option>
-            <option value="components.html#badges">Badges</option>
-            <option value="components.html#breadcrumb">Breadcrumb</option>
-            <option value="components.html#buttons">Buttons</option>
-            <option value="components.html#button-group">Button group</option>
-            <option value="components.html#cards">Cards</option>
-            <option value="components.html#collapse">Collapse</option>
-            <option value="components.html#dropdowns">Dropdowns</option>
-            <option value="components.html#progress">Progress</option>
-            <option value="components.html#pagination">Pagination</option>
-            <option value="components.html#popovers">Popovers</option>
-            <option value="components.html#tabs">Tabs</option>
-            <option value="components.html#tooltips">Tooltips</option>
-            <option value="components.html#modal">Modal</option>
-            <option value="components.html#toasts">Toasts</option>
-          </optgroup>
-          <optgroup label="Forms">
-            <option value="forms.html#forms">Forms</option>
-            <option value="forms.html#input-group">Input group</option>
-          </optgroup>
-          <optgroup label="Utilities BS">
-            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
-          </optgroup>
-          <optgroup label="Content Itou">
-            <option value="content-ic.html">Button Inclusion Connect</option>
-            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
-            <option value="content-itou.html#icones">Icones (remix icons)</option>
-            <option value="content-itou.html#logos">Logos</option>
-          </optgroup>
-          <optgroup label="Components Itou">
-            <option value="components-itou.html#cards">Cards</option>
-            <option value="components-itou.html#liststep">Step list</option>
-            <option value="components-itou.html#stepper">Stepper</option>
-            <option value="components-itou.html#listgroup">Listgroup</option>
-            <option value="components-itou.html#tags">Tags</option>
-            <option value="components-itou.html#box">Box</option>
-          </optgroup>
-          <optgroup label="Sections Itou">
-            <option value="sections-itou-01.html#header">Headers + Post Header</option>
-            <option value="sections-itou-01.html#footer">Footer</option>
-            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
-            <option value="sections-itou-02.html#article-picture-02">Article Picture 02</option>
-            <option value="sections-itou-02.html#article-picture-03">Article Picture 03</option>
-            <option value="sections-itou-03.html#article-picture-group-01">Article Picture Group 01</option>
-            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
-            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
-            <option value="sections-itou-05.html#cards-grid-01">Cards Grid 01</option>
-            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
-            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
-            <option value="sections-itou-06.html#title-01">Simple Title 01</option>
-            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
-          </optgroup>
-          <optgroup label="Pages Itou">
-            <option value="layout-itou-base.html">Base layout</option>
-            <option value="layout-itou-form.html">Formulaire full layout</option>
-            <option value="layout-itou-form-simple.html">Formulaire simple layout</option>
-            <option value="layout-itou-cms.html">CMS & Flatpage layout</option>
-            <option value="layout-itou-search-result.html">Résultats de recherche C1, filtres et cartes</option>
-          </optgroup>
-          <optgroup label="Prototypes Itou">
-            <option value="proto-itou-form-uploads-img.html">Formulaire uploads images</option>
-          </optgroup>
-          <optgroup label="External libraries">
-            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
-            <option value="external-libs-itou-bs.html">Bootstrap.js</option>
-            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
-            <option value="external-libs-itou-ri.html">Remix Icon</option>
-            <option value="external-libs-itou-tac.html">Tarte au citron</option>
-            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
-            <option value="external-libs-itou-s2.html">Select 2</option>
-          </optgroup>
-        </select>
-      </div>
-    </div>
-  </div>
-</header>
-
+    <p%- include('_sections/header-theme') 
 
       <main class="s-main" role="main">
         <section id="content">
@@ -201,8 +89,8 @@
                 <!-- Version en picture source srcset mais ne passe pas sur les vieux ff -->
                 <a href="" class="btn-inclusion-connect" target="_blank">
                   <picture>
-                    <source srcset="https://betagouv.github.io/itou-theme/images/logo-inclusion-connect-one-line.svg" height="14" width="286" type="image/svg+xml" media="(min-width: 420px)">
-                    <img src="https://betagouv.github.io/itou-theme/images/logo-inclusion-connect-two-lines.svg" height="37" width="142" alt="Se connecter avec Inclusion Connect">
+                    <source srcset="https://gip-inclusion.github.io/itou-theme/images/logo-inclusion-connect-one-line.svg" height="14" width="286" type="image/svg+xml" media="(min-width: 420px)">
+                    <img src="https://gip-inclusion.github.io/itou-theme/images/logo-inclusion-connect-two-lines.svg" height="37" width="142" alt="Se connecter avec Inclusion Connect">
                   </picture>
                 </a>
                 <hr>
@@ -213,6 +101,31 @@
                 <a href="" class="btn-inclusion-connect disabled" target="_blank">
                   <img src="images/logo-inclusion-connect-two-lines.svg" height="37" alt="Se connecter avec Inclusion Connect">
                 </a>
+              </div>
+            </article>
+
+
+            <article class="row py-5" id="pt">
+              <div class="col-12 col-lg-3">
+                <h3>Boutons Partenaire</h3>
+              </div>
+              <div class="col-12 col-lg-9">
+                <a href="" class="btn btn-partner btn-partner--diagoriante" target="_blank">
+                  Créer un CV avec Diagoriente
+                </a>
+                <hr>
+                <button class="btn btn-partner btn-partner--diagoriante">
+                  Créer un CV avec Diagoriente
+                </button>
+                <br>
+                <br>
+                <div class="bg-info-lightest border border-info-light rounded p-3">
+                  <p class="fs-sm mb-0"><strong>Ce candidat n’a pas encore de CV ?</strong></p>
+                  <p class="fs-sm">Accompagnez-le dans la création de son CV grâce à notre partenaire Diagoriente.</p>
+                  <a href="" class="btn btn-partner btn-partner--diagoriante" target="_blank">
+                    Créer un CV avec Diagoriente
+                  </a>
+                </div>
               </div>
             </article>
 
