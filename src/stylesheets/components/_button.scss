@@ -210,6 +210,10 @@ select:disabled {
   background-color: $info-lighter;
   padding: 6px 16px;
   border: none;
+  font-size: $font-size-sm;
+  @extend .d-inline-flex;
+  align-items: center;
+  justify-content: center;
 
   &.active,
   &.focus,
@@ -246,7 +250,7 @@ select:disabled {
   &--diagoriente {
     background-image: url('../images/logo-partner-diagoriente.svg');
     background-repeat: no-repeat;
-    background-position: top calc(50% - 4px) left 16px;
+    background-position: top left 16px;
     padding: 6px 16px 8px 46px;
   }
 }

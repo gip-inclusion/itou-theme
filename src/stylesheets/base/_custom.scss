@@ -129,6 +129,7 @@ ol {
 button {
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 .form-control,
@@ -231,7 +232,6 @@ iframe {
 
 .modal {
   .modal-header {
-
     .btn-close {
       align-self: flex-start;
       margin-top: 0;

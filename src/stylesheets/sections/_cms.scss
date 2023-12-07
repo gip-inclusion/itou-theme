@@ -11,13 +11,6 @@
     margin-top: map-get($spacers, 5);
   }
 
-  p,
-  ul {
-    @include media-breakpoint-up(lg) {
-      font-size: $font-size-lg;
-    }
-  }
-
   .richtext-image {
     @extend .img-fluid;
 

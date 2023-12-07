@@ -5,19 +5,23 @@
 }
 
 .font-weight-normal {
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-normal !important;
 }
 
 .font-weight-medium {
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-medium !important;
 }
 
 .font-weight-bold {
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-bold !important;
 }
 
 .text-decoration-underline {
   text-decoration: underline !important;
+}
+
+.text-decoration-dashed {
+  text-decoration: underline dashed !important;
 }
 
 .hidden-if-empty:empty {

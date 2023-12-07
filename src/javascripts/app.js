@@ -9,6 +9,7 @@ const alertDismissibleOnceList = document.querySelectorAll('.alert-dismissible-o
 const textareaExpandableList = document.querySelectorAll('[data-it-expandable=true]');
 const inputGroupList = document.querySelectorAll('.input-group');
 const clipboardCopyList = document.querySelectorAll('[data-it-clipboard=copy]');
+const clipboardButtonCopyList = document.querySelectorAll('[data-it-clipboard-button=copy]');
 const inputPasswordList = document.querySelectorAll('[data-it-password=toggle]');
 const targetConseiList = document.querySelectorAll('[data-it-target-conseil]');
 const sTabs01List = document.querySelectorAll('[data-it-s-tabs-01=true]');
@@ -252,6 +253,29 @@ for (let i = 0,  ii = clipboardCopyList.length; i < ii; i += 1) {
   });
 
   thisClipboardCopy.addEventListener('blur', function () {
+    thisTooltip.hide();
+  });
+}
+
+// Button copy to clipboard
+for (let i = 0,  ii = clipboardButtonCopyList.length; i < ii; i += 1) {
+  const thisClipboardButtonCopy = clipboardButtonCopyList[i];
+  const thisClipboardButtonCopyValue = thisClipboardButtonCopy.dataset.itCopyToClipboard;
+  const thisTooltip = bootstrap.Tooltip.getOrCreateInstance(thisClipboardButtonCopy);
+
+  thisClipboardButtonCopy.addEventListener('click', function () {
+    navigator.clipboard
+      .writeText(thisClipboardButtonCopyValue)
+      .then(() => {
+        //console.log('Ok: ' + thisFormControlClipboardCopy);
+      })
+      .catch(() => {
+        //console.log('Veillez saisir le texte à copier');
+      });
+      thisTooltip.show();
+  });
+
+  thisClipboardButtonCopy.addEventListener('blur', function () {
     thisTooltip.hide();
   });
 }
