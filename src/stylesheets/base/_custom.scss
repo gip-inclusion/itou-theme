@@ -248,6 +248,14 @@ iframe {
 
   .modal-footer {
     @extend .pt-0;
+
+    > * {
+      margin: 0;
+    }
+
+    .btn {
+      margin: calc(var(--#{$prefix}modal-footer-gap) * .5);
+    }
   }
 }
 
