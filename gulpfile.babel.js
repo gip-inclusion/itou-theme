@@ -21,6 +21,8 @@ const paths = {
   distImages: 'dist/images/',
   srcFonts: 'src/fonts/**/*',
   distFonts: 'dist/fonts/',
+  srcFiles: 'src/files/**/*',
+  distFiles: 'dist/files/',
   srcScripts: 'src/javascripts/app.js',
   distScripts: 'dist/javascripts/',
   srcStyles: 'src/stylesheets/**/*.scss',
@@ -109,6 +111,12 @@ export function fonts() {
     .pipe(gulp.dest(paths.distFonts));
 }
 
+// Copy the static files
+export function files() {
+  return gulp.src(paths.srcFiles)
+    .pipe(gulp.dest(paths.distFiles));
+}
+
 // Templates to HTML Task
 export function html() {
   return gulp.src(paths.srcHtml)
@@ -151,10 +159,10 @@ function watch() {
   gulp.watch(paths.srcImages, gulp.series(images, reload));
 }
 
-const dev = gulp.series(cleandist, html, scripts, styles, images, fonts, serve, watch);
+const dev = gulp.series(cleandist, html, scripts, styles, images, fonts, files, serve, watch);
 gulp.task('dev', dev);
 
-const build = gulp.series(cleandist, html, scripts, purgestyles, images, fonts);
+const build = gulp.series(cleandist, html, scripts, purgestyles, images, fonts, files);
 gulp.task('build', build);
 
 export default dev;
