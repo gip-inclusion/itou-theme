@@ -19,7 +19,7 @@
     "@babel/core": "^7.22.5",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
