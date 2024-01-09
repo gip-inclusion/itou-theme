@@ -49,15 +49,27 @@ window.addEventListener('scroll', (e) => {
 for (let i = 0,  ii = burgerToggleList.length; i < ii; i += 1) {
   const thisBurgerToggle = burgerToggleList[i];
 
+  let toogleAriaExpanded = function() {
+    const currentAriaExpandedState = thisBurgerToggle.getAttribute('aria-expanded');
+
+    if (!currentAriaExpandedState || currentAriaExpandedState === 'false') {
+      thisBurgerToggle.setAttribute('aria-expanded', 'true');
+    } else {
+      thisBurgerToggle.setAttribute('aria-expanded', 'false');
+    }
+  };
+
   thisBurgerToggle.addEventListener('click', function (e) {
     e.preventDefault();
     burgerNav.classList.toggle('is-opened');
+    toogleAriaExpanded();
   });
 
   thisBurgerToggle.addEventListener('keypress', function (e) {
     if (e.which == 13) {
       e.preventDefault();
       burgerNav.classList.toggle('is-opened');
+      toogleAriaExpanded();
     }
   });
 }
