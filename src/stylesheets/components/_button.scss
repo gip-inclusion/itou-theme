@@ -68,9 +68,6 @@ select:disabled {
 }
 
 .btn-ico {
-  @extend .d-inline-flex;
-  align-items: center;
-  justify-content: center;
 
   span {
     display: inline-flex;
@@ -103,6 +100,9 @@ select:disabled {
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: $input-height;
 
   > [class^='ri-'] {
