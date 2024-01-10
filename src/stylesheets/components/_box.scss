@@ -41,7 +41,7 @@
         }
       }
 
-      span {
+      div {
         grid-area: 1 / 2 / 2 / 3;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -76,9 +76,12 @@
       @extend .mb-0;
 
       li {
-        @extend .pb-1;
         display: flex;
         align-content: center;
+
+        &:not(:last-child) {
+          @extend .pb-1;
+        }
       }
     }
   }
