@@ -33,7 +33,7 @@
       </ul>
     </nav>
 
-    <%- include('_sections/header', {headerLogo: 'logo-plateforme-inclusion.svg' , headerLogoAlt: 'La plateforme de l inclusion' , modifier: 's-header--plateforme' } ) %>
+    <button%- include('_sections/header', {headerLogo: 'logo-plateforme-inclusion.svg' , headerLogoAlt: 'La plateforme de l inclusion' , modifier: 's-header--plateforme' } ) %>
 
       <main class="s-main" role="main">
 
@@ -366,25 +366,26 @@
                     </fieldset>
 
                     <hr class="mb-3">
-                    <div class="row">
-                      <div class="col-12 mb-3">
-                        <small id="fieldRequired">* champs obligatoires</small>
+
+                    <div class="form-row">
+                      <div class="col-12">
+                        <small class="d-inline-block mb-3" id="fieldRequired">* champs obligatoires</small>
                       </div>
                       <div class="col-12">
-                        <div class="form-row align-items-center gx-3">
+                        <div class="form-row align-items-center justify-content-end gx-3">
                           <div class="form-group col-12 col-lg order-3 order-lg-1">
-                            <a href="" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto" aria-label="Retour à l'étape précédente">
-                              <i class="ri-arrow-go-back-line ri-lg"></i>
-                              <span>Retour</span>
-                            </a>
-                          </div>
-                          <div class="form-group col-6 col-lg-auto order-1 order-lg-2">
-                            <button type="reset" class="btn btn-block btn-outline-primary">
-                              Annuler
+                            <button type="reset" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto">
+                              <i class="ri-close-line ri-lg"></i>
+                              <span>Annuler</span>
                             </button>
                           </div>
-                          <div class="form-group col-6 col-lg-auto order-2 order-lg-3">
-                            <button type="submit" class="btn btn-block btn-primary">
+                          <div class="form-group col col-lg-auto order-1 order-lg-2">
+                            <a href="" class="btn btn-block btn-outline-primary" aria-label="Retour à l'étape précédente">
+                              Retour
+                            </a>
+                          </div>
+                          <div class="form-group col col-lg-auto order-2 order-lg-3">
+                            <button type="submit" class="btn btn-block btn-primary" aria-label="Passer à l'étape suivante">
                               Suivant
                             </button>
                           </div>
