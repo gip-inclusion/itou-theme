@@ -22,7 +22,24 @@
 
     <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <style>
+      .s-home-search__form {
+        background-color: var(--bs-light);
+        padding: 1rem 1rem 0.5rem 1rem;
+        border-radius: 8px;
+      }
 
+      .s-home-search__form .input-group-text,
+      .s-home-search__form .form-control,
+      .s-home-search__form .select2-selection,
+      .s-home-search__form .select2-selection--single {
+        border-color: var(--bs-white) !important;
+      }
+
+      .s-home-search__form .input-group-text {
+        padding-left: 8px !important;
+      }
+    </style>
   </head>
 
   <body id="top">
@@ -44,9 +61,9 @@
 </code>
                 </pre>
                 <p><i>Les styles seront automatiquement chargés par le thème itou, il est donc inutile d'inclure les styles par défaut.</i></p>
-
               </div>
-              <div class="col-12 mt-5">
+
+
                 <h5>Exemples</h5>
                 <div>
                   <label>Basic single select</label><br>
