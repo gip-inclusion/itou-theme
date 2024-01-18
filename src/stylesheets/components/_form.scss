@@ -71,8 +71,7 @@ select.form-select {
   }
 }
 
-.input-group > .form-control:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
-.input-group .select2-selection {
+.input-group > .form-control:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   border-left: 0;
   padding-left: 0;
 }
@@ -80,6 +79,10 @@ select.form-select {
 .input-group > .form-control:not(:last-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   border-right: 0;
   padding-right: 0;
+}
+
+.input-group .select2-selection {
+  border-left: 0 !important;
 }
 
 .form-group > label,
