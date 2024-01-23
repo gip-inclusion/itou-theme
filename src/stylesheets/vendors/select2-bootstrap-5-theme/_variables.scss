@@ -30,7 +30,7 @@ $s2bs5-box-shadow: $form-select-box-shadow !default;
 $s2bs5-transition: $input-transition !default;
 
 // Indicator
-$s2bs5-indicator-padding: $form-select-indicator-padding !default;
+$s2bs5-indicator-padding: $form-select-indicator-padding * 3;
 $s2bs5-indicator: $form-select-indicator !default;
 
 // Focus
