@@ -225,7 +225,7 @@ ul.pagination {
   @extend .ps-0;
 }
 
-[data-bs-toggle],
+[data-bs-toggle]:not([data-bs-toggle='tooltip']),
 [data-bs-btn] {
   cursor: pointer;
 }
