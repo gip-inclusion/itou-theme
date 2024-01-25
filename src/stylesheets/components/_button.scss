@@ -35,7 +35,7 @@ select:disabled {
   &.disabled,
   &:disabled,
   &[readonly] {
-    background-color: $gray-400;
+    color: $disabled-color;
   }
 }
 
@@ -43,6 +43,7 @@ select:disabled {
   color: $button;
   font-weight: $font-weight-bold;
   text-decoration: none !important;
+  border-color: transparent !important;
 
   &.active,
   &.focus,
@@ -63,7 +64,81 @@ select:disabled {
 
   &.disabled,
   &:disabled {
-    color: $nuance-06;
+    color: $disabled-color;
+    border-color: transparent;
+  }
+}
+
+.btn-white {
+  color: $button;
+  font-weight: $font-weight-bold;
+
+  &.active,
+  &.focus,
+  &.hover,
+  &:active,
+  &:focus,
+  &:hover {
+    color: $button-light !important;
+    background-color: $disabled-color-light !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $disabled-color;
+    border-color: transparent;
+  }
+}
+
+.btn-outline-white {
+  color: $white !important;
+  font-weight: $font-weight-bold;
+
+  &.active,
+  &.focus,
+  &.hover,
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white !important;
+    background-color: rgba($white, 0.2) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $disabled-color;
+    border-color: $disabled-color;
+  }
+}
+
+.btn-link-white {
+  color: $white !important;
+  font-weight: $font-weight-bold;
+  text-decoration: none !important;
+  border-color: transparent !important;
+
+  &.active,
+  &.focus,
+  &.hover,
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white !important;
+    border-color: transparent !important;
+
+    &.btn-ico {
+      text-decoration: none;
+
+      span:not([class^='badge-']) {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $disabled-color;
+    border-color: transparent;
   }
 }
 

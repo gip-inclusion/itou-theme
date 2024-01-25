@@ -82,4 +82,14 @@
       }
     }
   }
+
+  &--action {
+    background-color: $button;
+
+    padding-bottom: 0;
+
+    @include media-breakpoint-up(lg) {
+      padding-bottom: map-get($spacers, 2);
+    }
+  }
 }
