@@ -44,6 +44,24 @@ input.form-control {
       height: $input-height-lg;
     }
   }
+
+  &.input-group-xl {
+    input.form-control,
+    .input-group-text {
+      height: $input-height-xl;
+    }
+  }
+
+  &.input-group-search {
+    .form-control,
+    .input-group-text {
+      border-color: $border-color !important;
+    }
+
+    .btn-ico span:not([class^='badge-']) {
+      text-decoration: none !important;
+    }
+  }
 }
 
 

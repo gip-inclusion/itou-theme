@@ -202,6 +202,15 @@ select:disabled {
       @extend .ri-1x;
     }
   }
+
+  &.btn-xl {
+    min-height: $input-height-xl;
+
+    > [class^='ri-'] {
+      font-weight: $font-weight-bold;
+      @extend .ri-1x;
+    }
+  }
 }
 
 .btn-group-action {
