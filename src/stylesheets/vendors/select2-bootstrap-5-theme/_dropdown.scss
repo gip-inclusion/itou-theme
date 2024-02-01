@@ -9,7 +9,8 @@
     overflow: hidden;
     color: $s2bs5-color;
     background-color: $s2bs5-bg;
-    border-color: $s2bs5-focus-border-color;
+    border-color: $dropdown-border-color;
+    box-shadow: $dropdown-box-shadow;
     @include border-radius($s2bs5-border-radius);
 
     // Open Below
@@ -41,7 +42,7 @@
         color: $s2bs5-color;
         background-color: $s2bs5-bg;
         background-clip: padding-box;
-        border: $s2bs5-border-width solid $s2bs5-border-color;
+        border: $s2bs5-border-width solid $border-color-hover !important;
         appearance: none;
 
         @include border-radius($s2bs5-border-radius, 0);

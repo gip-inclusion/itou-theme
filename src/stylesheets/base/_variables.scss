@@ -493,10 +493,10 @@ $border-radius-2xl: $border-radius-xxl !default; // Deprecated in v5.3.0
 
 // scss-docs-start box-shadow-variables
 
-$box-shadow: 0 2px 8px 0 rgba($primary, 0.2);
-$box-shadow-sm: 0 2px 8px 0 rgba($primary, 0.1);
-$box-shadow-lg: 0 2px 16px 0 rgba($primary, 0.1);
-$box-shadow-xl: 0 2px 16px 0 rgba($primary, 0.2);
+$box-shadow: 0 3px 8px 0 rgba($primary, 0.2);
+$box-shadow-sm: 0 3px 8px 0 rgba($primary, 0.1);
+$box-shadow-lg: 0 3px 16px 0 rgba($primary, 0.1);
+$box-shadow-xl: 0 3px 16px 0 rgba($primary, 0.2);
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
 // scss-docs-end box-shadow-variables
 
@@ -827,9 +827,13 @@ $input-btn-padding-y-sm: 0.3rem;
 $input-btn-padding-x-sm: 0.75rem;
 $input-btn-font-size-sm: $font-size-sm !default;
 
-$input-btn-padding-y-lg: 0.55rem;
+$input-btn-padding-y-lg: 0.60rem;
 $input-btn-padding-x-lg: 1rem !default;
 $input-btn-font-size-lg: $font-size-base;
+
+$input-btn-padding-y-xl: 0.80rem;
+$input-btn-padding-x-xl: 1rem !default;
+$input-btn-font-size-xl: $font-size-base;
 
 $input-btn-border-width: var(--#{$prefix}border-width);
 // scss-docs-end input-btn-variables
@@ -853,7 +857,11 @@ $btn-font-size-sm: $input-btn-font-size-sm !default;
 
 $btn-padding-y-lg: $input-btn-padding-y-lg;
 $btn-padding-x-lg: $input-btn-padding-x-lg;
-$btn-font-size-lg: $input-btn-font-size-lg !default;
+$btn-font-size-lg: $input-btn-font-size-lg;
+
+$btn-padding-y-lg: $input-btn-padding-y-xl;
+$btn-padding-x-lg: $input-btn-padding-x-xl;
+$btn-font-size-lg: $input-btn-font-size-xl;
 
 $btn-border-width: $input-btn-border-width;
 
@@ -921,7 +929,11 @@ $input-font-size-sm: $input-btn-font-size-sm !default;
 
 $input-padding-y-lg: $input-btn-padding-y-lg;
 $input-padding-x-lg: $input-btn-padding-x-lg;
-$input-font-size-lg: $input-btn-font-size-lg !default;
+$input-font-size-lg: $input-btn-font-size-lg;
+
+$input-padding-y-xl: $input-btn-padding-y-xl;
+$input-padding-x-xl: $input-btn-padding-x-xl;
+$input-font-size-xl: $input-btn-font-size-xl;
 
 $input-bg: var(--#{$prefix}body-bg) !default;
 $input-disabled-color: $border-color;
@@ -1085,6 +1097,11 @@ $form-select-padding-y-lg: $input-padding-y-lg;
 $form-select-padding-x-lg: $input-padding-x-lg;
 $form-select-font-size-lg: $input-font-size-lg;
 $form-select-border-radius-lg: $input-border-radius-lg;
+
+$form-select-padding-y-xl: $input-padding-y-xl;
+$form-select-padding-x-xl: $input-padding-x-xl;
+$form-select-font-size-xl: $input-font-size-xl;
+$form-select-border-radius-xl: $input-border-radius-lg;
 
 $form-select-transition: $input-transition !default;
 // scss-docs-end form-select-variables
@@ -1305,7 +1322,7 @@ $dropdown-spacer: 0.125rem !default;
 $dropdown-font-size: $font-size-base !default;
 $dropdown-color: var(--#{$prefix}body-color) !default;
 $dropdown-bg: var(--#{$prefix}body-bg) !default;
-$dropdown-border-color: none;
+$dropdown-border-color: $border-color;
 $dropdown-border-radius: var(--#{$prefix}border-radius) !default;
 $dropdown-border-width: 0;
 $dropdown-inner-border-radius: calc(

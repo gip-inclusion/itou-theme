@@ -107,6 +107,9 @@
 
     // Large
     @include s2bs5-sizing($s2bs5-large, ".select2--large");
+
+    // Large
+    @include s2bs5-sizing($s2bs5-xlarge, ".select2--xlarge");
 }
 
 // Using bootstrap classes
@@ -121,5 +124,12 @@
 .form-select-lg {
     ~ .select2-container--bootstrap-5 {
         @include s2bs5-sizing($s2bs5-large);
+    }
+}
+
+// XLarge
+.form-select-xl {
+    ~ .select2-container--bootstrap-5 {
+        @include s2bs5-sizing($s2bs5-xlarge);
     }
 }
