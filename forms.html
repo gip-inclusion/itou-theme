@@ -372,6 +372,20 @@
                     <option value="3">Three</option>
                   </select>
                   <br>
+                  <select class="form-select form-select-lg mb-3">
+                    <option selected>Open this form-select-lg menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <br>
+                  <select class="form-select form-select-xl mb-3">
+                    <option selected>Open this form-select-xl menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <br>
                   <p>The <code>multiple</code> attribute is also supported:</p>
                   <select class="form-select" multiple>
                     <option selected>Open this select menu</option>
@@ -604,13 +618,42 @@
                     </div>
                   </div>
                 </div>
-                <div class="mb-5">
-                  <h6>Custom input-group for search </h6>
+                <div class="mb-5" id="inputGroupSearch">
+                  <h6>Custom input-group-search for search</h6>
                   <p>Champ de recherche + bouton dans input-group</p>
-                  <div class="input-group input-group-lg input-group-search mb-3">
+
+                  <div class="input-group input-group-xl input-group-search mb-3">
+                    <select class="form-select form-select-xl" id="apprend-button-single-field" data-placeholder="Choose one thing">
+                      <option></option>
+                      <option>Reactive</option>
+                      <option>Solution</option>
+                      <option>Conglomeration</option>
+                      <option>Algoritm</option>
+                      <option>Holistic</option>
+                    </select>
+                    <div class="input-group-text p-0">
+                      <button class="btn btn-link btn-ico" type="button" id="button-addon22">
+                        <i class="ri-search-line font-weight-bold" aria-hidden="true"></i>
+                        <span>Rechercher</span>
+                      </button>
+                    </div>
+                  </div>
+
+
+                  <div class="input-group input-group-search mb-3">
                     <input type="text" class="form-control" placeholder="input-group-search" aria-label="Recipient's username" aria-describedby="button-addon20">
                     <div class="input-group-text p-0">
                       <button class="btn btn-link btn-ico" type="button" id="button-addon20">
+                        <i class="ri-search-line font-weight-bold" aria-hidden="true"></i>
+                        <span>Rechercher</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="input-group input-group-lg input-group-search mb-3">
+                    <input type="text" class="form-control" placeholder="input-group-search input-group-lg" aria-label="Recipient's username" aria-describedby="button-addon22">
+                    <div class="input-group-text p-0">
+                      <button class="btn btn-link btn-ico" type="button" id="button-addon22">
                         <i class="ri-search-line font-weight-bold" aria-hidden="true"></i>
                         <span>Rechercher</span>
                       </button>
@@ -627,6 +670,10 @@
                     </div>
                   </div>
 
+                  <br>
+                  <br>
+                  <br>
+
                 </div>
               </div>
             </article>
@@ -636,9 +683,18 @@
 
       </main>
 
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
       <script src="javascripts/app.js"></script>
+      <script>
+        $('#apprend-button-single-field').select2({
+          theme: "bootstrap-5",
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder'),
+        });
+      </script>
   </body>
 
 </html>
