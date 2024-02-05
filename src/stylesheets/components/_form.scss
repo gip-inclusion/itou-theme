@@ -31,27 +31,31 @@ input.form-control {
 
 .input-group {
   input.form-control,
-  .input-group-text {
+  .input-group-text,
+  .btn {
     height: $input-height;
   }
 
   &.input-group-sm {
     input.form-control,
-    .input-group-text {
+    .input-group-text,
+    .btn {
       height: $input-height-sm;
     }
   }
 
   &.input-group-lg {
     input.form-control,
-    .input-group-text {
+    .input-group-text,
+    .btn {
       height: $input-height-lg;
     }
   }
 
   &.input-group-xl {
     input.form-control,
-    .input-group-text {
+    .input-group-text,
+    .btn {
       height: $input-height-xl;
     }
   }
@@ -59,7 +63,7 @@ input.form-control {
   &.input-group-search {
     .form-control,
     .input-group-text,
-    .select2-selection  {
+    .select2-selection {
       border-color: $border-color !important;
     }
 
@@ -67,13 +71,12 @@ input.form-control {
       text-decoration: none !important;
     }
 
-    .select2-selection  {
+    .select2-selection {
       border-right: 0 !important;
       background-image: none !important;
     }
   }
 }
-
 
 select.form-select {
   min-height: $input-height;
@@ -101,21 +104,29 @@ select.form-select {
     height: $input-height-sm;
   }
 
-  &.input-group-lg .input-group-text {
+  &.input-group-lg .input-group-text,
+  &.input-group-lg .select2-container--bootstrap-5 .select2-selection--single {
     height: $input-height-lg;
   }
 
-  &.input-group-xl .input-group-text {
+  &.input-group-xl .input-group-text,
+  &.input-group-xl .select2-container--bootstrap-5 .select2-selection--single {
     height: $input-height-xl;
   }
 }
 
-.input-group > .form-control:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+.input-group
+  > .form-control:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   border-left: 0;
   padding-left: 0;
 }
 
-.input-group > .form-control:not(:last-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+.input-group
+  > .form-control:not(:last-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   border-right: 0;
   padding-right: 0;
 }
