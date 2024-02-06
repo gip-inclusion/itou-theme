@@ -57,6 +57,7 @@ input.form-control {
     .input-group-text,
     .btn {
       height: $input-height-xl;
+      border-radius: $border-radius-lg;
     }
   }
 
