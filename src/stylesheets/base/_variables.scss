@@ -1337,8 +1337,8 @@ $dropdown-link-color: var(--#{$prefix}body-color) !default;
 $dropdown-link-hover-color: $tertiary;
 $dropdown-link-hover-bg: var(--#{$prefix}light);
 
-$dropdown-link-active-color: $component-active-color;
-$dropdown-link-active-bg: $component-active-bg;
+$dropdown-link-active-color: $button-light;
+$dropdown-link-active-bg: $button-lightest;
 
 $dropdown-link-disabled-color: var(--#{$prefix}disabled-color);
 
@@ -1398,8 +1398,8 @@ $pagination-hover-color: var(--#{$prefix}button-light);
 $pagination-hover-bg: transparent;
 $pagination-hover-border-color: transparent; // Todo in v6: remove this?
 
-$pagination-active-color: $component-active-color;
-$pagination-active-bg: $component-active-bg;
+$pagination-active-color: $button-light;
+$pagination-active-bg: $button-lightest;
 $pagination-active-border-color: $component-active-bg;
 
 $pagination-disabled-color: var(--#{$prefix}disabled-color);
@@ -1680,8 +1680,8 @@ $list-group-item-color-scale: 40% !default; // Deprecated in v5.3.0
 // fusv-enable
 
 $list-group-hover-bg: var(--#{$prefix}light);
-$list-group-active-color: $component-active-color;
-$list-group-active-bg: $component-active-bg;
+$list-group-active-color: $button-light;
+$list-group-active-bg: $button-lightest;
 $list-group-active-border-color: $list-group-active-bg;
 
 $list-group-disabled-color: var(--#{$prefix}disabled-color);

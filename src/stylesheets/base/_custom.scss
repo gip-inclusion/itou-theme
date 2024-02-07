@@ -193,12 +193,6 @@ ul.pagination {
         text-decoration: underline;
       }
     }
-
-    &.active {
-      .page-link:hover {
-        background-color: $button-light;
-      }
-    }
   }
 
   .page-link {
@@ -299,33 +293,4 @@ iframe {
     z-index: 1;
     border-radius: $border-radius;
   }
-}
-
-.dropdown-toggle {
-  &::after {
-    border: none;
-    content: '\ea4e';
-    font-family: remixicon !important;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1;
-    vertical-align: middle;
-    font-size: $font-size-base;
-    font-weight: $font-weight-bold;
-    margin-left: 0.4rem;
-    margin-right: -0.25rem;
-  }
-}
-
-.dropdown-header {
-  display: flex;
-  align-items: center;
-  background-color: $light;
-  font-weight: $font-weight-medium;
-  font-size: $font-size-xs;
-  text-transform: uppercase;
-  padding: 0.75rem;
-  border-bottom: $border-width solid $border-color;
-  text-decoration: none !important;
 }

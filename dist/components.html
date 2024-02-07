@@ -1139,6 +1139,41 @@
                   <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code>&lt;button&gt;</code> elements:</p>
                   <br>
                   <div class="row">
+                    <div class="col-8">
+                      <div class="dropdown dropdown-structure">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownStructureMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Transférer cette candidature vers
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownStructureMenuButton">
+                          <a class="dropdown-item dropdown-item__summary active" href="#">
+                            <i class="ri-community-line"></i>
+                            <span>ETTI</span>
+                            <strong>Une nouvelle chance</strong>
+                          </a>
+                          <a class="dropdown-item dropdown-item__summary" href="#">
+                            <i class="ri-community-line"></i>
+                            <span>ETTI</span>
+                            <strong>Une nouvelle chance un peu trop longue</strong>
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <div class="dropdown-item">
+                            <a class="btn-link btn-ico font-weight-medium" href="#">
+                              <i class="ri-home-smile-line" aria-hidden="true"></i>
+                              <span>Une autre structure</span>
+                            </a>
+                          </div>
+                          <div class="dropdown-item">
+                            <button class="btn-link btn-ico font-weight-medium" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Vous devez d'abord décliner la candidature pour pouvoir la tranférer à un autre employeur">
+                              <i class="ri-home-smile-line text-disabled" aria-hidden="true"></i>
+                              <span class="text-disabled">Une autre structure</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
                     <div class="col-6">
                       <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
