@@ -58,7 +58,7 @@
     }
 
     &--nav {
-      nav {
+      > nav {
         > ul {
           @extend .list-inline;
           @extend .list-unstyled;
@@ -68,17 +68,12 @@
 
           > li {
             @extend .list-inline-item;
-            @extend .m-0;
             @extend .p-0;
+            //@extend .m-0;
+            @extend .me-3;
 
-            &:last-child > a,
-            &:last-child > button {
+            &:last-child {
               @extend .me-0;
-            }
-
-            > a,
-            > button {
-              @extend .me-3;
             }
           }
         }
@@ -133,25 +128,15 @@
     }
 
     > nav {
-      ul {
+      > ul {
         @extend .list-unstyled;
         @extend .m-0;
         width: 100%;
 
         > li {
           @extend .d-block;
-          @extend .m-0;
           @extend .p-0;
-
-          &:last-child > a,
-          &:last-child > button {
-            @extend .me-0;
-          }
-
-          > a,
-          > button {
-            @extend .mb-3;
-          }
+          @extend .mb-3;
         }
 
         + ul {

@@ -29,9 +29,6 @@
 
 .dropdown {
   &-structure {
-    .dropdown-menu {
-      max-width: 320px;
-    }
 
     .dropdown-item {
       @extend .py-3;
