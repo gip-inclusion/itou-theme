@@ -24,8 +24,10 @@
   text-decoration: underline dashed !important;
 }
 
-.hidden-if-empty:empty {
-  @extend .d-none;
+.hidden-if-empty:empty,
+.hidden-if-empty:not(.hidden-if-empty:has(.col)),
+.hidden-if-empty:not(.hidden-if-empty:has(.btn)) {
+  display: none;
 }
 
 .img-fitcover {
