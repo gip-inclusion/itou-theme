@@ -20,9 +20,10 @@
       @extend .card-body;
 
       legend {
+        float: none;
         @extend .fs-base;
         @extend .font-weight-bold;
-        @extend .mb-3;
+        margin-bottom: map-get($spacers, 3);
       }
 
       ul:not(.select2-selection__rendered) {

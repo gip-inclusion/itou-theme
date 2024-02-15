@@ -40,6 +40,24 @@
       </fieldset>
       <hr>
       <fieldset>
+        <legend class="has-collapse-caret mb-0" data-bs-toggle="collapse" href="#collapseArrondissements" role="button" aria-expanded="false" aria-controls="collapseArrondissements">Arrondissement</legend>
+        <div class="collapse" id="collapseArrondissements">
+          <ul class="mt-3">
+            <% for (var i=1; i <=20; i=i+1 ) { %>
+              <li>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item<%=i%>">
+                  <label class="form-check-label" for="customRadio1Item<%=i%>">
+                    <%=i%>
+                  </label>
+                </div>
+              </li>
+              <% } %>
+          </ul>
+        </div>
+      </fieldset>
+      <hr>
+      <fieldset>
         <legend>Types de structure</legend>
         <ul>
           <li>
