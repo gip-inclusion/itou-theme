@@ -29,6 +29,18 @@
 
 .dropdown {
   &-structure {
+    @include media-breakpoint-up(xl) {
+      min-width: 250px;
+
+      .dropdown-toggle {
+        width: 100%;
+        justify-content: start;
+
+        &.btn-ico > span {
+          flex-grow: 1;
+        }
+      }
+    }
 
     .dropdown-item {
       @extend .py-3;
