@@ -13,10 +13,10 @@
   }
 
   .card-footer {
-    padding:  map-get($spacers, 2);
+    padding: map-get($spacers, 2);
 
     > * {
-      margin: $modal-footer-margin-between * .5;
+      margin: $modal-footer-margin-between * 0.5;
     }
   }
 
@@ -31,72 +31,95 @@
     @extend .text-decoration-underline;
   }
 
-  &--plateforme {
-
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $primary;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--marche {
-
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $marche;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--pilotage {
-
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $pilotage;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--communaute {
-
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $communaute;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--emploi {
-
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $emploi;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
   &.has-one-link-inside {
-
     &:hover {
       border-color: $button-light;
     }
   }
 
   &.has-links-inside {
-
     &:hover {
       border-color: $border-color-hover;
+    }
+  }
+
+  &--results {
+    .card-header,
+    .card-body {
+      padding: map-get($spacers, 4);
+    }
+
+    .card-footer {
+      padding: map-get($spacers, 3);
+
+      > * {
+        margin: $modal-footer-margin-between * 0.5;
+      }
+    }
+
+    &__summary {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: repeat(2, auto);
+      grid-column-gap: map-get($spacers, 2);
+      text-align: left;
+
+      i {
+        grid-area: 1 / 1 / 3 / 2;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: $info-lightest;
+        border-radius: $border-radius-lg;
+        font-size: $h3-font-size;
+        font-weight: $font-weight-medium;
+        color: $info;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      div {
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+      }
+
+      h3 {
+        margin-bottom: 0;
+        line-height: $line-height-sm;
+      }
+    }
+
+    &__list-contact {
+      @extend .fs-sm;
+      @extend .list-unstyled;
+      @extend .list-inline;
+      @extend .lh-sm;
+
+      li {
+        display: inline-flex;
+        align-content: center;
+        @extend .pe-3;
+        @extend .pt-1;
+      }
+    }
+
+    .has-collapse-caret {
+      position: relative;
+
+      &::before {
+        margin-right: map-get($spacers, 1);
+        content: attr(data-it-collapse-more);
+      }
+
+      &[aria-expanded='true']::before {
+        content: attr(data-it-collapse-less);
+      }
     }
   }
 }
