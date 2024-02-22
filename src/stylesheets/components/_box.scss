@@ -186,91 +186,18 @@
     }
 
     &__list-data {
-      @include media-breakpoint-up(md) {
-        display: flex;
-      }
+      ul {
+        line-height: $line-height-sm;
+        font-size: $font-size-sm;
+        margin-bottom: 0;
 
-      > div {
-        width: 100%;
-
-        &:last-child:not(:only-child) {
-          margin-top: map-get($spacers, 3);
-        }
-
-        @include media-breakpoint-up(md) {
-          &:first-child:not(:only-child) {
-            width: 50%;
-            padding-right: map-get($spacers, 4);
-          }
-
-          &:last-child:not(:only-child) {
-            width: 50%;
-            padding-left: map-get($spacers, 4);
-            margin-top: 0;
-            border-left: 1px solid $border-color;
-          }
-        }
-
-        > strong {
-          display: inline-block;
-          font-weight: $font-weight-bold;
+        li:not(:last-child) {
           margin-bottom: map-get($spacers, 2);
-          line-height: $line-height-sm;
-        }
-
-        > ul {
-          line-height: $line-height-sm;
-          font-size: $font-size-sm;
-          margin-bottom: 0;
-
-          li {
-            margin-bottom: map-get($spacers, 1);
-          }
-
-          li:has(> span) {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            gap: map-get($spacers, 3);
-
-            &:before {
-              content: '';
-              position: absolute;
-              transform: translateY(-50%);
-              top: 50%;
-              border-radius: 50%;
-              left: -1rem;
-              top: 50%;
-              width: 5px;
-              height: 5px;
-              background-color: $body-color;
-            }
-
-            > span:first-child {
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden;
-            }
-
-            > span:last-child {
-              white-space: nowrap;
-            }
-          }
-
-          &.collapsing + button[data-bs-toggle='collapse'],
-          &.show + button[data-bs-toggle='collapse'] {
-            display: none;
-          }
-        }
-
-        > span {
-          line-height: $line-height-sm;
-          font-size: $font-size-sm;
         }
       }
     }
 
-    .has-collapse-caret {
+    .btn.has-collapse-caret {
       position: relative;
 
       &::before {

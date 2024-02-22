@@ -36,7 +36,7 @@
       font-weight: $font-weight-bold;
     }
 
-    &[data-bs-toggle="collapse"] {
+    &[data-bs-toggle='collapse'] {
       @extend .has-collapse-caret;
 
       &::after {
@@ -65,6 +65,31 @@
 
     > * + * {
       margin-top: map-get($spacers, 2);
+    }
+  }
+
+  &--secondary {
+    background-color: $info-lightest;
+    border: 1px solid $info-lightest;
+
+    .c-info__summary {
+      &::before {
+        display: none !important;
+      }
+
+      &[data-bs-toggle='collapse'] {
+        &:hover {
+          background-color: $info-lightest;
+
+          + * {
+            background-color: $info-lightest;
+          }
+        }
+      }
+    }
+
+    .c-info__detail {
+      padding: 0 map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 3);
     }
   }
 }
