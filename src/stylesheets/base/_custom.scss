@@ -102,6 +102,7 @@ ol {
 
 .list-data {
   @extend .list-unstyled;
+  margin-bottom: 0;
   display: grid;
   text-align: left;
   grid-row-gap: map-get($spacers, 3);
@@ -119,6 +120,13 @@ ol {
       margin-bottom: 0;
       font-weight: $font-weight-bold;
       line-height: $line-height-sm;
+    }
+  }
+
+  &__two-column-md {
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: map-get($spacers, 3);
     }
   }
 

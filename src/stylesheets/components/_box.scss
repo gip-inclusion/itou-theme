@@ -191,7 +191,7 @@
         font-size: $font-size-sm;
         margin-bottom: 0;
 
-        li:not(:last-child) {
+        li {
           margin-bottom: map-get($spacers, 2);
         }
       }
