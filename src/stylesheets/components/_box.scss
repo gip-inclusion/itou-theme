@@ -217,39 +217,39 @@
           font-size: $font-size-sm;
           margin-bottom: 0;
 
-          li:not(:last-child) {
+          li {
             margin-bottom: map-get($spacers, 1);
           }
 
-          li:has(> span) {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            gap: map-get($spacers, 3);
+          // li:has(> span) {
+          //   position: relative;
+          //   display: flex;
+          //   justify-content: space-between;
+          //   gap: map-get($spacers, 3);
 
-            &:before {
-              content: '';
-              position: absolute;
-              transform: translateY(-50%);
-              top: 50%;
-              border-radius: 50%;
-              left: -1rem;
-              top: 50%;
-              width: 5px;
-              height: 5px;
-              background-color: $body-color;
-            }
+          //   &:before {
+          //     content: '';
+          //     position: absolute;
+          //     transform: translateY(-50%);
+          //     top: 50%;
+          //     border-radius: 50%;
+          //     left: -1rem;
+          //     top: 50%;
+          //     width: 5px;
+          //     height: 5px;
+          //     background-color: $body-color;
+          //   }
 
-            > span:first-child {
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden;
-            }
+          //   > span:first-child {
+          //     text-overflow: ellipsis;
+          //     white-space: nowrap;
+          //     overflow: hidden;
+          //   }
 
-            > span:last-child {
-              white-space: nowrap;
-            }
-          }
+          //   > span:last-child {
+          //     white-space: nowrap;
+          //   }
+          // }
 
           &.collapsing + button[data-bs-toggle='collapse'],
           &.show + button[data-bs-toggle='collapse'] {
