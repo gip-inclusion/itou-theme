@@ -2,6 +2,7 @@
   @extend .d-inline-flex;
   @extend .flex-row;
   @extend .align-items-center;
+  vertical-align: middle;
 
   &-base {
     font-size: $font-size-base;
