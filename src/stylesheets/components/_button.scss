@@ -173,6 +173,11 @@ select:disabled {
     min-height: $input-height-lg;
     width: $input-height-lg;
   }
+
+  &.btn-xl {
+    min-height: $input-height-xl;
+    width: $input-height-xl;
+  }
 }
 
 .btn {
@@ -199,7 +204,7 @@ select:disabled {
 
     > [class^='ri-'] {
       font-weight: $font-weight-bold;
-      @extend .ri-1x;
+      @extend .ri-xxl;
     }
   }
 
@@ -208,7 +213,7 @@ select:disabled {
 
     > [class^='ri-'] {
       font-weight: $font-weight-bold;
-      @extend .ri-1x;
+      @extend .ri-xxl;
     }
   }
 }
