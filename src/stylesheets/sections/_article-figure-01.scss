@@ -3,7 +3,7 @@
   margin-bottom: map-get($spacers, 6);
 
   @include media-breakpoint-up(lg) {
-    margin-top: map-get($spacers, 9);
+    margin-top: map-get($spacers, 7);
     margin-bottom: map-get($spacers, 9);
   }
 
@@ -20,7 +20,6 @@
 
     &--figure {
       figure {
-        @extend .w-100;
         @extend .mb-3;
 
         @include media-breakpoint-up(lg) {
