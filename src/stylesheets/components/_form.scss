@@ -36,11 +36,20 @@ input.form-control {
     height: $input-height;
   }
 
+  .btn > [class^='ri-'] {
+    font-weight: $font-weight-medium;
+    @extend .ri-1x;
+  }
+
   &.input-group-sm {
     input.form-control,
     .input-group-text,
     .btn {
       height: $input-height-sm;
+    }
+
+    .btn > [class^='ri-'] {
+      @extend .ri-sm;
     }
   }
 
@@ -50,6 +59,10 @@ input.form-control {
     .btn {
       height: $input-height-lg;
     }
+
+    .btn > [class^='ri-'] {
+      font-weight: $font-weight-bold;
+    }
   }
 
   &.input-group-xl {
@@ -58,6 +71,10 @@ input.form-control {
     .btn {
       height: $input-height-xl;
       border-radius: $border-radius-lg;
+    }
+
+    .btn > [class^='ri-'] {
+      font-weight: $font-weight-bold;
     }
   }
 

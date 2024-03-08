@@ -1,0 +1,48 @@
+.s-article-figure-01 {
+  margin-top: map-get($spacers, 4);
+  margin-bottom: map-get($spacers, 6);
+
+  @include media-breakpoint-up(lg) {
+    margin-top: map-get($spacers, 9);
+    margin-bottom: map-get($spacers, 9);
+  }
+
+  &__col {
+    &--article {
+      @include media-breakpoint-up(lg) {
+        padding-left: map-get($spacers, 7);
+      }
+
+      article {
+        @extend .w-100;
+      }
+    }
+
+    &--figure {
+      figure {
+        @extend .w-100;
+        @extend .mb-3;
+
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  &--ltr {
+    .s-article-figure-01__col--figure {
+      @include media-breakpoint-up(lg) {
+        order: 2;
+      }
+    }
+
+    .s-article-figure-01__col--article {
+      @include media-breakpoint-up(lg) {
+        order: 1;
+        padding-left: map-get($spacers, 3);
+        padding-right: map-get($spacers, 7);
+      }
+    }
+  }
+}

@@ -29,6 +29,51 @@
     <%- include('_sections/header-theme') %>
 
       <main class="s-main" role="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12" id="article-picture-01">
+              <h3>Article + Figure 01 <code>.s-article-figure-01</code></h3>
+              <h4>--modifier <code>--rtl</code></h4>
+            </div>
+          </div>
+        </div>
+        <section class="s-article-figure-01 s-article-figure-01--ltr">
+          <div class="s-article-figure-01__container container container-max-lg">
+            <div class="s-article-figure-01__row row">
+              <div class="s-article-figure-01__col s-article-figure-01__col--figure col-12 col-lg-4 d-flex align-items-center">
+                <figure>
+                  <img src="https://via.placeholder.com/800x600" class="img-fluid img-fitcover" alt="">
+                </figure>
+              </div>
+              <div class="s-article-figure-01__col s-article-figure-01__col--article col-12 col-lg-8 d-flex align-items-center">
+                <article>
+                  <h3 class="h1 text-tertiary">Article + Figure 01</h3>
+                  <p class="fs-lg">Ce service facilite la mise en relation des personnes les plus éloignées de l'emploi avec les employeurs solidaires (SIAE, GEIQ, EA et EATT) et les accompagnants (orienteurs et prescripteurs habilités).</p>
+                  <p>Il offre aux utilisateurs un outil numérique mutualisé pour simplifier les procédures, fluidifier les parcours d'insertion entre professionnels et renforcer la qualité de l'accompagnement des personnes.</p>
+                  <a href="" class="btn btn-outline-primary w-100 w-lg-auto">En savoir plus</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-article-figure-01">
+          <div class="s-article-figure-01__container container container-max-lg">
+            <div class="s-article-figure-01__row row">
+              <div class="s-article-figure-01__col s-article-figure-01__col--figure col-12 col-lg-4 d-flex align-items-center">
+                <figure>
+                  <img src="https://via.placeholder.com/800x600" class="img-fluid img-fitcover" alt="">
+                </figure>
+              </div>
+              <div class="s-article-figure-01__col s-article-figure-01__col--article col-12 col-lg-8 d-flex align-items-center">
+                <article>
+                  <h3 class="h1 text-tertiary">Article + Figure 01</h3>
+                  <p class="fs-lg">Ce service facilite la mise en relation des personnes les plus éloignées de l'emploi avec les employeurs solidaires (SIAE, GEIQ, EA et EATT) et les accompagnants (orienteurs et prescripteurs habilités).</p>
+                  <p>Il offre aux utilisateurs un outil numérique mutualisé pour simplifier les procédures, fluidifier les parcours d'insertion entre professionnels et renforcer la qualité de l'accompagnement des personnes.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <br>
         <br>
@@ -37,86 +82,45 @@
           <div class="row">
             <div class="col-12" id="article-picture-01">
               <h3>Article + Picture 01 <code>.s-article-picture-01</code></h3>
-              <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code>, <code>--ltr</code></h4>
+              <h4>--modifier <code>--ltr</code></h4>
             </div>
           </div>
         </div>
         <%- include('_sections/article-picture-01') %>
-          <br>
-          <br>
-          <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--marche' } ) %>
-            <br>
-            <br>
-            <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--emploi' } ) %>
-              <br>
-              <br>
-              <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--communaute' } ) %>
-                <br>
-                <br>
-                <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--pilotage' } ) %>
-                  <br>
-                  <br>
-                  <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--ltr' } ) %>
+        <br>
+        <br>
+        <%- include('_sections/article-picture-01', {modifier: 's-article-picture-01--ltr' } ) %>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
 
-
-                    <br>
-                    <br>
-                    <hr>
-                    <br>
-                    <br>
-
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-12" id="article-picture-02">
-                          <h3>Article + Picture 02 <code>.s-article-picture-02</code></h3>
-                          <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code>, <code>--ltr</code></h4>
-                        </div>
-                      </div>
-                    </div>
-                    <%- include('_sections/article-picture-02') %>
-                      <br>
-                      <br>
-                      <%- include('_sections/article-picture-02', {modifier: 's-article-picture-02--marche' } ) %>
-                        <br>
-                        <br>
-                        <%- include('_sections/article-picture-02', {modifier: 's-article-picture-02--emploi' } ) %>
-                          <br>
-                          <br>
-                          <%- include('_sections/article-picture-02', {modifier: 's-article-picture-02--communaute' } ) %>
-                            <br>
-                            <br>
-                            <%- include('_sections/article-picture-02', {modifier: 's-article-picture-02--pilotage' } ) %>
-                              <br>
-                              <br>
-                              <%- include('_sections/article-picture-02', {modifier: 's-article-picture-02--ltr' } ) %>
-
-                                <br>
-                                <br>
-                                <hr>
-                                <br>
-                                <br>
-
-                                <div class="container">
-                                  <div class="row">
-                                    <div class="col-12" id="article-picture-03">
-                                      <h3>Article + Picture 03 <code>.s-article-picture-03</code></h3>
-                                      <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
-                                    </div>
-                                  </div>
-                                </div>
-                                <%- include('_sections/article-picture-03') %>
-                                  <br>
-                                  <br>
-                                  <%- include('_sections/article-picture-03', {modifier: 's-article-picture-03--marche' } ) %>
-                                    <br>
-                                    <br>
-                                    <%- include('_sections/article-picture-03', {modifier: 's-article-picture-03--emploi' } ) %>
-                                      <br>
-                                      <br>
-                                      <%- include('_sections/article-picture-03', {modifier: 's-article-picture-03--communaute' } ) %>
-                                        <br>
-                                        <br>
-                                        <%- include('_sections/article-picture-03', {modifier: 's-article-picture-03--pilotage' } ) %>
+        <div class="container">
+          <div class="row">
+            <div class="col-12" id="article-picture-02">
+              <h3>Article + Picture 02 <code>.s-article-picture-02</code></h3>
+              <h4>--modifier <code>--ltr</code></h4>
+            </div>
+          </div>
+        </div>
+        <%- include('_sections/article-picture-02') %>
+        <br>
+        <br>
+        <%- include('_sections/article-picture-02', {modifier: 's-article-picture-02--ltr' } ) %>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-12" id="article-picture-03">
+              <h3>Article + Picture 03 <code>.s-article-picture-03</code></h3>
+            </div>
+          </div>
+        </div>
+        <%- include('_sections/article-picture-03') %>
       </main>
 
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
