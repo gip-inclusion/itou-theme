@@ -45,7 +45,7 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Accueil</a></li>
                     <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Formulaire</li>
+                    <li class="breadcrumb-item active" aria-current="page">Formulaire simple</li>
                   </ol>
                 </nav>
               </div>
@@ -77,74 +77,23 @@
               </div>
             </div>
             <div class="s-section__row row">
-              <div class="s-section__col col-12">
-                <div class="c-form pt-0">
-                  <form class="pt-3 pt-lg-5 js-needs-validation" novalidate>
+              <div class="s-section__col col-12 col-lg-8">
+                <div class="c-form">
+                  <form class="js-needs-validation" novalidate>
                     <fieldset>
                       <div class="row">
-                        <div class="col-12 col-lg-8">
-                          <legend>Titre de ce fieldset 1 (Optionnel)</legend>
-                          <div class="form-group form-group-required">
-                            <div class="form-check">
-                              <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" required>
-                              <label class="form-check-label" for="customRadio1">Toggle this custom radio</label>
-                            </div>
-                            <div class="form-check">
-                              <input type="radio" id="customRadio2" name="customRadio" class="form-check-input" required>
-                              <label class="form-check-label" for="customRadio2">Or toggle this other custom radio</label>
-                              <div class="invalid-feedback">You must checked this.</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-
-                    <div class="row">
-                      <div class="col-12 col-lg-8">
-                        <hr>
-                      </div>
-                    </div>
-
-                    <fieldset>
-                      <div class="row">
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12">
                           <legend>Titre de ce fieldset 2 (Optionnel)</legend>
                           <div class="form-group form-group-required">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                            <div class="invalid-feedback">Please provide a Email.</div>
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <div class="invalid-feedback">Please provide a Email.</div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-lg-8">
                           <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" data-it-target-conseil="#exampleInputPassword1Conseil">
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="c-form-conseil">
-                            <div class="is-openable" id="exampleInputPassword1Conseil" data-it-target-conseil="#exampleInputPassword1Conseil" tabindex="0">
-                              <p>
-                                <i class="ri-lightbulb-line ri-lg me-1"></i><strong>Titre conseil 1</strong><br>
-                                Quisquam, laboriosam! Labore inventore facere ipsa a magnam ipsam illo illum perspiciatis. Voluptatum qui at laboriosam odit doloremque amet fugiat reiciendis dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam laudantium alias blanditiis qui magni vel. Sunt, animi. Consequuntur rerum in dolor hic corrupti incidunt maiores explicabo dolores eligendi eaque?
-                              </p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam! Labore inventore facere ipsa a magnam ipsam illo illum perspiciatis. odit doloremque amet fugiat reiciendis dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam laudantium alias blanditiis qui magni vel. Sunt, animi. Consequuntur rerum in dolor hic corrupti incidunt maiores explicabo dolores eligendi eaque?</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-lg-8">
-                          <div class="form-group form-group-required">
                             <div class="form-check">
-                              <input type="checkbox" class="form-check-input" id="customCheck1" required>
-                              <label class="form-check-label" for="customCheck1">Check this required custom checkbox</label>
-                              <div class="invalid-feedback">
-                                You must checked this.
-                              </div>
+                              <input type="checkbox" class="form-check-input" id="customCheck1">
+                              <label class="form-check-label" for="customCheck1">Check this custom checkbox</label>
                             </div>
                           </div>
                           <div class="form-group">
@@ -157,17 +106,13 @@
                           </div>
                         </div>
                       </div>
-
                     </fieldset>
-                    <div class="row">
-                      <div class="col-12 col-lg-8">
-                        <hr>
-                      </div>
-                    </div>
+
+                    <hr>
 
                     <fieldset>
                       <div class="row">
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12">
                           <legend>Titre de ce fieldset 3 (Optionnel)</legend>
                           <div class="row">
                             <div class="form-group col-md-6">
@@ -181,7 +126,7 @@
                           </div>
                           <div class="form-group">
                             <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" data-it-target-conseil="#exampleInputAddres1Conseil">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" data-bs-target-conseil="#exampleInputAddres1Conseil">
                           </div>
                           <div class="form-group">
                             <label for="inputAddress2">Address 2</label>
@@ -368,20 +313,16 @@
                       </div>
                     </fieldset>
 
-                    <div class="row">
-                      <div class="col-12 col-lg-8">
-                        <hr>
-                      </div>
-                    </div>
-
+                    <hr>
                     <fieldset>
                       <div class="row">
-                        <div class="col-12 col-lg-8">
-                          <legend>Titre de ce fieldset 4 (Optionnel)</legend>
+                        <div class="col-12">
+
+                          <legend>Titre de ce fieldset (Optionnel)</legend>
                           <div class="row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group form-group-required col-md-6">
                               <label for="validationCustom01">First name</label>
-                              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                              <input type="text" class="form-control" id="validationCustom01" value="Mark" required aria-describedby="fieldRequired">
                               <div class="valid-feedback">
                                 Looks good!
                               </div>
@@ -419,12 +360,13 @@
                               </div>
                             </div>
                           </div>
+
                         </div>
                       </div>
                     </fieldset>
 
                     <div class="row">
-                      <div class="col-12 col-lg-8">
+                      <div class="col-12">
                         <hr class="mb-3">
                         <small class="d-inline-block mb-3" id="fieldRequired">* champs obligatoires</small>
                         <div class="form-row align-items-center justify-content-end gx-3">
