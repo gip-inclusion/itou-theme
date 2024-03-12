@@ -31,13 +31,13 @@
 
   &--ltr {
     .s-article-figure-01__col--figure {
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         order: 2;
       }
     }
 
     .s-article-figure-01__col--article {
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         order: 1;
         padding-left: map-get($spacers, 3);
         padding-right: map-get($spacers, 7);
