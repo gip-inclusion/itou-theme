@@ -6,6 +6,20 @@
       border: 0;
       border-bottom: 2px solid transparent;
       transition: all 0.3s ease-in-out;
+      display: flex;
+      @extend .flex-nowrap;
+      align-items: center;
+      min-height: $input-height-lg;
+
+      > i {
+        font-size: 1rem !important;
+      }
+
+      > .badge {
+        color: $info;
+        background-color: $info-lighter;
+        transition: all 0.3s ease-in-out;
+      }
 
       &:hover,
       &:focus {
@@ -16,6 +30,20 @@
 
       &.active {
         border-color: $button;
+
+        > .badge {
+          color: $white;
+          background-color: $info;
+        }
+      }
+
+      &.disabled,
+      &:disabled {
+
+        > .badge {
+          color: $disabled-color;
+          background-color: $disabled-color-light;
+        }
       }
     }
   }

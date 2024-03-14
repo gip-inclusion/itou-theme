@@ -14,20 +14,12 @@
     .nav-item {
 
       .nav-link {
-        display: flex;
-        @extend .flex-nowrap;
-        align-items: center;
-        min-height: $input-height-lg;
-
-        > i {
-          font-size: 1rem !important;
-        }
 
         &:hover:not(.active),
         &:focus:not(.active) {
           color: $button;
           background-color: $nav-tabs-link-active-bg;
-          border-color: $nav-tabs-link-active-bg;
+          border-color: $nuance-08;
         }
       }
     }
