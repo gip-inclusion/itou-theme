@@ -23,20 +23,14 @@
         transition: all 0.3s ease-in-out;
       }
 
-      &:hover,
-      &:focus {
+      &:hover {
         color: $button;
-        background-color: $nav-tabs-link-active-bg;
+        background-color: $nuance-09;
         border-color: $nuance-08;
       }
 
       &.active {
         border-color: $button;
-
-        > .badge {
-          color: $white;
-          background-color: $info;
-        }
       }
 
       &.disabled,

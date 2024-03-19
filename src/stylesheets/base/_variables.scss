@@ -1242,7 +1242,7 @@ $nav-tabs-border-width: 0;
 $nav-tabs-border-radius: 0;
 $nav-tabs-link-hover-border-color: var(--#{$prefix}primary);
 $nav-tabs-link-active-color: var(--#{$prefix}button);
-$nav-tabs-link-active-bg: var(--#{$prefix}nuance-09);
+$nav-tabs-link-active-bg: transparent;
 $nav-tabs-link-active-border-color: var(--#{$prefix}button);
 
 $nav-pills-border-radius: var(--#{$prefix}border-radius) !default;

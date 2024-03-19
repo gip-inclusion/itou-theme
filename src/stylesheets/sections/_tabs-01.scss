@@ -9,19 +9,6 @@
 
   .nav-tabs {
     @extend .p-0;
-
-    .nav-item {
-
-      .nav-link {
-
-        &:hover:not(.active),
-        &:focus:not(.active) {
-          color: $button;
-          background-color: $nav-tabs-link-active-bg;
-          border-color: $nuance-08;
-        }
-      }
-    }
   }
 
   .tab-content {
