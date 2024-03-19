@@ -1,4 +1,6 @@
 .nav-tabs {
+  @extend .flex-nowrap;
+
   .nav-item {
     .nav-link {
       line-height: $line-height-sm;
@@ -48,6 +50,27 @@
     }
   }
 
+  .nav-item-dropdown {
+    @extend .nav-item;
+    visibility: hidden;
+
+    .nav-link {
+
+      &::after {
+        display: none;
+      }
+
+      &:hover:not(.active),
+      &:focus:not(.active) {
+        border-color: $nav-tabs-link-active-bg;
+      }
+
+    }
+
+    .dropdown-menu a {
+      @extend .dropdown-item;
+    }
+  }
   &.flex-column {
     .nav-item {
       .nav-link {

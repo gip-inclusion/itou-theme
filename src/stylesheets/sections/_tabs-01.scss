@@ -9,7 +9,6 @@
 
   .nav-tabs {
     @extend .p-0;
-    @extend .flex-nowrap;
 
     .nav-item {
 
@@ -21,31 +20,6 @@
           background-color: $nav-tabs-link-active-bg;
           border-color: $nuance-08;
         }
-      }
-    }
-
-    .nav-item-dropdown {
-      @extend .nav-item;
-      visibility: hidden;
-
-      .nav-link {
-
-        &::after {
-          display: none;
-        }
-
-        &:hover:not(.active),
-        &:focus:not(.active) {
-          border-color: $nav-tabs-link-active-bg;
-        }
-
-        // &:has(+ .dropdown-menu a.active) {
-        //   border-color: $button;
-        // }
-      }
-
-      .dropdown-menu a {
-        @extend .dropdown-item;
       }
     }
   }
