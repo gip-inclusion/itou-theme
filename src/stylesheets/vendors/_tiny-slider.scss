@@ -1,3 +1,5 @@
+// Version: 2.9.4
+
 .tns-outer {
   position: relative;
   padding: 0 !important;
@@ -18,6 +20,9 @@
   text-align: center;
   background: transparent;
   border: 0;
+}
+.tns-inner {
+  padding: 0;
 }
 .tns-slider {
   -webkit-transition: all 0s;
@@ -95,7 +100,14 @@
 }
 .tns-visually-hidden {
   position: absolute;
-  left: -10000em;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
 }
 .tns-transparent {
   opacity: 0;
