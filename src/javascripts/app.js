@@ -12,7 +12,6 @@ const clipboardCopyList = document.querySelectorAll('[data-it-clipboard=copy]');
 const clipboardButtonCopyList = document.querySelectorAll('[data-it-clipboard-button=copy]');
 const inputPasswordList = document.querySelectorAll('[data-it-password=toggle]');
 const targetConseiList = document.querySelectorAll('[data-it-target-conseil]');
-//const slidingTabs = document.querySelector('[data-it-sliding-tabs=true]');
 const breakpointXL = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-xl');
 const breakpointMD = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-md');
 
@@ -33,7 +32,7 @@ window.addEventListener('load', (e) => {
 // Resize
 window.addEventListener('resize', (e) => {
   postHeaderNavDisplay();
-  autoCollapseAsideFilters();
+  //autoCollapseAsideFilters();
 
   if (window.matchMedia('(min-width: ' + breakpointXL + ')').matches & burgerNav != null) {
     burgerNav.classList.remove('is-opened');
@@ -332,37 +331,6 @@ function autoCollapseAsideFilters() {
     }
   }
 }
-
-// Section Tabs add/remove items from Dropdown
-// for (let i = 0, ii = sTabs01List.length; i < ii; i += 1) {
-//   // Init on load
-//   const thisSTabs01 = sTabs01List[i];
-//   const thisSTabs01NavItem = thisSTabs01.querySelectorAll('.nav-item');
-//   const thisSTabs01NavItemDropdown = thisSTabs01.querySelector('.nav-item-dropdown');
-//   const thisSTabs01NavItemDropdownWidth = Math.round(thisSTabs01NavItemDropdown.offsetWidth + 4);
-
-//   let thisSTabs01NavItemsWidthArrayInit = [];
-//   thisSTabs01NavItem.forEach(function (item, index) {
-//     let thisSTabs01NavThisItemWidth = Math.round(item.offsetWidth + 4);
-//     thisSTabs01NavItemsWidthArrayInit.push(thisSTabs01NavThisItemWidth);
-//   });
-//   thisSTabs01NavItemsWidthArrayInit.push(thisSTabs01NavItemDropdownWidth);
-
-//   tabsItemsToDropdownAdd(thisSTabs01);
-
-//   // On resize
-//   window.addEventListener('resize', () => {
-//     let newWindowWidth = window.innerWidth;
-
-//     if (newWindowWidth < windowWidth) {
-//       tabsItemsToDropdownAdd(thisSTabs01);
-//     } else {
-//       tabsItemsToDropdownRemove(thisSTabs01, thisSTabs01NavItemsWidthArrayInit);
-//     }
-
-//     windowWidth = newWindowWidth;
-//   });
-// }
 
 function tabsItemsToDropdownAdd(thisTabs) {
   const sTabs01NavWidthCurrent = Math.round(thisTabs.offsetWidth);

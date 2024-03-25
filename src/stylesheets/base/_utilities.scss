@@ -162,8 +162,8 @@
     display: block;
     position: absolute;
     z-index: 2;
-    top: 30%;
-    left: calc(50% - 16px);
+    top: 45%;
+    left: calc(50% - 18px);
     @extend .spinner-border;
     @extend .text-tertiary;
   }
