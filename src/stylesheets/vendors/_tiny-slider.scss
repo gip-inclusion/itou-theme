@@ -24,6 +24,7 @@
 .tns-inner {
   padding: 0;
 }
+
 .tns-slider {
   -webkit-transition: all 0s;
   -moz-transition: all 0s;
@@ -79,7 +80,8 @@
   transition: all 0.25s;
 }
 .tns-autowidth {
-  display: inline-block;
+  //display: inline-block; Removing for fix extra spacing in the div
+  display: block;
 }
 .tns-lazy-img {
   -webkit-transition: opacity 0.6s;
