@@ -288,7 +288,7 @@ iframe {
     }
 
     .btn {
-      margin: calc(var(--#{$prefix}modal-footer-gap) * 0.5);
+      margin: calc(var(--#{$prefix}modal-footer-gap) * 0.25);
     }
   }
 }

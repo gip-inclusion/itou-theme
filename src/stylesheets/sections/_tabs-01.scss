@@ -12,8 +12,6 @@
   }
 
   .tab-content {
-    position: relative;
-    z-index: 1;
     border-top: 1px solid $border-color;
     padding-top: map-get($spacers, 3);
 
