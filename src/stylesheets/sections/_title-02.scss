@@ -1,18 +1,17 @@
 .s-title-02 {
   position: relative;
-  margin-top: map-get($spacers, 6);
+  margin-top: map-get($spacers, 4);
   margin-bottom: map-get($spacers, 4);
-
-  &:has(.c-prevstep) {
-    margin-top: map-get($spacers, 3);
-  }
 
   @include media-breakpoint-up(lg) {
     margin-bottom: map-get($spacers, 5);
   }
 
-  &__row {
+  &:has(.c-prevstep) {
+    margin-top: map-get($spacers, 3);
+  }
 
+  &__row {
     &::after {
       content: '';
       display: block;
@@ -24,15 +23,16 @@
   }
 
   &__col {
-
-    > h1,
-    > .h1 {
-      margin-top: map-get($spacers, 3);
+    > * {
       margin-bottom: map-get($spacers, 3);
     }
 
-    > *:last-child {
+    > *:last-child:not(.c-prevstep) {
       margin-bottom: map-get($spacers, 4);
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: map-get($spacers, 5);
+      }
     }
   }
 }
