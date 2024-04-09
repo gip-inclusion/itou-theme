@@ -4,6 +4,7 @@
   margin-bottom: map-get($spacers, 4);
 
   @include media-breakpoint-up(lg) {
+    margin-top: map-get($spacers, 5);
     margin-bottom: map-get($spacers, 5);
   }
 
@@ -34,5 +35,9 @@
         margin-bottom: map-get($spacers, 5);
       }
     }
+  }
+
+  &:has(.s-title-02__col:empty) {
+    display: none;
   }
 }
