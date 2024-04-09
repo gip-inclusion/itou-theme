@@ -12,6 +12,10 @@
     margin-top: map-get($spacers, 3);
   }
 
+  &:not(.s-title-02:has(.s-title-02__col > *)) {
+    display: none;
+  }
+
   &__row {
     &::after {
       content: '';
@@ -35,9 +39,5 @@
         margin-bottom: map-get($spacers, 5);
       }
     }
-  }
-
-  &:has(.s-title-02__col:empty) {
-    display: none;
   }
 }

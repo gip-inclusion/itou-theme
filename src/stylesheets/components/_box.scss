@@ -103,6 +103,12 @@
     @include media-breakpoint-up(lg) {
       padding-bottom: map-get($spacers, 2);
     }
+
+    &:empty,
+    &:not(.c-box--action:has(.col)),
+    &:not(.c-box--action:has(.btn)) {
+      display: none;
+    }
   }
 
   &--results {
