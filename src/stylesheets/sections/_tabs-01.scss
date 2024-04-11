@@ -7,6 +7,17 @@
     margin-bottom: map-get($spacers, 6);
   }
 
+  .tns-controls {
+    [data-controls='prev'] {
+      box-shadow: $box-shadow-sm;
+      left: map-get($spacers, 2);
+    }
+    [data-controls='next'] {
+      box-shadow: $box-shadow-sm;
+      right: map-get($spacers, 2);
+    }
+  }
+
   .nav-tabs {
     @extend .p-0;
   }
