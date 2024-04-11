@@ -61,3 +61,48 @@
     }
   }
 }
+
+body {
+  @each $color, $value in $theme-colors {
+    > .alert-#{$color} {
+      line-height: $line-height-sm;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      @extend .m-0;
+      @extend .text-center;
+      border-left: none !important;
+      border-radius: 0 !important;
+      color: $white !important;
+
+      a {
+        color: $white !important;
+      }
+
+      .btn-close {
+        opacity: 1;
+        padding-top: 12px;
+        --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+      }
+
+      @if $color == 'success' {
+        background-color: $success !important;
+      }
+
+      @if $color == 'warning' {
+        background-color: $warning !important;
+      }
+
+      @if $color == 'danger' {
+        background-color: $danger !important;
+      }
+
+      @if $color == 'info' {
+        background-color: $info !important;
+      }
+
+      @if $color == 'important' {
+        background-color: $important !important;
+      }
+    }
+  }
+}
