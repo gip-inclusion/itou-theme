@@ -14,6 +14,11 @@ select:disabled {
   pointer-events: none;
 }
 
+.btn[data-bs-toggle='tooltip']:disabled,
+.btn[data-bs-toggle='tooltip'].disabled {
+  pointer-events: initial !important;
+}
+
 .btn-form-control {
   color: $input-color;
   border-color: $input-border-color;
@@ -351,7 +356,6 @@ select:disabled {
   font-weight: $font-weight-medium;
   color: $black !important;
   background-color: $nuance-09 !important;
-
 
   &.active,
   &.focus,
