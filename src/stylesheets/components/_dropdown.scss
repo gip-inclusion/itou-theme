@@ -29,9 +29,18 @@
 
 .dropdown {
   &-structure {
-    @include media-breakpoint-up(xl) {
-      min-width: 250px;
+    min-width: 250px;
 
+    .dropdown-toggle {
+      &.btn-ico > span {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
       .dropdown-toggle {
         width: 100%;
         justify-content: start;

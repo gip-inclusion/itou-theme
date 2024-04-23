@@ -58,6 +58,10 @@
     }
 
     &--nav {
+      .dropdown-structure {
+        width: 300px;
+      }
+
       > nav {
         > ul {
           @extend .list-inline;
