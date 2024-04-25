@@ -65,7 +65,9 @@
 
 body {
   @each $color, $value in $theme-colors {
-    > .alert-#{$color} {
+    > .alert-#{$color},
+    noscript > .alert-#{$color},
+    .global-messages-container > .alert-#{$color} {
       line-height: $line-height-sm;
       padding-top: 12px;
       padding-bottom: 12px;
