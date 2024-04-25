@@ -1,5 +1,6 @@
 .alert {
   color: $primary !important;
+  line-height: $line-height-sm;
 
   + .alert {
     @extend .mt-3;
