@@ -14,7 +14,7 @@
   .select2-selection {
     width: 100%;
     min-height: $s2bs5-height;
-    padding: $s2bs5-padding-y $s2bs5-padding-x;
+    padding: $s2bs5-padding-y $s2bs5-padding-x $s2bs5-padding-y $s2bs5-padding-x;
     font-family: $s2bs5-font-family;
     @include font-size($s2bs5-font-size);
     font-weight: $s2bs5-font-weight;
@@ -67,7 +67,7 @@
     .select2-selection__clear {
       position: absolute;
       top: 50%;
-      right: 0.9rem;
+      right: 1rem;
       width: $s2bs5-clear-width;
       height: $s2bs5-clear-height;
       padding: $s2bs5-clear-padding-y $s2bs5-clear-padding-x;
@@ -77,6 +77,7 @@
       background: $s2bs5-clear-bg;
       transform: translateY(-50%);
       border: 0;
+      z-index: 100;
 
       // Change icon on hover
       &:hover {
