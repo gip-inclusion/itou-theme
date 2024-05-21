@@ -200,6 +200,22 @@ button {
   padding: 0;
 }
 
+.nav-tabs .nav-link {
+  &:focus {
+    outline-offset: -2px;
+    outline: $blue 2px solid;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline-offset: -2px;
+    outline: $blue 2px solid;
+  }
+}
+
 .form-control,
 .form-select,
 .form-check-input,
