@@ -440,7 +440,7 @@ $grid-breakpoints: (
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 990px,
+  lg: 960px,
   xl: 1232px,
   xxl: 1320px,
 );
@@ -1584,7 +1584,7 @@ $badge-border-radius: var(--#{$prefix}border-radius);
 // Modals
 
 // scss-docs-start modal-variables
-$modal-inner-padding: $spacer;
+$modal-inner-padding: map-get($spacers, 4);
 
 $modal-footer-margin-between: 1rem;
 
@@ -1618,10 +1618,10 @@ $modal-footer-bg: null !default;
 $modal-footer-border-color: $modal-header-border-color;
 $modal-footer-border-width: $modal-header-border-width;
 
-$modal-sm: 300px !default;
-$modal-md: 500px !default;
-$modal-lg: 800px !default;
-$modal-xl: 1140px !default;
+$modal-sm: map-get($container-max-widths, "sm");
+$modal-md: map-get($container-max-widths, "md");
+$modal-lg: map-get($container-max-widths, "lg");
+$modal-xl: map-get($container-max-widths, "xl");
 
 $modal-fade-transform: translate(0, -50px) !default;
 $modal-show-transform: none !default;
@@ -1800,9 +1800,9 @@ $btn-close-white-filter: invert(1) grayscale(100%) brightness(200%) !default;
 // Offcanvas
 
 // scss-docs-start offcanvas-variables
-$offcanvas-padding-y: $modal-inner-padding !default;
-$offcanvas-padding-x: $modal-inner-padding !default;
-$offcanvas-horizontal-width: 400px !default;
+$offcanvas-padding-y: $modal-inner-padding;
+$offcanvas-padding-x: $modal-inner-padding;
+$offcanvas-horizontal-width: 468px;
 $offcanvas-vertical-height: 30vh !default;
 $offcanvas-transition-duration: 0.3s !default;
 $offcanvas-border-color: $modal-content-border-color !default;

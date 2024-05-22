@@ -191,6 +191,15 @@ select:disabled {
   justify-content: center;
   min-height: $input-height;
 
+  &.active,
+  &.focus,
+  &.hover,
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: transparent !important;
+  }
+
   > [class^='ri-'] {
     font-weight: $font-weight-medium;
     @extend .ri-1x;
@@ -351,7 +360,7 @@ select:disabled {
 }
 
 .btn-dropdown-filter {
-  @extend .btn-sm;
+  @extend .btn;
   @extend .rounded-pill;
   font-weight: $font-weight-medium;
   color: $black !important;

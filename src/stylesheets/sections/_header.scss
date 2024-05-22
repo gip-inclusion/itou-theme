@@ -3,21 +3,6 @@
   position: relative;
   z-index: 1;
 
-  &.is-opened {
-    #burgerNav {
-      display: flex;
-    }
-
-    #close {
-      display: inline;
-      z-index: 100;
-    }
-
-    #open {
-      display: none;
-    }
-  }
-
   &__container {
     max-width: map-get($container-max-widths, 'xl');
   }
@@ -92,11 +77,6 @@
         @include media-breakpoint-up(md) {
           font-size: 42px;
         }
-
-        &#close {
-          display: none;
-          z-index: 100;
-        }
       }
     }
 
@@ -110,25 +90,26 @@
   }
 
   #burgerNav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    @extend .p-3;
-    background-color: $white;
-    box-shadow: -10px 12px 19px -10px rgba($primary, 0.1);
-    width: 85vw;
-    top: $header-height-mobile;
-    height: calc(100vh - #{$header-height-mobile});
-
-    @include media-breakpoint-up(sm) {
-      width: 66vw;
-    }
+    padding-top: $header-height-mobile;
 
     @include media-breakpoint-up(md) {
-      top: $header-height;
-      height: calc(100vh - #{$header-height});
+      padding-top: $header-height;
+    }
+
+    > button {
+      display: inline;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+
+      i {
+        color: $button;
+        font-size: 32px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 42px;
+        }
+      }
     }
 
     > nav {

@@ -2,7 +2,6 @@
 
 // Common vars
 let windowWidth = window.innerWidth;
-const burgerNav = document.querySelector('.s-header');
 const burgerToggleList = document.querySelectorAll('[data-bs-toggle=burger]');
 const tablesSortableList = document.querySelectorAll('[data-bs-table=sortable]');
 const alertDismissibleOnceList = document.querySelectorAll('.alert-dismissible-once');
@@ -33,45 +32,12 @@ window.addEventListener('load', (e) => {
 window.addEventListener('resize', (e) => {
   postHeaderNavDisplay();
   //autoCollapseAsideFilters();
-
-  if (window.matchMedia('(min-width: ' + breakpointXL + ')').matches & burgerNav != null) {
-    burgerNav.classList.remove('is-opened');
-  }
 });
 
 // Scroll
 window.addEventListener('scroll', (e) => {
   // console.log('page scrolled');
 });
-
-// Burger Menu
-for (let i = 0,  ii = burgerToggleList.length; i < ii; i += 1) {
-  const thisBurgerToggle = burgerToggleList[i];
-
-  let toogleAriaExpanded = function() {
-    const currentAriaExpandedState = thisBurgerToggle.getAttribute('aria-expanded');
-
-    if (!currentAriaExpandedState || currentAriaExpandedState === 'false') {
-      thisBurgerToggle.setAttribute('aria-expanded', 'true');
-    } else {
-      thisBurgerToggle.setAttribute('aria-expanded', 'false');
-    }
-  };
-
-  thisBurgerToggle.addEventListener('click', function (e) {
-    e.preventDefault();
-    burgerNav.classList.toggle('is-opened');
-    toogleAriaExpanded();
-  });
-
-  thisBurgerToggle.addEventListener('keypress', function (e) {
-    if (e.which == 13) {
-      e.preventDefault();
-      burgerNav.classList.toggle('is-opened');
-      toogleAriaExpanded();
-    }
-  });
-}
 
 // Show data-it-target-conseil
 for (let i = 0, ii = targetConseiList.length; i < ii; i += 1) {

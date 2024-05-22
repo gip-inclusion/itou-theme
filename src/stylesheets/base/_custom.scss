@@ -194,6 +194,10 @@ html {
   outline: $blue 1px solid;
 }
 
+legend {
+  float: none;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -311,10 +315,6 @@ iframe {
 
 .modal {
   .modal-header {
-    .btn-close {
-      align-self: flex-start;
-      margin-top: 0;
-    }
 
     + .modal-body {
       @extend .pt-2;
@@ -335,6 +335,16 @@ iframe {
     .btn {
       margin: calc(var(--#{$prefix}modal-footer-gap) * 0.25);
     }
+  }
+}
+
+.offcanvas {
+  &-header {
+    border-bottom: 1px solid $border-color;
+  }
+  &-footer {
+    @extend .offcanvas-header;
+    border-top: 1px solid $border-color;
   }
 }
 

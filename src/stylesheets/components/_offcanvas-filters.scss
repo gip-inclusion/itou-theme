@@ -1,0 +1,47 @@
+.c-offcanvas-filters {
+
+  .offcanvas {
+
+    &-body {
+
+      fieldset {
+
+        .btn {
+          @extend .w-100;
+          @extend .p-0;
+          @extend .font-weight-normal;
+
+          &.has-collapse-caret {
+            @extend .d-flex;
+            @extend .justify-content-between;
+            @extend .align-items-center;
+
+            &::after {
+              font-weight: $font-weight-medium;
+            }
+          }
+
+          &[aria-expanded=true] {
+            @extend .font-weight-bold;
+          }
+        }
+
+        legend {
+          display: inline-block;
+          @extend .fs-base;
+          @extend .font-weight-normal;
+          margin-bottom: 0;
+        }
+      }
+
+      ul:not(.select2-selection__rendered) {
+        @extend .list-unstyled;
+        @extend .mb-0;
+
+        li:not(:last-child) {
+          @extend .mb-2;
+        }
+      }
+    }
+  }
+}

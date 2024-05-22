@@ -154,6 +154,10 @@ select.form-select {
   @extend .form-label;
 }
 
+.form-check > label {
+  line-height: $line-height-sm;
+}
+
 .input-group > .form-select:not(:first-child),
 .input-group > .form-control:not(:first-child) {
   border-left: transparent;
