@@ -191,15 +191,6 @@ select:disabled {
   justify-content: center;
   min-height: $input-height;
 
-  &.active,
-  &.focus,
-  &.hover,
-  &:active,
-  &:focus,
-  &:hover {
-    border-color: transparent !important;
-  }
-
   > [class^='ri-'] {
     font-weight: $font-weight-medium;
     @extend .ri-1x;
