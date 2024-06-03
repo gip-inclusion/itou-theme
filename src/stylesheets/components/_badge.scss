@@ -47,7 +47,7 @@ a.badge {
 }
 
 .badge-group {
-  @extend .mb-n1;
+  margin-bottom: -0.25rem;
 
   .badge {
     @extend .me-1;
