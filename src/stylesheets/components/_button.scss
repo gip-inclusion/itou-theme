@@ -147,6 +147,21 @@ select:disabled {
   }
 }
 
+.btn-outline-transparent {
+  background-color: transparent !important;
+  border-color: transparent !important;
+
+  &.active,
+  &.focus,
+  &.hover,
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+}
+
 .btn-ico {
   display: inline-flex;
 
