@@ -1,0 +1,37 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (
+            25: 25%,
+            33: 33%,
+            50: 50%,
+            66: 66%,
+            75: 75%,
+          )
+        ),
+      ),
+    ),
+    "max-width": map-merge(
+      map-get($utilities, "max-width"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "max-width"), "values"),
+          (
+            25: 25%,
+            33: 33%,
+            50: 50%,
+            66: 66%,
+            75: 75%,
+          )
+        ),
+      ),
+    ),
+  )
+);
