@@ -1034,7 +1034,7 @@
                   <div class="row">
                     <div class="col-12 col-md-3 mb-3">
                       <div class="dropdown">
-                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                           Distance
                         </button>
                         <ul class="dropdown-menu">
@@ -1046,7 +1046,7 @@
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                       <div class="dropdown">
-                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle hover" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle hover" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                           :hover/focus
                         </button>
                         <ul class="dropdown-menu">
@@ -1058,7 +1058,7 @@
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                       <div class="dropdown">
-                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle has-selected-item " data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle has-selected-item " data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                           .has-selected-item (1)
                         </button>
                         <ul class="dropdown-menu">
@@ -1070,7 +1070,7 @@
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                       <div class="dropdown">
-                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" disabled>
                           disabled
                         </button>
                         <ul class="dropdown-menu">
@@ -1086,7 +1086,7 @@
                     <div class="col-12">
                       <div class="btn-dropdown-filter-group">
                         <div class="dropdown">
-                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                            Un filtre
                           </button>
                           <ul class="dropdown-menu">
@@ -1096,7 +1096,7 @@
                           </ul>
                         </div>
                         <div class="dropdown">
-                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             Un autre filtre
                           </button>
                           <ul class="dropdown-menu">
@@ -1106,13 +1106,26 @@
                           </ul>
                         </div>
                         <div class="dropdown">
-                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             Et puis encore un
                           </button>
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li class="dropdown-item">
+                              Another action
+                            </li>
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                  <input id="id_distance_0" class="form-check-input" name="distance" type="radio" value="5" checked>
+                                  <label for="id_distance_0" class="form-check-label">5 km</label>
+                              </div>
+                            </li>
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                  <input id="id_distance_1" class="form-check-input" name="distance" type="radio" value="10" checked>
+                                  <label for="id_distance_1" class="form-check-label">10 km</label>
+                              </div>
+                            </li>
                           </ul>
                         </div>
                       </div>

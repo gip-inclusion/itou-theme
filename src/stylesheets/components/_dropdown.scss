@@ -28,6 +28,15 @@
 }
 
 .dropdown {
+  .dropdown-item .form-check-input,
+  .dropdown-item .form-check-label {
+    cursor: pointer;
+  }
+
+  .dropdown-item .form-check-label {
+    display: block;
+  }
+
   &-structure {
     min-width: 250px;
 
