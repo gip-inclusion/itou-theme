@@ -280,24 +280,6 @@ for (let i = 0, ii = inputPasswordList.length; i < ii; i += 1) {
     });
 }
 
-// Show/hide aside-filters on desktop/mobile
-function autoCollapseAsideFilters() {
-  const asideFilters = document.querySelector('.c-aside-filters');
-
-  if (asideFilters != null) {
-    const asideFiltersForm = document.querySelector('#asideFiltersCollapse');
-    const asideFiltersFormCollapse = new bootstrap.Collapse(asideFiltersForm, {
-      toggle: false,
-    });
-
-    if (window.matchMedia('(min-width: ' + breakpointMD + ')').matches) {
-      asideFiltersFormCollapse.show();
-    } else {
-      asideFiltersFormCollapse.hide();
-    }
-  }
-}
-
 function tabsItemsToDropdownAdd(thisTabs) {
   const sTabs01NavWidthCurrent = Math.round(thisTabs.offsetWidth);
   const sTabs01NavItem = thisTabs.querySelectorAll('.nav-item');
