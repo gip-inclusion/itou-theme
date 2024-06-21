@@ -25,13 +25,11 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 // Load
 window.addEventListener('load', (e) => {
   postHeaderNavDisplay();
-  autoCollapseAsideFilters();
 });
 
 // Resize
 window.addEventListener('resize', (e) => {
   postHeaderNavDisplay();
-  //autoCollapseAsideFilters();
 });
 
 // Scroll
