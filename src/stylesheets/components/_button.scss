@@ -392,6 +392,7 @@ select:disabled {
 
   &.has-selected-item {
     border-color: $black !important;
+    font-weight: $font-weight-bold;
 
     &.active,
     &.focus,
