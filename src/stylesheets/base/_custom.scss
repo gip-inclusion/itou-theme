@@ -140,6 +140,21 @@ ol {
 
 .blockquote {
   position: relative;
+  line-height: $line-height-sm;
+  padding: map-get($spacers, 3);
+  font-style: italic;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-sm;
+
+  &-footer {
+    font-style: normal;
+    margin-top: map-get($spacers, 2);
+  }
+}
+
+.testimonial {
+  position: relative;
+  line-height: $line-height-sm;
   font-style: italic;
   border-left: 1px solid $border-color;
   padding-left: map-get($spacers, 3);
@@ -161,8 +176,10 @@ ol {
   }
 
   &-footer {
+    @extend .blockquote-footer;
     font-style: normal;
     margin-top: map-get($spacers, 2);
+    margin-bottom: 0;
   }
 }
 
