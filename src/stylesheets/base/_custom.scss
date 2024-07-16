@@ -144,6 +144,7 @@ ol {
   padding: map-get($spacers, 3);
   font-style: italic;
   border: 1px solid $border-color;
+  background-color: $nuance-10;
   border-radius: $border-radius-sm;
 
   &-footer {
