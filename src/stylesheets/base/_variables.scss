@@ -419,13 +419,21 @@ $paragraph-margin-bottom: $spacer;
 // adapting to different screen sizes, for use in media queries.
 
 // scss-docs-start grid-breakpoints
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1280px,
+//   xxl: 1400px,
+// );
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 780px,
   lg: 992px,
-  xl: 1280px,
-  xxl: 1400px,
+  xl: 1480px,
+  xxl: 1780px,
 );
 // scss-docs-end grid-breakpoints
 
@@ -437,12 +445,19 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 // scss-docs-start container-max-widths
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1232px,
+//   xxl: 1320px,
+// );
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  sm: 560px,
+  md: 768px,
   lg: 960px,
-  xl: 1232px,
-  xxl: 1320px,
+  xl: 1420px,
+  xxl: 1720px,
 );
 // scss-docs-end container-max-widths
 
@@ -453,7 +468,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 2rem;
+$grid-gutter-width: 1.5rem;
 $grid-row-columns: 6 !default;
 
 // Container padding
