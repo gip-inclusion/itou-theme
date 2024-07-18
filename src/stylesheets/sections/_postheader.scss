@@ -18,10 +18,6 @@
     top: initial;
   }
 
-  &__container {
-    max-width: map-get($container-max-widths, 'xl');
-  }
-
   &__col {
 
     nav {

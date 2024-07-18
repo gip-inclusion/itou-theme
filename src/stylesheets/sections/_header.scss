@@ -1,20 +1,128 @@
-.s-header {
+#offcanvasNav {
+
+  .offcanvas-header {
+    i {
+      font-size: 1.25rem;
+    }
+
+    &--structure {
+      background-color: &bg-nuance-10;
+      @extend .py-0;
+      @extend .align-items-stretch;
+    }
+  }
+
+  .offcanvas-body {
+
+    .nav-tabs {
+      @extend .gap-3;
+    }
+
+    .nav-link {
+      @extend .py-2;
+      @extend .pe-0;
+
+      > i {
+        @extend .me-2;
+        font-size: 1.5rem;
+      }
+
+      &.active {
+        font-weight: $font-weight-bold;
+      }
+
+      &.has-collapse-caret {
+        &[aria-expanded=true] {
+          font-weight: $font-weight-bold;
+        }
+
+        > span {
+          flex-grow: 1;
+        }
+      }
+
+      + .collapsing > ul,
+      + .collapse > ul {
+        @extend .list-unstyled;
+        margin-left: 50px;
+
+        li {
+          @extend .py-2;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+
+          &.active {
+            font-weight: $font-weight-bold;
+          }
+        }
+      }
+    }
+  }
+
+  .offcanvas-footer {
+    border-top: 0;
+
+    &__legal {
+      color: $nuance-04;
+      font-size: $font-size-xs;
+      text-align: center;
+
+      ul {
+        @extend .list-unstyled;
+        @extend .list-inline;
+        @extend .mb-0;
+        @extend .mt-2;
+        @extend .p-0;
+
+        li {
+          display: block;
+
+          @include media-breakpoint-up(md) {
+            display: inline-block;
+          }
+
+          &:not(:last-child) {
+            @include media-breakpoint-up(md) {
+              padding-right: map-get($spacers, 2);
+              margin-right: map-get($spacers, 2);
+              border-right: 1px solid $border-color;
+            }
+          }
+        }
+
+        a,
+        a:hover,
+        a:focus,
+        a:link {
+          color: $nuance-04;
+          line-height: 1;
+          @extend .text-decoration-none;
+
+          &[target='_blank'] {
+            @extend .has-external-link;
+          }
+        }
+
+        a:hover {
+          @extend .text-decoration-underline;
+        }
+      }
+    }
+  }
+}
+
+.s-header-not-authenticated {
   background-color: $white;
   position: relative;
   z-index: 1;
 
-  &__container {
-    max-width: map-get($container-max-widths, 'xl');
-  }
-
-  &__row {
-    max-width: map-get($container-max-widths, 'xl');
-  }
-
   &__col {
     min-height: $header-height-mobile;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       min-height: $header-height;
     }
 
@@ -24,8 +132,8 @@
         max-width: 80px;
         transform: translateX(-10px);
 
-        @include media-breakpoint-up(md) {
-          max-width: 100px;
+        @include media-breakpoint-up(xl) {
+          max-width: 90px;
           transform: translateX(-12px);
         }
       }
@@ -34,10 +142,10 @@
     &--logo-service {
       img {
         height: auto;
-        max-width: 150px;
+        max-width: 140px;
 
-        @include media-breakpoint-up(md) {
-          max-width: 190px;
+        @include media-breakpoint-up(xl) {
+          max-width: 180px;
         }
       }
     }
@@ -58,12 +166,8 @@
           > li {
             @extend .list-inline-item;
             @extend .p-0;
-            //@extend .m-0;
-            @extend .me-3;
-
-            &:last-child {
-              @extend .me-0;
-            }
+            @extend .me-0;
+            @extend .ms-3;
           }
         }
       }
@@ -71,75 +175,64 @@
 
     &--burger {
       i {
-        color: $button;
-        font-size: 32px;
-
-        @include media-breakpoint-up(md) {
-          font-size: 42px;
-        }
-      }
-    }
-
-    &--title {
-      span {
-        @extend .mb-0;
-        @extend .me-3;
-        font-size: $h4-font-size;
+        font-size: 1.25rem !important;
       }
     }
   }
+}
 
-  #burgerNav {
-    padding-top: $header-height-mobile;
+.s-header-authenticated {
+  background-color: $nuance-10;
+  position: relative;
 
-    @include media-breakpoint-up(md) {
-      padding-top: $header-height;
+  @include media-breakpoint-up(xxl) {
+    display: none;
+  }
+
+  &__col {
+    min-height: $header-height-mobile;
+
+    @include media-breakpoint-up(xl) {
+      min-height: $header-height;
     }
 
-    > button {
-      display: inline;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+    &--logo-service {
+      img {
+        height: auto;
+        max-width: 140px;
 
-      i {
-        color: $button;
-        font-size: 32px;
-
-        @include media-breakpoint-up(md) {
-          font-size: 42px;
+        @include media-breakpoint-up(xl) {
+          max-width: 180px;
         }
       }
     }
 
-    > nav {
-      > ul {
-        @extend .list-unstyled;
-        @extend .m-0;
-        width: 100%;
+    &--nav {
+      .dropdown-structure {
+        width: 300px;
+      }
 
-        > li {
-          @extend .d-block;
+      > nav {
+        > ul {
+          @extend .list-inline;
+          @extend .list-unstyled;
+          @extend .m-0;
           @extend .p-0;
-          @extend .mb-3;
-        }
+          width: 100%;
 
-        + ul {
-          border-top: 1px solid $border-color;
-          @extend .pt-3;
-          //@extend .mt-3;
-
-          > li > a {
-            @extend .d-inline-block;
-            @extend .text-decoration-none;
-            @extend .py-1;
-
-            &.is-active {
-              color: $button;
-              border-bottom: 1px solid $button;
-            }
+          > li {
+            @extend .list-inline-item;
+            @extend .p-0;
+            @extend .me-0;
+            @extend .ms-3;
           }
         }
+      }
+    }
+
+    &--burger {
+      i {
+        font-size: 1.25rem !important;
       }
     }
   }

@@ -61,19 +61,12 @@ function postHeaderNavDisplay() {
     let thisNavTopOffset = postHeaderNav.getBoundingClientRect().top;
     let lastScrollTop = 0;
 
-    if (document.querySelector('.toast-container') != null) {
-      document.querySelector('.toast-container').style.paddingTop = '59px';
-    }
-
     window.addEventListener('scroll', () => {
       let windowScrollTop = window.scrollY;
 
       if (windowScrollTop >= thisNavTopOffset) {
         if (window.matchMedia('(min-width: ' + breakpointXL + ')').matches) {
           document.querySelector('main').style.paddingTop = '59px';
-          if (document.querySelector('.toast-container') != null) {
-            document.querySelector('.toast-container').style.paddingTop = '0';
-          }
         }
         if (lastScrollTop > windowScrollTop) {
           postHeaderNav.classList.remove('it-scrolldown');
@@ -86,9 +79,6 @@ function postHeaderNavDisplay() {
         postHeaderNav.classList.remove('it-scrollup', 'it-scrolldown');
         if (window.matchMedia('(min-width: ' + breakpointXL + ')').matches) {
           document.querySelector('main').style.paddingTop = '0';
-          if (document.querySelector('.toast-container') != null) {
-            document.querySelector('.toast-container').style.paddingTop = '59px';
-          }
         }
       }
       lastScrollTop = windowScrollTop;

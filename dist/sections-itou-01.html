@@ -119,15 +119,19 @@
             <option value="sections-itou-06.html#title-02">Title 02</option>
             <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
           </optgroup>
-          <optgroup label="Pages Itou">
-            <option value="layout-itou-base.html">Base layout</option>
-            <option value="layout-itou-form.html">Formulaire layout</option>
-            <option value="layout-itou-cms.html">CMS & Flatpage layout</option>
-            <option value="layout-itou-search-result.html">Résultats de recherche C1, filtres et cartes</option>
-            <option value="layout-itou-test.html">Test layout</option>
+          <optgroup label="Pages Itou - Non connecté">
+            <option value="layout-itou-not-authenticated-homepage.html">Homepage</option>
+            <option value="layout-itou-not-authenticated-search-result.html">Résultats de recherche</option>
+            <option value="layout-itou-not-authenticated-mentions.html">Mentions légales</option>
+            <option value="layout-itou-not-authenticated-test.html">Test</option>
           </optgroup>
-          <optgroup label="Prototypes Itou">
-            <option value="proto-itou-form-uploads-img.html">Formulaire uploads images</option>
+          <optgroup label="Pages Itou - Connecté">
+            <option value="layout-itou-authenticated-dashboard.html">Dashboard</option>
+            <option value="layout-itou-authenticated-search-result.html">Résultats de recherche</option>
+            <option value="layout-itou-authenticated-mentions.html">Mentions légales</option>
+            <option value="layout-itou-authenticated-form.html">Formulaire</option>
+            <option value="layout-itou-authenticated-cms.html">CMS</option>
+            <option value="layout-itou-authenticated-test.html">Test</option>
           </optgroup>
           <optgroup label="External libraries">
             <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
@@ -159,71 +163,69 @@
           </div>
         </div>
         <header role="banner" id="header">
-  <section class="s-header">
-    <div class="s-header__container container">
-      <div class="s-header__row row">
-        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
-          <a href="#top" class="s-header__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
+  <section class="s-header-not-authenticated">
+    <div class="s-header-not-authenticated__container container">
+      <div class="s-header-not-authenticated__row row">
+        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
+          <a href="#top" class="s-header-not-authenticated__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
         </div>
-        <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg " alt="Les emplois de l inclusion" height="90"></a>
+        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--logo-service col-auto d-flex align-items-center px-0">
+          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
         </div>
-        <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
+        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--nav col d-none d-lg-inline-flex d-lg-flex align-items-center justify-content-end pe-0 pe-xl-3">
           <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
             <ul>
-              <li>
-                <a href="" class="btn btn-link" target="_blank">
-                  Besoin d'aide ?
-                </a>
-              </li>
-              <!-- <li>
-                <button class="btn btn-outline-primary">
-                  Se connecter
-                </button>
-              </li> -->
-              <li class="dropdown dropdown-structure">
-                <button type="button" class="btn btn-outline-primary btn-ico dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
-                    <i class="ri-community-line" aria-hidden="true"></i>
-                    <span>ETTI - New chance super trop trop long</span>
-                </button>
-                <div class="dropdown-menu w-100" id="switchUserDropdown">
-                    <form method="post">
-                        <ul class="list-unstyled">
-                          <li>
-                              <button class="dropdown-item dropdown-item__summary">
-                                  <i class="ri-community-line" aria-hidden="true"></i>
-                                  <span>EI</span>
-                                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Sanchez super long pour voir.">Garage Martinet Sanchez super long pour voir (26char)</strong>
-                              </button>
-                          </li>
-                          <li>
-                              <button class="dropdown-item dropdown-item__summary">
-                                  <i class="ri-community-line" aria-hidden="true"></i>
-                                  <span>EI</span>
-                                  <strong>EI Garage Martinet Siège</strong>
-                              </button>
-                          </li>
-                        </ul>
-                    </form>
+              <li class="d-none d-xl-inline-block dropdown">
+                <button type="button" class="btn btn-link dropdown-toggle mh-auto p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdown" aria-expanded="false">Besoin d'aide ?</button>
+                <div class="dropdown-menu" id="helpDropdown">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
+              <li>
+                <a class="btn btn-ico btn-outline-primary" href="">
+                  <i class="ri-user-add-line" aria-hidden="true"></i>
+                  <span>S'inscrire</span>
+                </a>
+              </li>
               <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
-                  Se connecter | S'inscrire
+                <button class="btn btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
+                  <i class="ri-login-box-line" aria-hidden="true"></i>
+                  <span>Se connecter</span>
                 </button>
                 <div class="dropdown-menu" id="loginUserDropdown">
                   <ul class="list-unstyled">
                     <li>
-                      <a class="dropdown-item" href="">Candidat</a>
+                      <a class="dropdown-item" href="">
+                        Candidat
+                      </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">Prescripteur</a>
+                      <a class="dropdown-item" href="">
+                        Prescripteur
+                      </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">Employeur solidaire</a>
+                      <a class="dropdown-item" href="">
+                        Employeur inclusif
+                      </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="">Institution partenaire</a>
+                      <a class="dropdown-item" href="">
+                        Institution partenaire
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -231,101 +233,11 @@
             </ul>
           </nav>
         </div>
-        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none">
-          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#burgerNav" aria-controls="burgerNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--burger col col-lg-auto d-flex align-items-center justify-content-end d-xl-none ps-0">
+          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
             <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+            <span>Menu</span>
           </button>
-        </div>
-        <div class="offcanvas offcanvas-end" id="burgerNav" aria-label="Navigation principale pour mobile">
-          <button type="button" data-bs-dismiss="offcanvas" aria-label="Fermer le menu de navigation principale pour mobile">
-            <i class="ri-close-line" id="close" aria-hidden="true"></i>
-          </button>
-          <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
-            <ul>
-              <li>
-                <a href="" class="btn btn-link mh-auto p-0">
-                  Besoin d'aide ?
-                </a>
-              </li>
-              <li class="dropdown dropdown-structure">
-                <button type="button" class="btn btn-outline-primary btn-ico dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdownMobile" aria-expanded="false">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>ETTI - New chance super trop trop long</span>
-                </button>
-                <div class="dropdown-menu" id="switchUserDropdownMobile">
-                  <form method="post">
-                    <ul class="list-unstyled">
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Garage Martinet Sanchez super long pour voir.">Garage Martinet Sanchez super long pour voir</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong>EI Garage Martinet Siège</strong>
-                        </button>
-                      </li>
-                    </ul>
-                  </form>
-                </div>
-              </li>
-              <li class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
-                  Se connecter | S'inscrire
-                </button>
-                <div class="dropdown-menu" id="loginUserDropdownMobile">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="dropdown-item" href="">Candidat</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Prescripteur</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Employeur solidaire</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Institution partenaire</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="" class="is-active">Tableau de bord</a>
-              </li>
-              <li>
-                <a href="">Rechercher des emplois inclusifs</a>
-              </li>
-              <li>
-                <a href="">Rechercher des prescripteurs habilités</a>
-              </li>
-              <li>
-                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdownMobile" aria-expanded="false">Documentation</a>
-                <div class="dropdown-menu" id="documentationDropdownMobile">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="dropdown-item" href="">Doc candidat</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Doc prescripteur</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Doc employeur solidaire</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Doc institution partenaire</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </div>
@@ -337,32 +249,10 @@
           <nav role="navigation" aria-label="Navigation secondaire">
             <ul>
               <li>
-                <a href="" class="is-active">Tableau de bord</a>
-              </li>
-              <li>
                 <a href="">Rechercher des emplois inclusifs</a>
               </li>
               <li>
                 <a href="">Rechercher des prescripteurs habilités</a>
-              </li>
-              <li>
-                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="documentationDropdown" aria-expanded="false">Documentation</a>
-                <div class="dropdown-menu" id="documentationDropdown">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="dropdown-item" href="" target="_blank">Doc candidat</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Doc prescripteur</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Doc employeur solidaire</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Doc institution partenaire</a>
-                    </li>
-                  </ul>
-                </div>
               </li>
             </ul>
           </nav>
@@ -370,6 +260,92 @@
       </div>
     </div>
   </section>
+  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+    <div class="offcanvas-header">
+      <h4 class="h5 mb-0 btn-ico align-items-center" id="offcanvasApplyFiltersLabel">
+        <i class="ri-menu-line" aria-hidden="true"></i>
+        <span>Menu</span>
+      </h4>
+      <button type="button" class="btn-link px-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+        <i class="ri-close-line" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <nav role="navigation" aria-label="Navigation secondaire pour mobile">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a href="" class="nav-link active">
+              <i class="ri-search-line font-weight-medium" aria-hidden="true"></i>
+              <span>Rechercher des emplois inclusifs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="ri-search-line font-weight-medium" aria-hidden="true"></i>
+              <span>Rechercher des prescripteurs habilités</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="offcanvas-footer flex-column align-items-stretch">
+      <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
+        <div class="dropdown-center">
+          <button class="btn btn-block btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
+            <i class="ri-login-box-line" aria-hidden="true"></i>
+            <span>Se connecter</span>
+          </button>
+          <div class="dropdown-menu" id="loginUserDropdownMobile">
+            <ul class="list-unstyled">
+              <li>
+                <a class="dropdown-item" href="">
+                  Candidat
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">
+                  Prescripteur
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">
+                  Employeur inclusif
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">
+                  Institution partenaire
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="btn btn-block btn-ico btn-outline-primary my-3" href="">
+          <i class="ri-user-add-line" aria-hidden="true"></i>
+          <span>S'inscrire</span>
+        </a>
+        <div class="dropdown-center">
+          <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+          <div class="dropdown-menu" id="helpDropdownMobile">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
 </header>
 
 
@@ -391,14 +367,12 @@
           <strong>Accès rapides</strong>
           <div class="s-footer-quick__gridlist">
             <ul>
-              <li><a href="#">Questions / Réponses</a></li>
-              <li><a href="#">Thématiques</a></li>
-              <li><a href="#">Evènements publics</a></li>
-              <li><a href="#">Questions / Réponses</a></li>
-              <li><a href="#">Publier un besoin d’achat</a></li>
+              <li><a href="">Rechercher un emploi inclusif</a></li>
+              <li><a href="">Rechercher des prescripteurs habilités</a></li>
+              <li><a href="">Journal des modifications</a></li>
             </ul>
             <ul>
-              <li><a href="#">Evènements publics lorem</a></li>
+              <li><a href="">Journal des modifications</a></li>
             </ul>
           </div>
         </div>
@@ -406,14 +380,15 @@
           <strong>Documentation</strong>
           <div class="s-footer-quick__gridlist">
             <ul>
-              <li><a href="#" target="_blank" aria-label="Statistiques (lien externe)">Statistiques</a></li>
-              <li><a href="#" target="_blank" aria-label="Github (lien externe)">Github</a></li>
-              <li><a href="#" target="_blank" aria-label="Statistiques (lien externe)">Statistiques</a></li>
-              <li><a href="#" target="_blank" aria-label="Github (lien externe)">Qui sommes-nous ?</a></li>
-              <li><a href="#" target="_blank" aria-label="Statistiques (lien externe)">Statistiques</a></li>
-            </ul>
-            <ul>
-              <li><a href="#" target="_blank" aria-label="Github (lien externe)">Github</a></li>
+              <li>
+                <a href="" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_documentation">Documentation</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+              </li>
+              <li>
+                <a href="" target="_blank" aria-label="Disponibilité (ouverture dans un nouvel onglet)">Disponibilité</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -459,9 +434,11 @@
       <div class="s-footer-legal__row row">
         <div class="s-footer-legal__col col-12">
           <ul>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#" target="_blank">Gestion des cookies</a></li>
-            <li><a href="#">Accessibilité : non conforme</a></li>
+            <li><a href="">Accessibilité : partiellement conforme</a></li>
+            <li><a href="">Mentions légales</a></li>
+            <li><a href="">Conditions générales</a></li>
+            <li><a href="">Confidentialité</a></li>
+            <li><a href="">Statistiques, lexiques et indicateurs</a></li>
           </ul>
           <p>Sauf mention contraire, tous les contenus de ce site sont sous licence <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" aria-label="Licence ouverte Etalab (lien externe)">etalab-2.0</a></p>
         </div>
@@ -489,14 +466,12 @@
           <strong>Accès rapides</strong>
           <div class="s-footer-quick__gridlist">
             <ul>
-              <li><a href="#">Questions / Réponses</a></li>
-              <li><a href="#">Thématiques</a></li>
-              <li><a href="#">Evènements publics</a></li>
-              <li><a href="#">Questions / Réponses</a></li>
-              <li><a href="#">Publier un besoin d’achat</a></li>
+              <li><a href="">Rechercher un emploi inclusif</a></li>
+              <li><a href="">Rechercher des prescripteurs habilités</a></li>
+              <li><a href="">Journal des modifications</a></li>
             </ul>
             <ul>
-              <li><a href="#">Evènements publics lorem</a></li>
+              <li><a href="">Journal des modifications</a></li>
             </ul>
           </div>
         </div>
@@ -504,14 +479,15 @@
           <strong>Documentation</strong>
           <div class="s-footer-quick__gridlist">
             <ul>
-              <li><a href="#" target="_blank" aria-label="Statistiques (lien externe)">Statistiques</a></li>
-              <li><a href="#" target="_blank" aria-label="Github (lien externe)">Github</a></li>
-              <li><a href="#" target="_blank" aria-label="Statistiques (lien externe)">Statistiques</a></li>
-              <li><a href="#" target="_blank" aria-label="Github (lien externe)">Qui sommes-nous ?</a></li>
-              <li><a href="#" target="_blank" aria-label="Statistiques (lien externe)">Statistiques</a></li>
-            </ul>
-            <ul>
-              <li><a href="#" target="_blank" aria-label="Github (lien externe)">Github</a></li>
+              <li>
+                <a href="" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_documentation">Documentation</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+              </li>
+              <li>
+                <a href="" target="_blank" aria-label="Disponibilité (ouverture dans un nouvel onglet)">Disponibilité</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -557,9 +533,11 @@
       <div class="s-footer-legal__row row">
         <div class="s-footer-legal__col col-12">
           <ul>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#" target="_blank">Gestion des cookies</a></li>
-            <li><a href="#">Accessibilité : non conforme</a></li>
+            <li><a href="">Accessibilité : partiellement conforme</a></li>
+            <li><a href="">Mentions légales</a></li>
+            <li><a href="">Conditions générales</a></li>
+            <li><a href="">Confidentialité</a></li>
+            <li><a href="">Statistiques, lexiques et indicateurs</a></li>
           </ul>
           <p>Sauf mention contraire, tous les contenus de ce site sont sous licence <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" aria-label="Licence ouverte Etalab (lien externe)">etalab-2.0</a></p>
         </div>

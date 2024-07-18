@@ -1,0 +1,106 @@
+.l-not-authenticated {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > .s-main {
+    flex: 1 0 auto;
+
+    .container {
+      max-width: map-get($container-max-widths, 'xl');
+    }
+  }
+
+  #header {
+    @extend .sticky-top;
+    background-color: $white;
+    box-shadow: $offcanvas-box-shadow;
+  }
+
+  #offcanvasNav {
+    top: 0;
+    right: 0;
+    width: $offcanvas-horizontal-width;
+    border-left: $offcanvas-border-width solid $offcanvas-border-color;
+    transform: translateX(100%);
+
+    &.show:not(.hiding),
+    &.showing {
+      transform: none;
+    }
+
+    &.hiding,
+    &.show,
+    &.showing {
+      visibility: visible;
+    }
+  }
+}
+
+.l-authenticated {
+  .global-messages-container {
+
+    @include media-breakpoint-up(xxl) {
+      margin-left: $offcanvas-horizontal-width;
+    }
+  }
+
+  > .s-main {
+
+    .container {
+      max-width: map-get($container-max-widths, 'xl');
+
+      @include media-breakpoint-up(xxl) {
+        margin-left: $offcanvas-horizontal-width;
+        max-width: calc(100% - $offcanvas-horizontal-width);
+      }
+
+      @include media-breakpoint-up(xxxl) {
+        max-width: map-get($container-max-widths, 'xxl');
+      }
+    }
+
+    .s-title-02 {
+      @extend .sticky-top;
+      background-color: $white;
+    }
+  }
+
+  #offcanvasNav {
+    top: 0;
+    right: 0;
+    width: $offcanvas-horizontal-width;
+    border-left: $offcanvas-border-width solid $offcanvas-border-color;
+    transform: translateX(100%);
+
+    @include media-breakpoint-up(xxl) {
+      top: 0;
+      right: initial;
+      left: 0;
+      border: 0;
+      box-shadow: none;
+      visibility: visible;
+      transform: none;
+      transition: transform 0s linear !important;
+      background-color: $nuance-10;
+    }
+
+    &.show:not(.hiding),
+    &.showing {
+      transform: none;
+    }
+
+    &.hiding,
+    &.show,
+    &.showing {
+      visibility: visible;
+    }
+  }
+
+  .toast-container {
+
+    @include media-breakpoint-up(xxl) {
+      top: 16px;
+    }
+  }
+}

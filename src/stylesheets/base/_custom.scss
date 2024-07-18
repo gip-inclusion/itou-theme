@@ -1,6 +1,6 @@
 // Custom variables
-$header-height: 105px;
-$header-height-mobile: 85px;
+$header-height: 100px;
+$header-height-mobile: 80px;
 $postheader-height: 59px;
 
 ::selection,
@@ -20,20 +20,6 @@ mark {
 
 body {
   text-underline-offset: 0.188rem;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  > .s-main {
-    flex: 1 0 auto;
-  }
-
-  > #header {
-    @extend .sticky-top;
-    box-shadow: 0px 12px 19px -10px rgba($primary, 0.1);
-    //filter: drop-shadow(0 7px 14px rgba($primary, 0.1));
-    background-color: $white;
-  }
 }
 
 b,
@@ -47,7 +33,11 @@ pre {
 }
 
 .container {
-  max-width: map-get($container-max-widths, 'xl');
+  max-width: map-get($container-max-widths, 'xxl');
+
+  @include media-breakpoint-up(xl) {
+    --bs-gutter-x: 3rem;
+  }
 }
 
 .h1-hero {
@@ -363,6 +353,7 @@ iframe {
   &-footer {
     @extend .offcanvas-header;
     border-top: 1px solid $border-color;
+    border-bottom: 0;
   }
 }
 

@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -22,10 +21,12 @@
     <meta property="twitter:image" content="">
 
     <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
-    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/app.css">
+
+    <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
   </head>
 
-  <body id="top">
+  <body id="top" class="l-authenticated">
     <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="visually-hidden">
       <ul>
         <li><a href="#nav-primary">Aller au menu principal</a></li>
@@ -33,14 +34,318 @@
       </ul>
     </nav>
 
-    <%- include('_sections/header', {headerLogo: 'logo-plateforme-inclusion.svg' , headerLogoAlt: 'La plateforme de l inclusion' , modifier: 's-header--plateforme' } ) %>
+    <div class="global-messages-container">
+      <div class="alert alert-danger alert-dismissible fade show" role="status">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+        <p class="mb-0"><strong>Jeudi 01 février 2024</strong> : les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable. <a href="" class="has-external-link">S’inscrire</a></p>
+      </div>
+    </div>
+
+    <header role="banner" id="header">
+  <section class="s-header-authenticated">
+    <div class="s-header-authenticated__container container">
+      <div class="s-header-authenticated__row row">
+        <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
+          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+        </div>
+        <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
+          <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+            <ul>
+              <li class="dropdown">
+                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                  <i class="ri-account-circle-line" aria-hidden="true"></i>
+                  <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
+                  <ul class="list-unstyled">
+                    <li class="dropdown-item">
+                      <div class="d-flex align-items-center">
+                        <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                        <div class="flex-grow-1 ms-2 lh-sm">
+                          <span>Machin TRUC</span>
+                          <br>
+                          <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Tableau de bord</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Mes notifications</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="">Modifier mon profil</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-item">
+                      <button class="text-danger">Déconnexion</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="d-none d-lg-inline-block dropdown dropdown-structure">
+                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>ETTI - Une nouvelle chance</span>
+                </button>
+                <div class="dropdown-menu w-100" id="switchUserDropdown">
+                  <form action="" method="post">
+                    <ul class="list-unstyled">
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EITI</span>
+                          <strong>Terre &amp; mer</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>ETTI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                        </button>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
+          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+            <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+            <span>Menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+    <div class="offcanvas-header offcanvas-header--structure">
+      <div class="dropdown dropdown-structure flex-grow-1 py-4">
+        <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+          <i class="ri-community-line" aria-hidden="true"></i>
+          <span>ETTI</span>
+          <strong>Une nouvelle chance</strong>
+        </button>
+        <div class="dropdown-menu" id="switchUserDropdown">
+          <form method="post">
+            <ul class="list-unstyled">
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EITI</span>
+                  <strong>Terre &amp; mer</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>ETTI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="border-start border-nuance-08 d-xxl-none">
+        <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+          <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+      <nav role="navigation" aria-label="Navigation secondaire pour mobile">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a href="" class="nav-link active">
+              <i class="ri-home-line font-weight-medium" aria-hidden="true"></i>
+              <span>Accueil</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="ri-draft-line font-weight-medium" aria-hidden="true"></i>
+              <span>Candidatures</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" role="button" class="nav-link has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
+              <i class="ri-team-line font-weight-medium" aria-hidden="true"></i>
+              <span>Salariés</span>
+            </a>
+            <div class="collapse" id="collapseNavSalaries">
+              <ul>
+                <li>
+                  <a href="">Salariés et PASS IAE</a>
+                </li>
+                <li>
+                  <a href="" class="active">Fiches salariés ASP</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" role="button" class="nav-link has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseNavStructure" type="button" aria-expanded="false" aria-controls="collapseNavStructure">
+              <i class="ri-community-line font-weight-medium" aria-hidden="true"></i>
+              <span>Structure</span>
+            </a>
+            <div class="collapse" id="collapseNavStructure">
+              <ul>
+                <li>
+                  <a href="">Présentation</a>
+                </li>
+                <li>
+                  <a href="" class="active">Métiers et recrutements</a>
+                </li>
+                <li>
+                  <a href="">Collaborateurs</a>
+                </li>
+                <li>
+                  <a href="">Annexes financières</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="offcanvas-footer flex-column align-items-stretch">
+      <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
+        <div class="dropdown-center">
+          <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle mb-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+            <i class="ri-account-circle-line" aria-hidden="true"></i>
+            <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+          </button>
+          <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+            <ul class="list-unstyled">
+              <li class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                  <div class="flex-grow-1 ms-2 lh-sm">
+                    <span>Machin TRUC</span>
+                    <br>
+                    <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">Tableau de bord</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">Mes notifications</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="">Modifier mon profil</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <button class="text-danger">Déconnexion</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown-center">
+          <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+          <div class="dropdown-menu" id="helpDropdownMobile">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas-footer__legal">
+        <hr class="mx-n4">
+        <img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
+        <ul>
+          <li><a href="">Accessibilité : partiellement conforme</a></li>
+          <li><a href="">Mentions légales</a></li>
+          <li><a href="">CGU</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
 
       <main class="s-main" role="main">
 
-        <section class="s-title-01">
-          <div class="s-title-01__container container">
-            <div class="s-title-01__row row ">
-              <div class="s-title-01__col s-title-01__col--title col-12">
+        <section class="s-title-02">
+          <div class="s-title-02__container container">
+            <div class="s-title-02__row row ">
+              <div class="s-title-02__col s-title-02__col--title col-12">
                 <div class="c-prevstep">
                   <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
                     <i class="ri-arrow-drop-left-line ri-xl font-weight-medium" aria-hidden="true"></i>
@@ -56,18 +361,10 @@
               </div>
             </div>
           </div>
-          <div class="s-title-01__container container container-max-lg">
-            <div class="s-title-01__row row">
-              <div class="s-title-01__col col-12 mt-3 mt-lg-5">
-                <img class="img-fitcover img-fluid" alt="" src="https://via.placeholder.com/900x300.png" width="900" height="300">
-              </div>
-            </div>
-          </div>
         </section>
 
-
         <section class="s-cms">
-          <div class="s-cms__container container container-max-lg">
+          <div class="s-cms__container container">
             <div class="s-cms__row row">
               <div class="s-cms__col col-12">
                 <h3 data-bs-block-key="2h02h"><b>Qu’est ce que le PNAD ?</b></h3>
@@ -78,7 +375,7 @@
                 </ul>
                 <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
                 <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
-                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2019, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
+                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
                 <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
                 <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
                 <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
@@ -131,7 +428,7 @@
                 </ul>
                 <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
                 <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
-                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2019, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
+                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
                 <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
                 <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
                 <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
@@ -178,7 +475,7 @@
                 </ul>
                 <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
                 <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
-                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2019, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
+                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
                 <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
                 <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
                 <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
@@ -221,8 +518,6 @@
         </section>
 
       </main>
-
-      <%- include('_sections/footer') %>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

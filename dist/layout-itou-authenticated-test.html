@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
+    <link rel="stylesheet" href="stylesheets/app.css">
+
+    <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+  </head>
+
+  <body id="top" class="l-authenticated">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="visually-hidden">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    <div class="global-messages-container">
+      <div class="alert alert-danger alert-dismissible fade show" role="status">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+        <p class="mb-0"><strong>Jeudi 01 février 2024</strong> : les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable. <a href="" class="has-external-link">S’inscrire</a></p>
+      </div>
+    </div>
+
+    <header role="banner" id="header">
+  <section class="s-header-authenticated">
+    <div class="s-header-authenticated__container container">
+      <div class="s-header-authenticated__row row">
+        <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
+          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+        </div>
+        <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
+          <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+            <ul>
+              <li class="dropdown">
+                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                  <i class="ri-account-circle-line" aria-hidden="true"></i>
+                  <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
+                  <ul class="list-unstyled">
+                    <li class="dropdown-item">
+                      <div class="d-flex align-items-center">
+                        <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                        <div class="flex-grow-1 ms-2 lh-sm">
+                          <span>Machin TRUC</span>
+                          <br>
+                          <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Tableau de bord</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Mes notifications</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="">Modifier mon profil</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-item">
+                      <button class="text-danger">Déconnexion</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="d-none d-lg-inline-block dropdown dropdown-structure">
+                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>ETTI - Une nouvelle chance</span>
+                </button>
+                <div class="dropdown-menu w-100" id="switchUserDropdown">
+                  <form action="" method="post">
+                    <ul class="list-unstyled">
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>EITI</span>
+                          <strong>Terre &amp; mer</strong>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                          <i class="ri-community-line" aria-hidden="true"></i>
+                          <span>ETTI</span>
+                          <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                        </button>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
+          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+            <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+            <span>Menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+    <div class="offcanvas-header offcanvas-header--structure">
+      <div class="dropdown dropdown-structure flex-grow-1 py-4">
+        <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+          <i class="ri-community-line" aria-hidden="true"></i>
+          <span>ETTI</span>
+          <strong>Une nouvelle chance</strong>
+        </button>
+        <div class="dropdown-menu" id="switchUserDropdown">
+          <form method="post">
+            <ul class="list-unstyled">
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>EITI</span>
+                  <strong>Terre &amp; mer</strong>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <span>ETTI</span>
+                  <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="border-start border-nuance-08 d-xxl-none">
+        <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+          <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+      <nav role="navigation" aria-label="Navigation secondaire pour mobile">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a href="" class="nav-link active">
+              <i class="ri-home-line font-weight-medium" aria-hidden="true"></i>
+              <span>Accueil</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="ri-draft-line font-weight-medium" aria-hidden="true"></i>
+              <span>Candidatures</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" role="button" class="nav-link has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
+              <i class="ri-team-line font-weight-medium" aria-hidden="true"></i>
+              <span>Salariés</span>
+            </a>
+            <div class="collapse" id="collapseNavSalaries">
+              <ul>
+                <li>
+                  <a href="">Salariés et PASS IAE</a>
+                </li>
+                <li>
+                  <a href="" class="active">Fiches salariés ASP</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" role="button" class="nav-link has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseNavStructure" type="button" aria-expanded="false" aria-controls="collapseNavStructure">
+              <i class="ri-community-line font-weight-medium" aria-hidden="true"></i>
+              <span>Structure</span>
+            </a>
+            <div class="collapse" id="collapseNavStructure">
+              <ul>
+                <li>
+                  <a href="">Présentation</a>
+                </li>
+                <li>
+                  <a href="" class="active">Métiers et recrutements</a>
+                </li>
+                <li>
+                  <a href="">Collaborateurs</a>
+                </li>
+                <li>
+                  <a href="">Annexes financières</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="offcanvas-footer flex-column align-items-stretch">
+      <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
+        <div class="dropdown-center">
+          <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle mb-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+            <i class="ri-account-circle-line" aria-hidden="true"></i>
+            <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+          </button>
+          <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+            <ul class="list-unstyled">
+              <li class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                  <div class="flex-grow-1 ms-2 lh-sm">
+                    <span>Machin TRUC</span>
+                    <br>
+                    <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">Tableau de bord</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">Mes notifications</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="">Modifier mon profil</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <button class="text-danger">Déconnexion</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown-center">
+          <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+          <div class="dropdown-menu" id="helpDropdownMobile">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+              </li>
+              <li>
+                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas-footer__legal">
+        <hr class="mx-n4">
+        <img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
+        <ul>
+          <li><a href="">Accessibilité : partiellement conforme</a></li>
+          <li><a href="">Mentions légales</a></li>
+          <li><a href="">CGU</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="s-main" role="main">
+
+        <div class="toast-container">
+          <div id="liveToast" class="toast toast--success" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2000">
+            <div class="toast-header">
+              <i class="ri-check-line ri-lg me-1" aria-hidden="true"></i>
+              <strong class="me-auto">Default Toast</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+              <button class="btn btn-block btn-outline-primary mt-3 d-block d-sm-none" data-bs-dismiss="toast" aria-label="Fermer">
+                J'ai compris
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <section class="s-title-02">
+          <div class="s-title-02__container container">
+            <div class="s-title-02__row row">
+              <div class="s-title-02__col col-12">
+                <div class="c-prevstep">
+                  <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+                    <i class="ri-arrow-drop-left-line ri-xl font-weight-medium" aria-hidden="true"></i>
+                    <span>Retour</span>
+                  </a>
+                </div>
+                <h1>Title 01</h1>
+                <h2>Un exemple avec des niveaux de titres</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+                <div class="c-box c-box--action">
+                  <div class="form-row align-items-center gx-3">
+                    <div class="form-group col col-lg-auto">
+                      <a href="" class="btn btn-lg btn-white btn-block btn-ico">
+                        <i class="ri-check-line font-weight-medium" aria-hidden="true"></i>
+                        <span>Accepter</span>
+                      </a>
+                    </div>
+                    <div class="form-group col col-lg-auto">
+                      <a href="" class="btn btn-lg btn-outline-white btn-block btn-ico">
+                        <i class="ri-close-line font-weight-medium" aria-hidden="true"></i>
+                        <span>Décliner</span>
+                      </a>
+                    </div>
+                    <div class="form-group col-12 col-lg-auto">
+                      <a href="" class="btn btn-lg btn-link-white btn-block btn-ico">
+                        <i class="ri-history-line font-weight-medium" aria-hidden="true"></i>
+                        <span>Mettre en liste d'attente</span>
+                      </a>
+                    </div>
+                    <div class="form-group col-12 col-lg d-lg-flex justify-content-lg-end">
+                      <button id="transfer_to_button" class="btn btn-lg btn-link-white btn-block w-lg-auto dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
+                        Transférer vers
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="transfer_to_button">
+                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#transfer_confirmation_modal_3858">
+                          <div>
+                            <span class="badge badge-xs rounded-pill bg-primary">EI</span> <span>Tata auto</span>
+                          </div>
+                        </a>
+                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#transfer_confirmation_modal_3853">
+                          <div>
+                            <span class="badge badge-xs rounded-pill bg-primary">EI</span> <span>🎅El Garage Martinet Nord</span>
+                          </div>
+                        </a>
+                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#transfer_confirmation_modal_3854">
+                          <div>
+                            <span class="badge badge-xs rounded-pill bg-primary">EI</span> <span>🤠 El Garage Martinet Ouest</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="s-section">
+          <div class="s-section__container container">
+            <div class="s-section__row row">
+              <div class="s-section__col col-12">
+                <div class="btn-dropdown-filter-group mb-3 mb-md-4">
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Un filtre
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Un autre filtre
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-ico btn-dropdown-filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters">
+                    <i class="ri-sound-module-fill font-weight-bold" aria-hidden="true"></i>
+                    <span>Tous les filtres</span>
+                  </button>
+                  <div class="ms-md-auto">
+                    <button type="button" class="btn btn-ico btn-dropdown-filter">
+                      <i class="ri-eraser-line font-weight-bold" aria-hidden="true"></i>
+                      <span>Effacer tout</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-section__row row">
+              <div class="s-section__col col-12">
+                <h3>Base section content</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+                <p>
+                  <button type="button" class="btn btn-sm btn-primary" id="liveToastBtn">Show live toast</button>
+                </p>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="c-offcanvas-filters offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasFiltersLabel" id="offcanvasFilters">
+          <div class="offcanvas-header">
+            <h4 class="h5 mb-0 btn-ico" id="offcanvasFiltersLabel">
+              <i class="ri-sound-module-fill font-weight-medium" aria-hidden="true"></i>
+              <span>Filtrer</span>
+            </h4>
+            <button type="button" class="btn-close me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form action="">
+              <fieldset>
+                <legend>
+                  <button class="btn btn-outline-transparent has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseDistance" type="button" aria-expanded="false" aria-controls="collapseDistance">Distance</button>
+                </legend>
+                <div class="collapse mt-3" id="collapseDistance">
+                  <ul>
+                    <li>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item5">
+                        <label class="form-check-label" for="customRadio1Item5">
+                          5 km
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item10">
+                        <label class="form-check-label" for="customRadio1Item10">
+                          10 km
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item25">
+                        <label class="form-check-label" for="customRadio1Item25">
+                          25 km
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+              <hr>
+              <fieldset>
+                <legend>
+                  <button class="btn btn-outline-transparent has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseDepartement" type="button" aria-expanded="false" aria-controls="collapseDepartement">Département</button>
+                </legend>
+                <div class="collapse mt-3" id="collapseDepartement">
+                  <ul>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck1" id="customCheck1Item1">
+                        <label class="form-check-label" for="customCheck1Item1">59 - Nord</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck1" id="customCheck1Item2">
+                        <label class="form-check-label" for="customCheck1Item2">62 - Pas-de-Calais</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+              <hr>
+              <fieldset>
+                <legend>
+                  <button class="btn btn-outline-transparent has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseArrondissements" type="button" aria-expanded="false" aria-controls="collapseArrondissements">Arrondissement</button>
+                </legend>
+                <div class="collapse mt-3" id="collapseArrondissements">
+                  <ul>
+                    <li>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item1">
+                        <label class="form-check-label" for="customRadio1Item1">
+                          1
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item2">
+                        <label class="form-check-label" for="customRadio1Item2">
+                          2
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" name="customRadio1" id="customRadio1Item3">
+                        <label class="form-check-label" for="customRadio1Item3">
+                          3
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+              <hr>
+              <fieldset>
+                <legend>
+                  <button class="btn btn-outline-transparent has-collapse-caret" data-bs-toggle="collapse" data-bs-target="#collapseType" type="button" aria-expanded="false" aria-controls="collapseType">Types de structure</button>
+                </legend>
+                <div class="collapse mt-3" id="collapseType">
+                  <ul>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item1">
+                        <label class="form-check-label" for="customCheck2Item1">EI - Entreprise d'insertion</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item2">
+                        <label class="form-check-label" for="customCheck2Item2">AI - Association intermédiaire</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item7">
+                        <label class="form-check-label" for="customCheck2Item7">GEIQ - Groupement d'employeurs pour l'insertion et la qualification</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item8">
+                        <label class="form-check-label" for="customCheck2Item8">EA - Entreprise adaptée</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item9">
+                        <label class="form-check-label" for="customCheck2Item9">EATT - Entreprise adaptée de travail temporaire</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="customCheck2" id="customCheck2Item10">
+                        <label class="form-check-label" for="customCheck2Item10">OPCS - Organisation porteuse de la clause sociale</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="offcanvas-footer gap-3">
+            <button class="btn btn-block btn-primary">Voir</button>
+            <button class="btn btn-ico btn-block btn-outline-primary">
+              <i class="ri-eraser-line font-weight-medium" aria-hidden="true"></i>
+              <span>Effacer tout</span>
+            </button>
+          </div>
+        </div>
+
+      </main>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
+
+      <script>
+        document.getElementById('liveToastBtn').onclick = function () {
+          const toastContainer = document.querySelector('.toast-container');
+          const toastElList = [].slice.call(toastContainer.querySelectorAll('.toast'));
+          let toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl);
+          });
+          toastList.forEach(toast => toast.show());
+        };
+      </script>
+  </body>
+
+</html>
