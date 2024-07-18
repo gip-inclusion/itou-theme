@@ -27,13 +27,6 @@ body {
   > .s-main {
     flex: 1 0 auto;
   }
-
-  > #header {
-    @extend .sticky-top;
-    box-shadow: 0px 12px 19px -10px rgba($primary, 0.1);
-    //filter: drop-shadow(0 7px 14px rgba($primary, 0.1));
-    background-color: $white;
-  }
 }
 
 b,
@@ -47,7 +40,7 @@ pre {
 }
 
 .container {
-  max-width: map-get($container-max-widths, 'xl');
+  max-width: map-get($container-max-widths, 'xxl');
 }
 
 .h1-hero {
