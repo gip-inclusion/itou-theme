@@ -105,7 +105,7 @@
           </nav>
         </div>
         <div class="s-header-not-authenticated__col s-header-not-authenticated__col--burger col d-flex align-items-center justify-content-end d-xl-none">
-          <button type="button" class="btn btn-link btn-ico" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
             <i class="ri-menu-line" id="open" aria-hidden="true"></i>
             <span>Menu</span>
           </button>
@@ -131,22 +131,30 @@
       </div>
     </div>
   </section>
-  <div class="offcanvas offcanvas-end" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
     <div class="offcanvas-header">
-      <h4 class="mb-0 btn-ico" id="offcanvasApplyFiltersLabel">
+      <h4 class="h5 mb-0 btn-ico align-items-center" id="offcanvasApplyFiltersLabel">
         <i class="ri-menu-line" aria-hidden="true"></i>
         <span>Menu</span>
       </h4>
-      <button type="button" class="btn-close btn-link" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+      <button type="button" class="btn-link px-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+        <i class="ri-close-line" aria-hidden="true"></i>
+      </button>
     </div>
     <div class="offcanvas-body">
       <nav role="navigation" aria-label="Navigation secondaire pour mobile">
-        <ul>
-          <li>
-            <a href="">Rechercher des emplois inclusifs</a>
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a href="" class="nav-link active">
+              <i class="ri-search-line" aria-hidden="true"></i>
+              <span>Rechercher des emplois inclusifs</span>
+            </a>
           </li>
-          <li>
-            <a href="">Rechercher des prescripteurs habilités</a>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="ri-search-line" aria-hidden="true"></i>
+              <span>Rechercher des prescripteurs habilités</span>
+            </a>
           </li>
         </ul>
       </nav>

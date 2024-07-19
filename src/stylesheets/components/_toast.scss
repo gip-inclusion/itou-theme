@@ -14,10 +14,6 @@
     top: calc(#{$header-height-mobile} + 16px);
   }
 
-  @include media-breakpoint-up(md) {
-    top: calc(#{$header-height} + 16px);
-  }
-
   @include media-breakpoint-up(xl) {
     top: calc(#{$header-height} + 16px);
   }
