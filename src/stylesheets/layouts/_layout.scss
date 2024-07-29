@@ -39,6 +39,9 @@
 
 .l-authenticated {
   .global-messages-container {
+    @include media-breakpoint-up(xl) {
+      margin-left: $offcanvas-horizontal-width-sm;
+    }
 
     @include media-breakpoint-up(xxl) {
       margin-left: $offcanvas-horizontal-width;
@@ -46,9 +49,13 @@
   }
 
   > .s-main {
-
     .container {
       max-width: map-get($container-max-widths, 'xl');
+
+      @include media-breakpoint-up(xl) {
+        margin-left: $offcanvas-horizontal-width-sm;
+        max-width: calc(100% - $offcanvas-horizontal-width-sm);
+      }
 
       @include media-breakpoint-up(xxl) {
         margin-left: $offcanvas-horizontal-width;
@@ -63,6 +70,31 @@
     .s-title-02 {
       @extend .sticky-top;
       background-color: $white;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        z-index: 1;
+        width: 100%;
+        height: 1rem;
+        background: linear-gradient($white, transparent);
+      }
+
+      &__container::after {
+        transform: translateX(-16px);
+        width: calc(100% + 32px);
+
+        @include media-breakpoint-up(xl) {
+          transform: translateX(-24px);
+          width: calc(100% + 48px);
+        }
+
+        @include media-breakpoint-up(xxxl) {
+          width: calc(100% + 24px);
+        }
+      }
     }
   }
 
@@ -73,16 +105,22 @@
     border-left: $offcanvas-border-width solid $offcanvas-border-color;
     transform: translateX(100%);
 
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xl) {
       top: 0;
       right: initial;
       left: 0;
       border: 0;
+      z-index: $zindex-fixed;
       box-shadow: none;
       visibility: visible;
       transform: none;
       transition: transform 0s linear !important;
       background-color: $nuance-10;
+      width: $offcanvas-horizontal-width-sm;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: $offcanvas-horizontal-width;
     }
 
     &.show:not(.hiding),
@@ -95,11 +133,16 @@
     &.showing {
       visibility: visible;
     }
+
+    .dropdown-structure .dropdown-toggle__summary::after {
+      @include media-breakpoint-up(xl) {
+        margin-right: 0;
+      }
+    }
   }
 
   .toast-container {
-
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xl) {
       top: 16px;
     }
   }

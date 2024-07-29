@@ -201,14 +201,14 @@
           </form>
         </div>
       </div>
-      <div class="border-start border-nuance-08 d-xxl-none">
+      <div class="border-start border-nuance-08 d-xl-none">
         <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
           <i class="ri-close-line" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-    <div class="offcanvas-body">
-      <nav role="navigation" aria-label="Navigation secondaire pour mobile">
+    <div class="offcanvas-body d-flex flex-column">
+      <nav class="flex-grow-1" role="navigation" aria-label="Navigation secondaire pour mobile">
         <ul class="nav nav-tabs flex-column">
           <li class="nav-item">
             <a href="" class="nav-link active">
@@ -262,11 +262,9 @@
           </li>
         </ul>
       </nav>
-    </div>
-    <div class="offcanvas-footer flex-column align-items-stretch">
       <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
         <div class="dropdown-center">
-          <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle mb-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+          <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
             <i class="ri-account-circle-line" aria-hidden="true"></i>
             <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
           </button>
@@ -326,8 +324,9 @@
           </div>
         </div>
       </nav>
+    </div>
+    <div class="offcanvas-footer flex-column align-items-stretch">
       <div class="offcanvas-footer__legal">
-        <hr class="mx-n4">
         <img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
         <ul>
           <li><a href="">Accessibilité : partiellement conforme</a></li>

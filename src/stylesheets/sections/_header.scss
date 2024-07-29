@@ -63,7 +63,6 @@
   }
 
   .offcanvas-footer {
-    border-top: 0;
 
     &__legal {
       color: $nuance-04;
@@ -185,7 +184,7 @@
   background-color: $nuance-10;
   position: relative;
 
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     display: none;
   }
 

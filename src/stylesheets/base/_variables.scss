@@ -433,7 +433,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 960px,
   xl: 1420px,
-  xxl: 1880px,
+  xxl: 1780px,
   xxxl: 2320px,
 );
 // scss-docs-end grid-breakpoints
@@ -458,7 +458,7 @@ $container-max-widths: (
   md: 768px,
   lg: 960px,
   xl: 1420px,
-  xxl: 1880px,
+  xxl: 1780px,
   xxxl: 2320px,
 );
 // scss-docs-end container-max-widths
@@ -1820,6 +1820,7 @@ $btn-close-white-filter: invert(1) grayscale(100%) brightness(200%) !default;
 $offcanvas-padding-y: $modal-inner-padding;
 $offcanvas-padding-x: $modal-inner-padding;
 $offcanvas-horizontal-width: 420px;
+$offcanvas-horizontal-width-sm: 360px;
 $offcanvas-vertical-height: 30vh !default;
 $offcanvas-transition-duration: 0.3s !default;
 $offcanvas-border-color: $modal-content-border-color !default;

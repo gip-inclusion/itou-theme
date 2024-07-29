@@ -7,29 +7,17 @@
     margin-bottom: map-get($spacers, 5);
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1rem;
-    z-index: 1;
-    width: 100%;
-    height: 1rem;
-    background: linear-gradient($white, transparent);
-  }
-
   &:not(.s-title-02:has(.s-title-02__col > *)) {
     display: none;
   }
 
-  &__row {
+  &__container {
     &::after {
       content: '';
       display: block;
-      width: calc(100% - 32px);
       height: 1px;
-      transform: translateX(16px);
       background-color: $border-color;
+      width: 100%;
     }
   }
 
