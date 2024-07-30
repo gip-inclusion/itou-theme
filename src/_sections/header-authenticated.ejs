@@ -165,7 +165,7 @@
       </div>
     </div>
     <div class="offcanvas-body d-flex flex-column">
-      <nav class="flex-grow-1" role="navigation" aria-label="Navigation secondaire pour mobile">
+      <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
         <ul class="nav nav-tabs flex-column">
           <li class="nav-item">
             <a href="" class="nav-link active">
@@ -219,68 +219,66 @@
           </li>
         </ul>
       </nav>
-      <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
-        <div class="dropdown-center">
-          <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
-            <i class="ri-account-circle-line" aria-hidden="true"></i>
-            <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
-          </button>
-          <div class="dropdown-menu" id="dashboardUserDropdownMobile">
-            <ul class="list-unstyled">
-              <li class="dropdown-item">
-                <div class="d-flex align-items-center">
-                  <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
-                  <div class="flex-grow-1 ms-2 lh-sm">
-                    <span>Machin TRUC</span>
-                    <br>
-                    <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
-                  </div>
+      <div class="dropdown-center">
+        <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+          <i class="ri-account-circle-line" aria-hidden="true"></i>
+          <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+        </button>
+        <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+          <ul class="list-unstyled">
+            <li class="dropdown-item">
+              <div class="d-flex align-items-center">
+                <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                <div class="flex-grow-1 ms-2 lh-sm">
+                  <span>Machin TRUC</span>
+                  <br>
+                  <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
                 </div>
-              </li>
-              <li>
-                <div class="dropdown-divider"></div>
-              </li>
-              <li>
-                <a class="dropdown-item" href="">Tableau de bord</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="">Mes notifications</a>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li>
-                <a class="dropdown-item" href="">Modifier mon profil</a>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li>
-                <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li class="dropdown-item">
-                <button class="text-danger">Déconnexion</button>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown-divider"></div>
+            </li>
+            <li>
+              <a class="dropdown-item" href="">Tableau de bord</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="">Mes notifications</a>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" href="">Modifier mon profil</a>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item">
+              <button class="text-danger">Déconnexion</button>
+            </li>
+          </ul>
         </div>
-        <div class="dropdown-center">
-          <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
-          <div class="dropdown-menu" id="helpDropdownMobile">
-            <ul class="list-unstyled">
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div class="dropdown-center">
+        <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+        <div class="dropdown-menu" id="helpDropdownMobile">
+          <ul class="list-unstyled">
+            <li>
+              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+            </li>
+            <li>
+              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+            </li>
+            <li>
+              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+            </li>
+            <li>
+              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </div>
     <div class="offcanvas-footer flex-column align-items-stretch">
       <div class="offcanvas-footer__legal">
