@@ -139,6 +139,10 @@
         margin-right: 0;
       }
     }
+
+    div.dropdown-toggle__summary::after {
+      content: '';
+    }
   }
 
   .toast-container {
