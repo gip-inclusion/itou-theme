@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="stylesheets/app.css">
   </head>
 
-  <body id="top" class="l-not-authenticated">
+  <body id="top" class="l-not-emplois">
     <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="visually-hidden">
       <ul>
         <li><a href="#nav-primary">Aller au menu principal</a></li>
@@ -33,84 +33,87 @@
     </nav>
 
     <div class="global-messages-container">
-      <div class="alert alert-danger alert-dismissible fade show" role="status">
+      <div class="alert alert-success alert-dismissible fade show" role="status">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
         <p class="mb-0"><strong>Jeudi 01 février 2024</strong> : les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable. <a href="" class="has-external-link">S’inscrire</a></p>
       </div>
     </div>
 
     <header role="banner" id="header">
-  <section class="s-header-not-authenticated">
-    <div class="s-header-not-authenticated__container container">
-      <div class="s-header-not-authenticated__row row">
-        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
-          <a href="#top" class="s-header-not-authenticated__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
+  <section class="s-header">
+    <div class="s-header__container container">
+      <div class="s-header__row row">
+        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
+          <a href="#top" class="s-header__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
         </div>
-        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--logo-service col-auto d-flex align-items-center px-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+        <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
+          <a href=""><img src="images/logo-communaute-inclusion.svg" alt="La communaute de l'inclusion" height="90"></a>
         </div>
-        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--nav col d-none d-lg-inline-flex d-lg-flex align-items-center justify-content-end pe-0 pe-xl-3">
+        <div class="s-header__col s-header__col--nav col d-none d-lg-inline-flex d-lg-flex align-items-center justify-content-end pe-0 pe-xl-3">
           <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
             <ul>
               <li class="d-none d-xl-inline-block dropdown">
-                <button type="button" class="btn btn-link dropdown-toggle mh-auto p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdown" aria-expanded="false">Besoin d'aide ?</button>
-                <div class="dropdown-menu" id="helpDropdown">
+                <form action="/search/" name="header_search_form">
+                  <div class="input-group input-group-rounded-pill">
+                    <input class="form-control" type="search" placeholder="Rechercher" aria-label="Rechercher" name="q">
+                    <div class="input-group-text p-0">
+                      <button type="submit" class="btn btn-link btn-ico matomo-event" data-matomo-category="engagement" data-matomo-action="search" data-matomo-option="submit_query_header">
+                        <i class="ri-search-line font-weight-bold" aria-label="Rechercher"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="dropdown">
+                <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                  <i class="ri-account-circle-line" aria-hidden="true"></i>
+                  <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                </button>
+                <div class="dropdown-menu" id="dashboardUserDropdown">
                   <ul class="list-unstyled">
-                    <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                    <li class="dropdown-item">
+                      <div class="d-flex align-items-center">
+                        <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                        <div class="flex-grow-1 ms-2 lh-sm">
+                          <span>Machin TRUC</span>
+                          <br>
+                          <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                      <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                      <a class="dropdown-item" href="">Tableau de bord</a>
                     </li>
                     <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                      <a class="dropdown-item" href="">Mes notifications</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="">Modifier mon profil</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-item">
+                      <button class="text-danger">Déconnexion</button>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a class="btn btn-ico btn-outline-primary" href="">
-                  <i class="ri-user-add-line" aria-hidden="true"></i>
-                  <span>S'inscrire</span>
+                <a href="" rel="nofollow" class="btn btn-inclusion-connect">
+                  <img src="images/logo-inclusion-connect-two-lines.svg" alt="Se connecter | S'inscrire" height="37">
                 </a>
-              </li>
-              <li class="dropdown">
-                <button class="btn btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
-                  <i class="ri-login-box-line" aria-hidden="true"></i>
-                  <span>Se connecter</span>
-                </button>
-                <div class="dropdown-menu" id="loginUserDropdown">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="dropdown-item" href="">
-                        Candidat
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">
-                        Prescripteur
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">
-                        Employeur inclusif
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">
-                        Institution partenaire
-                      </a>
-                    </li>
-                  </ul>
-                </div>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="s-header-not-authenticated__col s-header-not-authenticated__col--burger col col-lg-auto d-flex align-items-center justify-content-end d-xl-none ps-0">
+        <div class="s-header__col s-header__col--burger col col-lg-auto d-flex align-items-center justify-content-end d-xl-none ps-0">
           <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
             <i class="ri-menu-line" id="open" aria-hidden="true"></i>
             <span>Menu</span>
@@ -126,10 +129,13 @@
           <nav role="navigation" aria-label="Navigation secondaire">
             <ul>
               <li>
-                <a href="">Rechercher des emplois inclusifs</a>
+                <a href="">Espace d'échanges</a>
               </li>
               <li>
-                <a href="">Rechercher des prescripteurs habilités</a>
+                <a href="">Documentation</a>
+              </li>
+              <li>
+                <a href="">Diagnostic Parcours IAE</a>
               </li>
             </ul>
           </nav>
@@ -149,17 +155,30 @@
     </div>
     <div class="offcanvas-body">
       <nav role="navigation" aria-label="Navigation secondaire pour mobile">
+        <form class="mb-4" action="/search/" name="header_search_form">
+          <div class="input-group input-group-rounded-pill">
+            <input class="form-control" type="search" placeholder="Rechercher" aria-label="Rechercher" name="q">
+            <div class="input-group-text p-0">
+              <button type="submit" class="btn btn-link btn-ico matomo-event" data-matomo-category="engagement" data-matomo-action="search" data-matomo-option="submit_query_header">
+                <i class="ri-search-line font-weight-bold" aria-label="Rechercher"></i>
+              </button>
+            </div>
+          </div>
+        </form>
         <ul class="nav nav-tabs flex-column">
           <li class="nav-item">
             <a href="" class="nav-link active">
-              <i class="ri-search-line font-weight-medium" aria-hidden="true"></i>
-              <span>Rechercher des emplois inclusifs</span>
+              <span>Espace d'échanges</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">
-              <i class="ri-search-line font-weight-medium" aria-hidden="true"></i>
-              <span>Rechercher des prescripteurs habilités</span>
+              <span>Documentation</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <span>Diagnostic Parcours IAE</span>
             </a>
           </li>
         </ul>
@@ -167,40 +186,52 @@
     </div>
     <div class="offcanvas-footer flex-column align-items-stretch">
       <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
+        <div>
+          <a href="" rel="nofollow" class="btn btn-inclusion-connect">
+            <img src="images/logo-inclusion-connect-one-line.svg" alt="Se connecter | S'inscrire" class="img-fluid">
+          </a>
+        </div>
         <div class="dropdown-center">
-          <button class="btn btn-block btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
-            <i class="ri-login-box-line" aria-hidden="true"></i>
-            <span>Se connecter</span>
+          <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+            <i class="ri-account-circle-line" aria-hidden="true"></i>
+            <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
           </button>
-          <div class="dropdown-menu" id="loginUserDropdownMobile">
+          <div class="dropdown-menu" id="dashboardUserDropdownMobile">
             <ul class="list-unstyled">
-              <li>
-                <a class="dropdown-item" href="">
-                  Candidat
-                </a>
+              <li class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                  <div class="flex-grow-1 ms-2 lh-sm">
+                    <span>Machin TRUC</span>
+                    <br>
+                    <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                  </div>
+                </div>
               </li>
               <li>
-                <a class="dropdown-item" href="">
-                  Prescripteur
-                </a>
+                <div class="dropdown-divider"></div>
               </li>
               <li>
-                <a class="dropdown-item" href="">
-                  Employeur inclusif
-                </a>
+                <a class="dropdown-item" href="">Tableau de bord</a>
               </li>
               <li>
-                <a class="dropdown-item" href="">
-                  Institution partenaire
-                </a>
+                <a class="dropdown-item" href="">Mes notifications</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="">Modifier mon profil</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <button class="text-danger">Déconnexion</button>
               </li>
             </ul>
           </div>
         </div>
-        <a class="btn btn-block btn-ico btn-outline-primary my-3" href="">
-          <i class="ri-user-add-line" aria-hidden="true"></i>
-          <span>S'inscrire</span>
-        </a>
         <div class="dropdown-center">
           <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
           <div class="dropdown-menu" id="helpDropdownMobile">
@@ -341,12 +372,26 @@
           <strong>Accès rapides</strong>
           <div class="s-footer-quick__gridlist">
             <ul>
-              <li><a href="">Rechercher un emploi inclusif</a></li>
-              <li><a href="">Rechercher des prescripteurs habilités</a></li>
-              <li><a href="">Journal des modifications</a></li>
+              <li>
+                <a href="">Espace d'échanges</a>
+              </li>
+              <li>
+                <a href="">Documentation</a>
+              </li>
+              <li>
+                <a href="">Évènements</a>
+              </li>
             </ul>
             <ul>
-              <li><a href="">Journal des modifications</a></li>
+              <li>
+                <a href="">Chercher dans la communauté</a>
+              </li>
+              <li>
+                <a href="">Contributeurs actifs</a>
+              </li>
+              <li>
+                <a href="">Mon stage CIP</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -356,9 +401,6 @@
             <ul>
               <li>
                 <a href="" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_documentation">Documentation</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
               </li>
               <li>
                 <a href="" target="_blank" aria-label="Disponibilité (ouverture dans un nouvel onglet)">Disponibilité</a>
@@ -401,9 +443,20 @@
         </div>
         <div class="s-footer-gip__col s-footer-gip__col--links col-12 col-lg-auto">
           <ul>
-            <li><a href="https://beta.gouv.fr/" target="_blank" aria-label="Incubateur de services publics numériques — beta.gouv.fr (lien externe)">beta.gouv.fr</a></li>
-            <li><a href="https://www.data.gouv.fr/fr/" target="_blank" aria-label="Data.gouv.fr (lien externe)">data.gouv.fr</a></li>
-            <li><a href="https://api.gouv.fr/" target="_blank" aria-label="Simplifiez le partage et la circulation des données administratives grace à api.gouv.fr (lien externe)">api.gouv.fr</a></li>
+            <li>
+              <a href="https://www.francetravail.fr/accueil/" aria-label="France Travail (lien externe)">
+                <img src="images/logo-france-travail.svg" height="40" alt="France Travail">
+              </a>
+            </li>
+            <li>
+              <a href="https://beta.gouv.fr/" target="_blank" aria-label="Incubateur de services publics numériques — beta.gouv.fr (lien externe)">beta.gouv.fr</a>
+            </li>
+            <li>
+              <a href="https://www.data.gouv.fr/fr/" target="_blank" aria-label="Data.gouv.fr (lien externe)">data.gouv.fr</a>
+            </li>
+            <li>
+              <a href="https://api.gouv.fr/" target="_blank" aria-label="Simplifiez le partage et la circulation des données administratives grace à api.gouv.fr (lien externe)">api.gouv.fr</a>
+            </li>
           </ul>
         </div>
       </div>

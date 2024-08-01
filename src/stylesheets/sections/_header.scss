@@ -113,7 +113,8 @@
   }
 }
 
-.s-header-not-authenticated {
+.s-header-not-authenticated,
+.s-header {
   background-color: $white;
   position: relative;
   z-index: 1;
