@@ -20,6 +20,25 @@ mark {
 
 body {
   text-underline-offset: 0.188rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > .s-main {
+    flex: 1 0 auto;
+
+    .container {
+      max-width: map-get($container-max-widths, 'xl');
+    }
+  }
+}
+
+.container {
+  max-width: map-get($container-max-widths, 'xxl');
+
+  @include media-breakpoint-up(xl) {
+    --bs-gutter-x: 3rem;
+  }
 }
 
 b,
@@ -30,14 +49,6 @@ strong {
 pre {
   color: $black;
   background-color: $nuance-09;
-}
-
-.container {
-  max-width: map-get($container-max-widths, 'xxl');
-
-  @include media-breakpoint-up(xl) {
-    --bs-gutter-x: 3rem;
-  }
 }
 
 figure {
