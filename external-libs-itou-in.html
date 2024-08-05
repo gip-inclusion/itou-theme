@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -159,143 +158,61 @@
 
       <main class="s-main" role="main">
 
-        <section id="content">
+        <section>
           <div class="container">
 
-            <article class="row py-5" id="logos">
-              <div class="col-12 col-lg-3">
-                <h3>Logos</h3>
-              </div>
-              <div class="col-12 col-lg-9">
-                <div class="mb-5">
-                  <h6>Ministère</h6>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div><img src="images/logo-republique-francaise.svg" height="180" alt="République Française"></div>
-                    <div><img src="images/logo-ministere-emploi.svg" height="180" alt="Ministère du travail, du plein emploi et de l'insertion"></div>
-                    <div><img src="images/logo-beta-gouv.svg" height="40" alt="Beta.gouv.fr"></div>
-                    <div class="ps-5"><img src="images/logo-accelere-betagouv.svg" alt="Accéléré par Beta.gouv.fr"></div>
-                  </div>
+            <article class="row py-5" id="bs">
+              <div class="col-12">
+                <h3>Intro JS</h3>
+                <p>Pour utiliser <a href="https://introjs.com/docs" target="_blank" class="has-external-link">Intro JS</a> il suffit d'ajouter l'appel aux cdn du js
+                  <code>&#60;script src=&#34;https://unpkg.com/intro.js/intro.js&#34;&#62;&#60;/script&#62;</code>
+                  puis instancier <code>introJs.tour()</code>
+                </p>
+                <div>
+                  Par exemple :
+                  <pre class="bg-info-lighter p-3">
+                    <code>
+  &lt;script&gt;&#10;  introJs.tour().setOptions({&#10;    dontShowAgainCookie: &apos;introjsPass-dontShowAgain&apos;,&#10;    dontShowAgain: true,&#10;    showProgress: false,&#10;    showBullets: true,&#10;    skipLabel: &quot;&quot;,&#10;    nextLabel: &quot;Suivant&quot;,&#10;    prevLabel: &quot;Pr&eacute;cedent&quot;,&#10;    doneLabel: &quot;Fin&quot;,&#10;    dontShowAgainLabel: &quot;Ne plus afficher&quot;,&#10;    steps: [{&#10;        title: &apos;Bonjour &#128075;&apos;,&#10;        intro: &apos;D&eacute;couvrez votre nouvelle box de PASS IAE&apos;&#10;      },&#10;      {&#10;        element: document.querySelector(&apos;#introjsPass01&apos;),&#10;        title: &apos;Votre PASS est valide&apos;,&#10;        intro: &apos;Ici l\&apos;etat actuel de votre PASS est indiqu&eacute;&apos;&#10;      },&#10;      {&#10;        element: document.querySelector(&apos;#introjsPass02&apos;),&#10;        title: &apos;Valide jusqu\&apos;a cette date&apos;&#10;      },&#10;      {&#10;        element: document.querySelector(&apos;#introjsPass03&apos;),&#10;        intro: &apos;Vous pouvez l\&apos;afficher en cliquant ici&apos;&#10;      }]&#10;    }).start();&#10;&lt;/script&gt;
+                    </code>
+                  </pre>
                 </div>
-                <div class="mb-5">
-                  <h6 class="mb-0">Chantiers</h6>
-                  <p>Logo texte</p>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-plateforme-inclusion-simple.svg" height="33" alt="La plateforme de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect-simple.svg" height="33" alt="Inclusion Connect"></div>
+                <p><i>Les styles seront automatiquement chargés par le thème itou, il est donc inutile d'inclure les styles par défaut.</i></p>
+                <br>
+                <br>
+                <div class="c-box c-box--pass bg-success-lightest border-success w-md-33">
+                  <div class="mb-3 mb-md-4">
+                    <span class="badge badge-base rounded-pill bg-success text-white" id="introjsPass01">
+                      <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                      PASS IAE valide
+                    </span>
                   </div>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-emploi-inclusion-simple.svg" height="33" alt="Les emplois de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-communaute-inclusion-simple.svg" height="33" alt="La communauté de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-pilotage-inclusion-simple.svg" height="33" alt="Le pilotage de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-marche-inclusion-simple.svg" height="33" alt="Le marché de l'inclusion"></div>
-                  </div>
-                </div>
-                <div class="mb-5">
-                  <p>Logo monogramme</p>
-                  <div class="d-flex">
-                    <div class="flex-fill px-3"><img src="images/logo-plateforme-inclusion-mono.svg" height="53" alt="La plateforme de l'inclusion"></div>
-                    <div class="flex-fill px-3"><img src="images/logo-inclusion-connect-mono.svg" height="53" alt="Inclusion Connect"></div>
-                    <div class="flex-fill px-3"><img src="images/logo-emploi-inclusion-mono.svg" height="53" alt="Les emplois de l'inclusion"></div>
-                    <div class="flex-fill px-3"><img src="images/logo-communaute-inclusion-mono.svg" height="53" alt="La communauté de l'inclusion"></div>
-                    <div class="flex-fill px-3"><img src="images/logo-pilotage-inclusion-mono.svg" height="53" alt="Le pilotage de l'inclusion"></div>
-                    <div class="flex-fill px-3"><img src="images/logo-marche-inclusion-mono.svg" height="53" alt="Le marché de l'inclusion"></div>
-                  </div>
-                </div>
-                <div class="mb-5">
-                  <p>Logo graphique</p>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-plateforme-inclusion.svg" height="53" alt="La plateforme de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect.svg" height="53" alt="Inclusion Connect"></div>
-                  </div>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-emploi-inclusion.svg" height="53" alt="Les emplois de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-communaute-inclusion.svg" height="53" alt="La communauté de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-pilotage-inclusion.svg" height="53" alt="Le pilotage de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-marche-inclusion.svg" height="53" alt="Le marché de l'inclusion"></div>
-                  </div>
-                </div>
-                <div class="mb-5 bg-primary p-5">
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-plateforme-inclusion-light.svg" height="53" alt="La plateforme de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect-light.svg" height="53" alt="Inclusion Connect"></div>
-                  </div>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-emploi-inclusion-light.svg" height="53" alt="Les emplois de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-communaute-inclusion-light.svg" height="53" alt="La communauté de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-pilotage-inclusion-light.svg" height="53" alt="Le pilotage de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-marche-inclusion-light.svg" height="53" alt="Le marché de l'inclusion"></div>
-                  </div>
-                </div>
-                <div class="mb-5">
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-plateforme-inclusion-dark.svg" height="53" alt="La plateforme de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-inclusion-connect-dark.svg" height="53" alt="Inclusion Connect"></div>
-                  </div>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="pe-3 pb-3"><img src="images/logo-emploi-inclusion-dark.svg" height="53" alt="Les emplois de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-communaute-inclusion-dark.svg" height="53" alt="La communauté de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-pilotage-inclusion-dark.svg" height="53" alt="Le pilotage de l'inclusion"></div>
-                    <div class="pe-3 pb-3"><img src="images/logo-marche-inclusion-dark.svg" height="53" alt="Le marché de l'inclusion"></div>
-                  </div>
+                  <ul class="list-data mb-3 mb-md-4">
+                    <li>
+                      <small>Numéro de PASS IAE</small>
+                      <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">99999</span></strong>
+                    </li>
+                    <li>
+                      <small>Date de début</small>
+                      <strong>05/07/2024</strong>
+                    </li>
+                    <li>
+                      <small>Date de fin prévisionnelle <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible..." data-bs-original-title="Cette date de fin est susceptible..."></i></small>
+                      <strong id="introjsPass02">04/07/2026</strong>
+                    </li>
+                    <li>
+                      <small>Durée de validité <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin de validité..." data-bs-original-title="Cette date de fin de validité..."></i></small>
+                      <strong class="text-success">721 jours (environ 1 an, 2 mois, 12 jours)</strong>
+                    </li>
+                  </ul>
+                  <a href="" class="btn btn-outline-primary btn-block btn-ico bg-white" id="introjsPass03">
+                    <i class="ri-eye-line font-weight-medium" aria-hidden="true"></i>
+                    <span>Afficher le PASS IAE</span>
+                  </a>
                 </div>
               </div>
             </article>
 
-            <article class="row py-5" id="icones">
-              <div class="col-12 col-lg-3">
-                <h3>Icones</h3>
-                <p>Les icones "utilitaires" sont issues de la bibliothèque <a href="http://remixicon.com/" target="_blank">remixicon</a> <i class="ri-external-link-line"></i></p>
-                <p>Elles sont à utiliser généralement en 16px et en 18px dans les boutons (<code>.ri-lg</code>).</p>
-              </div>
-              <div class="col-12 col-lg-9">
-                <div class="mb-5 bg-light p-3">
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="p-3"><i class="ri-mail-send-line"></i></div>
-                    <div class="p-3"><i class="ri-search-line"></i></div>
-                    <div class="p-3"><i class="ri-arrow-right-line"></i></div>
-                    <div class="p-3"><i class="ri-arrow-right-up-line"></i></div>
-                    <div class="p-3"><i class="ri-map-pin-user-line"></i></div>
-                    <div class="p-3"><i class="ri-map-pin-2-fill"></i></div>
-                    <div class="p-3"><i class="ri-file-list-2-line"></i></div>
-                    <div class="p-3"><i class="ri-refresh-line"></i></div>
-                    <div class="p-3"><i class="ri-arrow-up-s-fill"></i></div>
-                    <div class="p-3"><i class="ri-arrow-down-s-fill"></i></div>
-                  </div>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="p-3"><i class="ri-mail-send-line ri-xs"></i> <code>.ri-xs (12px)</code></div>
-                    <div class="p-3"><i class="ri-mail-send-line ri-sm"></i> <code>.ri-sm (14px)</code></div>
-                    <div class="p-3"><i class="ri-mail-send-line"></i> <span>(16px)</span></div>
-                    <div class="p-3"><i class="ri-mail-send-line ri-lg"></i> <code>.ri-lg (18px)</code></div>
-                  </div>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="p-3"><i class="ri-mail-send-line ri-xl"></i> <code>.ri-xl (20px)</code></div>
-                    <div class="p-3"><i class="ri-mail-send-line ri-xxl"></i> <code>.ri-xxl (24px)</code></div>
-                    <div class="p-3"><i class="ri-mail-send-line ri-2x"></i> <code>.ri-2x (2rem soit 32px)</code></div>
-                  </div>
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="p-3">
-                      <p>Faire tourner une icone avec <code>.ri-spinner</code></p>
-                      <i class="ri-restart-line ri-lg ri-spinner"></i> <code>.ri-restart-line . ri-spinner</code>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="row py-5" id="hr">
-              <div class="col-12 col-lg-3">
-                <h3>Horizontal rule (hr)</h3>
-              </div>
-              <div class="col-12 col-lg-9">
-                <h6>Une ligne de séparation <code>&lt;hr&gt;</code> de 1px avec des margins top/bottom de 1rem par default (soit .my-3)</h6>
-                <hr />
-                <p>Les margins top/bottom peuvent facilement etre modifiés en appliquant une .class avec une autre valeur de spacing (ici un .my-5 par exemple)</p>
-                <hr class="my-5" />
-                <p>Les hr peuvent contenir quelques mots modifiables dans la <code>data-it-text="Une petit exemple"</code></p>
-                <hr class="my-5" data-it-text="Une petit exemple" />
-              </div>
-            </article>
-
+            <hr>
           </div>
         </section>
 
@@ -304,6 +221,38 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
       <script src="javascripts/app.js"></script>
+
+      <script src="https://unpkg.com/intro.js/intro.js"></script>
+      <script>
+        introJs.tour().setOptions({
+          dontShowAgainCookie: 'introjsPass-dontShowAgain',
+          dontShowAgain: true,
+          showProgress: false,
+          showBullets: true,
+          skipLabel: "",
+          nextLabel: "Suivant",
+          prevLabel: "Précedent",
+          doneLabel: "Fin",
+          dontShowAgainLabel: "Ne plus afficher",
+          steps: [{
+              title: 'Bonjour 👋',
+              intro: 'Découvrez votre nouvelle box de PASS IAE'
+            },
+            {
+              element: document.querySelector('#introjsPass01'),
+              title: 'Votre PASS est valide',
+              intro: 'Ici l\'etat actuel de votre PASS est indiqué'
+            },
+            {
+              element: document.querySelector('#introjsPass02'),
+              title: 'Valide jusqu\'a cette date'
+            },
+            {
+              element: document.querySelector('#introjsPass03'),
+              intro: 'Vous pouvez l\'afficher en cliquant ici'
+            }]
+          }).start();
+      </script>
   </body>
 
 </html>
