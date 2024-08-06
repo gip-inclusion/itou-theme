@@ -255,4 +255,12 @@
       }
     }
   }
+
+  .dropdown-menu {
+    max-width: 100%;
+
+    .dropdown-item {
+      white-space: initial;
+    }
+  }
 }
