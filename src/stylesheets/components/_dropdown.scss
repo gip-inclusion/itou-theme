@@ -15,6 +15,12 @@
   }
 }
 
+.dropdown-menu {
+  ul.list-unstyled {
+    margin-bottom: 0;
+  }
+}
+
 .dropdown-header {
   display: flex;
   align-items: center;
@@ -155,6 +161,110 @@
         i {
           background-color: $button-light;
           color: $white;
+        }
+      }
+    }
+  }
+
+  &-login {
+
+    .dropdown-toggle {
+      &.btn-ico > span {
+        flex-grow: 1;
+        text-align: left;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &__summary {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: map-get($spacers, 2);
+        text-align: left;
+
+        i {
+          grid-area: 1 / 1 / 3 / 2;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          background-color: $body-color;
+          border-radius: $border-radius-lg;
+          font-size: $h3-font-size;
+          font-weight: $font-weight-medium;
+          color: $white;
+
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        span {
+          grid-area: 1 / 2 / 2 / 3;
+          font-size: $font-size-sm;
+          line-height: $line-height-sm;
+        }
+
+        strong {
+          grid-area: 2 / 2 / 3 / 3;
+          line-height: $line-height-sm;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        &::after {
+          grid-area: 1 / 3 / 3 / 4;
+          content: '\f327';
+          margin-left: 1rem;
+          margin-right: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .dropdown-toggle,
+    .dropdown-menu {
+      min-width: 250px;
+    }
+
+    .dropdown-item {
+      @extend .py-3;
+
+      &__summary {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: map-get($spacers, 2);
+        align-items: center;
+
+        i {
+          grid-area: 1 / 1 / 2 / 2;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          background-color: $border-color;
+          border-radius: $border-radius-lg;
+          font-size: $h3-font-size;
+          font-weight: $font-weight-medium;
+          color: $nuance-05;
+
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        strong {
+          grid-area: 1 / 2 / 2 / 3;
+          line-height: $line-height-sm;
         }
       }
     }
