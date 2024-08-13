@@ -4,6 +4,10 @@
   box-shadow: $offcanvas-box-shadow;
 }
 
+.s-header-print {
+  display: none;
+}
+
 .s-header {
   background-color: $white;
   position: relative;
