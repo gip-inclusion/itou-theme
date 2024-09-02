@@ -2,25 +2,46 @@
 
 // Common vars
 let windowWidth = window.innerWidth;
-const burgerToggleList = document.querySelectorAll('[data-bs-toggle=burger]');
-const tablesSortableList = document.querySelectorAll('[data-bs-table=sortable]');
-const alertDismissibleOnceList = document.querySelectorAll('.alert-dismissible-once');
-const textareaExpandableList = document.querySelectorAll('[data-it-expandable=true]');
+const tablesSortableList = document.querySelectorAll(
+  '[data-bs-table=sortable]',
+);
+const alertDismissibleOnceList = document.querySelectorAll(
+  '.alert-dismissible-once',
+);
+const textareaExpandableList = document.querySelectorAll(
+  '[data-it-expandable=true]',
+);
 const inputGroupList = document.querySelectorAll('.input-group');
 const clipboardCopyList = document.querySelectorAll('[data-it-clipboard=copy]');
-const clipboardButtonCopyList = document.querySelectorAll('[data-it-clipboard-button=copy]');
-const inputPasswordList = document.querySelectorAll('[data-it-password=toggle]');
+const clipboardButtonCopyList = document.querySelectorAll(
+  '[data-it-clipboard-button=copy]',
+);
+const inputPasswordList = document.querySelectorAll(
+  '[data-it-password=toggle]',
+);
 const targetConseiList = document.querySelectorAll('[data-it-target-conseil]');
-const breakpointXL = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-xl');
-const breakpointMD = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-md');
+const actionPrintList = document.querySelectorAll('[data-it-action=print]');
+const breakpointXL = getComputedStyle(
+  document.documentElement,
+).getPropertyValue('--bs-breakpoint-xl');
+const breakpointMD = getComputedStyle(
+  document.documentElement,
+).getPropertyValue('--bs-breakpoint-md');
 
 // Init
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]',
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
+);
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
-
+const popoverTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="popover"]',
+);
+const popoverList = [...popoverTriggerList].map(
+  (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl),
+);
 
 // Load
 window.addEventListener('load', (e) => {
@@ -40,7 +61,9 @@ window.addEventListener('scroll', (e) => {
 // Show data-it-target-conseil
 for (let i = 0, ii = targetConseiList.length; i < ii; i += 1) {
   const thisTargetConseil = targetConseiList[i];
-  const thisTargetConseilID = thisTargetConseil.getAttribute('data-it-target-conseil');
+  const thisTargetConseilID = thisTargetConseil.getAttribute(
+    'data-it-target-conseil',
+  );
   const thisTargetID = document.querySelector(thisTargetConseilID);
 
   thisTargetConseil.addEventListener('focus', function (e) {
@@ -188,21 +211,24 @@ for (let i = 0, ii = textareaExpandableList.length; i < ii; i += 1) {
 // Add global focus on input-group
 for (let i = 0, ii = inputGroupList.length; i < ii; i += 1) {
   const thisInputGroup = inputGroupList[i];
-  const thisFormControl = thisInputGroup.querySelector('.form-control, .form-select');
+  const thisFormControl = thisInputGroup.querySelector(
+    '.form-control, .form-select',
+  );
 
   const toggleFocus = function (e) {
     thisInputGroup.classList.toggle('has-focus');
-  }
+  };
 
   thisFormControl.addEventListener('focus', toggleFocus, false);
   thisFormControl.addEventListener('blur', toggleFocus, false);
 }
 
 // InputGroup copy to clipboard
-for (let i = 0,  ii = clipboardCopyList.length; i < ii; i += 1) {
+for (let i = 0, ii = clipboardCopyList.length; i < ii; i += 1) {
   const thisClipboardCopy = clipboardCopyList[i];
   const thisInputGroupClipboardCopy = thisClipboardCopy.closest('.input-group');
-  const thisFormControlClipboardCopy = thisInputGroupClipboardCopy.querySelector('.form-control').value;
+  const thisFormControlClipboardCopy =
+    thisInputGroupClipboardCopy.querySelector('.form-control').value;
   const thisTooltip = bootstrap.Tooltip.getOrCreateInstance(thisClipboardCopy);
 
   thisClipboardCopy.addEventListener('click', function () {
@@ -214,7 +240,7 @@ for (let i = 0,  ii = clipboardCopyList.length; i < ii; i += 1) {
       .catch(() => {
         //console.log('Veillez saisir le texte à copier');
       });
-      thisTooltip.show();
+    thisTooltip.show();
   });
 
   thisClipboardCopy.addEventListener('blur', function () {
@@ -223,10 +249,13 @@ for (let i = 0,  ii = clipboardCopyList.length; i < ii; i += 1) {
 }
 
 // Button copy to clipboard
-for (let i = 0,  ii = clipboardButtonCopyList.length; i < ii; i += 1) {
+for (let i = 0, ii = clipboardButtonCopyList.length; i < ii; i += 1) {
   const thisClipboardButtonCopy = clipboardButtonCopyList[i];
-  const thisClipboardButtonCopyValue = thisClipboardButtonCopy.dataset.itCopyToClipboard;
-  const thisTooltip = bootstrap.Tooltip.getOrCreateInstance(thisClipboardButtonCopy);
+  const thisClipboardButtonCopyValue =
+    thisClipboardButtonCopy.dataset.itCopyToClipboard;
+  const thisTooltip = bootstrap.Tooltip.getOrCreateInstance(
+    thisClipboardButtonCopy,
+  );
 
   thisClipboardButtonCopy.addEventListener('click', function () {
     navigator.clipboard
@@ -237,7 +266,7 @@ for (let i = 0,  ii = clipboardButtonCopyList.length; i < ii; i += 1) {
       .catch(() => {
         //console.log('Veillez saisir le texte à copier');
       });
-      thisTooltip.show();
+    thisTooltip.show();
   });
 
   thisClipboardButtonCopy.addEventListener('blur', function () {
@@ -249,23 +278,32 @@ for (let i = 0,  ii = clipboardButtonCopyList.length; i < ii; i += 1) {
 for (let i = 0, ii = inputPasswordList.length; i < ii; i += 1) {
   const thisInputPassword = inputPasswordList[i];
   const thisInputGroupInputPassword = thisInputPassword.closest('.input-group');
-  const thisFormControlInputPassword = thisInputGroupInputPassword.querySelector('.form-control');
+  const thisFormControlInputPassword =
+    thisInputGroupInputPassword.querySelector('.form-control');
   const thisIconeInputPassword = thisInputPassword.querySelector('i');
   const thisSpanInputPassword = thisInputPassword.querySelector('span');
 
-    thisInputPassword.addEventListener('click', function () {
-      if (thisIconeInputPassword.classList.contains('ri-eye-line')) {
-        thisIconeInputPassword.classList.remove('ri-eye-line');
-        thisIconeInputPassword.classList.add('ri-eye-off-line');
-        thisFormControlInputPassword.setAttribute('type', 'text');
-        thisSpanInputPassword.innerHTML = 'Masquer';
-      } else {
-        thisIconeInputPassword.classList.remove('ri-eye-off-line');
-        thisIconeInputPassword.classList.add('ri-eye-line');
-        thisFormControlInputPassword.setAttribute('type', 'password');
-        thisSpanInputPassword.innerHTML = 'Afficher';
-      }
-    });
+  thisInputPassword.addEventListener('click', function () {
+    if (thisIconeInputPassword.classList.contains('ri-eye-line')) {
+      thisIconeInputPassword.classList.remove('ri-eye-line');
+      thisIconeInputPassword.classList.add('ri-eye-off-line');
+      thisFormControlInputPassword.setAttribute('type', 'text');
+      thisSpanInputPassword.innerHTML = 'Masquer';
+    } else {
+      thisIconeInputPassword.classList.remove('ri-eye-off-line');
+      thisIconeInputPassword.classList.add('ri-eye-line');
+      thisFormControlInputPassword.setAttribute('type', 'password');
+      thisSpanInputPassword.innerHTML = 'Afficher';
+    }
+  });
+}
+
+// Data action to print page
+for (let i = 0, ii = actionPrintList.length; i < ii; i += 1) {
+  const thisActionPrint = actionPrintList[i];
+  thisActionPrint.addEventListener('click', function print() {
+    window.print();
+  });
 }
 
 function tabsItemsToDropdownAdd(thisTabs) {
@@ -273,7 +311,9 @@ function tabsItemsToDropdownAdd(thisTabs) {
   const sTabs01NavItem = thisTabs.querySelectorAll('.nav-item');
   const sTabs01NavItemLast = sTabs01NavItem[sTabs01NavItem.length - 1];
   const sTabs01NavItemDropdown = thisTabs.querySelector('.nav-item-dropdown');
-  const sTabs01NavItemDropdownWidth = Math.round(sTabs01NavItemDropdown.offsetWidth + 4);
+  const sTabs01NavItemDropdownWidth = Math.round(
+    sTabs01NavItemDropdown.offsetWidth + 4,
+  );
   const sTabs01NavItemDropdownMenu = thisTabs.querySelector('.dropdown-menu');
 
   let sTabs01NavItemsWidthArrayCurrent = [];
@@ -283,10 +323,16 @@ function tabsItemsToDropdownAdd(thisTabs) {
   });
   sTabs01NavItemsWidthArrayCurrent.push(sTabs01NavItemDropdownWidth);
 
-  let sTabs01NavItemsWidthSum = sTabs01NavItemsWidthArrayCurrent.reduce(function (a, b) { return a + b; } );
+  let sTabs01NavItemsWidthSum = sTabs01NavItemsWidthArrayCurrent.reduce(
+    function (a, b) {
+      return a + b;
+    },
+  );
 
   if (sTabs01NavItemsWidthSum >= sTabs01NavWidthCurrent) {
-    let sTabs01NavItemLasttoClone = sTabs01NavItemLast.querySelector('.nav-link').cloneNode(true);
+    let sTabs01NavItemLasttoClone = sTabs01NavItemLast
+      .querySelector('.nav-link')
+      .cloneNode(true);
     sTabs01NavItemLasttoClone.removeAttribute('class');
     sTabs01NavItemDropdownMenu.prepend(sTabs01NavItemLasttoClone);
 
@@ -301,7 +347,9 @@ function tabsItemsToDropdownRemove(thisTabs, thisTabsNavItemsWidthArrayInit) {
   let sTabs01NavWidthCurrent = Math.round(thisTabs.offsetWidth);
   let sTabs01NavItem = thisTabs.querySelectorAll('.nav-item');
   const sTabs01NavItemDropdown = thisTabs.querySelector('.nav-item-dropdown');
-  const sTabs01NavItemDropdownWidth = Math.round(sTabs01NavItemDropdown.offsetWidth + 4);
+  const sTabs01NavItemDropdownWidth = Math.round(
+    sTabs01NavItemDropdown.offsetWidth + 4,
+  );
   const sTabs01NavItemDropdownMenu = thisTabs.querySelector('.dropdown-menu');
 
   let sTabs01NavItemsWidthArrayCurrent = [];
@@ -311,11 +359,20 @@ function tabsItemsToDropdownRemove(thisTabs, thisTabsNavItemsWidthArrayInit) {
   });
   sTabs01NavItemsWidthArrayCurrent.push(sTabs01NavItemDropdownWidth);
 
-  let sTabs01NavItemsWidthSum = sTabs01NavItemsWidthArrayCurrent.reduce(function (a, b) {return a + b;} );
+  let sTabs01NavItemsWidthSum = sTabs01NavItemsWidthArrayCurrent.reduce(
+    function (a, b) {
+      return a + b;
+    },
+  );
 
-  let sTabs01NavItemsWidthNextIndex = parseInt(sTabs01NavItemsWidthArrayCurrent.length - 1);
-  let freeWithForNextTab = Math.round(sTabs01NavWidthCurrent - sTabs01NavItemsWidthSum);
-  let needWithForNextTab = thisTabsNavItemsWidthArrayInit[sTabs01NavItemsWidthNextIndex];
+  let sTabs01NavItemsWidthNextIndex = parseInt(
+    sTabs01NavItemsWidthArrayCurrent.length - 1,
+  );
+  let freeWithForNextTab = Math.round(
+    sTabs01NavWidthCurrent - sTabs01NavItemsWidthSum,
+  );
+  let needWithForNextTab =
+    thisTabsNavItemsWidthArrayInit[sTabs01NavItemsWidthNextIndex];
 
   if (sTabs01NavItemDropdownMenu.querySelector('a') !== null) {
     if (freeWithForNextTab > needWithForNextTab) {
@@ -323,7 +380,10 @@ function tabsItemsToDropdownRemove(thisTabs, thisTabsNavItemsWidthArrayInit) {
       let thisItemToClone = thisItemToRemove.cloneNode(true);
       thisItemToClone.classList.add('nav-link');
 
-      sTabs01NavItemDropdown.insertAdjacentHTML('beforebegin', '<li class="nav-item" role="presentation"></li>');
+      sTabs01NavItemDropdown.insertAdjacentHTML(
+        'beforebegin',
+        '<li class="nav-item" role="presentation"></li>',
+      );
       sTabs01NavItem = thisTabs.querySelectorAll('.nav-item');
       let sTabs01NavItemLast = sTabs01NavItem[sTabs01NavItem.length - 1];
       sTabs01NavItemLast.appendChild(thisItemToClone);
