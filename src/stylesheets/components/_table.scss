@@ -38,6 +38,16 @@
     }
   }
 
+  td {
+    font-size: $font-size-sm;
+
+    &.td-action {
+      padding-top: 0;
+      padding-bottom: 0;
+      text-align: right;
+    }
+  }
+
   &-sortable {
     thead th span {
       display: inline-flex;
@@ -71,12 +81,6 @@
     thead th[aria-sort='descending'] span::after {
       color: $button-light;
       content: '\ea4c';
-    }
-  }
-
-  &-sm {
-    td {
-      font-size: $font-size-sm;
     }
   }
 }
