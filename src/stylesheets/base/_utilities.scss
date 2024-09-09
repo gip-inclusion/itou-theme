@@ -29,6 +29,11 @@
   width: 100%;
 }
 
+.img-muted {
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
 .fs-base {
   font-size: $font-size-base !important;
 }
