@@ -24,6 +24,7 @@
       max-width: map-get($container-max-widths, 'xl');
 
       @include media-breakpoint-up(xl) {
+        --bs-gutter-x: 3rem;
         margin-left: $offcanvas-horizontal-width-sm;
         max-width: calc(100% - $offcanvas-horizontal-width-sm);
       }

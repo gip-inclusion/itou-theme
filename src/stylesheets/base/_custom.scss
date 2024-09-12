@@ -35,10 +35,6 @@ body {
 
 .container {
   max-width: map-get($container-max-widths, 'xxl');
-
-  @include media-breakpoint-up(xl) {
-    --bs-gutter-x: 3rem;
-  }
 }
 
 b,
