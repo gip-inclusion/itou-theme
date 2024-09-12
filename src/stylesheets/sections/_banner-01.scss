@@ -1,9 +1,5 @@
 .s-banner-01 {
 
-  &__container {
-    max-width: map-get($container-max-widths, 'lg') !important;
-  }
-
   &__col {
     border-radius: $border-radius-lg;
     background-color: $gray-400;

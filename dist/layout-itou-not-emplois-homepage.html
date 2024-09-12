@@ -252,109 +252,179 @@
 
       <main class="s-main" role="main">
 
-        <section class="s-title-02">
-          <div class="s-title-02__container container">
-              <div class="s-title-02__row row">
-                  <div class="s-title-02__col col-12"></div>
+        <section class="s-home-title-01 s-home-title-01--communaute mb-md-6 mb-lg-10" style="--home-title-bg: url('../images/home/commu-home-illu-02.png')">
+  <div class="s-home-title-01__container container container-max-lg">
+    <div class="s-home-title-01__row row">
+      <div class="s-home-title-01__col col-12 col-md-8 col-lg-7 mb-4">
+        <h1 class="h1-hero">L’espace d’entraide des professionnels de l’inclusion</h1>
+        <p class="lead mb-md-5">Améliorez votre pratique professionnelle d’accompagnateurs de personnes éloignées de l’emploi</p>
+        <form method="get" action="" role="search" class="s-home-title-01__form">
+          <div class="row">
+            <div class="col-12">
+              <label for="id_city" class="visually-hidden">Chercher dans la communauté</label>
+              <div class="input-group input-group-lg flex-nowrap">
+                <div class="input-group-text bg-white rounded-start ps-0 pe-2">
+                  <i class="ri-map-pin-line ri-lg text-disabled" aria-hidden="true"></i>
+                </div>
+                <div class="input-group-text bg-white p-0 flex-grow-1">
+                  <input type="text" class="form-control" placeholder="Rechercher sur la communauté"  aria-describedby="homeSearchBtn">
+                  <button class="btn btn-ico btn-primary" type="button" id="homeSearchBtn" aria-label="Rechercher sur la communauté">
+                    <i class="ri-search-line font-weight-bold" aria-hidden="true"></i>
+                    <span class="d-none d-sm-inline-flex me-0 me-sm-1">Rechercher</span>
+                  </button>
+                </div>
               </div>
-          </div>
-        </section>
 
-        <section class="s-home-search pt-5 pb-6 pt-lg-0">
-          <div class="s-home-search__container container">
-            <div class="s-home-search__row row">
-              <div class="s-home-search__col col-12">
-                <h1 class="lh-sm text-center text-tertiary">Rechercher un emploi inclusif</h1>
-                <form method="get" action="" role="search" class="s-home-search__form">
-                  <div class="row">
-                    <div class="col-12">
-                      <label for="id_city" class="visually-hidden">Ville</label>
-                      <div class="input-group input-group-lg flex-nowrap">
-                        <div class="input-group-text bg-white rounded-start ps-0 pe-2">
-                          <i class="ri-map-pin-line ri-lg text-disabled" aria-hidden="true"></i>
-                        </div>
-                        <select name="city" lang="fr" data-minimum-input-length="2" data-theme="bootstrap-5" data-allow-clear="false" class="form-control django-select2 select2-hidden-accessible" data-ajax--url="/autocomplete/cities?select2=&amp;slug=" data-placeholder="Rechercher un emploi inclusif autour de…" required="" id="id_city" data-select2-id="id_city" tabindex="-1" aria-hidden="true">
-                        </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="1" style="width: 246.75px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-id_city-container"><span class="select2-selection__rendered" id="select2-id_city-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Rechercher un emploi inclusif autour de…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                        <div class="input-group-text bg-white p-0">
-                          <button class="btn btn-ico btn-primary" aria-label="Rechercher un emploi inclusif">
-                            <i class="ri-search-line font-weight-bold" aria-hidden="true"></i>
-                            <span class="d-none d-sm-inline-flex me-0 me-sm-1">Rechercher</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="s-home-title-01__row row">
+      <div class="s-home-title-01__col col-12 mt-md-6 mt-lg-6">
+        <div class="s-home-title-01__btn-group flex-column flex-md-row gap-3 gap-md-4 mb-md-n5 mb-lg-n8">
+          <div class="s-home-title-01__btn p-3 py-md-4">
+            <div class="w-25 w-md-40">
+              <img src="images/home-title-01-illu-card-01.png" class="img-fluid" alt="">
+            </div>
+            <div class="ps-3">
+              <a href="" class="btn-link stretched-lin">Je veux poser <br class="d-none d-md-inline">une question</a>
+            </div>
+          </div>
+          <div class="s-home-title-01__btn p-3 py-md-4">
+            <div class="w-25 w-md-40">
+              <img src="images/home-title-01-illu-card-02.png" class="img-fluid" alt="">
+            </div>
+            <div class="ps-3">
+              <a href="" class="btn-link stretched-link">Je veux réaliser <br class="d-none d-md-inline">un diagnostic</a>
+            </div>
+          </div>
+          <div class="s-home-title-01__btn p-3 py-md-4">
+            <div class="w-25 w-md-40">
+              <img src="images/home-title-01-illu-card-03.png" class="img-fluid" alt="">
+            </div>
+            <div class="ps-3">
+              <a href="" class="btn-link stretched-lin">Je veux chercher <br class="d-none d-md-inline">un emploi inclusif</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <section class="s-banner-01 my-5 my-md-9">
+          <div class="s-banner-01__container container container-max-lg">
+            <div class="s-banner-01__row row g-0">
+              <div class="s-banner-01__col col-12 pe-md-0">
+                <div class="row g-0 align-items-end">
+                  <div class="col-12 col-md-8">
+                    <p class="h1 text-tertiary">La boîte à outils des CIP</p>
+                    <p class="mb-md-4">Orientation vers l'IAE, validation d'éligibilité, diagnostic socioprofessionnel... Qui sont les prescripteurs habilités, quel est leur rôle, leur champ d'action, leur mission ? Orientation vers l'IAE, validation d'éligibilité, diagnostic socioprofessionnel... Qui sont les prescripteurs habilités, quel est leur rôle, leur champ d'action, leur mission ?.</p>
+                    <a href="" class="btn btn-outline-primary">
+                      Consulter les fiches de la boite à outils
+                    </a>
                   </div>
-                </form>
+                  <div class="d-none d-md-inline col-md-4 ps-3 mb-n4">
+                    <img src="images/banner-01-illu.png" class="img-fluid" alt="">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="s-article-figure-01 s-article-figure-01--ltr">
-          <div class="s-article-figure-01__container container">
-            <div class="s-article-figure-01__row row">
-              <div class="s-article-figure-01__col s-article-figure-01__col--figure col-12 col-md-3 col-lg-4 d-flex align-items-center justify-content-center">
-                <figure class="w-50 w-md-100">
-                  <img src="https://emplois.inclusion.beta.gouv.fr/static/img/home/illustration-01.png" class="img-fluid img-fitcover" alt="">
-                </figure>
-              </div>
-              <div class="s-article-figure-01__col s-article-figure-01__col--article col-12 col-md-9 col-lg-8 d-flex align-items-center">
-                <article>
-                  <h2 class="h1 text-tertiary">
-                    Qu’est-ce que l’inclusion
-                    <br class="d-none d-lg-inline">
-                    dans l’emploi&nbsp;?
-                  </h2>
-                  <p>
-                    L’inclusion dans l'emploi est un projet de société gouvernemental qui permet aux personnes les plus fragiles de bénéficier de l’accès à l’emploi et à la formation pour s’insérer dans la société par le travail.
-                  </p>
-                  <a href="" class="btn btn-outline-primary w-100 w-md-auto mb-3 mt-4 has-external-link" target="_blank">En savoir plus</a>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="s-section mb-7 mb-lg-9">
+        <section class="s-section my-5 my-md-9">
           <div class="s-section__container container container-max-lg">
-              <div class="s-section__row row">
-                  <div class="s-section__col col-12">
-                      <h2 class="h1 text-tertiary">Discutez entre professionnels</h2>
-                  </div>
+            <div class="s-section__row row align-items-center">
+              <div class="s-section__col d-none d-md-inline col-md-4 pe-4">
+                <img src="images/home/commu-home-illu-01.png" class="img-fluid" alt="">
               </div>
-              <div class="s-section__row row">
-                  <div class="s-section__col col-12">
-                      <div class="has-bg-communaute rounded-3 p-4 p-md-5 d-flex flex-column flex-md-row align-items-md-center gap-3 gap-md-5">
-                          <div>
-                              <img src="https://emplois.inclusion.beta.gouv.fr/static/vendor/theme-inclusion/images/logo-communaute-inclusion.svg" height="80" alt="">
-                          </div>
-                          <div>
-                              <a href="" class="btn btn-outline-primary has-external-link" target="_blank">Découvrir</a>
-                          </div>
+              <div class="s-section__col col-12 col-md-8">
+                <p class="h1 text-tertiary">Fiches pratiques les plus consultées</p>
+                <ul class="list-group list-group-flush list-group-link mb-3 mb-md-4">
+                  <li class="list-group-item list-group-item-action">
+                    <div>
+                      <div class="tag-group mb-1">
+                        <span class="tag tag-lg bg-info-lighter text-info text-uppercase">Les bases de l’iAE</span>
                       </div>
-                  </div>
+                      <a href="" class="h4 d-block text-decoration-none text-tertiary stretched-link">Les prescripteurs habilités</a>
+                      <p class="mb-0">Orientation vers l'IAE, validation d'éligibilité, diagnostic socioprofessionnel... Qui sont les prescripteurs habilités, quel est leur rôle, leur champ d'action, leur mission ?</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div>
+                      <div class="tag-group mb-1">
+                        <span class="tag tag-lg bg-info-lighter text-info text-uppercase">Les bases de l’iAE</span>
+                      </div>
+                      <a href="" class="h4 d-block text-decoration-none text-tertiary stretched-link">Les prescripteurs habilités</a>
+                      <p class="mb-0">Orientation vers l'IAE, validation d'éligibilité, diagnostic socioprofessionnel... Qui sont les prescripteurs habilités, quel est leur rôle, leur champ d'action, leur mission ?</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div>
+                      <div class="tag-group mb-1">
+                        <span class="tag tag-lg bg-info-lighter text-info text-uppercase">Les bases de l’iAE</span>
+                      </div>
+                      <a href="" class="h4 d-block text-decoration-none text-tertiary stretched-link">Les prescripteurs habilités</a>
+                      <p class="mb-0">Orientation vers l'IAE, validation d'éligibilité, diagnostic socioprofessionnel... Qui sont les prescripteurs habilités, quel est leur rôle, leur champ d'action, leur mission ?</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div>
+                      <div class="tag-group mb-1">
+                        <span class="tag tag-lg bg-info-lighter text-info text-uppercase">Les bases de l’iAE</span>
+                      </div>
+                      <a href="" class="h4 d-block text-decoration-none text-tertiary stretched-link">Les prescripteurs habilités</a>
+                      <p class="mb-0">Orientation vers l'IAE, validation d'éligibilité, diagnostic socioprofessionnel... Qui sont les prescripteurs habilités, quel est leur rôle, leur champ d'action, leur mission ?</p>
+                    </div>
+                  </li>
+                </ul>
+                <a href="" class="btn btn-outline-primary">
+                  Toutes les fiches pratiques
+                </a>
               </div>
+            </div>
           </div>
         </section>
 
-        <section class="s-article-figure-01">
-          <div class="s-article-figure-01__container container">
-            <div class="s-article-figure-01__row row">
-              <div class="s-article-figure-01__col s-article-figure-01__col--figure col-12 col-md-3 col-lg-4 d-flex align-items-center justify-content-center">
-                <figure class="w-50 w-md-100">
-                  <img src="https://emplois.inclusion.beta.gouv.fr/static/img/home/illustration-02.png" class="img-fluid img-fitcover" alt="">
-                </figure>
-              </div>
-              <div class="s-article-figure-01__col s-article-figure-01__col--article col-12 col-md-9 col-lg-8 d-flex align-items-center">
-                <article>
-                  <h2 class="h1 text-tertiary">Nos missions</h2>
-                  <p>
-                    Ce service facilite la mise en relation des personnes les plus éloignées de l'emploi avec les employeurs inclusifs (SIAE, GEIQ, EA, EATT et facilitateurs de clauses sociales) et les accompagnants (orienteurs et prescripteurs habilités).
-                  </p>
-                  <p>
-                    Il offre aux utilisateurs un outil numérique mutualisé pour simplifier les procédures, fluidifier les parcours d'insertion entre professionnels et renforcer la qualité de l'accompagnement des personnes.
-                  </p>
-                </article>
+        <section class="s-section my-5 my-md-10">
+          <div class="s-section__container container container-max-lg">
+            <div class="s-section__row row">
+              <div class="s-section__col col-12">
+                <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-between mb-3 mb-md-4">
+                  <span class="h1 mb-md-0 text-tertiary">Les dernières actualités</span>
+                  <div>
+                    <a href="" class="btn btn-outline-primary">Toutes les actualités</a>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush list-group-horizontal-md list-group-link mt-3 mt-md-4">
+                  <li class="list-group-item list-group-item-action">
+                    <div>
+                      <div class="tag-group mb-1">
+                        <span class="tag tag-lg bg-info-lighter text-info text-uppercase">Parcours CIP</span>
+                      </div>
+                      <a href="" class="text-decoration-none stretched-link">La veille informationnelle consiste à la mise en place d'un système d'information permettant de collecter, de traiter et de diffusers.</a>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div>
+                      <div class="tag-group mb-1">
+                        <span class="tag tag-lg bg-info-lighter text-info text-uppercase">Parcours CIP</span>
+                      </div>
+                      <a href="" class="text-decoration-none stretched-link">La veille informationnelle consiste à la mise en place d'un système d'information permettant de collecter, de traiter et de diffusers.</a>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div>
+                      <div class="tag-group mb-1">
+                        <span class="tag tag-lg bg-info-lighter text-info text-uppercase">Parcours CIP</span>
+                      </div>
+                      <a href="" class="text-decoration-none stretched-link">La veille informationnelle consiste à la mise en place d'un système d'information permettant de collecter, de traiter et de diffusers.</a>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

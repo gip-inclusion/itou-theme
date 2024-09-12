@@ -90,3 +90,11 @@
 .list-group-flush + .list-group-flush > .list-group-item:first-child {
   border-top: $list-group-border-width solid $border-color;
 }
+
+.list-group-horizontal-md.list-group-flush > .list-group-item {
+  @include media-breakpoint-up(md) {
+    border-bottom: none;
+    border-top: none;
+  }
+}
+

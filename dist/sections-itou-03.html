@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
     <meta name="title" content="Itou Theme">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -25,7 +24,7 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
   </head>
 
-  <body id="top">
+  <body class="p-home" id="top">
 
     <header class="bg-primary py-3 sticky-top">
   <div class="container">
@@ -108,12 +107,9 @@
             <option value="sections-itou-01.html#footer">Footer</option>
             <option value="sections-itou-02.html#article-figure-01">Article Figure 01</option>
             <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
-            <option value="sections-itou-02.html#article-picture-02">Article Picture 02</option>
-            <option value="sections-itou-02.html#article-picture-03">Article Picture 03</option>
-            <option value="sections-itou-03.html#article-picture-group-01">Article Picture Group 01</option>
             <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
             <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
-            <option value="sections-itou-05.html#cards-grid-01">Cards Grid 01</option>
+            <option value="sections-itou-03.html#home-title-01">Home Title 01</option>
             <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
             <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
             <option value="sections-itou-06.html#title-01">Title 01</option>
@@ -160,332 +156,76 @@
 
       <main class="s-main" role="main">
 
-        <br>
-        <br>
-
         <div class="container">
           <div class="row">
-            <div class="col-12" id="article-picture-group-01">
-              <h3>Article + Picture Group 01 <code>.s-article-picture-group-01</code></h3>
+            <div class="col-12" id="home-title-01">
+              <h3>Home title 01<code>.s-home-title-01</code></h3>
               <h4>--modifier <code>--marche</code>, <code>--emploi</code>, <code>--communaute</code>, <code>--pilotage</code></h4>
             </div>
           </div>
         </div>
-        <section class="s-article-picture-group-01 ">
-  <div class="s-article-picture-group-01__container container">
-    <div class="s-article-picture-group-01__row row" id="clauses">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Article + Picture Group 01</strong></p>
-          <p>Un exemple de <code>.s-article-picture-group-01</code> .</p>
-          <p>Imposée par l'acheteur, elle s'impose à l'entreprise qui doit respecter le cahier des charges.</p>
-          <p><strong>Source Code des Marchés Publics, article 14, 53,30,15, 5</strong></p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="rse">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Responsabilité sociale des entreprises</strong></p>
-          <p>
-            <strong>Travailler avec les structures d’insertion et des structures du STPA est un excellent moyen  pour engager une démarche RSE</strong>. <br>
-            Cela permet de contribuer activement à l’insertion de personnes éloignées de l’emploi ou en situation de handicap, tout en répondant à un besoin réel de l’entreprise. Le recours à ces prestataires permet ainsi d’allier impact positif et performance.
-          </p>
-        </article>
+
+        <section class="s-home-title-01 s-home-title-01--communaute mb-md-6 mb-lg-10" style="--home-title-bg: url('../images/home/commu-home-illu-02.png')">
+  <div class="s-home-title-01__container container container-max-lg">
+    <div class="s-home-title-01__row row">
+      <div class="s-home-title-01__col col-12 col-md-8 col-lg-7 mb-4">
+        <h1 class="h1-hero">L’espace d’entraide des professionnels de l’inclusion</h1>
+        <p class="lead mb-md-5">Améliorez votre pratique professionnelle d’accompagnateurs de personnes éloignées de l’emploi</p>
+        <form method="get" action="" role="search" class="s-home-title-01__form">
+          <div class="row">
+            <div class="col-12">
+              <label for="id_city" class="visually-hidden">Chercher dans la communauté</label>
+              <div class="input-group input-group-lg flex-nowrap">
+                <div class="input-group-text bg-white rounded-start ps-0 pe-2">
+                  <i class="ri-map-pin-line ri-lg text-disabled" aria-hidden="true"></i>
+                </div>
+                <div class="input-group-text bg-white p-0 flex-grow-1">
+                  <input type="text" class="form-control" placeholder="Rechercher sur la communauté"  aria-describedby="homeSearchBtn">
+                  <button class="btn btn-ico btn-primary" type="button" id="homeSearchBtn" aria-label="Rechercher sur la communauté">
+                    <i class="ri-search-line font-weight-bold" aria-hidden="true"></i>
+                    <span class="d-none d-sm-inline-flex me-0 me-sm-1">Rechercher</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="s-article-picture-group-01__row row" id="agefiph">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Contribution Agefiph /Fiph</strong></p>
-          <p>Il existe plusieurs solutions pour réduire votre contribution Agefiph/FIPH, dont :</p>
-          <ul>
-            <li>Recruter directement des salariés handicapés.</li>
-            <li>Sous-traiter au secteur protégé ou adaptéInformation FIPHP : La mise à disposition par une association ne peut donner lieu à déduction. </li>
-          </ul>
-          <p>Information FIPHP : La mise à disposition par une association ne peut donner lieu à déduction.</p>
-          <p>
-            <a href="http://www.fiphfp.fr/FAQ/Peut-on-deduire-les-frais-de-mise-a-disposition-de-personnel-handicape-via-une-association-hors-ESAT-ou-EA" class="text-decoration-none" target="_blank">
-              <strong>Pour plus d’information sur le Fiph</strong>
-              <i class="ri-arrow-right-up-line font-weight-bold"></i>
-            </a>
-          </p>
-        </article>
+    <div class="s-home-title-01__row row">
+      <div class="s-home-title-01__col col-12 mt-md-6 mt-lg-6">
+        <div class="s-home-title-01__btn-group flex-column flex-md-row gap-3 gap-md-4 mb-md-n5 mb-lg-n8">
+          <div class="s-home-title-01__btn p-3 py-md-4">
+            <div class="w-25 w-md-40">
+              <img src="images/home-title-01-illu-card-01.png" class="img-fluid" alt="">
+            </div>
+            <div class="ps-3">
+              <a href="" class="btn-link stretched-lin">Je veux poser <br class="d-none d-md-inline">une question</a>
+            </div>
+          </div>
+          <div class="s-home-title-01__btn p-3 py-md-4">
+            <div class="w-25 w-md-40">
+              <img src="images/home-title-01-illu-card-02.png" class="img-fluid" alt="">
+            </div>
+            <div class="ps-3">
+              <a href="" class="btn-link stretched-link">Je veux réaliser <br class="d-none d-md-inline">un diagnostic</a>
+            </div>
+          </div>
+          <div class="s-home-title-01__btn p-3 py-md-4">
+            <div class="w-25 w-md-40">
+              <img src="images/home-title-01-illu-card-03.png" class="img-fluid" alt="">
+            </div>
+            <div class="ps-3">
+              <a href="" class="btn-link stretched-lin">Je veux chercher <br class="d-none d-md-inline">un emploi inclusif</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-          <br>
-          <br>
-          <section class="s-article-picture-group-01 s-article-picture-group-01--marche ">
-  <div class="s-article-picture-group-01__container container">
-    <div class="s-article-picture-group-01__row row" id="clauses">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Article + Picture Group 01</strong></p>
-          <p>Un exemple de <code>.s-article-picture-group-01</code>  et le modifier <code>.s-article-picture-group-01--marche</code> .</p>
-          <p>Imposée par l'acheteur, elle s'impose à l'entreprise qui doit respecter le cahier des charges.</p>
-          <p><strong>Source Code des Marchés Publics, article 14, 53,30,15, 5</strong></p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="rse">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Responsabilité sociale des entreprises</strong></p>
-          <p>
-            <strong>Travailler avec les structures d’insertion et des structures du STPA est un excellent moyen  pour engager une démarche RSE</strong>. <br>
-            Cela permet de contribuer activement à l’insertion de personnes éloignées de l’emploi ou en situation de handicap, tout en répondant à un besoin réel de l’entreprise. Le recours à ces prestataires permet ainsi d’allier impact positif et performance.
-          </p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="agefiph">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Contribution Agefiph /Fiph</strong></p>
-          <p>Il existe plusieurs solutions pour réduire votre contribution Agefiph/FIPH, dont :</p>
-          <ul>
-            <li>Recruter directement des salariés handicapés.</li>
-            <li>Sous-traiter au secteur protégé ou adaptéInformation FIPHP : La mise à disposition par une association ne peut donner lieu à déduction. </li>
-          </ul>
-          <p>Information FIPHP : La mise à disposition par une association ne peut donner lieu à déduction.</p>
-          <p>
-            <a href="http://www.fiphfp.fr/FAQ/Peut-on-deduire-les-frais-de-mise-a-disposition-de-personnel-handicape-via-une-association-hors-ESAT-ou-EA" class="text-decoration-none" target="_blank">
-              <strong>Pour plus d’information sur le Fiph</strong>
-              <i class="ri-arrow-right-up-line font-weight-bold"></i>
-            </a>
-          </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-            <br>
-            <br>
-            <section class="s-article-picture-group-01 s-article-picture-group-01--emploi ">
-  <div class="s-article-picture-group-01__container container">
-    <div class="s-article-picture-group-01__row row" id="clauses">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Article + Picture Group 01</strong></p>
-          <p>Un exemple de <code>.s-article-picture-group-01</code>  et le modifier <code>.s-article-picture-group-01--emploi</code> .</p>
-          <p>Imposée par l'acheteur, elle s'impose à l'entreprise qui doit respecter le cahier des charges.</p>
-          <p><strong>Source Code des Marchés Publics, article 14, 53,30,15, 5</strong></p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="rse">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Responsabilité sociale des entreprises</strong></p>
-          <p>
-            <strong>Travailler avec les structures d’insertion et des structures du STPA est un excellent moyen  pour engager une démarche RSE</strong>. <br>
-            Cela permet de contribuer activement à l’insertion de personnes éloignées de l’emploi ou en situation de handicap, tout en répondant à un besoin réel de l’entreprise. Le recours à ces prestataires permet ainsi d’allier impact positif et performance.
-          </p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="agefiph">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Contribution Agefiph /Fiph</strong></p>
-          <p>Il existe plusieurs solutions pour réduire votre contribution Agefiph/FIPH, dont :</p>
-          <ul>
-            <li>Recruter directement des salariés handicapés.</li>
-            <li>Sous-traiter au secteur protégé ou adaptéInformation FIPHP : La mise à disposition par une association ne peut donner lieu à déduction. </li>
-          </ul>
-          <p>Information FIPHP : La mise à disposition par une association ne peut donner lieu à déduction.</p>
-          <p>
-            <a href="http://www.fiphfp.fr/FAQ/Peut-on-deduire-les-frais-de-mise-a-disposition-de-personnel-handicape-via-une-association-hors-ESAT-ou-EA" class="text-decoration-none" target="_blank">
-              <strong>Pour plus d’information sur le Fiph</strong>
-              <i class="ri-arrow-right-up-line font-weight-bold"></i>
-            </a>
-          </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-              <br>
-              <br>
-              <section class="s-article-picture-group-01 s-article-picture-group-01--communaute ">
-  <div class="s-article-picture-group-01__container container">
-    <div class="s-article-picture-group-01__row row" id="clauses">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Article + Picture Group 01</strong></p>
-          <p>Un exemple de <code>.s-article-picture-group-01</code>  et le modifier <code>.s-article-picture-group-01--communaute</code> .</p>
-          <p>Imposée par l'acheteur, elle s'impose à l'entreprise qui doit respecter le cahier des charges.</p>
-          <p><strong>Source Code des Marchés Publics, article 14, 53,30,15, 5</strong></p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="rse">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Responsabilité sociale des entreprises</strong></p>
-          <p>
-            <strong>Travailler avec les structures d’insertion et des structures du STPA est un excellent moyen  pour engager une démarche RSE</strong>. <br>
-            Cela permet de contribuer activement à l’insertion de personnes éloignées de l’emploi ou en situation de handicap, tout en répondant à un besoin réel de l’entreprise. Le recours à ces prestataires permet ainsi d’allier impact positif et performance.
-          </p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="agefiph">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Contribution Agefiph /Fiph</strong></p>
-          <p>Il existe plusieurs solutions pour réduire votre contribution Agefiph/FIPH, dont :</p>
-          <ul>
-            <li>Recruter directement des salariés handicapés.</li>
-            <li>Sous-traiter au secteur protégé ou adaptéInformation FIPHP : La mise à disposition par une association ne peut donner lieu à déduction. </li>
-          </ul>
-          <p>Information FIPHP : La mise à disposition par une association ne peut donner lieu à déduction.</p>
-          <p>
-            <a href="http://www.fiphfp.fr/FAQ/Peut-on-deduire-les-frais-de-mise-a-disposition-de-personnel-handicape-via-une-association-hors-ESAT-ou-EA" class="text-decoration-none" target="_blank">
-              <strong>Pour plus d’information sur le Fiph</strong>
-              <i class="ri-arrow-right-up-line font-weight-bold"></i>
-            </a>
-          </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-                <br>
-                <br>
-                <section class="s-article-picture-group-01 s-article-picture-group-01--pilotage ">
-  <div class="s-article-picture-group-01__container container">
-    <div class="s-article-picture-group-01__row row" id="clauses">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Article + Picture Group 01</strong></p>
-          <p>Un exemple de <code>.s-article-picture-group-01</code>  et le modifier <code>.s-article-picture-group-01--pilotage</code> .</p>
-          <p>Imposée par l'acheteur, elle s'impose à l'entreprise qui doit respecter le cahier des charges.</p>
-          <p><strong>Source Code des Marchés Publics, article 14, 53,30,15, 5</strong></p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="rse">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Responsabilité sociale des entreprises</strong></p>
-          <p>
-            <strong>Travailler avec les structures d’insertion et des structures du STPA est un excellent moyen  pour engager une démarche RSE</strong>. <br>
-            Cela permet de contribuer activement à l’insertion de personnes éloignées de l’emploi ou en situation de handicap, tout en répondant à un besoin réel de l’entreprise. Le recours à ces prestataires permet ainsi d’allier impact positif et performance.
-          </p>
-        </article>
-      </div>
-    </div>
-    <div class="s-article-picture-group-01__row row" id="agefiph">
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--picture col-12 col-lg-6">
-        <picture>
-          <img src="https://via.placeholder.com/800x800" class="img-fluid img-cover" alt="">
-        </picture>
-      </div>
-      <div class="s-article-picture-group-01__col s-article-picture-group-01__col--article col-12 col-lg-6">
-        <article>
-          <p class="h1"><strong>Contribution Agefiph /Fiph</strong></p>
-          <p>Il existe plusieurs solutions pour réduire votre contribution Agefiph/FIPH, dont :</p>
-          <ul>
-            <li>Recruter directement des salariés handicapés.</li>
-            <li>Sous-traiter au secteur protégé ou adaptéInformation FIPHP : La mise à disposition par une association ne peut donner lieu à déduction. </li>
-          </ul>
-          <p>Information FIPHP : La mise à disposition par une association ne peut donner lieu à déduction.</p>
-          <p>
-            <a href="http://www.fiphfp.fr/FAQ/Peut-on-deduire-les-frais-de-mise-a-disposition-de-personnel-handicape-via-une-association-hors-ESAT-ou-EA" class="text-decoration-none" target="_blank">
-              <strong>Pour plus d’information sur le Fiph</strong>
-              <i class="ri-arrow-right-up-line font-weight-bold"></i>
-            </a>
-          </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-                  <br>
-                  <br>
-                  <hr>
-                  <br>
-                  <br>
 
       </main>
 

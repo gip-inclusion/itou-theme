@@ -1,0 +1,89 @@
+.s-home-title-01 {
+  position: relative;
+  color: $white;
+  padding-bottom: map-get($spacers, 4);
+  padding-top: map-get($spacers, 4);
+
+  @include media-breakpoint-up(md) {
+    &::after {
+      position: absolute;
+      z-index: 0;
+      display: block;
+      content: '';
+      bottom: 0;
+      left: 55%;
+      height: 90%;
+      width: 45%;
+      background-image: var(--home-title-bg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 8);
+  }
+
+  @include media-breakpoint-up(xxl) {
+    &::after {
+      background-size: contain;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+  h1 {
+    color: $white;
+  }
+
+  &__form {
+    background-color: $white;
+    padding: $spacer;
+    border-radius: $border-radius-lg;
+
+    .input-group-text,
+    .form-control {
+      border-color: $white !important;
+    }
+
+    .input-group-text {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  &__btn-group {
+    @extend .d-flex;
+  }
+
+  &__btn {
+    position: relative;
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .align-items-center;
+  }
+
+  &--marche {
+    background-color: $marche;
+  }
+
+  &--emploi {
+    background-color: $emploi;
+  }
+
+  &--pilotage {
+    background-color: $pilotage;
+  }
+
+  &--communaute {
+    background-color: $communaute;
+  }
+}

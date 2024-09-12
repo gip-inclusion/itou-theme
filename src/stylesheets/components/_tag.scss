@@ -20,8 +20,10 @@
     font-weight: $font-weight-bold;
   }
 
-  + .tag {
-    @extend .ms-2;
+  &-lg {
+    padding: 0.25rem $badge-padding-x;
+    font-size: $font-size-sm;
+    height: 24px;
   }
 
   // Empty tags collapse automatically
@@ -32,5 +34,20 @@
   &:hover,
   &:focus {
     text-decoration: none;
+  }
+}
+
+
+.tag-group {
+  display: block;
+  margin-bottom: -0.50rem;
+
+  .tag {
+    @extend .me-2;
+    @extend .mb-2;
+
+    & + .tag {
+      @extend .ms-0;
+    }
   }
 }
