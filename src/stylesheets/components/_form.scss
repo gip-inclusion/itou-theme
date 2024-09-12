@@ -7,6 +7,10 @@
     font-weight: 700;
     font-size: inherit;
   }
+
+  > .select2-container--bootstrap-5 {
+    width: 100% !important;
+  }
 }
 
 .form-row {
