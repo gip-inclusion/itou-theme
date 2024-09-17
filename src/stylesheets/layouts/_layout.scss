@@ -40,8 +40,13 @@
     }
 
     .s-title-02 {
-      @extend .sticky-top;
       background-color: $white;
+
+      @include media-breakpoint-up(xl) {
+        position: sticky;
+        top: 0;
+        z-index: $zindex-sticky;
+      }
 
       &::after {
         content: '';
