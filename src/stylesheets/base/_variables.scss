@@ -1226,10 +1226,11 @@ $zindex-offcanvas-backdrop: 1040 !default;
 $zindex-offcanvas: 1045 !default;
 $zindex-modal-backdrop: 3040;
 $zindex-modal: 3050;
-$zindex-popover: 1060;
-$zindex-tooltip: 1070;
-$zindex-toast: 1080;
+$zindex-popover: 1010;
+$zindex-tooltip: 1010;
+$zindex-toast: 1070;
 // scss-docs-end zindex-stack
+
 
 // scss-docs-start zindex-levels-map
 $zindex-levels: (
