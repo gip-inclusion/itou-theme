@@ -1141,12 +1141,22 @@
                   </div>
                 </div>
                 <div class="mb-5" id="btn-like">
-                  <button type="button" class="btn btn-ico btn-link btn-like ps-0">
-                    <i class="ri-heart-3-line" aria-hidden="true"></i>
-                    <span>J'aime</span>
-                    <span class="badge-xs rounded-pill bg-button text-white ms-1">9</span>
-                    <span class="visually-hidden">9 j'aime sur ce sujet</span>
-                  </button>
+                  <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-ico btn-link btn-like ps-0">
+                        <i class="ri-heart-3-line" aria-hidden="true"></i>
+                        <span>J'aime</span>
+                        <span class="badge-xs rounded-pill bg-button text-white ms-1">9</span>
+                        <span class="visually-hidden">9 j'aime sur ce sujet</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <button type="button" class="btn btn-ico btn-primary" disabled>
+                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                        <span role="status">button disabled + spinner</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>
