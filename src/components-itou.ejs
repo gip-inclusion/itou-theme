@@ -475,9 +475,56 @@
             <article class="row py-5" id="listdata">
               <div class="col-12">
                 <h3>List data<code>.list-data</code></h3>
-                <p>Le <code>.list-data</code> permet d'afficher une liste de données utilsateur. Elle peut etre completée avec un column <code>.list-data__two-column-lg</code>.</p>
+                <p>Le <code>.list-data</code> permet d'afficher une liste de données utilsateur.</p>
                 <div class="row">
                   <div class="col-12 col-md-10 mb-3 mb-md-6">
+                    <ul class="list-data">
+                      <li>
+                        <small>Prénom</small>
+                        <strong>David</strong>
+                      </li>
+                      <li>
+                        <small>Nom</small>
+                        <strong>Watrelot</strong>
+                      </li>
+                      <li>
+                        <small>Numéro de sécurité sociale</small>
+                        <strong><span>2</span><span class="ms-1">81</span><span class="ms-1">02</span><span class="ms-1">22</span><span class="ms-1">250</span><span class="ms-1">031</span><span class="ms-1">08</span></strong>
+                        <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="171026225003105"><i class="ri-file-copy-line"></i></button>
+                      </li>
+                      <li>
+                        <small>Date de naissance</small>
+                        <strong>05/11/1997</strong>
+                      </li>
+                      <li>
+                        <small>Adresse e-mail</small>
+                        <strong>deloo@free.fr</strong>
+                        <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="deloo@free.fr"><i class="ri-file-copy-line"></i></button>
+                      </li>
+                      <li>
+                        <small>Site internet</small>
+                        <a href="" class="btn-link has-external-link">siteweb.com</a>
+                      </li>
+                      <li>
+                        <small>Téléphone</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                      <li>
+                        <small>Adresse</small>
+                        <address>10 rue des maison, 59000 Lille</address>
+                      </li>
+                      <li>
+                        <small>Identifiant Pôle emploi</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                      <li>
+                        <small>CV</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-10 mb-3 mb-md-6">
+                    <p>Elle peut etre completée avec un column <code>.list-data__two-column-lg</code> pour afficher les items l'un a coté de l'autre puis l'un en dessous de l'autre.</p>
                     <ul class="list-data list-data__two-column-lg">
                       <li>
                         <small>Prénom</small>
@@ -524,6 +571,112 @@
                     </ul>
                   </div>
                 </div>
+                <hr>
+                <p>Le <code>.list-data-group</code> permet d'englober 2 <code>.list-data</code> pour faire passer leur contenu l'un en dessous de l'autre.</p>
+                <div class="row">
+                  <div class="col-12 col-md-10 mb-3 mb-md-6">
+                    <div class="list-data-group">
+                      <ul class="list-data">
+                        <li>
+                          <small>Prénom</small>
+                          <strong>David</strong>
+                        </li>
+                        <li>
+                          <small>Numéro de sécurité sociale</small>
+                          <strong><span>2</span><span class="ms-1">81</span><span class="ms-1">02</span><span class="ms-1">22</span><span class="ms-1">250</span><span class="ms-1">031</span><span class="ms-1">08</span></strong>
+                          <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="171026225003105"><i class="ri-file-copy-line"></i></button>
+                        </li>
+                        <li>
+                          <small>Adresse e-mail</small>
+                          <strong>deloo@free.fr</strong>
+                          <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="deloo@free.fr"><i class="ri-file-copy-line"></i></button>
+                        </li>
+                        <li>
+                          <small>Téléphone</small>
+                          <i class="text-disabled">Non renseigné</i>
+                        </li>
+                        <li>
+                          <small>Identifiant Pôle emploi</small>
+                          <i class="text-disabled">Non renseigné</i>
+                        </li>
+                      </ul>
+                      <ul class="list-data">
+                        <li>
+                          <small>Nom</small>
+                          <strong>Watrelot</strong>
+                        </li>
+                        <li>
+                          <small>Date de naissance</small>
+                          <strong>05/11/1997</strong>
+                        </li>
+                        <li>
+                          <small>Site internet</small>
+                          <a href="" class="btn-link has-external-link">siteweb.com</a>
+                        </li>
+                        <li>
+                          <small>Adresse</small>
+                          <address>10 rue des maison, 59000 Lille</address>
+                        </li>
+                        <li>
+                          <small>CV</small>
+                          <i class="text-disabled">Non renseigné</i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-10 mb-3 mb-md-6">
+                    <hr>
+                    <p><code>.list-data-group__two-column-lg</code></p>
+                    <div class="list-data-group list-data-group__two-column-lg">
+                      <ul class="list-data">
+                        <li>
+                          <small>Prénom</small>
+                          <strong>David</strong>
+                        </li>
+                        <li>
+                          <small>Numéro de sécurité sociale</small>
+                          <strong><span>2</span><span class="ms-1">81</span><span class="ms-1">02</span><span class="ms-1">22</span><span class="ms-1">250</span><span class="ms-1">031</span><span class="ms-1">08</span></strong>
+                          <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="171026225003105"><i class="ri-file-copy-line"></i></button>
+                        </li>
+                        <li>
+                          <small>Adresse e-mail</small>
+                          <strong>deloo@free.fr</strong>
+                          <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="deloo@free.fr"><i class="ri-file-copy-line"></i></button>
+                        </li>
+                        <li>
+                          <small>Téléphone</small>
+                          <i class="text-disabled">Non renseigné</i>
+                        </li>
+                        <li>
+                          <small>Identifiant Pôle emploi</small>
+                          <i class="text-disabled">Non renseigné</i>
+                        </li>
+                      </ul>
+                      <ul class="list-data">
+                        <li>
+                          <small>Nom</small>
+                          <strong>Watrelot</strong>
+                        </li>
+                        <li>
+                          <small>Date de naissance</small>
+                          <strong>05/11/1997</strong>
+                        </li>
+                        <li>
+                          <small>Site internet</small>
+                          <a href="" class="btn-link has-external-link">siteweb.com</a>
+                        </li>
+                        <li>
+                          <small>Adresse</small>
+                          <address>10 rue des maison, 59000 Lille</address>
+                        </li>
+                        <li>
+                          <small>CV</small>
+                          <i class="text-disabled">Non renseigné</i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </article>
 
@@ -566,7 +719,7 @@
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis nam alias eveniet. Maiores in odit corrupti beatae ad explicabo incidunt inventore error. Excepturi, mollitia numquam nulla aperiam perspiciatis natus quis.</p>
                 </div>
               </div>
-              <div class="col-12 col-lg-4 mb-3 mb-md-8">
+              <div class="col-12 col-lg-8 mb-3 mb-md-8">
                 <p><code>.c-box--pass</code></p>
 
                 <div class="c-box c-box--pass bg-success-lightest border-success">
@@ -576,20 +729,20 @@
                       PASS IAE valide (non démarré)
                     </span>
                   </div>
-                  <ul class="list-data mb-3 mb-md-4">
-                    <li>
+                  <ul class="list-data list-data__two-column-lg mb-3 mb-md-4">
+                    <li class="order-1">
                       <small>Numéro de PASS IAE</small>
                       <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">99999</span></strong>
                     </li>
-                    <li>
+                    <li class="order-2">
                       <small>Date de début</small>
                       <strong>05/07/2024</strong>
                     </li>
-                    <li>
+                    <li class="order-3 order-lg-4">
                       <small>Date de fin prévisionnelle <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible..." data-bs-original-title="Cette date de fin est susceptible..."></i></small>
                       <strong>04/07/2026</strong>
                     </li>
-                    <li>
+                    <li class="order-4 order-lg-3">
                       <small>Durée de validité <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin de validité..." data-bs-original-title="Cette date de fin de validité..."></i></small></small>
                       <strong class="text-success">721 jours (environ 1 an, 2 mois, 12 jours)</strong>
                     </li>

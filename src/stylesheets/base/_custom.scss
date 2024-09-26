@@ -84,11 +84,33 @@ ol {
   }
 }
 
+.list-data-group {
+  display: flex;
+  gap: map-get($spacers, 3);
+  flex-direction: column;
+
+  .list-data {
+    @extend .flex-grow-1;
+  }
+
+  &__two-column-md {
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__two-column-lg {
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+  }
+}
+
 .list-data {
   @extend .list-unstyled;
   margin-bottom: 0;
-  display: grid;
   text-align: left;
+  display: grid;
   grid-row-gap: map-get($spacers, 3);
 
   li {
