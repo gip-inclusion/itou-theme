@@ -25,20 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ri-spinner {
-  animation: spin 2s infinite linear;
-  display: inline-block;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .ri-xxl {
   font-size: $font-size-base * 1.5;
 }

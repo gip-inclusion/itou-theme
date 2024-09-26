@@ -106,6 +106,10 @@ body {
       @if $color == 'important' {
         background-color: $important !important;
       }
+
+      @if $color == 'primary' {
+        background-color: $tertiary !important;
+      }
     }
   }
 }

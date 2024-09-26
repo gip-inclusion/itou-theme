@@ -4,6 +4,10 @@
   .global-messages-container {
     @include media-breakpoint-up(xl) {
       margin-left: $offcanvas-horizontal-width-sm;
+
+      > .alert {
+        padding-left: map-get($spacers, 4);
+      }
     }
 
     @include media-breakpoint-up(xxl) {
