@@ -15,6 +15,23 @@
   }
 }
 
+.dropup .dropdown-toggle {
+  &::after {
+    border: none;
+    content: '\ea78';
+    font-family: remixicon !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    margin-left: 0.4rem;
+    margin-right: -0.25rem;
+  }
+}
+
 .dropdown-menu {
   ul.list-unstyled {
     margin-bottom: 0;
