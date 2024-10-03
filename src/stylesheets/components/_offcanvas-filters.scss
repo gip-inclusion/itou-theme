@@ -9,7 +9,7 @@
         .btn {
           @extend .w-100;
           @extend .p-0;
-          @extend .font-weight-normal;
+          @extend .fw-normal;
           @extend .text-start;
 
           &.has-collapse-caret {
@@ -23,14 +23,14 @@
           }
 
           &[aria-expanded=true] {
-            @extend .font-weight-bold;
+            @extend .fw-bold;
           }
         }
 
         legend {
           display: inline-block;
           @extend .fs-base;
-          @extend .font-weight-normal;
+          @extend .fw-normal;
           margin-bottom: 0;
         }
       }
