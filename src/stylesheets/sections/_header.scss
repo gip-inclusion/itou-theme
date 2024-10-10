@@ -151,14 +151,48 @@
   }
 
   .offcanvas-header {
+    position: relative;
+
     i {
       font-size: 1.25rem;
     }
 
     &--structure {
-      background-color: &bg-nuance-10;
       @extend .py-0;
       @extend .align-items-stretch;
+
+      button.dropdown-toggle {
+
+        > *,
+        &::after {
+          z-index: 0;
+        }
+
+        &:hover {
+          &::before {
+            background-color: $nuance-10;
+
+            @include media-breakpoint-up(xl) {
+              background-color: $nuance-09;
+            }
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+          transition: background-color 0.15s ease-in-out;
+          left: -24px;
+          right: 0;
+
+          @include media-breakpoint-up(xl) {
+            right: -24px;
+          }
+        }
+      }
     }
   }
 
