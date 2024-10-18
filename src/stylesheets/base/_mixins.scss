@@ -122,9 +122,9 @@
 
       &.disabled,
       &:disabled {
-        color: $nuance-06 !important;
-        background-color: $gray-400 !important;
-        border-color: $gray-400 !important;
+        color: $success-light !important;
+        background-color: $success-lightest !important;
+        border-color: $success-lightest !important;
       }
     }
 
@@ -146,9 +146,9 @@
 
       &.disabled,
       &:disabled {
-        color: $nuance-06 !important;
-        background-color: $gray-400 !important;
-        border-color: $gray-400 !important;
+        color: $warning-light !important;
+        background-color: $warning-lightest !important;
+        border-color: $warning-lightest !important;
       }
     }
 
@@ -170,9 +170,9 @@
 
       &.disabled,
       &:disabled {
-        color: $nuance-06 !important;
-        background-color: $gray-400 !important;
-        border-color: $gray-400 !important;
+        color: $danger-light !important;
+        background-color: $danger-lightest !important;
+        border-color: $danger-lightest !important;
       }
     }
 
@@ -247,6 +247,30 @@
         color: $nuance-06 !important;
         background-color: $white !important;
         border-color: $nuance-06 !important;
+      }
+    }
+
+    @if $color == 'white' {
+      color: $white !important;
+      background-color: transparent !important;
+      border-color: $white !important;
+
+      &.hover,
+      &:hover,
+      &.active,
+      &:active,
+      &.focus,
+      &:focus {
+        color: $white !important;
+        background-color: rgba($white, 0.2) !important;
+        border-color: $white !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: $disabled-color !important;
+        background-color: transparent !important;
+        border-color: $disabled-color !important;
       }
     }
   }

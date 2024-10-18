@@ -91,30 +91,31 @@ select:disabled {
   &.disabled,
   &:disabled {
     color: $disabled-color;
-    border-color: transparent;
+    border-color: $disabled-color-light;
+    background-color: $disabled-color-light !important;
   }
 }
 
-.btn-outline-white {
-  color: $white !important;
-  font-weight: $font-weight-bold;
+// .btn-outline-white {
+//   color: $white !important;
+//   font-weight: $font-weight-bold;
 
-  &.active,
-  &.focus,
-  &.hover,
-  &:active,
-  &:focus,
-  &:hover {
-    color: $white !important;
-    background-color: rgba($white, 0.2) !important;
-  }
+//   &.active,
+//   &.focus,
+//   &.hover,
+//   &:active,
+//   &:focus,
+//   &:hover {
+//     color: $white !important;
+//     background-color: rgba($white, 0.2) !important;
+//   }
 
-  &.disabled,
-  &:disabled {
-    color: $disabled-color;
-    border-color: $disabled-color;
-  }
-}
+//   &.disabled,
+//   &:disabled {
+//     color: $disabled-color;
+//     border-color: $disabled-color;
+//   }
+// }
 
 .btn-link-white {
   color: $white !important;
@@ -142,8 +143,7 @@ select:disabled {
 
   &.disabled,
   &:disabled {
-    color: $disabled-color;
-    border-color: transparent;
+    color: $disabled-color-light !important;
   }
 }
 

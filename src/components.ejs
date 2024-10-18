@@ -887,6 +887,31 @@
                   </div>
                 </div>
                 <div class="mb-5">
+                  <h6>Button warning <code>.btn .btn-warning</code></h6>
+                  <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-warning">
+                        <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                        <span>default</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-ico btn-warning hover focus">
+                        <span>:hover / focus </span>
+                        <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-ico-only btn-warning" aria-label="ici le label A11Y du bouton">
+                        <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                      <button type="button" class="btn btn-block btn-warning" disabled>disabled</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-5">
                   <h6>Button success <code>.btn .btn-success</code></h6>
                   <div class="row">
                     <div class="col-12 col-md-3 mb-3">
@@ -1035,12 +1060,6 @@
                       <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="deloo@free.fr">
                         <i class="ri-file-copy-line"></i>
                       </button>
-                    </div>
-                    <div class="col-12">
-                      <script src="https://unpkg.com/htmx.org@2.0.3"></script>
-                      <div>
-                        <button hx-post="/components.html" hx-swap="outerHTML">Htmx Click Me!</button>
-                      </div>
                     </div>
                   </div>
                 </div>
