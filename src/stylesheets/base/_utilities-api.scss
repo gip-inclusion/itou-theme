@@ -39,5 +39,11 @@ $utilities: map-merge(
         ),
       ),
     ),
+    "white-space": map-merge(
+      map-get($utilities, "white-space"),
+      (
+        responsive: true,
+      ),
+    ),
   )
 );
