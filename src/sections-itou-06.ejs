@@ -160,9 +160,9 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
       <script>
-        let slidingTabs = document.querySelector('[data-it-sliding-tabs=true]');
-        if (slidingTabs) {
-          let slider = tns({
+        document.querySelectorAll("[data-it-sliding-tabs=true]").forEach(function(slidingTabs) {
+          const slidingTabsStartIndex = Number.parseInt(slidingTabs.getAttribute("data-it-sliding-tabs-startindex")) || 0;
+          tns({
             container: slidingTabs,
             slideBy: "page",
             autoWidth: true,
@@ -173,8 +173,9 @@
             speed: 300,
             nav: false,
             controls: true,
+            startIndex: slidingTabsStartIndex,
           });
-        }
+        })
       </script>
   </body>
 
