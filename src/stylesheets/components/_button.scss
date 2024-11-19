@@ -215,6 +215,7 @@ select:disabled {
     min-height: $input-height-sm;
 
     > [class^='ri-'] {
+      font-weight: $font-weight-normal;
       @extend .ri-sm;
     }
   }
@@ -223,7 +224,7 @@ select:disabled {
     min-height: $input-height-lg;
 
     > [class^='ri-'] {
-      font-weight: $font-weight-bold;
+      font-weight: $font-weight-medium;
       @extend .ri-xxl;
     }
   }
@@ -232,7 +233,7 @@ select:disabled {
     min-height: $input-height-xl;
 
     > [class^='ri-'] {
-      font-weight: $font-weight-bold;
+      font-weight: $font-weight-medium;
       @extend .ri-xxl;
     }
   }

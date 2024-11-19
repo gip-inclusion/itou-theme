@@ -98,14 +98,12 @@
       <script>
         introJs().setOptions({
           disableInteraction: true,
-          dontShowAgain: true,
-          dontShowAgainCookie: 'introJsPass',
           dontShowAgainLabel: 'Ne plus afficher',
           showProgress: false,
           showBullets: false,
           skipLabel: '',
           nextLabel: 'Suivant',
-          prevLabel: 'Précedent',
+          prevLabel: 'Précédent',
           doneLabel: 'Fin',
           steps: [{
             title: 'Bonjour 👋',
@@ -127,8 +125,13 @@
         })
         .onbeforechange(async () => {
           return new Promise((resolve) => {
-            setInterval(resolve, 1200);
+            let introJsDone = localStorage.getItem('introJsPass') === 'done';
+            if (introJsDone) return;
+            setInterval(resolve, 800);
           });
+        })
+        .onexit(() => {
+          localStorage.setItem('introJsPass', 'done');
         })
         .start();
       </script>
