@@ -96,44 +96,52 @@
 
       <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
       <script>
-        introJs().setOptions({
-          disableInteraction: true,
-          dontShowAgainLabel: 'Ne plus afficher',
-          showProgress: false,
-          showBullets: false,
-          skipLabel: '',
-          nextLabel: 'Suivant',
-          prevLabel: 'Précédent',
-          doneLabel: 'Fin',
-          steps: [{
-            title: 'Bonjour 👋',
-            intro: 'Découvrez votre nouvelle box de PASS IAE'
-          },
-          {
-            element: document.querySelector('#introjsPass01'),
-            title: 'Votre PASS est valide',
-            intro: 'Ici l\'etat actuel de votre PASS est indiqué'
-          },
-          {
-            element: document.querySelector('#introjsPass02'),
-            title: 'Valide jusqu\'a cette date'
-          },
-          {
-            element: document.querySelector('#introjsPass03'),
-            intro: 'Vous pouvez l\'afficher en cliquant ici'
-          }]
-        })
-        .onbeforechange(async () => {
-          return new Promise((resolve) => {
-            let introJsDone = localStorage.getItem('introJsPass') === 'done';
-            if (introJsDone) return;
-            setInterval(resolve, 800);
-          });
-        })
-        .onexit(() => {
-          localStorage.setItem('introJsPass', 'done');
-        })
-        .start();
+        function show() {
+          for (const cookie of document.cookie.split(';')) {
+            const [name, value] = cookie.split('=');
+            if ('introJsBtnPassDontShowAgain' == name.trim()) {
+              return false;
+            }
+          }
+          return true;
+        }
+
+        const breakpointMD = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-md');
+        const applyBtn = document.getElementById('introjsPass01');
+        if (applyBtn && show() && window.matchMedia('(min-width: ' + breakpointMD + ')').matches) {
+          setTimeout(function () {
+            introJs().setOptions({
+              disableInteraction: true,
+              showProgress: false,
+              showBullets: false,
+              skipLabel: '',
+              nextLabel: 'Suivant',
+              prevLabel: 'Précédent',
+              doneLabel: 'Fin',
+              steps: [{
+                title: 'Bonjour 👋',
+                intro: 'Découvrez votre nouvelle box de PASS IAE'
+              },
+              {
+                element: document.querySelector('#introjsPass01'),
+                title: 'Votre PASS est valide',
+                intro: 'Ici l\'etat actuel de votre PASS est indiqué'
+              },
+              {
+                element: document.querySelector('#introjsPass02'),
+                title: 'Valide jusqu\'a cette date'
+              },
+              {
+                element: document.querySelector('#introjsPass03'),
+                intro: 'Vous pouvez l\'afficher en cliquant ici'
+              }]
+            })
+              .onexit(() => {
+                //document.cookie = `introJsBtnPassDontShowAgain=true; max-age=${90 * 24 * 60 * 60}; samesite=Lax;`;
+              })
+              .start();
+          }, 600)
+        }
       </script>
   </body>
 
