@@ -20,255 +20,254 @@
     <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
 
-    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
-    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
   </head>
 
   <body id="top">
 
     <header class="bg-primary py-3 sticky-top">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-3">
-        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.3.2</label>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-3">
+            <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.3.2</label>
+          </div>
+          <div class="col-12 col-lg">
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
+              <option value="./index.html">---</option>
+              <optgroup label="Layout">
+                <option value="./layout.html#grid">Flex Grid</option>
+                <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
+                <option value="./layout.html#spacing">Utilities for spacing</option>
+              </optgroup>
+              <optgroup label="Content">
+                <option value="./content.html#bg-colors">Background colors</option>
+                <option value="./content.html#colors">Colors</option>
+                <option value="./content.html#images">Images</option>
+                <option value="./content.html#shadows">Shadows</option>
+                <option value="./content.html#tables">Tables</option>
+                <option value="./content.html#text-colors">Text colors</option>
+                <option value="./content.html#text-utilities">Text utilities</option>
+                <option value="./content.html#typography">Typography</option>
+              </optgroup>
+              <optgroup label="Components">
+                <option value="./components.html#alerts">Alerts</option>
+                <option value="./components.html#badges">Badges</option>
+                <option value="./components.html#breadcrumb">Breadcrumb</option>
+                <option value="./components.html#buttons">Buttons</option>
+                <option value="./components.html#button-group">Button group</option>
+                <option value="./components.html#cards">Cards</option>
+                <option value="./components.html#collapse">Collapse</option>
+                <option value="./components.html#dropdowns">Dropdowns</option>
+                <option value="./components.html#progress">Progress</option>
+                <option value="./components.html#pagination">Pagination</option>
+                <option value="./components.html#popovers">Popovers</option>
+                <option value="./components.html#tabs">Tabs</option>
+                <option value="./components.html#tooltips">Tooltips</option>
+                <option value="./components.html#modal">Modal</option>
+                <option value="./components.html#toasts">Toasts</option>
+              </optgroup>
+              <optgroup label="Forms">
+                <option value="./forms.html#forms">Forms</option>
+                <option value="./forms.html#input-group">Input group</option>
+              </optgroup>
+              <optgroup label="Utilities BS">
+                <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
+              </optgroup>
+              <optgroup label="Content Itou">
+                <option value="./content-itou.html#hr">Horizontal rule (hr)</option>
+                <option value="./content-itou.html#icones">Icones (remix icons)</option>
+                <option value="./content-itou.html#logos">Logos</option>
+              </optgroup>
+              <optgroup label="Components Itou">
+                <option value="./components-itou.html#cards">Cards</option>
+                <option value="./components-itou.html#liststep">Step list</option>
+                <option value="./components-itou.html#stepper">Stepper</option>
+                <option value="./components-itou.html#listgroup">Listgroup</option>
+                <option value="./components-itou.html#listdata">List data</option>
+                <option value="./components-itou.html#tags">Tags</option>
+                <option value="./components-itou.html#box">Box</option>
+                <option value="./components-itou.html#info">Info</option>
+                <option value="./components-itou.html#spinner">Spinner</option>
+              </optgroup>
+              <optgroup label="Sections Itou">
+                <option value="./sections-itou-01.html#header">Headers + Post Header</option>
+                <option value="./sections-itou-01.html#footer">Footer</option>
+                <option value="./sections-itou-02.html#article-figure-01">Article Figure 01</option>
+                <option value="./sections-itou-02.html#article-picture-01">Article Picture 01</option>
+                <option value="./sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
+                <option value="./sections-itou-04.html#banner-01">Banner Infos 01</option>
+                <option value="./sections-itou-03.html#home-title-01">Home Title 01</option>
+                <option value="./sections-itou-06.html#hero-title-01">Hero Title 01</option>
+                <option value="./sections-itou-04.html#page-menu-01">Page Menu 01</option>
+                <option value="./sections-itou-06.html#title-01">Title 01</option>
+                <option value="./sections-itou-06.html#title-02">Title 02</option>
+                <option value="./sections-itou-06.html#tabs-01">Tabs 01</option>
+              </optgroup>
+              <optgroup label="Pages Empois - Non connecté">
+                <option value="./layout-itou-not-authenticated-homepage.html">Homepage</option>
+                <option value="./layout-itou-not-authenticated-search-result.html">Résultats de recherche</option>
+                <option value="./layout-itou-not-authenticated-mentions.html">Mentions légales</option>
+                <option value="./layout-itou-not-authenticated-test.html">Test</option>
+              </optgroup>
+              <optgroup label="Pages Empois - Connecté">
+                <option value="./layout-itou-authenticated-dashboard.html">Dashboard</option>
+                <option value="./layout-itou-authenticated-search-result.html">Résultats de recherche</option>
+                <option value="./layout-itou-authenticated-mentions.html">Mentions légales</option>
+                <option value="./layout-itou-authenticated-form.html">Formulaire</option>
+                <option value="./layout-itou-authenticated-cms.html">CMS</option>
+                <option value="./layout-itou-authenticated-test.html">Test</option>
+                <option value="./layout-itou-authenticated-detail-pass.html">Detail Pass IAE</option>
+              </optgroup>
+              <optgroup label="Pages Itou - Demo">
+                <option value="./layout-itou-not-emplois-homepage.html">Homepage (Communaute)</option>
+                <option value="./layout-itou-not-emplois-mentions.html">Mentions légales (Communaute)</option>
+                <option value="./layout-itou-not-emplois-test.html">Test (Communaute)</option>
+              </optgroup>
+              <optgroup label="External libraries">
+                <option value="./external-libs-itou-ac.html">Accessible Autocomplete</option>
+                <option value="./external-libs-itou-ddp.html">Duet Date Picker</option>
+                <option value="./external-libs-itou-ri.html">Remix Icon</option>
+                <option value="./external-libs-itou-tac.html">Tarte au citron</option>
+                <option value="./external-libs-itou-slider.html">Tiny Slider 2</option>
+                <option value="./external-libs-itou-s2.html">Select 2</option>
+                <option value="./external-libs-itou-lt.html">Lottie</option>
+                <option value="./external-libs-itou-in.html">Intro JS</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-lg">
-        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
-          <option value="index.html">---</option>
-          <optgroup label="Layout">
-            <option value="layout.html#grid">Flex Grid</option>
-            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
-            <option value="layout.html#spacing">Utilities for spacing</option>
-          </optgroup>
-          <optgroup label="Content">
-            <option value="content.html#bg-colors">Background colors</option>
-            <option value="content.html#colors">Colors</option>
-            <option value="content.html#images">Images</option>
-            <option value="content.html#shadows">Shadows</option>
-            <option value="content.html#tables">Tables</option>
-            <option value="content.html#text-colors">Text colors</option>
-            <option value="content.html#text-utilities">Text utilities</option>
-            <option value="content.html#typography">Typography</option>
-          </optgroup>
-          <optgroup label="Components">
-            <option value="components.html#alerts">Alerts</option>
-            <option value="components.html#badges">Badges</option>
-            <option value="components.html#breadcrumb">Breadcrumb</option>
-            <option value="components.html#buttons">Buttons</option>
-            <option value="components.html#button-group">Button group</option>
-            <option value="components.html#cards">Cards</option>
-            <option value="components.html#collapse">Collapse</option>
-            <option value="components.html#dropdowns">Dropdowns</option>
-            <option value="components.html#progress">Progress</option>
-            <option value="components.html#pagination">Pagination</option>
-            <option value="components.html#popovers">Popovers</option>
-            <option value="components.html#tabs">Tabs</option>
-            <option value="components.html#tooltips">Tooltips</option>
-            <option value="components.html#modal">Modal</option>
-            <option value="components.html#toasts">Toasts</option>
-          </optgroup>
-          <optgroup label="Forms">
-            <option value="forms.html#forms">Forms</option>
-            <option value="forms.html#input-group">Input group</option>
-          </optgroup>
-          <optgroup label="Utilities BS">
-            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
-          </optgroup>
-          <optgroup label="Content Itou">
-            <option value="content-ic.html">Button Inclusion Connect</option>
-            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
-            <option value="content-itou.html#icones">Icones (remix icons)</option>
-            <option value="content-itou.html#logos">Logos</option>
-          </optgroup>
-          <optgroup label="Components Itou">
-            <option value="components-itou.html#cards">Cards</option>
-            <option value="components-itou.html#liststep">Step list</option>
-            <option value="components-itou.html#stepper">Stepper</option>
-            <option value="components-itou.html#listgroup">Listgroup</option>
-            <option value="components-itou.html#listdata">List data</option>
-            <option value="components-itou.html#tags">Tags</option>
-            <option value="components-itou.html#box">Box</option>
-            <option value="components-itou.html#info">Info</option>
-            <option value="components-itou.html#spinner">Spinner</option>
-          </optgroup>
-          <optgroup label="Sections Itou">
-            <option value="sections-itou-01.html#header">Headers + Post Header</option>
-            <option value="sections-itou-01.html#footer">Footer</option>
-            <option value="sections-itou-02.html#article-figure-01">Article Figure 01</option>
-            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
-            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
-            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
-            <option value="sections-itou-03.html#home-title-01">Home Title 01</option>
-            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
-            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
-            <option value="sections-itou-06.html#title-01">Title 01</option>
-            <option value="sections-itou-06.html#title-02">Title 02</option>
-            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
-          </optgroup>
-          <optgroup label="Pages Empois - Non connecté">
-            <option value="layout-itou-not-authenticated-homepage.html">Homepage</option>
-            <option value="layout-itou-not-authenticated-search-result.html">Résultats de recherche</option>
-            <option value="layout-itou-not-authenticated-mentions.html">Mentions légales</option>
-            <option value="layout-itou-not-authenticated-test.html">Test</option>
-          </optgroup>
-          <optgroup label="Pages Empois - Connecté">
-            <option value="layout-itou-authenticated-dashboard.html">Dashboard</option>
-            <option value="layout-itou-authenticated-search-result.html">Résultats de recherche</option>
-            <option value="layout-itou-authenticated-mentions.html">Mentions légales</option>
-            <option value="layout-itou-authenticated-form.html">Formulaire</option>
-            <option value="layout-itou-authenticated-cms.html">CMS</option>
-            <option value="layout-itou-authenticated-test.html">Test</option>
-            <option value="layout-itou-authenticated-detail-pass.html">Detail Pass IAE</option>
-          </optgroup>
-          <optgroup label="Pages Itou - Demo">
-            <option value="layout-itou-not-emplois-homepage.html">Homepage (Communaute)</option>
-            <option value="layout-itou-not-emplois-mentions.html">Mentions légales (Communaute)</option>
-            <option value="layout-itou-not-emplois-test.html">Test (Communaute)</option>
-          </optgroup>
-          <optgroup label="External libraries">
-            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
-            <option value="external-libs-itou-bs.html">Bootstrap.js</option>
-            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
-            <option value="external-libs-itou-ri.html">Remix Icon</option>
-            <option value="external-libs-itou-tac.html">Tarte au citron</option>
-            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
-            <option value="external-libs-itou-s2.html">Select 2</option>
-            <option value="external-libs-itou-lt.html">Lottie</option>
-            <option value="external-libs-itou-in.html">Intro JS</option>
-          </optgroup>
-        </select>
-      </div>
-    </div>
-  </div>
-</header>
+    </header>
 
+    <main class="s-main" role="main">
 
-      <main class="s-main" role="main">
+      <section>
+        <div class="container">
 
-        <section>
-          <div class="container">
-
-            <article class="row py-5" id="bs">
-              <div class="col-12">
-                <h3>Intro JS</h3>
-                <p>Pour utiliser <a href="https://introjs.com/docs" target="_blank" class="has-external-link">Intro JS</a> il suffit d'ajouter l'appel aux cdn du js
-                  <code>&#60;script src=&#34;https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js&#34;&#62;&#60;/script&#62;</code>
-                  puis instancier <code>introJs.tour()</code>
-                </p>
-                <div>
-                  Par exemple :
-                  <pre class="bg-info-lighter p-3">
+          <article class="row py-5" id="bs">
+            <div class="col-12">
+              <h3>Intro JS</h3>
+              <p>Pour utiliser <a href="https://introjs.com/docs" target="_blank" class="has-external-link">Intro JS</a> il suffit d'ajouter l'appel aux cdn du js
+                <code>&#60;script src=&#34;https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js&#34;&#62;&#60;/script&#62;</code>
+                puis instancier <code>introJs.tour()</code>
+              </p>
+              <div>
+                Par exemple :
+                <pre class="bg-info-lighter p-3">
                     <code>
   &lt;script&gt;&#10;  introJs.tour().setOptions({&#10;    dontShowAgainCookie: &apos;introjsPass-dontShowAgain&apos;,&#10;    dontShowAgain: true,&#10;    showProgress: false,&#10;    showBullets: true,&#10;    skipLabel: &quot;&quot;,&#10;    nextLabel: &quot;Suivant&quot;,&#10;    prevLabel: &quot;Pr&eacute;cedent&quot;,&#10;    doneLabel: &quot;Fin&quot;,&#10;    dontShowAgainLabel: &quot;Ne plus afficher&quot;,&#10;    steps: [{&#10;        title: &apos;Bonjour &#128075;&apos;,&#10;        intro: &apos;D&eacute;couvrez votre nouvelle box de PASS IAE&apos;&#10;      },&#10;      {&#10;        element: document.querySelector(&apos;#introjsPass01&apos;),&#10;        title: &apos;Votre PASS est valide&apos;,&#10;        intro: &apos;Ici l\&apos;etat actuel de votre PASS est indiqu&eacute;&apos;&#10;      },&#10;      {&#10;        element: document.querySelector(&apos;#introjsPass02&apos;),&#10;        title: &apos;Valide jusqu\&apos;a cette date&apos;&#10;      },&#10;      {&#10;        element: document.querySelector(&apos;#introjsPass03&apos;),&#10;        intro: &apos;Vous pouvez l\&apos;afficher en cliquant ici&apos;&#10;      }]&#10;    }).start();&#10;&lt;/script&gt;
                     </code>
                   </pre>
-                </div>
-                <p><i>Les styles seront automatiquement chargés par le thème itou, il est donc inutile d'inclure les styles par défaut.</i></p>
-                <br>
-                <br>
-                <div class="c-box c-box--pass bg-success-lightest border-success w-md-33">
-                  <div class="mb-3 mb-md-4">
-                    <span class="badge badge-base rounded-pill bg-success text-white" id="introjsPass01">
-                      <i class="ri-pass-valid-line" aria-hidden="true"></i>
-                      PASS IAE valide
-                    </span>
-                  </div>
-                  <ul class="list-data mb-3 mb-md-4">
-                    <li>
-                      <small>Numéro de PASS IAE</small>
-                      <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">99999</span></strong>
-                    </li>
-                    <li>
-                      <small>Date de début</small>
-                      <strong>05/07/2024</strong>
-                    </li>
-                    <li>
-                      <small>Date de fin prévisionnelle <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible..." data-bs-original-title="Cette date de fin est susceptible..."></i></small>
-                      <strong id="introjsPass02">04/07/2026</strong>
-                    </li>
-                    <li>
-                      <small>Durée de validité <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin de validité..." data-bs-original-title="Cette date de fin de validité..."></i></small>
-                      <strong class="text-success">721 jours (environ 1 an, 2 mois, 12 jours)</strong>
-                    </li>
-                  </ul>
-                  <a href="" class="btn btn-outline-primary btn-block btn-ico bg-white" id="introjsPass03">
-                    <i class="ri-eye-line fw-medium" aria-hidden="true"></i>
-                    <span>Afficher le PASS IAE</span>
-                  </a>
-                </div>
               </div>
-            </article>
+              <p><i>Les styles seront automatiquement chargés par le thème itou, il est donc inutile d'inclure les styles par défaut.</i></p>
+              <br>
+              <br>
+              <div class="c-box c-box--pass bg-success-lightest border-success w-md-33">
+                <div class="mb-3 mb-md-4">
+                  <span class="badge badge-base rounded-pill bg-success text-white" id="introjsPass01">
+                    <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                    PASS IAE valide
+                  </span>
+                </div>
+                <ul class="list-data mb-3 mb-md-4">
+                  <li>
+                    <small>Numéro de PASS IAE</small>
+                    <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">99999</span></strong>
+                  </li>
+                  <li>
+                    <small>Date de début</small>
+                    <strong>05/07/2024</strong>
+                  </li>
+                  <li>
+                    <small>Date de fin prévisionnelle <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible..." data-bs-original-title="Cette date de fin est susceptible..."></i></small>
+                    <strong id="introjsPass02">04/07/2026</strong>
+                  </li>
+                  <li>
+                    <small>Durée de validité <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin de validité..." data-bs-original-title="Cette date de fin de validité..."></i></small>
+                    <strong class="text-success">721 jours (environ 1 an, 2 mois, 12 jours)</strong>
+                  </li>
+                </ul>
+                <a href="" class="btn btn-outline-primary btn-block btn-ico bg-white" id="introjsPass03">
+                  <i class="ri-eye-line fw-medium" aria-hidden="true"></i>
+                  <span>Afficher le PASS IAE</span>
+                </a>
+              </div>
+            </div>
+          </article>
 
-            <hr>
-          </div>
-        </section>
+          <hr>
+        </div>
+      </section>
 
-      </main>
+    </main>
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-      <script src="javascripts/app.js"></script>
 
-      <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
-      <script>
-        function show() {
-          for (const cookie of document.cookie.split(';')) {
-            const [name, value] = cookie.split('=');
-            if ('introJsBtnPassDontShowAgain' == name.trim()) {
-              return false;
-            }
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+    <script>
+      function show() {
+        for (const cookie of document.cookie.split(';')) {
+          const [name, value] = cookie.split('=');
+          if ('introJsBtnPassDontShowAgain' == name.trim()) {
+            return false;
           }
-          return true;
         }
+        return true;
+      }
 
-        const breakpointMD = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-md');
-        const applyBtn = document.getElementById('introjsPass01');
-        if (applyBtn && show() && window.matchMedia('(min-width: ' + breakpointMD + ')').matches) {
-          setTimeout(function () {
-            introJs().setOptions({
-              disableInteraction: true,
-              showProgress: false,
-              showBullets: false,
-              skipLabel: '',
-              nextLabel: 'Suivant',
-              prevLabel: 'Précédent',
-              doneLabel: 'Fin',
-              steps: [{
-                title: 'Bonjour 👋',
-                intro: 'Découvrez votre nouvelle box de PASS IAE'
-              },
-              {
-                element: document.querySelector('#introjsPass01'),
-                title: 'Votre PASS est valide',
-                intro: 'Ici l\'etat actuel de votre PASS est indiqué'
-              },
-              {
-                element: document.querySelector('#introjsPass02'),
-                title: 'Valide jusqu\'a cette date'
-              },
-              {
-                element: document.querySelector('#introjsPass03'),
-                intro: 'Vous pouvez l\'afficher en cliquant ici'
-              }]
+      const breakpointMD = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-md');
+      const applyBtn = document.getElementById('introjsPass01');
+      if (applyBtn && show() && window.matchMedia('(min-width: ' + breakpointMD + ')').matches) {
+        setTimeout(function () {
+          introJs().setOptions({
+            disableInteraction: true,
+            showProgress: false,
+            showBullets: false,
+            skipLabel: '',
+            nextLabel: 'Suivant',
+            prevLabel: 'Précédent',
+            doneLabel: 'Fin',
+            steps: [{
+              title: 'Bonjour 👋',
+              intro: 'Découvrez votre nouvelle box de PASS IAE'
+            },
+            {
+              element: document.querySelector('#introjsPass01'),
+              title: 'Votre PASS est valide',
+              intro: 'Ici l\'etat actuel de votre PASS est indiqué'
+            },
+            {
+              element: document.querySelector('#introjsPass02'),
+              title: 'Valide jusqu\'a cette date'
+            },
+            {
+              element: document.querySelector('#introjsPass03'),
+              intro: 'Vous pouvez l\'afficher en cliquant ici'
+            }]
+          })
+            .onexit(() => {
+              //document.cookie = `introJsBtnPassDontShowAgain=true; max-age=${90 * 24 * 60 * 60}; samesite=Lax;`;
             })
-              .onexit(() => {
-                //document.cookie = `introJsBtnPassDontShowAgain=true; max-age=${90 * 24 * 60 * 60}; samesite=Lax;`;
-              })
-              .start();
-          }, 600)
-        }
-      </script>
+            .start();
+        }, 600)
+      }
+    </script>
   </body>
 
 </html>

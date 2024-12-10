@@ -20,209 +20,301 @@
     <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
 
-    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
-    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
   </head>
 
   <body id="top" class="bg-light">
 
     <header class="bg-primary py-3 sticky-top">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-3">
-        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.3.2</label>
-      </div>
-      <div class="col-12 col-lg">
-        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
-          <option value="index.html">---</option>
-          <optgroup label="Layout">
-            <option value="layout.html#grid">Flex Grid</option>
-            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
-            <option value="layout.html#spacing">Utilities for spacing</option>
-          </optgroup>
-          <optgroup label="Content">
-            <option value="content.html#bg-colors">Background colors</option>
-            <option value="content.html#colors">Colors</option>
-            <option value="content.html#images">Images</option>
-            <option value="content.html#shadows">Shadows</option>
-            <option value="content.html#tables">Tables</option>
-            <option value="content.html#text-colors">Text colors</option>
-            <option value="content.html#text-utilities">Text utilities</option>
-            <option value="content.html#typography">Typography</option>
-          </optgroup>
-          <optgroup label="Components">
-            <option value="components.html#alerts">Alerts</option>
-            <option value="components.html#badges">Badges</option>
-            <option value="components.html#breadcrumb">Breadcrumb</option>
-            <option value="components.html#buttons">Buttons</option>
-            <option value="components.html#button-group">Button group</option>
-            <option value="components.html#cards">Cards</option>
-            <option value="components.html#collapse">Collapse</option>
-            <option value="components.html#dropdowns">Dropdowns</option>
-            <option value="components.html#progress">Progress</option>
-            <option value="components.html#pagination">Pagination</option>
-            <option value="components.html#popovers">Popovers</option>
-            <option value="components.html#tabs">Tabs</option>
-            <option value="components.html#tooltips">Tooltips</option>
-            <option value="components.html#modal">Modal</option>
-            <option value="components.html#toasts">Toasts</option>
-          </optgroup>
-          <optgroup label="Forms">
-            <option value="forms.html#forms">Forms</option>
-            <option value="forms.html#input-group">Input group</option>
-          </optgroup>
-          <optgroup label="Utilities BS">
-            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
-          </optgroup>
-          <optgroup label="Content Itou">
-            <option value="content-ic.html">Button Inclusion Connect</option>
-            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
-            <option value="content-itou.html#icones">Icones (remix icons)</option>
-            <option value="content-itou.html#logos">Logos</option>
-          </optgroup>
-          <optgroup label="Components Itou">
-            <option value="components-itou.html#cards">Cards</option>
-            <option value="components-itou.html#liststep">Step list</option>
-            <option value="components-itou.html#stepper">Stepper</option>
-            <option value="components-itou.html#listgroup">Listgroup</option>
-            <option value="components-itou.html#listdata">List data</option>
-            <option value="components-itou.html#tags">Tags</option>
-            <option value="components-itou.html#box">Box</option>
-            <option value="components-itou.html#info">Info</option>
-            <option value="components-itou.html#spinner">Spinner</option>
-          </optgroup>
-          <optgroup label="Sections Itou">
-            <option value="sections-itou-01.html#header">Headers + Post Header</option>
-            <option value="sections-itou-01.html#footer">Footer</option>
-            <option value="sections-itou-02.html#article-figure-01">Article Figure 01</option>
-            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
-            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
-            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
-            <option value="sections-itou-03.html#home-title-01">Home Title 01</option>
-            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
-            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
-            <option value="sections-itou-06.html#title-01">Title 01</option>
-            <option value="sections-itou-06.html#title-02">Title 02</option>
-            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
-          </optgroup>
-          <optgroup label="Pages Empois - Non connecté">
-            <option value="layout-itou-not-authenticated-homepage.html">Homepage</option>
-            <option value="layout-itou-not-authenticated-search-result.html">Résultats de recherche</option>
-            <option value="layout-itou-not-authenticated-mentions.html">Mentions légales</option>
-            <option value="layout-itou-not-authenticated-test.html">Test</option>
-          </optgroup>
-          <optgroup label="Pages Empois - Connecté">
-            <option value="layout-itou-authenticated-dashboard.html">Dashboard</option>
-            <option value="layout-itou-authenticated-search-result.html">Résultats de recherche</option>
-            <option value="layout-itou-authenticated-mentions.html">Mentions légales</option>
-            <option value="layout-itou-authenticated-form.html">Formulaire</option>
-            <option value="layout-itou-authenticated-cms.html">CMS</option>
-            <option value="layout-itou-authenticated-test.html">Test</option>
-            <option value="layout-itou-authenticated-detail-pass.html">Detail Pass IAE</option>
-          </optgroup>
-          <optgroup label="Pages Itou - Demo">
-            <option value="layout-itou-not-emplois-homepage.html">Homepage (Communaute)</option>
-            <option value="layout-itou-not-emplois-mentions.html">Mentions légales (Communaute)</option>
-            <option value="layout-itou-not-emplois-test.html">Test (Communaute)</option>
-          </optgroup>
-          <optgroup label="External libraries">
-            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
-            <option value="external-libs-itou-bs.html">Bootstrap.js</option>
-            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
-            <option value="external-libs-itou-ri.html">Remix Icon</option>
-            <option value="external-libs-itou-tac.html">Tarte au citron</option>
-            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
-            <option value="external-libs-itou-s2.html">Select 2</option>
-            <option value="external-libs-itou-lt.html">Lottie</option>
-            <option value="external-libs-itou-in.html">Intro JS</option>
-          </optgroup>
-        </select>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-      <main class="s-main" role="main">
-
-        <br>
-        <br>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h3>Header <code>.s-header</code></h3>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-3">
+            <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.3.2</label>
+          </div>
+          <div class="col-12 col-lg">
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
+              <option value="./index.html">---</option>
+              <optgroup label="Layout">
+                <option value="./layout.html#grid">Flex Grid</option>
+                <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
+                <option value="./layout.html#spacing">Utilities for spacing</option>
+              </optgroup>
+              <optgroup label="Content">
+                <option value="./content.html#bg-colors">Background colors</option>
+                <option value="./content.html#colors">Colors</option>
+                <option value="./content.html#images">Images</option>
+                <option value="./content.html#shadows">Shadows</option>
+                <option value="./content.html#tables">Tables</option>
+                <option value="./content.html#text-colors">Text colors</option>
+                <option value="./content.html#text-utilities">Text utilities</option>
+                <option value="./content.html#typography">Typography</option>
+              </optgroup>
+              <optgroup label="Components">
+                <option value="./components.html#alerts">Alerts</option>
+                <option value="./components.html#badges">Badges</option>
+                <option value="./components.html#breadcrumb">Breadcrumb</option>
+                <option value="./components.html#buttons">Buttons</option>
+                <option value="./components.html#button-group">Button group</option>
+                <option value="./components.html#cards">Cards</option>
+                <option value="./components.html#collapse">Collapse</option>
+                <option value="./components.html#dropdowns">Dropdowns</option>
+                <option value="./components.html#progress">Progress</option>
+                <option value="./components.html#pagination">Pagination</option>
+                <option value="./components.html#popovers">Popovers</option>
+                <option value="./components.html#tabs">Tabs</option>
+                <option value="./components.html#tooltips">Tooltips</option>
+                <option value="./components.html#modal">Modal</option>
+                <option value="./components.html#toasts">Toasts</option>
+              </optgroup>
+              <optgroup label="Forms">
+                <option value="./forms.html#forms">Forms</option>
+                <option value="./forms.html#input-group">Input group</option>
+              </optgroup>
+              <optgroup label="Utilities BS">
+                <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
+              </optgroup>
+              <optgroup label="Content Itou">
+                <option value="./content-itou.html#hr">Horizontal rule (hr)</option>
+                <option value="./content-itou.html#icones">Icones (remix icons)</option>
+                <option value="./content-itou.html#logos">Logos</option>
+              </optgroup>
+              <optgroup label="Components Itou">
+                <option value="./components-itou.html#cards">Cards</option>
+                <option value="./components-itou.html#liststep">Step list</option>
+                <option value="./components-itou.html#stepper">Stepper</option>
+                <option value="./components-itou.html#listgroup">Listgroup</option>
+                <option value="./components-itou.html#listdata">List data</option>
+                <option value="./components-itou.html#tags">Tags</option>
+                <option value="./components-itou.html#box">Box</option>
+                <option value="./components-itou.html#info">Info</option>
+                <option value="./components-itou.html#spinner">Spinner</option>
+              </optgroup>
+              <optgroup label="Sections Itou">
+                <option value="./sections-itou-01.html#header">Headers + Post Header</option>
+                <option value="./sections-itou-01.html#footer">Footer</option>
+                <option value="./sections-itou-02.html#article-figure-01">Article Figure 01</option>
+                <option value="./sections-itou-02.html#article-picture-01">Article Picture 01</option>
+                <option value="./sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
+                <option value="./sections-itou-04.html#banner-01">Banner Infos 01</option>
+                <option value="./sections-itou-03.html#home-title-01">Home Title 01</option>
+                <option value="./sections-itou-06.html#hero-title-01">Hero Title 01</option>
+                <option value="./sections-itou-04.html#page-menu-01">Page Menu 01</option>
+                <option value="./sections-itou-06.html#title-01">Title 01</option>
+                <option value="./sections-itou-06.html#title-02">Title 02</option>
+                <option value="./sections-itou-06.html#tabs-01">Tabs 01</option>
+              </optgroup>
+              <optgroup label="Pages Empois - Non connecté">
+                <option value="./layout-itou-not-authenticated-homepage.html">Homepage</option>
+                <option value="./layout-itou-not-authenticated-search-result.html">Résultats de recherche</option>
+                <option value="./layout-itou-not-authenticated-mentions.html">Mentions légales</option>
+                <option value="./layout-itou-not-authenticated-test.html">Test</option>
+              </optgroup>
+              <optgroup label="Pages Empois - Connecté">
+                <option value="./layout-itou-authenticated-dashboard.html">Dashboard</option>
+                <option value="./layout-itou-authenticated-search-result.html">Résultats de recherche</option>
+                <option value="./layout-itou-authenticated-mentions.html">Mentions légales</option>
+                <option value="./layout-itou-authenticated-form.html">Formulaire</option>
+                <option value="./layout-itou-authenticated-cms.html">CMS</option>
+                <option value="./layout-itou-authenticated-test.html">Test</option>
+                <option value="./layout-itou-authenticated-detail-pass.html">Detail Pass IAE</option>
+              </optgroup>
+              <optgroup label="Pages Itou - Demo">
+                <option value="./layout-itou-not-emplois-homepage.html">Homepage (Communaute)</option>
+                <option value="./layout-itou-not-emplois-mentions.html">Mentions légales (Communaute)</option>
+                <option value="./layout-itou-not-emplois-test.html">Test (Communaute)</option>
+              </optgroup>
+              <optgroup label="External libraries">
+                <option value="./external-libs-itou-ac.html">Accessible Autocomplete</option>
+                <option value="./external-libs-itou-ddp.html">Duet Date Picker</option>
+                <option value="./external-libs-itou-ri.html">Remix Icon</option>
+                <option value="./external-libs-itou-tac.html">Tarte au citron</option>
+                <option value="./external-libs-itou-slider.html">Tiny Slider 2</option>
+                <option value="./external-libs-itou-s2.html">Select 2</option>
+                <option value="./external-libs-itou-lt.html">Lottie</option>
+                <option value="./external-libs-itou-in.html">Intro JS</option>
+              </optgroup>
+            </select>
           </div>
         </div>
-        <header role="banner" id="header">
-  <section class="s-header-print">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-auto d-flex align-items-center py-2">
-          <img src="images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
-        </div>
-        <div class="col d-flex align-items-center">
-          <img src="images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
-        </div>
-        <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
       </div>
-    </div>
-  </section>
-  <section class="s-header">
-    <div class="s-header__container container">
-      <div class="s-header__row row">
-        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
-          <a href="#top" class="s-header__logo-ministere"><img src="images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
+    </header>
+
+    <main class="s-main" role="main">
+
+      <br>
+      <br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Header <code>.s-header</code></h3>
+          </div>
         </div>
-        <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
-        </div>
-        <div class="s-header__col s-header__col--nav col d-none d-lg-inline-flex d-lg-flex align-items-center justify-content-end pe-0 pe-xl-3">
-          <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
-            <ul>
-              <li class="d-none d-xl-inline-block dropdown">
-                <button type="button" class="btn btn-link dropdown-toggle mh-auto p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdown" aria-expanded="false">Besoin d'aide ?</button>
-                <div class="dropdown-menu" id="helpDropdown">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+      </div>
+      <header role="banner" id="header">
+        <section class="s-header-print">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-auto d-flex align-items-center py-2">
+                <img src="./images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+              </div>
+              <div class="col d-flex align-items-center">
+                <img src="./images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+              </div>
+              <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
+            </div>
+          </div>
+        </section>
+        <section class="s-header">
+          <div class="s-header__container container">
+            <div class="s-header__row row">
+              <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
+                <a href="#top" class="s-header__logo-ministere"><img src="./images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
+              </div>
+              <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
+                <a href=""><img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+              </div>
+              <div class="s-header__col s-header__col--nav col d-none d-lg-inline-flex d-lg-flex align-items-center justify-content-end pe-0 pe-xl-3">
+                <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+                  <ul>
+                    <li class="d-none d-xl-inline-block dropdown">
+                      <button type="button" class="btn btn-link dropdown-toggle mh-auto p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdown" aria-expanded="false">Besoin d'aide ?</button>
+                      <div class="dropdown-menu" id="helpDropdown">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                          </li>
+                          <li>
+                            <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                          </li>
+                          <li>
+                            <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                          </li>
+                          <li>
+                            <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                      <a class="btn btn-ico btn-outline-primary" href="">
+                        <i class="ri-user-add-line" aria-hidden="true"></i>
+                        <span>S'inscrire</span>
+                      </a>
                     </li>
-                    <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
-                    </li>
-                    <li>
-                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                    <li class="dropdown dropdown-login">
+                      <button class="btn btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
+                        <i class="ri-login-box-line" aria-hidden="true"></i>
+                        <span>Se connecter</span>
+                      </button>
+                      <div class="dropdown-menu" id="loginUserDropdown">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a class="dropdown-item dropdown-item__summary" href="">
+                              <i class="ri-user-line" aria-hidden="true"></i>
+                              <strong>Candidat</strong>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item dropdown-item__summary" href="">
+                              <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+                              <strong>Prescripteur</strong>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item dropdown-item__summary" href="">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <strong>Employeur inclusif</strong>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item dropdown-item__summary" href="">
+                              <i class="ri-government-line" aria-hidden="true"></i>
+                              <strong>Institution partenaire</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <li>
-                <a class="btn btn-ico btn-outline-primary" href="">
-                  <i class="ri-user-add-line" aria-hidden="true"></i>
-                  <span>S'inscrire</span>
-                </a>
-              </li>
-              <li class="dropdown dropdown-login">
-                <button class="btn btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
+                </nav>
+              </div>
+              <div class="s-header__col s-header__col--burger col col-lg-auto d-flex align-items-center justify-content-end d-xl-none ps-0">
+                <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+                  <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+                  <span>Menu</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-postheader d-none d-xl-block">
+          <div class="s-postheader__container container">
+            <div class="s-postheader__row row">
+              <div class="s-postheader__col col-12 d-flex align-items-center">
+                <nav role="navigation" aria-label="Navigation secondaire">
+                  <ul>
+                    <li>
+                      <a href="">Rechercher des emplois inclusifs</a>
+                    </li>
+                    <li>
+                      <a href="">Rechercher des prescripteurs habilités</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+          <div class="offcanvas-header">
+            <h4 class="h5 mb-0 btn-ico align-items-center" id="offcanvasApplyFiltersLabel">
+              <i class="ri-menu-line" aria-hidden="true"></i>
+              <span>Menu</span>
+            </h4>
+            <button type="button" class="btn-link px-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+              <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <nav role="navigation" aria-label="Navigation secondaire pour mobile">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a href="" class="nav-link active">
+                    <i class="ri-search-line fw-medium" aria-hidden="true"></i>
+                    <span>Rechercher des emplois inclusifs</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <i class="ri-search-line fw-medium" aria-hidden="true"></i>
+                    <span>Rechercher des prescripteurs habilités</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="offcanvas-footer flex-column align-items-stretch">
+            <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
+              <div class="dropdown-center dropdown-login">
+                <button class="btn btn-block btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
                   <i class="ri-login-box-line" aria-hidden="true"></i>
                   <span>Se connecter</span>
                 </button>
-                <div class="dropdown-menu" id="loginUserDropdown">
+                <div class="dropdown-menu" id="loginUserDropdownMobile">
                   <ul class="list-unstyled">
                     <li>
                       <a class="dropdown-item dropdown-item__summary" href="">
@@ -250,346 +342,247 @@
                     </li>
                   </ul>
                 </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="s-header__col s-header__col--burger col col-lg-auto d-flex align-items-center justify-content-end d-xl-none ps-0">
-          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
-            <i class="ri-menu-line" id="open" aria-hidden="true"></i>
-            <span>Menu</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="s-postheader d-none d-xl-block">
-    <div class="s-postheader__container container">
-      <div class="s-postheader__row row">
-        <div class="s-postheader__col col-12 d-flex align-items-center">
-          <nav role="navigation" aria-label="Navigation secondaire">
-            <ul>
-              <li>
-                <a href="">Rechercher des emplois inclusifs</a>
-              </li>
-              <li>
-                <a href="">Rechercher des prescripteurs habilités</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
-    <div class="offcanvas-header">
-      <h4 class="h5 mb-0 btn-ico align-items-center" id="offcanvasApplyFiltersLabel">
-        <i class="ri-menu-line" aria-hidden="true"></i>
-        <span>Menu</span>
-      </h4>
-      <button type="button" class="btn-link px-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
-        <i class="ri-close-line" aria-hidden="true"></i>
-      </button>
-    </div>
-    <div class="offcanvas-body">
-      <nav role="navigation" aria-label="Navigation secondaire pour mobile">
-        <ul class="nav nav-tabs flex-column">
-          <li class="nav-item">
-            <a href="" class="nav-link active">
-              <i class="ri-search-line fw-medium" aria-hidden="true"></i>
-              <span>Rechercher des emplois inclusifs</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="ri-search-line fw-medium" aria-hidden="true"></i>
-              <span>Rechercher des prescripteurs habilités</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="offcanvas-footer flex-column align-items-stretch">
-      <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
-        <div class="dropdown-center dropdown-login">
-          <button class="btn btn-block btn-ico btn-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdownMobile" aria-expanded="false">
-            <i class="ri-login-box-line" aria-hidden="true"></i>
-            <span>Se connecter</span>
-          </button>
-          <div class="dropdown-menu" id="loginUserDropdownMobile">
-            <ul class="list-unstyled">
-              <li>
-                <a class="dropdown-item dropdown-item__summary" href="">
-                  <i class="ri-user-line" aria-hidden="true"></i>
-                  <strong>Candidat</strong>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item dropdown-item__summary" href="">
-                  <i class="ri-home-smile-2-line" aria-hidden="true"></i>
-                  <strong>Prescripteur</strong>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item dropdown-item__summary" href="">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <strong>Employeur inclusif</strong>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item dropdown-item__summary" href="">
-                  <i class="ri-government-line" aria-hidden="true"></i>
-                  <strong>Institution partenaire</strong>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <a class="btn btn-block btn-ico btn-outline-primary my-3" href="">
-          <i class="ri-user-add-line" aria-hidden="true"></i>
-          <span>S'inscrire</span>
-        </a>
-        <div class="dropdown-center">
-          <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
-          <div class="dropdown-menu" id="helpDropdownMobile">
-            <ul class="list-unstyled">
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-</header>
-
-
-
-          <br>
-          <br>
-          <div class="container">
-            <div class="row" id="footer">
-              <div class="col-12">
-                <h3>Footer <code>.s-footer</code></h3>
               </div>
-            </div>
-          </div>
-          <footer role="contentinfo" id="footer">
-  <section class="s-footer-quick">
-    <div class="s-footer-quick__container container">
-      <div class="s-footer-quick__row row">
-        <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
-          <strong>Accès rapides</strong>
-          <div class="s-footer-quick__gridlist">
-            <ul>
-              <li><a href="">Rechercher un emploi inclusif</a></li>
-              <li><a href="">Rechercher des prescripteurs habilités</a></li>
-              <li><a href="">Journal des modifications</a></li>
-            </ul>
-            <ul>
-              <li><a href="">Journal des modifications</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
-          <strong>Documentation</strong>
-          <div class="s-footer-quick__gridlist">
-            <ul>
-              <li>
-                <a href="" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_documentation">Documentation</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Disponibilité (ouverture dans un nouvel onglet)">Disponibilité</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="s-footer-quick__col col-12 col-lg-auto">
-          <strong>Réseaux sociaux</strong>
-          <ul>
-            <li>
-              <a href="https://x.com/inclusion_gouv" target="_blank" aria-label="La plateforme de l'inclusion sur X (lien externe)"><i class="ri-twitter-x-fill text-dark ri-sm" aria-hidden="true"></i> X</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/inclusion-gouv/" target="_blank" aria-label="La plateforme de l'inclusion sur sur Linkedin (lien externe)"><i class="ri-linkedin-box-fill text-dark" aria-hidden="true"></i> LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/communaute.inclusion.gouv/" target="_blank" aria-label="La communaute de l'inclusion sur Facebook (lien externe)"><i class="ri-facebook-box-fill text-dark" aria-hidden="true"></i> Facebook</a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@LaPlateformedelinclusion/videos" target="_blank" aria-label="La plateforme de l'inclusion sur Youtube (lien externe)"><i class="ri-youtube-fill text-dark" aria-hidden="true"></i> Youtube</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-footer-gip">
-    <div class="s-footer-gip__container container">
-      <div class="s-footer-gip__row row">
-        <div class="s-footer-gip__col s-footer-gip__col--logo col-12 col-md-6 col-lg-auto">
-          <a href="https://inclusion.beta.gouv.fr/" target="_blank" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">
-            <img src="images/logo-plateforme-inclusion.svg" height="80" alt="Logo de plateforme de l'inclusion">
-          </a>
-        </div>
-        <div class="s-footer-gip__col col-12 col-md-6 col-lg">
-          <p class="mb-1"><strong>Ce service fait partie de la Plateforme de l’inclusion</strong></p>
-          <p class="m-0">Découvrez les outils qui portent l'inclusion au <br class="d-none d-md-inline">coeur de leur service. A chaque service, son objectif. <br><a href="https://inclusion.beta.gouv.fr/" target="_blank" class="has-external-link" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">Découvrez nos services</a></p>
-        </div>
-        <div class="s-footer-gip__col s-footer-gip__col--links col-12 col-lg-auto">
-          <ul>
-            <li><a href="https://beta.gouv.fr/" target="_blank" aria-label="Incubateur de services publics numériques — beta.gouv.fr (lien externe)">beta.gouv.fr</a></li>
-            <li><a href="https://www.data.gouv.fr/fr/" target="_blank" aria-label="Data.gouv.fr (lien externe)">data.gouv.fr</a></li>
-            <li><a href="https://api.gouv.fr/" target="_blank" aria-label="Simplifiez le partage et la circulation des données administratives grace à api.gouv.fr (lien externe)">api.gouv.fr</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-footer-legal">
-    <div class="s-footer-legal__container container">
-      <div class="s-footer-legal__row row">
-        <div class="s-footer-legal__col col-12">
-          <ul>
-            <li><a href="">Accessibilité : partiellement conforme</a></li>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="">Conditions générales</a></li>
-            <li><a href="">Confidentialité</a></li>
-            <li><a href="">Statistiques, lexiques et indicateurs</a></li>
-          </ul>
-          <p>Sauf mention contraire, tous les contenus de ce site sont sous licence <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" aria-label="Licence ouverte Etalab (lien externe)">etalab-2.0</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-</footer>
-
-
-            <br>
-            <br>
-            <div class="container">
-              <div class="row" id="footer">
-                <div class="col-12">
-                  <h3>Footer <code>.s-footer</code></h3>
+              <a class="btn btn-block btn-ico btn-outline-primary my-3" href="">
+                <i class="ri-user-add-line" aria-hidden="true"></i>
+                <span>S'inscrire</span>
+              </a>
+              <div class="dropdown-center">
+                <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+                <div class="dropdown-menu" id="helpDropdownMobile">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <br>
+      <br>
+      <div class="container">
+        <div class="row" id="footer">
+          <div class="col-12">
+            <h3>Footer <code>.s-footer</code></h3>
+          </div>
+        </div>
+      </div>
+      <footer role="contentinfo" id="footer">
+        <section class="s-footer-quick">
+          <div class="s-footer-quick__container container">
+            <div class="s-footer-quick__row row">
+              <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
+                <strong>Accès rapides</strong>
+                <div class="s-footer-quick__gridlist">
+                  <ul>
+                    <li><a href="">Rechercher un emploi inclusif</a></li>
+                    <li><a href="">Rechercher des prescripteurs habilités</a></li>
+                    <li><a href="">Journal des modifications</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="">Journal des modifications</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
+                <strong>Documentation</strong>
+                <div class="s-footer-quick__gridlist">
+                  <ul>
+                    <li>
+                      <a href="" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_documentation">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                    </li>
+                    <li>
+                      <a href="" target="_blank" aria-label="Disponibilité (ouverture dans un nouvel onglet)">Disponibilité</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="s-footer-quick__col col-12 col-lg-auto">
+                <strong>Réseaux sociaux</strong>
+                <ul>
+                  <li>
+                    <a href="https://x.com/inclusion_gouv" target="_blank" aria-label="La plateforme de l'inclusion sur X (lien externe)"><i class="ri-twitter-x-fill text-dark ri-sm" aria-hidden="true"></i> X</a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/inclusion-gouv/" target="_blank" aria-label="La plateforme de l'inclusion sur sur Linkedin (lien externe)"><i class="ri-linkedin-box-fill text-dark" aria-hidden="true"></i> LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/communaute.inclusion.gouv/" target="_blank" aria-label="La communaute de l'inclusion sur Facebook (lien externe)"><i class="ri-facebook-box-fill text-dark" aria-hidden="true"></i> Facebook</a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@LaPlateformedelinclusion/videos" target="_blank" aria-label="La plateforme de l'inclusion sur Youtube (lien externe)"><i class="ri-youtube-fill text-dark" aria-hidden="true"></i> Youtube</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+        </section>
+      
+        <section class="s-footer-gip">
+          <div class="s-footer-gip__container container">
+            <div class="s-footer-gip__row row">
+              <div class="s-footer-gip__col s-footer-gip__col--logo col-12 col-md-6 col-lg-auto">
+                <a href="https://inclusion.beta.gouv.fr/" target="_blank" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">
+                  <img src="./images/logo-plateforme-inclusion.svg" height="80" alt="Logo de plateforme de l'inclusion">
+                </a>
+              </div>
+              <div class="s-footer-gip__col col-12 col-md-6 col-lg">
+                <p class="mb-1"><strong>Ce service fait partie de la Plateforme de l’inclusion</strong></p>
+                <p class="m-0">Découvrez les outils qui portent l'inclusion au <br class="d-none d-md-inline">coeur de leur service. A chaque service, son objectif. <br><a href="https://inclusion.beta.gouv.fr/" target="_blank" class="has-external-link" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">Découvrez nos services</a></p>
+              </div>
+              <div class="s-footer-gip__col s-footer-gip__col--links col-12 col-lg-auto">
+                <ul>
+                  <li><a href="https://beta.gouv.fr/" target="_blank" aria-label="Incubateur de services publics numériques — beta.gouv.fr (lien externe)">beta.gouv.fr</a></li>
+                  <li><a href="https://www.data.gouv.fr/fr/" target="_blank" aria-label="Data.gouv.fr (lien externe)">data.gouv.fr</a></li>
+                  <li><a href="https://api.gouv.fr/" target="_blank" aria-label="Simplifiez le partage et la circulation des données administratives grace à api.gouv.fr (lien externe)">api.gouv.fr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="s-footer-legal">
+          <div class="s-footer-legal__container container">
+            <div class="s-footer-legal__row row">
+              <div class="s-footer-legal__col col-12">
+                <ul>
+                  <li><a href="">Accessibilité : partiellement conforme</a></li>
+                  <li><a href="">Mentions légales</a></li>
+                  <li><a href="">Conditions générales</a></li>
+                  <li><a href="">Confidentialité</a></li>
+                  <li><a href="">Statistiques, lexiques et indicateurs</a></li>
+                </ul>
+                <p>Sauf mention contraire, tous les contenus de ce site sont sous licence <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" aria-label="Licence ouverte Etalab (lien externe)">etalab-2.0</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
 
-            <footer role="contentinfo" id="footer">
-  <section class="s-footer-quick">
-    <div class="s-footer-quick__container container">
-      <div class="s-footer-quick__row row">
-        <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
-          <strong>Accès rapides</strong>
-          <div class="s-footer-quick__gridlist">
-            <ul>
-              <li><a href="">Rechercher un emploi inclusif</a></li>
-              <li><a href="">Rechercher des prescripteurs habilités</a></li>
-              <li><a href="">Journal des modifications</a></li>
-            </ul>
-            <ul>
-              <li><a href="">Journal des modifications</a></li>
-            </ul>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row" id="footer">
+          <div class="col-12">
+            <h3>Footer <code>.s-footer</code></h3>
           </div>
         </div>
-        <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
-          <strong>Documentation</strong>
-          <div class="s-footer-quick__gridlist">
-            <ul>
-              <li>
-                <a href="" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_documentation">Documentation</a>
-              </li>
-              <li>
-                <a href="" rel="noopener" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
-              </li>
-              <li>
-                <a href="" target="_blank" aria-label="Disponibilité (ouverture dans un nouvel onglet)">Disponibilité</a>
-              </li>
-            </ul>
+      </div>
+
+      <footer role="contentinfo" id="footer">
+        <section class="s-footer-quick">
+          <div class="s-footer-quick__container container">
+            <div class="s-footer-quick__row row">
+              <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
+                <strong>Accès rapides</strong>
+                <div class="s-footer-quick__gridlist">
+                  <ul>
+                    <li><a href="">Rechercher un emploi inclusif</a></li>
+                    <li><a href="">Rechercher des prescripteurs habilités</a></li>
+                    <li><a href="">Journal des modifications</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="">Journal des modifications</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
+                <strong>Documentation</strong>
+                <div class="s-footer-quick__gridlist">
+                  <ul>
+                    <li>
+                      <a href="" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_documentation">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="" rel="noopener" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="footer_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                    </li>
+                    <li>
+                      <a href="" target="_blank" aria-label="Disponibilité (ouverture dans un nouvel onglet)">Disponibilité</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="s-footer-quick__col col-12 col-lg-auto">
+                <strong>Réseaux sociaux</strong>
+                <ul>
+                  <li>
+                    <a href="https://x.com/inclusion_gouv" target="_blank" aria-label="La plateforme de l'inclusion sur X (lien externe)"><i class="ri-twitter-x-fill text-dark ri-sm" aria-hidden="true"></i> X</a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/inclusion-gouv/" target="_blank" aria-label="La plateforme de l'inclusion sur sur Linkedin (lien externe)"><i class="ri-linkedin-box-fill text-dark" aria-hidden="true"></i> LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/communaute.inclusion.gouv/" target="_blank" aria-label="La communaute de l'inclusion sur Facebook (lien externe)"><i class="ri-facebook-box-fill text-dark" aria-hidden="true"></i> Facebook</a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@LaPlateformedelinclusion/videos" target="_blank" aria-label="La plateforme de l'inclusion sur Youtube (lien externe)"><i class="ri-youtube-fill text-dark" aria-hidden="true"></i> Youtube</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="s-footer-quick__col col-12 col-lg-auto">
-          <strong>Réseaux sociaux</strong>
-          <ul>
-            <li>
-              <a href="https://x.com/inclusion_gouv" target="_blank" aria-label="La plateforme de l'inclusion sur X (lien externe)"><i class="ri-twitter-x-fill text-dark ri-sm" aria-hidden="true"></i> X</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/inclusion-gouv/" target="_blank" aria-label="La plateforme de l'inclusion sur sur Linkedin (lien externe)"><i class="ri-linkedin-box-fill text-dark" aria-hidden="true"></i> LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/communaute.inclusion.gouv/" target="_blank" aria-label="La communaute de l'inclusion sur Facebook (lien externe)"><i class="ri-facebook-box-fill text-dark" aria-hidden="true"></i> Facebook</a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@LaPlateformedelinclusion/videos" target="_blank" aria-label="La plateforme de l'inclusion sur Youtube (lien externe)"><i class="ri-youtube-fill text-dark" aria-hidden="true"></i> Youtube</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
+      
+        <section class="s-footer-gip">
+          <div class="s-footer-gip__container container">
+            <div class="s-footer-gip__row row">
+              <div class="s-footer-gip__col s-footer-gip__col--logo col-12 col-md-6 col-lg-auto">
+                <a href="https://inclusion.beta.gouv.fr/" target="_blank" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">
+                  <img src="./images/logo-plateforme-inclusion.svg" height="80" alt="Logo de plateforme de l'inclusion">
+                </a>
+              </div>
+              <div class="s-footer-gip__col col-12 col-md-6 col-lg">
+                <p class="mb-1"><strong>Ce service fait partie de la Plateforme de l’inclusion</strong></p>
+                <p class="m-0">Découvrez les outils qui portent l'inclusion au <br class="d-none d-md-inline">coeur de leur service. A chaque service, son objectif. <br><a href="https://inclusion.beta.gouv.fr/" target="_blank" class="has-external-link" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">Découvrez nos services</a></p>
+              </div>
+              <div class="s-footer-gip__col s-footer-gip__col--links col-12 col-lg-auto">
+                <ul>
+                  <li><a href="https://beta.gouv.fr/" target="_blank" aria-label="Incubateur de services publics numériques — beta.gouv.fr (lien externe)">beta.gouv.fr</a></li>
+                  <li><a href="https://www.data.gouv.fr/fr/" target="_blank" aria-label="Data.gouv.fr (lien externe)">data.gouv.fr</a></li>
+                  <li><a href="https://api.gouv.fr/" target="_blank" aria-label="Simplifiez le partage et la circulation des données administratives grace à api.gouv.fr (lien externe)">api.gouv.fr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="s-footer-legal">
+          <div class="s-footer-legal__container container">
+            <div class="s-footer-legal__row row">
+              <div class="s-footer-legal__col col-12">
+                <ul>
+                  <li><a href="">Accessibilité : partiellement conforme</a></li>
+                  <li><a href="">Mentions légales</a></li>
+                  <li><a href="">Conditions générales</a></li>
+                  <li><a href="">Confidentialité</a></li>
+                  <li><a href="">Statistiques, lexiques et indicateurs</a></li>
+                </ul>
+                <p>Sauf mention contraire, tous les contenus de ce site sont sous licence <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" aria-label="Licence ouverte Etalab (lien externe)">etalab-2.0</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </main>
 
-  <section class="s-footer-gip">
-    <div class="s-footer-gip__container container">
-      <div class="s-footer-gip__row row">
-        <div class="s-footer-gip__col s-footer-gip__col--logo col-12 col-md-6 col-lg-auto">
-          <a href="https://inclusion.beta.gouv.fr/" target="_blank" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">
-            <img src="images/logo-plateforme-inclusion.svg" height="80" alt="Logo de plateforme de l'inclusion">
-          </a>
-        </div>
-        <div class="s-footer-gip__col col-12 col-md-6 col-lg">
-          <p class="mb-1"><strong>Ce service fait partie de la Plateforme de l’inclusion</strong></p>
-          <p class="m-0">Découvrez les outils qui portent l'inclusion au <br class="d-none d-md-inline">coeur de leur service. A chaque service, son objectif. <br><a href="https://inclusion.beta.gouv.fr/" target="_blank" class="has-external-link" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">Découvrez nos services</a></p>
-        </div>
-        <div class="s-footer-gip__col s-footer-gip__col--links col-12 col-lg-auto">
-          <ul>
-            <li><a href="https://beta.gouv.fr/" target="_blank" aria-label="Incubateur de services publics numériques — beta.gouv.fr (lien externe)">beta.gouv.fr</a></li>
-            <li><a href="https://www.data.gouv.fr/fr/" target="_blank" aria-label="Data.gouv.fr (lien externe)">data.gouv.fr</a></li>
-            <li><a href="https://api.gouv.fr/" target="_blank" aria-label="Simplifiez le partage et la circulation des données administratives grace à api.gouv.fr (lien externe)">api.gouv.fr</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-footer-legal">
-    <div class="s-footer-legal__container container">
-      <div class="s-footer-legal__row row">
-        <div class="s-footer-legal__col col-12">
-          <ul>
-            <li><a href="">Accessibilité : partiellement conforme</a></li>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="">Conditions générales</a></li>
-            <li><a href="">Confidentialité</a></li>
-            <li><a href="">Statistiques, lexiques et indicateurs</a></li>
-          </ul>
-          <p>Sauf mention contraire, tous les contenus de ce site sont sous licence <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" aria-label="Licence ouverte Etalab (lien externe)">etalab-2.0</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-</footer>
-
-      </main>
-
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-      <script src="javascripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 
 </html>
