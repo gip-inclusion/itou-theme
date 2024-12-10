@@ -1,5 +1,5 @@
 // Variables
-//
+
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
@@ -22,15 +22,15 @@ $black: #383838;
 // fusv-disable
 // scss-docs-start gray-colors-map
 $grays: (
-  '100': $gray-100,
-  '200': $gray-200,
-  '300': $gray-300,
-  '400': $gray-400,
-  '500': $gray-500,
-  '600': $gray-600,
-  '700': $gray-700,
-  '800': $gray-800,
-  '900': $gray-900,
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
 );
 
 $nuance-01: #1a1f4c;
@@ -45,16 +45,16 @@ $nuance-09: #f2f3f5;
 $nuance-10: #f8f8f8;
 
 $nuance: (
-  '01': $nuance-01,
-  '02': $nuance-02,
-  '03': $nuance-03,
-  '04': $nuance-04,
-  '05': $nuance-05,
-  '06': $nuance-06,
-  '07': $nuance-07,
-  '08': $nuance-08,
-  '09': $nuance-09,
-  '10': $nuance-10,
+  "01": $nuance-01,
+  "02": $nuance-02,
+  "03": $nuance-03,
+  "04": $nuance-04,
+  "05": $nuance-05,
+  "06": $nuance-06,
+  "07": $nuance-07,
+  "08": $nuance-08,
+  "09": $nuance-09,
+  "10": $nuance-10,
 );
 // scss-docs-end gray-colors-map
 // fusv-enable
@@ -74,20 +74,20 @@ $cyan: #17a2b8 !default;
 
 // scss-docs-start colors-map
 $colors: (
-  'blue': $blue,
-  'indigo': $indigo,
-  'purple': $purple,
-  'pink': $pink,
-  'red': $red,
-  'orange': $orange,
-  'yellow': $yellow,
-  'green': $green,
-  'teal': $teal,
-  'cyan': $cyan,
-  'black': $black,
-  'white': $white,
-  'gray': $gray-600,
-  'gray-dark': $gray-900,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "black": $black,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-900,
 );
 // scss-docs-end colors-map
 
@@ -178,77 +178,77 @@ $muted-color: $nuance-04;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  'primary': $primary,
-  'secondary': $secondary,
-  'tertiary': $tertiary,
-  'light': $light,
-  'dark': $dark,
-  'button': $button,
-  'button-light': $button-light,
-  'button-lighter': $button-lighter,
-  'button-lightest': $button-lightest,
-  'success': $success,
-  'success-light': $success-light,
-  'success-lighter': $success-lighter,
-  'success-lightest': $success-lightest,
-  'warning': $warning,
-  'warning-light': $warning-light,
-  'warning-lighter': $warning-lighter,
-  'warning-lightest': $warning-lightest,
-  'white': $white,
-  'danger': $danger,
-  'danger-light': $danger-light,
-  'danger-lighter': $danger-lighter,
-  'danger-lightest': $danger-lightest,
-  'info': $info,
-  'info-light': $info-light,
-  'info-lighter': $info-lighter,
-  'info-lightest': $info-lightest,
-  'important': $important,
-  'important-light': $important-light,
-  'important-lighter': $important-lighter,
-  'important-lightest': $important-lightest,
-  'accent-01': $accent-01,
-  'accent-01-light': $accent-01-light,
-  'accent-01-lighter': $accent-01-lighter,
-  'accent-01-lightest': $accent-01-lightest,
-  'accent-02': $accent-02,
-  'accent-02-light': $accent-02-light,
-  'accent-02-lighter': $accent-02-lighter,
-  'accent-02-lightest': $accent-02-lightest,
-  'accent-03': $accent-03,
-  'accent-03-light': $accent-03-light,
-  'accent-03-lighter': $accent-03-lighter,
-  'accent-03-lightest': $accent-03-lightest,
-  'marche': $marche,
-  'marche-light': $marche-light,
-  'marche-lighter': $marche-lighter,
-  'marche-lightest': $marche-lightest,
-  'communaute': $communaute,
-  'communaute-light': $communaute-light,
-  'communaute-lighter': $communaute-lighter,
-  'communaute-lightest': $communaute-lightest,
-  'pilotage': $pilotage,
-  'pilotage-light': $pilotage-light,
-  'pilotage-lighter': $pilotage-lighter,
-  'pilotage-lightest': $pilotage-lightest,
-  'emploi': $emploi,
-  'emploi-light': $emploi-light,
-  'emploi-lighter': $emploi-lighter,
-  'emploi-lightest': $emploi-lightest,
-  'nuance-01': $nuance-01,
-  'nuance-02': $nuance-02,
-  'nuance-03': $nuance-03,
-  'nuance-04': $nuance-04,
-  'nuance-05': $nuance-05,
-  'nuance-06': $nuance-06,
-  'nuance-07': $nuance-07,
-  'nuance-08': $nuance-08,
-  'nuance-09': $nuance-09,
-  'nuance-10': $nuance-10,
-  'disabled-color': $disabled-color,
-  'disabled-color-light': $disabled-color-light,
-  'muted-color': $muted-color,
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "light": $light,
+  "dark": $dark,
+  "button": $button,
+  "button-light": $button-light,
+  "button-lighter": $button-lighter,
+  "button-lightest": $button-lightest,
+  "success": $success,
+  "success-light": $success-light,
+  "success-lighter": $success-lighter,
+  "success-lightest": $success-lightest,
+  "warning": $warning,
+  "warning-light": $warning-light,
+  "warning-lighter": $warning-lighter,
+  "warning-lightest": $warning-lightest,
+  "white": $white,
+  "danger": $danger,
+  "danger-light": $danger-light,
+  "danger-lighter": $danger-lighter,
+  "danger-lightest": $danger-lightest,
+  "info": $info,
+  "info-light": $info-light,
+  "info-lighter": $info-lighter,
+  "info-lightest": $info-lightest,
+  "important": $important,
+  "important-light": $important-light,
+  "important-lighter": $important-lighter,
+  "important-lightest": $important-lightest,
+  "accent-01": $accent-01,
+  "accent-01-light": $accent-01-light,
+  "accent-01-lighter": $accent-01-lighter,
+  "accent-01-lightest": $accent-01-lightest,
+  "accent-02": $accent-02,
+  "accent-02-light": $accent-02-light,
+  "accent-02-lighter": $accent-02-lighter,
+  "accent-02-lightest": $accent-02-lightest,
+  "accent-03": $accent-03,
+  "accent-03-light": $accent-03-light,
+  "accent-03-lighter": $accent-03-lighter,
+  "accent-03-lightest": $accent-03-lightest,
+  "marche": $marche,
+  "marche-light": $marche-light,
+  "marche-lighter": $marche-lighter,
+  "marche-lightest": $marche-lightest,
+  "communaute": $communaute,
+  "communaute-light": $communaute-light,
+  "communaute-lighter": $communaute-lighter,
+  "communaute-lightest": $communaute-lightest,
+  "pilotage": $pilotage,
+  "pilotage-light": $pilotage-light,
+  "pilotage-lighter": $pilotage-lighter,
+  "pilotage-lightest": $pilotage-lightest,
+  "emploi": $emploi,
+  "emploi-light": $emploi-light,
+  "emploi-lighter": $emploi-lighter,
+  "emploi-lightest": $emploi-lightest,
+  "nuance-01": $nuance-01,
+  "nuance-02": $nuance-02,
+  "nuance-03": $nuance-03,
+  "nuance-04": $nuance-04,
+  "nuance-05": $nuance-05,
+  "nuance-06": $nuance-06,
+  "nuance-07": $nuance-07,
+  "nuance-08": $nuance-08,
+  "nuance-09": $nuance-09,
+  "nuance-10": $nuance-10,
+  "disabled-color": $disabled-color,
+  "disabled-color-light": $disabled-color-light,
+  "muted-color": $muted-color,
 );
 // scss-docs-end theme-colors-map
 
@@ -286,13 +286,7 @@ $dark-border-subtle: $gray-500 !default;
 // scss-docs-end theme-border-subtle-variables
 
 // Characters which are escaped by the escape-svg function
-$escaped-characters: (
-  ('<', '%3c'),
-  ('>', '%3e'),
-  ('#', '%23'),
-  ('(', '%28'),
-  (')', '%29')
-) !default;
+$escaped-characters: (("<", "%3c"), (">", "%3e"), ("#", "%23"), ("(", "%28"), (")", "%29")) !default;
 
 // Options
 //
@@ -328,11 +322,7 @@ $prefix: $variable-prefix !default;
 // The gradient which is added to components if `$enable-gradients` is `true`
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
-$gradient: linear-gradient(
-  180deg,
-  rgba($white, 0.15),
-  rgba($white, 0)
-) !default;
+$gradient: linear-gradient(180deg, rgba($white, 0.15), rgba($white, 0)) !default;
 // scss-docs-end variable-gradient
 
 // Spacing
@@ -439,8 +429,8 @@ $grid-breakpoints: (
 );
 // scss-docs-end grid-breakpoints
 
-@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
-@include _assert-starts-at-zero($grid-breakpoints, '$grid-breakpoints');
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
 // Grid containers
 //
@@ -464,7 +454,7 @@ $container-max-widths: (
 );
 // scss-docs-end container-max-widths
 
-@include _assert-ascending($container-max-widths, '$container-max-widths');
+@include _assert-ascending($container-max-widths, "$container-max-widths");
 
 // Grid columns
 //
@@ -545,10 +535,10 @@ $transition-collapse-width: width 0.35s ease !default;
 // stylelint-disable function-disallowed-list
 // scss-docs-start aspect-ratios
 $aspect-ratios: (
-  '1x1': 100%,
-  '4x3': calc(3 / 4 * 100%),
-  '16x9': calc(9 / 16 * 100%),
-  '21x9': calc(9 / 21 * 100%),
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
@@ -561,99 +551,107 @@ $aspect-ratios: (
 // stylelint-disable value-keyword-case
 
 @font-face {
-  font-family: 'Covered';
-  src: url('../fonts/coveredbyyourgrace/coveredbyyourgrace.woff2')
-      format('woff2'),
-    url('../fonts/coveredbyyourgrace/coveredbyyourgrace.woff') format('woff');
+  font-family: "Covered";
+  src:
+    url("../fonts/coveredbyyourgrace/coveredbyyourgrace.woff2") format("woff2"),
+    url("../fonts/coveredbyyourgrace/coveredbyyourgrace.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Light.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Light.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Light.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Light_Italic.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Light_Italic.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Light_Italic.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Light_Italic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Regular.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Regular.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Regular.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Regular_Italic.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Regular_Italic.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Regular_Italic.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Regular_Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Medium.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Medium.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Medium.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Medium_Italic.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Medium_Italic.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Medium_Italic.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Medium_Italic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Bold.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Bold.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-Bold.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-Bold.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Marianne';
-  src: url('../fonts/marianne/Marianne-ExtraBold.woff2') format('woff2'),
-    url('../fonts/marianne/Marianne-ExtraBold.woff') format('woff');
+  font-family: "Marianne";
+  src:
+    url("../fonts/marianne/Marianne-ExtraBold.woff2") format("woff2"),
+    url("../fonts/marianne/Marianne-ExtraBold.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 $font-family-sans-serif: Marianne, Arial, sans-serif;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  'Liberation Mono', 'Courier New', monospace !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-extra-01: Covered, Marianne, Arial, sans-serif;
 $font-family-base: var(--#{$prefix}font-sans-serif);
 $font-family-code: var(--#{$prefix}font-monospace);
@@ -820,7 +818,7 @@ $table-bg-scale: -80% !default;
 
 // scss-docs-start table-loop
 $table-variants: (
-  'light': $light,
+  "light": $light,
 );
 // scss-docs-end table-loop
 
@@ -893,16 +891,18 @@ $btn-active-box-shadow: none;
 $btn-link-color: var(--#{$prefix}link-color) !default;
 $btn-link-hover-color: var(--#{$prefix}link-hover-color) !default;
 $btn-link-disabled-color: $disabled-color;
-$btn-link-focus-shadow-rgb: to-rgb(
-  mix(color-contrast($link-color), $link-color, 15%)
-) !default;
+$btn-link-focus-shadow-rgb: to-rgb(mix(color-contrast($link-color), $link-color, 15%)) !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: var(--#{$prefix}border-radius) !default;
 $btn-border-radius-sm: var(--#{$prefix}border-radius);
 $btn-border-radius-lg: var(--#{$prefix}border-radius);
 
-$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
+$btn-transition:
+  color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out,
+  box-shadow 0.15s ease-in-out !default;
 
 $btn-hover-bg-shade-amount: 15% !default;
 $btn-hover-bg-tint-amount: 15% !default;
@@ -976,29 +976,20 @@ $input-focus-box-shadow: $input-btn-focus-box-shadow;
 $input-placeholder-color: var(--#{$prefix}muted-color);
 $input-plaintext-color: var(--#{$prefix}muted-color);
 
-$input-height-border: calc(
-  #{$input-border-width} * 2
-); // stylelint-disable-line function-disallowed-list
+$input-height-border: calc(#{$input-border-width} * 2); // stylelint-disable-line function-disallowed-list
 
-$input-height-inner: add(
-  $input-line-height * 1em,
-  $input-padding-y * 2
-) !default;
-$input-height-inner-half: add(
-  $input-line-height * 0.5em,
-  $input-padding-y
-) !default;
-$input-height-inner-quarter: add(
-  $input-line-height * 0.25em,
-  $input-padding-y * 0.5
-) !default;
+$input-height-inner: add($input-line-height * 1em, $input-padding-y * 2) !default;
+$input-height-inner-half: add($input-line-height * 0.5em, $input-padding-y) !default;
+$input-height-inner-quarter: add($input-line-height * 0.25em, $input-padding-y * 0.5) !default;
 
 $input-height: 40px;
 $input-height-sm: 32px;
 $input-height-lg: 48px;
 $input-height-xl: 56px;
 
-$input-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
+$input-transition:
+  border-color 0.15s ease-in-out,
+  box-shadow 0.15s ease-in-out !default;
 
 $form-color-width: 3rem !default;
 // scss-docs-end form-input-variables
@@ -1015,8 +1006,7 @@ $form-check-transition: null !default;
 $form-check-input-active-filter: brightness(90%) !default;
 
 $form-check-input-bg: $input-bg !default;
-$form-check-input-border: var(--#{$prefix}border-width) solid
-  var(--#{$prefix}body-color) !default;
+$form-check-input-border: var(--#{$prefix}border-width) solid var(--#{$prefix}body-color) !default;
 $form-check-input-border-radius: 0.25em !default;
 $form-check-radio-border-radius: 50% !default;
 $form-check-input-focus-border: $input-focus-border-color !default;
@@ -1086,16 +1076,12 @@ $form-select-bg-size: 16px 16px; // In pixels because image dimensions
 $form-select-indicator-color: $gray-800;
 $form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='#{$form-select-indicator-color}' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/></svg>");
 $form-select-disabled-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='#{$form-select-disabled-color}' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/></svg>");
-$form-select-background: escape-svg($form-select-indicator) right
-  calc($form-select-padding-x / 1.5) center / $form-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
-$form-select-disabled-background: escape-svg($form-select-disabled-indicator)
-  right $form-select-padding-x center / $form-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
+$form-select-background: escape-svg($form-select-indicator) right calc($form-select-padding-x / 1.5) center / $form-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
+$form-select-disabled-background: escape-svg($form-select-disabled-indicator) right $form-select-padding-x center / $form-select-bg-size no-repeat; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
-$form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 +
-  $form-select-indicator-padding !default;
+$form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 + $form-select-indicator-padding !default;
 $form-select-feedback-icon-position: center right $form-select-indicator-padding !default;
-$form-select-feedback-icon-size: $input-height-inner-half
-  $input-height-inner-half !default;
+$form-select-feedback-icon-size: $input-height-inner-half $input-height-inner-half !default;
 
 $form-select-border-width: $input-border-width;
 $form-select-border-color: $input-border-color;
@@ -1142,8 +1128,10 @@ $form-range-thumb-focus-box-shadow: none;
 $form-range-thumb-focus-box-shadow-width: $input-focus-width !default; // For focus box shadow issue in Edge
 $form-range-thumb-active-bg: $button-light;
 $form-range-thumb-disabled-bg: var(--#{$prefix}disabled-color);
-$form-range-thumb-transition: background-color 0.15s ease-in-out,
-  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
+$form-range-thumb-transition:
+  background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out,
+  box-shadow 0.15s ease-in-out !default;
 // scss-docs-end form-range-variables
 
 // scss-docs-start form-file-variables
@@ -1161,10 +1149,11 @@ $form-floating-input-padding-t: 1.625rem !default;
 $form-floating-input-padding-b: 0.625rem !default;
 $form-floating-label-height: 1.5em !default;
 $form-floating-label-opacity: 0.65 !default;
-$form-floating-label-transform: scale(0.85) translateY(-0.5rem)
-  translateX(0.15rem) !default;
+$form-floating-label-transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem) !default;
 $form-floating-label-disabled-color: $gray-600 !default;
-$form-floating-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out !default;
+$form-floating-transition:
+  opacity 0.1s ease-in-out,
+  transform 0.1s ease-in-out !default;
 // scss-docs-end form-floating-variables
 
 // Form validation
@@ -1191,23 +1180,21 @@ $form-invalid-border-color: $form-feedback-invalid-color !default;
 
 // scss-docs-start form-validation-states
 $form-validation-states: (
-  'valid': (
-    'color': var(--#{$prefix}form-valid-color),
-    'icon': $form-feedback-icon-valid,
-    'tooltip-color': #fff,
-    'tooltip-bg-color': var(--#{$prefix}success),
-    'focus-box-shadow': 0 0 $input-btn-focus-blur $input-focus-width
-      rgba(var(--#{$prefix}success-rgb), $input-btn-focus-color-opacity),
-    'border-color': var(--#{$prefix}form-valid-border-color),
+  "valid": (
+    "color": var(--#{$prefix}form-valid-color),
+    "icon": $form-feedback-icon-valid,
+    "tooltip-color": #fff,
+    "tooltip-bg-color": var(--#{$prefix}success),
+    "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}success-rgb), $input-btn-focus-color-opacity),
+    "border-color": var(--#{$prefix}form-valid-border-color),
   ),
-  'invalid': (
-    'color': var(--#{$prefix}form-invalid-color),
-    'icon': $form-feedback-icon-invalid,
-    'tooltip-color': #fff,
-    'tooltip-bg-color': var(--#{$prefix}danger),
-    'focus-box-shadow': 0 0 $input-btn-focus-blur $input-focus-width
-      rgba(var(--#{$prefix}danger-rgb), $input-btn-focus-color-opacity),
-    'border-color': var(--#{$prefix}form-invalid-border-color),
+  "invalid": (
+    "color": var(--#{$prefix}form-invalid-color),
+    "icon": $form-feedback-icon-invalid,
+    "tooltip-color": #fff,
+    "tooltip-bg-color": var(--#{$prefix}danger),
+    "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}danger-rgb), $input-btn-focus-color-opacity),
+    "border-color": var(--#{$prefix}form-invalid-border-color),
   ),
 ) !default;
 // scss-docs-end form-validation-states
@@ -1230,7 +1217,6 @@ $zindex-tooltip: 1010;
 $zindex-toast: 1070;
 // scss-docs-end zindex-stack
 
-
 // scss-docs-start zindex-levels-map
 $zindex-levels: (
   n1: -1,
@@ -1250,8 +1236,10 @@ $nav-link-font-size: null !default;
 $nav-link-font-weight: null !default;
 $nav-link-color: var(--#{$prefix}link-color) !default;
 $nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
-$nav-link-transition: color 0.15s ease-in-out,
-  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
+$nav-link-transition:
+  color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out !default;
 $nav-link-disabled-color: var(--#{$prefix}disabled-color);
 $nav-link-focus-box-shadow: $focus-ring-box-shadow !default;
 
@@ -1295,24 +1283,12 @@ $navbar-toggler-focus-width: $btn-focus-width !default;
 $navbar-toggler-transition: box-shadow 0.15s ease-in-out !default;
 
 $navbar-light-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.65) !default;
-$navbar-light-hover-color: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  0.8
-) !default;
-$navbar-light-active-color: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  1
-) !default;
-$navbar-light-disabled-color: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  0.3
-) !default;
+$navbar-light-hover-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.8) !default;
+$navbar-light-active-color: rgba(var(--#{$prefix}emphasis-color-rgb), 1) !default;
+$navbar-light-disabled-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.3) !default;
 $navbar-light-icon-color: rgba($body-color, 0.75) !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-light-toggler-border-color: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  0.15
-) !default;
+$navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.15) !default;
 $navbar-light-brand-color: $navbar-light-active-color !default;
 $navbar-light-brand-hover-color: $navbar-light-active-color !default;
 // scss-docs-end navbar-variables
@@ -1344,9 +1320,7 @@ $dropdown-bg: var(--#{$prefix}body-bg) !default;
 $dropdown-border-color: $border-color;
 $dropdown-border-radius: var(--#{$prefix}border-radius) !default;
 $dropdown-border-width: 0;
-$dropdown-inner-border-radius: calc(
-  #{$dropdown-border-radius} - #{$dropdown-border-width}
-); // stylelint-disable-line function-disallowed-list
+$dropdown-inner-border-radius: calc(#{$dropdown-border-radius} - #{$dropdown-border-width}); // stylelint-disable-line function-disallowed-list
 $dropdown-divider-bg: $border-color;
 $dropdown-divider-margin-y: 0;
 $dropdown-box-shadow: $box-shadow-sm;
@@ -1402,9 +1376,7 @@ $pagination-color: var(--#{$prefix}button);
 $pagination-bg: transparent;
 $pagination-border-radius: var(--#{$prefix}border-radius);
 $pagination-border-width: 0;
-$pagination-margin-start: calc(
-  #{$pagination-border-width} * -1
-) !default; // stylelint-disable-line function-disallowed-list
+$pagination-margin-start: calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
 $pagination-border-color: var(--#{$prefix}border-color) !default;
 
 $pagination-focus-color: var(--#{$prefix}button-light);
@@ -1424,8 +1396,10 @@ $pagination-disabled-color: var(--#{$prefix}disabled-color);
 $pagination-disabled-bg: transparent;
 $pagination-disabled-border-color: var(--#{$prefix}border-color) !default;
 
-$pagination-transition: color 0.15s ease-in-out,
-  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+$pagination-transition:
+  color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out;
 
 $pagination-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $pagination-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
@@ -1450,10 +1424,7 @@ $card-border-width: var(--#{$prefix}border-width) !default;
 $card-border-color: var(--#{$prefix}border-color);
 $card-border-radius: var(--#{$prefix}border-radius);
 $card-box-shadow: null !default;
-$card-inner-border-radius: subtract(
-  $card-border-radius,
-  $card-border-width
-) !default;
+$card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y: $card-spacer-y;
 $card-cap-padding-x: $card-spacer-x;
 $card-cap-bg: var(--#{$prefix}gray-400);
@@ -1475,10 +1446,7 @@ $accordion-bg: var(--#{$prefix}body-bg) !default;
 $accordion-border-width: var(--#{$prefix}border-width) !default;
 $accordion-border-color: var(--#{$prefix}border-color) !default;
 $accordion-border-radius: var(--#{$prefix}border-radius) !default;
-$accordion-inner-border-radius: subtract(
-  $accordion-border-radius,
-  $accordion-border-width
-) !default;
+$accordion-inner-border-radius: subtract($accordion-border-radius, $accordion-border-width) !default;
 
 $accordion-body-padding-y: $accordion-padding-y !default;
 $accordion-body-padding-x: $accordion-padding-x !default;
@@ -1487,7 +1455,9 @@ $accordion-button-padding-y: $accordion-padding-y !default;
 $accordion-button-padding-x: $accordion-padding-x !default;
 $accordion-button-color: var(--#{$prefix}body-color) !default;
 $accordion-button-bg: var(--#{$prefix}accordion-bg) !default;
-$accordion-transition: $btn-transition, border-radius 0.15s ease !default;
+$accordion-transition:
+  $btn-transition,
+  border-radius 0.15s ease !default;
 $accordion-button-active-bg: var(--#{$prefix}primary-bg-subtle) !default;
 $accordion-button-active-color: var(--#{$prefix}primary-text-emphasis) !default;
 
@@ -1543,9 +1513,7 @@ $popover-max-width: 344px;
 $popover-border-width: var(--#{$prefix}border-width);
 $popover-border-color: var(--#{$prefix}border-color);
 $popover-border-radius: var(--#{$prefix}border-radius);
-$popover-inner-border-radius: calc(
-  #{$popover-border-radius} - #{$popover-border-width}
-); // stylelint-disable-line function-disallowed-list
+$popover-inner-border-radius: calc(#{$popover-border-radius} - #{$popover-border-width}); // stylelint-disable-line function-disallowed-list
 $popover-box-shadow: $box-shadow-sm;
 
 $popover-header-font-size: $font-size-base !default;
@@ -1616,10 +1584,7 @@ $modal-content-bg: var(--#{$prefix}body-bg) !default;
 $modal-content-border-color: var(--#{$prefix}border-color-translucent) !default;
 $modal-content-border-width: 0;
 $modal-content-border-radius: var(--#{$prefix}border-radius-lg);
-$modal-content-inner-border-radius: subtract(
-  $modal-content-border-radius,
-  $modal-content-border-width
-);
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
 $modal-content-box-shadow-xs: $box-shadow-sm !default;
 $modal-content-box-shadow-sm-up: $box-shadow !default;
 
@@ -1741,7 +1706,7 @@ $breadcrumb-margin-bottom: 0;
 $breadcrumb-bg: null !default;
 $breadcrumb-divider-color: var(--#{$prefix}gray-900);
 $breadcrumb-active-color: var(--#{$prefix}gray-900);
-$breadcrumb-divider: quote('');
+$breadcrumb-divider: quote("");
 $breadcrumb-divider-flipped: $breadcrumb-divider !default;
 $breadcrumb-border-radius: null !default;
 // scss-docs-end breadcrumb-variables

@@ -20,10 +20,11 @@
     <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
 
-    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
-    <link rel="stylesheet" href="stylesheets/app.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
 
     <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
   </head>
 
   <body id="top" class="l-authenticated">
@@ -35,531 +36,529 @@
     </nav>
 
     <header role="banner" id="header">
-  <section class="s-header-print">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-auto d-flex align-items-center py-2">
-          <img src="images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+      <section class="s-header-print">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto d-flex align-items-center py-2">
+              <img src="./images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="./images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+            </div>
+            <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
+          </div>
         </div>
-        <div class="col d-flex align-items-center">
-          <img src="images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+      </section>
+      <section class="s-header-authenticated">
+        <div class="s-header-authenticated__container container">
+          <div class="s-header-authenticated__row row">
+            <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
+              <a href=""><img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
+              <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+                <ul>
+                  <li class="dropdown">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                      <i class="ri-account-circle-line" aria-hidden="true"></i>
+                      <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item">
+                          <div class="d-flex align-items-center">
+                            <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                            <div class="flex-grow-1 ms-2 lh-sm">
+                              <span>Machin TRUC</span>
+                              <br>
+                              <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-divider"></div>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Tableau de bord</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Mes notifications</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="">Modifier mon profil</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">
+                          <button class="text-danger">Déconnexion</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="d-none d-lg-inline-block dropdown dropdown-structure">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI - Une nouvelle chance</span>
+                    </button>
+                    <div class="dropdown-menu w-100" id="switchUserDropdown">
+                      <form action="" method="post">
+                        <ul class="list-unstyled">
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EITI</span>
+                              <strong>Terre &amp; mer</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>ETTI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
+              <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+                <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+                <span>Menu</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
-      </div>
-    </div>
-  </section>
-  <section class="s-header-authenticated">
-    <div class="s-header-authenticated__container container">
-      <div class="s-header-authenticated__row row">
-        <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+      </section>
+      <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+        <div class="offcanvas-header offcanvas-header--structure">
+          <div class="dropdown dropdown-structure flex-grow-1 py-4">
+            <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+              <i class="ri-community-line" aria-hidden="true"></i>
+              <span>ETTI</span>
+              <strong>Une nouvelle chance</strong>
+            </button>
+            <div class="dropdown-menu" id="switchUserDropdown">
+              <form method="post">
+                <ul class="list-unstyled">
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EITI</span>
+                      <strong>Terre &amp; mer</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                    </button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="border-start border-nuance-08 d-xl-none">
+            <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+              <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-        <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
-          <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
-            <ul>
-              <li class="dropdown">
-                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
-                  <i class="ri-account-circle-line" aria-hidden="true"></i>
-                  <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+        <div class="offcanvas-body d-flex flex-column">
+          <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link active">
+                  <i class="ri-home-line fw-medium" aria-hidden="true"></i>
+                  <span>Accueil</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
+                  <span>Candidatures</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
+                  <i class="ri-team-line fw-medium" aria-hidden="true"></i>
+                  <span>Salariés</span>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
-                  <ul class="list-unstyled">
-                    <li class="dropdown-item">
-                      <div class="d-flex align-items-center">
-                        <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
-                        <div class="flex-grow-1 ms-2 lh-sm">
-                          <span>Machin TRUC</span>
-                          <br>
-                          <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
-                        </div>
-                      </div>
+                <div class="collapse" id="collapseNavSalaries">
+                  <ul>
+                    <li>
+                      <a href="">Salariés et PASS IAE</a>
                     </li>
                     <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Tableau de bord</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Mes notifications</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li>
-                      <a class="dropdown-item" href="">Modifier mon profil</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li>
-                      <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li class="dropdown-item">
-                      <button class="text-danger">Déconnexion</button>
+                      <a href="" class="active">Fiches salariés ASP</a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="d-none d-lg-inline-block dropdown dropdown-structure">
-                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>ETTI - Une nouvelle chance</span>
+              <li class="nav-item">
+                <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
+                  <i class="ri-community-line fw-medium" aria-hidden="true"></i>
+                  <span>Structure</span>
                 </button>
-                <div class="dropdown-menu w-100" id="switchUserDropdown">
-                  <form action="" method="post">
-                    <ul class="list-unstyled">
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EITI</span>
-                          <strong>Terre &amp; mer</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>ETTI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
-                        </button>
-                      </li>
-                    </ul>
-                  </form>
+                <div class="collapse" id="collapseNavStructure">
+                  <ul>
+                    <li>
+                      <a href="">Présentation</a>
+                    </li>
+                    <li>
+                      <a href="" class="active">Métiers et recrutements</a>
+                    </li>
+                    <li>
+                      <a href="">Collaborateurs</a>
+                    </li>
+                    <li>
+                      <a href="">Annexes financières</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
           </nav>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+              <i class="ri-account-circle-line" aria-hidden="true"></i>
+              <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+            </button>
+            <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+              <ul class="list-unstyled">
+                <li class="dropdown-item">
+                  <div class="d-flex align-items-center">
+                    <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                    <div class="flex-grow-1 ms-2 lh-sm w-75">
+                      <span>Machin TRUC</span>
+                      <br>
+                      <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Tableau de bord</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Mes notifications</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="">Modifier mon profil</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <button class="text-danger">Déconnexion</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+            <div class="dropdown-menu" id="helpDropdownMobile">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
-          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
-            <i class="ri-menu-line" id="open" aria-hidden="true"></i>
-            <span>Menu</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
-    <div class="offcanvas-header offcanvas-header--structure">
-      <div class="dropdown dropdown-structure flex-grow-1 py-4">
-        <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
-          <i class="ri-community-line" aria-hidden="true"></i>
-          <span>ETTI</span>
-          <strong>Une nouvelle chance</strong>
-        </button>
-        <div class="dropdown-menu" id="switchUserDropdown">
-          <form method="post">
-            <ul class="list-unstyled">
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EITI</span>
-                  <strong>Terre &amp; mer</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>ETTI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
-                </button>
-              </li>
+        <div class="offcanvas-footer flex-column align-items-stretch">
+          <div class="offcanvas-footer__legal">
+            <div class="d-none d-xl-block">
+              <img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
+            </div>
+            <ul>
+              <li><a href="">Accessibilité : partiellement conforme</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">CGU</a></li>
             </ul>
-          </form>
+          </div>
         </div>
       </div>
-      <div class="border-start border-nuance-08 d-xl-none">
-        <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
-          <i class="ri-close-line" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="offcanvas-body d-flex flex-column">
-      <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
-        <ul class="nav nav-tabs flex-column">
-          <li class="nav-item">
-            <a href="" class="nav-link active">
-              <i class="ri-home-line fw-medium" aria-hidden="true"></i>
-              <span>Accueil</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
-              <span>Candidatures</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
-              <i class="ri-team-line fw-medium" aria-hidden="true"></i>
-              <span>Salariés</span>
-            </button>
-            <div class="collapse" id="collapseNavSalaries">
-              <ul>
-                <li>
-                  <a href="">Salariés et PASS IAE</a>
-                </li>
-                <li>
-                  <a href="" class="active">Fiches salariés ASP</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
-              <i class="ri-community-line fw-medium" aria-hidden="true"></i>
-              <span>Structure</span>
-            </button>
-            <div class="collapse" id="collapseNavStructure">
-              <ul>
-                <li>
-                  <a href="">Présentation</a>
-                </li>
-                <li>
-                  <a href="" class="active">Métiers et recrutements</a>
-                </li>
-                <li>
-                  <a href="">Collaborateurs</a>
-                </li>
-                <li>
-                  <a href="">Annexes financières</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="dropup dropup-center">
-        <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
-          <i class="ri-account-circle-line" aria-hidden="true"></i>
-          <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
-        </button>
-        <div class="dropdown-menu" id="dashboardUserDropdownMobile">
-          <ul class="list-unstyled">
-            <li class="dropdown-item">
-              <div class="d-flex align-items-center">
-                <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
-                <div class="flex-grow-1 ms-2 lh-sm w-75">
-                  <span>Machin TRUC</span>
-                  <br>
-                  <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
-                </div>
+    </header>
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-prevstep">
+                <button type="button" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+                  <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+                  <span>Retour</span>
+                </button>
               </div>
-            </li>
-            <li>
-              <div class="dropdown-divider"></div>
-            </li>
-            <li>
-              <a class="dropdown-item" href="">Tableau de bord</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="">Mes notifications</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item" href="">Modifier mon profil</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li class="dropdown-item">
-              <button class="text-danger">Déconnexion</button>
-            </li>
-          </ul>
+              <div class="d-flex flex-column flex-md-row gap-3 mb-4 justify-content-md-between">
+                <h1 class="m-0">PASS IAE de Harry POTTER</h1>
+                <a href="" class="btn btn-lg btn-primary btn-ico">
+                  <i class="ri-eye-line fw-medium" aria-hidden="true"></i>
+                  <span>Afficher l’attestation</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="dropup dropup-center">
-        <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
-        <div class="dropdown-menu" id="helpDropdownMobile">
-          <ul class="list-unstyled">
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="offcanvas-footer flex-column align-items-stretch">
-      <div class="offcanvas-footer__legal">
-        <div class="d-none d-xl-block">
-          <img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
-        </div>
-        <ul>
-          <li><a href="">Accessibilité : partiellement conforme</a></li>
-          <li><a href="">Mentions légales</a></li>
-          <li><a href="">CGU</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
+      </section>
 
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <div class="s-section__col col-12">
 
-      <main class="s-main" role="main">
+              <div class="c-box c-box--pass bg-info-lightest border-info mb-3 mb-md-4">
+                <div class="mb-3 mb-md-4">
+                  <span class="badge badge-base rounded-pill bg-info text-white">
+                    <i class="ri-pass-pending-line" aria-hidden="true"></i>
+                    PASS IAE valide (suspendu)
+                  </span>
+                </div>
+                <ul class="list-data list-data__two-column-lg">
+                  <li>
+                    <small>Numéro de PASS IAE</small>
+                    <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">99999</span></strong>
+                  </li>
+                  <li>
+                    <small>Date de début</small>
+                    <strong>05/07/2024</strong>
+                  </li>
+                  <li>
+                    <small>Date de fin prévisionnelle <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible..." data-bs-original-title="Cette date de fin est susceptible..."></i></small>
+                    <strong>04/07/2026</strong>
+                  </li>
+                  <li>
+                    <small>Durée de validité <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin de validité..." data-bs-original-title="Cette date de fin de validité..."></i></small></small>
+                    <strong>721 jours (environ 1 an, 2 mois, 12 jours)</strong>
+                  </li>
+                </ul>
+              </div>
 
-        <section class="s-title-02">
-          <div class="s-title-02__container container">
-            <div class="s-title-02__row row">
-              <div class="s-title-02__col col-12">
-                <div class="c-prevstep">
-                  <button type="button" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
-                    <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
-                    <span>Retour</span>
+              <div class="c-box mb-3 mb-md-4">
+                <div class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-lg-between mb-3">
+                  <h2 class="mb-0">Suspensions</h2>
+                  <div class="d-flex flex-column flex-md-row gap-2 justify-content-md-end" role="group" aria-label="Actions sur les suspensions">
+                    <a href="" class="btn btn-outline-primary btn-ico">
+                      <i class="ri-pause-circle-line ri-lg" aria-hidden="true"></i>
+                      <span>Suspendre</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="table-responsive-lg my-3 my-md-4">
+                  <table class="table">
+                    <caption class="visually-hidden">Liste des suspensions</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Statut</th>
+                        <th scope="col">Du</th>
+                        <th scope="col">Jusqu’au</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="badge badge-sm rounded-pill bg-info">En cours</span>
+                        </td>
+                        <td>
+                          <span class="text-info">07/06/2023</span>
+                        </td>
+                        <td>
+                          <span class="text-info">22/06/2023</span>
+                        </td>
+                        <td class="td-action">
+                          <a href="" class="btn btn-link btn-ico-only btn-sm" aria-label="Modifier">
+                            <i class="ri-pencil-fill" aria-hidden="true"></i>
+                          </a>
+                          <button id="dropdown_action_menu" class="btn btn-link btn-ico-only btn-sm" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
+                            <i class="ri-more-2-fill" aria-hidden="true"></i>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdown_action_menu">
+                            <a href="" class="dropdown-item">Supprimer</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Passée
+                        </td>
+                        <td>
+                          12/04/2023
+                        </td>
+                        <td>
+                          27/04/2023
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Passée
+                        </td>
+                        <td>
+                          12/04/2023
+                        </td>
+                        <td>
+                          27/04/2023
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="c-info">
+                  <button class="c-info__summary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseInfoExample" aria-expanded="false" aria-controls="collapseInfoExample">
+                    <span>Comment gérer mes suspensions ?</span>
                   </button>
-                </div>
-                <div class="d-flex flex-column flex-md-row gap-3 mb-4 justify-content-md-between">
-                  <h1 class="m-0">PASS IAE de Harry POTTER</h1>
-                  <a href="" class="btn btn-lg btn-primary btn-ico">
-                    <i class="ri-eye-line fw-medium" aria-hidden="true"></i>
-                    <span>Afficher l’attestation</span>
-                  </a>
+                  <div class="c-info__detail collapse" id="collapseInfoExample">
+                    <p>
+                      Retrouvez toutes les information sur le fonctionnement des suspensions sur notre documentation :<br>
+                      <a href="" target="_blank" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14739233143953--Suspendre-un-PASS-IAE</a>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="s-section">
-          <div class="s-section__container container">
-            <div class="s-section__row row">
-              <div class="s-section__col col-12">
-
-                <div class="c-box c-box--pass bg-info-lightest border-info mb-3 mb-md-4">
-                  <div class="mb-3 mb-md-4">
-                    <span class="badge badge-base rounded-pill bg-info text-white">
-                      <i class="ri-pass-pending-line" aria-hidden="true"></i>
-                      PASS IAE valide (suspendu)
-                    </span>
-                  </div>
-                  <ul class="list-data list-data__two-column-lg">
-                    <li>
-                      <small>Numéro de PASS IAE</small>
-                      <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">99999</span></strong>
-                    </li>
-                    <li>
-                      <small>Date de début</small>
-                      <strong>05/07/2024</strong>
-                    </li>
-                    <li>
-                      <small>Date de fin prévisionnelle <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible..." data-bs-original-title="Cette date de fin est susceptible..."></i></small>
-                      <strong>04/07/2026</strong>
-                    </li>
-                    <li>
-                      <small>Durée de validité <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin de validité..." data-bs-original-title="Cette date de fin de validité..."></i></small></small>
-                      <strong>721 jours (environ 1 an, 2 mois, 12 jours)</strong>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="c-box mb-3 mb-md-4">
-                  <div class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-lg-between mb-3">
-                    <h2 class="mb-0">Suspensions</h2>
-                    <div class="d-flex flex-column flex-md-row gap-2 justify-content-md-end" role="group" aria-label="Actions sur les suspensions">
-                      <a href="" class="btn btn-outline-primary btn-ico">
-                        <i class="ri-pause-circle-line ri-lg" aria-hidden="true"></i>
-                        <span>Suspendre</span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="table-responsive-lg my-3 my-md-4">
-                    <table class="table">
-                      <caption class="visually-hidden">Liste des suspensions</caption>
-                      <thead>
-                        <tr>
-                          <th scope="col">Statut</th>
-                          <th scope="col">Du</th>
-                          <th scope="col">Jusqu’au</th>
-                          <th scope="col"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <span class="badge badge-sm rounded-pill bg-info">En cours</span>
-                          </td>
-                          <td>
-                            <span class="text-info">07/06/2023</span>
-                          </td>
-                          <td>
-                            <span class="text-info">22/06/2023</span>
-                          </td>
-                          <td class="td-action">
-                            <a href="" class="btn btn-link btn-ico-only btn-sm" aria-label="Modifier">
-                              <i class="ri-pencil-fill" aria-hidden="true"></i>
-                            </a>
-                            <button id="dropdown_action_menu" class="btn btn-link btn-ico-only btn-sm" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
-                              <i class="ri-more-2-fill" aria-hidden="true"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdown_action_menu">
-                              <a href="" class="dropdown-item">Supprimer</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Passée
-                          </td>
-                          <td>
-                            12/04/2023
-                          </td>
-                          <td>
-                            27/04/2023
-                          </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Passée
-                          </td>
-                          <td>
-                            12/04/2023
-                          </td>
-                          <td>
-                            27/04/2023
-                          </td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="c-info">
-                    <button class="c-info__summary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseInfoExample" aria-expanded="false" aria-controls="collapseInfoExample">
-                      <span>Comment gérer mes suspensions ?</span>
-                    </button>
-                    <div class="c-info__detail collapse" id="collapseInfoExample">
-                      <p>
-                        Retrouvez toutes les information sur le fonctionnement des suspensions sur notre documentation :<br>
-                        <a href="" target="_blank" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14739233143953--Suspendre-un-PASS-IAE</a>
-                      </p>
-                    </div>
+              <div class="c-box mb-3 mb-md-4">
+                <div class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-lg-between mb-3">
+                  <h2 class="mb-0">Prolongations</h2>
+                  <div class="d-flex flex-column flex-md-row gap-2 justify-content-md-end" role="group" aria-label="Actions sur les Prolongations">
+                    <a href="" class="btn btn-outline-primary btn-ico disabled">
+                      <i class="ri-refresh-line ri-lg" aria-hidden="true"></i>
+                      <span>Prolonger</span>
+                    </a>
                   </div>
                 </div>
-
-                <div class="c-box mb-3 mb-md-4">
-                  <div class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-lg-between mb-3">
-                    <h2 class="mb-0">Prolongations</h2>
-                    <div class="d-flex flex-column flex-md-row gap-2 justify-content-md-end" role="group" aria-label="Actions sur les Prolongations">
-                      <a href="" class="btn btn-outline-primary btn-ico disabled">
-                        <i class="ri-refresh-line ri-lg" aria-hidden="true"></i>
-                        <span>Prolonger</span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="table-responsive-lg my-3 my-md-4">
-                    <table class="table">
-                      <caption class="visually-hidden">Liste des prolongations</caption>
-                      <thead>
-                        <tr>
-                          <th scope="col">Statut</th>
-                          <th scope="col">Du</th>
-                          <th scope="col">Jusqu’au</th>
-                          <th scope="col">Critères</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <span class="badge badge-sm rounded-pill text-info bg-info-lighter">A venir</span>
-                          </td>
-                          <td>
-                            07/06/2023
-                          </td>
-                          <td>
-                            22/06/2023
-                          </td>
-                          <td>
-                            RQTH - Reconnaissance de la qualité de travailleur handicapé
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Passée
-                          </td>
-                          <td>
-                            12/04/2023
-                          </td>
-                          <td>
-                            27/04/2023
-                          </td>
-                          <td>
-                            RQTH - Reconnaissance de la qualité de travailleur handicapé
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="c-info">
-                    <button class="c-info__summary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseInfoExample2" aria-expanded="false" aria-controls="collapseInfoExample2">
-                      <span>Comment gérer mes prolongations ?</span>
-                    </button>
-                    <div class="c-info__detail collapse" id="collapseInfoExample2">
-                      <p>
-                        Retrouvez toutes les information sur le fonctionnement des prolongations sur notre documentation :<br>
-                        <a href="" target="_blank" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14739233143953--Suspendre-un-PASS-IAE</a>
-                      </p>
-                    </div>
+                <div class="table-responsive-lg my-3 my-md-4">
+                  <table class="table">
+                    <caption class="visually-hidden">Liste des prolongations</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Statut</th>
+                        <th scope="col">Du</th>
+                        <th scope="col">Jusqu’au</th>
+                        <th scope="col">Critères</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="badge badge-sm rounded-pill text-info bg-info-lighter">A venir</span>
+                        </td>
+                        <td>
+                          07/06/2023
+                        </td>
+                        <td>
+                          22/06/2023
+                        </td>
+                        <td>
+                          RQTH - Reconnaissance de la qualité de travailleur handicapé
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Passée
+                        </td>
+                        <td>
+                          12/04/2023
+                        </td>
+                        <td>
+                          27/04/2023
+                        </td>
+                        <td>
+                          RQTH - Reconnaissance de la qualité de travailleur handicapé
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="c-info">
+                  <button class="c-info__summary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseInfoExample2" aria-expanded="false" aria-controls="collapseInfoExample2">
+                    <span>Comment gérer mes prolongations ?</span>
+                  </button>
+                  <div class="c-info__detail collapse" id="collapseInfoExample2">
+                    <p>
+                      Retrouvez toutes les information sur le fonctionnement des prolongations sur notre documentation :<br>
+                      <a href="" target="_blank" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14739233143953--Suspendre-un-PASS-IAE</a>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </main>
+    </main>
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-      <script src="javascripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 
 </html>

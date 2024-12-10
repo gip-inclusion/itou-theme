@@ -20,162 +20,159 @@
     <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
 
-    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
-    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
   </head>
 
   <body id="top">
 
     <header class="bg-primary py-3 sticky-top">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-3">
-        <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.3.2</label>
-      </div>
-      <div class="col-12 col-lg">
-        <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
-          <option value="index.html">---</option>
-          <optgroup label="Layout">
-            <option value="layout.html#grid">Flex Grid</option>
-            <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
-            <option value="layout.html#spacing">Utilities for spacing</option>
-          </optgroup>
-          <optgroup label="Content">
-            <option value="content.html#bg-colors">Background colors</option>
-            <option value="content.html#colors">Colors</option>
-            <option value="content.html#images">Images</option>
-            <option value="content.html#shadows">Shadows</option>
-            <option value="content.html#tables">Tables</option>
-            <option value="content.html#text-colors">Text colors</option>
-            <option value="content.html#text-utilities">Text utilities</option>
-            <option value="content.html#typography">Typography</option>
-          </optgroup>
-          <optgroup label="Components">
-            <option value="components.html#alerts">Alerts</option>
-            <option value="components.html#badges">Badges</option>
-            <option value="components.html#breadcrumb">Breadcrumb</option>
-            <option value="components.html#buttons">Buttons</option>
-            <option value="components.html#button-group">Button group</option>
-            <option value="components.html#cards">Cards</option>
-            <option value="components.html#collapse">Collapse</option>
-            <option value="components.html#dropdowns">Dropdowns</option>
-            <option value="components.html#progress">Progress</option>
-            <option value="components.html#pagination">Pagination</option>
-            <option value="components.html#popovers">Popovers</option>
-            <option value="components.html#tabs">Tabs</option>
-            <option value="components.html#tooltips">Tooltips</option>
-            <option value="components.html#modal">Modal</option>
-            <option value="components.html#toasts">Toasts</option>
-          </optgroup>
-          <optgroup label="Forms">
-            <option value="forms.html#forms">Forms</option>
-            <option value="forms.html#input-group">Input group</option>
-          </optgroup>
-          <optgroup label="Utilities BS">
-            <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
-            <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
-            <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
-          </optgroup>
-          <optgroup label="Content Itou">
-            <option value="content-ic.html">Button Inclusion Connect</option>
-            <option value="content-itou.html#hr">Horizontal rule (hr)</option>
-            <option value="content-itou.html#icones">Icones (remix icons)</option>
-            <option value="content-itou.html#logos">Logos</option>
-          </optgroup>
-          <optgroup label="Components Itou">
-            <option value="components-itou.html#cards">Cards</option>
-            <option value="components-itou.html#liststep">Step list</option>
-            <option value="components-itou.html#stepper">Stepper</option>
-            <option value="components-itou.html#listgroup">Listgroup</option>
-            <option value="components-itou.html#listdata">List data</option>
-            <option value="components-itou.html#tags">Tags</option>
-            <option value="components-itou.html#box">Box</option>
-            <option value="components-itou.html#info">Info</option>
-            <option value="components-itou.html#spinner">Spinner</option>
-          </optgroup>
-          <optgroup label="Sections Itou">
-            <option value="sections-itou-01.html#header">Headers + Post Header</option>
-            <option value="sections-itou-01.html#footer">Footer</option>
-            <option value="sections-itou-02.html#article-figure-01">Article Figure 01</option>
-            <option value="sections-itou-02.html#article-picture-01">Article Picture 01</option>
-            <option value="sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
-            <option value="sections-itou-04.html#banner-01">Banner Infos 01</option>
-            <option value="sections-itou-03.html#home-title-01">Home Title 01</option>
-            <option value="sections-itou-06.html#hero-title-01">Hero Title 01</option>
-            <option value="sections-itou-04.html#page-menu-01">Page Menu 01</option>
-            <option value="sections-itou-06.html#title-01">Title 01</option>
-            <option value="sections-itou-06.html#title-02">Title 02</option>
-            <option value="sections-itou-06.html#tabs-01">Tabs 01</option>
-          </optgroup>
-          <optgroup label="Pages Empois - Non connecté">
-            <option value="layout-itou-not-authenticated-homepage.html">Homepage</option>
-            <option value="layout-itou-not-authenticated-search-result.html">Résultats de recherche</option>
-            <option value="layout-itou-not-authenticated-mentions.html">Mentions légales</option>
-            <option value="layout-itou-not-authenticated-test.html">Test</option>
-          </optgroup>
-          <optgroup label="Pages Empois - Connecté">
-            <option value="layout-itou-authenticated-dashboard.html">Dashboard</option>
-            <option value="layout-itou-authenticated-search-result.html">Résultats de recherche</option>
-            <option value="layout-itou-authenticated-mentions.html">Mentions légales</option>
-            <option value="layout-itou-authenticated-form.html">Formulaire</option>
-            <option value="layout-itou-authenticated-cms.html">CMS</option>
-            <option value="layout-itou-authenticated-test.html">Test</option>
-            <option value="layout-itou-authenticated-detail-pass.html">Detail Pass IAE</option>
-          </optgroup>
-          <optgroup label="Pages Itou - Demo">
-            <option value="layout-itou-not-emplois-homepage.html">Homepage (Communaute)</option>
-            <option value="layout-itou-not-emplois-mentions.html">Mentions légales (Communaute)</option>
-            <option value="layout-itou-not-emplois-test.html">Test (Communaute)</option>
-          </optgroup>
-          <optgroup label="External libraries">
-            <option value="external-libs-itou-ac.html">Accessible Autocomplete</option>
-            <option value="external-libs-itou-bs.html">Bootstrap.js</option>
-            <option value="external-libs-itou-ddp.html">Duet Date Picker</option>
-            <option value="external-libs-itou-ri.html">Remix Icon</option>
-            <option value="external-libs-itou-tac.html">Tarte au citron</option>
-            <option value="external-libs-itou-slider.html">Tiny Slider 2</option>
-            <option value="external-libs-itou-s2.html">Select 2</option>
-            <option value="external-libs-itou-lt.html">Lottie</option>
-            <option value="external-libs-itou-in.html">Intro JS</option>
-          </optgroup>
-        </select>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-      <main class="s-main" role="main">
-
-        <section>
-          <div class="container">
-
-            <article class="row py-5" id="bs">
-              <div class="col-12">
-                <h3>Accessible autocomplete</h3>
-                <p>https://github.com/alphagov/accessible-autocomplete ou https://github.com/lekoala/bootstrap5-autocomplete</p>
-              </div>
-
-            </article>
-
-            <hr>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-3">
+            <label for="menuNav" class="h4 text-white mb-0 text-decoration-none">Itou Theme<br>Bootstrap v5.3.2</label>
           </div>
-        </section>
+          <div class="col-12 col-lg">
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="menuNav" onchange="document.location.href = this.value">
+              <option value="./index.html">---</option>
+              <optgroup label="Layout">
+                <option value="./layout.html#grid">Flex Grid</option>
+                <option value="https://getbootstrap.com/docs/5.3/layout/css-grid/">CSS Grid</option>
+                <option value="./layout.html#spacing">Utilities for spacing</option>
+              </optgroup>
+              <optgroup label="Content">
+                <option value="./content.html#bg-colors">Background colors</option>
+                <option value="./content.html#colors">Colors</option>
+                <option value="./content.html#images">Images</option>
+                <option value="./content.html#shadows">Shadows</option>
+                <option value="./content.html#tables">Tables</option>
+                <option value="./content.html#text-colors">Text colors</option>
+                <option value="./content.html#text-utilities">Text utilities</option>
+                <option value="./content.html#typography">Typography</option>
+              </optgroup>
+              <optgroup label="Components">
+                <option value="./components.html#alerts">Alerts</option>
+                <option value="./components.html#badges">Badges</option>
+                <option value="./components.html#breadcrumb">Breadcrumb</option>
+                <option value="./components.html#buttons">Buttons</option>
+                <option value="./components.html#button-group">Button group</option>
+                <option value="./components.html#cards">Cards</option>
+                <option value="./components.html#collapse">Collapse</option>
+                <option value="./components.html#dropdowns">Dropdowns</option>
+                <option value="./components.html#progress">Progress</option>
+                <option value="./components.html#pagination">Pagination</option>
+                <option value="./components.html#popovers">Popovers</option>
+                <option value="./components.html#tabs">Tabs</option>
+                <option value="./components.html#tooltips">Tooltips</option>
+                <option value="./components.html#modal">Modal</option>
+                <option value="./components.html#toasts">Toasts</option>
+              </optgroup>
+              <optgroup label="Forms">
+                <option value="./forms.html#forms">Forms</option>
+                <option value="./forms.html#input-group">Input group</option>
+              </optgroup>
+              <optgroup label="Utilities BS">
+                <option value="https://getbootstrap.com/docs/5.3/utilities/display/">Display</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/flex/">Flex</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/interactions/">Interactions</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/object-fit/">Object fit</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/overflow/">Overflow</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/position/">Position</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/">Visually hidden</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/sizing/">Sizing</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/stretched-link/">Stretched link</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/text-truncation/">Text truncation</option>
+                <option value="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/">Vertical rule</option>
+                <option value="https://getbootstrap.com/docs/5.3/utilities/visibility/">Visibility</option>
+              </optgroup>
+              <optgroup label="Content Itou">
+                <option value="./content-itou.html#hr">Horizontal rule (hr)</option>
+                <option value="./content-itou.html#icones">Icones (remix icons)</option>
+                <option value="./content-itou.html#logos">Logos</option>
+              </optgroup>
+              <optgroup label="Components Itou">
+                <option value="./components-itou.html#cards">Cards</option>
+                <option value="./components-itou.html#liststep">Step list</option>
+                <option value="./components-itou.html#stepper">Stepper</option>
+                <option value="./components-itou.html#listgroup">Listgroup</option>
+                <option value="./components-itou.html#listdata">List data</option>
+                <option value="./components-itou.html#tags">Tags</option>
+                <option value="./components-itou.html#box">Box</option>
+                <option value="./components-itou.html#info">Info</option>
+                <option value="./components-itou.html#spinner">Spinner</option>
+              </optgroup>
+              <optgroup label="Sections Itou">
+                <option value="./sections-itou-01.html#header">Headers + Post Header</option>
+                <option value="./sections-itou-01.html#footer">Footer</option>
+                <option value="./sections-itou-02.html#article-figure-01">Article Figure 01</option>
+                <option value="./sections-itou-02.html#article-picture-01">Article Picture 01</option>
+                <option value="./sections-itou-05.html#articles-cols-01">Articles Cols 01</option>
+                <option value="./sections-itou-04.html#banner-01">Banner Infos 01</option>
+                <option value="./sections-itou-03.html#home-title-01">Home Title 01</option>
+                <option value="./sections-itou-06.html#hero-title-01">Hero Title 01</option>
+                <option value="./sections-itou-04.html#page-menu-01">Page Menu 01</option>
+                <option value="./sections-itou-06.html#title-01">Title 01</option>
+                <option value="./sections-itou-06.html#title-02">Title 02</option>
+                <option value="./sections-itou-06.html#tabs-01">Tabs 01</option>
+              </optgroup>
+              <optgroup label="Pages Empois - Non connecté">
+                <option value="./layout-itou-not-authenticated-homepage.html">Homepage</option>
+                <option value="./layout-itou-not-authenticated-search-result.html">Résultats de recherche</option>
+                <option value="./layout-itou-not-authenticated-mentions.html">Mentions légales</option>
+                <option value="./layout-itou-not-authenticated-test.html">Test</option>
+              </optgroup>
+              <optgroup label="Pages Empois - Connecté">
+                <option value="./layout-itou-authenticated-dashboard.html">Dashboard</option>
+                <option value="./layout-itou-authenticated-search-result.html">Résultats de recherche</option>
+                <option value="./layout-itou-authenticated-mentions.html">Mentions légales</option>
+                <option value="./layout-itou-authenticated-form.html">Formulaire</option>
+                <option value="./layout-itou-authenticated-cms.html">CMS</option>
+                <option value="./layout-itou-authenticated-test.html">Test</option>
+                <option value="./layout-itou-authenticated-detail-pass.html">Detail Pass IAE</option>
+              </optgroup>
+              <optgroup label="Pages Itou - Demo">
+                <option value="./layout-itou-not-emplois-homepage.html">Homepage (Communaute)</option>
+                <option value="./layout-itou-not-emplois-mentions.html">Mentions légales (Communaute)</option>
+                <option value="./layout-itou-not-emplois-test.html">Test (Communaute)</option>
+              </optgroup>
+              <optgroup label="External libraries">
+                <option value="./external-libs-itou-ac.html">Accessible Autocomplete</option>
+                <option value="./external-libs-itou-ddp.html">Duet Date Picker</option>
+                <option value="./external-libs-itou-ri.html">Remix Icon</option>
+                <option value="./external-libs-itou-tac.html">Tarte au citron</option>
+                <option value="./external-libs-itou-slider.html">Tiny Slider 2</option>
+                <option value="./external-libs-itou-s2.html">Select 2</option>
+                <option value="./external-libs-itou-lt.html">Lottie</option>
+                <option value="./external-libs-itou-in.html">Intro JS</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
 
-      </main>
+    <main class="s-main" role="main">
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-      <script src="javascripts/app.js"></script>
+      <section>
+        <div class="container">
+
+          <article class="row py-5" id="bs">
+            <div class="col-12">
+              <h3>Accessible autocomplete</h3>
+              <p>https://github.com/alphagov/accessible-autocomplete ou https://github.com/lekoala/bootstrap5-autocomplete</p>
+            </div>
+
+          </article>
+
+          <hr>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 
 </html>

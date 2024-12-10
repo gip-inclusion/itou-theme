@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="./stylesheets/app.scss" lang="sass">
+  </head>
+
+  <body id="top">
+
+    {{> _partials/header-theme }}
+
+    <main class="s-main" role="main">
+
+      <div class="toast-container">
+        <div id="liveToast" class="toast toast--success" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2000">
+          <div class="toast-header">
+            <i class="ri-check-line ri-lg me-1" aria-hidden="true"></i>
+            <strong class="me-auto">Default Toast</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+            <button class="btn btn-block btn-outline-primary mt-3 d-block d-sm-none" data-bs-dismiss="toast" aria-label="Fermer">
+              J'ai compris
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <section id="content">
+        <div class="container">
+
+          <article class="row py-5" id="alerts">
+            <div class="col-12 col-lg-3">
+              <h3>Alerts</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Use the <code>.alert-xx</code> utility class to quickly change colors of any alert.</h6>
+                <div class="alert alert-info" role="status">
+                  <p class="mb-0">
+                    A simple <code>.alert-info</code> alert with <a href="#">an example link</a>. Give it a click if you like.
+                  </p>
+                </div>
+                <div class="alert alert-success" role="status">
+                  <p class="mb-0">
+                    A simple <code>.alert-success</code> alert with <a href="#">an example link</a>. Give it a click if you like.
+                  </p>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  <p class="mb-0">
+                    A simple <code>.alert-warning</code> alert with <a href="#">an example link</a>. Give it a click if you like.
+                  </p>
+                </div>
+                <div class="alert alert-danger" role="alert">
+                  <p class="mb-0">
+                    A simple <code>.alert-danger</code> alert with <a href="#">an example link</a>. Give it a click if you like.
+                  </p>
+                </div>
+                <div class="alert alert-important" role="status">
+                  <p class="mb-0">
+                    A simple <code>.alert-important</code> alert with <a href="#">an example link</a>. Give it a click if you like.
+                  </p>
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-danger"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-info alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-info"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-success alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-success"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-important alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="d-none d-md-inline col-md-auto">
+                      <img src="./images/ico-bicro-important.svg" alt="" height="80">
+                    </div>
+                    <div class="col-12 col-md px-md-0">
+                      <p class="mb-2"><strong>Page PASS IAE</strong></p>
+                      <p class="mb-0">Une page dédiée au PASS IAE est actuellement en construction. Vos retours sont importants, aidez-nous en réalisant ce test de 5 minutes</p>
+                    </div>
+                    <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                      <button class="btn btn-sm btn-primary">Accéder au test</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="mb-5">
+                <h6>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</h6>
+                <div class="alert alert-info" role="status">
+                  <h4 class="alert-heading">Well done!</h4>
+                  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                  <hr>
+                  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="mb-5" id="alert-dismissible">
+                <h6>Using the alert JavaScript plugin, it’s possible to dismiss any alert inline with <code>.alert-dismissible</code>.</h6>
+                <div class="alert alert-info alert-dismissible fade show" role="status">
+                  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                </div>
+              </div>
+
+              <div id="alert-dismissible-once">
+                <h6>L'état des <code>.alert-dismissible-once</code> peut aussi être gardé en mémoire grace au <code>localStorage</code></h6>
+                <p>Pour celà il faut ajouter un <code>id=""</code> sur le <code>div.alert-dismissible-once.d-none</code>.</p>
+                <p>L'état display par defaut des <code>.alert-dismissible-once</code> est masqué puis affiché apres chargement de page via le js si l'utilisateur n'a jamais cliqué sur le <code>.close</code>.</p>
+                <div class="alert alert-info alert-dismissible-once d-none" role="status" id="alertDismissiblOnce01">
+                  <p class="mb-2">
+                    <strong>.alert-dismissible-once 01</strong>
+                  </p>
+                  <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus a eos esse aut vero? Perferendis a nihil, eum illo vitae saepe eos eius odio provident repellat debitis placeat ipsam impedit.</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                </div>
+              </div>
+              <div class="mb-5">
+                <div class="alert alert-info alert-dismissible-once d-none" role="status" id="alertDismissiblOnce02">
+                  <p class="mb-0">
+                    <strong>.alert-dismissible-once 02</strong> You should check in on some of those fields below.
+                  </p>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="bandeaux">
+            <div class="col-12 col-lg-3">
+              <h3>Bandeaux branding</h3>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Use the <code>.alert-xx</code> utility class to quickly change colors of any alert.</h6>
+                <div class="alert alert-emploi alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-emploi"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-emploi alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <img src="./images/ico-bicro-emploi-prescripteur.svg" alt="" height="90">
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                    <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                      <button class="btn btn-sm btn-primary">Label boutton</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-pilotage alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-pilotage"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-pilotage alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <img src="./images/ico-bicro-emploi-prescripteur.svg" alt="" height="90">
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                    <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                      <button class="btn btn-sm btn-primary">Label boutton</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-communaute alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-communaute"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-communaute alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <img src="./images/ico-bicro-emploi-prescripteur.svg" alt="" height="90">
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                    <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                      <button class="btn btn-sm btn-primary">Label boutton</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-marche alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <i class="ri-information-line ri-xl text-marche"></i>
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-marche alert-dismissible fade show" role="status">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                  <div class="row">
+                    <div class="col-auto pe-0">
+                      <img src="./images/ico-bicro-emploi-prescripteur.svg" alt="" height="90">
+                    </div>
+                    <div class="col">
+                      <p class="mb-2"><strong>Mobiliser la solution</strong></p>
+                      <p class="mb-0">Because I want to feel motivated and like I’m working hard and doing something good! Working from home but not having work to do is boring!</p>
+                    </div>
+                    <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                      <button class="btn btn-sm btn-primary">Label boutton</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="badges">
+            <div class="col-12 col-lg-3">
+              <h3>Badges</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-6">
+                <h6>Sizing. Inherit parent size with <code>.badge</code> or fixed sizes with <code>.badge-base</code>, <code>.badge-sm</code> or <code>.badge-xs</code></h6>
+                <div>
+                  <h1>Example with <span class="badge badge-base rounded-pill bg-primary"><i class="ri-global-line"></i> Fixed h1 size</span></h1>
+                  <p class="lead">Example with <span class="badge rounded-pill bg-primary">Inherit sizing</span></p>
+                  <p>Example with <span class="badge badge-base rounded-pill bg-primary"><i class="ri-global-line"></i> Fixed base size</span></p>
+                  <p>Example with <span class="badge badge-sm rounded-pill bg-primary"><i class="ri-global-line"></i> Fixed small size</span></p>
+                  <p>Example with <span class="badge badge-xs rounded-pill bg-primary"><i class="ri-global-line"></i> Fixed extra small size</span></p>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Contextual variations</h6>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-primary text-white">primary</span>
+                      <span class="badge badge-base rounded-pill bg-primary text-white"><i class="ri-global-line"></i>primary + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-warning text-white">warning</span>
+                      <span class="badge badge-base rounded-pill bg-warning text-white"><i class="ri-global-line"></i>warning + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-success text-white">success</span>
+                      <span class="badge badge-base rounded-pill bg-success text-white"><i class="ri-global-line"></i>success + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-danger text-white">danger</span>
+                      <span class="badge badge-base rounded-pill bg-danger text-white"><i class="ri-global-line"></i>danger + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-info text-white">info</span>
+                      <span class="badge badge-base rounded-pill bg-info text-white"><i class="ri-at-line"></i>info + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-important text-white">important</span>
+                      <span class="badge badge-base rounded-pill bg-important text-white"><i class="ri-at-line"></i>important + ico</span>
+                    </p>
+                    <p>
+                      <br>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-marche text-white">marche</span>
+                      <span class="badge badge-base rounded-pill bg-marche text-white"><i class="ri-global-line"></i>marche + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-communaute text-white">communaute</span>
+                      <span class="badge badge-base rounded-pill bg-communaute text-white"><i class="ri-global-line"></i>communaute + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-pilotage text-white">pilotage</span>
+                      <span class="badge badge-base rounded-pill bg-pilotage text-white"><i class="ri-global-line"></i>pilotage + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-emploi text-white">emploi</span>
+                      <span class="badge badge-base rounded-pill bg-emploi text-white"><i class="ri-at-line"></i>emploi + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-accent-01 text-white">accent-01</span>
+                      <span class="badge badge-base rounded-pill bg-accent-01 text-white"><i class="ri-at-line"></i>accent-01 + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-accent-02 text-primary">accent-02</span>
+                      <span class="badge badge-base rounded-pill bg-accent-02 text-primary"><i class="ri-at-line"></i>accent-02 + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-accent-03 text-primary">accent-03</span>
+                      <span class="badge badge-base rounded-pill bg-accent-03 text-primary"><i class="ri-at-line"></i>accent-03 + ico</span>
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      <br>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-warning-light text-primary">warning-light</span>
+                      <span class="badge badge-base rounded-pill bg-warning-light text-primary"><i class="ri-global-line"></i>warning-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-success-lighter text-primary">success-lighter</span>
+                      <span class="badge badge-base rounded-pill bg-success-light text-primary"><i class="ri-global-line"></i>success-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-danger-light text-primary">danger-light</span>
+                      <span class="badge badge-base rounded-pill bg-danger-light text-primary"><i class="ri-at-line"></i>danger-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-info-light text-primary">info-light</span>
+                      <span class="badge badge-base rounded-pill bg-info-light text-primary"><i class="ri-global-line"></i>info-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-important-light text-primary">important-light</span>
+                      <span class="badge badge-base rounded-pill bg-important-light text-primary"><i class="ri-at-line"></i>important-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-marche-light text-primary">marche-light</span>
+                      <span class="badge badge-base rounded-pill bg-marche-light text-primary"><i class="ri-global-line"></i>marche-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-communaute-light text-primary">communaute-light</span>
+                      <span class="badge badge-base rounded-pill bg-communaute-light text-primary"><i class="ri-global-line"></i>communaute-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-pilotage-light text-primary">pilotage-light</span>
+                      <span class="badge badge-base rounded-pill bg-pilotage-light text-primary"><i class="ri-global-line"></i>pilotage-light + ico</span>
+                    </p>
+                    <p>
+                      <span class="badge badge-base rounded-pill bg-emploi-light text-primary">emploi-light</span>
+                      <span class="badge badge-base rounded-pill bg-emploi-light text-primary"><i class="ri-at-line"></i>emploi-light + ico</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Badges "Candidatures"</h6>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-primary">
+                        Embauche annulée
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-primary">
+                        Embauché ailleurs
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-danger">
+                        Candidature déclinée
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">
+                        Candidature en attente
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-success">
+                        Candidature acceptée
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">
+                        Candidature à l’étude
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-info">
+                        Nouvelle Candidature
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Badges "Eligibilité"</h6>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-accent-02-lighter text-primary">
+                        <i class="ri-error-warning-line" aria-hidden="true"></i>
+                        Éligibilité IAE à valider
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                        <i class="ri-check-line" aria-hidden="true"></i>
+                        Éligible à l’IAE
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                        <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                        PASS IAE valide
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                        <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                        PASS IAE valide (non démarré)
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                        <i class="ri-pass-pending-line" aria-hidden="true"></i>
+                        PASS IAE valide (suspendu)
+                      </span>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                        <i class="ri-pass-expired-line" aria-hidden="true"></i>
+                        PASS IAE expiré
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Badges sélectionables</h6>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="customCheck21">
+                        <label class="form-check-label fw-normal badge badge-sm rounded-pill bg-accent-02-lighter text-primary" for="customCheck21">framework</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check custom-control-inline">
+                        <input type="checkbox" id="customCheckboxInline1" class="form-check-input">
+                        <label class="form-check-label badge badge-sm rounded-pill bg-accent-02-lighter text-primary" for="customCheckboxInline1">Check this custom checkbox</label>
+                      </div>
+                      <div class="form-check custom-control-inline">
+                        <input type="checkbox" id="customCheckboxInline2" class="form-check-input">
+                        <label class="form-check-label badge badge-sm rounded-pill bg-accent-02-lighter text-primary" for="customCheckboxInline2">Or check this other custom checkbox</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="breadcrumb">
+            <div class="col-12 col-lg-3">
+              <h3>Breadcrumb</h3>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</h6>
+                <nav class="c-breadcrumb" aria-label="Fil d'ariane">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="">Communauté</a></li>
+                    <li class="breadcrumb-item"><a href="">France Travail</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Accompagnement des personnes</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="buttons">
+            <div class="col-12 col-lg-3">
+              <h3>Buttons</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Button display</h6>
+              </div>
+              <div class="mb-5">
+                <h6>Button sized</h6>
+                <div class="row">
+                  <div class="col-12 col-md-6 mb-3">
+                    <button type="button" class="btn btn-sm btn-block btn-primary">.btn .btn-sm</button>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <a href="" class="btn btn-sm btn-block btn-primary">a.btn .btn-sm</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 mb-3">
+                    <button type="button" class="btn btn-block btn-primary">.btn</button>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <a href="" class="btn btn-block btn-primary">a.btn</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 mb-3">
+                    <button class="btn btn-lg btn-block btn-primary">.btn .btn-lg</button>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <a href="" class="btn btn-lg btn-block btn-primary">a.btn .btn-lg</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 mb-3">
+                    <button class="btn btn-xl btn-block btn-primary">.btn .btn-xl</button>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <a href="" class="btn btn-xl btn-block btn-primary">a.btn .btn-xl</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <button type="button" class="btn btn-block btn-primary">.btn .btn-block</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button ico <code>.btn .btn-ico</code></h6>
+                <p>Par défaut les icones dans les boutons seront placées a gauche du texte.</p>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-sm btn-ico">
+                      <i class="ri-user-line fw-medium" aria-hidden="true"></i>
+                      <span class="d-none d-sm-inline-flex">.btn .btn-ico rwd</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-ico">
+                      <i class="ri-zoom-in-line fw-medium" aria-hidden="true"></i>
+                      <span>.btn .btn-ico</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-lg btn-ico">
+                      <i class="ri-add-line fw-medium" aria-hidden="true"></i>
+                      <span>.btn-lg .btn-ico</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-xl btn-ico">
+                      <i class="ri-add-line fw-medium" aria-hidden="true"></i>
+                      <span>.btn-xl .btn-ico</span>
+                    </button>
+                  </div>
+                </div>
+                <p>Pour les icones d'actions type dropdown, ou avec une flèche de type suivant ou lien, elles seront placées a droite.</p>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-sm btn-ico">
+                      <span>.btn .btn-ico</span>
+                      <i class="ri-eye-2-line fw-medium" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-ico">
+                      <span>.btn .btn-ico</span>
+                      <i class="ri-external-link-line fw-medium" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-lg btn-ico">
+                      <span>.btn-lg .btn-ico</span>
+                      <i class="ri-arrow-right-s-line fw-medium" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-block btn-primary btn-xl btn-ico">
+                      <span>.btn-xl .btn-ico</span>
+                      <i class="ri-arrow-right-s-line fw-medium" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <a class="btn btn-block btn-primary btn-sm btn-ico">
+                      <span>a.btn .btn-ico</span>
+                      <i class="ri-eye-2-line fw-medium" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <a class="btn btn-block btn-primary btn-ico">
+                      <span>a.btn .btn-ico</span>
+                      <i class="ri-external-link-line fw-medium" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <a class="btn btn-block btn-primary btn-lg btn-ico">
+                      <span>a.btn-lg .btn-ico</span>
+                      <i class="ri-arrow-right-s-line fw-medium" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <a class="btn btn-block btn-primary btn-xl btn-ico">
+                      <span>a.btn-xl .btn-ico</span>
+                      <i class="ri-arrow-right-s-line fw-medium" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button ico only <code>.btn .btn-ico-only</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-primary btn-sm btn-ico-only" aria-label="ici le label A11Y du bouton">
+                      <i class="ri-eye-2-line fw-medium"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-primary btn-ico-only" aria-label="ici le label A11Y du bouton">
+                      <i class="ri-eye-2-line fw-medium"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-primary btn-lg btn-ico-only" aria-label="ici le label A11Y du bouton">
+                      <i class="ri-eye-2-line fw-medium"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button class="btn btn-primary btn-xl btn-ico-only" aria-label="ici le label A11Y du bouton">
+                      <i class="ri-eye-2-line fw-medium"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="mb-5">
+                <h6>Button primary <code>.btn .btn-primary</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-primary">default</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-primary hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-primary focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-primary disabled">disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button outline primary <code>.btn .btn-outline-primary</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-outline-primary">default</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-outline-primary hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-outline-primary focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-outline-primary" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button secondary <code>.btn .btn-secondary</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-secondary">default</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-secondary hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-secondary focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-secondary" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button link <code>.btn .btn-link</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-link">
+                      <span>default</span>
+                      <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-link hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-link focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-link" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button white <code>.btn .btn-white</code></h6>
+                <div class="row bg-button pt-3">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-white">
+                      <span>default</span>
+                      <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-white hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-white focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-white" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button outline white <code>.btn .btn-outline-white</code></h6>
+                <div class="row bg-button pt-3">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-outline-white">
+                      <span>default</span>
+                      <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-outline-white hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-outline-white focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-outline-white" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button link white <code>.btn .btn-link-white</code></h6>
+                <div class="row bg-button pt-3">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-link-white">
+                      <span>default</span>
+                      <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-link-white hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-link-white focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-link-white" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="mb-5">
+                <h6>Button input<code>.btn .btn-form-control</code> (fake input.form-control style)</h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-form-control">default</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-form-control hover">:hover</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-form-control focus">:focus</button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-form-control" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="mb-5">
+                <h6>Button danger <code>.btn .btn-danger</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-danger">
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                      <span>default</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-danger hover focus">
+                      <span>:hover / focus </span>
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-ico-only btn-danger" aria-label="ici le label A11Y du bouton">
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-danger" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button warning <code>.btn .btn-warning</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-warning">
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                      <span>default</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-warning hover focus">
+                      <span>:hover / focus </span>
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-ico-only btn-warning" aria-label="ici le label A11Y du bouton">
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-warning" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Button success <code>.btn .btn-success</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-success">
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                      <span>default</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-ico btn-success hover focus">
+                      <span>:hover / focus </span>
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-ico-only btn-success" aria-label="ici le label A11Y du bouton">
+                      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-block btn-success" disabled>disabled</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5" id="btn-filter">
+                <h6>Button dropdown filter<code>.btn .btn-dropdown-filter</code></h6>
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Distance
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-dropdown-filter dropdown-toggle hover" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        :hover/focus
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-dropdown-filter dropdown-toggle has-selected-item " data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        .has-selected-item (1)
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" disabled>
+                        disabled
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p>Dans un div <code>.btn-dropdown-filter-group</code> pour gérer les positionements et les espacements mobile et desktop</p>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="btn-dropdown-filter-group">
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                          Un filtre
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                          Un autre filtre
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                          Et puis encore un
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li class="dropdown-item">
+                            Another action
+                          </li>
+                          <li class="dropdown-item">
+                            <div class="form-check">
+                              <input id="id_distance_0" class="form-check-input" name="distance" type="radio" value="5" checked>
+                              <label for="id_distance_0" class="form-check-label">5 km</label>
+                            </div>
+                          </li>
+                          <li class="dropdown-item">
+                            <div class="form-check">
+                              <input id="id_distance_1" class="form-check-input" name="distance" type="radio" value="10" checked>
+                              <label for="id_distance_1" class="form-check-label">10 km</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5" id="btn-like">
+                <div class="row">
+                  <div class="col-12 col-md-3 mb-3">
+                    <button type="button" class="btn btn-ico btn-link btn-like ps-0">
+                      <i class="ri-heart-3-line" aria-hidden="true"></i>
+                      <span>J'aime</span>
+                      <span class="badge-xs rounded-pill bg-button text-white ms-1">9</span>
+                      <span class="visually-hidden">9 j'aime sur ce sujet</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <button type="button" class="btn btn-ico btn-primary" disabled>
+                      <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                      <span role="status">button disabled + spinner</span>
+                    </button>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    Bouton copier to clipboard
+                    <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="deloo@free.fr">
+                      <i class="ri-file-copy-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5" id="pt">
+                <div class="col-12 col-lg-3">
+                  <h6>Boutons Partenaire</h6>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <a href="" class="btn btn-partner btn-partner--diagoriente" target="_blank">
+                    Créer un CV avec Diagoriente
+                  </a>
+                  <br>
+                  <br>
+                  <button class="btn btn-partner btn-partner--diagoriente">
+                    Créer un CV avec Diagoriente
+                  </button>
+                  <br>
+                  <br>
+                  <div class="bg-info-lightest border border-info-light rounded p-3">
+                    <p class="fs-sm mb-0"><strong>Ce candidat n’a pas encore de CV ?</strong></p>
+                    <p class="fs-sm">Accompagnez-le dans la création de son CV grâce à notre partenaire Diagoriente.</p>
+                    <a href="" class="btn btn-partner btn-partner--diagoriente" target="_blank">
+                      Créer un CV avec Diagoriente
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="button-group">
+            <div class="col-12 col-lg-3">
+              <h3>Button group</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Basic</h6>
+                <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>. Add on optional JavaScript radio and checkbox style behavior with <a href="/docs/5.3/components/buttons/#button-plugin">our buttons plugin</a>.</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-danger">Middle</button>
+                  <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6>Sizing</h6>
+                <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
+                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-danger">Middle</button>
+                  <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+                <br>
+                <br>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-danger">Middle</button>
+                  <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+                <br>
+                <br>
+                <p>With <code>.btn-group-action</code></p>
+                <div class="btn-group btn-group-action btn-group-sm" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-success btn-ico-only" aria-label="ici le label A11Y du bouton"><i class="ri-eye-2-line ri-lg fw-normal"></i></button>
+                  <button type="button" class="btn btn-danger btn-ico-only" aria-label="ici le label A11Y du bouton"><i class="ri-eye-2-line ri-lg fw-normal"></i></button>
+                  <button type="button" class="btn btn-secondary btn-ico-only" aria-label="ici le label A11Y du bouton"><i class="ri-eye-2-line ri-lg fw-normal"></i></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="cards">
+            <div class="col-12 col-lg-3">
+              <h3>Cards</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/card/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <p>A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+                <p>Voir aussi les <a href="components-itou.html#cards">cards itou</a>.</p>
+                <br>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://via.placeholder.com/1500x1000" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="collapse">
+            <div class="col-12 col-lg-3">
+              <h3>Collapse</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/collapse/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <p>Click the buttons below to show and hide another element via class changes:</p>
+                <ul>
+                  <li><code>.collapse</code> hides content</li>
+                  <li><code>.collapsing</code> is applied during transitions</li>
+                  <li><code>.collapse.show</code> shows content</li>
+                </ul>
+                <p>Generally, we recommend using a button with the <code>data-bs-target</code> attribute. While not recommended from a semantic point of view, you can also use a link with the <code>href</code> attribute (and a <code>role="button"</code>). In both cases, the <code>data-bs-toggle="collapse"</code> is required.</p>
+                <br>
+                <p>
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Link with href
+                  </a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Button with data-bs-target
+                  </button>
+                </p>
+                <br>
+                <div class="collapse" id="collapseExample">
+                  <p>
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </p>
+                </div>
+              </div>
+              <div class="mb-5">
+                <p>Collapse avec <code>.has-collapse-caret</code>:</p>
+                <p>
+                  <a class="fw-bold text-decoration-none has-collapse-caret" data-bs-toggle="collapse" href="#collapseExample02" role="button" aria-expanded="false" aria-controls="collapseExample02">
+                    Link with has-collapse-caret
+                  </a>
+                </p>
+                <p>
+                <p>Collapse avec <code>.d-flex .justify-content-between .has-collapse-caret </code> pour placer le caret en bout de ligne:</p>
+                <a class="d-flex justify-content-between fw-bold text-decoration-none has-collapse-caret" data-bs-toggle="collapse" href="#collapseExample02" role="button" aria-expanded="false" aria-controls="collapseExample02">
+                  Link with has-collapse-caret on right
+                </a>
+                </p>
+                <div class="collapse" id="collapseExample02">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis repudiandae libero hic modi veritatis perspiciatis. Quibusdam deserunt consequatur labore natus maiores? Quibusdam eaque nesciunt modi. Nisi soluta aliquid excepturi!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="dropdowns">
+            <div class="col-12 col-lg-3">
+              <h3>Dropdowns</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code>&lt;button&gt;</code> elements:</p>
+                <br>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="dropdown dropdown-structure">
+                      <button class="btn btn-link btn-block dropdown-toggle" type="button" id="dropdownStructureMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Transférer cette candidature vers
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownStructureMenuButton">
+                        <a class="dropdown-item dropdown-item__summary active" href="#">
+                          <i class="ri-community-line"></i>
+                          <span>ETTI</span>
+                          <strong>Une nouvelle chance</strong>
+                        </a>
+                        <a class="dropdown-item dropdown-item__summary" href="#">
+                          <i class="ri-community-line"></i>
+                          <span>ETTI</span>
+                          <strong>Une nouvelle chance un peu trop longue</strong>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item">
+                          <a class="btn-link btn-ico fw-medium" href="#">
+                            <i class="ri-home-smile-line" aria-hidden="true"></i>
+                            <span>Une autre structure</span>
+                          </a>
+                        </div>
+                        <div class="dropdown-item">
+                          <button class="btn-link btn-ico fw-medium" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Vous devez d'abord décliner la candidature pour pouvoir la tranférer à un autre employeur">
+                            <i class="ri-home-smile-line text-disabled" aria-hidden="true"></i>
+                            <span class="text-disabled">Une autre structure</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown btn-primary
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item active" href="#">Action active</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="dropdown">
+                      <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown btn-outline-primary
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <a class="dropdown-item active" href="#">Action active</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="dropdown">
+                      <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown btn-link
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                        <a class="dropdown-item active" href="#">Action active</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="loginUserDropdown" aria-expanded="false">
+                        Dropdown + header + divider
+                      </button>
+                      <div class="dropdown-menu" id="loginUserDropdown">
+                        <ul class="list-unstyled">
+                          <li>
+                            <span class="dropdown-header"><i class="ri-dashboard-line me-2"></i>Mise en situation professionnelle </span>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              Dispositif régional ou sectoriel
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              POE
+                            </a>
+                          </li>
+                          <li class="dropdown-divider" aria-hidden="true"></li>
+                          <li>
+                            <span class="dropdown-header"><i class="ri-archive-line me-2"></i>Pré-qualification</span>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              Dispositif régional ou sectoriel
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">
+                              POE
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="list-group">
+            <div class="col-12 col-lg-3">
+              <h3>List group</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/list-group/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Example with active items</h6>
+                <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
+                <p>Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create <em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
+                <br>
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="tabs">
+            <div class="col-12 col-lg-3">
+              <h3>Navs / Tabs</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/navs/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Tabs</h6>
+                <p>Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our <a href="https://getbootstrap.com/docs/5.3/components/navs/#javascript-behavior" target="_blank">tab JavaScript plugin</a>.</p>
+                <br>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span>Item menu with badge</span>
+                      <span class="badge badge-sm rounded-pill ms-2">1279</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="ri-briefcase-4-line fw-normal me-1" aria-hidden="true"></i>
+                      <span>Item menu with icon</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <br>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Item menu Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Item menu Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                      <i class="ri-briefcase-4-line fw-normal me-1" aria-hidden="true"></i>
+                      <span>Disabled with icon</span>
+                    </a>
+                  </li>
+                </ul>
+                <br>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Item menu Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Item menu Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                      <span>Disabled with badge</span>
+                      <span class="badge badge-sm rounded-pill ms-2">1279</span>
+                    </a>
+                  </li>
+                </ul>
+                <br>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Item menu Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Item menu Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-5">
+                <p>Or center with <code>.justify-content-center</code></p>
+                <ul class="nav nav-tabs justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-5">
+                <p>Or vertical tabs with <code>.flex-column</code></p>
+                <ul class="nav nav-tabs flex-column">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Les prescripteurs habilités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link active">Liste des prescripteurs habilités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Les différents types de SIAE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Les critères d’éligibilité de l’IAE</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="pagination">
+            <div class="col-12 col-lg-3">
+              <h3>Pagination</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/pagination/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
+                <p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code>aria-label</code> for the <code>&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label="Search results pages"</code>.</p>
+                <br>
+                <nav role="navigation" aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Précédent</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 1">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 2">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 3">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="mb-5">
+                <h6>Working with icons</h6>
+                <p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code>aria</code> attributes.</p>
+                <br>
+                <nav role="navigation" aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Précédent">
+                        <i class="ri-arrow-left-s-line"></i>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 1">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 2">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 3">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Suivant">
+                        <i class="ri-arrow-right-s-line"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="mb-5">
+                <h6>Disabled and active states</h6>
+                <p>Pagination links are customizable for different circumstances. Use <code>.disabled</code> for links that appear un-clickable and <code>.active</code> to indicate the current page.</p>
+                <p>While the <code>.disabled</code> class uses <code>pointer-events: none</code> to <em>try</em> to disable the link functionality of <code>&lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code>tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
+                <br>
+                <nav role="navigation" aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Précédent</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 1">1</a></li>
+                    <li class="page-item active">
+                      <span class="page-link" aria-current="page" aria-label="Page 2">2</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Page 3">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Suivant</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="popovers">
+            <div class="col-12 col-lg-3">
+              <h3>Popovers</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/popovers/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Four directions</h6>
+                <p>Four options are available: top, right, bottom, and left aligned.</p>
+                <br>
+                <button type="button" class="btn btn-outline-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                  Popover on top
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+                  Popover on right
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                  Popover on bottom
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                  Popover on left
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="tooltips">
+            <div class="col-12 col-lg-3">
+              <h3>Tooltips</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/tooltips/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Four directions</h6>
+                <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left..</p>
+                <br>
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                  Tooltip on top
+                </button>
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                  Tooltip on right
+                </button>
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+                  Tooltip on bottom
+                </button>
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Tooltip on left
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="modal">
+            <div class="col-12 col-lg-3">
+              <h3>Modal</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/modal/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>Modal components</h6>
+                <p>Deux variations de modales possibles. <br><code>.modal</code> avec un titre dans un <code>.modal-title</code> ou <code>.modal .modal--mini</code> sans titre et sans <code>.modal-title</code></p>
+                <br>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Launch basic .modal
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalMini">
+                  Launch exemple .modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Modal title in .modal-header</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer">
+
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi accusantium sed corrupti a praesentium soluta, perspiciatis cupiditate aliquam repudiandae unde tenetur! Voluptatibus, facilis at debitis deleniti animi inventore reprehenderit nostrum.</p>
+                        <p>Nisi accusantium sed corrupti a praesentium soluta, perspiciatis cupiditate aliquam repudiandae unde tenetur! Voluptatibus, facilis at debitis deleniti animi inventore reprehenderit nostrum.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal Mini -->
+                <div class="modal modalm-mini fade" id="exampleModalMini" tabindex="-1" aria-labelledby="exampleModalMiniLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Profitez du Marché en totalité Titre sur deux lignes</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                      </div>
+                      <div class="modal-body home-content-body">
+                        <p class="mb-4">
+                          Ce ne sera pas long ! Inscrivez-vous et accédez à toutes les fonctionnalités du marché.
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                          <li class="d-flex mb-2">
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                              </svg>
+                            </span>
+                            <span class="fw-bold ms-2">Téléchargez la liste complète des structures figurant sur le marché.</span>
+                          </li>
+                          <li class="d-flex mb-2">
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                              </svg>
+                            </span>
+                            <span class="fw-bold ms-2">Créez des listes d'achat et sauvegardez vous structures favorites.</span>
+                          </li>
+                          <li class="d-flex mb-2">
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                              </svg>
+                            </span>
+                            <span class="fw-bold ms-2">Accédez aux informations complètes des structures pour un sourcing qualifié.</span>
+                          </li>
+                          <li class="d-flex mb-2">
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path fill="#18A47D" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" />
+                              </svg>
+                            </span>
+                            <span class="fw-bold ms-2">Accédez aux coordonnées des structures.</span>
+                          </li>
+                        </ul>
+                        <p class="text-center">
+                          <a href="{% url 'auth:signup' %}?next=next-params-to-replace" id="auth-link" class="btn btn-sm btn-primary">Se connecter</a>
+                        </p>
+                        <hr class="my-5" data-bs-text="ou" />
+                        <div class="text-center">
+                          <p class="mb-0">Vous n'avez pas de compte ?</p>
+                          <a href="{% url 'auth:login' %}?next=next-params-to-replace" id="auth-link" class="btn btn-sm btn-link">Créer un compte</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="progress">
+            <div class="col-12 col-lg-3">
+              <h3>Progress</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/progress/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <h6>How it works</h6>
+                <p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row py-5" id="toasts">
+            <div class="col-12 col-lg-3">
+              <h3>Toasts</h3>
+              <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank">Documentation</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="mb-5">
+                <p>Trois variations de toasts sont possibles.<br><code>.toast--info</code>, <code>.toast--warning</code>, <code>.toast--danger</code>, <code>.toast--success</code></p>
+                <p>Pour le positionnement et le staking des Toasts il faut placer les <code>.toast</code> dans le wrapper <code>toast-container</code>. Pour la gestion du dismiss, du js voir la <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank">documentation</a>.</p>
+                <br>
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <i class="ri-check-line ri-lg me-1" aria-hidden="true"></i>
+                    <strong class="me-auto">Default Toast</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+                <br>
+                <div class="toast toast--info" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2000">
+                  <div class="toast-header">
+                    <i class="ri-check-line ri-lg me-1" aria-hidden="true"></i>
+                    <strong class="me-auto">Info Toast</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+                <br>
+                <div class="toast toast--danger" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2000">
+                  <div class="toast-header">
+                    <i class="ri-check-line ri-lg me-1" aria-hidden="true"></i>
+                    <strong class="me-auto">danger Toast</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+                <br>
+                <div class="toast toast--success" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2000">
+                  <div class="toast-header">
+                    <i class="ri-check-line ri-lg me-1" aria-hidden="true"></i>
+                    <strong class="me-auto">success Toast</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+                <br>
+                <div class="toast toast--warning" role="status" aria-live="polite" aria-atomic="true" data-bs-delay="2000">
+                  <div class="toast-header">
+                    <i class="ri-check-line ri-lg me-1" aria-hidden="true"></i>
+                    <strong class="me-auto">warning Toast</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-sm btn-primary" id="liveToastBtn">Show live toast</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/index.js"></script>
+
+    <script>
+      document.getElementById('liveToastBtn').addEventListener('click', function () {
+        const toastContainer = document.querySelector('.toast-container');
+        const toastElList = [].slice.call(toastContainer.querySelectorAll('.toast'));
+        let toastList = toastElList.map(function (toastEl) {
+          return new bootstrap.Toast(toastEl);
+        });
+        toastList.forEach(toast => toast.show());
+      });
+    </script>
+
+    <style>
+      #toasts .toast {
+        display: block;
+        opacity: 1;
+      }
+    </style>
+  </body>
+
+</html>

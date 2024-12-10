@@ -20,10 +20,11 @@
     <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
 
-    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
-    <link rel="stylesheet" href="stylesheets/app.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
 
     <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
   </head>
 
   <body id="top" class="l-authenticated">
@@ -42,498 +43,497 @@
     </div>
 
     <header role="banner" id="header">
-  <section class="s-header-print">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-auto d-flex align-items-center py-2">
-          <img src="images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+      <section class="s-header-print">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto d-flex align-items-center py-2">
+              <img src="./images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="./images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+            </div>
+            <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
+          </div>
         </div>
-        <div class="col d-flex align-items-center">
-          <img src="images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+      </section>
+      <section class="s-header-authenticated">
+        <div class="s-header-authenticated__container container">
+          <div class="s-header-authenticated__row row">
+            <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
+              <a href=""><img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
+              <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+                <ul>
+                  <li class="dropdown">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                      <i class="ri-account-circle-line" aria-hidden="true"></i>
+                      <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item">
+                          <div class="d-flex align-items-center">
+                            <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                            <div class="flex-grow-1 ms-2 lh-sm">
+                              <span>Machin TRUC</span>
+                              <br>
+                              <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-divider"></div>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Tableau de bord</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Mes notifications</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="">Modifier mon profil</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">
+                          <button class="text-danger">Déconnexion</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="d-none d-lg-inline-block dropdown dropdown-structure">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI - Une nouvelle chance</span>
+                    </button>
+                    <div class="dropdown-menu w-100" id="switchUserDropdown">
+                      <form action="" method="post">
+                        <ul class="list-unstyled">
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EITI</span>
+                              <strong>Terre &amp; mer</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>ETTI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
+              <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+                <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+                <span>Menu</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
-      </div>
-    </div>
-  </section>
-  <section class="s-header-authenticated">
-    <div class="s-header-authenticated__container container">
-      <div class="s-header-authenticated__row row">
-        <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+      </section>
+      <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+        <div class="offcanvas-header offcanvas-header--structure">
+          <div class="dropdown dropdown-structure flex-grow-1 py-4">
+            <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+              <i class="ri-community-line" aria-hidden="true"></i>
+              <span>ETTI</span>
+              <strong>Une nouvelle chance</strong>
+            </button>
+            <div class="dropdown-menu" id="switchUserDropdown">
+              <form method="post">
+                <ul class="list-unstyled">
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EITI</span>
+                      <strong>Terre &amp; mer</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                    </button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="border-start border-nuance-08 d-xl-none">
+            <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+              <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-        <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
-          <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
-            <ul>
-              <li class="dropdown">
-                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
-                  <i class="ri-account-circle-line" aria-hidden="true"></i>
-                  <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+        <div class="offcanvas-body d-flex flex-column">
+          <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link active">
+                  <i class="ri-home-line fw-medium" aria-hidden="true"></i>
+                  <span>Accueil</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
+                  <span>Candidatures</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
+                  <i class="ri-team-line fw-medium" aria-hidden="true"></i>
+                  <span>Salariés</span>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
-                  <ul class="list-unstyled">
-                    <li class="dropdown-item">
-                      <div class="d-flex align-items-center">
-                        <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
-                        <div class="flex-grow-1 ms-2 lh-sm">
-                          <span>Machin TRUC</span>
-                          <br>
-                          <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
-                        </div>
-                      </div>
+                <div class="collapse" id="collapseNavSalaries">
+                  <ul>
+                    <li>
+                      <a href="">Salariés et PASS IAE</a>
                     </li>
                     <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Tableau de bord</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Mes notifications</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li>
-                      <a class="dropdown-item" href="">Modifier mon profil</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li>
-                      <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li class="dropdown-item">
-                      <button class="text-danger">Déconnexion</button>
+                      <a href="" class="active">Fiches salariés ASP</a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="d-none d-lg-inline-block dropdown dropdown-structure">
-                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>ETTI - Une nouvelle chance</span>
+              <li class="nav-item">
+                <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
+                  <i class="ri-community-line fw-medium" aria-hidden="true"></i>
+                  <span>Structure</span>
                 </button>
-                <div class="dropdown-menu w-100" id="switchUserDropdown">
-                  <form action="" method="post">
-                    <ul class="list-unstyled">
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EITI</span>
-                          <strong>Terre &amp; mer</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>ETTI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
-                        </button>
-                      </li>
-                    </ul>
-                  </form>
+                <div class="collapse" id="collapseNavStructure">
+                  <ul>
+                    <li>
+                      <a href="">Présentation</a>
+                    </li>
+                    <li>
+                      <a href="" class="active">Métiers et recrutements</a>
+                    </li>
+                    <li>
+                      <a href="">Collaborateurs</a>
+                    </li>
+                    <li>
+                      <a href="">Annexes financières</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
           </nav>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+              <i class="ri-account-circle-line" aria-hidden="true"></i>
+              <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+            </button>
+            <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+              <ul class="list-unstyled">
+                <li class="dropdown-item">
+                  <div class="d-flex align-items-center">
+                    <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                    <div class="flex-grow-1 ms-2 lh-sm w-75">
+                      <span>Machin TRUC</span>
+                      <br>
+                      <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Tableau de bord</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Mes notifications</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="">Modifier mon profil</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <button class="text-danger">Déconnexion</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+            <div class="dropdown-menu" id="helpDropdownMobile">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
-          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
-            <i class="ri-menu-line" id="open" aria-hidden="true"></i>
-            <span>Menu</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
-    <div class="offcanvas-header offcanvas-header--structure">
-      <div class="dropdown dropdown-structure flex-grow-1 py-4">
-        <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
-          <i class="ri-community-line" aria-hidden="true"></i>
-          <span>ETTI</span>
-          <strong>Une nouvelle chance</strong>
-        </button>
-        <div class="dropdown-menu" id="switchUserDropdown">
-          <form method="post">
-            <ul class="list-unstyled">
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EITI</span>
-                  <strong>Terre &amp; mer</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>ETTI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
-                </button>
-              </li>
+        <div class="offcanvas-footer flex-column align-items-stretch">
+          <div class="offcanvas-footer__legal">
+            <div class="d-none d-xl-block">
+              <img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
+            </div>
+            <ul>
+              <li><a href="">Accessibilité : partiellement conforme</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">CGU</a></li>
             </ul>
-          </form>
+          </div>
         </div>
       </div>
-      <div class="border-start border-nuance-08 d-xl-none">
-        <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
-          <i class="ri-close-line" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="offcanvas-body d-flex flex-column">
-      <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
-        <ul class="nav nav-tabs flex-column">
-          <li class="nav-item">
-            <a href="" class="nav-link active">
-              <i class="ri-home-line fw-medium" aria-hidden="true"></i>
-              <span>Accueil</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
-              <span>Candidatures</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
-              <i class="ri-team-line fw-medium" aria-hidden="true"></i>
-              <span>Salariés</span>
-            </button>
-            <div class="collapse" id="collapseNavSalaries">
-              <ul>
-                <li>
-                  <a href="">Salariés et PASS IAE</a>
-                </li>
-                <li>
-                  <a href="" class="active">Fiches salariés ASP</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
-              <i class="ri-community-line fw-medium" aria-hidden="true"></i>
-              <span>Structure</span>
-            </button>
-            <div class="collapse" id="collapseNavStructure">
-              <ul>
-                <li>
-                  <a href="">Présentation</a>
-                </li>
-                <li>
-                  <a href="" class="active">Métiers et recrutements</a>
-                </li>
-                <li>
-                  <a href="">Collaborateurs</a>
-                </li>
-                <li>
-                  <a href="">Annexes financières</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="dropup dropup-center">
-        <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
-          <i class="ri-account-circle-line" aria-hidden="true"></i>
-          <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
-        </button>
-        <div class="dropdown-menu" id="dashboardUserDropdownMobile">
-          <ul class="list-unstyled">
-            <li class="dropdown-item">
-              <div class="d-flex align-items-center">
-                <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
-                <div class="flex-grow-1 ms-2 lh-sm w-75">
-                  <span>Machin TRUC</span>
-                  <br>
-                  <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
-                </div>
+    </header>
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row ">
+            <div class="s-title-02__col s-title-02__col--title col-12">
+              <div class="c-prevstep">
+                <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+                  <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+                  <span>Retour</span>
+                </a>
               </div>
-            </li>
-            <li>
-              <div class="dropdown-divider"></div>
-            </li>
-            <li>
-              <a class="dropdown-item" href="">Tableau de bord</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="">Mes notifications</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item" href="">Modifier mon profil</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li class="dropdown-item">
-              <button class="text-danger">Déconnexion</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropup dropup-center">
-        <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
-        <div class="dropdown-menu" id="helpDropdownMobile">
-          <ul class="list-unstyled">
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="offcanvas-footer flex-column align-items-stretch">
-      <div class="offcanvas-footer__legal">
-        <div class="d-none d-xl-block">
-          <img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
-        </div>
-        <ul>
-          <li><a href="">Accessibilité : partiellement conforme</a></li>
-          <li><a href="">Mentions légales</a></li>
-          <li><a href="">CGU</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-      <main class="s-main" role="main">
-
-        <section class="s-title-02">
-          <div class="s-title-02__container container">
-            <div class="s-title-02__row row ">
-              <div class="s-title-02__col s-title-02__col--title col-12">
-                <div class="c-prevstep">
-                  <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
-                    <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
-                    <span>Retour</span>
-                  </a>
-                </div>
-                <h1>
-                  Un titre principal ...
-                </h1>
-                <h2>
-                  Un sous titre. Dolore dolorum eveniet quae aliquam fugit facere culpa pariatur, necessitatibus doloribus quod vel aliquid ipsam mollitia magni non saepe, veritatis adipisci minima!
-                </h2>
-              </div>
+              <h1>
+                Un titre principal ...
+              </h1>
+              <h2>
+                Un sous titre. Dolore dolorum eveniet quae aliquam fugit facere culpa pariatur, necessitatibus doloribus quod vel aliquid ipsam mollitia magni non saepe, veritatis adipisci minima!
+              </h2>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="s-cms">
-          <div class="s-cms__container container">
-            <div class="s-cms__row row">
-              <div class="s-cms__col col-12">
-                <h3 data-bs-block-key="2h02h"><b>Qu’est ce que le PNAD ?</b></h3>
-                <p data-bs-block-key="9sj8s">Depuis les <i>années 2000</i>, la <strong>France rédige un Plan d’action national</strong> pour encourager les achats durables au sein de la commande publique. Pour la troisième édition, le PNAD affiche deux objectifs clairs :</p>
-                <ul>
-                  <li data-bs-block-key="ad3ck"><b>30% des contrats de la commande publique doivent avoir une considération sociale</b></li>
-                  <li data-bs-block-key="72u4i"><b>100% des contrats de la commande publique doivent avoir une considération environnementale d’ici 2025</b></li>
-                </ul>
-                <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
-                <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
-                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
-                <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
-                <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
-                <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
-                <p data-bs-block-key="cck18">L’état a souhaité fixer des objectifs clairs dont nous avons parlé plus haut. Pour les atteindre, des outils numériques sont mis en place pour intégrer les considérations environnementales et sociales dans les politiques d’achats. Aussi, il s’agira de promouvoir le plan à l’occasion d’évènements, de mobiliser tous les acteurs autour de sa mise en œuvre, et de le présenter au niveau Européen.</p>
-                <h4 data-bs-block-key="33jlm"><b><i>“Objectif 2 : Aider les acheteurs à s’emparer des objectifs du PNAD”</i></b></h4>
-                <p data-bs-block-key="etnt4">Grâce à des actions d’auto-évaluation, de sensibilisation et de formation, l’Etat veut faciliter le recours aux achats durables dans les politiques d’achats publics.</p>
-                <p data-bs-block-key="ena9g">Il s’agit donc de mobiliser les acteurs publics et privés autour des thématiques sociales et environnementales.</p>
-                <h4 data-bs-block-key="6epaa"><b><i>“Objectif 3 : Suivre, actualiser et promouvoir le plan”</i></b></h4>
-                <p data-bs-block-key="cbclg">L’Etat a élaboré des indicateurs qualitatifs pour s’assurer de l’atteinte des objectifs d’achats durables. Toutes ces actions seront suivies par un comité de pilotage composé du Commissaire général au développement durable, du Directeur des affaires juridiques du MEFR, du Directeur des achats de l’Etat, du Délégué général à l’emploi et à la formation professionnelle, ainsi que les différents acteurs qui ont contribué au Plan.</p>
-                <p data-bs-block-key="8td1e">Deux fois par an, un comité de haut niveau se réunit pour faire un point sur les avancées du PNAD. Ce comité est présidé par l’Ambassadeur du PNAD et son secrétariat est assuré par le Commissariat général au développement durable. Ce comité associera des représentants des collectivités locales, des acteurs de l’État, ainsi que des associations d’acheteurs et des directeurs achats d’organismes publics et d’entreprises.</p>
-                <p data-bs-block-key="chnnd">Ce comité veille à assurer la bonne articulation et la cohérence de l’ensemble des dispositifs et des plans en matière d’achat public.</p>
-                <h3 data-bs-block-key="21o5o"><b>Le volet social dans le PNAD</b></h3>
-                <p data-bs-block-key="4f7ef">La dimension sociale est entendue au sens large, comme par exemple :</p>
-                <ul>
-                  <li data-bs-block-key="2ade4">L'insertion des publics éloignés de l’emploi et de personnes en situation de handicap</li>
-                  <li data-bs-block-key="a9mcd">La lutte contre les discriminations (notamment la promotion de l’égalité femme / homme)</li>
-                  <li data-bs-block-key="86rvq">Le respect des exigences éthiques (respect des droits de l’homme…) ou équitables</li>
-                  <li data-bs-block-key="96m03">La performance dans la protection ou la formation des salariés, etc.</li>
-                </ul>
-                <p data-bs-block-key="9aath">L’intégration de considérations sociales dans un contrat de la commande publique peut être réalisée par différents leviers juridiques :</p>
-                <ul>
-                  <li data-bs-block-key="ed9nv">Dans les caractéristiques et exigences du contrat, sous forme de clauses administratives et techniques (objet, conditions d’exécution, spécifications techniques) présentant une dimension sociale</li>
-                  <li data-bs-block-key="fcm1b">Dans les conditions d’attribution, impliquant que l’exécution du contrat soit réservée aux opérateurs économiques qui emploient majoritairement des travailleurs handicapés ou défavorisés, ou aux entreprises de l'économie sociale et solidaire</li>
-                </ul>
-                <p data-bs-block-key="bnjh9">Dans la consultation, à travers un critère d’attribution social, permettant aux opérateurs économiques de valoriser leurs efforts en matière sociale dans l’offre proposée pour exécuter la prestation.</p>
-                <h3 data-bs-block-key="72r36"><b>Quel est le rôle du Marché de l'inclusion dans ce PNAD ?</b></h3>
-                <p data-bs-block-key="4h6u9">Le Marché de l’inclusion est un outil numérique visant à mettre en relation des ESI (Entreprises Sociales et Inclusives) avec des entreprises et organisations publiques.</p>
-                <p data-bs-block-key="3ue4e">L’outil est donc mentionné dans plusieurs actions prévues par la PNAD. Notamment dans les actions 5 et 8 :</p>
-                <h4 data-bs-block-key="71bc6"><b><i>Faciliter le recours à des fournisseurs inclusifs (action 5)</i></b></h4>
-                <p data-bs-block-key="c4e7d">La totalité des ESI sont référencées sur le Marché de l’inclusion. Grâce au moteur de recherche, une entreprise ayant un besoin professionnel peut trouver un prestataire dans plus de 150 secteurs d’activités. 8000 prestataires sont présents sur le marché de l’inclusion, cette liste est mise à jour toutes les semaines !</p>
-                <p data-bs-block-key="balec">D’autres fonctionnalités sont présentes, comme le fait pour un acheteur de déposer un besoin et d’être mis en relation avec les ESI pertinentes, ou de télécharger la liste complète des ESI pour valoriser ses achats.</p>
-                <h4 data-bs-block-key="4e1ts"><b><i>Identifier et renforcer l’accès des acheteurs à l’offre inclusive et environnementale (action 6)</i></b></h4>
-                <p data-bs-block-key="2kanj">Il est essentiel que les acheteurs aient une connaissance fine des évolutions du secteur de l’inclusion afin d’élargir les domaines et types de marchés intégrant des considérations sociales en faveur de l’insertion professionnelle.</p>
-                <p data-bs-block-key="7c978">La plateforme du Marché de l’inclusion peut servir à développer ce secteur et à le promouvoir auprès des acheteurs publics par des formats pédagogiques et des ressources pratiques.</p>
-                <p data-bs-block-key="53gp4">Pour commencer à mettre en place ce PNAD, vous pouvez dès à présent <a href="https://lemarche.inclusion.beta.gouv.fr/besoins/ajouter">partagez vos besoins d’achats ici</a></p>
-                <img alt="" class="richtext-image full-width" src="https://via.placeholder.com/800x505.png" width="800" height="505">
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12">
+              <h3 data-bs-block-key="2h02h"><b>Qu’est ce que le PNAD ?</b></h3>
+              <p data-bs-block-key="9sj8s">Depuis les <i>années 2000</i>, la <strong>France rédige un Plan d’action national</strong> pour encourager les achats durables au sein de la commande publique. Pour la troisième édition, le PNAD affiche deux objectifs clairs :</p>
+              <ul>
+                <li data-bs-block-key="ad3ck"><b>30% des contrats de la commande publique doivent avoir une considération sociale</b></li>
+                <li data-bs-block-key="72u4i"><b>100% des contrats de la commande publique doivent avoir une considération environnementale d’ici 2025</b></li>
+              </ul>
+              <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
+              <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
+              <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
+              <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
+              <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
+              <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
+              <p data-bs-block-key="cck18">L’état a souhaité fixer des objectifs clairs dont nous avons parlé plus haut. Pour les atteindre, des outils numériques sont mis en place pour intégrer les considérations environnementales et sociales dans les politiques d’achats. Aussi, il s’agira de promouvoir le plan à l’occasion d’évènements, de mobiliser tous les acteurs autour de sa mise en œuvre, et de le présenter au niveau Européen.</p>
+              <h4 data-bs-block-key="33jlm"><b><i>“Objectif 2 : Aider les acheteurs à s’emparer des objectifs du PNAD”</i></b></h4>
+              <p data-bs-block-key="etnt4">Grâce à des actions d’auto-évaluation, de sensibilisation et de formation, l’Etat veut faciliter le recours aux achats durables dans les politiques d’achats publics.</p>
+              <p data-bs-block-key="ena9g">Il s’agit donc de mobiliser les acteurs publics et privés autour des thématiques sociales et environnementales.</p>
+              <h4 data-bs-block-key="6epaa"><b><i>“Objectif 3 : Suivre, actualiser et promouvoir le plan”</i></b></h4>
+              <p data-bs-block-key="cbclg">L’Etat a élaboré des indicateurs qualitatifs pour s’assurer de l’atteinte des objectifs d’achats durables. Toutes ces actions seront suivies par un comité de pilotage composé du Commissaire général au développement durable, du Directeur des affaires juridiques du MEFR, du Directeur des achats de l’Etat, du Délégué général à l’emploi et à la formation professionnelle, ainsi que les différents acteurs qui ont contribué au Plan.</p>
+              <p data-bs-block-key="8td1e">Deux fois par an, un comité de haut niveau se réunit pour faire un point sur les avancées du PNAD. Ce comité est présidé par l’Ambassadeur du PNAD et son secrétariat est assuré par le Commissariat général au développement durable. Ce comité associera des représentants des collectivités locales, des acteurs de l’État, ainsi que des associations d’acheteurs et des directeurs achats d’organismes publics et d’entreprises.</p>
+              <p data-bs-block-key="chnnd">Ce comité veille à assurer la bonne articulation et la cohérence de l’ensemble des dispositifs et des plans en matière d’achat public.</p>
+              <h3 data-bs-block-key="21o5o"><b>Le volet social dans le PNAD</b></h3>
+              <p data-bs-block-key="4f7ef">La dimension sociale est entendue au sens large, comme par exemple :</p>
+              <ul>
+                <li data-bs-block-key="2ade4">L'insertion des publics éloignés de l’emploi et de personnes en situation de handicap</li>
+                <li data-bs-block-key="a9mcd">La lutte contre les discriminations (notamment la promotion de l’égalité femme / homme)</li>
+                <li data-bs-block-key="86rvq">Le respect des exigences éthiques (respect des droits de l’homme…) ou équitables</li>
+                <li data-bs-block-key="96m03">La performance dans la protection ou la formation des salariés, etc.</li>
+              </ul>
+              <p data-bs-block-key="9aath">L’intégration de considérations sociales dans un contrat de la commande publique peut être réalisée par différents leviers juridiques :</p>
+              <ul>
+                <li data-bs-block-key="ed9nv">Dans les caractéristiques et exigences du contrat, sous forme de clauses administratives et techniques (objet, conditions d’exécution, spécifications techniques) présentant une dimension sociale</li>
+                <li data-bs-block-key="fcm1b">Dans les conditions d’attribution, impliquant que l’exécution du contrat soit réservée aux opérateurs économiques qui emploient majoritairement des travailleurs handicapés ou défavorisés, ou aux entreprises de l'économie sociale et solidaire</li>
+              </ul>
+              <p data-bs-block-key="bnjh9">Dans la consultation, à travers un critère d’attribution social, permettant aux opérateurs économiques de valoriser leurs efforts en matière sociale dans l’offre proposée pour exécuter la prestation.</p>
+              <h3 data-bs-block-key="72r36"><b>Quel est le rôle du Marché de l'inclusion dans ce PNAD ?</b></h3>
+              <p data-bs-block-key="4h6u9">Le Marché de l’inclusion est un outil numérique visant à mettre en relation des ESI (Entreprises Sociales et Inclusives) avec des entreprises et organisations publiques.</p>
+              <p data-bs-block-key="3ue4e">L’outil est donc mentionné dans plusieurs actions prévues par la PNAD. Notamment dans les actions 5 et 8 :</p>
+              <h4 data-bs-block-key="71bc6"><b><i>Faciliter le recours à des fournisseurs inclusifs (action 5)</i></b></h4>
+              <p data-bs-block-key="c4e7d">La totalité des ESI sont référencées sur le Marché de l’inclusion. Grâce au moteur de recherche, une entreprise ayant un besoin professionnel peut trouver un prestataire dans plus de 150 secteurs d’activités. 8000 prestataires sont présents sur le marché de l’inclusion, cette liste est mise à jour toutes les semaines !</p>
+              <p data-bs-block-key="balec">D’autres fonctionnalités sont présentes, comme le fait pour un acheteur de déposer un besoin et d’être mis en relation avec les ESI pertinentes, ou de télécharger la liste complète des ESI pour valoriser ses achats.</p>
+              <h4 data-bs-block-key="4e1ts"><b><i>Identifier et renforcer l’accès des acheteurs à l’offre inclusive et environnementale (action 6)</i></b></h4>
+              <p data-bs-block-key="2kanj">Il est essentiel que les acheteurs aient une connaissance fine des évolutions du secteur de l’inclusion afin d’élargir les domaines et types de marchés intégrant des considérations sociales en faveur de l’insertion professionnelle.</p>
+              <p data-bs-block-key="7c978">La plateforme du Marché de l’inclusion peut servir à développer ce secteur et à le promouvoir auprès des acheteurs publics par des formats pédagogiques et des ressources pratiques.</p>
+              <p data-bs-block-key="53gp4">Pour commencer à mettre en place ce PNAD, vous pouvez dès à présent <a href="https://lemarche.inclusion.beta.gouv.fr/besoins/ajouter">partagez vos besoins d’achats ici</a></p>
+              <img alt="" class="richtext-image full-width" src="https://via.placeholder.com/800x505.png" width="800" height="505">
 
-                <blockquote class="s-cms__blockquote">
-                  <p class="mb-0">A well-known quote, contained in a blockquote element.</p>
-                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
+              <blockquote class="s-cms__blockquote">
+                <p class="mb-0">A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
 
-                <img alt="capture 2022-04-11 à 14.44.44" class="richtext-image left" src="https://via.placeholder.com/500x316.png" width="500" height="316">
-                <p data-bs-block-key="finie"></p>
-                <h3 data-bs-block-key="2h02h"><b>Qu’est ce que le PNAD ?</b></h3>
-                <p data-bs-block-key="9sj8s">Depuis les années 2000, la France rédige un Plan d’action national pour encourager les achats durables au sein de la commande publique. Pour la troisième édition, le PNAD affiche deux objectifs clairs :</p>
-                <ul>
-                  <li data-bs-block-key="ad3ck"><b>30% des contrats de la commande publique doivent avoir une considération sociale</b></li>
-                  <li data-bs-block-key="72u4i"><b>100% des contrats de la commande publique doivent avoir une considération environnementale d’ici 2025</b></li>
-                </ul>
-                <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
-                <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
-                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
-                <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
-                <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
-                <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
-                <p data-bs-block-key="cck18">L’état a souhaité fixer des objectifs clairs dont nous avons parlé plus haut. Pour les atteindre, des outils numériques sont mis en place pour intégrer les considérations environnementales et sociales dans les politiques d’achats. Aussi, il s’agira de promouvoir le plan à l’occasion d’évènements, de mobiliser tous les acteurs autour de sa mise en œuvre, et de le présenter au niveau Européen.</p>
-                <h4 data-bs-block-key="33jlm"><b><i>“Objectif 2 : Aider les acheteurs à s’emparer des objectifs du PNAD”</i></b></h4>
-                <p data-bs-block-key="etnt4">Grâce à des actions d’auto-évaluation, de sensibilisation et de formation, l’Etat veut faciliter le recours aux achats durables dans les politiques d’achats publics.</p>
-                <p data-bs-block-key="ena9g">Il s’agit donc de mobiliser les acteurs publics et privés autour des thématiques sociales et environnementales.</p>
-                <h4 data-bs-block-key="6epaa"><b><i>“Objectif 3 : Suivre, actualiser et promouvoir le plan”</i></b></h4>
-                <p data-bs-block-key="cbclg">L’Etat a élaboré des indicateurs qualitatifs pour s’assurer de l’atteinte des objectifs d’achats durables. Toutes ces actions seront suivies par un comité de pilotage composé du Commissaire général au développement durable, du Directeur des affaires juridiques du MEFR, du Directeur des achats de l’Etat, du Délégué général à l’emploi et à la formation professionnelle, ainsi que les différents acteurs qui ont contribué au Plan.</p>
-                <p data-bs-block-key="8td1e">Deux fois par an, un comité de haut niveau se réunit pour faire un point sur les avancées du PNAD. Ce comité est présidé par l’Ambassadeur du PNAD et son secrétariat est assuré par le Commissariat général au développement durable. Ce comité associera des représentants des collectivités locales, des acteurs de l’État, ainsi que des associations d’acheteurs et des directeurs achats d’organismes publics et d’entreprises.</p>
-                <p data-bs-block-key="chnnd">Ce comité veille à assurer la bonne articulation et la cohérence de l’ensemble des dispositifs et des plans en matière d’achat public.</p>
-                <h3 data-bs-block-key="21o5o"><b>Le volet social dans le PNAD</b></h3>
-                <p data-bs-block-key="4f7ef">La dimension sociale est entendue au sens large, comme par exemple :</p>
-                <ul>
-                  <li data-bs-block-key="2ade4">L‘insertion des publics éloignés de l’emploi et de personnes en situation de handicap</li>
-                  <li data-bs-block-key="a9mcd">La lutte contre les discriminations (notamment la promotion de l’égalité femme / homme)</li>
-                  <li data-bs-block-key="86rvq">Le respect des exigences éthiques (respect des droits de l’homme…) ou équitables</li>
-                  <li data-bs-block-key="96m03">La performance dans la protection ou la formation des salariés, etc.</li>
-                </ul>
-                <p data-bs-block-key="9aath">L’intégration de considérations sociales dans un contrat de la commande publique peut être réalisée par différents leviers juridiques :</p>
-                <ul>
-                  <li data-bs-block-key="ed9nv">Dans les caractéristiques et exigences du contrat, sous forme de clauses administratives et techniques (objet, conditions d’exécution, spécifications techniques) présentant une dimension sociale</li>
-                  <li data-bs-block-key="fcm1b">Dans les conditions d’attribution, impliquant que l’exécution du contrat soit réservée aux opérateurs économiques qui emploient majoritairement des travailleurs handicapés ou défavorisés, ou aux entreprises de l'économie sociale et solidaire</li>
-                </ul>
-                <p data-bs-block-key="bnjh9">Dans la consultation, à travers un critère d’attribution social, permettant aux opérateurs économiques de valoriser leurs efforts en matière sociale dans l’offre proposée pour exécuter la prestation.</p>
-                <h3 data-bs-block-key="72r36"><b>Quel est le rôle du Marché de l'inclusion dans ce PNAD ?</b></h3>
-                <p data-bs-block-key="4h6u9">Le Marché de l’inclusion est un outil numérique visant à mettre en relation des ESI (Entreprises Sociales et Inclusives) avec des entreprises et organisations publiques.</p>
-                <p data-bs-block-key="3ue4e">L’outil est donc mentionné dans plusieurs actions prévues par la PNAD. Notamment dans les actions 5 et 8 :</p>
-                <h4 data-bs-block-key="71bc6"><b><i>Faciliter le recours à des fournisseurs inclusifs (action 5)</i></b></h4>
-                <p data-bs-block-key="c4e7d">La totalité des ESI sont référencées sur le Marché de l’inclusion. Grâce au moteur de recherche, une entreprise ayant un besoin professionnel peut trouver un prestataire dans plus de 150 secteurs d’activités. 8000 prestataires sont présents sur le marché de l’inclusion, cette liste est mise à jour toutes les semaines !</p>
-                <p data-bs-block-key="balec">D’autres fonctionnalités sont présentes, comme le fait pour un acheteur de déposer un besoin et d’être mis en relation avec les ESI pertinentes, ou de télécharger la liste complète des ESI pour valoriser ses achats.</p>
-                <h4 data-bs-block-key="4e1ts"><b><i>Identifier et renforcer l’accès des acheteurs à l’offre inclusive et environnementale (action 6)</i></b></h4>
-                <p data-bs-block-key="2kanj">Il est essentiel que les acheteurs aient une connaissance fine des évolutions du secteur de l’inclusion afin d’élargir les domaines et types de marchés intégrant des considérations sociales en faveur de l’insertion professionnelle.</p>
-                <p data-bs-block-key="7c978">La plateforme du Marché de l’inclusion peut servir à développer ce secteur et à le promouvoir auprès des acheteurs publics par des formats pédagogiques et des ressources pratiques.</p>
-                <p data-bs-block-key="53gp4">Pour commencer à mettre en place ce PNAD, vous pouvez dès à présent <a href="https://lemarche.inclusion.beta.gouv.fr/besoins/ajouter">partagez vos besoins d’achats ici</a></p>
+              <img alt="capture 2022-04-11 à 14.44.44" class="richtext-image left" src="https://via.placeholder.com/500x316.png" width="500" height="316">
+              <p data-bs-block-key="finie"></p>
+              <h3 data-bs-block-key="2h02h"><b>Qu’est ce que le PNAD ?</b></h3>
+              <p data-bs-block-key="9sj8s">Depuis les années 2000, la France rédige un Plan d’action national pour encourager les achats durables au sein de la commande publique. Pour la troisième édition, le PNAD affiche deux objectifs clairs :</p>
+              <ul>
+                <li data-bs-block-key="ad3ck"><b>30% des contrats de la commande publique doivent avoir une considération sociale</b></li>
+                <li data-bs-block-key="72u4i"><b>100% des contrats de la commande publique doivent avoir une considération environnementale d’ici 2025</b></li>
+              </ul>
+              <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
+              <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
+              <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
+              <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
+              <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
+              <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
+              <p data-bs-block-key="cck18">L’état a souhaité fixer des objectifs clairs dont nous avons parlé plus haut. Pour les atteindre, des outils numériques sont mis en place pour intégrer les considérations environnementales et sociales dans les politiques d’achats. Aussi, il s’agira de promouvoir le plan à l’occasion d’évènements, de mobiliser tous les acteurs autour de sa mise en œuvre, et de le présenter au niveau Européen.</p>
+              <h4 data-bs-block-key="33jlm"><b><i>“Objectif 2 : Aider les acheteurs à s’emparer des objectifs du PNAD”</i></b></h4>
+              <p data-bs-block-key="etnt4">Grâce à des actions d’auto-évaluation, de sensibilisation et de formation, l’Etat veut faciliter le recours aux achats durables dans les politiques d’achats publics.</p>
+              <p data-bs-block-key="ena9g">Il s’agit donc de mobiliser les acteurs publics et privés autour des thématiques sociales et environnementales.</p>
+              <h4 data-bs-block-key="6epaa"><b><i>“Objectif 3 : Suivre, actualiser et promouvoir le plan”</i></b></h4>
+              <p data-bs-block-key="cbclg">L’Etat a élaboré des indicateurs qualitatifs pour s’assurer de l’atteinte des objectifs d’achats durables. Toutes ces actions seront suivies par un comité de pilotage composé du Commissaire général au développement durable, du Directeur des affaires juridiques du MEFR, du Directeur des achats de l’Etat, du Délégué général à l’emploi et à la formation professionnelle, ainsi que les différents acteurs qui ont contribué au Plan.</p>
+              <p data-bs-block-key="8td1e">Deux fois par an, un comité de haut niveau se réunit pour faire un point sur les avancées du PNAD. Ce comité est présidé par l’Ambassadeur du PNAD et son secrétariat est assuré par le Commissariat général au développement durable. Ce comité associera des représentants des collectivités locales, des acteurs de l’État, ainsi que des associations d’acheteurs et des directeurs achats d’organismes publics et d’entreprises.</p>
+              <p data-bs-block-key="chnnd">Ce comité veille à assurer la bonne articulation et la cohérence de l’ensemble des dispositifs et des plans en matière d’achat public.</p>
+              <h3 data-bs-block-key="21o5o"><b>Le volet social dans le PNAD</b></h3>
+              <p data-bs-block-key="4f7ef">La dimension sociale est entendue au sens large, comme par exemple :</p>
+              <ul>
+                <li data-bs-block-key="2ade4">L‘insertion des publics éloignés de l’emploi et de personnes en situation de handicap</li>
+                <li data-bs-block-key="a9mcd">La lutte contre les discriminations (notamment la promotion de l’égalité femme / homme)</li>
+                <li data-bs-block-key="86rvq">Le respect des exigences éthiques (respect des droits de l’homme…) ou équitables</li>
+                <li data-bs-block-key="96m03">La performance dans la protection ou la formation des salariés, etc.</li>
+              </ul>
+              <p data-bs-block-key="9aath">L’intégration de considérations sociales dans un contrat de la commande publique peut être réalisée par différents leviers juridiques :</p>
+              <ul>
+                <li data-bs-block-key="ed9nv">Dans les caractéristiques et exigences du contrat, sous forme de clauses administratives et techniques (objet, conditions d’exécution, spécifications techniques) présentant une dimension sociale</li>
+                <li data-bs-block-key="fcm1b">Dans les conditions d’attribution, impliquant que l’exécution du contrat soit réservée aux opérateurs économiques qui emploient majoritairement des travailleurs handicapés ou défavorisés, ou aux entreprises de l'économie sociale et solidaire</li>
+              </ul>
+              <p data-bs-block-key="bnjh9">Dans la consultation, à travers un critère d’attribution social, permettant aux opérateurs économiques de valoriser leurs efforts en matière sociale dans l’offre proposée pour exécuter la prestation.</p>
+              <h3 data-bs-block-key="72r36"><b>Quel est le rôle du Marché de l'inclusion dans ce PNAD ?</b></h3>
+              <p data-bs-block-key="4h6u9">Le Marché de l’inclusion est un outil numérique visant à mettre en relation des ESI (Entreprises Sociales et Inclusives) avec des entreprises et organisations publiques.</p>
+              <p data-bs-block-key="3ue4e">L’outil est donc mentionné dans plusieurs actions prévues par la PNAD. Notamment dans les actions 5 et 8 :</p>
+              <h4 data-bs-block-key="71bc6"><b><i>Faciliter le recours à des fournisseurs inclusifs (action 5)</i></b></h4>
+              <p data-bs-block-key="c4e7d">La totalité des ESI sont référencées sur le Marché de l’inclusion. Grâce au moteur de recherche, une entreprise ayant un besoin professionnel peut trouver un prestataire dans plus de 150 secteurs d’activités. 8000 prestataires sont présents sur le marché de l’inclusion, cette liste est mise à jour toutes les semaines !</p>
+              <p data-bs-block-key="balec">D’autres fonctionnalités sont présentes, comme le fait pour un acheteur de déposer un besoin et d’être mis en relation avec les ESI pertinentes, ou de télécharger la liste complète des ESI pour valoriser ses achats.</p>
+              <h4 data-bs-block-key="4e1ts"><b><i>Identifier et renforcer l’accès des acheteurs à l’offre inclusive et environnementale (action 6)</i></b></h4>
+              <p data-bs-block-key="2kanj">Il est essentiel que les acheteurs aient une connaissance fine des évolutions du secteur de l’inclusion afin d’élargir les domaines et types de marchés intégrant des considérations sociales en faveur de l’insertion professionnelle.</p>
+              <p data-bs-block-key="7c978">La plateforme du Marché de l’inclusion peut servir à développer ce secteur et à le promouvoir auprès des acheteurs publics par des formats pédagogiques et des ressources pratiques.</p>
+              <p data-bs-block-key="53gp4">Pour commencer à mettre en place ce PNAD, vous pouvez dès à présent <a href="https://lemarche.inclusion.beta.gouv.fr/besoins/ajouter">partagez vos besoins d’achats ici</a></p>
 
-                <img alt="capture 2022-04-11 à 14.44.44" class="richtext-image right" src="https://via.placeholder.com/500x316.png" width="500" height="316">
-                <p data-bs-block-key="finie"></p>
-                <h3 data-bs-block-key="2h02h"><b>Qu’est ce que le PNAD ?</b></h3>
-                <p data-bs-block-key="9sj8s">Depuis les années 2000, la France rédige un Plan d’action national pour encourager les achats durables au sein de la commande publique. Pour la troisième édition, le PNAD affiche deux objectifs clairs :</p>
-                <ul>
-                  <li data-bs-block-key="ad3ck"><b>30% des contrats de la commande publique doivent avoir une considération sociale</b></li>
-                  <li data-bs-block-key="72u4i"><b>100% des contrats de la commande publique doivent avoir une considération environnementale d’ici 2025</b></li>
-                </ul>
-                <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
-                <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
-                <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
-                <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
-                <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
-                <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
-                <p data-bs-block-key="cck18">L’état a souhaité fixer des objectifs clairs dont nous avons parlé plus haut. Pour les atteindre, des outils numériques sont mis en place pour intégrer les considérations environnementales et sociales dans les politiques d’achats. Aussi, il s’agira de promouvoir le plan à l’occasion d’évènements, de mobiliser tous les acteurs autour de sa mise en œuvre, et de le présenter au niveau Européen.</p>
-                <h4 data-bs-block-key="33jlm"><b><i>“Objectif 2 : Aider les acheteurs à s’emparer des objectifs du PNAD”</i></b></h4>
-                <p data-bs-block-key="etnt4">Grâce à des actions d’auto-évaluation, de sensibilisation et de formation, l’Etat veut faciliter le recours aux achats durables dans les politiques d’achats publics.</p>
-                <p data-bs-block-key="ena9g">Il s’agit donc de mobiliser les acteurs publics et privés autour des thématiques sociales et environnementales.</p>
-                <h4 data-bs-block-key="6epaa"><b><i>“Objectif 3 : Suivre, actualiser et promouvoir le plan”</i></b></h4>
-                <p data-bs-block-key="cbclg">L’Etat a élaboré des indicateurs qualitatifs pour s’assurer de l’atteinte des objectifs d’achats durables. Toutes ces actions seront suivies par un comité de pilotage composé du Commissaire général au développement durable, du Directeur des affaires juridiques du MEFR, du Directeur des achats de l’Etat, du Délégué général à l’emploi et à la formation professionnelle, ainsi que les différents acteurs qui ont contribué au Plan.</p>
-                <p data-bs-block-key="8td1e">Deux fois par an, un comité de haut niveau se réunit pour faire un point sur les avancées du PNAD. Ce comité est présidé par l’Ambassadeur du PNAD et son secrétariat est assuré par le Commissariat général au développement durable. Ce comité associera des représentants des collectivités locales, des acteurs de l’État, ainsi que des associations d’acheteurs et des directeurs achats d’organismes publics et d’entreprises.</p>
-                <p data-bs-block-key="chnnd">Ce comité veille à assurer la bonne articulation et la cohérence de l’ensemble des dispositifs et des plans en matière d’achat public.</p>
-                <h3 data-bs-block-key="21o5o"><b>Le volet social dans le PNAD</b></h3>
-                <p data-bs-block-key="4f7ef">La dimension sociale est entendue au sens large, comme par exemple :</p>
-                <ul>
-                  <li data-bs-block-key="2ade4">L‘insertion des publics éloignés de l’emploi et de personnes en situation de handicap</li>
-                  <li data-bs-block-key="a9mcd">La lutte contre les discriminations (notamment la promotion de l’égalité femme / homme)</li>
-                  <li data-bs-block-key="86rvq">Le respect des exigences éthiques (respect des droits de l’homme…) ou équitables</li>
-                  <li data-bs-block-key="96m03">La performance dans la protection ou la formation des salariés, etc.</li>
-                </ul>
-                <p data-bs-block-key="9aath">L’intégration de considérations sociales dans un contrat de la commande publique peut être réalisée par différents leviers juridiques :</p>
-                <ul>
-                  <li data-bs-block-key="ed9nv">Dans les caractéristiques et exigences du contrat, sous forme de clauses administratives et techniques (objet, conditions d’exécution, spécifications techniques) présentant une dimension sociale</li>
-                  <li data-bs-block-key="fcm1b">Dans les conditions d’attribution, impliquant que l’exécution du contrat soit réservée aux opérateurs économiques qui emploient majoritairement des travailleurs handicapés ou défavorisés, ou aux entreprises de l'économie sociale et solidaire</li>
-                </ul>
-                <p data-bs-block-key="bnjh9">Dans la consultation, à travers un critère d’attribution social, permettant aux opérateurs économiques de valoriser leurs efforts en matière sociale dans l’offre proposée pour exécuter la prestation.</p>
-                <h3 data-bs-block-key="72r36"><b>Quel est le rôle du Marché de l'inclusion dans ce PNAD ?</b></h3>
-                <p data-bs-block-key="4h6u9">Le Marché de l’inclusion est un outil numérique visant à mettre en relation des ESI (Entreprises Sociales et Inclusives) avec des entreprises et organisations publiques.</p>
-                <p data-bs-block-key="3ue4e">L’outil est donc mentionné dans plusieurs actions prévues par la PNAD. Notamment dans les actions 5 et 8 :</p>
-                <h4 data-bs-block-key="71bc6"><b><i>Faciliter le recours à des fournisseurs inclusifs (action 5)</i></b></h4>
-                <p data-bs-block-key="c4e7d">La totalité des ESI sont référencées sur le Marché de l’inclusion. Grâce au moteur de recherche, une entreprise ayant un besoin professionnel peut trouver un prestataire dans plus de 150 secteurs d’activités. 8000 prestataires sont présents sur le marché de l’inclusion, cette liste est mise à jour toutes les semaines !</p>
-                <p data-bs-block-key="balec">D’autres fonctionnalités sont présentes, comme le fait pour un acheteur de déposer un besoin et d’être mis en relation avec les ESI pertinentes, ou de télécharger la liste complète des ESI pour valoriser ses achats.</p>
-                <h4 data-bs-block-key="4e1ts"><b><i>Identifier et renforcer l’accès des acheteurs à l’offre inclusive et environnementale (action 6)</i></b></h4>
-                <p data-bs-block-key="2kanj">Il est essentiel que les acheteurs aient une connaissance fine des évolutions du secteur de l’inclusion afin d’élargir les domaines et types de marchés intégrant des considérations sociales en faveur de l’insertion professionnelle.</p>
-                <p data-bs-block-key="7c978">La plateforme du Marché de l’inclusion peut servir à développer ce secteur et à le promouvoir auprès des acheteurs publics par des formats pédagogiques et des ressources pratiques.</p>
-                <p data-bs-block-key="53gp4">Pour commencer à mettre en place ce PNAD, vous pouvez dès à présent <a href="https://lemarche.inclusion.beta.gouv.fr/besoins/ajouter">partagez vos besoins d’achats ici</a></p>
+              <img alt="capture 2022-04-11 à 14.44.44" class="richtext-image right" src="https://via.placeholder.com/500x316.png" width="500" height="316">
+              <p data-bs-block-key="finie"></p>
+              <h3 data-bs-block-key="2h02h"><b>Qu’est ce que le PNAD ?</b></h3>
+              <p data-bs-block-key="9sj8s">Depuis les années 2000, la France rédige un Plan d’action national pour encourager les achats durables au sein de la commande publique. Pour la troisième édition, le PNAD affiche deux objectifs clairs :</p>
+              <ul>
+                <li data-bs-block-key="ad3ck"><b>30% des contrats de la commande publique doivent avoir une considération sociale</b></li>
+                <li data-bs-block-key="72u4i"><b>100% des contrats de la commande publique doivent avoir une considération environnementale d’ici 2025</b></li>
+              </ul>
+              <p data-bs-block-key="fkhne">Concrètement, le PNAD est un outil qui vise à accompagner les acheteurs publics dans la mise en place de leur politique d’achats durables. Par ailleurs, certaines obligations légales ont été promulguées dans ce sens ces dernières années. Le PNAD en est la feuille de route opérationnelle.</p>
+              <p data-bs-block-key="42jpr">Le changement de l’intitulé de ce plan a aussi du sens, anciennement Plan National pour des Achats Public Durables, le terme Public est supprimé pour montrer l’importance des acteurs privés dans la démarche.</p>
+              <p data-bs-block-key="b84do">Les anciennes versions des PNAD n’avaient pas permis l’atteinte des objectifs fixés. Par exemple, le précédent PNAD visait une considération sociale pour 25% des contrats de la commande publique. En 2029, seulement 12,5% de ces contrats intégraient une considération sociale. Après analyse, il apparaît que le manque de suivi des actions en soit la cause, empêchant ainsi de les mesurer. Ce nouveau PNAD devrait éviter cet écueil !</p>
+              <h3 data-bs-block-key="bj51u"><b>Que contient il ?</b></h3>
+              <p data-bs-block-key="5n27a">Cette 3ème édition du PNAD affiche 24 actions regroupées en 3 objectifs :</p>
+              <h4 data-bs-block-key="d5bku"><b><i>“Objectif 1 : Éclairer les enjeux”</i></b></h4>
+              <p data-bs-block-key="cck18">L’état a souhaité fixer des objectifs clairs dont nous avons parlé plus haut. Pour les atteindre, des outils numériques sont mis en place pour intégrer les considérations environnementales et sociales dans les politiques d’achats. Aussi, il s’agira de promouvoir le plan à l’occasion d’évènements, de mobiliser tous les acteurs autour de sa mise en œuvre, et de le présenter au niveau Européen.</p>
+              <h4 data-bs-block-key="33jlm"><b><i>“Objectif 2 : Aider les acheteurs à s’emparer des objectifs du PNAD”</i></b></h4>
+              <p data-bs-block-key="etnt4">Grâce à des actions d’auto-évaluation, de sensibilisation et de formation, l’Etat veut faciliter le recours aux achats durables dans les politiques d’achats publics.</p>
+              <p data-bs-block-key="ena9g">Il s’agit donc de mobiliser les acteurs publics et privés autour des thématiques sociales et environnementales.</p>
+              <h4 data-bs-block-key="6epaa"><b><i>“Objectif 3 : Suivre, actualiser et promouvoir le plan”</i></b></h4>
+              <p data-bs-block-key="cbclg">L’Etat a élaboré des indicateurs qualitatifs pour s’assurer de l’atteinte des objectifs d’achats durables. Toutes ces actions seront suivies par un comité de pilotage composé du Commissaire général au développement durable, du Directeur des affaires juridiques du MEFR, du Directeur des achats de l’Etat, du Délégué général à l’emploi et à la formation professionnelle, ainsi que les différents acteurs qui ont contribué au Plan.</p>
+              <p data-bs-block-key="8td1e">Deux fois par an, un comité de haut niveau se réunit pour faire un point sur les avancées du PNAD. Ce comité est présidé par l’Ambassadeur du PNAD et son secrétariat est assuré par le Commissariat général au développement durable. Ce comité associera des représentants des collectivités locales, des acteurs de l’État, ainsi que des associations d’acheteurs et des directeurs achats d’organismes publics et d’entreprises.</p>
+              <p data-bs-block-key="chnnd">Ce comité veille à assurer la bonne articulation et la cohérence de l’ensemble des dispositifs et des plans en matière d’achat public.</p>
+              <h3 data-bs-block-key="21o5o"><b>Le volet social dans le PNAD</b></h3>
+              <p data-bs-block-key="4f7ef">La dimension sociale est entendue au sens large, comme par exemple :</p>
+              <ul>
+                <li data-bs-block-key="2ade4">L‘insertion des publics éloignés de l’emploi et de personnes en situation de handicap</li>
+                <li data-bs-block-key="a9mcd">La lutte contre les discriminations (notamment la promotion de l’égalité femme / homme)</li>
+                <li data-bs-block-key="86rvq">Le respect des exigences éthiques (respect des droits de l’homme…) ou équitables</li>
+                <li data-bs-block-key="96m03">La performance dans la protection ou la formation des salariés, etc.</li>
+              </ul>
+              <p data-bs-block-key="9aath">L’intégration de considérations sociales dans un contrat de la commande publique peut être réalisée par différents leviers juridiques :</p>
+              <ul>
+                <li data-bs-block-key="ed9nv">Dans les caractéristiques et exigences du contrat, sous forme de clauses administratives et techniques (objet, conditions d’exécution, spécifications techniques) présentant une dimension sociale</li>
+                <li data-bs-block-key="fcm1b">Dans les conditions d’attribution, impliquant que l’exécution du contrat soit réservée aux opérateurs économiques qui emploient majoritairement des travailleurs handicapés ou défavorisés, ou aux entreprises de l'économie sociale et solidaire</li>
+              </ul>
+              <p data-bs-block-key="bnjh9">Dans la consultation, à travers un critère d’attribution social, permettant aux opérateurs économiques de valoriser leurs efforts en matière sociale dans l’offre proposée pour exécuter la prestation.</p>
+              <h3 data-bs-block-key="72r36"><b>Quel est le rôle du Marché de l'inclusion dans ce PNAD ?</b></h3>
+              <p data-bs-block-key="4h6u9">Le Marché de l’inclusion est un outil numérique visant à mettre en relation des ESI (Entreprises Sociales et Inclusives) avec des entreprises et organisations publiques.</p>
+              <p data-bs-block-key="3ue4e">L’outil est donc mentionné dans plusieurs actions prévues par la PNAD. Notamment dans les actions 5 et 8 :</p>
+              <h4 data-bs-block-key="71bc6"><b><i>Faciliter le recours à des fournisseurs inclusifs (action 5)</i></b></h4>
+              <p data-bs-block-key="c4e7d">La totalité des ESI sont référencées sur le Marché de l’inclusion. Grâce au moteur de recherche, une entreprise ayant un besoin professionnel peut trouver un prestataire dans plus de 150 secteurs d’activités. 8000 prestataires sont présents sur le marché de l’inclusion, cette liste est mise à jour toutes les semaines !</p>
+              <p data-bs-block-key="balec">D’autres fonctionnalités sont présentes, comme le fait pour un acheteur de déposer un besoin et d’être mis en relation avec les ESI pertinentes, ou de télécharger la liste complète des ESI pour valoriser ses achats.</p>
+              <h4 data-bs-block-key="4e1ts"><b><i>Identifier et renforcer l’accès des acheteurs à l’offre inclusive et environnementale (action 6)</i></b></h4>
+              <p data-bs-block-key="2kanj">Il est essentiel que les acheteurs aient une connaissance fine des évolutions du secteur de l’inclusion afin d’élargir les domaines et types de marchés intégrant des considérations sociales en faveur de l’insertion professionnelle.</p>
+              <p data-bs-block-key="7c978">La plateforme du Marché de l’inclusion peut servir à développer ce secteur et à le promouvoir auprès des acheteurs publics par des formats pédagogiques et des ressources pratiques.</p>
+              <p data-bs-block-key="53gp4">Pour commencer à mettre en place ce PNAD, vous pouvez dès à présent <a href="https://lemarche.inclusion.beta.gouv.fr/besoins/ajouter">partagez vos besoins d’achats ici</a></p>
 
-              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </main>
+    </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-        <script src="javascripts/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 
 </html>

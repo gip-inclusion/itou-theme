@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="./stylesheets/app.scss" lang="sass">
+
+    <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+  </head>
+
+  <body id="top" class="l-authenticated">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="visually-hidden">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    {{> _partials/header-authenticated }}
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-prevstep">
+                <button type="button" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+                  <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+                  <span>Retour</span>
+                </button>
+              </div>
+              <div class="d-flex flex-column flex-md-row gap-3 mb-4 justify-content-md-between">
+                <h1 class="m-0">PASS IAE de Harry POTTER</h1>
+                <a href="" class="btn btn-lg btn-primary btn-ico">
+                  <i class="ri-eye-line fw-medium" aria-hidden="true"></i>
+                  <span>Afficher l’attestation</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <div class="s-section__col col-12">
+
+              <div class="c-box c-box--pass bg-info-lightest border-info mb-3 mb-md-4">
+                <div class="mb-3 mb-md-4">
+                  <span class="badge badge-base rounded-pill bg-info text-white">
+                    <i class="ri-pass-pending-line" aria-hidden="true"></i>
+                    PASS IAE valide (suspendu)
+                  </span>
+                </div>
+                <ul class="list-data list-data__two-column-lg">
+                  <li>
+                    <small>Numéro de PASS IAE</small>
+                    <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">99999</span></strong>
+                  </li>
+                  <li>
+                    <small>Date de début</small>
+                    <strong>05/07/2024</strong>
+                  </li>
+                  <li>
+                    <small>Date de fin prévisionnelle <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible..." data-bs-original-title="Cette date de fin est susceptible..."></i></small>
+                    <strong>04/07/2026</strong>
+                  </li>
+                  <li>
+                    <small>Durée de validité <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin de validité..." data-bs-original-title="Cette date de fin de validité..."></i></small></small>
+                    <strong>721 jours (environ 1 an, 2 mois, 12 jours)</strong>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="c-box mb-3 mb-md-4">
+                <div class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-lg-between mb-3">
+                  <h2 class="mb-0">Suspensions</h2>
+                  <div class="d-flex flex-column flex-md-row gap-2 justify-content-md-end" role="group" aria-label="Actions sur les suspensions">
+                    <a href="" class="btn btn-outline-primary btn-ico">
+                      <i class="ri-pause-circle-line ri-lg" aria-hidden="true"></i>
+                      <span>Suspendre</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="table-responsive-lg my-3 my-md-4">
+                  <table class="table">
+                    <caption class="visually-hidden">Liste des suspensions</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Statut</th>
+                        <th scope="col">Du</th>
+                        <th scope="col">Jusqu’au</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="badge badge-sm rounded-pill bg-info">En cours</span>
+                        </td>
+                        <td>
+                          <span class="text-info">07/06/2023</span>
+                        </td>
+                        <td>
+                          <span class="text-info">22/06/2023</span>
+                        </td>
+                        <td class="td-action">
+                          <a href="" class="btn btn-link btn-ico-only btn-sm" aria-label="Modifier">
+                            <i class="ri-pencil-fill" aria-hidden="true"></i>
+                          </a>
+                          <button id="dropdown_action_menu" class="btn btn-link btn-ico-only btn-sm" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
+                            <i class="ri-more-2-fill" aria-hidden="true"></i>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdown_action_menu">
+                            <a href="" class="dropdown-item">Supprimer</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Passée
+                        </td>
+                        <td>
+                          12/04/2023
+                        </td>
+                        <td>
+                          27/04/2023
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Passée
+                        </td>
+                        <td>
+                          12/04/2023
+                        </td>
+                        <td>
+                          27/04/2023
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="c-info">
+                  <button class="c-info__summary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseInfoExample" aria-expanded="false" aria-controls="collapseInfoExample">
+                    <span>Comment gérer mes suspensions ?</span>
+                  </button>
+                  <div class="c-info__detail collapse" id="collapseInfoExample">
+                    <p>
+                      Retrouvez toutes les information sur le fonctionnement des suspensions sur notre documentation :<br>
+                      <a href="" target="_blank" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14739233143953--Suspendre-un-PASS-IAE</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-box mb-3 mb-md-4">
+                <div class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-lg-between mb-3">
+                  <h2 class="mb-0">Prolongations</h2>
+                  <div class="d-flex flex-column flex-md-row gap-2 justify-content-md-end" role="group" aria-label="Actions sur les Prolongations">
+                    <a href="" class="btn btn-outline-primary btn-ico disabled">
+                      <i class="ri-refresh-line ri-lg" aria-hidden="true"></i>
+                      <span>Prolonger</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="table-responsive-lg my-3 my-md-4">
+                  <table class="table">
+                    <caption class="visually-hidden">Liste des prolongations</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Statut</th>
+                        <th scope="col">Du</th>
+                        <th scope="col">Jusqu’au</th>
+                        <th scope="col">Critères</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="badge badge-sm rounded-pill text-info bg-info-lighter">A venir</span>
+                        </td>
+                        <td>
+                          07/06/2023
+                        </td>
+                        <td>
+                          22/06/2023
+                        </td>
+                        <td>
+                          RQTH - Reconnaissance de la qualité de travailleur handicapé
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Passée
+                        </td>
+                        <td>
+                          12/04/2023
+                        </td>
+                        <td>
+                          27/04/2023
+                        </td>
+                        <td>
+                          RQTH - Reconnaissance de la qualité de travailleur handicapé
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="c-info">
+                  <button class="c-info__summary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseInfoExample2" aria-expanded="false" aria-controls="collapseInfoExample2">
+                    <span>Comment gérer mes prolongations ?</span>
+                  </button>
+                  <div class="c-info__detail collapse" id="collapseInfoExample2">
+                    <p>
+                      Retrouvez toutes les information sur le fonctionnement des prolongations sur notre documentation :<br>
+                      <a href="" target="_blank" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14739233143953--Suspendre-un-PASS-IAE</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/index.js"></script>
+  </body>
+
+</html>

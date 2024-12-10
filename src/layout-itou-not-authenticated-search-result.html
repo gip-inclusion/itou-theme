@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="./stylesheets/app.scss" lang="sass">
+
+    <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+  </head>
+
+  <body id="top">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="visually-hidden">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    {{> _partials/header }}
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-prevstep">
+                <a href="/search/employers" class="btn btn-ico btn-link ps-0" aria-label="Retour à la page précédente">
+                  <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+                  <span>
+                    Retour
+                  </span>
+                </a>
+              </div>
+              <h1>Rechercher un emploi inclusif</h1>
+              <form class="mt-md-4">
+                <div class="row">
+                  <div class="col-12">
+                    <label for="id_city" class="visually-hidden">Ville</label>
+                    <div class="input-group input-group-xl input-group-search flex-nowrap">
+                      <div class="input-group-text bg-white rounded-start ps-3 pe-2">
+                        <i class="ri-map-pin-line ri-lg text-disabled" aria-hidden="true"></i>
+                      </div>
+                      <select name="city" lang="fr" data-minimum-input-length="2" data-theme="bootstrap-5" data-allow-clear="false" class="form-control django-select2 select2-hidden-accessible" data-ajax--url="/autocomplete/cities?select2=&amp;slug=" data-placeholder="Rechercher un emploi inclusif autour de…" required="" id="id_city" data-select2-id="id_city" tabindex="-1" aria-hidden="true">
+                        <option value="paris-75" selected="" data-select2-id="2">Paris (75)</option>
+
+                      </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="1" style="width: 515.467px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-id_city-container"><span class="select2-selection__rendered" id="select2-id_city-container" role="textbox" aria-readonly="true" title="Paris (75)">Paris (75)</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      <div class="input-group-text bg-white p-0">
+                        <button class="btn btn-ico btn-link" aria-label="Rechercher un emploi inclusif">
+                          <i class="ri-search-line fw-bold" aria-hidden="true"></i>
+                          <span>Rechercher</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <ul id="job-search-tabs" class="s-tabs-01__nav nav nav-tabs mt-3 mt-md-4 mb-0">
+                <li class="nav-item">
+                  <a class="nav-link active" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-onglet-employeur" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25">
+                    <i class="ri-hotel-line fw-normal me-1" aria-hidden="true"></i>
+                    <span>Employeurs</span>
+                    <span class="badge badge-sm rounded-pill ms-2">598</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-onglet-fichesdeposte" href="/search/job-descriptions/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25">
+                    <i class="ri-briefcase-4-line fw-normal me-1" aria-hidden="true"></i>
+                    <span>Postes <span class="d-none d-md-inline">ouverts au recrutement</span></span>
+                    <span class="badge badge-sm rounded-pill ms-2">1254</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <div class="s-section__col col-12">
+              <div class="tab-content">
+                <div class="row">
+                  <div class="col-12">
+                    <div id="search-subtitle">
+                      <h2 class="mb-3 mb-md-4">Employeurs</h2>
+                    </div>
+
+                    <div class="d-block w-100">
+                      <form hx-get="/search/employers/results" hx-trigger="change delay:.5s" hx-include="#id_city" hx-indicator="#job-search-results" hx-target="#job-search-results" hx-swap="outerHTML" hx-push-url="true">
+                        <div class="btn-dropdown-filter-group mb-3 mb-md-4">
+
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-dropdown-filter dropdown-toggle has-selected-item fw-bold" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              Distance
+                            </button>
+                            <ul class="dropdown-menu">
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="distance" id="id_distance_0" value="5">
+                                  <label class="form-check-label" for="id_distance_0">5 km</label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="distance" id="id_distance_1" value="10">
+                                  <label class="form-check-label" for="id_distance_1">10 km</label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="distance" id="id_distance_2" value="15">
+                                  <label class="form-check-label" for="id_distance_2">15 km</label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="distance" id="id_distance_3" value="25" checked="">
+                                  <label class="form-check-label" for="id_distance_3">25 km</label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="distance" id="id_distance_4" value="50">
+                                  <label class="form-check-label" for="id_distance_4">50 km</label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="distance" id="id_distance_5" value="75">
+                                  <label class="form-check-label" for="id_distance_5">75 km</label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="distance" id="id_distance_6" value="100">
+                                  <label class="form-check-label" for="id_distance_6">100 km</label>
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+
+
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              Types de structure
+                            </button>
+                            <ul class="dropdown-menu">
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_0" class="form-check-input" name="kinds" type="checkbox" value="ACI">
+                                  <label for="id_kinds_0" class="form-check-label">
+                                    ACI - Atelier chantier d'insertion
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_1" class="form-check-input" name="kinds" type="checkbox" value="AI">
+                                  <label for="id_kinds_1" class="form-check-label">
+                                    AI - Association intermédiaire
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_2" class="form-check-input" name="kinds" type="checkbox" value="EA">
+                                  <label for="id_kinds_2" class="form-check-label">
+                                    EA - Entreprise adaptée
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_3" class="form-check-input" name="kinds" type="checkbox" value="EATT">
+                                  <label for="id_kinds_3" class="form-check-label">
+                                    EATT - Entreprise adaptée de travail temporaire
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_4" class="form-check-input" name="kinds" type="checkbox" value="EI">
+                                  <label for="id_kinds_4" class="form-check-label">
+                                    EI - Entreprise d'insertion
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_5" class="form-check-input" name="kinds" type="checkbox" value="EITI">
+                                  <label for="id_kinds_5" class="form-check-label">
+                                    EITI - Entreprise d'insertion par le travail indépendant
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_6" class="form-check-input" name="kinds" type="checkbox" value="ETTI">
+                                  <label for="id_kinds_6" class="form-check-label">
+                                    ETTI - Entreprise de travail temporaire d'insertion
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_7" class="form-check-input" name="kinds" type="checkbox" value="GEIQ">
+                                  <label for="id_kinds_7" class="form-check-label">
+                                    GEIQ - Groupement d'employeurs pour l'insertion et la qualification
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_kinds_8" class="form-check-input" name="kinds" type="checkbox" value="OPCS">
+                                  <label for="id_kinds_8" class="form-check-label">
+                                    OPCS - Organisation porteuse de la clause sociale
+                                  </label>
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+
+
+
+
+
+                          <div class="d-flex flex-column flex-md-row gap-1">
+
+
+                            <div class="dropdown">
+                              <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                Départements
+                              </button>
+                              <ul class="dropdown-menu">
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_departments_0" class="form-check-input" name="departments" type="checkbox" value="75">
+                                    <label for="id_departments_0" class="form-check-label">
+                                      75 - Paris
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_departments_1" class="form-check-input" name="departments" type="checkbox" value="92">
+                                    <label for="id_departments_1" class="form-check-label">
+                                      92 - Hauts-de-Seine
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_departments_2" class="form-check-input" name="departments" type="checkbox" value="93">
+                                    <label for="id_departments_2" class="form-check-label">
+                                      93 - Seine-Saint-Denis
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_departments_3" class="form-check-input" name="departments" type="checkbox" value="94">
+                                    <label for="id_departments_3" class="form-check-label">
+                                      94 - Val-de-Marne
+                                    </label>
+                                  </div>
+                                </li>
+
+                              </ul>
+                            </div>
+
+
+
+
+
+
+                            <div class="dropdown">
+                              <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                Arrondissements de Paris
+                              </button>
+                              <ul class="dropdown-menu">
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_0" class="form-check-input" name="districts_75" type="checkbox" value="75001">
+                                    <label for="id_districts_75_0" class="form-check-label">
+                                      1er
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_1" class="form-check-input" name="districts_75" type="checkbox" value="75002">
+                                    <label for="id_districts_75_1" class="form-check-label">
+                                      2e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_2" class="form-check-input" name="districts_75" type="checkbox" value="75003">
+                                    <label for="id_districts_75_2" class="form-check-label">
+                                      3e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_3" class="form-check-input" name="districts_75" type="checkbox" value="75004">
+                                    <label for="id_districts_75_3" class="form-check-label">
+                                      4e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_4" class="form-check-input" name="districts_75" type="checkbox" value="75005">
+                                    <label for="id_districts_75_4" class="form-check-label">
+                                      5e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_5" class="form-check-input" name="districts_75" type="checkbox" value="75008">
+                                    <label for="id_districts_75_5" class="form-check-label">
+                                      8e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_6" class="form-check-input" name="districts_75" type="checkbox" value="75009">
+                                    <label for="id_districts_75_6" class="form-check-label">
+                                      9e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_7" class="form-check-input" name="districts_75" type="checkbox" value="75010">
+                                    <label for="id_districts_75_7" class="form-check-label">
+                                      10e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_8" class="form-check-input" name="districts_75" type="checkbox" value="75011">
+                                    <label for="id_districts_75_8" class="form-check-label">
+                                      11e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_9" class="form-check-input" name="districts_75" type="checkbox" value="75012">
+                                    <label for="id_districts_75_9" class="form-check-label">
+                                      12e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_10" class="form-check-input" name="districts_75" type="checkbox" value="75013">
+                                    <label for="id_districts_75_10" class="form-check-label">
+                                      13e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_11" class="form-check-input" name="districts_75" type="checkbox" value="75014">
+                                    <label for="id_districts_75_11" class="form-check-label">
+                                      14e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_12" class="form-check-input" name="districts_75" type="checkbox" value="75015">
+                                    <label for="id_districts_75_12" class="form-check-label">
+                                      15e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_13" class="form-check-input" name="districts_75" type="checkbox" value="75016">
+                                    <label for="id_districts_75_13" class="form-check-label">
+                                      16e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_14" class="form-check-input" name="districts_75" type="checkbox" value="75017">
+                                    <label for="id_districts_75_14" class="form-check-label">
+                                      17e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_15" class="form-check-input" name="districts_75" type="checkbox" value="75018">
+                                    <label for="id_districts_75_15" class="form-check-label">
+                                      18e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_16" class="form-check-input" name="districts_75" type="checkbox" value="75019">
+                                    <label for="id_districts_75_16" class="form-check-label">
+                                      19e
+                                    </label>
+                                  </div>
+                                </li>
+
+                                <li class="dropdown-item">
+                                  <div class="form-check">
+                                    <input id="id_districts_75_17" class="form-check-input" name="districts_75" type="checkbox" value="75020">
+                                    <label for="id_districts_75_17" class="form-check-label">
+                                      20e
+                                    </label>
+                                  </div>
+                                </li>
+
+                              </ul>
+                            </div>
+
+
+                          </div>
+
+                          <div class="ms-lg-auto">
+                            <a href="/search/employers/results?city=paris-75" class="btn btn-ico btn-dropdown-filter" aria-label="Réinitialiser les filtres actifs">
+                              <i class="ri-eraser-line fw-bold" aria-hidden="true"></i>
+                              <span>Effacer tout</span>
+                            </a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+
+
+
+                    <div id="job-search-top">
+
+                      <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between mb-3 mb-md-4">
+                        <p class="mb-0">
+                          <strong>598 résultats</strong>
+                        </p>
+                        <div class="d-lg-flex">
+
+                          <div>
+                            <button class="btn btn-ico btn-link text-nowrap" data-bs-toggle="modal" data-bs-target="#companiesSortingTipModal">
+                              <i class="ri-information-line fw-medium" aria-hidden="true"></i>
+                              <span>Comment sont triés ces résultats ?</span>
+                            </button>
+                            <div class="modal fade" id="companiesSortingTipModal" tabindex="-1" aria-labelledby="companiesSortingTipModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h3 class="modal-title" id="companiesSortingTipModalLabel">Comment sont triés ces résultats ?</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p class="fw-bold">Pour les résultats d’employeurs inclusifs, l’ordre de priorité est le suivant&nbsp;:</p>
+                                    <ol>
+                                      <li>
+                                        Les employeurs actifs (c’est à dire les structures qui ont des membres inscrits) qui ont moins de candidatures par rapport au nombre de postes ouverts au recrutement
+                                      </li>
+                                      <li>Les employeurs actifs ayant des postes ouverts au recrutement</li>
+                                      <li>Les employeurs actifs ayant publié des fiches de postes</li>
+                                      <li>Les employeurs actifs ayant bloqué la réception des candidatures</li>
+                                      <li>Les employeurs inactifs (sans membres actifs)</li>
+                                    </ol>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">J’ai compris</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <form action="/search/employers/results" class="submit-on-change">
+                            <div class="w-lg-400px"><label class="visually-hidden" for="id_company">Nom de la structure</label><select name="company" lang="fr" data-minimum-input-length="0" data-theme="bootstrap-5" data-allow-clear="true" data-placeholder="Nom de la structure" class="form-select django-select2 select2-hidden-accessible" id="id_company" data-select2-id="id_company" tabindex="-1" aria-hidden="true">
+                                <option value="" selected="" data-select2-id="4"></option>
+
+                                <option value="10886">#parisestmarne&amp;bois</option>
+
+                                <option value="10686">(EI) Régie de Quartiers de Nanterre - 4 Allée Descartes</option>
+
+                                <option value="11849">10MentionWeb Formation</option>
+
+                                <option value="4085">78 - NOUVELLE ATTITUDE (SAINT GERMAIN EN LAYE)</option>
+
+                                <option value="11977">94 - NOUVELLE ATTITUDE CRETEIL</option>
+
+                                <option value="3820">962721</option>
+
+                                <option value="11734">A p aips</option>
+
+                                <option value="4123">ACI</option>
+
+                                <option value="7295">ACI - CDVolley92</option>
+
+                                <option value="10272">ACI - LES BRIGADES VERTES</option>
+
+                                <option value="9368">ACI Ecole des Gardiens d'immeuble</option>
+
+
+                              </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="3" style="width: 400px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-id_company-container"><span class="select2-selection__rendered" id="select2-id_company-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Nom de la structure</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                            <input type="hidden" name="city" value="paris-75">
+                            <input type="hidden" name="distance" value="25">
+                          </form>
+
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div id="job-search-results">
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                ACI - Atelier chantier d'insertion
+
+                                <small>&nbsp;(Regie De Quartiers Nord Blanc Mesnil)</small>
+                              </span>
+
+                              <h3>Régie de quartier du Blanc-Mesnil - ACI</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">12,6&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">11 Allee Pierre de Montereau, 11 13, 93150 Le Blanc-Mesnil</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/4547/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/4547/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif Régie de quartier du Blanc-Mesnil - ACI">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/34996/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Repasseur / Repasseuse</a>
+
+                                <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">
+                                  <i class="ri-group-line me-1" aria-hidden="true"></i>
+                                  20+<span class="ms-1">candidatures</span>
+                                </span>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Le Blanc-Mesnil (93)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                ACI - Atelier chantier d'insertion
+
+                                <small>&nbsp;(Poles Iae)</small>
+                              </span>
+
+                              <h3>PoleS IAE - ACI GONESSE</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">17,0&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">3 SQUARE DES SPORTS, 95500 GONESSE</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/6198/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/6198/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif PoleS IAE - ACI GONESSE">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/18402/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Développeur / Développeuse Web Web mobile</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Gonesse (95)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                ETTI - Entreprise de travail temporaire d'insertion
+
+
+                              </span>
+
+                              <h3>Stabilis</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">11,7&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">8-10 Boulevard Edmond Rostand, 92500 Rueil-Malmaison</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/3461/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/3461/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif Stabilis">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/25880/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Agent / Agente de nettoiement d'espace urbain</a>
+
+                                <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">
+                                  <i class="ri-group-line me-1" aria-hidden="true"></i>
+                                  20+<span class="ms-1">candidatures</span>
+                                </span>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Rueil-Malmaison - 92
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/25926/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Manœuvre bâtiment</a>
+
+                                <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">
+                                  <i class="ri-group-line me-1" aria-hidden="true"></i>
+                                  20+<span class="ms-1">candidatures</span>
+                                </span>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Rueil-Malmaison - 92
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/25928/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Manœuvre gros œuvre</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Rueil-Malmaison - 92
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                          <ul class="list-group list-group-flush list-group-link collapse" id="collapseMoreJobs_3461">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/25929/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Aide-maçon / Aide-maçonne</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Rueil-Malmaison - 92
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/25930/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">AIDE ELECTRICIEN </a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Rueil-Malmaison - 92
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/25932/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">AGENT /AGENTE D'ENTRETIEN ET NETTOYAGE CHANTIER -CANTONNEMENT</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Rueil-Malmaison - 92
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+                        <div class="c-box--results__footer">
+                          <button class="btn btn-link has-collapse-caret btn-block" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapseMoreJobs_3461" aria-expanded="false" aria-controls="collapseMoreJobs_3461" aria-label="Voir ou masquer les autres métiers">
+                            les 3 autres métiers
+                          </button>
+                        </div>
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                EI - Entreprise d'insertion
+
+                                <small>&nbsp;(Sarl Cana Event)</small>
+                              </span>
+
+                              <h3>La Table de Cana de Gennevilliers (C-EVENT SARL)</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">7,2&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">9E, rue de la Sablière, 92230 GENNEVILLIERS</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/4083/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+
+
+
+
+                        <div class="c-box--results__footer">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/4083/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif La Table de Cana de Gennevilliers (C-EVENT SARL)">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                ACI - Atelier chantier d'insertion
+
+
+                              </span>
+
+                              <h3>Assoc paris cocagne</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">18,0&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">4 rue des arpentis, 91430 Vauhallan</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/4098/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/4098/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif Assoc paris cocagne">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/28080/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">OUVRIER(E) POLYVALENT(E) EN MARAICHAGE BIOLOGIQUE</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Vauhallan (91)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                EI - Entreprise d'insertion
+
+
+                              </span>
+
+                              <h3>Serviaplus</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">24,0&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">16 Rue Paul Henri Spaak, 77400 Saint-Thibault-des-Vignes</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/4634/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/4634/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif Serviaplus">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/27203/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Agent de médiation </a>
+
+                                <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">
+                                  <i class="ri-group-line me-1" aria-hidden="true"></i>
+                                  20+<span class="ms-1">candidatures</span>
+                                </span>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Saint-Thibault-Des-Vignes - 77
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+                          <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3">
+                            <div class="c-box--results__summary flex-grow-1">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <div>
+
+                                <span>
+                                  EA - Entreprise adaptée
+
+
+                                </span>
+
+                                <h3>DSI ILE DE FRANCE</h3>
+                              </div>
+                            </div>
+
+                            <div>
+                              <span class="badge badge-sm rounded-pill bg-accent-01-lightest text-accent-01">Priorité aux bénéficiaires de la RQTH</span>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">20,3&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">50 AVENUE DE GROSBOIS, 94440 MAROLLES EN BRIE</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/6187/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/6187/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif DSI ILE DE FRANCE">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/75403/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Chargé de recrutement (H/F)</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Marolles-en-Brie (94)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                AI - Association intermédiaire
+
+                                <small>&nbsp;(Association Intermédiaire Chantiers-Yvelines)</small>
+                              </span>
+
+                              <h3>Chantiers-Yvelines - Vélizy-Villacoublay</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">14,8&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">25 avenue Louis Bréguet, 78140 Vélizy-Villacoublay</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/7308/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/7308/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif Chantiers-Yvelines - Vélizy-Villacoublay">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/7165/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Plonge en restauration scolaire</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Viroflay (78)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/7198/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Agent / Agente de service cantine dans les écoles et collèges</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Jouy-en-Josas (78)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/7201/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Plongeur / Plongeuse en cantine scolaire</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Vélizy-Villacoublay - 78
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                          <ul class="list-group list-group-flush list-group-link collapse" id="collapseMoreJobs_7308">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/7203/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Agent / Agente d'entretien des espaces verts</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Vélizy-Villacoublay - 78
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/21592/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Aide ménager / ménagère à domicile</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Vélizy-Villacoublay - 78
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/21593/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Manutentionnaire</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Vélizy-Villacoublay - 78
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/30368/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Assistance auprès d'enfants</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Jouy-en-Josas (78)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/31643/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Auxiliaire de puériculture</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Jouy-en-Josas (78)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/31644/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Cuisinier(e)/linger(e)</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Vélizy-Villacoublay - 78
+
+                                </p>
+                              </div>
+                            </li>
+
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/38255/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Manutentionnaire polyvalent des espaces verts</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Vélizy-Villacoublay (78)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+                        <div class="c-box--results__footer">
+                          <button class="btn btn-link has-collapse-caret btn-block" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapseMoreJobs_7308" aria-expanded="false" aria-controls="collapseMoreJobs_7308" aria-label="Voir ou masquer les autres métiers">
+                            les 7 autres métiers
+                          </button>
+                        </div>
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+                          <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3">
+                            <div class="c-box--results__summary flex-grow-1">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <div>
+
+                                <span>
+                                  EA - Entreprise adaptée
+
+
+                                </span>
+
+                                <h3>Yumaincap</h3>
+                              </div>
+                            </div>
+
+                            <div>
+                              <span class="badge badge-sm rounded-pill bg-accent-01-lightest text-accent-01">Priorité aux bénéficiaires de la RQTH</span>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">21,0&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">15 Avenue de Norvège, 91140 Villebon-sur-Yvette</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/9172/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+                        <div class="c-box--results__body">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/9172/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif Yumaincap">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+                        <div class="c-box--results__body">
+                          <ul class="list-group list-group-flush list-group-link">
+
+
+
+                            <li class="list-group-item list-group-item-action">
+                              <div>
+                                <a href="https://emplois.inclusion.beta.gouv.fr/company/job_description/70096/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="fw-bold text-decoration-none stretched-link" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-metiers">Chargé de recrutement F/H</a>
+
+                                <p class="fs-sm mb-0 mt-1">
+                                  <i class="ri-map-pin-2-line ri-sm" aria-hidden="true"></i>
+
+                                  Villebon-sur-Yvette (91)
+
+                                </p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+
+
+
+
+
+                      </div>
+
+
+
+
+
+
+
+
+                      <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
+                        <div class="c-box--results__header">
+
+                          <div class="c-box--results__summary">
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            <div>
+
+                              <span>
+                                EI - Entreprise d'insertion
+
+
+                              </span>
+
+                              <h3>APPEL PAYSAGE</h3>
+                            </div>
+                          </div>
+
+                          <div class="d-flex flex-column flex-md-row gap-2 align-items-md-end gap-md-3">
+                            <ul class="c-box--results__list-contact flex-md-grow-1 mt-2 mb-2 mb-md-0">
+                              <li>
+                                <i class="ri-navigation-line fw-normal me-1"></i>
+                                à <strong class="text-info mx-1">16,3&nbsp;km</strong> de votre lieu de recherche
+
+                              </li>
+                              <li>
+                                <i class="ri-map-pin-2-line fw-normal me-1"></i>
+                                <address class="m-0">14 Avenue de l’Europe, ZA LES TISSONVILLIERS III, 95400 Villiers-le-Bel</address>
+                              </li>
+                            </ul>
+                            <div>
+                              <a href="/company/9547/card?back_url=/search/employers/results%3Fcity%3Dparis-75%26city_name%3DParis%2B%252875%2529%26distance%3D25" class="btn btn-outline-primary btn-block w-100 w-md-auto white-space-nowrap" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="clic-structure">Voir la fiche de l'entreprise</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr class="m-0">
+
+
+
+
+
+
+                        <div class="c-box--results__footer">
+                          <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <p class="mb-3 mb-md-0">Cette structure vous intéresse ?</p>
+                            <a class="btn btn-ico btn-primary" href="/apply/9547/start" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="start_application" aria-label="Postuler auprès de l'employeur inclusif APPEL PAYSAGE">
+                              <i class="ri ri-draft-line" aria-hidden="true"></i>
+                              <span>Postuler</span>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+
+
+
+
+                      <nav role="navigation" aria-label="Pagination" hx-boost="true" hx-target="#job-search-results" hx-indicator="#job-search-results">
+
+                        <ul class="pagination flex-wrap justify-content-center">
+
+
+                          <li class="page-item disabled">
+                            <a class="page-link" aria-disabled="true" tabindex="-1" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=1">Premier</a>
+                          </li>
+
+
+
+
+
+                          <li class="page-item active">
+                            <a class="page-link" aria-label="Page 1" aria-current="page" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=1">1</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 2" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=2">2</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 3" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=3">3</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 4" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=4">4</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 5" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=5">5</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 6" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=6">6</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 7" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=7">7</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 8" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=8">8</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 9" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=9">9</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 10" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=10">10</a>
+                          </li>
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Page 11" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=11">11</a>
+                          </li>
+
+
+
+
+                          <li class="page-item">
+                            <a class="page-link" href="/search/employers/results?city=paris-75&amp;city_name=Paris+%2875%29&amp;distance=25&amp;page=60">Dernier</a>
+                          </li>
+
+                        </ul>
+                      </nav>
+
+
+
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    {{> _partials/footer }}
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/index.js"></script>
+  </body>
+
+</html>

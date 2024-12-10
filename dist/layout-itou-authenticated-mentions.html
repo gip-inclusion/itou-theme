@@ -20,10 +20,11 @@
     <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
 
-    <link rel="shortcut icon" href="images/favico.ico" type="image/ico">
-    <link rel="stylesheet" href="stylesheets/app.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
 
     <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
   </head>
 
   <body id="top" class="l-authenticated">
@@ -35,426 +36,424 @@
     </nav>
 
     <header role="banner" id="header">
-  <section class="s-header-print">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-auto d-flex align-items-center py-2">
-          <img src="images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+      <section class="s-header-print">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto d-flex align-items-center py-2">
+              <img src="./images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="./images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+            </div>
+            <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
+          </div>
         </div>
-        <div class="col d-flex align-items-center">
-          <img src="images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+      </section>
+      <section class="s-header-authenticated">
+        <div class="s-header-authenticated__container container">
+          <div class="s-header-authenticated__row row">
+            <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
+              <a href=""><img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
+              <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+                <ul>
+                  <li class="dropdown">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                      <i class="ri-account-circle-line" aria-hidden="true"></i>
+                      <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item">
+                          <div class="d-flex align-items-center">
+                            <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                            <div class="flex-grow-1 ms-2 lh-sm">
+                              <span>Machin TRUC</span>
+                              <br>
+                              <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-divider"></div>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Tableau de bord</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Mes notifications</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="">Modifier mon profil</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">
+                          <button class="text-danger">Déconnexion</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="d-none d-lg-inline-block dropdown dropdown-structure">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI - Une nouvelle chance</span>
+                    </button>
+                    <div class="dropdown-menu w-100" id="switchUserDropdown">
+                      <form action="" method="post">
+                        <ul class="list-unstyled">
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EITI</span>
+                              <strong>Terre &amp; mer</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>ETTI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
+              <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+                <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+                <span>Menu</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
-      </div>
-    </div>
-  </section>
-  <section class="s-header-authenticated">
-    <div class="s-header-authenticated__container container">
-      <div class="s-header-authenticated__row row">
-        <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
-          <a href=""><img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+      </section>
+      <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+        <div class="offcanvas-header offcanvas-header--structure">
+          <div class="dropdown dropdown-structure flex-grow-1 py-4">
+            <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+              <i class="ri-community-line" aria-hidden="true"></i>
+              <span>ETTI</span>
+              <strong>Une nouvelle chance</strong>
+            </button>
+            <div class="dropdown-menu" id="switchUserDropdown">
+              <form method="post">
+                <ul class="list-unstyled">
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EITI</span>
+                      <strong>Terre &amp; mer</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                    </button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="border-start border-nuance-08 d-xl-none">
+            <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+              <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-        <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
-          <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
-            <ul>
-              <li class="dropdown">
-                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
-                  <i class="ri-account-circle-line" aria-hidden="true"></i>
-                  <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+        <div class="offcanvas-body d-flex flex-column">
+          <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link active">
+                  <i class="ri-home-line fw-medium" aria-hidden="true"></i>
+                  <span>Accueil</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
+                  <span>Candidatures</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
+                  <i class="ri-team-line fw-medium" aria-hidden="true"></i>
+                  <span>Salariés</span>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
-                  <ul class="list-unstyled">
-                    <li class="dropdown-item">
-                      <div class="d-flex align-items-center">
-                        <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
-                        <div class="flex-grow-1 ms-2 lh-sm">
-                          <span>Machin TRUC</span>
-                          <br>
-                          <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
-                        </div>
-                      </div>
+                <div class="collapse" id="collapseNavSalaries">
+                  <ul>
+                    <li>
+                      <a href="">Salariés et PASS IAE</a>
                     </li>
                     <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Tableau de bord</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="">Mes notifications</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li>
-                      <a class="dropdown-item" href="">Modifier mon profil</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li>
-                      <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li class="dropdown-item">
-                      <button class="text-danger">Déconnexion</button>
+                      <a href="" class="active">Fiches salariés ASP</a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="d-none d-lg-inline-block dropdown dropdown-structure">
-                <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>ETTI - Une nouvelle chance</span>
+              <li class="nav-item">
+                <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
+                  <i class="ri-community-line fw-medium" aria-hidden="true"></i>
+                  <span>Structure</span>
                 </button>
-                <div class="dropdown-menu w-100" id="switchUserDropdown">
-                  <form action="" method="post">
-                    <ul class="list-unstyled">
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>EITI</span>
-                          <strong>Terre &amp; mer</strong>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
-                          <i class="ri-community-line" aria-hidden="true"></i>
-                          <span>ETTI</span>
-                          <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
-                        </button>
-                      </li>
-                    </ul>
-                  </form>
+                <div class="collapse" id="collapseNavStructure">
+                  <ul>
+                    <li>
+                      <a href="">Présentation</a>
+                    </li>
+                    <li>
+                      <a href="" class="active">Métiers et recrutements</a>
+                    </li>
+                    <li>
+                      <a href="">Collaborateurs</a>
+                    </li>
+                    <li>
+                      <a href="">Annexes financières</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
           </nav>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+              <i class="ri-account-circle-line" aria-hidden="true"></i>
+              <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+            </button>
+            <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+              <ul class="list-unstyled">
+                <li class="dropdown-item">
+                  <div class="d-flex align-items-center">
+                    <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                    <div class="flex-grow-1 ms-2 lh-sm w-75">
+                      <span>Machin TRUC</span>
+                      <br>
+                      <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Tableau de bord</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Mes notifications</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="">Modifier mon profil</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <button class="text-danger">Déconnexion</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+            <div class="dropdown-menu" id="helpDropdownMobile">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
-          <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
-            <i class="ri-menu-line" id="open" aria-hidden="true"></i>
-            <span>Menu</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
-    <div class="offcanvas-header offcanvas-header--structure">
-      <div class="dropdown dropdown-structure flex-grow-1 py-4">
-        <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
-          <i class="ri-community-line" aria-hidden="true"></i>
-          <span>ETTI</span>
-          <strong>Une nouvelle chance</strong>
-        </button>
-        <div class="dropdown-menu" id="switchUserDropdown">
-          <form method="post">
-            <ul class="list-unstyled">
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>EITI</span>
-                  <strong>Terre &amp; mer</strong>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
-                  <i class="ri-community-line" aria-hidden="true"></i>
-                  <span>ETTI</span>
-                  <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
-                </button>
-              </li>
+        <div class="offcanvas-footer flex-column align-items-stretch">
+          <div class="offcanvas-footer__legal">
+            <div class="d-none d-xl-block">
+              <img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
+            </div>
+            <ul>
+              <li><a href="">Accessibilité : partiellement conforme</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">CGU</a></li>
             </ul>
-          </form>
+          </div>
         </div>
       </div>
-      <div class="border-start border-nuance-08 d-xl-none">
-        <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
-          <i class="ri-close-line" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="offcanvas-body d-flex flex-column">
-      <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
-        <ul class="nav nav-tabs flex-column">
-          <li class="nav-item">
-            <a href="" class="nav-link active">
-              <i class="ri-home-line fw-medium" aria-hidden="true"></i>
-              <span>Accueil</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
-              <span>Candidatures</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
-              <i class="ri-team-line fw-medium" aria-hidden="true"></i>
-              <span>Salariés</span>
-            </button>
-            <div class="collapse" id="collapseNavSalaries">
-              <ul>
-                <li>
-                  <a href="">Salariés et PASS IAE</a>
-                </li>
-                <li>
-                  <a href="" class="active">Fiches salariés ASP</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
-              <i class="ri-community-line fw-medium" aria-hidden="true"></i>
-              <span>Structure</span>
-            </button>
-            <div class="collapse" id="collapseNavStructure">
-              <ul>
-                <li>
-                  <a href="">Présentation</a>
-                </li>
-                <li>
-                  <a href="" class="active">Métiers et recrutements</a>
-                </li>
-                <li>
-                  <a href="">Collaborateurs</a>
-                </li>
-                <li>
-                  <a href="">Annexes financières</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="dropup dropup-center">
-        <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
-          <i class="ri-account-circle-line" aria-hidden="true"></i>
-          <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
-        </button>
-        <div class="dropdown-menu" id="dashboardUserDropdownMobile">
-          <ul class="list-unstyled">
-            <li class="dropdown-item">
-              <div class="d-flex align-items-center">
-                <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
-                <div class="flex-grow-1 ms-2 lh-sm w-75">
-                  <span>Machin TRUC</span>
-                  <br>
-                  <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
-                </div>
+    </header>
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-prevstep">
+                <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+                  <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+                  <span>Retour</span>
+                </a>
               </div>
-            </li>
-            <li>
-              <div class="dropdown-divider"></div>
-            </li>
-            <li>
-              <a class="dropdown-item" href="">Tableau de bord</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="">Mes notifications</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item" href="">Modifier mon profil</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
-            </li>
-            <li class="dropdown-divider"></li>
-            <li class="dropdown-item">
-              <button class="text-danger">Déconnexion</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="dropup dropup-center">
-        <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
-        <div class="dropdown-menu" id="helpDropdownMobile">
-          <ul class="list-unstyled">
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
-            </li>
-            <li>
-              <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="offcanvas-footer flex-column align-items-stretch">
-      <div class="offcanvas-footer__legal">
-        <div class="d-none d-xl-block">
-          <img src="images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
-        </div>
-        <ul>
-          <li><a href="">Accessibilité : partiellement conforme</a></li>
-          <li><a href="">Mentions légales</a></li>
-          <li><a href="">CGU</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-      <main class="s-main" role="main">
-
-        <section class="s-title-02">
-          <div class="s-title-02__container container">
-            <div class="s-title-02__row row">
-              <div class="s-title-02__col col-12">
-                <div class="c-prevstep">
-                  <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
-                    <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
-                    <span>Retour</span>
-                  </a>
-                </div>
-                <h1>
-                  Mentions légales
-                </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eligendi consectetur nostrum obcaecati quaerat voluptatum odit, quasi magni aspernatur praesentium laborum sapiente? Qui quidem error enim aliquam! Eveniet, illum aperiam..</p>
-              </div>
+              <h1>
+                Mentions légales
+              </h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eligendi consectetur nostrum obcaecati quaerat voluptatum odit, quasi magni aspernatur praesentium laborum sapiente? Qui quidem error enim aliquam! Eveniet, illum aperiam..</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="s-section">
-          <div class="s-section__container container">
-            <div class="s-section__row row">
-              <article class="s-section__col col-12">
-                <h2 id="éditeur">Éditeur</h2>
-                <p>Le site «&nbsp;Les emplois de l’inclusion&nbsp;» est édité par&nbsp;:</p>
-                <address>
-                  Le Groupement d’Intérêt Public «&nbsp;Plateforme de l’inclusion&nbsp;»
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <article class="s-section__col col-12">
+              <h2 id="éditeur">Éditeur</h2>
+              <p>Le site «&nbsp;Les emplois de l’inclusion&nbsp;» est édité par&nbsp;:</p>
+              <address>
+                Le Groupement d’Intérêt Public «&nbsp;Plateforme de l’inclusion&nbsp;»
+                <br>
+                127 Rue de Grenelle
+                <br>
+                75007 Paris
+              </address>
+
+              <h2 id="directeur-de-la-publication" class="mt-3 mt-lg-5">Directeur de la publication</h2>
+              <p>Le Directeur de la publication est Monsieur Arnaud Denoix.</p>
+
+              <h2 id="hébergement-des-emplois-de-linclusion">Hébergement des emplois de l'inclusion</h2>
+              <p>Ce site est hébergé par&nbsp;:</p>
+              <address>
+                Clever Cloud SAS
+                <br>
+                5, passage de l’industrie
+                <br>
+                92130 Issy-Les-Moulineaux
+                <br>
+                France
+              </address>
+
+              <h2 id="accessibilité" class="mt-3 mt-lg-5">Accessibilité</h2>
+              <p>
+                La conformité aux normes d’accessibilité numérique est un objectif ultérieur mais nous tâchons de rendre ce site accessible à toutes et à tous.
+              </p>
+              <h3 id="en-savoir-plus">En savoir plus</h3>
+              <p>
+                Pour en savoir plus sur la politique d’accessibilité numérique de l’Etat, voir le lien suivant&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">https://www.numerique.gouv.fr/publications/rgaa-accessibilite/</a>
+              </p>
+
+
+              <h2 id="signaler-un-dysfonctionnement" class="mt-3 mt-lg-5">Signaler un dysfonctionnement</h2>
+              <p>
+                Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou à une fonctionnalité du site, merci de nous en faire part ici&nbsp;: <a href="https://aide.emplois.inclusion.beta.gouv.fr/hc/fr">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr</a>
+              </p>
+              <p>
+                Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
+              </p>
+              <p>Pour le joindre, vous pouvez&nbsp;:</p>
+              <ul>
+                <li>
+                  Utiliser le formulaire de contact en ligne ici&nbsp;: <a href="https://formulaire.defenseurdesdroits.fr/code/afficher.php?ETAPE=accueil_2016">https://formulaire.defenseurdesdroits.fr/code/afficher.php?ETAPE=accueil_2016</a>&nbsp;;
+                </li>
+                <li>
+                  Composer le <a href="tel:+33969390000">09 69 39 00 00</a> (du lundi au vendredi de 8h à 20h)&nbsp;;
+                </li>
+                <li>
+                  Envoyer un courrier (sans timbre) à l’adresse suivante&nbsp;:
                   <br>
-                  127 Rue de Grenelle
-                  <br>
-                  75007 Paris
-                </address>
-
-                <h2 id="directeur-de-la-publication" class="mt-3 mt-lg-5">Directeur de la publication</h2>
-                <p>Le Directeur de la publication est Monsieur Arnaud Denoix.</p>
-
-                <h2 id="hébergement-des-emplois-de-linclusion">Hébergement des emplois de l'inclusion</h2>
-                <p>Ce site est hébergé par&nbsp;:</p>
-                <address>
-                  Clever Cloud SAS
-                  <br>
-                  5, passage de l’industrie
-                  <br>
-                  92130 Issy-Les-Moulineaux
-                  <br>
-                  France
-                </address>
-
-                <h2 id="accessibilité" class="mt-3 mt-lg-5">Accessibilité</h2>
-                <p>
-                  La conformité aux normes d’accessibilité numérique est un objectif ultérieur mais nous tâchons de rendre ce site accessible à toutes et à tous.
-                </p>
-                <h3 id="en-savoir-plus">En savoir plus</h3>
-                <p>
-                  Pour en savoir plus sur la politique d’accessibilité numérique de l’Etat, voir le lien suivant&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">https://www.numerique.gouv.fr/publications/rgaa-accessibilite/</a>
-                </p>
-
-
-                <h2 id="signaler-un-dysfonctionnement" class="mt-3 mt-lg-5">Signaler un dysfonctionnement</h2>
-                <p>
-                  Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou à une fonctionnalité du site, merci de nous en faire part ici&nbsp;: <a href="https://aide.emplois.inclusion.beta.gouv.fr/hc/fr">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr</a>
-                </p>
-                <p>
-                  Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
-                </p>
-                <p>Pour le joindre, vous pouvez&nbsp;:</p>
-                <ul>
-                  <li>
-                    Utiliser le formulaire de contact en ligne ici&nbsp;: <a href="https://formulaire.defenseurdesdroits.fr/code/afficher.php?ETAPE=accueil_2016">https://formulaire.defenseurdesdroits.fr/code/afficher.php?ETAPE=accueil_2016</a>&nbsp;;
-                  </li>
-                  <li>
-                    Composer le <a href="tel:+33969390000">09 69 39 00 00</a> (du lundi au vendredi de 8h à 20h)&nbsp;;
-                  </li>
-                  <li>
-                    Envoyer un courrier (sans timbre) à l’adresse suivante&nbsp;:
+                  <address>
+                    Défenseur des droits,
                     <br>
-                    <address>
-                      Défenseur des droits,
-                      <br>
-                      Libre réponse 71120,
-                      <br>
-                      75342 Paris CEDEX 07.
-                    </address>
-                  </li>
-                </ul>
-                <p>
-                  Pour en savoir plus sur la politique d’accessibilité numérique de l’État :&nbsp;<a href="https://accessibilite.numerique.gouv.fr/">https://accessibilite.numerique.gouv.fr/</a>
-                </p>
+                    Libre réponse 71120,
+                    <br>
+                    75342 Paris CEDEX 07.
+                  </address>
+                </li>
+              </ul>
+              <p>
+                Pour en savoir plus sur la politique d’accessibilité numérique de l’État :&nbsp;<a href="https://accessibilite.numerique.gouv.fr/">https://accessibilite.numerique.gouv.fr/</a>
+              </p>
 
-                <h2 id="sécurité" class="mt-3 mt-lg-5">Sécurité</h2>
-                <p>
-                  Le site est protégé par un certificat électronique, matérialisé pour la grande majorité des navigateurs par un cadenas. Cette protection participe à la confidentialité des échanges.
-                  <br>
-                  En aucun cas les services associés à la plateforme ne seront à l’origine d’envoi de courriels pour demander la saisie d’informations personnelles.
-                </p>
-                <p>
-                  En aucun cas les services associés à la plateforme de l’inclusion ne seront à l’origine d’envoi de courriels pour demander la saisie de vos informations personnelles.
-                </p>
-              </article>
-            </div>
+              <h2 id="sécurité" class="mt-3 mt-lg-5">Sécurité</h2>
+              <p>
+                Le site est protégé par un certificat électronique, matérialisé pour la grande majorité des navigateurs par un cadenas. Cette protection participe à la confidentialité des échanges.
+                <br>
+                En aucun cas les services associés à la plateforme ne seront à l’origine d’envoi de courriels pour demander la saisie d’informations personnelles.
+              </p>
+              <p>
+                En aucun cas les services associés à la plateforme de l’inclusion ne seront à l’origine d’envoi de courriels pour demander la saisie de vos informations personnelles.
+              </p>
+            </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </main>
+    </main>
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-      <script src="javascripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 
 </html>

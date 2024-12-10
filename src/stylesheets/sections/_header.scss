@@ -152,6 +152,7 @@
 
   .offcanvas-header {
     position: relative;
+    justify-content: space-between;
 
     i {
       font-size: 1.25rem;
@@ -162,7 +163,6 @@
       @extend .align-items-stretch;
 
       button.dropdown-toggle {
-
         > *,
         &::after {
           z-index: 0;
@@ -179,7 +179,7 @@
         }
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           bottom: 0;
@@ -215,7 +215,7 @@
       }
 
       &.has-collapse-caret {
-        &[aria-expanded='true'] {
+        &[aria-expanded="true"] {
           font-weight: $font-weight-bold;
         }
 
@@ -275,7 +275,7 @@
           line-height: 1;
           @extend .text-decoration-none;
 
-          &[target='_blank'] {
+          &[target="_blank"] {
             @extend .has-external-link;
           }
         }

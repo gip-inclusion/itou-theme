@@ -10,11 +10,11 @@
   vertical-align: middle;
   min-width: 200px;
 
-  @import 'select2-4.0.13/single';
-  @import 'select2-4.0.13/multiple';
+  @import "select2-4.0.13/single";
+  @import "select2-4.0.13/multiple";
 }
 
-@import 'select2-4.0.13/dropdown';
+@import "select2-4.0.13/dropdown";
 
 .select2-close-mask {
   border: 0;
@@ -50,19 +50,19 @@
   white-space: nowrap !important;
 }
 
-@import 'select2-4.0.13/theme/default/layout';
-@import 'select2-4.0.13/theme/classic/layout';
+@import "select2-4.0.13/theme/default/layout";
+@import "select2-4.0.13/theme/classic/layout";
 
 /*!
  * Select2 v4 Bootstrap 5 theme v1.3.0
 */
-@import 'select2-bootstrap-5-theme/variables';
+@import "select2-bootstrap-5-theme/variables";
 
-@import 'select2-bootstrap-5-theme/layout';
-@import 'select2-bootstrap-5-theme/dropdown';
-@import 'select2-bootstrap-5-theme/single';
-@import 'select2-bootstrap-5-theme/multiple';
-@import 'select2-bootstrap-5-theme/disabled';
-@import 'select2-bootstrap-5-theme/input-group';
-@import 'select2-bootstrap-5-theme/validation';
-@import 'select2-bootstrap-5-theme/sizing';
+@import "select2-bootstrap-5-theme/layout";
+@import "select2-bootstrap-5-theme/dropdown";
+@import "select2-bootstrap-5-theme/single";
+@import "select2-bootstrap-5-theme/multiple";
+@import "select2-bootstrap-5-theme/disabled";
+@import "select2-bootstrap-5-theme/input-group";
+@import "select2-bootstrap-5-theme/validation";
+@import "select2-bootstrap-5-theme/sizing";
