@@ -23,6 +23,12 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
 
     <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+
+    <style>
+      .c-box--action-tooltip {
+        margin-bottom: 24px !important;
+      }
+    </style>
     <script type="module" crossorigin src="./javascripts/app.js"></script>
     <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
   </head>
@@ -396,7 +402,7 @@
               <div class="c-box c-box--action">
                 <div class="form-row align-items-center gx-3">
                   <div class="form-group col-12 col-lg-auto">
-                    <a href="" class="btn btn-lg btn-white btn-block btn-ico">
+                    <a href="" class="btn btn-lg btn-white btn-block btn-ico" data-bs-trigger="focus"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="c-box--action-tooltip" data-bs-title="Seules les candidatures au statut Nouvelle et A l’étude peuvent être mises en liste d’attente.">
                       <i class="ri-check-line fw-medium" aria-hidden="true"></i>
                       <span>Accepter</span>
                     </a>
@@ -483,6 +489,7 @@
           <div class="s-section__row row">
             <div class="s-section__col col-12">
               <h3>Base section content</h3>
+              <p>Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>
               <p><span class="fst-italic">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
               <p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
