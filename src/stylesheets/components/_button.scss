@@ -14,8 +14,8 @@ select:disabled {
   pointer-events: none;
 }
 
-.btn[data-bs-toggle='tooltip']:disabled,
-.btn[data-bs-toggle='tooltip'].disabled {
+.btn[data-bs-toggle="tooltip"]:disabled,
+.btn[data-bs-toggle="tooltip"].disabled {
   pointer-events: initial !important;
 }
 
@@ -61,7 +61,7 @@ select:disabled {
     &.btn-ico {
       text-decoration: none;
 
-      span:not([class^='badge-']) {
+      span:not([class^="badge-"]) {
         text-decoration: underline;
       }
     }
@@ -135,7 +135,7 @@ select:disabled {
     &.btn-ico {
       text-decoration: none;
 
-      span:not([class^='badge-']) {
+      span:not([class^="badge-"]) {
         text-decoration: underline;
       }
     }
@@ -143,7 +143,7 @@ select:disabled {
 
   &.disabled,
   &:disabled {
-    color: $disabled-color-light !important;
+    color: $disabled-color !important;
   }
 }
 
@@ -206,7 +206,7 @@ select:disabled {
   justify-content: center;
   min-height: $input-height;
 
-  > [class^='ri-'] {
+  > [class^="ri-"] {
     font-weight: $font-weight-medium;
     @extend .ri-1x;
   }
@@ -214,7 +214,7 @@ select:disabled {
   &.btn-sm {
     min-height: $input-height-sm;
 
-    > [class^='ri-'] {
+    > [class^="ri-"] {
       font-weight: $font-weight-normal;
       @extend .ri-sm;
     }
@@ -223,7 +223,7 @@ select:disabled {
   &.btn-lg {
     min-height: $input-height-lg;
 
-    > [class^='ri-'] {
+    > [class^="ri-"] {
       font-weight: $font-weight-medium;
       @extend .ri-xxl;
     }
@@ -232,7 +232,7 @@ select:disabled {
   &.btn-xl {
     min-height: $input-height-xl;
 
-    > [class^='ri-'] {
+    > [class^="ri-"] {
       font-weight: $font-weight-medium;
       @extend .ri-xxl;
     }
@@ -263,7 +263,7 @@ select:disabled {
 .btn-like {
   i {
     position: relative;
-    font-family: 'remixicon' !important;
+    font-family: "remixicon" !important;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -277,7 +277,7 @@ select:disabled {
       z-index: 0;
       left: 0;
       opacity: 0;
-      content: '\ee0a';
+      content: "\ee0a";
     }
 
     &::after,
@@ -288,13 +288,13 @@ select:disabled {
 
   &:hover {
     i::before {
-      content: '\ee0a';
+      content: "\ee0a";
     }
   }
 
   &:focus {
     i::before {
-      content: '\ee0a';
+      content: "\ee0a";
     }
 
     i::after {
@@ -359,7 +359,7 @@ select:disabled {
   }
 
   &--diagoriente {
-    background-image: url('../images/logo-partner-diagoriente.svg');
+    background-image: url("../images/logo-partner-diagoriente.svg");
     background-repeat: no-repeat;
     background-position: top left 16px;
     padding: 6px 16px 8px 46px;
