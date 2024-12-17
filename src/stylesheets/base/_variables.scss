@@ -36,7 +36,7 @@ $grays: (
 $nuance-01: #1a1f4c;
 $nuance-02: #333860;
 $nuance-03: #4d5174;
-$nuance-04: #80829b;
+$nuance-04: #727492;
 $nuance-05: #999baf;
 $nuance-06: #b3b4c3;
 $nuance-07: #cccdd7;
@@ -501,9 +501,10 @@ $border-radius-2xl: $border-radius-xxl !default; // Deprecated in v5.3.0
 
 // scss-docs-start box-shadow-variables
 
-$box-shadow: 0 3px 8px 0 rgba($primary, 0.2);
 $box-shadow-sm: 0 3px 8px 0 rgba($primary, 0.1);
-$box-shadow-lg: 0 3px 16px 0 rgba($primary, 0.1);
+$box-shadow: 0 3px 8px 0 rgba($primary, 0.2);
+$box-shadow-lg: 0 3px 8px 0 rgba($primary, 0.3);
+
 $box-shadow-xl: 0 3px 16px 0 rgba($primary, 0.2);
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
 // scss-docs-end box-shadow-variables
@@ -1212,8 +1213,8 @@ $zindex-offcanvas-backdrop: 1040 !default;
 $zindex-offcanvas: 1045 !default;
 $zindex-modal-backdrop: 3040;
 $zindex-modal: 3050;
-$zindex-popover: 1050;
-$zindex-tooltip: 1050;
+$zindex-popover: 1010;
+$zindex-tooltip: 1010;
 $zindex-toast: 1070;
 // scss-docs-end zindex-stack
 
@@ -1480,17 +1481,17 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
 
 // scss-docs-start tooltip-variables
 $tooltip-font-size: $font-size-sm;
-$tooltip-max-width: 350px;
-$tooltip-color: var(--#{$prefix}body-bg);
-$tooltip-bg: var(--#{$prefix}emphasis-color);
+$tooltip-max-width: 344px;
+$tooltip-color: var(--#{$prefix}body-color);
+$tooltip-bg: var(--#{$prefix}body-bg);
 $tooltip-border-radius: var(--#{$prefix}border-radius);
 $tooltip-opacity: 1;
 $tooltip-padding-y: $spacer * 0.25;
 $tooltip-padding-x: $spacer * 0.5;
 $tooltip-margin: null !default; // TODO: remove this in v6
 
-$tooltip-arrow-width: 0.8rem !default;
-$tooltip-arrow-height: 0.4rem !default;
+$tooltip-arrow-width: 0.8rem;
+$tooltip-arrow-height: 0.4rem;
 // fusv-disable
 $tooltip-arrow-color: null !default; // Deprecated in Bootstrap 5.2.0 for CSS variables
 // fusv-enable
@@ -1509,7 +1510,7 @@ $form-feedback-tooltip-border-radius: $tooltip-border-radius !default;
 // Popovers
 
 // scss-docs-start popover-variables
-$popover-font-size: $font-size-base;
+$popover-font-size: $font-size-sm;
 $popover-bg: var(--#{$prefix}body-bg);
 $popover-max-width: 344px;
 $popover-border-width: var(--#{$prefix}border-width);
@@ -1519,17 +1520,17 @@ $popover-inner-border-radius: calc(#{$popover-border-radius} - #{$popover-border
 $popover-box-shadow: $box-shadow-sm;
 
 $popover-header-font-size: $font-size-base !default;
-$popover-header-bg: transparent;
+$popover-header-bg: var(--#{$prefix}light);
 $popover-header-color: $headings-color;
-$popover-header-padding-y: $spacer;
-$popover-header-padding-x: $spacer;
+$popover-header-padding-y: $spacer * 0.5;
+$popover-header-padding-x: $spacer * 0.75;
 
 $popover-body-color: var(--#{$prefix}body-color);
 $popover-body-padding-y: $popover-header-padding-y;
 $popover-body-padding-x: $popover-header-padding-x;
 
-$popover-arrow-width: 1rem;
-$popover-arrow-height: 0.5rem;
+$popover-arrow-width: 0.8rem;
+$popover-arrow-height: 0.4rem;
 // scss-docs-end popover-variables
 
 // fusv-disable
@@ -1550,11 +1551,11 @@ $toast-background-color: var(--#{$prefix}white);
 $toast-border-width: var(--#{$prefix}border-width);
 $toast-border-color: var(--#{$prefix}border-color);
 $toast-border-radius: var(--#{$prefix}border-radius);
-$toast-box-shadow: var(--#{$prefix}box-shadow-lg);
+$toast-box-shadow: var(--#{$prefix}box-shadow);
 $toast-spacing: $container-padding-x !default;
 
 $toast-header-color: var(--#{$prefix}body-color);
-$toast-header-background-color: var(--#{$prefix}border-color);
+$toast-header-background-color: var(--#{$prefix}light);
 $toast-header-border-color: transparent;
 // scss-docs-end toast-variables
 
