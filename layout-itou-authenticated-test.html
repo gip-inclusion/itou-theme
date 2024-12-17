@@ -26,7 +26,8 @@
 
     <style>
       .c-box--action-tooltip {
-        margin-bottom: 24px !important;
+        /* margin-bottom: 24px !important; */
+        z-index: 1050 !important;
       }
     </style>
     <script type="module" crossorigin src="./javascripts/app.js"></script>
@@ -381,7 +382,7 @@
                   <span>Retour</span>
                 </a>
               </div>
-              <h1>Title 01</h1>
+              <h1>Title 011</h1>
               <h2 class="h3">Nous transférons vos fiches salarié à l'ASP afin de vous faire gagner du temps</h2>
               <p>Une fois envoyées et validées, vous retrouverez directement vos données sur l'extranet de l'ASP.</p>
               <ul>
@@ -399,10 +400,11 @@
                 </p>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+
               <div class="c-box c-box--action">
                 <div class="form-row align-items-center gx-3">
                   <div class="form-group col-12 col-lg-auto">
-                    <a href="" class="btn btn-lg btn-white btn-block btn-ico" data-bs-trigger="focus"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="c-box--action-tooltip" data-bs-title="Seules les candidatures au statut Nouvelle et A l’étude peuvent être mises en liste d’attente.">
+                    <a href="" class="btn btn-lg btn-white btn-block btn-ico" data-bs-trigger="hover" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="c-box--action-tooltip" data-bs-title="Seules les candidatures au statut Nouvelle et A l’étude peuvent être mises en liste d’attente.">
                       <i class="ri-check-line fw-medium" aria-hidden="true"></i>
                       <span>Accepter</span>
                     </a>
@@ -687,6 +689,7 @@
         toastList.forEach(toast => toast.show());
       };
     </script>
+
   </body>
 
 </html>
