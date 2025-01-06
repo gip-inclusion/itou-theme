@@ -1,4 +1,6 @@
 .EasyMDEContainer {
+  border-radius: $border-radius;
+
   .editor-toolbar {
     border-color: $secondary;
 
@@ -13,7 +15,7 @@
     border-top-right-radius: 0px;
   }
 
-  .CodeMirror-focused {
+  &:has(.CodeMirror-focused) {
     outline-offset: 2px;
     outline: $blue 2px solid;
   }
