@@ -1,0 +1,20 @@
+.EasyMDEContainer {
+  .editor-toolbar {
+    border-color: $secondary;
+
+    button {
+      color: $body-color;
+    }
+  }
+
+  .CodeMirror {
+    @extend .form-control;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .CodeMirror-focused {
+    outline-offset: 2px;
+    outline: $blue 2px solid;
+  }
+}
