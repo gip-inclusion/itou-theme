@@ -10,7 +10,12 @@
   }
 
   .CodeMirror {
-    @extend .form-control;
+    padding: $input-padding-y $input-padding-x !important;
+    font-family: $input-font-family !important;
+    font-weight: $input-font-weight !important;
+    line-height: $input-line-height !important;
+    color: $input-color !important;
+    border: $input-border-width solid $input-border-color !important;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
   }
