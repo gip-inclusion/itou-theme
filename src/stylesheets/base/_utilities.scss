@@ -102,7 +102,7 @@
 
   &::after {
     @extend .ms-1;
-    content: '\ea4e';
+    content: "\ea4e";
     font-family: remixicon !important;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -112,8 +112,8 @@
     font-weight: $font-weight-bold;
   }
 
-  &[aria-expanded='true']::after {
-    content: '\ea78';
+  &[aria-expanded="true"]::after {
+    content: "\ea78";
   }
 }
 
@@ -124,8 +124,8 @@
 }
 
 .has-external-link::after {
-  content: '\ecaf';
-  font-family: 'remixicon' !important;
+  content: "\ecaf";
+  font-family: "remixicon" !important;
   font-size: inherit;
   font-style: inherit;
   -webkit-font-smoothing: antialiased;
@@ -137,10 +137,10 @@
 .has-spinner-loading {
   position: relative;
   opacity: 1;
-  transition: $transition-fade;
+  @include transition($transition-fade);
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     z-index: 1;
@@ -153,7 +153,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     z-index: 2;

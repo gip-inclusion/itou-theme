@@ -110,3 +110,11 @@
 
 // Pages
 @import "pages/page";
+
+// A11Y
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

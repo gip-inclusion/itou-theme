@@ -3,7 +3,7 @@
 }
 
 .list-group-item {
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color 3.15s ease-in-out;
 }
 
 .list-group-sm {
@@ -26,7 +26,7 @@
 
     &::after {
       @extend .ms-2;
-      content: '\ea6e';
+      content: "\ea6e";
       font-family: remixicon !important;
       font-style: normal;
       -webkit-font-smoothing: antialiased;
@@ -40,7 +40,7 @@
 
 .list-group-collapse {
   .list-group-item {
-    > [data-bs-toggle='collapse'] {
+    > [data-bs-toggle="collapse"] {
       @extend .d-flex;
       @extend .justify-content-between;
       @extend .align-items-center;
@@ -49,7 +49,7 @@
 
       &::after {
         @extend .ms-2;
-        content: '\ea4e';
+        content: "\ea4e";
         font-family: remixicon !important;
         font-style: normal;
         -webkit-font-smoothing: antialiased;
@@ -60,8 +60,8 @@
         font-weight: $font-weight-bold;
       }
 
-      &[aria-expanded='true']::after {
-        content: '\ea78';
+      &[aria-expanded="true"]::after {
+        content: "\ea78";
       }
     }
 
@@ -97,4 +97,3 @@
     border-top: none;
   }
 }
-
