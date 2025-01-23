@@ -6,8 +6,7 @@
   padding: map-get($spacers, 3);
 
   @include media-breakpoint-up(lg) {
-    padding: map-get($spacers, 4) map-get($spacers, 4) map-get($spacers, 4)
-      map-get($spacers, 4);
+    padding: map-get($spacers, 4) map-get($spacers, 4) map-get($spacers, 4) map-get($spacers, 4);
   }
 
   hr {
@@ -65,7 +64,7 @@
         line-height: $line-height-sm;
       }
 
-      &[data-bs-toggle='collapse'] {
+      &[data-bs-toggle="collapse"] {
         @extend .has-collapse-caret;
         padding-right: map-get($spacers, 5);
 
@@ -211,7 +210,7 @@
         content: attr(data-it-collapse-text-show);
       }
 
-      &[aria-expanded='true']::before {
+      &[aria-expanded="true"]::before {
         content: attr(data-it-collapse-text-hide);
       }
     }

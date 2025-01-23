@@ -1206,15 +1206,15 @@ $form-validation-states: (
 // of components dependent on the z-axis and are designed to all work together.
 
 // scss-docs-start zindex-stack
-$zindex-dropdown: 1040;
+$zindex-dropdown: 1000 !default;
 $zindex-sticky: 1020 !default;
 $zindex-fixed: 1030 !default;
 $zindex-offcanvas-backdrop: 1040 !default;
 $zindex-offcanvas: 1045 !default;
 $zindex-modal-backdrop: 3040;
 $zindex-modal: 3050;
-$zindex-popover: 1010;
-$zindex-tooltip: 1010;
+$zindex-popover: 1050;
+$zindex-tooltip: 1050;
 $zindex-toast: 1070;
 // scss-docs-end zindex-stack
 
