@@ -169,7 +169,7 @@ select:disabled {
     display: inline-flex;
   }
 
-  *:first-child:not(:only-child) {
+  *:not(div):first-child:not(:only-child) {
     margin-right: map-get($spacers, 2);
   }
 }
