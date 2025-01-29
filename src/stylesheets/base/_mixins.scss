@@ -275,3 +275,33 @@
     }
   }
 }
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+  .container-max-#{$breakpoint} {
+    max-width: $container-max-width !important;
+  }
+}
+
+@each $breakpoint, $grid-breakpoint in $grid-breakpoints {
+  $map-widths: (
+    25: 25%,
+    33: 33%,
+    50: 50%,
+    66: 66%,
+    75: 75%,
+  );
+
+  @each $width, $map-width in $map-widths {
+    .form-group-input-w-#{$breakpoint}-#{$width} {
+      @include media-breakpoint-up(#{$breakpoint}) {
+        .form-control:not(.duet-date__input),
+        .form-select,
+        .input-group,
+        .duet-date,
+        .select2-container {
+          width: #{$map-width} !important;
+        }
+      }
+    }
+  }
+}

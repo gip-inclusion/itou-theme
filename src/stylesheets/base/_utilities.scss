@@ -1,9 +1,3 @@
-@each $breakpoint, $container-max-width in $container-max-widths {
-  .container-max-#{$breakpoint} {
-    max-width: $container-max-width !important;
-  }
-}
-
 .text-decoration-underline {
   text-decoration: underline !important;
 }
