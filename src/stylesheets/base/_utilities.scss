@@ -128,7 +128,8 @@
   display: inline-block;
 }
 
-.btn {
+.btn,
+button {
   .stable-text {
     display: inline;
   }
@@ -167,7 +168,8 @@
     @extend .text-tertiary;
   }
 
-  &.btn {
+  &.btn,
+  button {
     min-height: initial;
 
     &::before,
@@ -185,7 +187,8 @@
     }
   }
 
-  &:has(> .btn) {
+  &:has(> .btn),
+  &:has(> button) {
     min-height: initial;
 
     &::before,
