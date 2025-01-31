@@ -129,7 +129,7 @@
 }
 
 .btn,
-button {
+[class^="btn-"] {
   .stable-text {
     display: inline;
   }
@@ -169,7 +169,7 @@ button {
   }
 
   &.btn,
-  button {
+  &[class^="btn-"] {
     min-height: initial;
 
     &::before,
@@ -188,7 +188,7 @@ button {
   }
 
   &:has(> .btn),
-  &:has(> button) {
+  &:has(> [class^="btn-"]) {
     min-height: initial;
 
     &::before,
@@ -196,7 +196,8 @@ button {
       display: none;
     }
 
-    > .btn {
+    > .btn,
+    > button {
       @extend .disabled;
 
       .stable-text {
