@@ -155,8 +155,7 @@ tr.introjs-showElement {
   position: absolute;
   visibility: visible;
   background-color: $white;
-  min-width: 300px;
-  max-width: $popover-max-width;
+  width: $popover-max-width;
   border-radius: $border-radius;
   box-shadow: $box-shadow-sm;
   transition: $transition-base;
@@ -185,6 +184,7 @@ tr.introjs-showElement {
 .introjs-tooltip-title {
   @extend .modal-title;
   font-size: $font-size-base;
+  line-height: $line-height-sm;
 }
 
 .introjs-tooltip-header {
@@ -193,6 +193,7 @@ tr.introjs-showElement {
   padding-right: 1rem;
   padding-top: 1rem;
   @extend .modal-header;
+  @extend .justify-content-between;
 }
 
 .introjs-tooltipbuttons {
@@ -210,6 +211,7 @@ tr.introjs-showElement {
 
 .introjs-skipbutton {
   @extend .btn-close;
+  @extend .p-2;
 }
 
 .introjs-prevbutton {
