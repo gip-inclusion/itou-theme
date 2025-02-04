@@ -222,17 +222,20 @@ select.form-control {
 
 .form-check {
   .form-check-input:disabled ~ .form-check-label,
-  .form-check-input[disabled] ~ .form-check-label {
+  .form-check-input[disabled] ~ .form-check-label,
+  .form-check-input.disabled ~ .form-check-label {
     color: $disabled-color;
   }
 
   .form-check-input:disabled,
-  .form-check-input[disabled] {
+  .form-check-input[disabled],
+  .form-check-input.disabled {
     border-color: $disabled-color;
   }
 
   .form-check-input:disabled:checked,
-  .form-check-input[disabled]:checked {
+  .form-check-input[disabled]:checked,
+  .form-check-input.disabled:checked {
     border-color: $disabled-color;
     background-color: $disabled-color;
   }
@@ -240,13 +243,15 @@ select.form-control {
 
 .form-switch {
   .form-check-input:disabled,
-  .form-check-input[disabled] {
+  .form-check-input[disabled],
+  .form-check-input.disabled {
     border-color: $disabled-color;
     background-image: escape-svg($form-switch-bg-disabled-image);
   }
 
   .form-check-input:disabled:checked,
-  .form-check-input[disabled]:checked {
+  .form-check-input[disabled]:checked,
+  .form-check-input.disabled:checked {
     background-image: escape-svg($form-switch-checked-bg-image);
   }
 

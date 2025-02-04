@@ -208,4 +208,33 @@
       }
     }
   }
+
+  &.form-switch {
+    min-height: initial;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .form-check-input,
+    .form-check-label {
+      @extend .disabled;
+    }
+  }
+
+
+  &:has(> .form-switch) {
+    min-height: initial;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .form-check-input,
+    .form-check-label {
+      @extend .disabled;
+    }
+  }
 }
