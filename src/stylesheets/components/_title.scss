@@ -1,0 +1,50 @@
+.c-title {
+  @extend .d-grid;
+  @extend .gap-3;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "main main"
+    "secondary secondary"
+    "cta cta";
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "main cta"
+      "secondary secondary";
+  }
+
+  &__main {
+    grid-area: main;
+
+    > * {
+      @extend .mb-1;
+
+      &:last-child {
+        @extend .mb-0;
+      }
+    }
+  }
+
+  &__cta {
+    grid-area: cta;
+    @extend .d-flex;
+    @extend .gap-3;
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      align-items: start;
+    }
+  }
+
+  &__secondary {
+    grid-area: secondary;
+
+    > *:last-child {
+      @extend .mb-0;
+    }
+  }
+}

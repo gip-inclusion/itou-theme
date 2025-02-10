@@ -8,9 +8,15 @@
             <span>Retour</span>
           </button>
         </div>
-        <h1>Titre de page</h1>
-        <h2>Un exemple avec des niveaux de titres</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+        <div class="c-title">
+          <div class="c-title__main">
+            <h1>Titre de page</h1>
+          </div>
+          <div class="c-title__secondary">
+            <h2>Un exemple avec des niveaux de titres</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+          </div>
+        </div>
         <div class="alert alert-info alert-dismissible fade show" role="status">
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
           <div class="row">
@@ -41,15 +47,21 @@
             <span>Retour</span>
           </button>
         </div>
-        <div class="d-flex flex-column flex-md-row gap-3 mb-3 justify-content-md-between">
-          <h1 class="m-0">Titre de page</h1>
-          <a href="" class="btn btn-lg btn-primary btn-ico">
-            <i class="ri-bear-smile-line fw-medium" aria-hidden="true"></i>
-            <span>Action principale</span>
-          </a>
+        <div class="c-title">
+          <div class="c-title__main">
+            <h1 class="m-0">Titre de page</h1>
+          </div>
+          <div class="c-title__cta" role="group" aria-label="Actions sur les groupes de suivi">
+            <a href="" class="btn btn-lg btn-primary btn-ico">
+              <i class="ri-bear-smile-line fw-medium" aria-hidden="true"></i>
+              <span>Action principale</span>
+            </a>
+          </div>
+          <div class="c-title__secondary">
+            <h2>Un exemple avec des niveaux de titres</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+          </div>
         </div>
-        <h2>Un exemple avec des niveaux de titres</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
         <ul class="s-tabs-01__nav nav nav-tabs mb-0" role="tablist">
           <li class="nav-item" role="presentation">
             <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
@@ -85,16 +97,29 @@
   <div class="s-title-02__container container">
     <div class="s-title-02__row row">
       <div class="s-title-02__col col-12">
-        <h1>Title 01</h1>
-        <h2>Un exemple avec des niveaux de titres</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+        <div class="c-prevstep">
+          <button type="button" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+            <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+            <span>Retour</span>
+          </button>
+        </div>
+        <div class="c-title">
+          <div class="c-title__main">
+            <h1>Title 01</h1>
+          </div>
+          <div class="c-title__secondary">
+            <h2>Un exemple avec des niveaux de titres</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+            <p>Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
+          </div>
+        </div>
         <div class="c-box c-box--action">
           <div class="form-row align-items-center gx-3">
             <div class="form-group col col-lg-auto">
               <a href="" class="btn btn-lg btn-white btn-block btn-ico">
                 <i class="ri-check-line fw-medium" aria-hidden="true"></i>
                 <span>Accepter</span>
-            </a>
+              </a>
             </div>
             <div class="form-group col col-lg-auto">
               <a href="" class="btn btn-lg btn-outline-white btn-block btn-ico">
@@ -130,6 +155,45 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s-title-02">
+  <div class="s-title-02__container container">
+    <div class="s-title-02__row row">
+      <div class="s-title-02__col col-12">
+        <div class="c-prevstep">
+          <button type="button" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+            <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+            <span>Retour</span>
+          </button>
+        </div>
+        <div class="c-title">
+          <div class="c-title__main">
+            <h1>
+              Candidature de Gustave de la LOISEAU des grosses motos
+              <span class="badge rounded-pill badge-base bg-success">Candidature acceptée</span>
+            </h1>
+            <p>ETTI - SIRET 500 109 616 00027</p>
+          </div>
+          <div class="c-title__cta" role="group" aria-label="Actions sur les groupes de suivi">
+
+            <a href="" class="btn btn-lg btn-outline-primary btn-ico">
+              <i class="ri-user-unfollow-line fw-medium" aria-hidden="true"></i>
+              <span>Ne plus suivre</span>
+            </a>
+            <a href="" class="btn btn-lg btn-ico btn-primary">
+              <i class="ri-user-add-line" aria-hidden="true"></i>
+              <span>Ajouter un bénéficiaire</span>
+            </a>
+          </div>
+          <div class="c-title__secondary">
+            <h2>Un exemple avec des niveaux de titres + badge + plusieurs boutons</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
           </div>
         </div>
       </div>
