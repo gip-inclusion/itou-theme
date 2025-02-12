@@ -930,16 +930,22 @@
                 </table>
                 <br>
                 <h6>Sortable table</h6>
-                <table class="table table-sortable" data-bs-table="sortable">
+                <table class="table table-hover table-sortable">
                   <caption>Noms et valeurs des couleurs</caption>
                   <thead>
                     <tr>
-                      <th aria-sort="none"><span role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Trier par Hexadécimal">Hexadécimal</span></th>
-                      <th aria-sort="none"><span role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Trier par HSLa">HSLa</span></th>
-                      <th aria-sort="none"><span role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Trier par RGBa">RGBa</span></th>
+                      <th aria-sort="descending">
+                        <button type="button" data-bs-toggle="tooltip" data-bs-title="Trier par Hexadécimal">Hexadécimal</button>
+                      </th>
+                      <th>
+                        <button type="button" data-bs-toggle="tooltip" data-bs-title="Trier par HSLa">HSLa</button>
+                      </th>
+                      <th>
+                        <button type="button" data-bs-toggle="tooltip" data-bs-title="Trier par RGBa">RGBa</button>
+                      </th>
                     </tr>
                   </thead>
-                  <tbody class="table-group-divider">
+                  <tbody>
                     <tr>
                       <td><code>#51F6F6</code></td>
                       <td><code>hsla(510, 90%, 64%, 1)</code></td>
