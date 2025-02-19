@@ -4,6 +4,10 @@
       font-size: $font-size-sm;
       text-transform: uppercase;
       border-top-width: $table-border-width;
+
+      button {
+        text-transform: uppercase;
+      }
     }
 
     &.thead-light {
@@ -25,7 +29,7 @@
           -moz-osx-font-smoothing: grayscale;
           line-height: 1;
           vertical-align: middle;
-          content: '\ea74';
+          content: "\ea74";
           color: $button;
           transition: $transition-base;
         }
@@ -52,7 +56,6 @@
     thead th button {
       display: inline-flex;
       align-items: center;
-      text-transform: uppercase;
 
       &::after {
         @extend .ms-1;
@@ -65,23 +68,31 @@
         vertical-align: middle;
         transition: $transition-base;
         color: $button;
-        content: '\ea74';
+        content: "\ea74";
       }
 
       &:hover::after,
       &:focus::after {
         color: $button-light;
       }
+
+      &:disabled {
+        color: $table-color;
+
+        &::after {
+          color: $disabled-color !important;
+        }
+      }
     }
 
-    thead th[aria-sort='ascending'] button::after {
+    thead th[aria-sort="ascending"] button::after {
       color: $button-light;
-      content: '\ea76';
+      content: "\ea76";
     }
 
-    thead th[aria-sort='descending'] button::after {
+    thead th[aria-sort="descending"] button::after {
       color: $button-light;
-      content: '\ea4c';
+      content: "\ea4c";
     }
   }
 }
