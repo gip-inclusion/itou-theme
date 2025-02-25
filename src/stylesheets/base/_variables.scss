@@ -1338,9 +1338,9 @@ $dropdown-link-disabled-color: var(--#{$prefix}disabled-color);
 $dropdown-item-padding-y: $spacer * 0.5;
 $dropdown-item-padding-x: $btn-padding-x;
 
-$dropdown-header-color: $muted-color;
+$dropdown-header-color: var(--#{$prefix}body-color) !default;
 $dropdown-header-padding-x: $dropdown-item-padding-x;
-$dropdown-header-padding-y: $dropdown-padding-y;
+$dropdown-header-padding-y: $dropdown-item-padding-y;
 // fusv-disable
 $dropdown-header-padding: $dropdown-header-padding-y $dropdown-header-padding-x; // Deprecated in v5.2.0
 // fusv-enable

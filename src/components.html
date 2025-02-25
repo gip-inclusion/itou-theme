@@ -985,12 +985,52 @@
                       </div>
                       <div class="dropdown">
                         <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                          Un autre filtre
+                          Un filtre avec checkbox
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><strong class="dropdown-header">Eligibilité IAE</strong></li>
+                          <li class="dropdown-item">
+                            <div class="form-check">
+                              <input id="id_states01_0-top" class="form-check-input" name="states01" type="checkbox" value="to_validate">
+                              <label for="id_states01_0-top" class="form-check-label">
+                                A valider
+                              </label>
+                            </div>
+                          </li>
+                          <li class="dropdown-item">
+                            <div class="form-check">
+                              <input id="id_states01_1-top" class="form-check-input" name="states01" type="checkbox" value="valid">
+                              <label for="id_states01_1-top" class="form-check-label">
+                                Valide
+                              </label>
+                            </div>
+                          </li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><strong class="dropdown-header">Statut du PASS IAE</strong></li>
+                          <li class="dropdown-item">
+                            <div class="form-check">
+                              <input id="id_states02_0-top" class="form-check-input" name="states02" type="checkbox" value="active">
+                              <label for="id_states02_0-top" class="form-check-label">
+                                Actif
+                              </label>
+                            </div>
+                          </li>
+                          <li class="dropdown-item">
+                            <div class="form-check">
+                              <input id="id_states02_1-top" class="form-check-input" name="states02" type="checkbox" value="suspended">
+                              <label for="id_states02_1-top" class="form-check-label">
+                                Suspendu
+                              </label>
+                            </div>
+                          </li>
+                          <li class="dropdown-item">
+                            <div class="form-check">
+                              <input id="id_states02_1-top" class="form-check-input" name="states02" type="checkbox" value="expired">
+                              <label for="id_states02_1-top" class="form-check-label">
+                                Expiré
+                              </label>
+                            </div>
+                          </li>
                         </ul>
                       </div>
                       <div class="dropdown">
