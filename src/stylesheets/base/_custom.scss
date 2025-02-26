@@ -338,6 +338,13 @@ iframe {
 }
 
 .modal {
+  .modal-dialog {
+    @include media-breakpoint-down(md) {
+      width: auto;
+      margin: var(--bs-modal-margin);
+    }
+  }
+
   .modal-header {
     + .modal-body {
       @extend .pt-2;
