@@ -223,7 +223,10 @@ select.form-control {
 .form-check {
   .form-check-input:disabled ~ .form-check-label,
   .form-check-input[disabled] ~ .form-check-label,
-  .form-check-input.disabled ~ .form-check-label {
+  .form-check-input.disabled ~ .form-check-label,
+  .form-check-input:disabled ~ .form-text,
+  .form-check-input[disabled] ~ .form-text,
+  .form-check-input.disabled ~ .form-text {
     color: $disabled-color;
   }
 
