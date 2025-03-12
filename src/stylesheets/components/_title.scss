@@ -1,6 +1,5 @@
 .c-title {
   @extend .d-grid;
-  @extend .gap-3;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
@@ -32,9 +31,11 @@
     grid-area: cta;
     @extend .d-flex;
     @extend .gap-3;
+    margin-top: map-get($spacers, 3);
     flex-direction: column;
 
     @include media-breakpoint-up(lg) {
+      margin-top: 0;
       flex-direction: row;
       align-items: start;
     }
@@ -42,6 +43,7 @@
 
   &__secondary {
     grid-area: secondary;
+    @extend .mt-3;
 
     > *:last-child {
       @extend .mb-0;
