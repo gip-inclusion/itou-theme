@@ -7,7 +7,6 @@ const textareaExpandableList = document.querySelectorAll("[data-it-expandable=tr
 const inputPasswordList = document.querySelectorAll("[data-it-password=toggle]");
 const targetConseiList = document.querySelectorAll("[data-it-target-conseil]");
 const actionPrintList = document.querySelectorAll("[data-it-action=print]");
-const breakpointXL = getComputedStyle(document.documentElement).getPropertyValue("--bs-breakpoint-xl");
 
 // Init
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
@@ -19,16 +18,14 @@ const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]
 // Load
 window.addEventListener("load", () => {
   // console.log('window loaded');
-  postHeaderNavDisplay();
   inputGroupCopyToClipboard();
   buttonCopyToClipboard();
 });
 
 // Resize
-window.addEventListener("resize", () => {
-  // console.log('window resized');
-  postHeaderNavDisplay();
-});
+// window.addEventListener("resize", () => {
+// console.log('window resized');
+// });
 
 // Scroll
 // window.addEventListener('scroll', () => {
@@ -41,39 +38,6 @@ document.addEventListener("htmx:load", () => {
   inputGroupCopyToClipboard();
   buttonCopyToClipboard();
 });
-
-// Post header show/hide on scroll up/down
-function postHeaderNavDisplay() {
-  const postHeaderNav = document.querySelector(".s-postheader");
-
-  if (postHeaderNav != null) {
-    let thisNavTopOffset = postHeaderNav.getBoundingClientRect().top;
-    let lastScrollTop = 0;
-
-    window.addEventListener("scroll", () => {
-      let windowScrollTop = window.scrollY;
-
-      if (windowScrollTop >= thisNavTopOffset) {
-        if (window.matchMedia("(min-width: " + breakpointXL + ")").matches) {
-          document.querySelector("main").style.paddingTop = "59px";
-        }
-        if (lastScrollTop > windowScrollTop) {
-          postHeaderNav.classList.remove("it-scrolldown");
-          postHeaderNav.classList.add("it-scrollup");
-        } else {
-          postHeaderNav.classList.remove("it-scrollup");
-          postHeaderNav.classList.add("it-scrolldown");
-        }
-      } else {
-        postHeaderNav.classList.remove("it-scrollup", "it-scrolldown");
-        if (window.matchMedia("(min-width: " + breakpointXL + ")").matches) {
-          document.querySelector("main").style.paddingTop = "0";
-        }
-      }
-      lastScrollTop = windowScrollTop;
-    });
-  }
-}
 
 // InputGroup copy to clipboard
 function inputGroupCopyToClipboard() {
