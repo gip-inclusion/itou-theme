@@ -734,7 +734,7 @@ $small-font-size: $font-size-xs;
 $sub-sup-font-size: 0.75em !default;
 
 // fusv-disable
-$text-muted: var(--#{$prefix}$muted-color); // Deprecated in 5.3.0
+$text-muted: var(--#{$prefix}muted-color); // Deprecated in 5.3.0
 // fusv-enable
 
 $initialism-font-size: $small-font-size !default;

@@ -117,6 +117,10 @@
   pointer-events: none;
 }
 
+.text-muted {
+  color: var(--#{$prefix}muted-color) !important;
+}
+
 .has-external-link::after {
   content: "\ecaf";
   font-family: "remixicon" !important;
