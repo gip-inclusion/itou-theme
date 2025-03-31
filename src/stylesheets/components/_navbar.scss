@@ -1,0 +1,16 @@
+.c-navbar {
+  display: flex;
+  align-items: center;
+
+  &__prevnext {
+    border-left: 1px solid $border-color;
+    padding-left: map-get($spacers, 2)
+  }
+
+  &__info {
+    font-size: $font-size-sm;
+    color: $text-muted;
+    margin-left: auto;
+  }
+}
+
