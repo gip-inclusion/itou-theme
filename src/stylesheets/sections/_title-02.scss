@@ -27,7 +27,7 @@
     }
 
     > *:last-child:not(.c-prevstep),
-    > *:last-child:not(.c-navbar) {
+    > *:last-child:not(.c-navinfo) {
       margin-bottom: map-get($spacers, 4);
 
       @include media-breakpoint-up(lg) {
