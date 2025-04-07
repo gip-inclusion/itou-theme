@@ -1,0 +1,15 @@
+.c-skiplinks {
+  @extend .visually-hidden-focusable;
+  @extend .fs-sm;
+  @extend .text-center;
+  background-color: $white;
+
+  ul {
+    @extend .list-inline;
+    @extend .my-2;
+
+    li {
+      @extend .list-inline-item;
+    }
+  }
+}
