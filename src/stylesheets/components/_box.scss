@@ -243,6 +243,12 @@
       padding-bottom: 0;
     }
 
+    &__body {
+      > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
     &__list-data {
       ul {
         line-height: $line-height-sm;
