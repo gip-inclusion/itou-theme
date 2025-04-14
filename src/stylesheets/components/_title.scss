@@ -32,10 +32,12 @@
     @extend .d-flex;
     @extend .gap-3;
     margin-top: map-get($spacers, 3);
+    margin-left: 0;
     flex-direction: column;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       margin-top: 0;
+      margin-left: map-get($spacers, 3);
       flex-direction: row;
       align-items: start;
     }
