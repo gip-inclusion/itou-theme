@@ -335,7 +335,8 @@ select.form-control {
 
   legend {
     float: none;
-    font-size: $h2-font-size;
+    font-size: $h3-font-size;
+    font-weight: $font-weight-medium;
   }
 
   hr {

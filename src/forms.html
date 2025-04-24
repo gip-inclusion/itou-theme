@@ -40,7 +40,7 @@
               <a href="https://getbootstrap.com/docs/4.6/components/forms/" target="_blank">Documentation</a>
             </div>
             <div class="col-12 col-lg-9">
-              <div class="mb-5">
+              <div class="mb-5 c-form">
                 <h6>Form controls</h6>
                 <p>Textual form controls—like <code>&lt;input&gt;</code>s, <code>&lt;select&gt;</code>s, and <code>&lt;textarea&gt;</code>s—are styled with the <code>.form-control</code> class. Included are styles for general appearance, focus state, sizing, and more.</p>
                 <p>Be sure to explore our <a href="https://getbootstrap.com/docs/4.6/components/forms/#custom-forms" target="_blank">custom forms</a> to further style <code>&lt;select&gt;</code>s.</p>
@@ -50,19 +50,22 @@
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Placeholder text">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="form-group form-group-input-w-lg-50">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-select" for="exampleFormControlSelect1">
-                      <option selected="">Open this form-select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
+                  <fieldset>
+                    <legend>Legend</legend>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group form-group-input-w-lg-50">
+                      <label for="exampleFormControlSelect1">Example select</label>
+                      <select class="form-select" for="exampleFormControlSelect1">
+                        <option selected="">Open this form-select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </fieldset>
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Example textarea</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
