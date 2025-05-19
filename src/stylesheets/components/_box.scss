@@ -261,4 +261,46 @@
       }
     }
   }
+
+  &--note {
+    background-color: $accent-03-lighter;
+    border: 1px solid $accent-03-lighter;
+    position: relative;
+
+    .form-group {
+      margin-bottom: 0;
+    }
+
+    textarea.form-control {
+      font-size: $font-size-sm;
+      margin-top: map-get($spacers, 2);
+      padding-bottom: 50px;
+      border-color: $accent-03-light;
+      background-color: $accent-03-light;
+    }
+
+    .form-row {
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: end;
+      gap: map-get($spacers, 2);
+      position: absolute;
+      bottom: 60px;
+      right: 40px;
+    }
+
+    .btn {
+      color: $button;
+      background-color: $accent-03-lighter;
+      border-color: $accent-03-lighter;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $accent-03-lighter;
+        border-color: $button;
+        background-color: $button;
+      }
+    }
+  }
 }

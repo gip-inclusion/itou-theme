@@ -150,8 +150,9 @@ for (let i = 0, ii = textareaExpandableList.length; i < ii; i += 1) {
     thisTexterea.style.height = this.scrollHeight + 2 + "px";
   };
 
-  thisTexterea.addEventListener("keydown", expandTextarea, false);
-  thisTexterea.addEventListener("mousedown", expandTextarea, false);
+  thisTexterea.addEventListener("input", expandTextarea, false);
+  thisTexterea.addEventListener("focus", expandTextarea, false);
+  expandTextarea.call(thisTexterea);
 }
 
 // Show data-it-target-conseil
