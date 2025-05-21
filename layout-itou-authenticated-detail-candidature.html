@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+
+    <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
+  </head>
+
+  <body id="top" class="l-authenticated">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="c-skiplinks">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    <div class="global-messages-container"></div>
+
+    <header role="banner" id="header">
+      <section class="s-header-print">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto d-flex align-items-center py-2">
+              <img src="./images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="./images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+            </div>
+            <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
+          </div>
+        </div>
+      </section>
+      <section class="s-header-authenticated">
+        <div class="s-header-authenticated__container container">
+          <div class="s-header-authenticated__row row">
+            <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
+              <a href=""><img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
+              <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+                <ul>
+                  <li class="dropdown">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                      <i class="ri-account-circle-line" aria-hidden="true"></i>
+                      <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item">
+                          <div class="d-flex align-items-center">
+                            <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                            <div class="flex-grow-1 ms-2 lh-sm">
+                              <span>Machin TRUC</span>
+                              <br>
+                              <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-divider"></div>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Tableau de bord</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Mes notifications</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="">Modifier mon profil</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">
+                          <button class="text-danger">Déconnexion</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="d-none d-lg-inline-block dropdown dropdown-structure">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI - Une nouvelle chance</span>
+                    </button>
+                    <div class="dropdown-menu w-100" id="switchUserDropdown">
+                      <form action="" method="post">
+                        <ul class="list-unstyled">
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>ETTI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EITI</span>
+                              <strong>Terre &amp; mer</strong>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                      <a href="" class="dropdown-item dropdown-item__summary is-last-sticky">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                        <span>Créer ou rejoindre</span>
+                        <strong>une nouvelle structure</strong>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
+              <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+                <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+                <span>Menu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+        <div class="offcanvas-header offcanvas-header--structure">
+          <div class="dropdown dropdown-structure flex-grow-1 py-4">
+            <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+              <i class="ri-community-line" aria-hidden="true"></i>
+              <span>ETTI</span>
+              <strong>Une nouvelle chance</strong>
+            </button>
+            <div class="dropdown-menu" id="switchUserDropdown">
+              <form method="post">
+                <ul class="list-unstyled">
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EITI</span>
+                      <strong>Terre &amp; mer</strong>
+                    </button>
+                  </li>
+                </ul>
+              </form>
+              <a href="" class="dropdown-item dropdown-item__summary is-last-sticky">
+                <i class="ri-add-line" aria-hidden="true"></i>
+                <span>Créer ou rejoindre</span>
+                <strong>une nouvelle structure</strong>
+              </a>
+            </div>
+          </div>
+          <div class="border-start border-nuance-08 d-xl-none">
+            <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+              <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link active">
+                  <i class="ri-home-line fw-medium" aria-hidden="true"></i>
+                  <span>Accueil</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
+                  <span>Candidatures</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
+                  <i class="ri-team-line fw-medium" aria-hidden="true"></i>
+                  <span>Salariés</span>
+                </button>
+                <div class="collapse" id="collapseNavSalaries">
+                  <ul>
+                    <li>
+                      <a href="">Salariés et PASS IAE</a>
+                    </li>
+                    <li>
+                      <a href="" class="active">Fiches salariés ASP</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
+                  <i class="ri-community-line fw-medium" aria-hidden="true"></i>
+                  <span>Structure</span>
+                </button>
+                <div class="collapse" id="collapseNavStructure">
+                  <ul>
+                    <li>
+                      <a href="">Présentation</a>
+                    </li>
+                    <li>
+                      <a href="" class="active">Métiers et recrutements</a>
+                    </li>
+                    <li>
+                      <a href="">Collaborateurs</a>
+                    </li>
+                    <li>
+                      <a href="">Annexes financières</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+              <i class="ri-account-circle-line" aria-hidden="true"></i>
+              <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+            </button>
+            <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+              <ul class="list-unstyled">
+                <li class="dropdown-item">
+                  <div class="d-flex align-items-center">
+                    <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                    <div class="flex-grow-1 ms-2 lh-sm w-75">
+                      <span>Machin TRUC</span>
+                      <br>
+                      <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Tableau de bord</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Mes notifications</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="">Modifier mon profil</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <button class="text-danger">Déconnexion</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+            <div class="dropdown-menu" id="helpDropdownMobile">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-footer flex-column align-items-stretch">
+          <div class="offcanvas-footer__legal">
+            <div class="d-none d-xl-block">
+              <img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
+            </div>
+            <ul>
+              <li><a href="">Accessibilité : partiellement conforme</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">CGU</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-prevstep">
+                <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour à la liste">
+                  <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+                  <span>
+                    Retour
+                    à la liste
+                  </span>
+                </a>
+              </div>
+              <div class="c-title">
+                <div class="c-title__main">
+                  <h1>
+                    Candidature de
+                    Truc MUCHE
+                    <span id="state_d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df" class="badge rounded-pill text-nowrap badge-base bg-success">Candidature acceptée</span>
+                  </h1>
+                </div>
+                <div class="c-title__cta">
+                  <button class="btn btn-lg btn-ico-only btn-link" type="button" data-it-action="print" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="click" data-matomo-option="impression-fiche-candidature" aria-label="Imprimer la candidature de Truc MUCHE">
+                    <i class="ri-printer-line fw-normal" aria-hidden="true"></i>
+                  </button>
+                  <button class="btn btn-danger btn-lg btn-ico" data-bs-toggle="modal" data-bs-target="#cancel_hire_modal">
+                    <i class="ri-arrow-go-back-line fw-medium" aria-hidden="true"></i>
+                    <span>Annuler l’embauche</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="c-box c-box--action" id="transition_buttons_d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df" data-disable-btn-if=".editing-prior-action">
+                <h2 class="visually-hidden">Actions rapides</h2>
+                <div class="form-row align-items-center gx-3">
+                </div>
+              </div>
+
+              <div class="tns-outer" id="tns1-ow">
+                <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0" style="display: none;"><button type="button" data-controls="prev" tabindex="-1" aria-controls="tns1">prev</button><button type="button" data-controls="next" tabindex="-1" aria-controls="tns1">next</button></div>
+                <div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">1 to 2</span> of 2</div>
+                <div id="tns1-mw" class="tns-ovh">
+                  <div class="tns-inner" id="tns1-iw">
+                    <ul class="s-tabs-01__nav nav nav-tabs mb-0  tns-slider tns-carousel tns-subpixel tns-calc tns-autowidth tns-horizontal" role="tablist" data-it-sliding-tabs="true" id="tns1" style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                      <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item0">
+                        <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="informations-generales">Informations générales</a>
+                      </li>
+
+                      <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
+                        <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="historique" tabindex="-1">Historique</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="informations" role="tabpanel" aria-labelledby="informations-tab">
+              <div class="s-section__row row">
+                <div class="col-12 col-lg-8 order-2 order-lg-1">
+                  <h2>Informations générales</h2>
+
+                  <div class="c-box mb-4">
+                    <div class="row mb-3">
+                      <div class="col-12 col-sm">
+                        <h3 class="mb-0">Informations personnelles</h3>
+                      </div>
+                      <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
+                        <a href="" class="btn btn-ico btn-outline-primary" data-matomo-event="true" data-matomo-category="salaries" data-matomo-action="clic" data-matomo-option="edit_jobseeker_infos" aria-label="Modifier les informations personnelles de Truc MUCHE">
+                          <i class="ri-pencil-line fw-medium" aria-hidden="true"></i>
+                          <span>Modifier</span>
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <ul class="list-data list-data__two-column-md mb-3">
+                      <li>
+                        <small>Prénom</small>
+                        <strong>Truc</strong>
+                      </li>
+                      <li>
+                        <small>Téléphone</small>
+
+                        <i class="text-disabled">Non renseigné</i>
+
+                      </li>
+                      <li>
+                        <small>Nom</small>
+                        <strong>MUCHE</strong>
+                      </li>
+                      <li>
+                        <small>Adresse e-mail</small>
+                        <strong>test@testtest.com</strong>
+
+                        <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_email" data-it-clipboard-button="copy" data-it-copy-to-clipboard="test@testtest.com" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                          <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                          <span class="visually-hidden">Copier</span>
+                        </button>
+
+                      </li>
+                      <li>
+                        <small>Date de naissance</small>
+                        <strong>01/06/2001</strong>
+                      </li>
+                      <li>
+                        <small>Adresse</small>
+
+                        <address>Goué, 56120 La Grée-Saint-Laurent</address>
+
+                      </li>
+                      <li>
+                        <small>Numéro de sécurité sociale</small>
+
+                        <strong><span>1</span><span class="ms-1">01</span><span class="ms-1">06</span><span class="ms-1">01</span><span class="ms-1">111</span><span class="ms-1">112</span><span class="ms-1">20</span></strong>
+                        <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_email" data-it-clipboard-button="copy" data-it-copy-to-clipboard="101060111111220" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                          <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                          <span class="visually-hidden">Copier</span>
+                        </button>
+                      </li>
+                      <li>
+                        <small>Identifiant France Travail</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                      <li>
+                        <small>Curriculum vitae</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                    </ul>
+
+                    <div class="c-info d-flex flex-column flex-md-row justify-content-between align-items-center mb-3 p-3 fs-sm">
+                      <div class="w-100 w-md-50 text-center text-md-start">
+                        <p class="fw-bold mb-2">Ce candidat n’a pas de CV ?</p>
+                        <p class="m-0">
+                          Invitez le prescripteur à en créer un via notre partenaire Diagoriente.
+                        </p>
+                      </div>
+                      <div class="w-100 w-md-50 text-center text-md-end mt-3 mt-md-0">
+                        <form method="post" action="/apply/d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df/siae/diagoriente/send_invite">
+                          <input type="hidden" name="csrfmiddlewaretoken" value="0WskW8QQGsqhjUl2VpbCB8bbNkBpLCBGbJi4UHHGQtmD79SPp0ZM7Hfe7DqaMixb">
+                          <button class="btn btn-partner btn-partner--diagoriente fs-sm" type="submit">Inviter à créer un CV avec Diagoriente</button>
+                        </form>
+                      </div>
+                    </div>
+                    <hr class="my-4">
+                    <h3>Critères d'éligibilité</h3>
+                    <p class="text-success">
+                      Validés
+                      le <span class="fw-bold">23/04/2025</span> par
+                      <strong>Daphnée DELAVIGNE</strong>
+                      (Une nouvelle chance)
+                      .
+                    </p>
+                    <p class="fs-sm">
+                      <i>Ces critères reflètent la situation du candidat lors de l’établissement du diagnostic ayant permis la délivrance d’un PASS IAE, elle a peut-être changé depuis cette date.</i>
+                    </p>
+                    <p>
+                      <span class="badge badge-sm rounded-pill bg-secondary">
+                        Critères administratifs
+                      </span>
+                    </p>
+
+                    <ul>
+                      <li>
+                        <span class="fw-bold">Niveau 1</span>
+                        <ul>
+                          <li>
+                            <div class="d-flex align-items-center">
+                              <span>Bénéficiaire du RSA</span>
+                              <span class="badge badge-xs rounded-pill bg-warning-lighter text-warning ms-3">
+                                <i class="ri-error-warning-fill" aria-hidden="true"></i>
+                                Non certifié
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="c-box bg-info-lightest my-4 p-0">
+                      <button class="has-collapse-caret w-100 text-start d-block d-flex justify-content-between fw-bold text-left p-3 align-items-center" type="button" data-bs-target="#collapse-certif-help-text" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-certif-help-text">
+                        <div>
+                          <i class="ri-lightbulb-line fw-medium pe-2" aria-hidden="true"></i>
+                          <span>Pourquoi certains critères peuvent-ils être certifiés&nbsp;?</span>
+                        </div>
+                      </button>
+                      <div id="collapse-certif-help-text" class="collapse justify-content-between pb-4 ps-5 pe-3">
+                        <span>
+                          Nous développons progressivement nos connexions avec les
+                          différents services de l’État qui fournissent les justificatifs
+                          correspondant aux critères administratifs. Après interrogation
+                          du système d’information de l’État, deux types de badges
+                          peuvent être affichés :
+                          <dl>
+                            <div class="my-3 ms-3">
+                              <dt class="d-inline">Certifié</dt>
+                              <dd class="d-inline">
+                                Aucune action n’est nécessaire.
+                              </dd>
+                            </div>
+
+                            <div class="my-3 ms-3">
+                              <dt class="d-inline">Non certifié</dt>
+                              <dd class="d-inline">
+                                Nous n’avons pas trouvé d’information permettant de
+                                valider ce critère administratif.
+                              </dd>
+                            </div>
+                          </dl>
+
+                          <p>
+                            <strong>
+                              Lorsqu’un critère n’est pas certifié dans le cadre d’une
+                              auto-prescription, nous recommandons à l’employeur de
+                              récupérer et conserver une copie du justificatif
+                              administratif.
+                            </strong>
+                            Pour rappel, les critères déclarés par les prescripteurs habilités ne nécessitent aucun justificatif.
+                          </p>
+                          <p>
+                            L’absence de badge signifie que nous ne sommes pas encore en
+                            mesure d’interroger le système d’information de l’État pour ce
+                            critère.
+                          </p>
+                          <p class="mb-0">
+                            Retrouvez le détail des conditions dans
+                            <a href="" class="has-external-link" target="_blank" rel="noreferrer">notre documentation</a>.
+                          </p>
+                        </span>
+                      </div>
+                    </div>
+                    <p>
+                      <i>
+                        Ce diagnostic expire le
+                        11/05/2027.
+                      </i>
+                    </p>
+                  </div>
+
+                  <div class="c-box mb-4">
+                    <h3>Détails du contrat de travail</h3>
+                    <ul class="list-data mb-3">
+                      <li>
+                        <small>Poste retenu</small>
+                        <strong>Agent administratif / Agente administrative à Beaucaire (30)</strong>
+                      </li>
+                    </ul>
+
+                    <ul class="list-data list-data__two-column-md mb-3">
+                      <li>
+                        <small>Début</small>
+                        <strong>12 mai 2025</strong>
+                      </li>
+                      <li>
+                        <small>Fin</small>
+                        <strong>12 mai 2025</strong>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="c-box mb-4">
+                    <h3>Candidature</h3>
+                    <ul class="list-data list-data__two-column-md mb-3">
+                      <li>
+                        <small>Émetteur</small>
+                        <strong>Olivier DUPUY</strong>
+                      </li>
+                      <li>
+                        <small>Type</small>
+                        <strong>Orienteur</strong>
+                      </li>
+                      <li>
+                        <small>Adresse e-mail</small>
+                        <strong>test+orienteur@inclusion.gouv.fr</strong>
+                        <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_sender_email" data-it-clipboard-button="copy" data-it-copy-to-clipboard="test+orienteur@inclusion.gouv.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                          <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                          <span class="visually-hidden">Copier</span>
+                        </button>
+                      </li>
+                      <li>
+                        <small>Organisation</small>
+                        <strong>Association La Belle Verte</strong>
+                      </li>
+                      <li>
+                        <small>Date</small>
+                        <strong>Le 09/04/2025</strong>
+                      </li>
+                    </ul>
+                    <ul class="list-data mb-3">
+                      <li>
+                        <small>Message de candidature</small>
+                        <blockquote class="blockquote mt-2 mb-0">
+                          <p>dddddddddddddd</p>
+                        </blockquote>
+                      </li>
+                    </ul>
+                    <span class="d-block fs-sm">
+                      Poste recherché</span>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item list-group-item-action">
+                        <b>Candidature spontanée</b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 order-1 order-lg-2 mt-lg-6">
+                  <div class="c-box c-box--pass bg-success-lightest border-success mb-3 mb-md-4">
+                    <div class="mb-3 mb-md-4">
+                      <span class="badge badge-base rounded-pill bg-success text-white">
+                        <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                        PASS&nbsp;IAE valide
+                      </span>
+                    </div>
+                    <ul class="list-data">
+                      <li class="order-1">
+                        <small>Numéro de PASS&nbsp;IAE</small>
+                        <strong><span>99999</span><span class="ms-1">99</span><span class="ms-1">10810</span></strong>
+                      </li>
+                      <li class="order-2">
+                        <small>Date de début</small>
+                        <strong>12/05/2025</strong>
+                      </li>
+
+                      <li class="order-3">
+                        <small>Date de fin prévisionnelle
+                          <i class="ri-information-line ri-xl text-info" aria-label="Cette date de fin est susceptible d’évoluer avec les éventuelles suspensions et prolongations du PASS&nbsp;IAE." data-bs-toggle="tooltip" data-bs-title="Cette date de fin est susceptible d’évoluer avec les éventuelles suspensions et prolongations du PASS&nbsp;IAE." role="button" tabindex="0">
+                          </i>
+                        </small>
+                        <strong>11/05/2027</strong>
+                      </li>
+                      <li class="order-4">
+                        <small>
+                          Durée de validité
+                          <i class="ri-information-line ri-xl text-info" aria-label="Le reliquat est calculé sur la base d’un nombre de jours calendaires. Si le PASS&nbsp;IAE n’est pas suspendu, il décroît donc tous les jours (samedi, dimanche et jours fériés compris)." data-bs-toggle="tooltip" data-bs-title="Le reliquat est calculé sur la base d’un nombre de jours calendaires. Si le PASS&nbsp;IAE n’est pas suspendu, il décroît donc tous les jours (samedi, dimanche et jours fériés compris)." role="button" tabindex="0">
+                          </i>
+                        </small>
+                        <strong class="text-success">723 jours (Environ 1&nbsp;an et 11&nbsp;mois)</strong>
+                      </li>
+
+                    </ul>
+                    <a href="" class="btn btn-outline-primary btn-block btn-ico bg-white mt-3">
+                      <i class="ri-eye-line font-weight-medium" aria-hidden="true"></i>
+                      <span>Afficher le PASS&nbsp;IAE</span>
+                    </a>
+                  </div>
+                  <div class="c-box c-box--note mb-3 mb-md-4">
+                    <form action="">
+                      <div class="form-group">
+                        <label class="form-label">Note partagée avec tous les membres de la structure</label>
+                        <textarea class="form-control" rows="10" data-it-expandable="true">Rendez-vous prévu le 12/05</textarea>
+                        <div class="form-text">le 29/04/2025 par Marie SIMON</div>
+                      </div>
+                      <div class="form-row">
+                        <button type="reset" class="btn btn-sm btn-ico-only">
+                          <span class="visually-hidden">Annuler l'ajout d'une note partagée avec tous les membres de la structure</span>
+                          <i class="ri-close-line" aria-hidden="true"></i>
+                        </button>
+                        <button type="submit" class="btn btn-sm btn-ico-only">
+                          <span class="visually-hidden">Valider l'ajout d'une note partagée avec tous les membres de la structure</span>
+                          <i class="ri-check-line" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
+              <div class="s-section__row  row">
+                <div class="col-12 col-lg-8 order-2 order-lg-1">
+                  <h2>Historique des modifications</h2>
+                  <ul class="list-step">
+                    <li>
+                      <time datetime="2025-05-06T08:05:47.219460+00:00">Le 06 mai 2025 à 10:05</time>
+                      <span>
+                        Passé en "Candidature acceptée"
+                        par Daphnée DELAVIGNE
+                      </span>
+                    </li>
+                    <li>
+                      <time datetime="2025-04-14T14:55:25.310932+00:00">Le 14 avril 2025 à 16:55</time>
+                      <span>
+                        Passé en "Candidature en attente"
+                        par Daphnée DELAVIGNE
+                      </span>
+                    </li>
+                    <li>
+                      <time datetime="2025-04-14T14:55:08.727186+00:00">Le 14 avril 2025 à 16:55</time>
+                      <span>
+                        Passé en "Candidature à l'étude"
+                        par Daphnée DELAVIGNE
+                      </span>
+                    </li>
+                    <li>
+                      <time datetime="2025-04-09T06:36:19.351292+00:00">Le 09 avril 2025 à 08:36</time>
+                      <span>Nouvelle candidature</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+
+</html>
