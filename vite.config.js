@@ -33,6 +33,7 @@ export default {
         layout_itou_authenticated_cms: resolve(__dirname, "src/layout-itou-authenticated-cms.html"),
         layout_itou_authenticated_dashboard: resolve(__dirname, "src/layout-itou-authenticated-dashboard.html"),
         layout_itou_authenticated_detail_pass: resolve(__dirname, "src/layout-itou-authenticated-detail-pass.html"),
+        layout_itou_authenticated_detail_candidature: resolve(__dirname, "src/layout-itou-authenticated-detail-candidature.html"),
         layout_itou_authenticated_form: resolve(__dirname, "src/layout-itou-authenticated-form.html"),
         layout_itou_authenticated_mentions: resolve(__dirname, "src/layout-itou-authenticated-mentions.html"),
         layout_itou_authenticated_search_result: resolve(__dirname, "src/layout-itou-authenticated-search-result.html"),
