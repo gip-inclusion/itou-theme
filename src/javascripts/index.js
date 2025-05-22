@@ -147,7 +147,7 @@ for (let i = 0, ii = textareaExpandableList.length; i < ii; i += 1) {
 
   const expandTextarea = function () {
     thisTexterea.style.removeProperty("height");
-    thisTexterea.style.height = this.scrollHeight + 2 + "px";
+    thisTexterea.style.height = this.scrollHeight + 3 + "px";
   };
 
   thisTexterea.addEventListener("input", expandTextarea, false);
