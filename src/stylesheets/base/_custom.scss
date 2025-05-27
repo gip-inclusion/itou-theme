@@ -89,20 +89,12 @@ ol {
   gap: map-get($spacers, 3);
   flex-direction: column;
 
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
   .list-data {
     @extend .flex-grow-1;
-  }
-
-  &__two-column-md {
-    @include media-breakpoint-up(md) {
-      flex-direction: row;
-    }
-  }
-
-  &__two-column-lg {
-    @include media-breakpoint-up(lg) {
-      flex-direction: row;
-    }
   }
 }
 
@@ -110,36 +102,40 @@ ol {
   @extend .list-unstyled;
   margin-bottom: 0;
   text-align: left;
-  display: grid;
-  grid-row-gap: map-get($spacers, 3);
 
   li {
+    &:not(:last-child) {
+      margin-bottom: map-get($spacers, 3);
+    }
+
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
     small {
-      display: block;
+      margin-right: map-get($spacers, 1);
       line-height: $line-height-sm;
       font-size: $font-size-sm;
+      display: block;
+
+      @include media-breakpoint-up(md) {
+        display: inline;
+        width: 250px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 280px;
+      }
     }
 
     strong,
     address {
-      display: inline-block;
       margin-bottom: 0;
       font-weight: $font-weight-bold;
       line-height: $line-height-sm;
-    }
-  }
-
-  &__two-column-md {
-    @include media-breakpoint-up(md) {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: map-get($spacers, 3);
-    }
-  }
-
-  &__two-column-lg {
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: map-get($spacers, 3);
     }
   }
 }
