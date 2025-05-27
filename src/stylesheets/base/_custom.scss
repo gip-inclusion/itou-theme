@@ -105,14 +105,7 @@ ol {
 
   li {
     &:not(:last-child) {
-      margin-bottom: map-get($spacers, 3);
-    }
-
-
-    @include media-breakpoint-up(md) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      margin-bottom: map-get($spacers, 2);
     }
 
     small {
@@ -120,15 +113,6 @@ ol {
       line-height: $line-height-sm;
       font-size: $font-size-sm;
       display: block;
-
-      @include media-breakpoint-up(md) {
-        display: inline;
-        width: 250px;
-      }
-
-      @include media-breakpoint-up(lg) {
-        width: 280px;
-      }
     }
 
     strong,
@@ -136,6 +120,28 @@ ol {
       margin-bottom: 0;
       font-weight: $font-weight-bold;
       line-height: $line-height-sm;
+    }
+  }
+
+  &__one-line {
+
+    li {
+      @include media-breakpoint-up(md) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    small {
+      @include media-breakpoint-up(md) {
+        display: inline;
+        width: 250px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 300px;
+      }
     }
   }
 }

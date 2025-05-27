@@ -563,10 +563,59 @@
           <article class="row py-5" id="listdata">
             <div class="col-12">
               <h3>List data<code>.list-data</code></h3>
-              <p>Le <code>.list-data</code> permet d'afficher une liste de données utilsateur.</p>
+              <p>Le <code>.list-data</code> permet d'afficher une liste de données utilisateur.</p>
               <div class="row">
                 <div class="col-12 col-md-10 mb-3 mb-md-6">
                   <ul class="list-data">
+                    <li>
+                      <small>Prénom</small>
+                      <strong>David</strong>
+                    </li>
+                    <li>
+                      <small>Nom</small>
+                      <strong>Watrelot</strong>
+                    </li>
+                    <li>
+                      <small>Numéro de sécurité sociale</small>
+                      <strong><span>2</span><span class="ms-1">81</span><span class="ms-1">02</span><span class="ms-1">22</span><span class="ms-1">250</span><span class="ms-1">031</span><span class="ms-1">08</span></strong>
+                      <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="171026225003105"><i class="ri-file-copy-line"></i></button>
+                    </li>
+                    <li>
+                      <small>Date de naissance</small>
+                      <strong>05/11/1997</strong>
+                    </li>
+                    <li>
+                      <small>Adresse e-mail</small>
+                      <strong>deloo@free.fr</strong>
+                      <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="deloo@free.fr"><i class="ri-file-copy-line"></i></button>
+                    </li>
+                    <li>
+                      <small>Site internet</small>
+                      <a href="" class="btn-link has-external-link">siteweb.com</a>
+                    </li>
+                    <li>
+                      <small>Téléphone</small>
+                      <i class="text-disabled">Non renseigné</i>
+                    </li>
+                    <li>
+                      <small>Adresse</small>
+                      <address>10 rue des maison, 59000 Lille</address>
+                    </li>
+                    <li>
+                      <small>Identifiant Pôle emploi</small>
+                      <i class="text-disabled">Non renseigné</i>
+                    </li>
+                    <li>
+                      <small>CV</small>
+                      <i class="text-disabled">Non renseigné</i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>Avec le modifier <code>.list-data__one-line</code> pour afficher les libellés et valeurs sur une seule ligne à partir de breakpoint MD</p>
+              <div class="row">
+                <div class="col-12 col-md-10 mb-3 mb-md-6">
+                  <ul class="list-data list-data__one-line">
                     <li>
                       <small>Prénom</small>
                       <strong>David</strong>
@@ -617,7 +666,7 @@
               <div class="row">
                 <div class="col-12 mb-3 mb-md-6">
                   <div class="list-data-group">
-                    <ul class="list-data">
+                    <ul class="list-data list-data list-data__one-line">
                       <li>
                         <small>Prénom</small>
                         <strong>David</strong>
@@ -641,7 +690,7 @@
                         <i class="text-disabled">Non renseigné</i>
                       </li>
                     </ul>
-                    <ul class="list-data">
+                    <ul class="list-data list-data list-data__one-line">
                       <li>
                         <small>Nom</small>
                         <strong>Watrelot</strong>
