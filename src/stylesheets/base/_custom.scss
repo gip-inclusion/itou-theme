@@ -110,6 +110,7 @@ ol {
       display: flex;
       align-items: center;
       flex-direction: row;
+      gap: map-get($spacers, 1);
     }
 
     &:not(:last-child) {
@@ -117,14 +118,13 @@ ol {
     }
 
     small {
-      margin-right: map-get($spacers, 1);
       line-height: $line-height-sm;
       font-size: $font-size-sm;
       align-items: center;
       display: flex;
+      gap: map-get($spacers, 1);
 
       @container list-data (min-width: 560px) {
-        display: inline-flex;
         flex: 0 0 260px;
       }
     }
@@ -136,8 +136,11 @@ ol {
       line-height: $line-height-sm;
     }
 
-    blockquote {
-      @extend .flex-grow-1;
+    &.has-forced-line-break {
+      @container list-data (min-width: 560px) {
+        display: inline-block !important;
+        width: 100%;
+      }
     }
   }
 }
