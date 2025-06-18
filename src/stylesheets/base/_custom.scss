@@ -98,19 +98,26 @@ ol {
   }
 }
 
+
+
 .list-data {
-  container-type: inline-size;
-  container-name: list-data;
   @extend .list-unstyled;
   margin-bottom: 0;
   text-align: left;
 
+  @media not print {
+    container-type: inline-size;
+    container-name: list-data;
+  }
+
   li {
-    @container list-data (min-width: 560px) {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: map-get($spacers, 1);
+    @media not print {
+      @container list-data (min-width: 560px) {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: map-get($spacers, 1);
+      }
     }
 
     &:not(:last-child) {
@@ -124,8 +131,10 @@ ol {
       display: flex;
       gap: map-get($spacers, 1);
 
-      @container list-data (min-width: 560px) {
-        flex: 0 0 260px;
+      @media not print {
+        @container list-data (min-width: 560px) {
+          flex: 0 0 260px;
+        }
       }
     }
 
@@ -137,9 +146,11 @@ ol {
     }
 
     &.has-forced-line-break {
-      @container list-data (min-width: 560px) {
-        display: inline-block !important;
-        width: 100%;
+      @media not print {
+        @container list-data (min-width: 560px) {
+          display: inline-block !important;
+          width: 100%;
+        }
       }
     }
   }
