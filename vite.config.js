@@ -37,6 +37,7 @@ export default {
         layout_itou_authenticated_form: resolve(__dirname, "src/layout-itou-authenticated-form.html"),
         layout_itou_authenticated_mentions: resolve(__dirname, "src/layout-itou-authenticated-mentions.html"),
         layout_itou_authenticated_search_result: resolve(__dirname, "src/layout-itou-authenticated-search-result.html"),
+        layout_itou_authenticated_candidature_result: resolve(__dirname, "src/layout-itou-authenticated-candidature-result.html"),
         layout_itou_authenticated_test: resolve(__dirname, "src/layout-itou-authenticated-test.html"),
         layout_itou_not_authenticated_homepage: resolve(__dirname, "src/layout-itou-not-authenticated-homepage.html"),
         layout_itou_not_authenticated_mentions: resolve(__dirname, "src/layout-itou-not-authenticated-mentions.html"),

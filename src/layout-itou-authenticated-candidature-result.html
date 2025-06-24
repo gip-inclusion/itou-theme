@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="./stylesheets/app.scss" lang="sass">
+
+    <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+  </head>
+
+  <body id="top" class="l-authenticated">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="c-skiplinks">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    {{> _partials/header-authenticated }}
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-title">
+                <div class="c-title__main">
+                  <h1 id="list-job-applications-title" class="m-0">Candidatures reçues (actives)</h1>
+                </div>
+                <div class="c-title__cta" data-emplois-elements-visibility-on-selection="hidden" role="group" aria-label="Actions sur les candidatures">
+
+                  <div id="job-applications-export-link">
+                    <a href="" class="btn btn-lg btn-ico btn-secondary w-100" aria-label="Exporter la liste de candidatures">
+                      <i class="ri-download-line fw-medium" aria-hidden="true"></i>
+                      <span>Exporter</span>
+                    </a>
+                  </div>
+                  <a href="" class="btn btn-lg btn-primary btn-ico" data-matomo-event="true" data-matomo-category="employeurs" data-matomo-action="clic" data-matomo-option="enregistrer-candidature">
+                    <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
+                    <span>Enregistrer une candidature</span>
+                  </a>
+                </div>
+                <div class="c-title__secondary">
+                  <p>
+                    Toute demande de PASS&nbsp;IAE doit être effectuée <b>au plus tard le jour de l'embauche</b>.
+                  </p>
+                  <p>Les demandes rétroactives ne sont pas autorisées.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <div class="col-12">
+              <div class="d-flex flex-column flex-md-row align-items-md-center mb-3 mb-md-4" data-emplois-elements-visibility-on-selection="hidden">
+                <div class="flex-md-grow-1">
+
+                  <p class="mb-0" id="apply-list-count">
+
+                    34 résultats
+
+                  </p>
+                </div>
+                <div class="flex-column flex-md-row mt-3 mt-md-0">
+                  <div class="w-lg-400px"><label class="visually-hidden" for="id_job_seeker">Nom du candidat</label><select name="job_seeker" lang="fr" data-minimum-input-length="0" data-theme="bootstrap-5" data-allow-clear="true" data-placeholder="Nom du candidat" class="form-select django-select2 select2-hidden-accessible" id="id_job_seeker" tabindex="-1" aria-hidden="true" data-select2-id="id_job_seeker">
+                      <option value="" selected="" data-select2-id="70"></option>
+
+                      <option value="55">Aaron PHILIPS</option>
+
+                      <option value="392">Adam TOUSSA</option>
+
+                      <option value="114">Alan ALAIN</option>
+
+                      <option value="231">Alice BALTHAZARD</option>
+
+                      <option value="94">Aline ALAN</option>
+
+                      <option value="169">Antoine POINDRON</option>
+
+                      <option value="17">Bob LE BRICOLEUR</option>
+
+                      <option value="66">David WATRELOT</option>
+
+                      <option value="2">Georges DURAND</option>
+
+                      <option value="112">Jean BERTIN</option>
+
+                      <option value="50">Jean DUJARDIN</option>
+
+                      <option value="399">Jeanne TESTE</option>
+
+                      <option value="69">Jolie JULIE</option>
+
+                      <option value="96">Julie TIBO</option>
+
+                      <option value="330">Juliette NOUDALA</option>
+
+                      <option value="353">Justine MOREAU</option>
+
+                      <option value="278">Lola SANT</option>
+
+                      <option value="390">Lucie LAURENT</option>
+
+                      <option value="119">Lucien LUCE</option>
+
+                      <option value="289">Léon MARCHAND</option>
+
+                      <option value="53">Michel SIMON</option>
+
+                      <option value="438">Olivier TESTEUR</option>
+
+                      <option value="48">Sophie SOPHIE</option>
+
+                      <option value="8">Sylvie MARTIN</option>
+
+                      <option value="65">Thomas TIP</option>
+
+                      <option value="225">Toto ADAM</option>
+
+                      <option value="347">Toto ADAM</option>
+
+                      <option value="474">Truc BIDULE</option>
+
+                      <option value="440">Truc MUCHE</option>
+
+                      <option value="129">Xavier TEST</option>
+
+                    </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="69" style="width: 400px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-id_job_seeker-container"><span class="select2-selection__rendered" id="select2-id_job_seeker-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Nom du candidat</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                </div>
+                <div class="d-flex gap-2 mt-3 mt-md-0 ms-0 ms-md-2" role="group" aria-label="Changement du mode d'affichage des candidatures">
+                  <button id="list_display_button" class="btn btn-ico btn-block btn-link order-2" data-emplois-setter-target="#display-kind" data-emplois-setter-value="list">
+                    <i class="ri-stacked-view" aria-hidden="true"></i>
+                    <span>Liste</span>
+                  </button>
+                  <button id="table_display_button" class="btn btn-ico btn-block btn-secondary" data-emplois-setter-target="#display-kind" data-emplois-setter-value="table">
+                    <i class="ri-table-line" aria-hidden="true"></i>
+                    <span>Tableau</span>
+                  </button>
+
+                </div>
+              </div>
+
+
+
+              <section aria-labelledby="apply-list-count" id="job-applications-section">
+
+
+                <div class="table-responsive mt-3 mt-md-4">
+
+                  <form hx-get="/apply/siae/list/actions?list_url=/apply/siae/list" hx-trigger="change delay:.5" hx-swap="none" hx-indicator=".selection-indicator" data-emplois-elements-visibility-on-selection-controller="selected-application">
+                    <table class="table table-hover table-sortable">
+                      <caption class="visually-hidden">Liste des candidatures (les colonnes disposant d’un bouton dans leur entête peuvent être triées en cliquant sur le bouton)</caption>
+                      <thead>
+                        <tr>
+
+                          <th scope="col" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" id="select-all-applications" data-emplois-select-all-target-input-name="selected-application">
+                            <label class="visually-hidden" for="select-all-applications">Sélectionner toutes les candidatures</label>
+                          </th>
+
+
+                          <th scope="col" aria-sort="none">
+                            <button type="button" data-emplois-setter-target="#id_order" data-emplois-setter-value="job_seeker_full_name" data-emplois-elements-visibility-on-selection="disabled">
+                              Candidature de
+                            </button>
+                          </th>
+
+
+                          <th scope="col" aria-sort="descending">
+                            <button type="button" data-emplois-setter-target="#id_order" data-emplois-setter-value="created_at" data-emplois-elements-visibility-on-selection="disabled">
+                              Émise le
+                            </button>
+                          </th>
+
+                          <th scope="col">Statut</th>
+
+                          <th scope="col">Poste</th>
+                          <th scope="col">Emetteur</th>
+
+
+                          <th scope="col" class="text-nowrap">Critères administratifs IAE</th>
+
+                          <th scope="col" class="text-end w-50px"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="17424379-97b3-475a-823b-369f0fef03f2" id="select-17424379-97b3-475a-823b-369f0fef03f2">
+                            <label class="visually-hidden" for="select-17424379-97b3-475a-823b-369f0fef03f2">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/17424379-97b3-475a-823b-369f0fef03f2/siae/details?back_url=/apply/siae/list">
+                              Truc BIDULE
+                            </a>
+                            <span class="d-block">
+                              34 -
+                              Sète
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>18/06/2025</td>
+                          <td><span id="state_17424379-97b3-475a-823b-369f0fef03f2" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Réfugié statutaire, bénéficiaire d'une protection temporaire, protégé subsidiaire ou demandeur d'asile</li>
+                              <li>Résident QPV</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/17424379-97b3-475a-823b-369f0fef03f2/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Truc BIDULE"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="5b1d749f-4f2c-46af-896b-2934a04953d2" id="select-5b1d749f-4f2c-46af-896b-2934a04953d2">
+                            <label class="visually-hidden" for="select-5b1d749f-4f2c-46af-896b-2934a04953d2">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/5b1d749f-4f2c-46af-896b-2934a04953d2/siae/details?back_url=/apply/siae/list">
+                              Alan ALAIN
+                            </a>
+                            <span class="d-block">
+                              972 -
+                              Le Lamentin
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-check-line" aria-hidden="true"></i>
+                              Éligible à l’IAE
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>13/06/2025</td>
+                          <td><span id="state_5b1d749f-4f2c-46af-896b-2934a04953d2" class="badge rounded-pill text-nowrap badge-xs bg-accent-03 text-primary">Candidature en attente</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Chef des nombres ☺ ♥</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                              <li>DETLD (+ 24 mois)</li>
+                              <li>Senior (+50 ans)</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/5b1d749f-4f2c-46af-896b-2934a04953d2/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Alan ALAIN"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="e48344b2-61db-497b-b045-20a2e0ff9608" id="select-e48344b2-61db-497b-b045-20a2e0ff9608">
+                            <label class="visually-hidden" for="select-e48344b2-61db-497b-b045-20a2e0ff9608">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/e48344b2-61db-497b-b045-20a2e0ff9608/siae/details?back_url=/apply/siae/list">
+                              Olivier TESTEUR
+                            </a>
+                            <span class="d-block">
+                              90 -
+                              Belfort
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>29/04/2025</td>
+                          <td><span id="state_e48344b2-61db-497b-b045-20a2e0ff9608" class="badge rounded-pill text-nowrap badge-xs bg-danger">Candidature déclinée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Agent administratif / Agente administrative</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            Job insertion
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/e48344b2-61db-497b-b045-20a2e0ff9608/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Olivier TESTEUR"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="3276f98f-ccea-4a6e-9159-384425bb3201" id="select-3276f98f-ccea-4a6e-9159-384425bb3201">
+                            <label class="visually-hidden" for="select-3276f98f-ccea-4a6e-9159-384425bb3201">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/3276f98f-ccea-4a6e-9159-384425bb3201/siae/details?back_url=/apply/siae/list">
+                              Jolie JULIE
+                            </a>
+                            <span class="d-block">
+                              75 -
+                              Paris
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>15/04/2025</td>
+                          <td><span id="state_3276f98f-ccea-4a6e-9159-384425bb3201" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Chef des nombres ☺ ♥</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/3276f98f-ccea-4a6e-9159-384425bb3201/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Jolie JULIE"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df" id="select-d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df">
+                            <label class="visually-hidden" for="select-d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df/siae/details?back_url=/apply/siae/list">
+                              Truc MUCHE
+                            </a>
+                            <span class="d-block">
+                              56 -
+                              La Grée-Saint-Laurent
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>09/04/2025</td>
+                          <td><span id="state_d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            Association La Belle Verte
+
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Truc MUCHE"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="ebbfb624-4041-404a-aa4d-6b2008649100" id="select-ebbfb624-4041-404a-aa4d-6b2008649100">
+                            <label class="visually-hidden" for="select-ebbfb624-4041-404a-aa4d-6b2008649100">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/ebbfb624-4041-404a-aa4d-6b2008649100/siae/details?back_url=/apply/siae/list">
+                              Aaron PHILIPS
+                            </a>
+                            <span class="d-block">
+                              75 -
+                              Paris
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>25/03/2025</td>
+                          <td><span id="state_ebbfb624-4041-404a-aa4d-6b2008649100" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/ebbfb624-4041-404a-aa4d-6b2008649100/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Aaron PHILIPS"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="44875ec7-c073-493d-b95d-bd899675bdc9" id="select-44875ec7-c073-493d-b95d-bd899675bdc9">
+                            <label class="visually-hidden" for="select-44875ec7-c073-493d-b95d-bd899675bdc9">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/44875ec7-c073-493d-b95d-bd899675bdc9/siae/details?back_url=/apply/siae/list">
+                              Jeanne TESTE
+                            </a>
+                            <span class="d-block">
+                              90 -
+                              Belfort
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-check-line" aria-hidden="true"></i>
+                              Éligible à l’IAE
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>20/03/2025</td>
+                          <td><span id="state_44875ec7-c073-493d-b95d-bd899675bdc9" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/44875ec7-c073-493d-b95d-bd899675bdc9/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Jeanne TESTE"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="c9d6e303-f3d5-4fa2-a07f-2298fa798013" id="select-c9d6e303-f3d5-4fa2-a07f-2298fa798013">
+                            <label class="visually-hidden" for="select-c9d6e303-f3d5-4fa2-a07f-2298fa798013">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/c9d6e303-f3d5-4fa2-a07f-2298fa798013/siae/details?back_url=/apply/siae/list">
+                              Thomas TIP
+                            </a>
+                            <span class="d-block">
+                              75 -
+                              Paris 7e
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>12/03/2025</td>
+                          <td><span id="state_c9d6e303-f3d5-4fa2-a07f-2298fa798013" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Figurant / Figurante</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                              <li>Jeune (-26 ans)</li>
+                              <li>Mobilité</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/c9d6e303-f3d5-4fa2-a07f-2298fa798013/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Thomas TIP"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="24c3a03d-3a02-4379-bed0-ec184a06961d" id="select-24c3a03d-3a02-4379-bed0-ec184a06961d">
+                            <label class="visually-hidden" for="select-24c3a03d-3a02-4379-bed0-ec184a06961d">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/24c3a03d-3a02-4379-bed0-ec184a06961d/siae/details?back_url=/apply/siae/list">
+                              Jean BERTIN
+                            </a>
+                            <span class="d-block">
+                              74 -
+                              Annecy
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>11/03/2025</td>
+                          <td><span id="state_24c3a03d-3a02-4379-bed0-ec184a06961d" class="badge rounded-pill text-nowrap badge-xs bg-danger">Candidature déclinée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Figurant / Figurante</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/24c3a03d-3a02-4379-bed0-ec184a06961d/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Jean BERTIN"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="5e523cb3-150b-4e41-b269-8123a0e14e6f" id="select-5e523cb3-150b-4e41-b269-8123a0e14e6f">
+                            <label class="visually-hidden" for="select-5e523cb3-150b-4e41-b269-8123a0e14e6f">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/5e523cb3-150b-4e41-b269-8123a0e14e6f/siae/details?back_url=/apply/siae/list">
+                              Juliette NOUDALA
+                            </a>
+                            <span class="d-block">
+                              59 -
+                              Lille
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>11/03/2025</td>
+                          <td><span id="state_5e523cb3-150b-4e41-b269-8123a0e14e6f" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Figurant / Figurante</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                              <li>Jeune (-26 ans)</li>
+                              <li>Mobilité</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/5e523cb3-150b-4e41-b269-8123a0e14e6f/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Juliette NOUDALA"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="fb7414a3-acb6-4cf5-83a7-9c56bb5d8e3e" id="select-fb7414a3-acb6-4cf5-83a7-9c56bb5d8e3e">
+                            <label class="visually-hidden" for="select-fb7414a3-acb6-4cf5-83a7-9c56bb5d8e3e">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/fb7414a3-acb6-4cf5-83a7-9c56bb5d8e3e/siae/details?back_url=/apply/siae/list">
+                              Juliette NOUDALA
+                            </a>
+                            <span class="d-block">
+                              59 -
+                              Lille
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>11/03/2025</td>
+                          <td><span id="state_fb7414a3-acb6-4cf5-83a7-9c56bb5d8e3e" class="badge rounded-pill text-nowrap badge-xs bg-danger">Candidature déclinée</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                              <li>Jeune (-26 ans)</li>
+                              <li>Mobilité</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/fb7414a3-acb6-4cf5-83a7-9c56bb5d8e3e/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Juliette NOUDALA"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="e91c45cc-e3d5-4b37-933c-c3170c95305a" id="select-e91c45cc-e3d5-4b37-933c-c3170c95305a">
+                            <label class="visually-hidden" for="select-e91c45cc-e3d5-4b37-933c-c3170c95305a">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/e91c45cc-e3d5-4b37-933c-c3170c95305a/siae/details?back_url=/apply/siae/list">
+                              Adam TOUSSA
+                            </a>
+                            <span class="d-block">
+                              972 -
+                              Fort-De-France
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-warning-lighter text-warning">
+                              <i class="ri-error-warning-line" aria-hidden="true"></i>
+                              Éligibilité IAE à valider
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>06/03/2025</td>
+                          <td><span id="state_e91c45cc-e3d5-4b37-933c-c3170c95305a" class="badge rounded-pill text-nowrap badge-xs bg-accent-03 text-primary">Candidature en attente</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/e91c45cc-e3d5-4b37-933c-c3170c95305a/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Adam TOUSSA"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="e95e4b05-e6b8-4fed-93e9-6892e3a05bfc" id="select-e95e4b05-e6b8-4fed-93e9-6892e3a05bfc">
+                            <label class="visually-hidden" for="select-e95e4b05-e6b8-4fed-93e9-6892e3a05bfc">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/e95e4b05-e6b8-4fed-93e9-6892e3a05bfc/siae/details?back_url=/apply/siae/list">
+                              Lucie LAURENT
+                            </a>
+                            <span class="d-block">
+                              33 -
+                              Bordeaux
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-check-line" aria-hidden="true"></i>
+                              Éligible à l’IAE
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>05/03/2025</td>
+                          <td><span id="state_e95e4b05-e6b8-4fed-93e9-6892e3a05bfc" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                              <li>DETLD (+ 24 mois)</li>
+                              <li>Mobilité</li>
+                              <li>Résident ZRR</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/e95e4b05-e6b8-4fed-93e9-6892e3a05bfc/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Lucie LAURENT"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="2d0270e0-1919-4d0d-98dd-8ba40c4fa86e" id="select-2d0270e0-1919-4d0d-98dd-8ba40c4fa86e">
+                            <label class="visually-hidden" for="select-2d0270e0-1919-4d0d-98dd-8ba40c4fa86e">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/2d0270e0-1919-4d0d-98dd-8ba40c4fa86e/siae/details?back_url=/apply/siae/list">
+                              Justine MOREAU
+                            </a>
+                            <span class="d-block">
+                              59 -
+                              Cappelle-En-Pévèle
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>04/02/2025</td>
+                          <td><span id="state_2d0270e0-1919-4d0d-98dd-8ba40c4fa86e" class="badge rounded-pill text-nowrap badge-xs bg-primary">Embauche annulée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Chef des nombres ☺ ♥</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/2d0270e0-1919-4d0d-98dd-8ba40c4fa86e/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Justine MOREAU"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="2bd670cf-59ab-4ef1-9339-bdf41fc36c40" id="select-2bd670cf-59ab-4ef1-9339-bdf41fc36c40">
+                            <label class="visually-hidden" for="select-2bd670cf-59ab-4ef1-9339-bdf41fc36c40">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/2bd670cf-59ab-4ef1-9339-bdf41fc36c40/siae/details?back_url=/apply/siae/list">
+                              Toto ADAM
+                            </a>
+                            <span class="d-block">
+                              44 -
+                              Nantes
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-warning-lighter text-warning">
+                              <i class="ri-error-warning-line" aria-hidden="true"></i>
+                              Éligibilité IAE à valider
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>03/02/2025</td>
+                          <td><span id="state_2bd670cf-59ab-4ef1-9339-bdf41fc36c40" class="badge rounded-pill text-nowrap badge-xs bg-danger">Candidature déclinée</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/2bd670cf-59ab-4ef1-9339-bdf41fc36c40/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Toto ADAM"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="c4eff011-2ee6-469b-aba8-6dbc03917f88" id="select-c4eff011-2ee6-469b-aba8-6dbc03917f88">
+                            <label class="visually-hidden" for="select-c4eff011-2ee6-469b-aba8-6dbc03917f88">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/c4eff011-2ee6-469b-aba8-6dbc03917f88/siae/details?back_url=/apply/siae/list">
+                              Alice BALTHAZARD
+                            </a>
+                            <span class="d-block">
+                              75 -
+                              Paris 15e
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>29/01/2025</td>
+                          <td><span id="state_c4eff011-2ee6-469b-aba8-6dbc03917f88" class="badge rounded-pill text-nowrap badge-xs bg-primary">Embauché ailleurs</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/c4eff011-2ee6-469b-aba8-6dbc03917f88/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Alice BALTHAZARD"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="47f4ce3c-1de5-4726-ba47-8b41d29e2397" id="select-47f4ce3c-1de5-4726-ba47-8b41d29e2397">
+                            <label class="visually-hidden" for="select-47f4ce3c-1de5-4726-ba47-8b41d29e2397">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/47f4ce3c-1de5-4726-ba47-8b41d29e2397/siae/details?back_url=/apply/siae/list">
+                              Bob LE BRICOLEUR
+                            </a>
+                            <span class="d-block">
+                              64 -
+                              Pau
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>23/01/2025</td>
+                          <td><span id="state_47f4ce3c-1de5-4726-ba47-8b41d29e2397" class="badge rounded-pill text-nowrap badge-xs bg-accent-03 text-primary">Candidature en attente</span></td>
+
+
+
+                          <td>
+
+
+                            Candidature spontanée
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/47f4ce3c-1de5-4726-ba47-8b41d29e2397/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Bob LE BRICOLEUR"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="3e9aeefc-960b-4e93-bd23-423fb375dcf6" id="select-3e9aeefc-960b-4e93-bd23-423fb375dcf6">
+                            <label class="visually-hidden" for="select-3e9aeefc-960b-4e93-bd23-423fb375dcf6">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/3e9aeefc-960b-4e93-bd23-423fb375dcf6/siae/details?back_url=/apply/siae/list">
+                              Aline ALAN
+                            </a>
+                            <span class="d-block">
+                              90 -
+                              Belfort
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>23/01/2025</td>
+                          <td><span id="state_3e9aeefc-960b-4e93-bd23-423fb375dcf6" class="badge rounded-pill text-nowrap badge-xs bg-danger">Candidature déclinée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Chef des nombres ☺ ♥</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-home-smile-2-line" aria-hidden="true"></i>
+
+                            France Travail - ARLES
+
+
+                          </td>
+
+
+                          <td>
+
+                            <i class="text-disabled">Aucun critère sélectionné</i>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/3e9aeefc-960b-4e93-bd23-423fb375dcf6/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Aline ALAN"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="34d1c2a8-2167-49d4-ad80-d8e266587b25" id="select-34d1c2a8-2167-49d4-ad80-d8e266587b25">
+                            <label class="visually-hidden" for="select-34d1c2a8-2167-49d4-ad80-d8e266587b25">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/34d1c2a8-2167-49d4-ad80-d8e266587b25/siae/details?back_url=/apply/siae/list">
+                              Antoine POINDRON
+                            </a>
+                            <span class="d-block">
+                              13 -
+                              Aix-En-Provence
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-check-line" aria-hidden="true"></i>
+                              Éligible à l’IAE
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>21/01/2025</td>
+                          <td><span id="state_34d1c2a8-2167-49d4-ad80-d8e266587b25" class="badge rounded-pill text-nowrap badge-xs bg-accent-03 text-primary">Candidature en attente</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Toiletteur / Toiletteuse d'animaux</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            <i class="ri-community-line" aria-hidden="true"></i>
+                            Garage Martinet Siège
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Bénéficiaire du RSA</li>
+                              <li>Jeune (-26 ans)</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/34d1c2a8-2167-49d4-ad80-d8e266587b25/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de Antoine POINDRON"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                        <tr class="align-top">
+
+                          <th scope="row" class="text-start w-50px">
+                            <input class="form-check-input" type="checkbox" name="selected-application" value="a60fe750-6a38-458a-a739-2ea918543eb3" id="select-a60fe750-6a38-458a-a739-2ea918543eb3">
+                            <label class="visually-hidden" for="select-a60fe750-6a38-458a-a739-2ea918543eb3">Sélectionner cette candidature</label>
+                          </th>
+
+
+                          <td>
+                            <a class="btn-link" href="/apply/a60fe750-6a38-458a-a739-2ea918543eb3/siae/details?back_url=/apply/siae/list">
+                              David WATRELOT
+                            </a>
+                            <span class="d-block">
+                              22 -
+                              Saint-Brieuc
+                            </span>
+
+
+
+
+
+                            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                              <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                              PASS&nbsp;IAE valide
+                            </span>
+
+
+
+
+
+                          </td>
+
+
+                          <td>19/12/2024</td>
+                          <td><span id="state_a60fe750-6a38-458a-a739-2ea918543eb3" class="badge rounded-pill text-nowrap badge-xs bg-success">Candidature acceptée</span></td>
+
+
+
+                          <td>
+
+
+                            <ul class="list-unstyled">
+                              <li>Chef des nombres ☺ ♥</li>
+                            </ul>
+
+
+                          </td>
+                          <td>
+
+                            Vous
+
+                          </td>
+
+
+                          <td>
+
+                            <ul class="mb-0">
+                              <li>Allocataire AAH</li>
+                              <li>DETLD (+ 24 mois)</li>
+                              <li>Parent isolé</li>
+                              <li>Senior (+50 ans)</li>
+                            </ul>
+
+
+                          </td>
+
+
+                          <td class="text-end w-50px align-middle">
+
+                            <a class="btn btn-sm btn-link btn-ico-only" href="/apply/a60fe750-6a38-458a-a739-2ea918543eb3/siae/details?back_url=/apply/siae/list" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+                              <i class="ri-arrow-drop-right-line fs-lg" aria-label="Gérer la candidature de David WATRELOT"></i>
+                            </a>
+
+                          </td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+
+                  </form>
+
+                </div>
+
+
+
+
+
+                <nav role="navigation" aria-label="Pagination" hx-boost="true" hx-target="#job-applications-section" hx-indicator="#job-applications-section" data-emplois-elements-visibility-on-selection="hidden">
+
+                  <ul class="pagination flex-wrap justify-content-center">
+
+
+                    <li class="page-item disabled">
+                      <a class="page-link" aria-disabled="true" tabindex="-1" href="/apply/siae/list?page=1">Premier</a>
+                    </li>
+
+
+
+
+
+                    <li class="page-item active">
+                      <a class="page-link" aria-label="Page 1" aria-current="page" href="/apply/siae/list?page=1">1</a>
+                    </li>
+
+
+
+                    <li class="page-item">
+                      <a class="page-link" aria-label="Page 2" href="/apply/siae/list?page=2">2</a>
+                    </li>
+
+
+
+
+                    <li class="page-item">
+                      <a class="page-link" href="/apply/siae/list?page=2">Dernier</a>
+                    </li>
+
+                  </ul>
+                </nav>
+
+
+
+
+              </section>
+
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/index.js"></script>
+  </body>
+
+</html>

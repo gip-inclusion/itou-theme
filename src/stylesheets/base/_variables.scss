@@ -410,22 +410,14 @@ $paragraph-margin-bottom: $spacer;
 // adapting to different screen sizes, for use in media queries.
 
 // scss-docs-start grid-breakpoints
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1280px,
-//   xxl: 1400px,
-// );
 $grid-breakpoints: (
   xs: 0,
   sm: 560px,
   md: 768px,
-  lg: 1020px,
-  xl: 1420px,
-  xxl: 1740px,
-  xxxl: 2320px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1640px,
+  xxxl: 2220px, // xxl + largeur aside menu
 );
 // scss-docs-end grid-breakpoints
 
@@ -437,20 +429,13 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 // scss-docs-start container-max-widths
-// $container-max-widths: (
-//   sm: 540px,
-//   md: 720px,
-//   lg: 960px,
-//   xl: 1232px,
-//   xxl: 1320px,
-// );
 $container-max-widths: (
   sm: 560px,
   md: 768px,
-  lg: 1020px,
-  xl: 1420px,
-  xxl: 1740px,
-  xxxl: 2320px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1640px,
+  xxxl: 2220px,
 );
 // scss-docs-end container-max-widths
 
