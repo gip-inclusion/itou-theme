@@ -3,7 +3,6 @@ import "../stylesheets/app.scss?inline";
 
 // Common vars
 const alertDismissibleOnceList = document.querySelectorAll(".alert-dismissible-once");
-const textareaExpandableList = document.querySelectorAll("[data-it-expandable=true]");
 const inputPasswordList = document.querySelectorAll("[data-it-password=toggle]");
 const targetConseiList = document.querySelectorAll("[data-it-target-conseil]");
 const actionPrintList = document.querySelectorAll("[data-it-action=print]");
@@ -20,6 +19,7 @@ window.addEventListener("load", () => {
   // console.log('window loaded');
   inputGroupCopyToClipboard();
   buttonCopyToClipboard();
+  autoExpendableTextarea();
 });
 
 // Resize
@@ -37,6 +37,7 @@ document.addEventListener("htmx:load", () => {
   // console.log('document htmx loaded');
   inputGroupCopyToClipboard();
   buttonCopyToClipboard();
+  autoExpendableTextarea();
 });
 
 // InputGroup copy to clipboard
@@ -92,6 +93,23 @@ function buttonCopyToClipboard() {
   }
 }
 
+// Auto expendable textarea
+function autoExpendableTextarea() {
+  const textareaExpandableList = document.querySelectorAll("[data-it-expandable=true]");
+  for (let i = 0, ii = textareaExpandableList.length; i < ii; i += 1) {
+    const thisTexterea = textareaExpandableList[i];
+
+    const expandTextarea = function () {
+      thisTexterea.style.removeProperty("height");
+      thisTexterea.style.height = this.scrollHeight + 3 + "px";
+    };
+
+    thisTexterea.addEventListener("input", expandTextarea, false);
+    thisTexterea.addEventListener("focus", expandTextarea, false);
+    expandTextarea.call(thisTexterea);
+  }
+}
+
 // InputGroup toggle input text/password
 for (let i = 0, ii = inputPasswordList.length; i < ii; i += 1) {
   const thisInputPassword = inputPasswordList[i];
@@ -139,20 +157,6 @@ for (let i = 0, ii = alertDismissibleOnceList.length; i < ii; i += 1) {
     localStorage.setItem(thisID, "seen");
     thisAlert.classList.add("d-none");
   });
-}
-
-// Auto expendable textarea
-for (let i = 0, ii = textareaExpandableList.length; i < ii; i += 1) {
-  const thisTexterea = textareaExpandableList[i];
-
-  const expandTextarea = function () {
-    thisTexterea.style.removeProperty("height");
-    thisTexterea.style.height = this.scrollHeight + 3 + "px";
-  };
-
-  thisTexterea.addEventListener("input", expandTextarea, false);
-  thisTexterea.addEventListener("focus", expandTextarea, false);
-  expandTextarea.call(thisTexterea);
 }
 
 // Show data-it-target-conseil
