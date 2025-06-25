@@ -267,6 +267,7 @@
     position: relative;
 
     .form-group {
+      position: relative;
       margin-bottom: 0;
     }
 
@@ -297,8 +298,8 @@
       justify-content: end;
       gap: map-get($spacers, 2);
       position: absolute;
-      bottom: 60px;
-      right: 40px;
+      bottom: 1rem;
+      right: 1rem;
     }
 
     .btn {
