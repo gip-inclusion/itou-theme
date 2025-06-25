@@ -270,13 +270,25 @@
       margin-bottom: 0;
     }
 
-    textarea.form-control {
+    textarea.form-control,
+    div.form-control {
       font-size: $font-size-sm;
       font-style: italic;
       margin-top: map-get($spacers, 2);
       padding-bottom: 50px;
+      padding-top: 1rem;
       border-color: $primary;
       background-color: $accent-03-lighter;
+      aspect-ratio: 32 / 9;
+
+      @include media-breakpoint-up(xxl) {
+        aspect-ratio: 16 / 9;
+      }
+    }
+
+    div.form-control {
+      border-color: $accent-03-light;
+      background-color: $accent-03-light;
     }
 
     .form-row {
