@@ -47,6 +47,10 @@ input.form-control {
     @extend .ri-1x;
   }
 
+  .btn-ico span:not([class^="badge-"]) {
+    text-decoration: none !important;
+  }
+
   &.input-group-sm {
     input.form-control,
     .input-group-text,
@@ -64,6 +68,18 @@ input.form-control {
     .input-group-text,
     .btn {
       height: $input-height-lg;
+      border-radius: $border-radius-lg;
+    }
+
+    .select2-selection {
+      height: $input-height-lg;
+      border-radius: $border-radius-lg;
+      display: flex;
+      align-items: center;
+    }
+
+    .select2-selection__rendered {
+      width: 100%;
     }
 
     .btn > [class^="ri-"] {
@@ -79,25 +95,19 @@ input.form-control {
       border-radius: $border-radius-lg;
     }
 
+    .select2-selection {
+      height: $input-height-xl;
+      border-radius: $border-radius-lg;
+      display: flex;
+      align-items: center;
+    }
+
+    .select2-selection__rendered {
+      width: 100%;
+    }
+
     .btn > [class^="ri-"] {
       font-weight: $font-weight-bold;
-    }
-  }
-
-  &.input-group-search {
-    .form-control,
-    .input-group-text,
-    .select2-selection {
-      border-color: $border-color !important;
-    }
-
-    .btn-ico span:not([class^="badge-"]) {
-      text-decoration: none !important;
-    }
-
-    .select2-selection {
-      border-right: 0 !important;
-      background-image: none !important;
     }
   }
 }
@@ -144,9 +154,12 @@ select.form-select {
   padding-left: 0;
 }
 
-.input-group > .form-control:not(:last-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-  border-right: 0;
-  padding-right: 0;
+.input-group > .form-control:not(:last-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+.input-group .select2-selection {
+  border-right: 0 !important;
+  padding-right: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 .form-group > label,

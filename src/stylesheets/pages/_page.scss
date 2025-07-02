@@ -47,30 +47,8 @@
     }
   }
 
-  .s-home-search__form {
-    background-color: $white;
-    padding: 1rem;
-    border-radius: $border-radius-lg;
-  }
-
-  .s-home-search__form .input-group-text,
-  .s-home-search__form .form-control,
-  .s-home-search__form .select2-selection,
-  .s-home-search__form .select2-selection--single {
-    border-color: $white !important;
-  }
-
-  .s-home-search__form .select2-selection--single {
-    padding-right: 12px;
-    background-image: none !important;
-  }
-
-  .s-home-search__form .input-group-text {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .s-home-search__form .select2-selection__rendered {
-    white-space: nowrap !important;
+  .c-search__bar {
+    padding: map-get($spacers, 3);
+    border: 1px solid $white;
   }
 }

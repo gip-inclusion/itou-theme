@@ -1,0 +1,39 @@
+.c-search {
+
+  &__bar {
+    padding: map-get($spacers, 2);
+    border-radius: $border-radius-lg;
+    background-color: $white;
+    border: 1px solid $border-color;
+
+    .input-group-text,
+    .form-control,
+    .select2-selection,
+    .select2-selection--single {
+      border-color: $white !important;
+    }
+
+    .select2-selection--single {
+      padding-right: 12px;
+      background-image: none !important;
+    }
+
+    .input-group-text {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .select2-selection__rendered {
+      white-space: nowrap !important;
+    }
+
+    .input-group {
+
+      .select2-selection {
+        border-right: 0 !important;
+        background-image: none !important;
+        border-radius: $border-radius-lg !important;
+      }
+    }
+  }
+}
