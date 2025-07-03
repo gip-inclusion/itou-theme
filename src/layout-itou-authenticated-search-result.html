@@ -50,7 +50,18 @@
                   </span>
                 </a>
               </div>
-              <h1>Rechercher un emploi inclusif</h1>
+
+              <div class="c-title">
+                <div class="c-title__main">
+                  <h1 class="m-0">Rechercher un emploi inclusif</h1>
+                </div>
+                <div class="c-title__cta" role="group" aria-label="Actions sur les groupes de suivi">
+                  <button type="button" class="btn btn-lg btn-secondary btn-ico" data-bs-toggle="modal" data-bs-target="#newSavedListModal">
+                    <i class="ri-star-line fw-medium" aria-hidden="true"></i>
+                    <span>Enregistrer cette recherche</span>
+                  </button>
+                </div>
+              </div>
 
               {{> _partials/search }}
 
@@ -2922,9 +2933,35 @@
 
     </main>
 
+    <!-- Modal New item in Saved List -->
+    <div class="modal fade" id="newSavedListModal" tabindex="-1" aria-labelledby="newSavedListModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <form action="">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="newSavedListModalLabel">Enregistrer cette recherche</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+              <p>Enregistrez cette recherche afin de la retrouver facilement depuis votre tableau de bord.</p>
+              <div class="form-group">
+                <label class="form-label" for="id_address_line_2">Nom de cette recherche</label>
+                <input type="text" class="form-control" value="Lyon (69), 5km, AI">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-sm btn-primary">Enregistrer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script type="module" src="./javascripts/index.js"></script>
+
+    {{> _partials/search-scripts }}
   </body>
 
 </html>

@@ -1,0 +1,91 @@
+<!-- Modal Saved List Settings -->
+<div class="modal fade" id="savedListSettingsModal" tabindex="-1" aria-labelledby="savedListSettingsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="savedListSettingsModalLabel">Recherches enregistrées</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-unstyled">
+          <li class="d-flex lh-sm mb-3">
+            <div class="me-2">
+              <i class="ri-star-line text-muted" aria-hidden="true"></i>
+            </div>
+            <div class="flex-grow-1">
+              <strong class="fs-sm d-block">Lyon 2ème arrondissement</strong>
+              <span class="fs-xs">Lyon (69), 5 km, EI, Lyon 2eme arrondissement</span>
+            </div>
+            <div>
+              <button class="btn btn-danger btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton">
+                <i class="ri-delete-bin-line fw-medium" aria-hidden="true"></i>
+              </button>
+            </div>
+          </li>
+          <li class="d-flex lh-sm mb-3">
+            <div class="me-2">
+              <i class="ri-star-line text-muted" aria-hidden="true"></i>
+            </div>
+            <div class="flex-grow-1">
+              <strong class="fs-sm d-block">Bordeaux</strong>
+              <span class="fs-xs">Bordeaux (33), 15 km</span>
+            </div>
+            <div>
+              <button class="btn btn-danger btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton">
+                <i class="ri-delete-bin-line fw-medium" aria-hidden="true"></i>
+              </button>
+            </div>
+          </li>
+          <li class="d-flex lh-sm mb-3">
+            <div class="me-2">
+              <i class="ri-star-line text-muted" aria-hidden="true"></i>
+            </div>
+            <div class="flex-grow-1">
+              <strong class="fs-sm d-block">Grenoble</strong>
+              <span class="fs-xs">Grenoble (38), 5 km</span>
+            </div>
+            <div>
+              <button class="btn btn-danger btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton">
+                <i class="ri-delete-bin-line fw-medium" aria-hidden="true"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script>
+  $('#cityMultiple').select2({
+    theme: "bootstrap-5",
+    width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+    placeholder: $(this).data('placeholder'),
+    closeOnSelect: false,
+    allowClear: true,
+  });
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+<script>
+  document.querySelectorAll("[data-it-sliding-search=true]").forEach(function (slidingSearch) {
+    tns({
+      container: slidingSearch,
+      slideBy: "page",
+      autoWidth: true,
+      arrowKeys: true,
+      loop: false,
+      mouseDrag: false,
+      swipeAngle: false,
+      speed: 300,
+      gutter: 12,
+      nav: false,
+      controls: true,
+      startIndex: 0,
+    });
+  })
+</script>

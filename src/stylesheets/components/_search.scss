@@ -1,5 +1,4 @@
 .c-search {
-
   &__bar {
     padding: map-get($spacers, 2);
     border-radius: $border-radius-lg;
@@ -28,12 +27,59 @@
     }
 
     .input-group {
-
       .select2-selection {
         border-right: 0 !important;
         background-image: none !important;
         border-radius: $border-radius-lg !important;
       }
+    }
+  }
+
+  &__list {
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .my-2;
+    font-size: $font-size-sm;
+
+    &__title {
+      @extend .me-2;
+      display: none;
+
+      @include media-breakpoint-up(md) {
+        display: inline-flex;
+        flex-shrink: 0;
+      }
+    }
+
+    &__slider {
+      @extend .flex-grow-1;
+      border-right: 1px solid $border-color;
+
+      > ul {
+        @extend .list-unstyled;
+        @extend .list-inline;
+        @extend .m-0;
+
+        li {
+          @extend .list-inline-item;
+        }
+      }
+
+      .tns-item {
+        font-size: $font-size-sm !important;
+      }
+
+      .tns-controls {
+        [data-controls='prev'] {
+          box-shadow: $box-shadow-sm;
+            left: -#{map-get($spacers, 1)};
+        }
+        [data-controls='next'] {
+           box-shadow: $box-shadow-sm;
+          right: -#{map-get($spacers, 1)};
+        }
+      }
+
     }
   }
 }
