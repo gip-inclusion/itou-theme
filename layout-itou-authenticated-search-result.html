@@ -369,7 +369,18 @@
                   </span>
                 </a>
               </div>
-              <h1>Rechercher un emploi inclusif</h1>
+
+              <div class="c-title">
+                <div class="c-title__main">
+                  <h1 class="m-0">Rechercher un emploi inclusif</h1>
+                </div>
+                <div class="c-title__cta" role="group" aria-label="Actions sur les groupes de suivi">
+                  <button type="button" class="btn btn-lg btn-secondary btn-ico" data-bs-toggle="modal" data-bs-target="#newSavedListModal">
+                    <i class="ri-star-line fw-medium" aria-hidden="true"></i>
+                    <span>Enregistrer cette recherche</span>
+                  </button>
+                </div>
+              </div>
 
               <div class="c-search mt-3 mt-md-4">
                 <div class="c-search__bar">
@@ -379,12 +390,7 @@
                       <div class="input-group-text rounded-start ps-3 pe-2">
                         <i class="ri-map-pin-line ri-lg text-disabled" aria-hidden="true"></i>
                       </div>
-                      <!--
-                                        <select name="city" lang="fr" data-minimum-input-length="2" data-theme="bootstrap-5" data-allow-clear="false" class="form-control django-select2 select2-hidden-accessible" data-ajax--url="/autocomplete/cities?slug=" data-placeholder="Rechercher un emploi inclusif autour de…" required="" id="id_city" data-select2-id="id_city" tabindex="-1" aria-hidden="true">
-                                        </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="1" style="width: 511.317px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-id_city-container"><span class="select2-selection__rendered" id="select2-id_city-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Rechercher un emploi inclusif autour de…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-               -->
-              
-                      <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Choose anything" multiple>
+                      <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Rechercher un emploi autour de..." multiple>
                         <option>Christmas Island</option>
                         <option>South Sudan</option>
                         <option>Jamaica</option>
@@ -395,7 +401,6 @@
                         <option>Denmark</option>
                         <option>Eritrea</option>
                       </select>
-              
                       <div class="input-group-text p-0">
                         <button class="btn btn-ico btn-link" aria-label="Rechercher un emploi inclusif">
                           <i class="ri-search-line fw-bold" aria-hidden="true"></i>
@@ -405,20 +410,43 @@
                     </div>
                   </form>
                 </div>
+                <div class="c-search__list">
+                  <div class="c-search__list__title">Recherches enregistrées :</div>
+                  <div class="c-search__list__slider">
+                    <div data-it-sliding-search="true">
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Lyon 2ème arrondissement</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Bordeaux</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Grenoble</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Loison-sous-Lens</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-search__list__settings">
+                    <button class="btn btn-link btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton" data-bs-toggle="modal" data-bs-target="#savedListSettingsModal">
+                      <i class="ri-equalizer-fill fw-medium" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              
-              
-              <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-              <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
-              <script>
-                $('#cityMultiple').select2({
-                  theme: "bootstrap-5",
-                  width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-                  placeholder: $(this).data('placeholder'),
-                  closeOnSelect: false,
-                  allowClear: true,
-                });
-              </script>
 
               <ul id="job-search-tabs" class="s-tabs-01__nav nav nav-tabs mt-3 mt-md-4 mb-0">
                 <li class="nav-item">
@@ -3288,8 +3316,124 @@
 
     </main>
 
+    <!-- Modal New item in Saved List -->
+    <div class="modal fade" id="newSavedListModal" tabindex="-1" aria-labelledby="newSavedListModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <form action="">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="newSavedListModalLabel">Enregistrer cette recherche</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+              <p>Enregistrez cette recherche afin de la retrouver facilement depuis votre tableau de bord.</p>
+              <div class="form-group">
+                <label class="form-label" for="id_address_line_2">Nom de cette recherche</label>
+                <input type="text" class="form-control" value="Lyon (69), 5km, AI">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-sm btn-primary">Enregistrer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!-- Modal Saved List Settings -->
+    <div class="modal fade" id="savedListSettingsModal" tabindex="-1" aria-labelledby="savedListSettingsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="savedListSettingsModalLabel">Recherches enregistrées</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-unstyled">
+              <li class="d-flex lh-sm mb-3">
+                <div class="me-2">
+                  <i class="ri-star-line text-muted" aria-hidden="true"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <strong class="fs-sm d-block">Lyon 2ème arrondissement</strong>
+                  <span class="fs-xs">Lyon (69), 5 km, EI, Lyon 2eme arrondissement</span>
+                </div>
+                <div>
+                  <button class="btn btn-danger btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton">
+                    <i class="ri-delete-bin-line fw-medium" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </li>
+              <li class="d-flex lh-sm mb-3">
+                <div class="me-2">
+                  <i class="ri-star-line text-muted" aria-hidden="true"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <strong class="fs-sm d-block">Bordeaux</strong>
+                  <span class="fs-xs">Bordeaux (33), 15 km</span>
+                </div>
+                <div>
+                  <button class="btn btn-danger btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton">
+                    <i class="ri-delete-bin-line fw-medium" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </li>
+              <li class="d-flex lh-sm mb-3">
+                <div class="me-2">
+                  <i class="ri-star-line text-muted" aria-hidden="true"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <strong class="fs-sm d-block">Grenoble</strong>
+                  <span class="fs-xs">Grenoble (38), 5 km</span>
+                </div>
+                <div>
+                  <button class="btn btn-danger btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton">
+                    <i class="ri-delete-bin-line fw-medium" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+    <script>
+      $('#cityMultiple').select2({
+        theme: "bootstrap-5",
+        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+        placeholder: $(this).data('placeholder'),
+        closeOnSelect: false,
+        allowClear: true,
+      });
+    </script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script>
+      document.querySelectorAll("[data-it-sliding-search=true]").forEach(function (slidingSearch) {
+        tns({
+          container: slidingSearch,
+          slideBy: "page",
+          autoWidth: true,
+          arrowKeys: true,
+          loop: false,
+          mouseDrag: false,
+          swipeAngle: false,
+          speed: 300,
+          gutter: 12,
+          nav: false,
+          controls: true,
+          startIndex: 0,
+        });
+      })
+    </script>
   </body>
 
 </html>
