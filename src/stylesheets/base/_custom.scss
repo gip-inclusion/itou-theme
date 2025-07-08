@@ -356,6 +356,10 @@ iframe {
       width: auto;
       margin: var(--bs-modal-margin);
     }
+
+    > * {
+      width: 100%;
+    }
   }
 
   .modal-header {
