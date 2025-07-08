@@ -1857,24 +1857,35 @@
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Modal title in .modal-header</h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <form action="">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="exampleModalLabel">Modal title in .modal-header</h3>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi accusantium sed corrupti a praesentium soluta, perspiciatis cupiditate aliquam repudiandae unde tenetur! Voluptatibus, facilis at debitis deleniti animi inventore reprehenderit nostrum.</p>
+                          <p>Nisi accusantium sed corrupti a praesentium soluta, perspiciatis cupiditate aliquam repudiandae unde tenetur! Voluptatibus, facilis at debitis deleniti animi inventore reprehenderit nostrum.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="" class="btn btn-ico btn-link ps-0 me-auto" aria-label="Retour vers la page xxxx / vers la liste de xxx">
+                            <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
+                            <span>Retour</span>
+                          </a>
+                          <!-- <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="modal">Close</button> -->
+                          <button type="button"
+                                  class="btn btn-sm btn-ico btn-outline-primary"
+                                  disabled
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Vous devez d’abord décliner la candidature pour pouvoir la transférer à un autre employeur.">
+                              <i class="ri-home-smile-line" aria-hidden="true"></i>
+                              <strong>Une autre structure</strong>
+                          </button>
+                          <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                        </div>
                       </div>
-                      <div class="modal-body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi accusantium sed corrupti a praesentium soluta, perspiciatis cupiditate aliquam repudiandae unde tenetur! Voluptatibus, facilis at debitis deleniti animi inventore reprehenderit nostrum.</p>
-                        <p>Nisi accusantium sed corrupti a praesentium soluta, perspiciatis cupiditate aliquam repudiandae unde tenetur! Voluptatibus, facilis at debitis deleniti animi inventore reprehenderit nostrum.</p>
-                      </div>
-                      <div class="modal-footer">
-                        <a href="" class="btn btn-ico btn-link ps-0 me-auto" aria-label="Retour vers la page xxxx / vers la liste de xxx">
-                          <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
-                          <span>Retour</span>
-                        </a>
-                        <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
-                      </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
                 <!-- Modal -->
