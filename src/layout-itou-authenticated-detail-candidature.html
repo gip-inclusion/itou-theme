@@ -89,6 +89,9 @@
                         <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="informations-generales">Informations générales</a>
                       </li>
                       <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
+                        <a class="nav-link" id="commentaires-tab" data-bs-toggle="tab" href="#commentaires" role="tab" aria-controls="commentaires" aria-selected="false" tabindex="-1">Commentaires</a>
+                      </li>
+                      <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
                         <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="historique" tabindex="-1">Historique</a>
                       </li>
                     </ul>
@@ -339,7 +342,7 @@
                 </div>
                 <div class="col-12 col-xxl-4 col-xxxl-3 order-1 order-xxl-2 mt-xxl-6">
                   <div class="c-box c-box--pass bg-success-lightest border-success mb-3 mb-md-4">
-                    <div class="mb-3 mb-md-4">
+                    <div class="mb-3">
                       <span class="badge badge-base rounded-pill bg-success text-white">
                         <i class="ri-pass-valid-line" aria-hidden="true"></i>
                         PASS&nbsp;IAE valide
@@ -380,39 +383,53 @@
                   <div class="c-box c-box--note mb-3 mb-md-4">
                     <form action="">
                       <div class="form-group">
-                        <label class="form-label">Note partagée avec tous les membres de la structure</label>
-                        <div class="form-control">
-                          Rendez-vous prévu le 12/05
-                        </div>
+                        <label class="form-label h3">Ajouter un commentaire</label>
+                        <textarea class="form-control has-textarea-ratio-16-9" data-it-expandable="true"></textarea>
                         <div class="form-row">
-                          <button type="submit" class="btn btn-sm btn-ico-only">
-                            <span class="visually-hidden">Ajouter une note partagée avec tous les membres de la structure</span>
-                            <i class="ri-pencil-line" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="form-text">le 29/04/2025 par Marie SIMON</div>
-                    </form>
-                  </div>
-
-                  <div class="c-box c-box--note mb-3 mb-md-4">
-                    <form action="">
-                      <div class="form-group">
-                        <label class="form-label">Note partagée avec tous les membres de la structure</label>
-                        <textarea class="form-control" data-it-expandable="true">Loorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sint, fugit soluta quasi nobis rerum aut atque laborum, at dolorem assumenda libero? Pariatur, ab similique id consequatur quo alias possimus!</textarea>
-                        <div class="form-row">
-                          <button type="reset" class="btn btn-sm btn-ico-only">
+                          <button type="reset" class="btn btn-outline-primary btn-sm btn-ico-only">
                             <span class="visually-hidden">Annuler l'ajout d'une note partagée avec tous les membres de la structure</span>
                             <i class="ri-close-line" aria-hidden="true"></i>
                           </button>
-                          <button type="submit" class="btn btn-sm btn-ico-only">
+                          <button type="submit" class="btn btn-outline-primary btn-sm btn-ico-only">
                             <span class="visually-hidden">Valider l'ajout d'une note partagée avec tous les membres de la structure</span>
                             <i class="ri-check-line" aria-hidden="true"></i>
                           </button>
                         </div>
                       </div>
-                      <div class="form-text">le 29/04/2025 par Marie SIMON</div>
                     </form>
+                  </div>
+
+                  <div class="c-box mb-3 mb-md-4">
+                    <h3>Derniers commentaires</h3>
+                    <ul class="list-note">
+                      <li>
+                        <time datetime="2025-05-08T08:05:47.219460+00:00">Le 08 mai 2025 à 10:05</time>
+                        <strong>Miguel CORTEZ (vous)</strong>
+                        <blockquote class="blockquote">
+                          <div class="collapse show collapseLastComment">
+                            <p class="mb-0">Une citation bien connue, contenue dans un élément blockquote. Lorem ipsum, dolor sit amet consectetur adipisicing ...</p>
+                            <button class="btn-link d-inline-block mt-2" type="button" data-bs-toggle="collapse" data-bs-target=".collapseLastComment" aria-expanded="false" aria-controls="collapseLastComment">
+                              Voir +
+                            </button>
+                          </div>
+                          <div class="collapse collapseLastComment">
+                            <p>Une citation bien connue, contenue dans un élément blockquote. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum totam, corrupti nisi quas minus beatae libero, voluptatem iusto hic perspiciatis vel doloremque minima illum quia dolorem velit mollitia at!</p>
+                            <p class="mb-0">Distinctio deserunt, molestias enim odit labore beatae, odio est eveniet illo tempora tempore, accusantium aliquam hic commodi. Explicabo eum minima similique libero.</p>
+                          </div>
+                        </blockquote>
+                      </li>
+                      <li>
+                        <time datetime="2025-05-07T08:05:47.219460+00:00">Le 07 mai 2025 à 10:05</time>
+                        <strong>Micheline DURAND</strong>
+                      </li>
+                      <li>
+                        <time datetime="2025-05-06T08:05:47.219460+00:00">Le 06 mai 2025 à 10:05</time>
+                        <strong>Pierre LARTICHAUD</strong>
+                      </li>
+                    </ul>
+                    <button class="btn btn-outline-primary btn-block bg-white mt-3" id="commentaires-btn" role="presentation">
+                      Voir tous les commentaires
+                    </button>
                   </div>
                 </div>
               </div>
@@ -452,6 +469,73 @@
                 </div>
               </div>
             </div>
+
+            <div class="tab-pane fade" id="commentaires" role="tabpanel" aria-labelledby="commentaires-tab">
+              <div class="s-section__row  row">
+                <div class="col-12 col-xxl-8 col-xxxl-9 order-2 order-xxl-1">
+                  <h2>Commentaires</h2>
+                  <div class="c-form mb-3 mb-md-4">
+                    <div class="form-group">
+                      <label class="form-label">Ajouter un commentaire</label>
+                      <textarea class="form-control has-textarea-ratio-32-9" data-it-expandable="true"></textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <hr class="mb-3">
+                        <div class="form-row align-items-center justify-content-end gx-3">
+                          <div class="form-group col col-lg-auto order-2 order-lg-3">
+                            <button type="submit" class="btn btn-block btn-primary" aria-label="Envoyer votre commentaire">
+                              Envoyer
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Liste des commentaires (3)</h3>
+                  <ul class="list-note">
+                    <li class="is-current-user">
+                      <i class="ri-user-line"></i>
+                      <div>
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div>
+                            <time datetime="2025-05-08T08:05:47.219460+00:00">Le 08 mai 2025 à 10:05</time>
+                            <strong>Miguel CORTEZ (vous)</strong>
+                          </div>
+                          <button class="btn btn-sm btn-link btn-ico-only" type="button">
+                            <i class="ri-delete-bin-line" data-bs-toggle="tooltip" data-bs-title="Supprimer" aria-label="Supprimer ce commentaire"></i>
+                          </button>
+                        </div>
+                        <blockquote class="blockquote">
+                          <p>Une citation bien connue, contenue dans un élément blockquote. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora minus ipsa quasi porro magni. Explicabo, id non quaerat...</p>
+                          <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nihil quae, eos soluta culpa repellendus omnis modi nesciunt accusantium quia sapiente earum dolorem enim inventore ipsam, est placeat consectetur blanditiis!</p>
+                        </blockquote>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="ri-user-line"></i>
+                      <div>
+                        <time datetime="2025-05-07T08:05:47.219460+00:00">Le 07 mai 2025 à 10:05</time>
+                        <strong>Micheline DURAND</strong>
+                        <blockquote class="blockquote">
+                          <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nihil quae, eos soluta culpa repellendus omnis modi nesciunt accusantium quia sapiente earum dolorem enim inventore ipsam, est placeat consectetur blanditiis!</p>
+                        </blockquote>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="ri-user-line"></i>
+                      <div>
+                        <time datetime="2025-05-08T06:05:47.219460+00:00">Le 06 mai 2025 à 10:05</time>
+                        <strong>Pierre LARTICHAUD</strong>
+                        <blockquote class="blockquote">
+                          <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nihil quae, eos soluta culpa repellendus omnis modi nesciunt accusantium quia sapiente earum dolorem enim inventore ipsam, est placeat consectetur blanditiis!</p>
+                        </blockquote>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -461,6 +545,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script type="module" src="./javascripts/index.js"></script>
+
+    <script>
+      const commentairesBtn = document.querySelector('#commentaires-btn');
+      const commentairesTab = document.querySelector('#commentaires-tab');
+
+      commentairesBtn.addEventListener("click", function () {
+        bootstrap.Tab.getOrCreateInstance(commentairesTab).show();
+      });
+    </script>
+
+    <style>
+      .collapseLastComment {
+        transition: none;
+      }
+    </style>
   </body>
 
 </html>

@@ -83,7 +83,25 @@
 }
 
 .has-ratio-16-9 {
+  position: relative;
+  width: 100%;
   aspect-ratio: 16 / 9;
+}
+
+.has-textarea-ratio-16-9 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 32 / 9;
+
+  @include media-breakpoint-up(xxl) {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.has-textarea-ratio-32-9 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 32 / 9;
 }
 
 .has-no-transition {
@@ -226,7 +244,6 @@
       @extend .disabled;
     }
   }
-
 
   &:has(> .form-switch) {
     min-height: initial;

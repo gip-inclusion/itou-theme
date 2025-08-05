@@ -56,106 +56,6 @@ ol {
   padding-left: map-get($spacers, 3);
 }
 
-.list-step {
-  @extend .list-unstyled;
-
-  li {
-    padding: 0 map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 3);
-    border-left: 2px solid $border-color;
-
-    time {
-      @extend .fs-xs;
-      color: $secondary;
-      line-height: $line-height-sm;
-    }
-
-    span {
-      display: block;
-      line-height: $line-height-sm;
-    }
-
-    &:first-of-type {
-      border-left: 2px solid $info;
-
-      span {
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-.list-data-group {
-  gap: map-get($spacers, 3);
-  display: flex;
-  flex-direction: column;
-
-  @include media-breakpoint-up(xl) {
-    flex-direction: row;
-  }
-
-  .list-data {
-    @extend .flex-grow-1;
-  }
-}
-
-
-
-.list-data {
-  @extend .list-unstyled;
-  margin-bottom: 0;
-  text-align: left;
-
-  @media not print {
-    container-type: inline-size;
-    container-name: list-data;
-  }
-
-  li {
-    @media not print {
-      @container list-data (min-width: 560px) {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        gap: map-get($spacers, 1);
-      }
-    }
-
-    &:not(:last-child) {
-      margin-bottom: $table-cell-padding-y;
-    }
-
-    small {
-      line-height: $line-height-sm;
-      font-size: $font-size-sm;
-      align-items: center;
-      display: flex;
-      gap: map-get($spacers, 1);
-
-      @media not print {
-        @container list-data (min-width: 560px) {
-          flex: 0 0 260px;
-        }
-      }
-    }
-
-    strong,
-    address {
-      margin-bottom: 0;
-      font-weight: $font-weight-bold;
-      line-height: $line-height-sm;
-    }
-
-    &.has-forced-line-break {
-      @media not print {
-        @container list-data (min-width: 560px) {
-          display: inline-block !important;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
 .blockquote {
   position: relative;
   line-height: $line-height-sm;
@@ -307,10 +207,6 @@ ul.pagination {
       outline: $blue 1px solid;
     }
   }
-}
-
-.list-group {
-  @extend .ps-0;
 }
 
 [data-bs-toggle]:not([data-bs-toggle="tooltip"]),

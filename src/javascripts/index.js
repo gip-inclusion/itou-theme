@@ -100,8 +100,10 @@ function autoExpendableTextarea() {
     const thisTexterea = textareaExpandableList[i];
 
     const expandTextarea = function () {
-      thisTexterea.style.removeProperty("height");
-      thisTexterea.style.height = this.scrollHeight + 3 + "px";
+      if (thisTexterea.scrollHeight != 0) {
+        thisTexterea.style.removeProperty("height");
+        thisTexterea.style.height = this.scrollHeight + 3 + "px";
+      }
     };
 
     thisTexterea.addEventListener("input", expandTextarea, false);
