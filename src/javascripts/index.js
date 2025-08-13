@@ -76,15 +76,17 @@ function buttonCopyToClipboard() {
     const thisTooltip = bootstrap.Tooltip.getOrCreateInstance(thisClipboardButtonCopy);
 
     thisClipboardButtonCopy.addEventListener("click", function () {
-      navigator.clipboard
-        .writeText(thisClipboardButtonCopyValue)
-        .then(() => {
-          // console.log('Ok: ' + thisClipboardButtonCopyValue);
-        })
-        .catch(() => {
-          // console.log('Veillez saisir le texte à copier');
-        });
-      thisTooltip.show();
+      if (!thisClipboardButtonCopy.hasAttribute("aria-describedby")) {
+        thisTooltip.show();
+        navigator.clipboard
+          .writeText(thisClipboardButtonCopyValue)
+          .then(() => {
+            // console.log('Ok: ' + thisClipboardButtonCopyValue);
+          })
+          .catch(() => {
+            // console.log('Veillez saisir le texte à copier');
+          });
+      }
     });
 
     thisClipboardButtonCopy.addEventListener("blur", function () {
