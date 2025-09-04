@@ -38,8 +38,14 @@
   &__list {
     @extend .d-flex;
     @extend .align-items-center;
-    @extend .my-2;
+    margin-top: map-get($spacers, 2);
+    margin-bottom: map-get($spacers, 2);
     font-size: $font-size-sm;
+
+    &:empty,
+    &:not(.c-search__list:has(> div)) {
+      @extend .my-0;
+    }
 
     &__title {
       @extend .me-2;
@@ -53,15 +59,15 @@
 
     &__slider {
       @extend .flex-grow-1;
+      display: inline-flex;
       border-right: 1px solid $border-color;
 
-      > ul {
-        @extend .list-unstyled;
-        @extend .list-inline;
+      > div:not(.tns-outer) {
         @extend .m-0;
 
-        li {
-          @extend .list-inline-item;
+        > div {
+          display: inline;
+          padding-right: map-get($spacers, 2);
         }
       }
 
@@ -70,16 +76,15 @@
       }
 
       .tns-controls {
-        [data-controls='prev'] {
+        [data-controls="prev"] {
           box-shadow: $box-shadow-sm;
-            left: -#{map-get($spacers, 1)};
+          left: -#{map-get($spacers, 1)};
         }
-        [data-controls='next'] {
-           box-shadow: $box-shadow-sm;
+        [data-controls="next"] {
+          box-shadow: $box-shadow-sm;
           right: -#{map-get($spacers, 1)};
         }
       }
-
     }
   }
 }
