@@ -37,7 +37,6 @@
 
   &__list {
     position: relative;
-    min-height: 32px;
     margin-top: map-get($spacers, 2);
     margin-bottom: map-get($spacers, 2);
     font-size: $font-size-sm;
@@ -62,8 +61,9 @@
 
     &__slider {
       display: block;
+      min-height: 32px;
       border-right: 1px solid $border-color;
-      padding-top: 5px;
+      padding-top: 4px;
       margin-right: 36px;
 
       @include media-breakpoint-up(md) {
@@ -71,7 +71,9 @@
       }
 
       > div:not(.tns-outer) {
+        height: 28px;
         @extend .m-0;
+        overflow: hidden;
 
         > div {
           display: inline;
