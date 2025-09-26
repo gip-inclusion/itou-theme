@@ -45,13 +45,14 @@
   @extend .list-unstyled;
   margin-bottom: 0;
   text-align: left;
+  line-height: $line-height-sm;
 
   @media not print {
     container-type: inline-size;
     container-name: list-data;
   }
 
-  li {
+  > li {
     @media not print {
       @container list-data (min-width: 560px) {
         display: flex;
@@ -87,6 +88,12 @@
     }
 
     &.has-forced-line-break {
+      margin-bottom: map-get($spacers, 3);
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: map-get($spacers, 4);
+      }
+
       @media not print {
         @container list-data (min-width: 560px) {
           display: inline-block !important;
