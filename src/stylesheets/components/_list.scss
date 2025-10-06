@@ -65,10 +65,10 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: $table-cell-padding-y;
+      margin-bottom: map-get($spacers, 3);
     }
 
-    small {
+    > small {
       line-height: $line-height-sm;
       font-size: $font-size-sm;
       align-items: center;
@@ -82,8 +82,10 @@
       }
     }
 
-    strong,
-    address {
+    > strong,
+    > address,
+    > p,
+    > ul {
       margin-bottom: 0;
       font-weight: $font-weight-bold;
       line-height: $line-height-sm;
