@@ -53,6 +53,8 @@
   }
 
   > li {
+    @extend .align-items-start;
+
     @media not print {
       @container list-data (min-width: 560px) {
         display: flex;
