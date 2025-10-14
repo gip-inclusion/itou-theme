@@ -13,6 +13,10 @@
   @extend .row;
 }
 
+.form-text {
+  line-height: $line-height-sm;
+}
+
 .form-label,
 .form-group > label,
 .input-group > label {

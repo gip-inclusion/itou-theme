@@ -267,6 +267,18 @@
     .form-group {
       position: relative;
       margin-bottom: 0;
+
+      #id_message_error {
+        @extend .d-none;
+      }
+
+      #id_message_helptext {
+        position: absolute;
+      }
+
+      &:has(#id_message_helptext) + .form-group {
+        margin-bottom: $input-height-sm;
+      }
     }
 
     textarea.form-control {
