@@ -700,17 +700,29 @@
                   </div>
 
                   <div class="c-box c-box--note mb-3 mb-md-4">
-                    <form action="">
+                    <form>
+                      <h3>
+                        Ajouter un commentaire
+                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Attention à vos propos. La communication de données sensibles sur les usagers et les propos dégradants, sexistes, homophobes ou racistes ne sont pas autorisés.">
+                          <i class="ri-information-line ri-xl text-info ms-1" aria-label="Attention à vos propos. La communication de données sensibles sur les usagers et les propos dégradants, sexistes, homophobes ou racistes ne sont pas autorisés."></i>
+                        </button>
+                      </h3>
+                      <div class="form-group is-invalid form-group-required">
+                        <label class="visually-hidden" for="id_message">Ajouter un commentaire</label>
+                        <textarea name="message" cols="40" rows="10" data-it-expandable="true" class="form-control has-textarea-ratio-16-9" required="" aria-invalid="true" aria-describedby="id_message_helptext id_message_error" id="id_message"></textarea>
+                        <div id="id_message_error">
+                          <div class="invalid-feedback">Ce champ est obligatoire.</div>
+                        </div>
+                        <div id="id_message_helptext" class="form-text">Seuls les membres de la structure sont autorisés à consulter les commentaires.</div>
+                      </div>
                       <div class="form-group">
-                        <label class="form-label h3">Ajouter un commentaire</label>
-                        <textarea class="form-control has-textarea-ratio-16-9" data-it-expandable="true"></textarea>
                         <div class="form-row">
-                          <button type="reset" class="btn btn-outline-primary bg-white btn-sm btn-ico-only">
-                            <span class="visually-hidden">Annuler l'ajout d'une note partagée avec tous les membres de la structure</span>
+                          <button class="btn btn-outline-primary btn-sm btn-ico-only bg-white" type="reset">
+                            <span class="visually-hidden">Annuler l'ajout d'un commentaire partagé avec tous les membres de la structure</span>
                             <i class="ri-close-line" aria-hidden="true"></i>
                           </button>
-                          <button type="submit" class="btn btn-outline-primary bg-white btn-sm btn-ico-only">
-                            <span class="visually-hidden">Valider l'ajout d'une note partagée avec tous les membres de la structure</span>
+                          <button class="btn btn-outline-primary btn-sm btn-ico-only bg-white" type="submit">
+                            <span class="visually-hidden">Valider l'ajout d'un commentaire partagé avec tous les membres de la structure</span>
                             <i class="ri-check-line" aria-hidden="true"></i>
                           </button>
                         </div>
