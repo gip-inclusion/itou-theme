@@ -8,7 +8,7 @@ Le `itou-theme` est un theme basé sur la [version 5.3 de Bootstrap](https://get
 
 ## Consignes et commandes d'intégration et de modification du html
 
-Nécessite node `lts/iron` ou supérieur pour installer les dépendances `npm install`.
+Nécessite node `lts/jod` ou supérieur pour installer les dépendances `npm install`.
 Pour jongler entre les différentes versions de Node, il est recommandé d'utiliser l'outil `nvm`
 La commande `nvm use` utilise le fichier `.nvmrc` fourni par ce dépôt.
 
