@@ -150,6 +150,17 @@
   display: inline-block;
 }
 
+.has-downloadable-file::after {
+  content: "\ecd9";
+  font-family: "remixicon" !important;
+  font-size: inherit;
+  font-style: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: map-get($spacers, 1);
+  display: inline-block;
+}
+
 .btn,
 [class^="btn-"] {
   .stable-text {
