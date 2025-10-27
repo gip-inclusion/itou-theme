@@ -737,16 +737,27 @@
                         <time datetime="2025-05-08T08:05:47.219460+00:00">Le 08 mai 2025 à 10:05</time>
                         <strong>Miguel CORTEZ (vous)</strong>
                         <blockquote class="blockquote">
-                          <div class="collapse show collapseLastComment">
+                          <div class="collapse show collapseLastComment has-no-transition">
                             <p class="mb-0">Une citation bien connue, contenue dans un élément blockquote. Lorem ipsum, dolor sit amet consectetur adipisicing ...</p>
                             <button class="btn-link d-inline-block mt-2" type="button" data-bs-toggle="collapse" data-bs-target=".collapseLastComment" aria-expanded="false" aria-controls="collapseLastComment">
                               Voir +
                             </button>
                           </div>
-                          <div class="collapse collapseLastComment">
+                          <div class="collapse collapseLastComment has-no-transition">
                             <p>Une citation bien connue, contenue dans un élément blockquote. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum totam, corrupti nisi quas minus beatae libero, voluptatem iusto hic perspiciatis vel doloremque minima illum quia dolorem velit mollitia at!</p>
                             <p class="mb-0">Distinctio deserunt, molestias enim odit labore beatae, odio est eveniet illo tempora tempore, accusantium aliquam hic commodi. Explicabo eum minima similique libero.</p>
                           </div>
+                        </blockquote>
+
+                        <blockquote class="blockquote">
+                          <div class="collapse show collapseComment6 has-no-transition">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id enim ducimus aut assumenda nemo porro repellat unde quasi ipsa possimus sunt, sequi accusantium! Corrupti veritatis eos impedit nam distinc…</p>
+                            <button class="btn-link d-inline-block mt-2" type="button" data-bs-toggle="collapse" data-bs-target=".collapseComment6" aria-expanded="false" aria-controls="collapseComment6">Voir +</button>
+                          </div>
+                          <div class="collapse collapseComment6 has-no-transition">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id enim ducimus aut assumenda nemo porro repellat unde quasi ipsa possimus sunt, sequi accusantium! Corrupti veritatis eos impedit nam distinctio animi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Id enim ducimus aut assumenda nemo porro repellat unde quasi ipsa possimus sunt, sequi accusantium! Corrupti veritatis eos impedit nam distinctio animi!</p>
+                          </div>
+
                         </blockquote>
                       </li>
                       <li>
@@ -884,12 +895,6 @@
         bootstrap.Tab.getOrCreateInstance(commentairesTab).show();
       });
     </script>
-
-    <style>
-      .collapseLastComment {
-        transition: none;
-      }
-    </style>
   </body>
 
 </html>
