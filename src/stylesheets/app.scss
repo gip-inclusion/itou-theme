@@ -1,20 +1,20 @@
 // Import all of Bootstrap's CSS
+@import "bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
 @import "bootstrap/scss/functions";
 
 // Custom variables
 @import "base/variables";
-@import "base/variables-dark";
+@import "bootstrap/scss/variables-dark";
 
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
 
-// Custom mixins & utilities api
+// Custom mixins & utilities
 @import "base/mixins";
-@import "base/utilities-api";
-
-// Utilities
-@import "bootstrap/scss/utilities/api";
+@import "base/utilities";
 
 // Layout & components
 @import "bootstrap/scss/root";
@@ -52,9 +52,12 @@
 // Helpers
 @import "bootstrap/scss/helpers";
 
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
 // Base
 @import "base/custom";
-@import "base/utilities";
+@import "base/utilities-custom";
 @import "base/print";
 
 // Vendors
