@@ -1,272 +1,49 @@
-.text-decoration-underline {
-  text-decoration: underline !important;
-}
-
-.text-decoration-dashed {
-  text-decoration: underline dashed !important;
-}
-
-.img-fitcover {
-  object-fit: cover;
-  width: 100%;
-}
-
-.img-muted {
-  filter: grayscale(100%);
-  opacity: 0.3;
-}
-
-.h1-hero {
-  font-size: $h1-hero-font-size-sm;
-
-  @include media-breakpoint-up(lg) {
-    font-size: $h1-hero-font-size;
-  }
-}
-
-.fs-base {
-  font-size: $font-size-base !important;
-}
-
-.fs-lg {
-  font-size: $font-size-lg !important;
-}
-
-.fs-sm {
-  font-size: $font-size-sm !important;
-}
-
-.fs-xs {
-  font-size: $font-size-xs !important;
-}
-
-.ff-base {
-  font-family: $font-family-base;
-}
-
-.ff-extra-01 {
-  font-family: $font-family-extra-01;
-}
-
-.shadow-xl {
-  box-shadow: $box-shadow-xl !important;
-}
-
-.rounded-xl {
-  border-radius: $border-radius-xl !important;
-}
-
-.lh-base {
-  line-height: $line-height-base !important;
-}
-
-.lh-lg {
-  line-height: $line-height-lg !important;
-}
-
-.lh-sm {
-  line-height: $line-height-sm !important;
-}
-
-.white-space-normal {
-  white-space: normal !important;
-}
-
-.white-space-nowrap {
-  white-space: nowrap !important;
-}
-
-.has-ellipsis {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.has-ratio-16-9 {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
-
-.has-textarea-ratio-16-9 {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 32 / 9;
-
-  @include media-breakpoint-up(xxl) {
-    aspect-ratio: 16 / 9;
-  }
-}
-
-.has-textarea-ratio-32-9 {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 32 / 9;
-}
-
-.has-no-transition {
-  transition: none !important;
-}
-
-.has-collapse-caret {
-  position: relative;
-  text-decoration: none;
-
-  &::after {
-    @extend .ms-1;
-    content: "\ea4e";
-    font-family: remixicon !important;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1;
-    font-size: 1rem;
-    font-weight: $font-weight-bold;
-  }
-
-  &[aria-expanded="true"]::after {
-    content: "\ea78";
-  }
-}
-
-.text-disabled,
-.disabled {
-  color: $disabled-color !important;
-  pointer-events: none;
-}
-
-.text-muted {
-  color: var(--#{$prefix}muted-color) !important;
-}
-
-.has-external-link::after {
-  content: "\ecaf";
-  font-family: "remixicon" !important;
-  font-size: inherit;
-  font-style: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin-left: map-get($spacers, 1);
-  display: inline-block;
-}
-
-.has-downloadable-file::after {
-  content: "\ecd9";
-  font-family: "remixicon" !important;
-  font-size: inherit;
-  font-style: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin-left: map-get($spacers, 1);
-  display: inline-block;
-}
-
-.btn,
-[class^="btn-"] {
-  .stable-text {
-    display: inline;
-  }
-  .loading-text {
-    display: none;
-  }
-}
-
-.has-spinner-loading {
-  position: relative;
-  min-height: $spinner-height * 2;
-  opacity: 1;
-  @include transition($transition-fade);
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    opacity: 0.8;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 2;
-    top: calc(50% - 16px);
-    left: calc(50% - 16px);
-    @extend .spinner-border;
-    @extend .text-tertiary;
-  }
-
-  &.btn,
-  &[class^="btn-"] {
-    min-height: initial;
-
-    &::before,
-    &::after {
-      display: none;
-    }
-
-    @extend .disabled;
-
-    .stable-text {
-      display: none;
-    }
-    .loading-text {
-      display: inline;
-    }
-  }
-
-  &:has(> .btn),
-  &:has(> [class^="btn-"]) {
-    min-height: initial;
-
-    &::before,
-    &::after {
-      display: none;
-    }
-
-    > .btn,
-    > button {
-      @extend .disabled;
-
-      .stable-text {
-        display: none;
-      }
-      .loading-text {
-        display: inline;
-      }
-    }
-  }
-
-  &.form-switch {
-    min-height: initial;
-
-    &::before,
-    &::after {
-      display: none;
-    }
-
-    .form-check-input,
-    .form-check-label {
-      @extend .disabled;
-    }
-  }
-
-  &:has(> .form-switch) {
-    min-height: initial;
-
-    &::before,
-    &::after {
-      display: none;
-    }
-
-    .form-check-input,
-    .form-check-label {
-      @extend .disabled;
-    }
-  }
-}
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (
+            25: 25%,
+            33: 33%,
+            40: 40%,
+            50: 50%,
+            66: 66%,
+            75: 75%,
+            50px: 50px,
+            100px: 100px,
+            200px: 200px,
+            300px: 300px,
+            400px: 400px,
+          )
+        ),
+      ),
+    ),
+    "max-width": map-merge(
+      map-get($utilities, "max-width"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "max-width"), "values"),
+          (
+            25: 25%,
+            33: 33%,
+            50: 50%,
+            66: 66%,
+            75: 75%,
+          )
+        ),
+      ),
+    ),
+    "white-space": map-merge(
+      map-get($utilities, "white-space"),
+      (
+        responsive: true,
+      ),
+    )
+  )
+);

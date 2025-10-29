@@ -91,13 +91,235 @@ $colors: (
 );
 // scss-docs-end colors-map
 
-// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
-// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.2 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG/#contrast-minimum
 $min-contrast-ratio: 1;
 
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark: $black !default;
 $color-contrast-light: $white !default;
+
+// fusv-disable
+$blue-100: tint-color($blue, 80%) !default;
+$blue-200: tint-color($blue, 60%) !default;
+$blue-300: tint-color($blue, 40%) !default;
+$blue-400: tint-color($blue, 20%) !default;
+$blue-500: $blue !default;
+$blue-600: shade-color($blue, 20%) !default;
+$blue-700: shade-color($blue, 40%) !default;
+$blue-800: shade-color($blue, 60%) !default;
+$blue-900: shade-color($blue, 80%) !default;
+
+$indigo-100: tint-color($indigo, 80%) !default;
+$indigo-200: tint-color($indigo, 60%) !default;
+$indigo-300: tint-color($indigo, 40%) !default;
+$indigo-400: tint-color($indigo, 20%) !default;
+$indigo-500: $indigo !default;
+$indigo-600: shade-color($indigo, 20%) !default;
+$indigo-700: shade-color($indigo, 40%) !default;
+$indigo-800: shade-color($indigo, 60%) !default;
+$indigo-900: shade-color($indigo, 80%) !default;
+
+$purple-100: tint-color($purple, 80%) !default;
+$purple-200: tint-color($purple, 60%) !default;
+$purple-300: tint-color($purple, 40%) !default;
+$purple-400: tint-color($purple, 20%) !default;
+$purple-500: $purple !default;
+$purple-600: shade-color($purple, 20%) !default;
+$purple-700: shade-color($purple, 40%) !default;
+$purple-800: shade-color($purple, 60%) !default;
+$purple-900: shade-color($purple, 80%) !default;
+
+$pink-100: tint-color($pink, 80%) !default;
+$pink-200: tint-color($pink, 60%) !default;
+$pink-300: tint-color($pink, 40%) !default;
+$pink-400: tint-color($pink, 20%) !default;
+$pink-500: $pink !default;
+$pink-600: shade-color($pink, 20%) !default;
+$pink-700: shade-color($pink, 40%) !default;
+$pink-800: shade-color($pink, 60%) !default;
+$pink-900: shade-color($pink, 80%) !default;
+
+$red-100: tint-color($red, 80%) !default;
+$red-200: tint-color($red, 60%) !default;
+$red-300: tint-color($red, 40%) !default;
+$red-400: tint-color($red, 20%) !default;
+$red-500: $red !default;
+$red-600: shade-color($red, 20%) !default;
+$red-700: shade-color($red, 40%) !default;
+$red-800: shade-color($red, 60%) !default;
+$red-900: shade-color($red, 80%) !default;
+
+$orange-100: tint-color($orange, 80%) !default;
+$orange-200: tint-color($orange, 60%) !default;
+$orange-300: tint-color($orange, 40%) !default;
+$orange-400: tint-color($orange, 20%) !default;
+$orange-500: $orange !default;
+$orange-600: shade-color($orange, 20%) !default;
+$orange-700: shade-color($orange, 40%) !default;
+$orange-800: shade-color($orange, 60%) !default;
+$orange-900: shade-color($orange, 80%) !default;
+
+$yellow-100: tint-color($yellow, 80%) !default;
+$yellow-200: tint-color($yellow, 60%) !default;
+$yellow-300: tint-color($yellow, 40%) !default;
+$yellow-400: tint-color($yellow, 20%) !default;
+$yellow-500: $yellow !default;
+$yellow-600: shade-color($yellow, 20%) !default;
+$yellow-700: shade-color($yellow, 40%) !default;
+$yellow-800: shade-color($yellow, 60%) !default;
+$yellow-900: shade-color($yellow, 80%) !default;
+
+$green-100: tint-color($green, 80%) !default;
+$green-200: tint-color($green, 60%) !default;
+$green-300: tint-color($green, 40%) !default;
+$green-400: tint-color($green, 20%) !default;
+$green-500: $green !default;
+$green-600: shade-color($green, 20%) !default;
+$green-700: shade-color($green, 40%) !default;
+$green-800: shade-color($green, 60%) !default;
+$green-900: shade-color($green, 80%) !default;
+
+$teal-100: tint-color($teal, 80%) !default;
+$teal-200: tint-color($teal, 60%) !default;
+$teal-300: tint-color($teal, 40%) !default;
+$teal-400: tint-color($teal, 20%) !default;
+$teal-500: $teal !default;
+$teal-600: shade-color($teal, 20%) !default;
+$teal-700: shade-color($teal, 40%) !default;
+$teal-800: shade-color($teal, 60%) !default;
+$teal-900: shade-color($teal, 80%) !default;
+
+$cyan-100: tint-color($cyan, 80%) !default;
+$cyan-200: tint-color($cyan, 60%) !default;
+$cyan-300: tint-color($cyan, 40%) !default;
+$cyan-400: tint-color($cyan, 20%) !default;
+$cyan-500: $cyan !default;
+$cyan-600: shade-color($cyan, 20%) !default;
+$cyan-700: shade-color($cyan, 40%) !default;
+$cyan-800: shade-color($cyan, 60%) !default;
+$cyan-900: shade-color($cyan, 80%) !default;
+
+$blues: (
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "blue-800": $blue-800,
+  "blue-900": $blue-900
+) !default;
+
+$indigos: (
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+  "indigo-700": $indigo-700,
+  "indigo-800": $indigo-800,
+  "indigo-900": $indigo-900
+) !default;
+
+$purples: (
+  "purple-100": $purple-100,
+  "purple-200": $purple-200,
+  "purple-300": $purple-300,
+  "purple-400": $purple-400,
+  "purple-500": $purple-500,
+  "purple-600": $purple-600,
+  "purple-700": $purple-700,
+  "purple-800": $purple-800,
+  "purple-900": $purple-900
+) !default;
+
+$pinks: (
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900
+) !default;
+
+$reds: (
+  "red-100": $red-100,
+  "red-200": $red-200,
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "red-500": $red-500,
+  "red-600": $red-600,
+  "red-700": $red-700,
+  "red-800": $red-800,
+  "red-900": $red-900
+) !default;
+
+$oranges: (
+  "orange-100": $orange-100,
+  "orange-200": $orange-200,
+  "orange-300": $orange-300,
+  "orange-400": $orange-400,
+  "orange-500": $orange-500,
+  "orange-600": $orange-600,
+  "orange-700": $orange-700,
+  "orange-800": $orange-800,
+  "orange-900": $orange-900
+) !default;
+
+$yellows: (
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+  "yellow-600": $yellow-600,
+  "yellow-700": $yellow-700,
+  "yellow-800": $yellow-800,
+  "yellow-900": $yellow-900
+) !default;
+
+$greens: (
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+  "green-800": $green-800,
+  "green-900": $green-900
+) !default;
+
+$teals: (
+  "teal-100": $teal-100,
+  "teal-200": $teal-200,
+  "teal-300": $teal-300,
+  "teal-400": $teal-400,
+  "teal-500": $teal-500,
+  "teal-600": $teal-600,
+  "teal-700": $teal-700,
+  "teal-800": $teal-800,
+  "teal-900": $teal-900
+) !default;
+
+$cyans: (
+  "cyan-100": $cyan-100,
+  "cyan-200": $cyan-200,
+  "cyan-300": $cyan-300,
+  "cyan-400": $cyan-400,
+  "cyan-500": $cyan-500,
+  "cyan-600": $cyan-600,
+  "cyan-700": $cyan-700,
+  "cyan-800": $cyan-800,
+  "cyan-900": $cyan-900
+) !default;
+// fusv-enable
 
 // scss-docs-start theme-color-variables
 $primary: $gray-900;
@@ -540,8 +762,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Covered";
   src:
-    url("../fonts/coveredbyyourgrace/coveredbyyourgrace.woff2") format("woff2"),
-    url("../fonts/coveredbyyourgrace/coveredbyyourgrace.woff") format("woff");
+    url("../../fonts/coveredbyyourgrace/coveredbyyourgrace.woff2") format("woff2"),
+    url("../../fonts/coveredbyyourgrace/coveredbyyourgrace.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -550,8 +772,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Light.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Light.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Light.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -560,8 +782,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Light_Italic.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Light_Italic.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Light_Italic.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Light_Italic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -570,8 +792,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Regular.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Regular.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Regular.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -580,8 +802,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Regular_Italic.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Regular_Italic.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Regular_Italic.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Regular_Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -590,8 +812,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Medium.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Medium.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Medium.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -600,8 +822,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Medium_Italic.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Medium_Italic.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Medium_Italic.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Medium_Italic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -610,8 +832,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Bold.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -620,8 +842,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-Bold.woff") format("woff");
+    url("../../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -630,8 +852,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../fonts/marianne/Marianne-ExtraBold.woff2") format("woff2"),
-    url("../fonts/marianne/Marianne-ExtraBold.woff") format("woff");
+    url("../../fonts/marianne/Marianne-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/marianne/Marianne-ExtraBold.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -1153,7 +1375,7 @@ $form-feedback-valid-color: $success !default;
 $form-feedback-invalid-color: $danger !default;
 
 $form-feedback-icon-valid-color: $form-feedback-valid-color !default;
-$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;
+$form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1'/></svg>") !default;
 $form-feedback-icon-invalid-color: $form-feedback-invalid-color !default;
 $form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$form-feedback-icon-invalid-color}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$form-feedback-icon-invalid-color}' stroke='none'/></svg>") !default;
 // scss-docs-end form-feedback-variables
@@ -1355,7 +1577,7 @@ $pagination-color: var(--#{$prefix}button);
 $pagination-bg: transparent;
 $pagination-border-radius: var(--#{$prefix}border-radius);
 $pagination-border-width: 0;
-$pagination-margin-start: calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
+$pagination-margin-start: calc(#{$pagination-border-width}) !default; // stylelint-disable-line function-disallowed-list
 $pagination-border-color: var(--#{$prefix}border-color) !default;
 
 $pagination-focus-color: var(--#{$prefix}button-light);
@@ -1451,7 +1673,7 @@ $accordion-icon-active-color: $primary-text-emphasis !default;
 $accordion-icon-transition: transform 0.2s ease-in-out !default;
 $accordion-icon-transform: rotate(-180deg) !default;
 
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color}'><path d='M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z'></path></svg>") !default;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color}'><path d='M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z'></path></svg>");
 $accordion-button-active-icon: $accordion-button-icon;
 // scss-docs-end accordion-variables
 
@@ -1561,7 +1783,7 @@ $modal-dialog-margin-y-sm-up: 1.75rem !default;
 
 $modal-title-line-height: $line-height-sm;
 
-$modal-content-color: null !default;
+$modal-content-color: var(--#{$prefix}body-color) !default;
 $modal-content-bg: var(--#{$prefix}body-bg) !default;
 $modal-content-border-color: var(--#{$prefix}border-color-translucent) !default;
 $modal-content-border-width: 0;
@@ -1701,6 +1923,7 @@ $carousel-control-width: 15% !default;
 $carousel-control-opacity: 0.5 !default;
 $carousel-control-hover-opacity: 0.9 !default;
 $carousel-control-transition: opacity 0.15s ease !default;
+$carousel-control-icon-filter:       null !default;
 
 $carousel-indicator-width: 30px !default;
 $carousel-indicator-height: 3px !default;
@@ -1718,17 +1941,17 @@ $carousel-caption-spacer: 1.25rem !default;
 
 $carousel-control-icon-width: 2rem !default;
 
-$carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>") !default;
-$carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>") !default;
 
 $carousel-transition-duration: 0.6s !default;
 $carousel-transition: transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 // scss-docs-end carousel-variables
 
 // scss-docs-start carousel-dark-variables
-$carousel-dark-indicator-active-bg: $black !default;
-$carousel-dark-caption-color: $black !default;
-$carousel-dark-control-icon-filter: invert(1) grayscale(100) !default;
+$carousel-dark-indicator-active-bg:  $black !default; // Deprecated in v5.3.4
+$carousel-dark-caption-color:        $black !default; // Deprecated in v5.3.4
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100) !default; // Deprecated in v5.3.4
 // scss-docs-end carousel-dark-variables
 
 // Spinners
@@ -1759,7 +1982,8 @@ $btn-close-opacity: 0.75;
 $btn-close-hover-opacity: 1;
 $btn-close-focus-opacity: 1;
 $btn-close-disabled-opacity: 0.25 !default;
-$btn-close-white-filter: invert(1) grayscale(100%) brightness(200%) !default;
+$btn-close-filter:           null !default;
+$btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default; // Deprecated in v5.3.4
 // scss-docs-end close-variables
 
 // Offcanvas
