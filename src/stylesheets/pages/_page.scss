@@ -7,10 +7,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
-    background-image: url('../images/home/bg-communaute-mobile.png');
+    background-image: url('../../images/home/bg-communaute-mobile.png');
 
     @include media-breakpoint-up(lg) {
-      background-image: url('../images/home/bg-communaute.png');
+      background-image: url('../../images/home/bg-communaute.png');
     }
   }
 
@@ -29,7 +29,7 @@
     background-image: none;
 
     @include media-breakpoint-up(md) {
-      background-image: url('../images/home/search-bg-left.png'), url('../images/home/search-bg-right.png');
+      background-image: url('../../images/home/search-bg-left.png'), url('../../images/home/search-bg-right.png');
     }
   }
 
