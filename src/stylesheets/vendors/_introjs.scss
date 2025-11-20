@@ -1,12 +1,3 @@
-$black900: #212121;
-$black800: #424242;
-$black600: #616161;
-$black500: #9e9e9e;
-$black400: #bdbdbd;
-$black200: #eeeeee;
-$black100: #f4f4f4;
-$white: #ffffff;
-
 $background_color_10: rgba(136, 136, 136, 0.24);
 
 .introjs-overlay {
@@ -76,7 +67,7 @@ tr.introjs-showElement {
 }
 
 .introjs-helperNumberLayer {
-  color: $black500;
+  color: $nuance-05;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
