@@ -46,6 +46,7 @@ export default {
         layout_itou_not_emplois_homepage: resolve(__dirname, "src/layout-itou-not-emplois-homepage.html"),
         layout_itou_not_emplois_mentions: resolve(__dirname, "src/layout-itou-not-emplois-mentions.html"),
         layout_itou_not_emplois_test: resolve(__dirname, "src/layout-itou-not-emplois-test.html"),
+        layout_nexus_homepage: resolve(__dirname, "src/layout-nexus-homepage.html"),
         external_libs_itou_ac: resolve(__dirname, "src/external-libs-itou-ac.html"),
         external_libs_itou_ddp: resolve(__dirname, "src/external-libs-itou-ddp.html"),
         external_libs_itou_in: resolve(__dirname, "src/external-libs-itou-in.html"),

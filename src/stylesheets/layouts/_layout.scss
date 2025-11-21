@@ -25,7 +25,7 @@
 
   > .s-main {
     .container {
-      max-width: map-get($container-max-widths, 'xl');
+      max-width: map-get($container-max-widths, "xl");
 
       @include media-breakpoint-up(xl) {
         --bs-gutter-x: 3rem;
@@ -39,7 +39,7 @@
       }
 
       @include media-breakpoint-up(xxxl) {
-        max-width: map-get($container-max-widths, 'xxl');
+        max-width: map-get($container-max-widths, "xxl");
       }
     }
 
@@ -53,7 +53,7 @@
       }
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: -1.5rem;
@@ -122,7 +122,7 @@
     }
 
     div.dropdown-toggle__summary::after {
-      content: '';
+      content: "";
     }
   }
 
