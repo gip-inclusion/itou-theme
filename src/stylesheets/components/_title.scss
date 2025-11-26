@@ -43,6 +43,18 @@
     }
   }
 
+  &__service {
+    grid-area: cta;
+    margin-top: map-get($spacers, 3);
+    margin-left: 0;
+    align-items: start;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+      margin-left: map-get($spacers, 3);
+    }
+  }
+
   &__secondary {
     grid-area: secondary;
     @extend .mt-3;

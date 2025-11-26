@@ -84,6 +84,11 @@
   @include media-breakpoint-up(md) {
     display: none;
   }
+
+  a {
+    color: $white;
+  }
+
   &__row {
     @extend .justify-content-between;
   }
