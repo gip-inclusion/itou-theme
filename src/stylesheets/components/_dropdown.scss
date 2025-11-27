@@ -55,10 +55,6 @@
 
   &-structure {
     min-width: 250px;
-≈
-    .dropdown-menu {
-      background-color: #FA0000 !important;
-    }
 
     .dropdown-toggle {
       &.btn-ico > span {
@@ -305,6 +301,54 @@
           grid-area: 1 / 2 / 2 / 3;
           line-height: $line-height-sm;
         }
+      }
+    }
+  }
+
+  &-nexus {
+    max-width: 320px;
+
+    .dropdown-toggle {
+      justify-content: start;
+      background-image: url("../../images/logo-nexus-dropdown.svg");
+      background-position: map-get($spacers, 3) center;
+      background-repeat: no-repeat;
+
+      span {
+        width: 100%;
+        text-align: left !important;
+        padding-left: map-get($spacers, 5);
+      }
+    }
+
+    .dropdown-menu {
+      min-width: 200px;
+      max-width: 320px;
+    }
+
+    .dropdown-item {
+      @extend .py-3;
+
+      &:hover,
+      &:focus {
+        color: inherit;
+      }
+
+      &__profil {
+        > span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: block;
+          line-height: $line-height-sm;
+          margin-bottom: map-get($spacers, 2);
+        }
+      }
+
+      &__service {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
     }
   }

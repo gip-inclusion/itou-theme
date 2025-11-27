@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Nexus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="./stylesheets/app.scss" lang="sass">
+  </head>
+
+  <body class="l-nexus">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="c-skiplinks">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    {{> _partials/header-nexus }}
+
+    <main class="s-main" id="main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-title">
+                <div class="c-title__main">
+                  <h1>
+                    <img src="./images/logo-emploi-inclusion-mono.svg" height="35" alt="Les emplois de l'inclusion">
+                    Mes offres d’emploi
+                    <span class="badge badge-sm rounded-pill bg-info-lighter text-info">
+                      <i class="ri-check-line" aria-hidden="true"></i>
+                      Activé
+                    </span>
+                  </h1>
+                </div>
+                <div class="c-title__cta" role="group" aria-label="Actions sur les groupes de suivi">
+                  <div class="dropdown dropdown-structure">
+                    <button type="button" class="btn btn-lg btn-primary btn-ico dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI - Une nouvelle chance</span>
+                    </button>
+                    <div class="dropdown-menu w-100" id="switchUserDropdown">
+                      <form action="" method="post">
+                        <ul class="list-unstyled">
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EITI</span>
+                              <strong>Terre &amp; mer</strong>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                      <a href="" class="dropdown-item dropdown-item__summary is-last-sticky">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                        <span>Créer ou rejoindre</span>
+                        <strong>une nouvelle structure</strong>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <div class="s-section__col col-12">
+              <div class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center justify-content-lg-between mb-3">
+                <h2 class="mb-0">Un sous titre pour cette section</h2>
+                <div class="d-flex flex-column flex-md-row gap-2 justify-content-md-end" role="group" aria-label="Actions sur les candidatures">
+                  <a class="btn btn-outline-primary btn-ico" href="">
+                    <i class="ri-pencil-line ri-lg" aria-hidden="true"></i>
+                    <span>Modifier</span>
+                  </a>
+                  <a class="btn btn-outline-primary btn-ico" href="">
+                    <i class="ri-add-line ri-lg" aria-hidden="true"></i>
+                    <span>Créer une nouvelle fiche de poste</span>
+                  </a>
+                </div>
+              </div>
+              <p class="mb-0">
+                4 résultats
+              </p>
+              <div class="table-responsive mt-3 mt-md-4">
+                <table class="table table-hover">
+                  <caption class="visually-hidden">Liste des collaborateurs</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Métiers</th>
+                      <th scope="col">Statut</th>
+                      <th scope="col">Localisation</th>
+                      <th scope="col">Nbre de postes</th>
+                      <th scope="col">Mise a jour</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="" class="btn-link" data-matomo-event="true" aria-label="Lien vers fiche de poste : Agent / Agente de mise en fourrière animale">
+                          Agent / Agente de mise en fourrière animale
+                        </a>
+                      </td>
+                      <td>
+                        <span class="badge rounded-pill text-nowrap badge-sm bg-success-lighter text-success">Ouvert</span>
+                      </td>
+                      <td>
+                        <span class="d-flex align-items-center">
+                          <i class="ri-map-pin-line me-1" aria-hidden="true"></i>
+                          <span aria-label="Beaucaire (30)" title="Beaucaire (30)">Beaucaire (30)</span>
+                        </span>
+                      </td>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        Il y a 3 mois
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="btn-link" data-matomo-event="true" aria-label="Lien vers fiche de poste : Chef / Cheffe de partie">
+                          Chef / Cheffe de partie
+                        </a>
+                      </td>
+                      <td>
+                        <span class="badge rounded-pill text-nowrap badge-sm bg-warning-lighter text-warning">Fermé</span>
+                      </td>
+                      <td>
+                        <span class="d-flex align-items-center">
+                          <i class="ri-map-pin-line me-1" aria-hidden="true"></i>
+                          <span aria-label="Beaucaire (30)" title="Beaucaire (30)">St Egrève (30)</span>
+                        </span>
+                      </td>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        Il y a 3 mois
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="btn-link" data-matomo-event="true" aria-label="Lien vers fiche de poste : Agent / Agente de mise en fourrière animale">
+                          Agent / Agente de mise en fourrière animale
+                        </a>
+                      </td>
+                      <td>
+                        <span class="badge rounded-pill text-nowrap badge-sm bg-success-lighter text-success">Ouvert</span>
+                      </td>
+                      <td>
+                        <span class="d-flex align-items-center">
+                          <i class="ri-map-pin-line me-1" aria-hidden="true"></i>
+                          <span aria-label="Beaucaire (30)" title="Beaucaire (30)">Beaucaire (30)</span>
+                        </span>
+                      </td>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        Il y a 3 mois
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="btn-link" data-matomo-event="true" aria-label="Lien vers fiche de poste : Chef / Cheffe de partie">
+                          Chef / Cheffe de partie
+                        </a>
+                      </td>
+                      <td>
+                        <span class="badge rounded-pill text-nowrap badge-sm bg-warning-lighter text-warning">Fermé</span>
+                      </td>
+                      <td>
+                        <span class="d-flex align-items-center">
+                          <i class="ri-map-pin-line me-1" aria-hidden="true"></i>
+                          <span aria-label="Beaucaire (30)" title="Beaucaire (30)">St Egrève (30)</span>
+                        </span>
+                      </td>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        Il y a 3 mois
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    {{> _partials/footer-nexus }}
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/index.js"></script>
+  </body>
+</html>

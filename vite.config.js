@@ -1,6 +1,6 @@
-import { resolve } from 'path';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-import handlebars from 'vite-plugin-handlebars';
+import { resolve } from "path";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import handlebars from "vite-plugin-handlebars";
 import eslint from "vite-plugin-eslint";
 
 export default {
@@ -46,9 +46,17 @@ export default {
         layout_itou_not_emplois_homepage: resolve(__dirname, "src/layout-itou-not-emplois-homepage.html"),
         layout_itou_not_emplois_mentions: resolve(__dirname, "src/layout-itou-not-emplois-mentions.html"),
         layout_itou_not_emplois_test: resolve(__dirname, "src/layout-itou-not-emplois-test.html"),
+        layout_nexus_connect: resolve(__dirname, "src/layout-nexus-connect.html"),
         layout_nexus_dashboard: resolve(__dirname, "src/layout-nexus-dashboard.html"),
         layout_nexus_emplois: resolve(__dirname, "src/layout-nexus-emplois.html"),
+        layout_nexus_emplois_active: resolve(__dirname, "src/layout-nexus-emplois-active.html"),
+        layout_nexus_emplois_active_2: resolve(__dirname, "src/layout-nexus-emplois-active-2.html"),
+        layout_nexus_emplois_attente: resolve(__dirname, "src/layout-nexus-emplois-attente.html"),
+        layout_nexus_emplois_liste: resolve(__dirname, "src/layout-nexus-emplois-liste.html"),
         layout_nexus_dora: resolve(__dirname, "src/layout-nexus-dora.html"),
+        layout_nexus_dora_active: resolve(__dirname, "src/layout-nexus-dora-active.html"),
+        layout_nexus_dora_active_2: resolve(__dirname, "src/layout-nexus-dora-active-2.html"),
+        layout_nexus_dora_attente: resolve(__dirname, "src/layout-nexus-dora-attente.html"),
         layout_nexus_communaute: resolve(__dirname, "src/layout-nexus-communaute.html"),
         layout_nexus_marche: resolve(__dirname, "src/layout-nexus-marche.html"),
         layout_nexus_pilotage: resolve(__dirname, "src/layout-nexus-pilotage.html"),

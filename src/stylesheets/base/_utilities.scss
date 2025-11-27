@@ -2,48 +2,72 @@ $utilities: map-merge(
   $utilities,
   (
     "width": map-merge(
-      map-get($utilities, "width"),
-      (
-        responsive: true,
-        values: map-merge(
-          map-get(map-get($utilities, "width"), "values"),
-          (
-            25: 25%,
-            33: 33%,
-            40: 40%,
-            50: 50%,
-            66: 66%,
-            75: 75%,
-            50px: 50px,
-            100px: 100px,
-            200px: 200px,
-            300px: 300px,
-            400px: 400px,
-          )
-        ),
+        map-get($utilities, "width"),
+        (
+          responsive: true,
+          values: map-merge(
+              map-get(map-get($utilities, "width"), "values"),
+              (
+                25: 25%,
+                33: 33%,
+                40: 40%,
+                50: 50%,
+                66: 66%,
+                75: 75%,
+                50px: 50px,
+                100px: 100px,
+                200px: 200px,
+                300px: 300px,
+                400px: 400px,
+              )
+            ),
+        )
       ),
-    ),
     "max-width": map-merge(
-      map-get($utilities, "max-width"),
-      (
-        responsive: true,
-        values: map-merge(
-          map-get(map-get($utilities, "max-width"), "values"),
-          (
-            25: 25%,
-            33: 33%,
-            50: 50%,
-            66: 66%,
-            75: 75%,
-          )
-        ),
+        map-get($utilities, "max-width"),
+        (
+          responsive: true,
+          values: map-merge(
+              map-get(map-get($utilities, "max-width"), "values"),
+              (
+                25: 25%,
+                33: 33%,
+                50: 50%,
+                66: 66%,
+                75: 75%,
+              )
+            ),
+        )
       ),
-    ),
     "white-space": map-merge(
-      map-get($utilities, "white-space"),
-      (
-        responsive: true,
+        map-get($utilities, "white-space"),
+        (
+          responsive: true,
+        )
       ),
-    )
+    "border": map-merge(
+        map-get($utilities, "border"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-start": map-merge(
+        map-get($utilities, "border-start"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-end": map-merge(
+        map-get($utilities, "border-end"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-top": map-merge(
+        map-get($utilities, "border-top"),
+        (
+          responsive: true,
+        )
+      ),
   )
 );

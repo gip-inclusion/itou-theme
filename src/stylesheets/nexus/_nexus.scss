@@ -173,6 +173,7 @@
       margin-bottom: map-get($spacers, 2);
       line-height: $line-height-sm;
       font-size: $font-size-sm;
+      font-weight: $font-weight-base;
 
       @include media-breakpoint-between(md, xl) {
         font-size: 0.625rem;
@@ -234,7 +235,8 @@
 .btn-nexus {
   --bs-btn-border-color: $tertiary !important;
   color: $white;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-base;
+  //font-size: $font-size-sm;
   position: relative;
   border-radius: $border-radius-lg !important;
   background-color: $tertiary !important;
@@ -271,5 +273,61 @@
 
   [class^="ri-"] {
     font-weight: $font-weight-bold;
+  }
+}
+
+// Extra
+#nxAccordionInfoMore {
+  .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+  }
+}
+
+.s-section-nx-connect {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+  }
+
+  &__form {
+    padding: map-get($spacers, 4);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .c-box {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  &__bg {
+    background-color: #000091c9;
+    background-image: url("../../images/nexus/nx-bg-connect.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: $white;
+    padding: map-get($spacers, 4);
+    flex: 1;
+    align-items: end;
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+    }
+
+    h2 {
+      color: $white;
+    }
+
+    strong {
+      color: #e57209;
+    }
   }
 }
