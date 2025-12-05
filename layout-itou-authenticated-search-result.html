@@ -385,116 +385,32 @@
               <div class="c-search mt-3 mt-md-4">
                 <div class="c-search__bar">
                   <form method="get" action="/search/employers/results" role="search">
-                    <label for="id_city" class="visually-hidden">Ville</label>
-                    <div class="input-group input-group-lg flex-nowrap align-items-center">
-                      <div class="input-group-text rounded-start ps-3 pe-2">
-                        <i class="ri-map-pin-line ri-lg text-disabled" aria-hidden="true"></i>
+                    <div class="c-search__bar__grid">
+                      <div class="input-group input-group-lg flex-nowrap align-items-center">
+                        <div class="input-group-text rounded-start">
+                          <i class="ri-map-pin-line ri-lg text-disabled" aria-hidden="true"></i>
+                        </div>
+                        <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Rechercher un emploi autour de..." multiple>
+                          <option>Christmas Island</option>
+                          <option>South Sudan</option>
+                          <option>Jamaica</option>
+                          <option>Kenya</option>
+                          <option>French Guiana</option>
+                          <option>Mayotta</option>
+                          <option>Liechtenstein</option>
+                          <option>Denmark</option>
+                          <option>Eritrea</option>
+                        </select>
                       </div>
-                      <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Rechercher un emploi autour de..." multiple>
-                        <option>Christmas Island</option>
-                        <option>South Sudan</option>
-                        <option>Jamaica</option>
-                        <option>Kenya</option>
-                        <option>French Guiana</option>
-                        <option>Mayotta</option>
-                        <option>Liechtenstein</option>
-                        <option>Denmark</option>
-                        <option>Eritrea</option>
-                      </select>
-                      <div class="input-group-text p-0">
-                        <button class="btn btn-ico btn-link" aria-label="Rechercher un emploi inclusif">
-                          <i class="ri-search-line fw-bold" aria-hidden="true"></i>
-                          <span class="d-none d-sm-inline-flex me-0 me-sm-1">Rechercher</span>
+                      <div class="input-group input-group-lg">
+                        <button class="btn btn-block btn-ico btn-link" aria-label="Rechercher un emploi inclusif">
+                          <i class="ri-search-line ri-xl fw-bold" aria-hidden="true"></i>
+                          <span class="me-1">Rechercher</span>
                         </button>
                       </div>
                     </div>
                   </form>
                 </div>
-                <div class="c-search__list">
-                  <div class="c-search__list__title">Recherches enregistrées :</div>
-                  <div class="c-search__list__slider">
-                    <div data-it-sliding-search="true">
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                      <div>
-                        <a href="" class="btn-link btn-ico">
-                          <i class="ri-star-line" aria-hidden="true"></i>
-                          <span>Lyon 2ème arrondissement</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-search__list__settings">
-                    <button class="btn btn-link btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton" data-bs-toggle="modal" data-bs-target="#savedListSettingsModal">
-                      <i class="ri-equalizer-fill fw-medium" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
 
               <ul id="job-search-tabs" class="s-tabs-01__nav nav nav-tabs mt-3 mt-md-4 mb-0">
                 <li class="nav-item">
