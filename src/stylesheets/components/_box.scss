@@ -189,6 +189,24 @@
       }
     }
 
+    &__body {
+      > *:last-child {
+        margin-bottom: 0;
+      }
+
+      blockquote,
+      q {
+        line-height: $line-height-sm;
+        font-size: $font-size-sm;
+        font-style: italic;
+      }
+
+      p {
+        line-height: $line-height-sm;
+        font-size: $font-size-sm;
+      }
+    }
+
     &__list-data {
       ul {
         line-height: $line-height-sm;
@@ -245,6 +263,18 @@
     &__body {
       > *:last-child {
         margin-bottom: 0;
+      }
+
+      blockquote,
+      q {
+        line-height: $line-height-sm;
+        font-size: $font-size-sm;
+        font-style: italic;
+      }
+
+      p {
+        line-height: $line-height-sm;
+        font-size: $font-size-sm;
       }
     }
 

@@ -1,6 +1,5 @@
 .c-search {
   &__bar {
-    padding: map-get($spacers, 2);
     border-radius: $border-radius-lg;
     background-color: $white;
     border: 1px solid $border-color;
@@ -31,6 +30,35 @@
         border-right: 0 !important;
         background-image: none !important;
         border-radius: $border-radius-lg !important;
+      }
+    }
+
+    &__grid {
+      --gridChild: 1;
+
+      &:has(> *:nth-child(3)) {
+        --gridChild: 2;
+      }
+
+      display: grid;
+      grid-column-gap: map-get($spacers, 2);
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      @include media-breakpoint-up(lg) {
+        grid-row-gap: map-get($spacers, 2);
+        grid-template-columns: repeat(var(--gridChild), 1fr) auto;
+        grid-template-rows: 1fr;
+      }
+
+      > .input-group {
+        padding: map-get($spacers, 2);
+        border-bottom: 1px solid $border-color;
+
+        @include media-breakpoint-up(lg) {
+          border-right: 1px solid $border-color;
+          border-bottom: none;
+        }
       }
     }
   }

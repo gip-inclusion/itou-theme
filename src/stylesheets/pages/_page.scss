@@ -1,16 +1,16 @@
 .p-home {
   > .s-main .container {
-    max-width: map-get($container-max-widths, 'lg');
+    max-width: map-get($container-max-widths, "lg");
   }
 
   .has-bg-communaute {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
-    background-image: url('../../images/home/bg-communaute-mobile.png');
+    background-image: url("../../images/home/bg-communaute-mobile.png");
 
     @include media-breakpoint-up(lg) {
-      background-image: url('../../images/home/bg-communaute.png');
+      background-image: url("../../images/home/bg-communaute.png");
     }
   }
 
@@ -23,13 +23,15 @@
   }
 
   .s-home-search {
-    background-position: center left, center right;
+    background-position:
+      center left,
+      center right;
     background-repeat: no-repeat;
     background-color: $emploi-lighter;
     background-image: none;
 
     @include media-breakpoint-up(md) {
-      background-image: url('../../images/home/search-bg-left.png'), url('../../images/home/search-bg-right.png');
+      background-image: url("../../images/home/search-bg-left.png"), url("../../images/home/search-bg-right.png");
     }
   }
 
@@ -48,7 +50,12 @@
   }
 
   .c-search__bar {
-    padding: map-get($spacers, 3);
     border: 1px solid $white;
+
+    &__grid {
+      > .input-group {
+        padding: map-get($spacers, 3);
+      }
+    }
   }
 }
