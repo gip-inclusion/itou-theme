@@ -229,6 +229,12 @@
       }
     }
   }
+
+  .offcanvas-body {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-between;
+  }
 }
 
 // Btn
