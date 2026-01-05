@@ -38,6 +38,11 @@
   + .badge {
     @extend .ms-1;
   }
+
+  &.rounded-circle {
+    --bs-badge-padding-x: #{$badge-padding-y};
+    aspect-ratio: 1/1;
+  }
 }
 
 a.badge {

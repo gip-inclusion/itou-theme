@@ -87,6 +87,27 @@
                     </a>
                   </div>
                 </div>
+
+                <div class="col mb-3 mb-md-4">
+                  <div class="c-box h-100">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="./images/logo-monrecap-mono.svg" height="35" alt="Mon Récap">
+                      <div>
+                        <strong class="d-block fs-lg">Mon Récap</strong>
+                        <p class="mb-0 fs-sm">Plateforme de l’inclusion</p>
+                      </div>
+                      <div class="ms-auto align-self-start">
+                        <span class="badge badge-xs rounded-circle bg-warning-lighter text-warning" data-bs-toggle="tooltip" data-bs-title="Démo inexistante">
+                          <span class="visually-hidden">Démo inexistante</span>
+                          <i class="ri-close-line"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-primary btn-block has-external-link mt-3" disabled="" aria-label="Accéder à Mon Récap (lien externe)">
+                      Accéder
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -212,8 +233,8 @@
                 <a href="" class="btn btn-link has-external-link justify-content-start justify-content-md-center">Qu’est-ce que la Plateforme de l’inlcusion</a>
               </div>
               <div class="c-box">
-                <div class="row">
-                  <div class="col-12 col-xxl-5">
+                <div class="row d-none d-xxl-flex">
+                  <div class="col-5" id="nxAccordionListGroup">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item list-group-item-action">
                         <div class="d-flex align-items-center gap-3">
@@ -259,121 +280,247 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-12 col-xxl-7">
-                    <hr class="mb-4 d-xxl-none">
-                    <div id="nxAccordionInfoMore" class="h-100">
-                      <div class="h-100 border-start-xxl ps-xxl-4 collapse show" id="monrecapInfoMore" data-bs-parent="#nxAccordionInfoMore">
-                        <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
-                          <div class="flex-grow-1 d-flex align-items-center gap-3">
-                            <img src="./images/logo-monrecap-mono.svg" height="60" alt="Mon Récap">
-                            <div>
-                              <strong class="d-block fs-lg">Mon Récap</strong>
-                              <p class="mb-0 fs-sm">Plateforme de l’inclusion</p>
-                            </div>
+                  <div class="col-7" id="nxAccordionInfoMore">
+                    <div class="h-100 border-start ps-4 collapse show" id="monrecapInfoMore" data-bs-parent="#nxAccordionInfoMore">
+                      <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                        <div class="flex-grow-1 d-flex align-items-center gap-3">
+                          <img src="./images/logo-monrecap-mono.svg" height="60" alt="Mon Récap">
+                          <div>
+                            <strong class="d-block fs-lg">Mon Récap</strong>
+                            <p class="mb-0 fs-sm">Plateforme de l’inclusion</p>
                           </div>
-                          <button class="btn btn-ico btn-primary" type="button">
-                            <i class="ri-toggle-line" aria-hidden="true"></i>
-                            <span>Activer ce service</span>
-                          </button>
                         </div>
-                        <p class="fs-lg fw-bold mt-3 mt-md-4 lh-sm">Le support papier qui aide vos usagers à gagner en autonomie et à devenir acteurs de leur parcours.</p>
-                        <ul class="list-unstyled mb-3 mb-md-4">
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Rendre les personnes que vous suivez plus autonomes
-                            </span>
-                          </li>
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Communiquer entre professionnels
-                            </span>
-                          </li>
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Choisir un outil accessible
-                            </span>
-                          </li>
-                        </ul>
-                        <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
+                        <button class="btn btn-ico btn-primary" type="button">
+                          <i class="ri-toggle-line" aria-hidden="true"></i>
+                          <span>Activer ce service</span>
+                        </button>
                       </div>
-                      <div class="h-100 border-start-xxl ps-xxl-4 collapse" id="pilotageInfoMore" data-bs-parent="#nxAccordionInfoMore">
-                        <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
-                          <div class="flex-grow-1 d-flex align-items-center gap-3">
-                            <img src="./images/logo-pilotage-inclusion-mono.svg" height="60" alt="Le Pilotage de l'Inclusion">
-                            <div>
-                              <strong class="d-block fs-lg">Le Pilotage de l’inclusion</strong>
-                              <p class="mb-0 fs-sm">Plateforme de l’inclusion</p>
-                            </div>
-                          </div>
-                          <button class="btn btn-ico btn-primary" type="button">
-                            <i class="ri-toggle-line" aria-hidden="true"></i>
-                            <span>Activer ce service</span>
-                          </button>
-                        </div>
-                        <p class="fs-lg fw-bold mt-3 mt-md-4 lh-sm">Consultez des statistiques publiques sur l’inclusion ou des données spécifiques à votre structure.</p>
-                        <ul class="list-unstyled mb-3 mb-md-4">
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Rendre les personnes que vous suivez plus autonomes
-                            </span>
-                          </li>
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Communiquer entre professionnels
-                            </span>
-                          </li>
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Choisir un outil accessible
-                            </span>
-                          </li>
-                        </ul>
-                        <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
-                      </div>
-                      <div class="h-100 border-start-xxl ps-xxl-4 collapse" id="communauteInfoMore" data-bs-parent="#nxAccordionInfoMore">
-                        <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
-                          <div class="flex-grow-1 d-flex align-items-center gap-3">
-                            <img src="./images/logo-communaute-inclusion-mono.svg" height="60" alt="La Communauté de l'Inclusion">
-                            <div>
-                              <strong class="d-block fs-lg">La Communauté de l’inclusion</strong>
-                              <p class="mb-0 fs-sm">Plateforme de l’inclusion</p>
-                            </div>
-                          </div>
-                          <button class="btn btn-ico btn-primary" type="button">
-                            <i class="ri-toggle-line" aria-hidden="true"></i>
-                            <span>Activer ce service</span>
-                          </button>
-                        </div>
-                        <p class="fs-lg fw-bold mt-3 mt-md-4 lh-sm">Échangez avec d’autres structures et professionnels de l’insertion sur un espace d’entraide dédié..</p>
-                        <ul class="list-unstyled mb-3 mb-md-4">
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Rendre les personnes que vous suivez plus autonomes
-                            </span>
-                          </li>
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Communiquer entre professionnels
-                            </span>
-                          </li>
-                          <li class="my-md-2">
-                            <img src="./images/nexus/nx-forme commune-01.png" alt="">
-                            <span>
-                              Choisir un outil accessible
-                            </span>
-                          </li>
-                        </ul>
-                        <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
-                      </div>
+                      <p class="fs-lg fw-bold mt-3 mt-md-4 lh-sm">Le support papier qui aide vos usagers à gagner en autonomie et à devenir acteurs de leur parcours.</p>
+                      <ul class="list-unstyled mb-3 mb-md-4">
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Rendre les personnes que vous suivez plus autonomes
+                          </span>
+                        </li>
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Communiquer entre professionnels
+                          </span>
+                        </li>
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Choisir un outil accessible
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
                     </div>
+                    <div class="h-100 border-start ps-4 collapse" id="pilotageInfoMore" data-bs-parent="#nxAccordionInfoMore">
+                      <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                        <div class="flex-grow-1 d-flex align-items-center gap-3">
+                          <img src="./images/logo-pilotage-inclusion-mono.svg" height="60" alt="Le Pilotage de l'Inclusion">
+                          <div>
+                            <strong class="d-block fs-lg">Le Pilotage de l’inclusion</strong>
+                            <p class="mb-0 fs-sm">Plateforme de l’inclusion</p>
+                          </div>
+                        </div>
+                        <button class="btn btn-ico btn-primary" type="button">
+                          <i class="ri-toggle-line" aria-hidden="true"></i>
+                          <span>Activer ce service</span>
+                        </button>
+                      </div>
+                      <p class="fs-lg fw-bold mt-3 mt-md-4 lh-sm">Consultez des statistiques publiques sur l’inclusion ou des données spécifiques à votre structure.</p>
+                      <ul class="list-unstyled mb-3 mb-md-4">
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Rendre les personnes que vous suivez plus autonomes
+                          </span>
+                        </li>
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Communiquer entre professionnels
+                          </span>
+                        </li>
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Choisir un outil accessible
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
+                    </div>
+                    <div class="h-100 border-start ps-4 collapse" id="communauteInfoMore" data-bs-parent="#nxAccordionInfoMore">
+                      <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                        <div class="flex-grow-1 d-flex align-items-center gap-3">
+                          <img src="./images/logo-communaute-inclusion-mono.svg" height="60" alt="La Communauté de l'Inclusion">
+                          <div>
+                            <strong class="d-block fs-lg">La Communauté de l’inclusion</strong>
+                            <p class="mb-0 fs-sm">Plateforme de l’inclusion</p>
+                          </div>
+                        </div>
+                        <button class="btn btn-ico btn-primary" type="button">
+                          <i class="ri-toggle-line" aria-hidden="true"></i>
+                          <span>Activer ce service</span>
+                        </button>
+                      </div>
+                      <p class="fs-lg fw-bold mt-3 mt-md-4 lh-sm">Échangez avec d’autres structures et professionnels de l’insertion sur un espace d’entraide dédié..</p>
+                      <ul class="list-unstyled mb-3 mb-md-4">
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Rendre les personnes que vous suivez plus autonomes
+                          </span>
+                        </li>
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Communiquer entre professionnels
+                          </span>
+                        </li>
+                        <li class="my-md-2">
+                          <img src="./images/nexus/nx-forme-commune-01.png" alt="">
+                          <span>
+                            Choisir un outil accessible
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row d-xxl-none">
+                  <div class="col-12" id="nxAccordionListGroupCollapse">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item list-group-item-action">
+                        <div class="d-flex align-items-center gap-3 position-relative">
+                          <div class="flex-grow-1 d-flex align-items-center gap-3">
+                            <img src="./images/logo-monrecap-mono.svg" height="35" alt="Mon Récap">
+                            <div>
+                              <strong class="d-block">Mon Récap</strong>
+                              <p class="mb-0">Le support papier qui aide vos usagers à gagner en autonomie et devenir acteurs de leur parcours.</p>
+                            </div>
+                          </div>
+                          <button class="btn btn-lg btn-ico-only btn-link stretched-link" type="button" aria-label="En savoir plus sur la Mon Récap" data-bs-toggle="collapse" data-bs-target="#monrecapInfoCollapse" aria-expanded="true" aria-controls="monrecapInfoCollapse">
+                            <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <div class="collapse show" id="monrecapInfoCollapse" data-bs-parent="#nxAccordionListGroupCollapse">
+                          <ul class="list-unstyled my-3">
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Rendre les personnes que vous suivez plus autonomes
+                              </span>
+                            </li>
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Communiquer entre professionnels
+                              </span>
+                            </li>
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Choisir un outil accessible
+                              </span>
+                            </li>
+                          </ul>
+                          <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
+                          <button class="btn btn-ico btn-primary" type="button">
+                            <i class="ri-toggle-line" aria-hidden="true"></i>
+                            <span>Activer ce service</span>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="flex-grow-1 d-flex align-items-center gap-3">
+                            <img src="./images/logo-pilotage-inclusion-mono.svg" height="35" alt="Le Pilotage de l'inclusion">
+                            <div>
+                              <strong class="d-block">Le Pilotage de l’inclusion</strong>
+                              <p class="mb-0">Consultez des statistiques publiques sur l’inclusion ou des données spécifiques à votre structure.</p>
+                            </div>
+                          </div>
+                          <button class="btn btn-lg btn-ico-only btn-link stretched-link" type="button" aria-label="En savoir plus sur Le Pilotage de l’inclusion" data-bs-toggle="collapse" data-bs-target="#pilotageInfoCollapse" aria-expanded="false" aria-controls="pilotageInfoCollapse">
+                            <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <div class="collapse" id="pilotageInfoCollapse" data-bs-parent="#nxAccordionListGroupCollapse">
+                          <ul class="list-unstyled my-3">
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Rendre les personnes que vous suivez plus autonomes
+                              </span>
+                            </li>
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Communiquer entre professionnels
+                              </span>
+                            </li>
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Choisir un outil accessible
+                              </span>
+                            </li>
+                          </ul>
+                          <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
+                          <button class="btn btn-ico btn-primary" type="button">
+                            <i class="ri-toggle-line" aria-hidden="true"></i>
+                            <span>Activer ce service</span>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action">
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="flex-grow-1 d-flex align-items-center gap-3">
+                            <img src="./images/logo-communaute-inclusion-mono.svg" height="35" alt="La Communauté de L'inclusion">
+                            <div>
+                              <strong class="d-block">La Communauté de l’inclusion</strong>
+                              <p class="mb-0">Échangez avec d’autres structures et professionnels de l’insertion sur un espace d’entraide dédié.</p>
+                            </div>
+                          </div>
+                          <button class="btn btn-lg btn-ico-only btn-link stretched-link" type="button" aria-label="En savoir plus sur La Communauté de l’inclusion" data-bs-toggle="collapse" data-bs-target="#communauteInfoCollapse" aria-expanded="false" aria-controls="communauteInfoCollapse">
+                            <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <div class="collapse" id="communauteInfoCollapse" data-bs-parent="#nxAccordionListGroupCollapse">
+                          <ul class="list-unstyled my-3">
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Rendre les personnes que vous suivez plus autonomes
+                              </span>
+                            </li>
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Communiquer entre professionnels
+                              </span>
+                            </li>
+                            <li class="my-md-1">
+                              <img src="./images/nexus/nx-forme-commune-01.png" alt="" height="24">
+                              <span>
+                                Choisir un outil accessible
+                              </span>
+                            </li>
+                          </ul>
+                          <a href="" class="btn btn-link has-external-link ps-0">En savoir plus</a>
+                          <button class="btn btn-ico btn-primary" type="button">
+                            <i class="ri-toggle-line" aria-hidden="true"></i>
+                            <span>Activer ce service</span>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

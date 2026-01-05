@@ -283,6 +283,26 @@
 }
 
 // Extra
+#nxAccordionListGroup {
+  .list-group-item-action:has([aria-expanded="true"]) {
+    background-color: $list-group-action-active-bg;
+  }
+}
+#nxAccordionListGroupCollapse {
+  .list-group-item-action:has([aria-expanded="true"]) {
+    background-color: $list-group-action-active-bg;
+
+    .ri-arrow-drop-down-line::before {
+      content: "\ea56";
+    }
+  }
+
+  .collapsing,
+  .collapse {
+    padding-left: calc(35px + 1rem);
+  }
+}
+
 #nxAccordionInfoMore {
   .collapsing {
     -webkit-transition: none;
