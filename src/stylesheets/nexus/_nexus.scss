@@ -286,6 +286,7 @@
 #nxAccordionListGroup {
   .list-group-item-action:has([aria-expanded="true"]) {
     background-color: $list-group-action-active-bg;
+    pointer-events: none;
   }
 }
 #nxAccordionListGroupCollapse {
