@@ -1,0 +1,315 @@
+<!doctype html>
+
+<html lang="fr" data-fr-theme>
+
+  <head>
+    <title>Nexus Dropdown DSFR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.3/dist/dsfr.min.css">
+    <style>
+      .nx-dropdown {
+        --rows: 8;
+        position: relative;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+
+        .nx-dropdown__btn {
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 1.5rem;
+          max-height: none;
+          max-width: 100%;
+          min-height: 2.5rem;
+          min-height: 3rem;
+          overflow: initial;
+          padding: .5rem .5rem;
+          width: 100%;
+
+          &:before {
+            margin-left: -.125rem;
+            margin-right: .5rem;
+            background-image: url("../images/logo-nexus-dropdown.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            background-color: transparent !important;
+          }
+
+          &:after,
+          &:before {
+            --icon-size: 1rem;
+            background-color: currentColor;
+            content: "";
+            display: inline-block;
+            flex: 0 0 auto;
+            height: var(--icon-size);
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+            vertical-align: calc((.75em - var(--icon-size))*.5);
+            width: var(--icon-size);
+          }
+
+          &:after {
+            margin-left: auto;
+            -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.3/dist/icons/arrows/arrow-down-s-line.svg");
+            mask-image: url("https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.3/dist/icons/arrows/arrow-down-s-line.svg");
+            transition: transform .3s;
+          }
+
+          &[aria-expanded=true]:after {
+            transform: rotate(-180deg);
+          }
+
+          &[aria-expanded=true] {
+            --idle: transparent;
+            --hover: var(--background-open-blue-france-hover);
+            --active: var(--background-open-blue-france-active);
+            background-color: var(--background-open-blue-france);
+            color: var(--text-active-blue-france);
+
+            &:hover {
+              background-color: var(--hover-tint);
+            }
+
+            &:active {
+              background-color: var(--active-tint);
+            }
+          }
+        }
+
+        .fr-nav__item:before {
+          content: none;
+        }
+
+        .fr-menu__list {
+          padding: 0;
+          width: auto;
+        }
+
+        @media (min-width: 62em) {
+          margin-left: 0;
+          margin-right: 0;
+
+          .nx-dropdown__btn {
+            font-size: .875rem;
+            line-height: 1.5rem;
+            min-height: auto;
+            padding: .25rem .75rem;
+            width: auto;
+
+            &:after {
+              margin-left: .25rem;
+              margin-right: -.25rem;
+            }
+
+            &:before {
+              --icon-size: 1rem;
+            }
+          }
+
+          .fr-menu__list {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(var(--rows), auto);
+            min-width: 12.5rem;
+            max-width: 20rem;
+          }
+        }
+      }
+
+      .nx-dropdown__profil {
+        width: 100%;
+        font-weight: 400;
+        padding: .75rem 1rem;
+        text-align: left;
+
+        span {
+          display: block;
+          margin-bottom: .5rem;
+        }
+
+        .fr-btn {
+          width: 100%;
+          justify-content: center;
+          box-shadow: inset 0 0 0 1px var(--border-action-high-blue-france);
+        }
+
+        @media (min-width: 62em) {
+          font-size: .875rem;
+          line-height: 1.5rem;
+
+          span {
+            max-width: 17.5rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .nx-dropdown__service {
+        white-space: nowrap;
+
+        &.active,
+        &.active:hover {
+          background-color: var(--background-contrast-blue-cumulus);
+        }
+      }
+
+      .nx-dropdown__menu {
+        margin: -.25rem 0;
+
+        .nx-dropdown__service {
+          box-shadow: none;
+        }
+
+        @media (min-width: 62em) {
+          margin: -.25rem -1rem;
+        }
+      }
+
+      .fr-btns-group .nx-dropdown__menu {
+        @media (min-width: 62em) {
+          margin: -1.25rem -.75rem 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header role="banner" class="fr-header" id="header-60">
+      <div class="fr-header__body">
+        <div class="fr-container">
+          <div class="fr-header__body-row">
+            <div class="fr-header__brand fr-enlarge-link">
+              <div class="fr-header__brand-top">
+                <div class="fr-header__logo">
+                  <p class="fr-logo"> Intitulé <br>officiel </p>
+                </div>
+                <div class="fr-header__navbar">
+                  <button data-fr-opened="false" aria-controls="menu-modal-62" title="Menu" type="button" id="menu-61" class="fr-btn--menu fr-btn">Menu</button>
+                </div>
+              </div>
+              <div class="fr-header__service">
+                <a href="/" title="Retour à l'accueil du site - [À MODIFIER - texte alternatif de l'image : nom de l'opérateur ou du site serviciel] - République Française">
+                  <p class="fr-header__service-title"> Nom du site / service </p>
+                </a>
+                <p class="fr-header__service-tagline">baseline - précisions sur l'organisation</p>
+              </div>
+            </div>
+            <div class="fr-header__tools">
+              <div class="fr-header__tools-links">
+                <ul class="fr-btns-group">
+                  <li>
+                    <a href="" class="fr-btn--team fr-btn">Contact</a>
+                  </li>
+                  <li>
+                    <a href="" class="fr-btn--briefcase fr-btn">Espace recruteur</a>
+                  </li>
+                </ul>
+                <div class="nx-dropdown fr-nav">
+                  <div class="fr-nav__item">
+                    <button aria-controls="nexus-collapse" aria-expanded="false" title="Sélectionner un service" type="button" class="nx-dropdown__btn fr-btn fr-btn--tertiary">
+                      Mon portail
+                    </button>
+                    <div class="fr-collapse nx-dropdown__menu fr-menu" id="nexus-collapse">
+                      <ul class="fr-menu__list">
+                        <li>
+                          <div class="nx-dropdown__profil fr-nav__item">
+                            <span>
+                              <strong>Antoine P.</strong><br>
+                              antoine.avecunnomtroplong@inclusion.gouv.fr
+                            </span>
+                            <a href="" target="_blank" class="fr-btn fr-btn--sm fr-btn--secondary">Accéder à mon portail</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="nx-dropdown__service fr-nav__link active" href="#">
+                            <img src="../images/logo-emploi-inclusion.svg" height="35" alt="Les emplois de l'inclusion">
+                            <p class="fr-badge fr-badge--sm fr-badge--blue-cumulus">Activé</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="nx-dropdown__service fr-nav__link" href="#">
+                            <img src="../images/logo-dora.svg" height="35" alt="DORA">
+                            <p class="fr-badge fr-badge--sm fr-badge--blue-cumulus">Activé</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="nx-dropdown__service fr-nav__link" href="#">
+                            <img src="../images/logo-communaute-inclusion.svg" height="35" alt="La communauté de l'inclusion">
+                            <p class="fr-badge fr-badge--sm fr-badge--success"><span class="fr-ellipsis">Activable en 1 clic</span></p>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="nx-dropdown__service fr-nav__link" href="#">
+                            <img src="../images/logo-monrecap.svg" height="35" alt="Mon récap">
+                          </a>
+                        </li>
+                        <li>
+                          <a class="nx-dropdown__service fr-nav__link" href="#">
+                            <img src="../images/logo-marche-inclusion.svg" height="35" alt="Le marché de l'inclusion">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="fr-translate fr-nav">
+                  <div class="fr-nav__item">
+                    <button aria-controls="language-collapse" aria-expanded="false" title="Sélectionner un service" type="button" class="fr-translate__btn fr-btn fr-btn--tertiary">
+                      FR
+                    </button>
+                    <div class="fr-collapse fr-translate__menu fr-menu" id="language-collapse">
+                      <ul class="fr-menu__list">
+                        <li>
+                          <a class="fr-translate__language fr-nav__link" hreflang="fr" lang="fr" href="/fr/" id="language-80" aria-current="true">FR - Français</a>
+                        </li>
+                        <li>
+                          <a class="fr-translate__language fr-nav__link" hreflang="en" lang="en" href="/en/" id="language-81">EN - English</a>
+                        </li>
+                        <li>
+                          <a class="fr-translate__language fr-nav__link" hreflang="es" lang="es" href="/es/" id="language-82">ES - Español</a>
+                        </li>
+                        <li>
+                          <a class="fr-translate__language fr-nav__link" hreflang="de" lang="de" href="/de/" id="language-83">DE - Deutsch</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fr-header__menu fr-modal" id="menu-modal-62" aria-labelledby="menu-61">
+        <div class="fr-container">
+          <button aria-controls="menu-modal-62" title="Fermer" type="button" id="button-84" class="fr-btn--close fr-btn">Fermer</button>
+          <div class="fr-header__menu-links">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" id="content">
+      <div class="fr-container">
+        <div class="fr-my-7w fr-mt-md-12w fr-mb-md-10w fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-grid-row--center">
+          <div class="fr-py-0 fr-col-12 fr-col-md-6">
+            <p class="fr-text--lead fr-mb-3w">Comment utiliser le bouton <b>Mon portail</b> + menu <b>Nexus</b></p>
+            <ul class="fr-text--sm fr-mb-5w">
+              <li>Copier le contenu du DOM HTML <code>&lt;div class="nx-dropdown"&gt;</code></li>
+              <li>Coller le contenu du DOM HTML <code>&lt;div class="nx-dropdown"&gt;</code> dans votre <code>&lt;div class="fr-header__tools-links"&gt;</code></li>
+              <li>Copier/coller l'ensemble des styles présents dans la balise <code>&lt;style&gt;</code> du code source de cette page HTML</li>
+              <li>Remplacer l'url du svg <code>https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.3/dist/icons/arrows/arrow-down-s-line.svg</code> par celui présent sur votre site</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.3/dist/dsfr.module.min.js"></script>
+  </body>
+</html>
