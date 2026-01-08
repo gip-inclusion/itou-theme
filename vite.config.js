@@ -66,6 +66,7 @@ export default {
         layout_nexus_pilotage_active: resolve(__dirname, "src/layout-nexus-pilotage-active.html"),
         layout_nexus_communaute_active: resolve(__dirname, "src/layout-nexus-communaute-active.html"),
         layout_nexus_dropdown_dsfr: resolve(__dirname, "src/layout-nexus-dropdown-dsfr.html"),
+        layout_nexus_dropdown_dora: resolve(__dirname, "src/layout-nexus-dropdown-dora.html"),
         external_libs_itou_ac: resolve(__dirname, "src/external-libs-itou-ac.html"),
         external_libs_itou_ddp: resolve(__dirname, "src/external-libs-itou-ddp.html"),
         external_libs_itou_in: resolve(__dirname, "src/external-libs-itou-in.html"),
