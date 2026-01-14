@@ -330,4 +330,12 @@
       right: 1rem;
     }
   }
+
+  &--promo-partenaire {
+    background-color: $nuance-10;
+    border: none;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
