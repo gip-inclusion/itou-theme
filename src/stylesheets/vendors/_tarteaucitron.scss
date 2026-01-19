@@ -426,8 +426,7 @@ html body #tarteaucitronRoot div#tarteaucitronSave {
 /* Animation */
 #tarteaucitronRoot * {
   transition:
-    border 300ms,
-    background 300ms,
+    background-color 300ms,
     opacity 200ms,
     box-shadow 400ms;
 }
@@ -553,13 +552,14 @@ div#tarteaucitronServices {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   #tarteaucitron {
     border: 0 !important;
-    left: 0 !important;
-    margin: 0 5% !important;
+    left: 50%;
+    transform: translateX(-50%);
     max-height: 80% !important;
     width: 90% !important;
+    max-width: 860px !important;
   }
 }
 
@@ -567,9 +567,7 @@ div#tarteaucitronServices {
  * Common value
  */
 #tarteaucitronRoot div#tarteaucitron {
-  left: 0;
-  right: 0;
-  margin: auto;
+  // margin: auto;
 }
 
 #tarteaucitron .clear {
@@ -577,7 +575,7 @@ div#tarteaucitronServices {
 }
 
 #tarteaucitron a {
-  color: rgb(66, 66, 66);
+  color: $body-color;
   font-size: 11px;
   font-weight: 700;
   text-decoration: none;
@@ -622,16 +620,15 @@ div#tarteaucitronServices {
  * Root div added just before </body>
  */
 #tarteaucitronRoot {
-  left: 0;
+  display: block;
   position: absolute;
-  right: 0;
   top: 0;
   width: 100%;
 }
 
 #tarteaucitronRoot * {
   box-sizing: initial;
-  color: #333;
+  color: $body-color;
   /*font-family: sans-serif !important;*/
   font-size: 14px;
   line-height: normal;
@@ -673,18 +670,18 @@ div#tarteaucitronServices {
 #tarteaucitron {
   display: none;
   max-height: 80%;
-  left: 50%;
-  margin: 0 auto 0 -430px;
+  top: 10%;
   padding: 0;
   position: fixed;
-  top: 6%;
   width: 860px;
   z-index: 2147483647;
+  left: 50%;
+  //transform: translateX(-50%);
 }
 
 #tarteaucitron .tarteaucitronBorder {
   background: #fff;
-  border: 2px solid #333;
+  border: 2px solid $border-color;
   border-top: 0;
   height: auto;
   overflow: auto;
@@ -741,7 +738,6 @@ div#tarteaucitronServices {
   padding: 5px 20px;
   text-align: left;
   width: auto;
-  background: #ffffff;
 }
 
 #tarteaucitron #tarteaucitronServices .tarteaucitronMainLine .tarteaucitronName a,
