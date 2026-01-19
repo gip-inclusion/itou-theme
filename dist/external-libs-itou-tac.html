@@ -183,17 +183,16 @@
 
           <article class="row py-5" id="tac">
             <div class="col-12">
-              <h3>Tarte au citron 1.19.0</h3>
-              <p>Pour utiliser <a href="https://tarteaucitron.io/fr/" target="_blank" class="has-external-link">Tarte au citron 1.19.0</a> il suffit d'ajouter l'appel au cdn du js <code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.14.0/tarteaucitron.js&quot;&gt;&lt;/script&gt;</code> puis la configuration ci-dessous.</p>
+              <h3>Tarte au citron 1.29.0</h3>
+              <p>Pour utiliser <a href="https://tarteaucitron.io/fr/" target="_blank" class="has-external-link">Tarte au citron 1.29.0</a> il suffit d'ajouter l'appel au cdn du js <code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.29.0/tarteaucitron.min.js&quot;&gt;&lt;/script&gt;</code> puis la configuration ci-dessous.</p>
               <pre class="bg-info-lighter p-3">
-              &lt;script type=&quot;text/javascript&quot;&gt;&#10;                    tarteaucitron.init({&#10;                    &quot;privacyUrl&quot;: &quot;&quot;, /* Privacy policy url */&#10;                    &quot;hashtag&quot;: &quot;#tarteaucitron&quot;, /* Open the panel with this hashtag */&#10;                    &quot;cookieName&quot;: &quot;tarteaucitron&quot;, /* Cookie name */&#10;                    &quot;orientation&quot;: &quot;bottom&quot;, /* Banner position (top - bottom) */&#10;                    &quot;groupServices&quot;: false, /* Group services by category */&#10;                    &quot;showAlertSmall&quot;: false, /* Show the small banner on bottom right */&#10;                    &quot;cookieslist&quot;: false, /* Show the cookie list */&#10;                    &quot;closePopup&quot;: false, /* Show a close X on the banner */&#10;                    &quot;showIcon&quot;: true, /* Show cookie icon to manage cookies */&#10;                    //&quot;iconSrc&quot;: &quot;&quot;, /* Optionnal: URL or base64 encoded image */&#10;                    &quot;iconPosition&quot;: &quot;BottomRight&quot;, /* BottomRight, BottomLeft, TopRight and TopLeft */&#10;                    &quot;adblocker&quot;: false, /* Show a Warning if an adblocker is detected */&#10;                    &quot;DenyAllCta&quot; : true, /* Show the deny all button */&#10;                    &quot;AcceptAllCta&quot; : true, /* Show the accept all button when highPrivacy on */&#10;                    &quot;highPrivacy&quot;: true, /* HIGHLY RECOMMANDED Disable auto consent */&#10;                    &quot;handleBrowserDNTRequest&quot;: false, /* If Do Not Track == 1, disallow all */&#10;                    &quot;removeCredit&quot;: true, /* Remove credit link */&#10;                    &quot;moreInfoLink&quot;: true, /* Show more info link */&#10;                    &quot;useExternalCss&quot;: true, /* If false, the tarteaucitron.css file will be loaded */&#10;                    &quot;useExternalJs&quot;: false, /* If false, the tarteaucitron.js file will be loaded */&#10;                    //&quot;cookieDomain&quot;: &quot;.my-multisite-domaine.fr&quot;, /* Shared cookie for multisite */&#10;                    &quot;readmoreLink&quot;: &quot;&quot;, /* Change the default readmore link */&#10;                    &quot;mandatory&quot;: true, /* Show a message about mandatory cookies */&#10;                    });&#10;                  &lt;/script&gt;
-            </pre>
+&lt;script type=&quot;text/javascript&quot;&gt;&#10;  tarteaucitron.init({&#10;    &quot;privacyUrl&quot;: &quot;&quot;, /* Privacy policy url */&#10;    &quot;bodyPosition&quot;: &quot;bottom&quot;, /* or top to bring it as first element for accessibility */&#10;    &quot;hashtag&quot;: &quot;#tarteaucitron&quot;, /* Open the panel with this hashtag */&#10;    &quot;cookieName&quot;: &quot;tarteaucitron&quot;, /* Cookie name */&#10;    &quot;orientation&quot;: &quot;bottom&quot;, /* Banner position (top - bottom - middle - popup) */&#10;&#10;    &quot;groupServices&quot;: false, /* Group services by category */&#10;    &quot;showDetailsOnClick&quot;: true, /* Click to expand the description */&#10;    &quot;serviceDefaultState&quot;: &quot;wait&quot;, /* Default state (true - wait - false) */&#10;&#10;    &quot;showAlertSmall&quot;: false, /* Show the small banner on bottom right */&#10;    &quot;cookieslist&quot;: false, /* Show the cookie list in a mini banner */&#10;    &quot;cookieslistEmbed&quot;: false, /* Show the cookie list on the control panel */&#10;&#10;    &quot;showIcon&quot;: true, /* Show cookie icon to manage cookies */&#10;    // &quot;iconSrc&quot;: &quot;&quot;, /* Optional: URL or base64 encoded image */&#10;    &quot;iconPosition&quot;: &quot;BottomRight&quot;, /* Position of the icon between BottomRight, BottomLeft, TopRight and TopLeft */&#10;&#10;    &quot;adblocker&quot;: false, /* Show a Warning if an adblocker is detected */&#10;&#10;    &quot;DenyAllCta&quot;: true, /* Show the deny all button */&#10;    &quot;AcceptAllCta&quot;: true, /* Show the accept all button when highPrivacy on */&#10;    &quot;highPrivacy&quot;: true, /* HIGHLY RECOMMANDED Disable auto consent */&#10;    &quot;alwaysNeedConsent&quot;: false, /* Ask the consent for &quot;Privacy by design&quot; services */&#10;&#10;    &quot;handleBrowserDNTRequest&quot;: false, /* If Do Not Track == 1, disallow all */&#10;&#10;    &quot;removeCredit&quot;: true, /* Remove credit link */&#10;    &quot;moreInfoLink&quot;: true, /* Show more info link */&#10;&#10;    &quot;useExternalCss&quot;: true, /* If false, the tarteaucitron.css file will be loaded */&#10;    &quot;useExternalJs&quot;: false, /* If false, the tarteaucitron.services.js file and lang files will be loaded */&#10;&#10;    // &quot;cookieDomain&quot;: &quot;.my-multisite-domaine.fr&quot;, /* Shared cookie for subdomain website */&#10;&#10;    &quot;readmoreLink&quot;: &quot;&quot;, /* Change the default readmore link pointing to tarteaucitron.io */&#10;&#10;    &quot;mandatory&quot;: true, /* Show a message about mandatory cookies */&#10;    &quot;mandatoryCta&quot;: true, /* Show the disabled accept button when mandatory on */&#10;&#10;    // &quot;customCloserId&quot;: &quot;&quot;, /* Optional a11y: Custom element ID used to open the panel */&#10;&#10;    &quot;googleConsentMode&quot;: true, /* Enable Google Consent Mode v2 for Google ads and GA4 */&#10;    &quot;bingConsentMode&quot;: true, /* Enable Bing Consent Mode for Clarity and Bing Ads */&#10;    &quot;pianoConsentMode&quot;: true, /* Enable Piano Analytics Consent Mode */&#10;    &quot;pianoConsentModeEssential&quot;: false, /* Load in Essential mode instead of opt-out by default */&#10;    &quot;softConsentMode&quot;: false, /* Soft consent mode (consent is required to load the services) */&#10;&#10;    &quot;dataLayer&quot;: false, /* Send an event to dataLayer with the services status */&#10;    &quot;serverSide&quot;: false, /* Server side only, tags are not loaded client side */&#10;&#10;    &quot;partnersList&quot;: false /* Details the number of partners on the popup and middle banner */&#10;  });&#10;&lt;/script&gt;
+              </pre>
               <p><i>Les styles seront automatiquement chargés par le thème itou, il est donc inutile d'inclure les styles par défaut.</i></p>
             </div>
 
           </article>
 
-          <hr>
         </div>
       </section>
 
@@ -202,28 +201,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.19.0/tarteaucitron.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.29.0/tarteaucitron.min.js"></script>
 
     <script type="text/javascript">
       tarteaucitron.init({
-    	  "privacyUrl": "", /* Privacy policy url */
+        "privacyUrl": "", /* Privacy policy url */
         "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
         "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
         "cookieName": "tarteaucitron", /* Cookie name */
-        "orientation": "bottom", /* Banner position (top - bottom) */
+        "orientation": "bottom", /* Banner position (top - bottom - middle - popup) */
 
         "groupServices": false, /* Group services by category */
         "showDetailsOnClick": true, /* Click to expand the description */
         "serviceDefaultState": "wait", /* Default state (true - wait - false) */
 
         "showAlertSmall": false, /* Show the small banner on bottom right */
-        "cookieslist": false, /* Show the cookie list */
-
-        "closePopup": false, /* Show a close X on the banner */
+        "cookieslist": false, /* Show the cookie list in a mini banner */
+        "cookieslistEmbed": false, /* Show the cookie list on the control panel */
 
         "showIcon": true, /* Show cookie icon to manage cookies */
-        //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
-        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+        // "iconSrc": "", /* Optional: URL or base64 encoded image */
+        "iconPosition": "BottomRight", /* Position of the icon between BottomRight, BottomLeft, TopRight and TopLeft */
 
         "adblocker": false, /* Show a Warning if an adblocker is detected */
 
@@ -238,22 +236,31 @@
         "moreInfoLink": true, /* Show more info link */
 
         "useExternalCss": true, /* If false, the tarteaucitron.css file will be loaded */
-        "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+        "useExternalJs": false, /* If false, the tarteaucitron.services.js file and lang files will be loaded */
 
-        //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+        // "cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for subdomain website */
 
-        "readmoreLink": "", /* Change the default readmore link */
+        "readmoreLink": "", /* Change the default readmore link pointing to tarteaucitron.io */
 
         "mandatory": true, /* Show a message about mandatory cookies */
         "mandatoryCta": true, /* Show the disabled accept button when mandatory on */
 
-        //"customCloserId": "", /* Optional a11y: Custom element ID used to open the panel */
+        // "customCloserId": "", /* Optional a11y: Custom element ID used to open the panel */
 
         "googleConsentMode": true, /* Enable Google Consent Mode v2 for Google ads and GA4 */
+        "bingConsentMode": true, /* Enable Bing Consent Mode for Clarity and Bing Ads */
+        "pianoConsentMode": true, /* Enable Piano Analytics Consent Mode */
+        "pianoConsentModeEssential": false, /* Load in Essential mode instead of opt-out by default */
+        "softConsentMode": false, /* Soft consent mode (consent is required to load the services) */
 
-        "partnersList": true /* Show the number of partners on the popup/middle banner */
+        "dataLayer": false, /* Send an event to dataLayer with the services status */
+        "serverSide": false, /* Server side only, tags are not loaded client side */
+
+        "partnersList": false /* Details the number of partners on the popup and middle banner */
       });
     </script>
+
+
     <script type="text/javascript">
       tarteaucitron.user.googleFonts = ['Roboto', 'Covered By Your Grace'];
       (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
