@@ -1313,7 +1313,7 @@ html body #tarteaucitronRoot #tarteaucitron #tarteaucitronServicesnoTitle_cookie
  * Fallback activate link
  */
 .tac_activate {
-  background: #333;
+  background: var(--bs-gray-500);
   color: #fff;
   display: table;
   font-size: 12px;
@@ -1335,8 +1335,9 @@ html body #tarteaucitronRoot #tarteaucitron #tarteaucitronServicesnoTitle_cookie
 }
 
 .tac_activate .tac_float .tarteaucitronAllow {
-  background-color: #fbd600;
+  background-color: var(--bs-success);
   display: inline-block;
+  padding: 4px 8px !important;
 }
 
 /***
