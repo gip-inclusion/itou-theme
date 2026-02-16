@@ -306,18 +306,20 @@
   }
 
   &-nexus {
-    max-width: 320px;
+    max-width: 340px;
 
     .dropdown-toggle {
-      justify-content: start;
-      background-image: url("../../images/logo-nexus-dropdown.svg");
-      background-position: map-get($spacers, 3) center;
-      background-repeat: no-repeat;
-
-      span {
-        width: 100%;
-        text-align: left !important;
-        padding-left: map-get($spacers, 5);
+      &::before {
+        content: "";
+        line-height: 1;
+        vertical-align: middle;
+        margin-right: map-get($spacers, 2);
+        width: 20px;
+        height: 20px;
+        background-image: url("../../images/logo-nexus-dropdown.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
 
