@@ -1,17 +1,21 @@
+/// <reference types="vitest/config" />
 import { resolve } from "path";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import handlebars from "vite-plugin-handlebars";
 import eslint from "vite-plugin-eslint";
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { defineConfig } from 'vitest/config';
+import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
+import { playwright } from '@vitest/browser-playwright';
+const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
 
+// More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default {
   root: resolve(__dirname, "src"),
-  plugins: [
-    handlebars({
-      partialDirectory: resolve(__dirname, "src"),
-    }),
-    eslint(),
-    ViteImageOptimizer(),
-  ],
+  plugins: [handlebars({
+    partialDirectory: resolve(__dirname, "src")
+  }), eslint(), ViteImageOptimizer()],
   base: "./",
   build: {
     outDir: "../dist",
@@ -71,25 +75,48 @@ export default {
         external_libs_itou_ri: resolve(__dirname, "src/external-libs-itou-ri.html"),
         external_libs_itou_s2: resolve(__dirname, "src/external-libs-itou-s2.html"),
         external_libs_itou_slider: resolve(__dirname, "src/external-libs-itou-slider.html"),
-        external_libs_itou_tac: resolve(__dirname, "src/external-libs-itou-tac.html"),
+        external_libs_itou_tac: resolve(__dirname, "src/external-libs-itou-tac.html")
       },
       output: {
         entryFileNames: "javascripts/index.js",
         chunkFileNames: "javascripts/app.js",
-        assetFileNames: "stylesheets/app.css",
-      },
-    },
+        assetFileNames: "stylesheets/app.css"
+      }
+    }
   },
   server: {
-    port: 3000,
+    port: 3000
   },
   css: {
     devSourcemap: true,
     preprocessorOptions: {
       scss: {
         api: "modern-compiler",
-        quietDeps: true,
-      },
-    },
+        quietDeps: true
+      }
+    }
   },
+  test: {
+    projects: [{
+      extends: true,
+      plugins: [
+      // The plugin will run tests for the stories defined in your Storybook config
+      // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+      storybookTest({
+        configDir: path.join(dirname, '.storybook')
+      })],
+      test: {
+        name: 'storybook',
+        browser: {
+          enabled: true,
+          headless: true,
+          provider: playwright({}),
+          instances: [{
+            browser: 'chromium'
+          }]
+        },
+        setupFiles: ['.storybook/vitest.setup.js']
+      }
+    }]
+  }
 };

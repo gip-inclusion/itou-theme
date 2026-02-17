@@ -17,3 +17,6 @@ node_modules/
 .vscode
 
 # App
+
+*storybook.log
+storybook-static
