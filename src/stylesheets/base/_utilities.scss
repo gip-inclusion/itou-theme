@@ -39,6 +39,28 @@ $utilities: map-merge(
             ),
         )
       ),
+    "max-height": map-merge(
+        map-get($utilities, "max-height"),
+        (
+          responsive: true,
+          values: map-merge(
+              map-get(map-get($utilities, "max-height"), "values"),
+              (
+                25: 25%,
+                33: 33%,
+                50: 50%,
+                66: 66%,
+                75: 75%,
+                25vh: 25vh,
+                33vh: 33vh,
+                50vh: 50vh,
+                66vh: 66vh,
+                75vh: 75vh,
+                100vh: 100vh,
+              )
+            ),
+        )
+      ),
     "white-space": map-merge(
         map-get($utilities, "white-space"),
         (
