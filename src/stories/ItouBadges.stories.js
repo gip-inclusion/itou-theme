@@ -76,10 +76,6 @@ La classe \`.badge-group\` permet a un conteneur parent d'espacer automatiquemen
       control: "boolean",
       description: "Affiche une icône",
     },
-    icon: {
-      control: "text",
-      description: "Classe Remixicon de l'icône",
-    },
   },
 };
 
@@ -94,11 +90,10 @@ const getTextColor = (variant) => {
   return "text-white";
 };
 
-const render = ({ label, size, variant, withIcon, icon }) => {
+const render = ({ label, size, variant, withIcon }) => {
   const bgClass = `bg-${variant}`;
   const textColor = getTextColor(variant);
-  const iconHtml = withIcon ? `<i class="${icon}" aria-hidden="true"></i> ` : "";
-
+  const iconHtml = withIcon ? `<i class="ri-global-line" aria-hidden="true"></i> ` : "";
   return `
 <span class="badge ${size} rounded-pill ${bgClass} ${textColor}">
   ${iconHtml}${label}
@@ -119,7 +114,6 @@ export const Default = {
     size: "badge-base",
     variant: "primary",
     withIcon: false,
-    icon: "ri-global-line",
   },
 };
 
@@ -137,7 +131,6 @@ export const WithIcon = {
     size: "badge-base",
     variant: "info",
     withIcon: true,
-    icon: "ri-information-line",
   },
 };
 
@@ -155,7 +148,6 @@ export const Success = {
     size: "badge-sm",
     variant: "success",
     withIcon: false,
-    icon: "ri-check-line",
   },
 };
 
@@ -173,7 +165,6 @@ export const Warning = {
     size: "badge-sm",
     variant: "warning",
     withIcon: false,
-    icon: "ri-time-line",
   },
 };
 
@@ -191,7 +182,6 @@ export const Danger = {
     size: "badge-sm",
     variant: "danger",
     withIcon: false,
-    icon: "ri-close-line",
   },
 };
 

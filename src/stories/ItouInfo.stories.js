@@ -31,10 +31,6 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
     },
   },
   argTypes: {
-    title: {
-      control: "text",
-      description: "Titre de l'info",
-    },
     collapsed: {
       control: "boolean",
       description: "État initial du collapse (true = fermé, false = ouvert)",
@@ -46,9 +42,9 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
   },
 };
 
-const render = ({ title, collapsed, secondary }) => {
+const render = ({ collapsed, secondary }) => {
   const infoClass = secondary ? "c-info c-info--secondary" : "c-info";
-  const collapseId = "collapseInfoDemo";
+  const collapseId = secondary ? "collapseInfoDemoSecondary" : "collapseInfoDemo";
   const buttonClass = collapsed ? "c-info__summary collapsed" : "c-info__summary";
   const collapseClass = collapsed ? "c-info__detail collapse" : "c-info__detail collapse show";
   const ariaExpanded = collapsed ? "false" : "true";
@@ -56,7 +52,7 @@ const render = ({ title, collapsed, secondary }) => {
   return `
 <div class="${infoClass}">
   <button class="${buttonClass}" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${ariaExpanded}" aria-controls="${collapseId}">
-    <span>${title}</span>
+    <span>Réservé au public éligible au contrat PEC</span>
   </button>
   <div class="${collapseClass}" id="${collapseId}">
     <p>Retrouvez toutes les informations sur le fonctionnement des suspensions sur notre documentation.</p>
@@ -74,7 +70,6 @@ export const Default = {
     },
   },
   args: {
-    title: "Réservé au public éligible au contrat PEC",
     collapsed: true,
     secondary: false,
   },
@@ -90,7 +85,6 @@ export const Secondary = {
     },
   },
   args: {
-    title: "Réservé au public éligible au contrat PEC",
     collapsed: true,
     secondary: true,
   },

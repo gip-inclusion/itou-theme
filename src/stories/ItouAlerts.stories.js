@@ -98,10 +98,6 @@ Le composant \`.alert\` est utilisé pour mettre en avant une information ou fou
       control: "text",
       description: "Message de l'alerte",
     },
-    actionLabel: {
-      control: "text",
-      description: "Libellé du bouton d'action",
-    },
   },
 };
 
@@ -121,7 +117,7 @@ const textColorByVariant = {
   important: "text-important",
 };
 
-const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, title, message, actionLabel }) => {
+const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, title, message }) => {
   const dismissibleClass = dismissible ? " alert-dismissible fade show" : "";
   const closeButton = dismissible
     ? `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>`
@@ -147,7 +143,7 @@ const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, t
   const actionBlock = withAction
     ? `
         <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
-          <button type="button" class="btn btn-sm btn-primary">${actionLabel}</button>
+          <button type="button" class="btn btn-sm btn-primary">Action</button>
         </div>`
     : "";
 
@@ -185,7 +181,6 @@ export const Simple = {
     withAction: false,
     title: "Titre de l'alerte",
     message: "Ceci est un message d'information simple.",
-    actionLabel: "Action",
   },
 };
 
@@ -207,7 +202,6 @@ export const WithIcon = {
     withAction: false,
     title: "Information",
     message: "Voici un message informatif avec une icône pour attirer l'attention.",
-    actionLabel: "Action",
   },
 };
 
@@ -229,7 +223,6 @@ export const WithAction = {
     withAction: true,
     title: "Nouvelle fonctionnalité",
     message: "Une nouvelle fonctionnalité est disponible. Découvrez-la maintenant car elle trop top de chez top !",
-    actionLabel: "Découvrir",
   },
 };
 
@@ -251,7 +244,6 @@ export const Success = {
     withAction: false,
     title: "Succès",
     message: "Votre action a été effectuée avec succès.",
-    actionLabel: "Action",
   },
 };
 
@@ -273,7 +265,6 @@ export const Danger = {
     withAction: false,
     title: "Erreur",
     message: "Une erreur s'est produite. Veuillez réessayer ultérieurement.",
-    actionLabel: "Action",
   },
 };
 
@@ -295,7 +286,6 @@ export const Dismissible = {
     withAction: false,
     title: "Attention",
     message: "Cette alerte peut être fermée en cliquant sur le bouton ×.",
-    actionLabel: "Action",
   },
 };
 
@@ -330,7 +320,7 @@ export const DismissibleOnce = {
 
 Une fois fermée par l'utilisateur, l'alerte ne réapparaîtra plus lors des visites suivantes.
 
-### Implémentation
+#### Implémentation
 - Ajouter la classe \`.alert-dismissible-once\` et \`.d-none\`
 - Ajouter un \`id\` unique sur l'alerte
 - Le JavaScript affiche l'alerte au chargement si elle n'a jamais été fermée

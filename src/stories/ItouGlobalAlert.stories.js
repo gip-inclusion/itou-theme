@@ -38,22 +38,8 @@ Elle affiche une information concernant **l'ensemble du site** et pas seulement 
       options: ["danger", "warning", "info"],
       description: "Variante de couleur de l'alerte",
     },
-    date: {
-      control: "text",
-      description: "Date de l'événement ou de l'annonce",
-    },
-    message: {
-      control: "text",
-      description: "Message de l'alerte",
-    },
-    linkText: {
-      control: "text",
-      description: "Texte du lien d'action",
-    },
-    linkUrl: {
-      control: "text",
-      description: "URL du lien d'action",
-    },
+    // date supprimé, la date est désormais en dur dans le render
+    // message et linkText supprimés, ils sont désormais en dur dans le render
     dismissible: {
       control: "boolean",
       description: "Affiche un bouton de fermeture",
@@ -61,12 +47,13 @@ Elle affiche une information concernant **l'ensemble du site** et pas seulement 
   },
 };
 
-const render = ({ variant, date, message, linkText, linkUrl, dismissible }) => {
+const render = ({ variant, dismissible }) => {
   const dismissibleClass = dismissible ? " alert-dismissible fade show" : "";
   const closeButton = dismissible ? `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>` : "";
-
-  const linkBlock = linkText && linkUrl ? ` <a href="${linkUrl}" class="has-external-link">${linkText}</a>` : "";
-
+  const date = "Jeudi 01 février 2024";
+  const message = "les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable.";
+  const linkText = "S'inscrire";
+  const linkBlock = linkText ? ` <a href="#" class="has-external-link">${linkText}</a>` : "";
   return `
 <div class="global-messages-container">
   <div class="alert alert-${variant}${dismissibleClass}" role="status">
@@ -87,11 +74,8 @@ export const Danger = {
   },
   args: {
     variant: "danger",
-    date: "Jeudi 01 février 2024",
-    message: "les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable.",
-    linkText: "S'inscrire",
-    linkUrl: "#",
     dismissible: true,
+    // message, linkText et date supprimés
   },
 };
 
@@ -106,11 +90,8 @@ export const Warning = {
   },
   args: {
     variant: "warning",
-    date: "Jeudi 01 février 2024",
-    message: "les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable.",
-    linkText: "S'inscrire",
-    linkUrl: "#",
     dismissible: true,
+    // message, linkText et date supprimés
   },
 };
 
@@ -125,16 +106,13 @@ export const Info = {
   },
   args: {
     variant: "info",
-    date: "Jeudi 01 février 2024",
-    message: "les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable.",
-    linkText: "S'inscrire",
-    linkUrl: "#",
     dismissible: true,
+    // message, linkText et date supprimés
   },
 };
 
 // Render spécifique pour la variante procédure en cours
-const renderProcedure = ({ title, exitLabel, exitUrl }) => {
+const renderProcedure = ({ title, exitLabel }) => {
   return `
 <div class="global-messages-container">
   <div class="alert alert-primary fade show" role="status">
@@ -143,7 +121,7 @@ const renderProcedure = ({ title, exitLabel, exitUrl }) => {
         <i class="ri-arrow-right-line fw-bold pe-2" aria-hidden="true"></i>
         <strong>${title}</strong>
       </p>
-      <a href="${exitUrl}" class="btn-link-white btn-ico align-items-center" aria-label="${exitLabel}">
+      <a href="#" class="btn-link-white btn-ico align-items-center" aria-label="${exitLabel}">
         <i class="ri-close-line ri-xl fw-medium me-1" aria-hidden="true"></i>
         <span class="fs-sm fw-medium">${exitLabel}</span>
       </a>
@@ -166,9 +144,8 @@ Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu
     },
   },
   args: {
-    title: "Vous postulez actuellement pour Machin",
+    title: "Vous postulez actuellement pour Monsieur Machin",
     exitLabel: "Quitter",
-    exitUrl: "#",
   },
   argTypes: {
     title: {
@@ -178,10 +155,6 @@ Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu
     exitLabel: {
       control: "text",
       description: "Libellé du bouton de sortie",
-    },
-    exitUrl: {
-      control: "text",
-      description: "URL de sortie de la procédure",
     },
   },
 };
