@@ -7,7 +7,7 @@
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist --dotfiles",
-    "doc": "storybook dev -p 6006",
+    "doc": "npm run build && storybook dev -p 6006",
     "build-doc": "npm run build && storybook build --output-dir dist/doc",
     "postbuild-doc": "node ensure-nojekyll.mjs"
   },

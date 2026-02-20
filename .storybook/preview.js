@@ -1,9 +1,12 @@
-import '../src/stylesheets/app.scss';
+import '../dist/stylesheets/app.css';
+import '../dist/javascripts/app.js';
+import itouTheme from './itouTheme';
 
 /** @type { import('@storybook/html-vite').Preview } */
 const preview = {
   parameters: {
     docs: {
+      theme: itouTheme,
       codePanel: true,
       source: {
         type: 'dynamic',
