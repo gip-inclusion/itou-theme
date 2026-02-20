@@ -762,8 +762,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Covered";
   src:
-    url("../../fonts/coveredbyyourgrace/coveredbyyourgrace.woff2") format("woff2"),
-    url("../../fonts/coveredbyyourgrace/coveredbyyourgrace.woff") format("woff");
+    url("/fonts/coveredbyyourgrace/coveredbyyourgrace.woff2") format("woff2"),
+    url("/fonts/coveredbyyourgrace/coveredbyyourgrace.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -772,8 +772,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Light.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Light.woff") format("woff");
+    url("/fonts/marianne/Marianne-Light.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -782,8 +782,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Light_Italic.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Light_Italic.woff") format("woff");
+    url("/fonts/marianne/Marianne-Light_Italic.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Light_Italic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -792,8 +792,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Regular.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Regular.woff") format("woff");
+    url("/fonts/marianne/Marianne-Regular.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -802,8 +802,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Regular_Italic.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Regular_Italic.woff") format("woff");
+    url("/fonts/marianne/Marianne-Regular_Italic.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Regular_Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -812,8 +812,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Medium.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Medium.woff") format("woff");
+    url("/fonts/marianne/Marianne-Medium.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -822,8 +822,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Medium_Italic.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Medium_Italic.woff") format("woff");
+    url("/fonts/marianne/Marianne-Medium_Italic.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Medium_Italic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -832,8 +832,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Bold.woff") format("woff");
+    url("/fonts/marianne/Marianne-Bold.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -842,8 +842,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-Bold.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-Bold.woff") format("woff");
+    url("/fonts/marianne/Marianne-Bold.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -852,8 +852,8 @@ $aspect-ratios: (
 @font-face {
   font-family: "Marianne";
   src:
-    url("../../fonts/marianne/Marianne-ExtraBold.woff2") format("woff2"),
-    url("../../fonts/marianne/Marianne-ExtraBold.woff") format("woff");
+    url("/fonts/marianne/Marianne-ExtraBold.woff2") format("woff2"),
+    url("/fonts/marianne/Marianne-ExtraBold.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
