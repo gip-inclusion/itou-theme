@@ -6,10 +6,10 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
-    "deploy": "npm run build && npm run build-storybook && gh-pages -d dist --dotfiles",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build --output-dir dist/storybook-static",
-    "postbuild-storybook": "node ensure-nojekyll.mjs"
+    "deploy": "gh-pages -d dist --dotfiles",
+    "doc": "storybook dev -p 6006",
+    "build-doc": "npm run build && storybook build --output-dir dist/doc",
+    "postbuild-doc": "node ensure-nojekyll.mjs"
   },
   "keywords": [],
   "author": "David Deloo <hello@hellodeloo.com>",
