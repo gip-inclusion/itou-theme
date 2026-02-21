@@ -11,11 +11,11 @@ ftp-config.json
 deploy.sh
 
 # Dev & IDE
-.sass-cache/
 .idea
-node_modules/
 .vscode
+.sass-cache/
+node_modules/
+dist/doc/
 
 # App
-
 *storybook.log
