@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const distRoot = path.join(root, 'dist');
-const storybookRoot = path.join(distRoot, 'storybook-static');
+const storybookRoot = path.join(distRoot, 'doc');
 
 const writeNoJekyll = async (dir) => {
   await mkdir(dir, { recursive: true });
