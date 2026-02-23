@@ -23,7 +23,6 @@ Elle affiche une information concernant **l'ensemble du site** et pas seulement 
 | \`.alert-info\` | Alerte informative (bleue) |
 | \`.alert-primary\` | Alerte procédure en cours (violet) |
 | \`.alert-dismissible\` | Permet de fermer l'alerte |
-| \`.has-external-link\` | Style pour les liens externes |
 
 ### Accessibilité
 - Utiliser \`role="status"\` pour les annonces informatives

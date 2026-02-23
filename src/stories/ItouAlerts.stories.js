@@ -163,7 +163,7 @@ const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, t
 </div>`;
 };
 
-export const Simple = {
+export const Default = {
   render,
   parameters: {
     docs: {

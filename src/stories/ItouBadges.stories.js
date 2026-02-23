@@ -34,11 +34,8 @@ Le composant \`.badge\` est utile pour le comptage, l'étiquetage et la mise en 
 | \`.bg-important\` | Mise en avant |
 | \`.bg-accent-01\` / \`.bg-accent-02\` / \`.bg-accent-03\` | Cas spéciaux |
 
-### Conteneur Badge Group
-La classe \`.badge-group\` permet a un conteneur parent d'espacer automatiquement les badges horizontalement et verticalement.
-
 ### Accessibilité
-- L'icone dans le badge doit posséder un \`aria-hidden=true\`
+L'icone dans le badge doit posséder un \`aria-hidden=true\`
 `,
       },
     },
@@ -303,35 +300,6 @@ export const AllVersions = {
     docs: {
       description: {
         story: "Palette complète des couleurs disponibles pour les badges.",
-      },
-    },
-  },
-};
-
-// Render pour badge-group
-const renderBadgeGroup = () => {
-  return `
-<div class="badge-group">
-  <span class="badge badge-sm rounded-pill bg-info text-white">Badge 1</span>
-  <span class="badge badge-sm rounded-pill bg-success text-white">Badge 2</span>
-  <span class="badge badge-sm rounded-pill bg-warning text-white">Badge 3</span>
-  <span class="badge badge-sm rounded-pill bg-danger text-white">Badge 4</span>
-  <span class="badge badge-sm rounded-pill bg-primary text-white">Badge 5</span>
-  <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">Badge 6</span>
-</div>`;
-};
-
-export const BadgeGroup = {
-  render: renderBadgeGroup,
-  parameters: {
-    docs: {
-      description: {
-        story: `
-**Conteneur Badge Group**
-
-La classe \`.badge-group\` espace automatiquement les badges horizontalement et verticalement.
-Utile pour afficher plusieurs badges côte à côte avec un espacement cohérent.
-`,
       },
     },
   },

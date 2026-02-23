@@ -22,10 +22,6 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 | \`.c-info__summary\` | Titre/résumé de l'info |
 | \`.c-info__detail\` | Contenu détaillé (avec collapse) |
 | \`.c-info--secondary\` | Variante sans icône |
-
-### Comportement
-- Sans \`data-bs-toggle="collapse"\` : affichage simple
-- Avec \`data-bs-toggle="collapse"\` : affichage avec dropdown
 `,
       },
     },
@@ -90,7 +86,7 @@ export const Secondary = {
   },
 };
 
-const renderWithoutDropdown = () => {
+const renderWithoutCollapse = () => {
   return `
 <div class="c-info">
   <button class="c-info__summary">
@@ -105,12 +101,12 @@ const renderWithoutDropdown = () => {
 </div>`;
 };
 
-export const WithoutDropdown = {
-  render: renderWithoutDropdown,
+export const WithoutCollapse = {
+  render: renderWithoutCollapse,
   parameters: {
     docs: {
       description: {
-        story: "Sans dropdown avec le contenu toujours visible.",
+        story: "Sans collapse avec le contenu toujours visible.",
       },
     },
   },
