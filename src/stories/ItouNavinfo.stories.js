@@ -25,7 +25,7 @@ Il ne peut se situer que dans la section titre \`.s-title-02\` d'un template
 | \`.c-navinfo\` | Conteneur principal |
 | \`.c-navinfo__prevstep\` | Lien retour |
 | \`.c-navinfo__prevnext\` | Liens de navigation entre fiche candidats |
-| \`.c-navinfo__info"\` | Information complémentaire |
+| \`.c-navinfo__info\` | Information complémentaire |
 
 ### Accessibilité
 Personnaliser le contenu de l'attribut \`aria-label\` sur le \`<button>\` "< Retour"
