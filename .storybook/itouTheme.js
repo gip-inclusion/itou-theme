@@ -32,6 +32,6 @@ export default create({
   // Branding
   brandTitle: 'Itou Theme',
   brandUrl: 'https://emplois.inclusion.beta.gouv.fr/',
-  brandImage: '/images/logo-emploi-inclusion.svg',
+  brandImage: './images/logo-emploi-inclusion.svg',
   brandTarget: '_blank',
 });
