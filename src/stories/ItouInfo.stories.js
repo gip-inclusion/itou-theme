@@ -1,5 +1,5 @@
 export default {
-  title: "Itou-Componnents/Info",
+  title: "Components/Info",
   decorators: [(Story) => `<div style="max-width: 800px; margin: 0 auto;">${Story()}</div>`],
   tags: ["autodocs"],
   parameters: {

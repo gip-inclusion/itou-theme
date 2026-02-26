@@ -1,5 +1,5 @@
 export default {
-  title: "Itou-Componnents/Navinfo",
+  title: "Components/Navinfo",
   decorators: [
     (Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`,
   ],

@@ -1,5 +1,5 @@
 export default {
-  title: "Itou-Componnents/Global Alert",
+  title: "Components/Global Alert",
   tags: ["autodocs"],
   parameters: {
     layout: "fullwidth",

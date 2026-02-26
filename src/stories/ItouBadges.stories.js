@@ -1,5 +1,5 @@
 export default {
-  title: "Itou-Componnents/Badges",
+  title: "Components/Badges",
   decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],
   tags: ["autodocs"],
   parameters: {

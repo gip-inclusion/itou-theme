@@ -1,5 +1,5 @@
 export default {
-  title: "Itou-Componnents/Alerts",
+  title: "Components/Alerts",
   decorators: [
     (Story) => {
       const html = `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`;

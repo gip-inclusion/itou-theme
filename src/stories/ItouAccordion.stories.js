@@ -1,5 +1,5 @@
 export default {
-  title: "Itou-Componnents/Accordion",
+  title: "Components/Accordion",
   decorators: [
     (Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`,
   ],
