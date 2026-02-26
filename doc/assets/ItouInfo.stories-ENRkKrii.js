@@ -14,11 +14,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 | \`.c-info__summary\` | Titre/résumé de l'info |
 | \`.c-info__detail\` | Contenu détaillé (avec collapse) |
 | \`.c-info--secondary\` | Variante sans icône |
-
-### Comportement
-- Sans \`data-bs-toggle="collapse"\` : affichage simple
-- Avec \`data-bs-toggle="collapse"\` : affichage avec dropdown
-`}}},argTypes:{collapsed:{control:"boolean",description:"État initial du collapse (true = fermé, false = ouvert)"},secondary:{control:"boolean",description:"Variante sans icône"}}},t=({collapsed:e,secondary:r})=>{const i=r?"c-info c-info--secondary":"c-info",a=r?"collapseInfoDemoSecondary":"collapseInfoDemo";return`
+`}}},argTypes:{collapsed:{control:"boolean",description:"État initial du collapse (true = fermé, false = ouvert)"},secondary:{control:"boolean",description:"Variante sans icône"}}},r=({collapsed:e,secondary:t})=>{const i=t?"c-info c-info--secondary":"c-info",a=t?"collapseInfoDemoSecondary":"collapseInfoDemo";return`
 <div class="${i}">
   <button class="${e?"c-info__summary collapsed":"c-info__summary"}" data-bs-toggle="collapse" data-bs-target="#${a}" aria-expanded="${e?"false":"true"}" aria-controls="${a}">
     <span>Réservé au public éligible au contrat PEC</span>
@@ -26,7 +22,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
   <div class="${e?"c-info__detail collapse":"c-info__detail collapse show"}" id="${a}">
     <p>Retrouvez toutes les informations sur le fonctionnement des suspensions sur notre documentation.</p>
   </div>
-</div>`},s={render:t,parameters:{docs:{description:{story:"Info simple avec titre uniquement, sans dropdown."}}},args:{collapsed:!0,secondary:!1}},n={render:t,parameters:{docs:{description:{story:"Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes."}}},args:{collapsed:!0,secondary:!0}},c=()=>`
+</div>`},s={render:r,parameters:{docs:{description:{story:"Info simple avec titre uniquement, sans dropdown."}}},args:{collapsed:!0,secondary:!1}},n={render:r,parameters:{docs:{description:{story:"Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes."}}},args:{collapsed:!0,secondary:!0}},c=()=>`
 <div class="c-info">
   <button class="c-info__summary">
     <span>Comment gérer mes suspensions ?</span>
@@ -37,7 +33,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
       <a href="#" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/...</a>
     </p>
   </div>
-</div>`,o={render:c,parameters:{docs:{description:{story:"Sans dropdown avec le contenu toujours visible."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+</div>`,o={render:c,parameters:{docs:{description:{story:"Sans collapse avec le contenu toujours visible."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     docs: {
@@ -64,12 +60,12 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
     secondary: true
   }
 }`,...n.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
-  render: renderWithoutDropdown,
+  render: renderWithoutCollapse,
   parameters: {
     docs: {
       description: {
-        story: "Sans dropdown avec le contenu toujours visible."
+        story: "Sans collapse avec le contenu toujours visible."
       }
     }
   }
-}`,...o.parameters?.docs?.source}}};const m=["Default","Secondary","WithoutDropdown"];export{s as Default,n as Secondary,o as WithoutDropdown,m as __namedExportsOrder,u as default};
+}`,...o.parameters?.docs?.source}}};const m=["Default","Secondary","WithoutCollapse"];export{s as Default,n as Secondary,o as WithoutCollapse,m as __namedExportsOrder,u as default};

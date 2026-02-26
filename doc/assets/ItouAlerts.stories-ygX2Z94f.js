@@ -221,4 +221,4 @@ Une fois fermée par l'utilisateur, l'alerte ne réapparaîtra plus lors des vis
       control: "text"
     }
   }
-}`,...d.parameters?.docs?.source}}};const S=["Simple","WithIcon","WithAction","Success","Danger","Dismissible","DismissibleOnce"];export{u as Danger,m as Dismissible,d as DismissibleOnce,a as Simple,c as Success,l as WithAction,o as WithIcon,S as __namedExportsOrder,I as default};
+}`,...d.parameters?.docs?.source}}};const S=["Default","WithIcon","WithAction","Success","Danger","Dismissible","DismissibleOnce"];export{u as Danger,a as Default,m as Dismissible,d as DismissibleOnce,c as Success,l as WithAction,o as WithIcon,S as __namedExportsOrder,I as default};
