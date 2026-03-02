@@ -1,4 +1,4 @@
-const t={title:"Itou-Componnents/BadgesGroup",decorators:[a=>`<div style="max-width: 1000px; margin: 0 auto;">${a()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+const t={title:"Components/BadgesGroup",decorators:[a=>`<div style="max-width: 1000px; margin: 0 auto;">${a()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 La classe \`.badge-group\` espace automatiquement les badges horizontalement et verticalement.
 Utile pour afficher plusieurs badges côte à côte avec un espacement cohérent.
 `}}}},s=()=>`

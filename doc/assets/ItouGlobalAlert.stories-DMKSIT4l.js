@@ -1,4 +1,4 @@
-const g={title:"Itou-Componnents/Global Alert",tags:["autodocs"],parameters:{layout:"fullwidth",docs:{description:{component:`
+const g={title:"Components/Global Alert",tags:["autodocs"],parameters:{layout:"fullwidth",docs:{description:{component:`
 L'**alerte globale** est une alerte en haut de page, placée directement à la racine du \`<body>\` ou dans le container \`<div class="global-messages-container">\`.
 
 Elle affiche une information concernant **l'ensemble du site** et pas seulement une page ou un formulaire.

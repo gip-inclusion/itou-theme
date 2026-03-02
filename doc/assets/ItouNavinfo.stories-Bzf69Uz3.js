@@ -1,4 +1,4 @@
-const i={title:"Itou-Componnents/Navinfo",decorators:[t=>`<div style="max-width: 1000px; margin: 0 auto;">${t()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+const i={title:"Components/Navinfo",decorators:[t=>`<div style="max-width: 1000px; margin: 0 auto;">${t()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 Le composant \`.c-navinfo\` permet de revenir en arrière dans l'historique de navigation, da naviguer entre les fiches candidats.
 Il permet accessoirement d'ajouter une information complémentaire (date, auteur, etc)
 
@@ -15,7 +15,7 @@ Il ne peut se situer que dans la section titre \`.s-title-02\` d'un template
 | \`.c-navinfo\` | Conteneur principal |
 | \`.c-navinfo__prevstep\` | Lien retour |
 | \`.c-navinfo__prevnext\` | Liens de navigation entre fiche candidats |
-| \`.c-navinfo__info"\` | Information complémentaire |
+| \`.c-navinfo__info\` | Information complémentaire |
 
 ### Accessibilité
 Personnaliser le contenu de l'attribut \`aria-label\` sur le \`<button>\` "< Retour"

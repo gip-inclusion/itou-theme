@@ -1,4 +1,4 @@
-const h={title:"Itou-Componnents/Accordion",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+const h={title:"Components/Accordion",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 Accordéons rétractables verticalement basés sur Bootstrap.
 L'accordéon utilise le composant \`collapse\` pour le rendre pliable.
 
