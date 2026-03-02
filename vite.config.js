@@ -46,6 +46,7 @@ export default {
         layout_itou_not_authenticated_mentions: resolve(__dirname, "src/layout-itou-not-authenticated-mentions.html"),
         layout_itou_not_authenticated_search_result: resolve(__dirname, "src/layout-itou-not-authenticated-search-result.html"),
         layout_itou_not_authenticated_test: resolve(__dirname, "src/layout-itou-not-authenticated-test.html"),
+        layout_itou_not_authenticated_signup: resolve(__dirname, "src/layout-itou-not-authenticated-signup.html"),
         layout_nexus_connect: resolve(__dirname, "src/layout-nexus-connect.html"),
         layout_nexus_dashboard: resolve(__dirname, "src/layout-nexus-dashboard.html"),
         layout_nexus_emplois: resolve(__dirname, "src/layout-nexus-emplois.html"),
