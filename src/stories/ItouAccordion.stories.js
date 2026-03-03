@@ -95,26 +95,12 @@ export const Default = {
   },
 };
 
-export const Flush = {
-  render,
-  parameters: {
-    docs: {
-      description: {
-        story: "Ajoutez `.accordion-flush` pour supprimer certaines bordures et coins arrondis afin de restituer les accordéons bord à bord avec leur conteneur parent.",
-      },
-    },
-  },
-  args: {
-    flush: true,
-    defaultOpenIndex: 0,
-    alwaysOpen: false,
-  },
-};
-
 export const AllClosed = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Accordéon avec tous les éléments fermés par défaut.",
       },
@@ -130,7 +116,9 @@ export const AllClosed = {
 export const AlwaysOpen = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Accordéon permettant d'ouvrir plusieurs éléments simultanément en omettant l'attribut `data-bs-parent`.",
       },

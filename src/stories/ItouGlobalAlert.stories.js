@@ -65,7 +65,9 @@ const render = ({ variant, dismissible }) => {
 export const Danger = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Alerte globale critique pour les annonces urgentes ou les maintenances.",
       },
@@ -81,7 +83,9 @@ export const Danger = {
 export const Warning = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Alerte globale d'avertissement pour les informations importantes.",
       },
@@ -132,7 +136,9 @@ const renderProcedure = ({ title, exitLabel }) => {
 export const ProcedureEnCours = {
   render: renderProcedure,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: `
 Alerte globale indiquant une **procédure en cours** (ex: candidature, inscription).

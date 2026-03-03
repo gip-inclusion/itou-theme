@@ -187,7 +187,9 @@ export const Default = {
 export const WithIcon = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Alerte avec une icône pour renforcer visuellement le type de message.",
       },
@@ -208,7 +210,9 @@ export const WithIcon = {
 export const WithAction = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Alerte avec un bouton d'action pour permettre à l'utilisateur d'interagir.",
       },
@@ -229,7 +233,9 @@ export const WithAction = {
 export const Success = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Alerte de succès pour confirmer une action réussie.",
       },
@@ -250,7 +256,9 @@ export const Success = {
 export const Danger = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Alerte d'erreur pour signaler un problème critique. Utiliser `role=\"alert\"` pour l'accessibilité.",
       },
@@ -271,7 +279,9 @@ export const Danger = {
 export const Dismissible = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Alerte avec bouton de fermeture permettant à l'utilisateur de la masquer.",
       },
@@ -313,7 +323,9 @@ const renderDismissibleOnce = ({ variant, title, message }) => {
 export const DismissibleOnce = {
   render: renderDismissibleOnce,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: `
 **Rejetable définitivement** : L'état de fermeture est mémorisé dans le \`localStorage\`.

@@ -28,5 +28,12 @@ const render = () => {
 };
 
 export const Default = {
-  render
+  render,
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      controls: { disable: true },
+      description: {},
+    },
+  },
 };

@@ -74,7 +74,9 @@ export const Default = {
 export const Secondary = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes.",
       },
@@ -104,7 +106,9 @@ const renderWithoutCollapse = () => {
 export const WithoutCollapse = {
   render: renderWithoutCollapse,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Sans collapse avec le contenu toujours visible.",
       },

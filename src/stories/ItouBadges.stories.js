@@ -117,7 +117,9 @@ export const Default = {
 export const WithIcon = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Badge avec icône pour renforcer visuellement le message.",
       },
@@ -134,7 +136,9 @@ export const WithIcon = {
 export const Success = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Badge succès pour les états valides, éligibles ou acceptés.",
       },
@@ -151,7 +155,9 @@ export const Success = {
 export const Warning = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Badge avertissement pour les états en cours ou en attente.",
       },
@@ -168,7 +174,9 @@ export const Warning = {
 export const Danger = {
   render,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Badge danger pour les états expirés, annulés ou déclinés.",
       },
@@ -199,7 +207,9 @@ const renderCandidatures = () => {
 export const Candidature = {
   render: renderCandidatures,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: `
 **Badges pour les statuts de candidature**
@@ -251,7 +261,9 @@ const renderEligibilite = () => {
 export const Eligibilite = {
   render: renderEligibilite,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: `
 **Badges pour l'Éligibilité**
@@ -297,7 +309,9 @@ const renderAllVersions = () => {
 export const AllVersions = {
   render: renderAllVersions,
   parameters: {
+    controls: { disable: true },
     docs: {
+      controls: { disable: true },
       description: {
         story: "Palette complète des couleurs disponibles pour les badges.",
       },
