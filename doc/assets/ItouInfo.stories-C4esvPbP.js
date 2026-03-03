@@ -1,4 +1,4 @@
-const u={title:"Components/Info",decorators:[e=>`<div style="max-width: 800px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+const p={title:"Components/Info",decorators:[e=>`<div style="max-width: 800px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 Le composant \`.c-info\` sert à mettre une information en avant. Il peut être utilisé notamment dans des formulaires ou dans des sections afin d'apporter plus d'informations à l'utilisateur.
 
 ### Anatomie
@@ -22,7 +22,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
   <div class="${e?"c-info__detail collapse":"c-info__detail collapse show"}" id="${a}">
     <p>Retrouvez toutes les informations sur le fonctionnement des suspensions sur notre documentation.</p>
   </div>
-</div>`},s={render:r,parameters:{docs:{description:{story:"Info simple avec titre uniquement, sans dropdown."}}},args:{collapsed:!0,secondary:!1}},n={render:r,parameters:{docs:{description:{story:"Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes."}}},args:{collapsed:!0,secondary:!0}},c=()=>`
+</div>`},s={render:r,parameters:{docs:{description:{story:"Info simple avec titre uniquement, sans dropdown."}}},args:{collapsed:!0,secondary:!1}},n={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes."}}},args:{collapsed:!0,secondary:!0}},c=()=>`
 <div class="c-info">
   <button class="c-info__summary">
     <span>Comment gérer mes suspensions ?</span>
@@ -33,7 +33,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
       <a href="#" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/...</a>
     </p>
   </div>
-</div>`,o={render:c,parameters:{docs:{description:{story:"Sans collapse avec le contenu toujours visible."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+</div>`,o={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Sans collapse avec le contenu toujours visible."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     docs: {
@@ -49,7 +49,13 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 }`,...s.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes."
       }
@@ -62,10 +68,16 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 }`,...n.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   render: renderWithoutCollapse,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Sans collapse avec le contenu toujours visible."
       }
     }
   }
-}`,...o.parameters?.docs?.source}}};const m=["Default","Secondary","WithoutCollapse"];export{s as Default,n as Secondary,o as WithoutCollapse,m as __namedExportsOrder,u as default};
+}`,...o.parameters?.docs?.source}}};const m=["Default","Secondary","WithoutCollapse"];export{s as Default,n as Secondary,o as WithoutCollapse,m as __namedExportsOrder,p as default};

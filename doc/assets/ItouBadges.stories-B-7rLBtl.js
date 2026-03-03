@@ -1,7 +1,7 @@
-const w={title:"Components/Badges",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nLe composant `.badge` est utile pour le comptage, l'étiquetage et la mise en avant d'une information.\n**Il n'est pas cliquable.**\n\n### Anatomie\n1. **Label** - Texte du badge\n2. **Icône** (optionnel) - Renforce la compréhension\n3. **Conteneur** - Fond coloré arrondi\n\n### Classes CSS - Tailles\n| Classe | Description |\n|--------|-------------|\n| `.badge` | Taille héritée du parent |\n| `.badge-base` | Taille fixe standard |\n| `.badge-sm` | Taille fixe petite |\n| `.badge-xs` | Taille fixe extra-petite |\n\n### Classes CSS - Couleurs\n| Classe | Usage |\n|--------|-------|\n| `.bg-success` | Succès, Valide, Éligible, Accepté |\n| `.bg-warning` | Attention, En cours, En attente |\n| `.bg-danger` | Erreur, Expiré, Annulé, Décliné |\n| `.bg-info` | Information, Nouveau |\n| `.bg-primary` | Multi-usage |\n| `.bg-important` | Mise en avant |\n| `.bg-accent-01` / `.bg-accent-02` / `.bg-accent-03` | Cas spéciaux |\n\n### Accessibilité\nL'icone dans le badge doit posséder un `aria-hidden=true`\n"}}},argTypes:{size:{control:{type:"select"},options:["badge-base","badge-sm","badge-xs"],description:"Taille du badge"},variant:{control:{type:"select"},options:["primary","success","success-lighter","warning","warning-lighter","danger","danger-lighter","info","info-lighter","important","important-lighter","accent-01","accent-01-lighter","accent-02","accent-02-lighter","accent-03","accent-03-lighter"],description:"Variante de couleur"},withIcon:{control:"boolean",description:"Affiche une icône"}}},m=e=>["accent-02","accent-02-lighter","accent-03","accent-03-lighter"].includes(e)?"text-primary":["success-lighter"].includes(e)?"text-success":["warning-lighter"].includes(e)?"text-warning":["danger-lighter"].includes(e)?"text-danger":["info-lighter"].includes(e)?"text-info":["accent-01-lighter"].includes(e)?"text-accent-01":["important-lighter"].includes(e)?"text-important":"text-white",a=({label:e,size:o,variant:p,withIcon:g})=>{const u=`bg-${p}`,b=m(p);return`
-<span class="badge ${o} rounded-pill ${u} ${b}">
+const w={title:"Components/Badges",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nLe composant `.badge` est utile pour le comptage, l'étiquetage et la mise en avant d'une information.\n**Il n'est pas cliquable.**\n\n### Anatomie\n1. **Label** - Texte du badge\n2. **Icône** (optionnel) - Renforce la compréhension\n3. **Conteneur** - Fond coloré arrondi\n\n### Classes CSS - Tailles\n| Classe | Description |\n|--------|-------------|\n| `.badge` | Taille héritée du parent |\n| `.badge-base` | Taille fixe standard |\n| `.badge-sm` | Taille fixe petite |\n| `.badge-xs` | Taille fixe extra-petite |\n\n### Classes CSS - Couleurs\n| Classe | Usage |\n|--------|-------|\n| `.bg-success` | Succès, Valide, Éligible, Accepté |\n| `.bg-warning` | Attention, En cours, En attente |\n| `.bg-danger` | Erreur, Expiré, Annulé, Décliné |\n| `.bg-info` | Information, Nouveau |\n| `.bg-primary` | Multi-usage |\n| `.bg-important` | Mise en avant |\n| `.bg-accent-01` / `.bg-accent-02` / `.bg-accent-03` | Cas spéciaux |\n\n### Accessibilité\nL'icone dans le badge doit posséder un `aria-hidden=true`\n"}}},argTypes:{size:{control:{type:"select"},options:["badge-base","badge-sm","badge-xs"],description:"Taille du badge"},variant:{control:{type:"select"},options:["primary","success","success-lighter","warning","warning-lighter","danger","danger-lighter","info","info-lighter","important","important-lighter","accent-01","accent-01-lighter","accent-02","accent-02-lighter","accent-03","accent-03-lighter"],description:"Variante de couleur"},withIcon:{control:"boolean",description:"Affiche une icône"}}},m=e=>["accent-02","accent-02-lighter","accent-03","accent-03-lighter"].includes(e)?"text-primary":["success-lighter"].includes(e)?"text-success":["warning-lighter"].includes(e)?"text-warning":["danger-lighter"].includes(e)?"text-danger":["info-lighter"].includes(e)?"text-info":["accent-01-lighter"].includes(e)?"text-accent-01":["important-lighter"].includes(e)?"text-important":"text-white",s=({label:e,size:p,variant:o,withIcon:g})=>{const u=`bg-${o}`,b=m(o);return`
+<span class="badge ${p} rounded-pill ${u} ${b}">
   ${g?'<i class="ri-global-line" aria-hidden="true"></i> ':""}${e}
-</span>`},s={render:a,parameters:{docs:{description:{story:"Badge standard avec couleur primaire."}}},args:{label:"Badge",size:"badge-base",variant:"primary",withIcon:!1}},n={render:a,parameters:{docs:{description:{story:"Badge avec icône pour renforcer visuellement le message."}}},args:{label:"Avec icône",size:"badge-base",variant:"info",withIcon:!0}},r={render:a,parameters:{docs:{description:{story:"Badge succès pour les états valides, éligibles ou acceptés."}}},args:{label:"Candidature acceptée",size:"badge-sm",variant:"success",withIcon:!1}},t={render:a,parameters:{docs:{description:{story:"Badge avertissement pour les états en cours ou en attente."}}},args:{label:"En attente",size:"badge-sm",variant:"warning",withIcon:!1}},i={render:a,parameters:{docs:{description:{story:"Badge danger pour les états expirés, annulés ou déclinés."}}},args:{label:"Candidature déclinée",size:"badge-sm",variant:"danger",withIcon:!1}},x=()=>`
+</span>`},a={render:s,parameters:{docs:{description:{story:"Badge standard avec couleur primaire."}}},args:{label:"Badge",size:"badge-base",variant:"primary",withIcon:!1}},n={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Badge avec icône pour renforcer visuellement le message."}}},args:{label:"Avec icône",size:"badge-base",variant:"info",withIcon:!0}},r={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Badge succès pour les états valides, éligibles ou acceptés."}}},args:{label:"Candidature acceptée",size:"badge-sm",variant:"success",withIcon:!1}},t={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Badge avertissement pour les états en cours ou en attente."}}},args:{label:"En attente",size:"badge-sm",variant:"warning",withIcon:!1}},i={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Badge danger pour les états expirés, annulés ou déclinés."}}},args:{label:"Candidature déclinée",size:"badge-sm",variant:"danger",withIcon:!1}},x=()=>`
 <div class="d-flex flex-column gap-2">
   <p><span class="badge badge-sm rounded-pill bg-info text-white">Nouvelle candidature</span></p>
   <p><span class="badge badge-sm rounded-pill bg-accent-03 text-primary">Candidature à l'étude</span></p>
@@ -10,7 +10,7 @@ const w={title:"Components/Badges",decorators:[e=>`<div style="max-width: 1000px
   <p><span class="badge badge-sm rounded-pill bg-danger text-white">Candidature déclinée</span></p>
   <p><span class="badge badge-sm rounded-pill bg-primary text-white">Embauché ailleurs</span></p>
   <p><span class="badge badge-sm rounded-pill bg-primary text-white">Embauche annulée</span></p>
-</div>`,d={render:x,parameters:{docs:{description:{story:`
+</div>`,d={render:x,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`
 **Badges pour les statuts de candidature**
 
 Badges prédéfinis pour les différents statuts d'une candidature dans le parcours utilisateur.
@@ -46,7 +46,7 @@ Badges prédéfinis pour les différents statuts d'une candidature dans le parco
       <i class="ri-pass-expired-line" aria-hidden="true"></i> PASS IAE expiré
     </span>
   </p>
-</div>`,c={render:h,parameters:{docs:{description:{story:`
+</div>`,l={render:h,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`
 **Badges pour l'Éligibilité**
 
 Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
@@ -76,7 +76,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     <p><span class="badge badge-base rounded-pill bg-accent-02-lighter text-primary">accent-02-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-03-lighter text-primary">accent-03-lighter</span></p>
   </div>
-</div>`,l={render:f,parameters:{docs:{description:{story:"Palette complète des couleurs disponibles pour les badges."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+</div>`,c={render:f,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Palette complète des couleurs disponibles pour les badges."}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     docs: {
@@ -91,10 +91,16 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     variant: "primary",
     withIcon: false
   }
-}`,...s.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Badge avec icône pour renforcer visuellement le message."
       }
@@ -109,7 +115,13 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
 }`,...n.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Badge succès pour les états valides, éligibles ou acceptés."
       }
@@ -124,7 +136,13 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
 }`,...r.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Badge avertissement pour les états en cours ou en attente."
       }
@@ -139,7 +157,13 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
 }`,...t.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Badge danger pour les états expirés, annulés ou déclinés."
       }
@@ -154,7 +178,13 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
 }`,...i.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
   render: renderCandidatures,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: \`
 **Badges pour les statuts de candidature**
@@ -164,10 +194,16 @@ Badges prédéfinis pour les différents statuts d'une candidature dans le parco
       }
     }
   }
-}`,...d.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+}`,...d.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: renderEligibilite,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: \`
 **Badges pour l'Éligibilité**
@@ -177,13 +213,19 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
       }
     }
   }
-}`,...c.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
   render: renderAllVersions,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Palette complète des couleurs disponibles pour les badges."
       }
     }
   }
-}`,...l.parameters?.docs?.source}}};const v=["Default","WithIcon","Success","Warning","Danger","Candidature","Eligibilite","AllVersions"];export{l as AllVersions,d as Candidature,i as Danger,s as Default,c as Eligibilite,r as Success,t as Warning,n as WithIcon,v as __namedExportsOrder,w as default};
+}`,...c.parameters?.docs?.source}}};const v=["Default","WithIcon","Success","Warning","Danger","Candidature","Eligibilite","AllVersions"];export{c as AllVersions,d as Candidature,i as Danger,a as Default,l as Eligibilite,r as Success,t as Warning,n as WithIcon,v as __namedExportsOrder,w as default};

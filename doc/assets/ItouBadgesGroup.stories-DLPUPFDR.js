@@ -9,6 +9,17 @@ Utile pour afficher plusieurs badges côte à côte avec un espacement cohérent
   <span class="badge badge-sm rounded-pill bg-danger text-white">Badge 4</span>
   <span class="badge badge-sm rounded-pill bg-primary text-white">Badge 5</span>
   <span class="badge badge-sm rounded-pill bg-accent-03 text-primary">Badge 6</span>
-</div>`,e={render:s};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
-  render
+</div>`,e={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render,
+  parameters: {
+    controls: {
+      disable: true
+    },
+    docs: {
+      controls: {
+        disable: true
+      },
+      description: {}
+    }
+  }
 }`,...e.parameters?.docs?.source}}};const d=["Default"];export{e as Default,d as __namedExportsOrder,t as default};

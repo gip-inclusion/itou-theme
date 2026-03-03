@@ -1,4 +1,4 @@
-const g={title:"Components/Global Alert",tags:["autodocs"],parameters:{layout:"fullwidth",docs:{description:{component:`
+const b={title:"Components/Global Alert",tags:["autodocs"],parameters:{layout:"fullwidth",docs:{description:{component:`
 L'**alerte globale** est une alerte en haut de page, placée directement à la racine du \`<body>\` ou dans le container \`<div class="global-messages-container">\`.
 
 Elle affiche une information concernant **l'ensemble du site** et pas seulement une page ou un formulaire.
@@ -20,13 +20,13 @@ Elle affiche une information concernant **l'ensemble du site** et pas seulement 
 ### Accessibilité
 - Utiliser \`role="status"\` pour les annonces informatives
 - Utiliser \`role="alert"\` pour les messages critiques
-`}}},argTypes:{variant:{control:{type:"select"},options:["danger","warning","info"],description:"Variante de couleur de l'alerte"},dismissible:{control:"boolean",description:"Affiche un bouton de fermeture"}}},i=({variant:a,dismissible:e})=>`
+`}}},argTypes:{variant:{control:{type:"select"},options:["danger","warning","info"],description:"Variante de couleur de l'alerte"},dismissible:{control:"boolean",description:"Affiche un bouton de fermeture"}}},o=({variant:a,dismissible:e})=>`
 <div class="global-messages-container">
   <div class="alert alert-${a}${e?" alert-dismissible fade show":""}" role="status">
     ${e?'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>':""}
     <p class="mb-0"><strong>Jeudi 01 février 2024</strong> : les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable. <a href="#" class="has-external-link">S'inscrire</a></p>
   </div>
-</div>`,r={render:i,parameters:{docs:{description:{story:"Alerte globale critique pour les annonces urgentes ou les maintenances."}}},args:{variant:"danger",dismissible:!0}},n={render:i,parameters:{docs:{description:{story:"Alerte globale d'avertissement pour les informations importantes."}}},args:{variant:"warning",dismissible:!0}},s={render:i,parameters:{docs:{description:{story:"Alerte globale informative pour les annonces générales."}}},args:{variant:"info",dismissible:!0}},o=({title:a,exitLabel:e})=>`
+</div>`,r={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Alerte globale critique pour les annonces urgentes ou les maintenances."}}},args:{variant:"danger",dismissible:!0}},n={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Alerte globale d'avertissement pour les informations importantes."}}},args:{variant:"warning",dismissible:!0}},s={render:o,parameters:{docs:{description:{story:"Alerte globale informative pour les annonces générales."}}},args:{variant:"info",dismissible:!0}},i=({title:a,exitLabel:e})=>`
 <div class="global-messages-container">
   <div class="alert alert-primary fade show" role="status">
     <div class="d-flex flex-row justify-content-between align-items-center">
@@ -40,14 +40,20 @@ Elle affiche une information concernant **l'ensemble du site** et pas seulement 
       </a>
     </div>
   </div>
-</div>`,t={render:o,parameters:{docs:{description:{story:`
+</div>`,t={render:i,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`
 Alerte globale indiquant une **procédure en cours** (ex: candidature, inscription).
 
 Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu d'un bouton de fermeture.
 `}}},args:{title:"Vous postulez actuellement pour Monsieur Machin",exitLabel:"Quitter"},argTypes:{title:{control:"text",description:"Titre de la procédure en cours"},exitLabel:{control:"text",description:"Libellé du bouton de sortie"}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Alerte globale critique pour les annonces urgentes ou les maintenances."
       }
@@ -61,7 +67,13 @@ Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu
 }`,...r.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: "Alerte globale d'avertissement pour les informations importantes."
       }
@@ -89,7 +101,13 @@ Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu
 }`,...s.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: renderProcedure,
   parameters: {
+    controls: {
+      disable: true
+    },
     docs: {
+      controls: {
+        disable: true
+      },
       description: {
         story: \`
 Alerte globale indiquant une **procédure en cours** (ex: candidature, inscription).
@@ -113,4 +131,4 @@ Cette variante utilise \\\`.alert-primary\\\` et affiche un bouton "Quitter" au 
       description: "Libellé du bouton de sortie"
     }
   }
-}`,...t.parameters?.docs?.source}}};const b=["Danger","Warning","Info","ProcedureEnCours"];export{r as Danger,s as Info,t as ProcedureEnCours,n as Warning,b as __namedExportsOrder,g as default};
+}`,...t.parameters?.docs?.source}}};const g=["Danger","Warning","Info","ProcedureEnCours"];export{r as Danger,s as Info,t as ProcedureEnCours,n as Warning,g as __namedExportsOrder,b as default};
