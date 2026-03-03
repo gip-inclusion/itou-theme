@@ -1,4 +1,4 @@
-const p={title:"Utilities/Typography",decorators:[o=>`<div style="max-width: 1000px; margin: 0 auto;">${o()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+const p={title:"Utilities/Typography",decorators:[i=>`<div style="max-width: 1000px; margin: 0 auto;">${i()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 Documentation et exemples des classes utilitaires de typographie, basée sur Bootstrap 5.3 et les utilitaires custom du thème itou.
 
 ### Anatomie
@@ -102,11 +102,10 @@ Documentation et exemples des classes utilitaires de typographie, basée sur Boo
   <p class="mb-0">Il n'y a besoin d'<a href="#">aucune classe particulière</a> pour les liens simples</p>
   <p class="mb-0">Il faut <code>.has-external-link</code> <a href="#" class="has-external-link">pour les liens externes</a></p>
   <p class="mb-0">Il faut <code>.has-downloadable-file</code> <a href="#" class="has-downloadable-file">pour les liens vers des fichiers téléchargeables</a></p>
-  <p class="mb-0">Il faut <code>.btn-link</code> <a href="#" class="btn-link">pour les liens d'action important</a></p>
-  <hr>
-
+  <p class="mb-0 position-relative">Il faut <code>.stretched-link</code> (avec un parent <code>.position-relative</code>) <a href="#" class="stretched-link">pour étendre la zone cliquable à tout le bloc</a></p>
+  <p class="mb-0">Il faut <code>.btn-link</code> <a href="#" class="btn-link">pour les liens d'action importants</a></p>
 </section>
-  `,i={render:d,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Type de liens possibles."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  `,o={render:d,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Type de liens possibles."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: renderHeadings,
   parameters: {
     controls: {
@@ -166,7 +165,7 @@ Documentation et exemples des classes utilitaires de typographie, basée sur Boo
       }
     }
   }
-}`,...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   render: renderLinks,
   parameters: {
     controls: {
@@ -181,4 +180,4 @@ Documentation et exemples des classes utilitaires de typographie, basée sur Boo
       }
     }
   }
-}`,...i.parameters?.docs?.source}}};const u=["Headings","SizesWeightsAndLineHeight","InlineTextAndLists","Quotes","Links"];export{e as Headings,t as InlineTextAndLists,i as Links,a as Quotes,s as SizesWeightsAndLineHeight,u as __namedExportsOrder,p as default};
+}`,...o.parameters?.docs?.source}}};const u=["Headings","SizesWeightsAndLineHeight","InlineTextAndLists","Quotes","Links"];export{e as Headings,t as InlineTextAndLists,o as Links,a as Quotes,s as SizesWeightsAndLineHeight,u as __namedExportsOrder,p as default};
