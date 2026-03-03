@@ -16,14 +16,6 @@
   opacity: 0.3;
 }
 
-.h1-hero {
-  font-size: $h1-hero-font-size-sm;
-
-  @include media-breakpoint-up(lg) {
-    font-size: $h1-hero-font-size;
-  }
-}
-
 .fs-base {
   font-size: $font-size-base !important;
 }
