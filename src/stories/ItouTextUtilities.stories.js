@@ -1,6 +1,3 @@
-// ToDo
-// Ajouter has-ellipsis, les couleurs de texte et autres ?
-
 export default {
   title: "Utilities/Text Utilities",
   decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],

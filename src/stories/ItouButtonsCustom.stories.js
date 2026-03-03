@@ -27,7 +27,7 @@ function buttonCopyToClipboard() {
 }
 
 export default {
-  title: "Forms/ButtonsLinksCustom",
+  title: "Forms/Buttons Custom",
   decorators: [
     (Story) => {
       const html = `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`;
