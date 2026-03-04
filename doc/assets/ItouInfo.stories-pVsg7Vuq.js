@@ -13,7 +13,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 | \`.c-info\` | Conteneur principal |
 | \`.c-info__summary\` | Titre/résumé de l'info |
 | \`.c-info__detail\` | Contenu détaillé (avec collapse) |
-| \`.c-info--borderless\` | Variante sans bordure |
+| \`.c-info--borderless\` | Variante sans bordure et sans icone |
 `}}},argTypes:{collapsed:{control:"boolean",description:"État initial du collapse (true = fermé, false = ouvert)"},borderless:{control:"boolean",description:"Variante borderless (sans icône)"}}},a=({collapsed:e,borderless:t})=>{const i=t?"c-info c-info--borderless":"c-info",r=t?"collapseInfoDemoBorderless":"collapseInfoDemo";return`
 <div class="${i}">
   <button class="${e?"c-info__summary collapsed":"c-info__summary"}" data-bs-toggle="collapse" data-bs-target="#${r}" aria-expanded="${e?"false":"true"}" aria-controls="${r}">
