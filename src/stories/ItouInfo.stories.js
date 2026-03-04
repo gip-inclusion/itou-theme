@@ -21,7 +21,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 | \`.c-info\` | Conteneur principal |
 | \`.c-info__summary\` | Titre/résumé de l'info |
 | \`.c-info__detail\` | Contenu détaillé (avec collapse) |
-| \`.c-info--secondary\` | Variante sans icône |
+| \`.c-info--borderless\` | Variante sans bordure |
 `,
       },
     },
@@ -31,16 +31,16 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
       control: "boolean",
       description: "État initial du collapse (true = fermé, false = ouvert)",
     },
-    secondary: {
+    borderless: {
       control: "boolean",
-      description: "Variante sans icône",
+      description: "Variante borderless (sans icône)",
     },
   },
 };
 
-const render = ({ collapsed, secondary }) => {
-  const infoClass = secondary ? "c-info c-info--secondary" : "c-info";
-  const collapseId = secondary ? "collapseInfoDemoSecondary" : "collapseInfoDemo";
+const render = ({ collapsed, borderless }) => {
+  const infoClass = borderless ? "c-info c-info--borderless" : "c-info";
+  const collapseId = borderless ? "collapseInfoDemoBorderless" : "collapseInfoDemo";
   const buttonClass = collapsed ? "c-info__summary collapsed" : "c-info__summary";
   const collapseClass = collapsed ? "c-info__detail collapse" : "c-info__detail collapse show";
   const ariaExpanded = collapsed ? "false" : "true";
@@ -67,24 +67,24 @@ export const Default = {
   },
   args: {
     collapsed: true,
-    secondary: false,
+    borderless: false,
   },
 };
 
-export const Secondary = {
+export const Borderless = {
   render,
   parameters: {
     controls: { disable: true },
     docs: {
       controls: { disable: true },
       description: {
-        story: "Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes.",
+        story: "Variante sans bordures. Elle doit être utilisée quand le composant est déjà imbriqué dans un `.c-box` afin d'éviter trop de \"box bordurées\" imbriquées",
       },
     },
   },
   args: {
     collapsed: true,
-    secondary: true,
+    borderless: true,
   },
 };
 
