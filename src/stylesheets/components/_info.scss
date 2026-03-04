@@ -73,6 +73,9 @@
     border: 1px solid $info-lightest;
 
     .c-info__summary {
+      &::before {
+        display: none !important;
+      }
 
       &[data-bs-toggle='collapse'] {
         &:hover {

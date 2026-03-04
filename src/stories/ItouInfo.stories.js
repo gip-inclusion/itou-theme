@@ -21,7 +21,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 | \`.c-info\` | Conteneur principal |
 | \`.c-info__summary\` | Titre/résumé de l'info |
 | \`.c-info__detail\` | Contenu détaillé (avec collapse) |
-| \`.c-info--borderless\` | Variante sans bordure |
+| \`.c-info--borderless\` | Variante sans bordure et sans icone |
 `,
       },
     },
