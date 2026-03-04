@@ -13,16 +13,16 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 | \`.c-info\` | Conteneur principal |
 | \`.c-info__summary\` | Titre/résumé de l'info |
 | \`.c-info__detail\` | Contenu détaillé (avec collapse) |
-| \`.c-info--secondary\` | Variante sans icône |
-`}}},argTypes:{collapsed:{control:"boolean",description:"État initial du collapse (true = fermé, false = ouvert)"},secondary:{control:"boolean",description:"Variante sans icône"}}},r=({collapsed:e,secondary:t})=>{const i=t?"c-info c-info--secondary":"c-info",a=t?"collapseInfoDemoSecondary":"collapseInfoDemo";return`
+| \`.c-info--borderless\` | Variante sans bordure |
+`}}},argTypes:{collapsed:{control:"boolean",description:"État initial du collapse (true = fermé, false = ouvert)"},borderless:{control:"boolean",description:"Variante borderless (sans icône)"}}},a=({collapsed:e,borderless:t})=>{const i=t?"c-info c-info--borderless":"c-info",r=t?"collapseInfoDemoBorderless":"collapseInfoDemo";return`
 <div class="${i}">
-  <button class="${e?"c-info__summary collapsed":"c-info__summary"}" data-bs-toggle="collapse" data-bs-target="#${a}" aria-expanded="${e?"false":"true"}" aria-controls="${a}">
+  <button class="${e?"c-info__summary collapsed":"c-info__summary"}" data-bs-toggle="collapse" data-bs-target="#${r}" aria-expanded="${e?"false":"true"}" aria-controls="${r}">
     <span>Réservé au public éligible au contrat PEC</span>
   </button>
-  <div class="${e?"c-info__detail collapse":"c-info__detail collapse show"}" id="${a}">
+  <div class="${e?"c-info__detail collapse":"c-info__detail collapse show"}" id="${r}">
     <p>Retrouvez toutes les informations sur le fonctionnement des suspensions sur notre documentation.</p>
   </div>
-</div>`},s={render:r,parameters:{docs:{description:{story:"Info simple avec titre uniquement, sans dropdown."}}},args:{collapsed:!0,secondary:!1}},n={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes."}}},args:{collapsed:!0,secondary:!0}},c=()=>`
+</div>`},s={render:a,parameters:{docs:{description:{story:"Info simple avec titre uniquement, sans dropdown."}}},args:{collapsed:!0,borderless:!1}},o={render:a,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:'Variante sans bordures. Elle doit être utilisée quand le composant est déjà imbriqué dans un `.c-box` afin d\'éviter trop de "box bordurées" imbriquées'}}},args:{collapsed:!0,borderless:!0}},l=()=>`
 <div class="c-info">
   <button class="c-info__summary">
     <span>Comment gérer mes suspensions ?</span>
@@ -33,7 +33,7 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
       <a href="#" class="has-external-link">https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/...</a>
     </p>
   </div>
-</div>`,o={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Sans collapse avec le contenu toujours visible."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+</div>`,n={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Sans collapse avec le contenu toujours visible."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     docs: {
@@ -44,9 +44,9 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
   },
   args: {
     collapsed: true,
-    secondary: false
+    borderless: false
   }
-}`,...s.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...s.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     controls: {
@@ -57,15 +57,15 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
         disable: true
       },
       description: {
-        story: "Variante secondaire sans icône et sans bordures, utilisée pour des informations moins importantes."
+        story: "Variante sans bordures. Elle doit être utilisée quand le composant est déjà imbriqué dans un \`.c-box\` afin d'éviter trop de \\"box bordurées\\" imbriquées"
       }
     }
   },
   args: {
     collapsed: true,
-    secondary: true
+    borderless: true
   }
-}`,...n.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+}`,...o.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: renderWithoutCollapse,
   parameters: {
     controls: {
@@ -80,4 +80,4 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
       }
     }
   }
-}`,...o.parameters?.docs?.source}}};const m=["Default","Secondary","WithoutCollapse"];export{s as Default,n as Secondary,o as WithoutCollapse,m as __namedExportsOrder,p as default};
+}`,...n.parameters?.docs?.source}}};const m=["Default","Borderless","WithoutCollapse"];export{o as Borderless,s as Default,n as WithoutCollapse,m as __namedExportsOrder,p as default};
