@@ -1,6 +1,6 @@
 {
   "name": "itoutheme",
-  "version": "3.3.7",
+  "version": "3.3.8",
   "main": "app.js",
   "scripts": {
     "dev": "vite",
