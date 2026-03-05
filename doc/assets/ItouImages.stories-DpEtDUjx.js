@@ -1,4 +1,4 @@
-const o={title:"Utilities/Images",decorators:[i=>`<div style="max-width: 1000px; margin: 0 auto;">${i()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+const s={title:"Utilities/Images",decorators:[i=>`<div style="max-width: 1000px; margin: 0 auto;">${i()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitaire custom <code>.img-muted</code> du thème itou.
 
 ### Anatomie
@@ -6,6 +6,7 @@ Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitai
 2. **Object fit** — Utiliser les classes <code>.object-fit-*</code> pour contrôler le recadrage dans un conteneur contraint.
 3. **Utilitaire custom itou** — Utiliser <code>.img-muted</code> pour atténuer visuellement une image (niveaux de gris + opacité).
 4. **Accessibilité** — Fournir un attribut <code>alt</code> pertinent pour les images informatives.
+5. **Performance** — Utiliser <code>loading="lazy"</code> pour differer le chargement des images hors ecran.
 
 ### Classes CSS
 | Classe | Description |
@@ -21,13 +22,13 @@ Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitai
 **Documentation Bootstrap** :
 - <a href="https://getbootstrap.com/docs/5.3/content/images/#responsive-images" target="_blank" rel="noopener noreferrer">Responsive images</a>
 - <a href="https://getbootstrap.com/docs/5.3/utilities/object-fit/" target="_blank" rel="noopener noreferrer">Object fit</a>
-`}}}},e="./images/banner-01-illu.png",s=()=>`
+`}}}},e="./images/banner-01-illu.png",o=()=>`
 <section class="vstack gap-4">
   <div class="vstack gap-2">
     <h2 class="h4 mb-0">Image responsive</h2>
     <p class="mb-0"><code>.img-fluid</code> adapte l'image à la largeur disponible du conteneur.</p>
     <div class="border rounded p-2" style="max-width: 560px;">
-      <img src="${e}" class="img-fluid" alt="Illustration d'exemple en image responsive">
+      <img src="${e}" class="img-fluid" alt="Illustration d'exemple en image responsive" loading="lazy">
     </div>
   </div>
 
@@ -39,35 +40,35 @@ Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitai
     <div class="d-flex flex-wrap gap-3">
       <figure class="mb-0">
         <div class="border rounded overflow-hidden" style="width: 200px; height: 120px;">
-          <img src="${e}" class="w-100 h-100 object-fit-contain" alt="Exemple object-fit contain">
+          <img src="${e}" class="w-100 h-100 object-fit-contain" alt="Exemple object-fit contain" loading="lazy">
         </div>
         <figcaption class="small mt-1"><code>.object-fit-contain</code></figcaption>
       </figure>
 
       <figure class="mb-0">
         <div class="border rounded overflow-hidden" style="width: 200px; height: 120px;">
-          <img src="${e}" class="w-100 h-100 object-fit-cover" alt="Exemple object-fit cover">
+          <img src="${e}" class="w-100 h-100 object-fit-cover" alt="Exemple object-fit cover" loading="lazy">
         </div>
         <figcaption class="small mt-1"><code>.object-fit-cover</code></figcaption>
       </figure>
 
       <figure class="mb-0">
         <div class="border rounded overflow-hidden" style="width: 200px; height: 120px;">
-          <img src="${e}" class="w-100 h-100 object-fit-fill" alt="Exemple object-fit fill">
+          <img src="${e}" class="w-100 h-100 object-fit-fill" alt="Exemple object-fit fill" loading="lazy">
         </div>
         <figcaption class="small mt-1"><code>.object-fit-fill</code></figcaption>
       </figure>
 
       <figure class="mb-0">
         <div class="border rounded overflow-hidden" style="width: 200px; height: 120px;">
-          <img src="${e}" class="w-100 h-100 object-fit-scale" alt="Exemple object-fit scale">
+          <img src="${e}" class="w-100 h-100 object-fit-scale" alt="Exemple object-fit scale" loading="lazy">
         </div>
         <figcaption class="small mt-1"><code>.object-fit-scale</code></figcaption>
       </figure>
 
       <figure class="mb-0">
         <div class="border rounded overflow-hidden" style="width: 200px; height: 120px;">
-          <img src="${e}" class="w-100 h-100 object-fit-none" alt="Exemple object-fit none">
+          <img src="${e}" class="w-100 h-100 object-fit-none" alt="Exemple object-fit none" loading="lazy">
         </div>
         <figcaption class="small mt-1"><code>.object-fit-none</code></figcaption>
       </figure>
@@ -80,11 +81,11 @@ Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitai
     <h2 class="h4 mb-0">Image atténuée (custom itou)</h2>
     <p class="mb-0"><code>.img-muted</code> applique un effet niveaux de gris et baisse l'opacité.</p>
     <div class="border rounded p-2" style="max-width: 560px;">
-      <img src="${e}" class="img-fluid img-muted" alt="Illustration d'exemple avec style atténué">
+      <img src="${e}" class="img-fluid img-muted" alt="Illustration d'exemple avec style atténué" loading="lazy">
     </div>
   </div>
 </section>
-  `,t={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemples de classes Bootstrap pour les images (`.img-fluid`, `.object-fit-*`) et utilitaire custom itou (`.img-muted`)."}}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+  `,t={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemples de classes Bootstrap pour les images (`.img-fluid`, `.object-fit-*`) et utilitaire custom itou (`.img-muted`)."}}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: renderImages,
   parameters: {
     controls: {
@@ -99,4 +100,4 @@ Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitai
       }
     }
   }
-}`,...t.parameters?.docs?.source}}};const c=["Default"];export{t as Default,c as __namedExportsOrder,o as default};
+}`,...t.parameters?.docs?.source}}};const a=["Default"];export{t as Default,a as __namedExportsOrder,s as default};
