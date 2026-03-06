@@ -7,7 +7,10 @@
       position: relative;
       border: 0;
       border-bottom: 2px solid transparent;
-      transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      transition:
+        border-color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out,
+        color 0.3s ease-in-out;
       display: flex;
       @extend .flex-nowrap;
       align-items: center;
@@ -35,12 +38,17 @@
 
       &.disabled,
       &:disabled {
-
         > .badge {
           color: $disabled-color;
           background-color: $disabled-color-light;
         }
       }
+    }
+  }
+
+  &-sm {
+    .nav-item .nav-link {
+      padding: $nav-link-padding-y-sm $nav-link-padding-x;
     }
   }
 
@@ -53,12 +61,30 @@
         &:hover,
         &:focus {
           color: $button;
-          background-color: $nav-tabs-link-active-bg;
+          background-color: $nuance-09;
           border-color: $nuance-08;
         }
 
         &.active {
           border-color: $button;
+        }
+      }
+    }
+
+    @at-root ol#{&} {
+      counter-reset: step;
+
+      .nav-item {
+        counter-increment: step;
+        list-style: none;
+        position: relative;
+
+        .nav-link {
+          &:before {
+            @extend .pe-2;
+            content: counter(step) ". ";
+            font-weight: $font-weight-bold;
+          }
         }
       }
     }

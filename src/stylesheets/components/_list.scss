@@ -5,15 +5,15 @@
     padding: 0 map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 3);
     border-left: 2px solid $border-color;
 
-    time,
-    small {
+    > time,
+    > small {
       display: block;
       @extend .fs-sm;
       color: $text-muted;
       line-height: $line-height-sm;
     }
 
-    span {
+    > span {
       display: block;
       line-height: $line-height-sm;
     }
@@ -21,46 +21,8 @@
     &:first-of-type {
       border-left: 2px solid $info;
 
-      span {
+      > span {
         font-weight: bold;
-      }
-    }
-  }
-  &--nav {
-    counter-reset: step;
-    font-size: $font-size-sm;
-
-    li {
-      counter-increment: step;
-      list-style: none;
-      position: relative;
-      padding: 0 map-get($spacers, 2) map-get($spacers, 2) map-get($spacers, 3);
-
-      &:first-of-type {
-        border-left: 2px solid $border-color;
-      }
-
-      &:hover {
-        background-color: $light;
-      }
-
-      &.is-current {
-        border-left: 2px solid $info;
-
-        a {
-          font-weight: bold;
-        }
-      }
-
-      a {
-        display: block;
-        line-height: $line-height-sm;
-        text-decoration: none;
-
-        &:before {
-          content: counter(step) ". ";
-          font-weight: $font-weight-bold;
-        }
       }
     }
   }
