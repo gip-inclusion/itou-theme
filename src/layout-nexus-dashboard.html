@@ -537,5 +537,44 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
     <script type="module" src="./javascripts/index.js"></script>
+
+    <!-- IntroJS -->
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@8.3.2/intro.min.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const breakpointMD = getComputedStyle(document.documentElement).getPropertyValue('--bs-breakpoint-md');
+        if (window.matchMedia('(min-width: ' + breakpointMD + ')').matches) {
+          const tour = introJs.tour();
+          tour.setOptions({
+            disableInteraction: false,
+            dontShowAgain: true,
+            dontShowAgainCookie: "introjsNexusFACILITYDontShowAgain",
+            dontShowAgainCookieDays: 90,
+            dontShowAgainLabel: "Ne plus afficher",
+            showProgress: false,
+            showBullets: false,
+            skipLabel: '',
+            prevLabel: 'Précédent',
+            nextLabel: 'Suivant',
+            doneLabel: 'J’ai compris',
+            steps: [{
+              title: '<span class="badge badge-sm rounded-pill bg-important text-white">Félicitations !</span>',
+              intro: '<p class="fs-lg mb-3"><strong>Bienvenue sur votre nouveau portail&nbsp;!</strong></p><p>Vous pourrez y retrouver vos services numériques activés et découvrir l\'ensemble des services numériques de La Plateforme de l\'inclusion.</p>'
+            }, {
+              element: nexusMyOffersItems,
+              title: 'Gérez l’ensemble de votre offre',
+              intro: 'Offres d’emplois, services d’insertion, offre commerciale, tout se passe ici.',
+              position: 'right'
+            }, {
+              element: nexusAccompanyItems,
+              title: 'Accompagnez vos bénéficiaires et suivez votre activité',
+              intro: 'La Plateforme de l’inclusion vous met à disposition des outils pour centraliser le suivi de vos bénéficiaires et de votre activité.',
+              position: 'right'
+            }],
+          });
+          tour.start();
+        }
+      });
+    </script>
   </body>
 </html>
