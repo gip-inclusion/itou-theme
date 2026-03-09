@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Métiers recherchés et proposés - Tableaux de bord publics - Le pilotage de l'inclusion
+    </title>
+    <meta name="created" content="9th Mar 2026 11:11">
+    <meta name="title" content="Le pilotage de l'inclusion">
+    <meta name="description" content="Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://metatags.io Open Graph -->
+    <meta property="og:title" content="Le pilotage de l'inclusion">
+    <meta property="og:description" content="Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs.">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pilotage.inclusion.beta.gouv.fr/tableaux-de-bord/metiers/">
+    <meta property="og:image" content="/static/images/logo-meta-pilotage.6fb4c06c721d.png">
+    <meta property="og:image:alt" content="Logo du pilotage de l'inclusion">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- https://metatags.io Twitter -->
+    <meta property="twitter:title" content="Le pilotage de l'inclusion">
+    <meta property="twitter:description" content="Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pilotage.inclusion.beta.gouv.fr/tableaux-de-bord/metiers/">
+    <meta property="twitter:image" content="/static/images/logo-meta-pilotage.6fb4c06c721d.png">
+    <meta property="twitter:site" content="inclusion_gouv">
+    <!-- https://metatags.io Facebook -->
+    <meta property="fb:page_id" content="inclusion.gouv">
+    <!-- Use this to get the value of the CSRF token in JavaScript. -->
+    <meta name="csrf-token" content="rwtSyQrnQh08qRYWyUDUsoJalJWHZugyPui59uVsue8DkdZaqAmbVDKZaBJr7aYN">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="./stylesheets/app.scss" lang="sass">
+  </head>
+
+  <body id="top">
+
+    <header role="banner" id="header">
+      <section class="s-header">
+        <div class="s-header__container container">
+          <div class="s-header__row row">
+            <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
+              <a href="/" class="s-header__logo-ministere">
+                <img src="/static/vendor/theme-inclusion/images/logo-republique-francaise.45337c71bc8f.svg" alt="Rébublique Française">
+              </a>
+            </div>
+            <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
+              <a href="/">
+                <img src="/static/vendor/theme-inclusion/images/logo-pilotage-inclusion.617995bb1e21.svg" alt="Le pilotage de l'inclusion" height="90">
+              </a>
+            </div>
+            <div class="s-header__col s-header__col--nav col d-none d-lg-inline-flex d-lg-flex align-items-center justify-content-end pe-0 pe-xl-3">
+              <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+                <ul>
+                  <li class="dropdown">
+                    <button type="button" class="btn btn-link dropdown-toggle mh-auto p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdown" aria-expanded="false">Besoin d'aide ?</button>
+                    <div class="dropdown-menu" id="helpDropdown">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/requests/new" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Aide et assistance du pilotage de l'inclusion (lien externe)">Nous contacter</a>
+                        </li>
+                        <li>
+                          <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (lien externe)">Documentation</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="/inscription-lettre-information/" class="btn btn-ico btn-outline-primary">
+                      <i class="ri-mail-settings-line" aria-hidden="true"></i>
+                      <span>Infolettre</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="s-header__col s-header__col--burger col col-lg-auto d-flex align-items-center justify-content-end d-xl-none ps-0">
+              <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+                <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+                <span>Menu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-postheader d-none d-xl-block">
+        <div class="s-postheader__container container">
+          <div class="s-postheader__row row">
+            <div class="s-postheader__col col-12 d-flex align-items-center">
+              <nav role="navigation" aria-label="Navigation secondaire">
+                <ul>
+                  <li>
+                    <a href="/" class="">Accueil</a>
+                  </li>
+                  <li>
+                    <a href="/tableaux-de-bord/" class="">Statistiques publiques</a>
+                  </li>
+                  <li>
+                    <a href="/tableaux-de-bord-prives/" class="">Statistiques de mon organisation</a>
+                  </li>
+                  <li>
+                    <a href="" role="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="ressourcesDropdown" aria-expanded="false">Ressources</a>
+                    <div class="dropdown-menu" id="ressourcesDropdown">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="dropdown-item has-external-link" target="_blank" href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/categories/16881943905297--Actualités-et-journal-des-évolutions-techniques" aria-label="Nouveautés (lien externe)">Nouveautés</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item has-external-link" target="_blank" href="https://youtube.com/playlist?list=PLbjxvanoh-KbY_ku7d_MbIhDLgLWBxDTp&feature=shared" aria-label="Tutoriels et replays (lien externe)">Tutoriels et replays</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item has-external-link" target="_blank" href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/categories/16881947647889--Webinaires-supports-et-replays" aria-label="Webinaires (lien externe)">Webinaires</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item has-external-link" target="_blank" href="https://inclusion.gouv.fr/kits-de-communication/pilotage-de-linclusion/" aria-label="Kit de communication (lien externe)">Kit de communication</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+        <div class="offcanvas-header">
+          <h4 class="h5 mb-0 btn-ico align-items-center" id="offcanvasApplyFiltersLabel">
+            <i class="ri-menu-line" aria-hidden="true"></i>
+            <span>Menu</span>
+          </h4>
+          <button type="button" class="btn-link px-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+            <i class="ri-close-line" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <nav role="navigation" aria-label="Navigation secondaire pour mobile">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a href="/tableaux-de-bord/" class="nav-link">Statistiques publiques</a>
+              </li>
+              <li class="nav-item">
+                <a href="/tableaux-de-bord-prives/" class="nav-link">Statistiques de mon organisation</a>
+              </li>
+              <li class="nav-item">
+                <a href="" role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="ressourcesDropdownMobile" aria-expanded="false">Ressources</a>
+                <div class="dropdown-menu" id="ressourcesDropdownMobile">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="dropdown-item has-external-link" target="_blank" href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/categories/16881943905297--Actualités-et-journal-des-évolutions-techniques" aria-label="Nouveautés (lien externe)">Nouveautés</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item has-external-link" target="_blank" href="https://youtube.com/playlist?list=PLbjxvanoh-KbY_ku7d_MbIhDLgLWBxDTp&feature=shared" aria-label="Tutoriels et replays (lien externe)">Tutoriels et replays</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item has-external-link" target="_blank" href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/categories/16881947647889--Webinaires-supports-et-replays" aria-label="Webinaires (lien externe)">Webinaires</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item has-external-link" target="_blank" href="https://inclusion.gouv.fr/kits-de-communication/pilotage-de-linclusion/" aria-label="Kit de communication (lien externe)">Kit de communication</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="offcanvas-footer flex-column align-items-stretch">
+          <nav role="navigation" aria-label="Menu de navigation principale pour mobile">
+            <a class="btn btn-block btn-ico btn-outline-primary my-3" href="/inscription-lettre-information/">
+              <i class="ri-mail-settings-line" aria-hidden="true"></i>
+              <span>Infolettre</span>
+            </a>
+            <div class="dropdown-center">
+              <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+              <div class="dropdown-menu" id="helpDropdownMobile">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/requests/new" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Aide et assistance du pilotage de l'inclusion (lien externe)">Nous contacter</a>
+                  </li>
+                  <li>
+                    <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (lien externe)">Documentation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" role="main" class="s-main">
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="c-breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/">Accueil</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/tableaux-de-bord/">Statistiques publiques</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">Métiers recherchés et proposés</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-title-01">
+        <div class="s-title-01__container container">
+          <div class="s-title-01__row row">
+            <div class="s-title-01__col col-12 col-lg-12">
+              <h1>
+                Métiers recherchés et proposés
+
+              </h1>
+              <div>
+                <h3>Quels sont les métiers proposés et recherchés depuis fin 2019 ?</h3>
+                <p>Grâce à ce tableau de bord et aux données collectées via le service des emplois de l'inclusion, développez vos connaissances sur les métiers qui recrutent, ceux recherchés par les candidats ou ceux attirant le plus de candidatures. Personnalisez les informations en fonction de votre région et du type d'employeur, grâce aux filtres. Ces données enrichiront vos rapports et études sur l'offre d'emploi ainsi que les tendances des métiers recherchés dans le domaine de l'IAE. Elles peuvent être comparées aux données de votre territoire présentes sur <a href="https://dataemploi.pole-emploi.fr/accueil">Data Emploi</a>. Elles se révèlent également précieuses pour enrichir ses connaissances sur l'IAE, surtout pour un nouveau membre rejoignant votre équipe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-section">
+        <div class="s-section__container container">
+          <div class="s-section__row row">
+            <div class="s-section__col col-12 col-lg-8 order-last order-lg-first">
+              LE FORM
+            </div>
+            <div class="s-section__col col-12 col-lg-4 order-first order-lg-last">
+              <div class="ps-lg-3 mb-3 mb-md-4">
+                <h2 class="h3">Étapes du questionnaire</h2>
+                <hr>
+                <ol class="nav nav-tabs nav-tabs-sm flex-column fs-sm">
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/organization">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/organization">
+                      <span>
+                        L'établissement
+                        <span class="badge badge-xs bg-success-lighter text-success rounded-pill">9/9</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-supported">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-supported">
+                      <span>
+                        Les travailleurs et travailleuses accompagné.e.s
+                        <span class="badge badge-xs bg-info-lighter text-info rounded-pill">1/4</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-new">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-new">
+                      <span>
+                        Les travailleurs et travailleuses admis.e.s dans l'année
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/3</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/establishment-discovery">
+                    <span class="nav-link active">
+                      <span>
+                        Découverte de l'ESAT
+                        <span class="badge badge-xs bg-success-lighter text-success rounded-pill">2/2</span>
+                      </span>
+                    </span>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/ordinary-working-environment">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/ordinary-working-environment">
+                      <span>
+                        Volonté d'aller vers le milieu ordinaire
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/2</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/ordinary-working-environment-and-customers-involvement">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/ordinary-working-environment-and-customers-involvement">
+                      <span>
+                        Contact avec le milieu ordinaire de travail et la clientèle
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/11</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-left">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-left">
+                      <span>
+                        Les sorties
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/14</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-right-to-return">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/workers-right-to-return">
+                      <span>
+                        Exercice du droit au retour après avoir occupé un emploi en milieu ordinaire de travail
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/4</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/support-hours">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/support-hours">
+                      <span>
+                        Heures de soutien
+                        <span class="badge badge-xs bg-success-lighter text-success rounded-pill">2/2</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/formations">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/formations">
+                      <span>
+                        Formations
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/12</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/skills">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/skills">
+                      <span>
+                        Reconnaissance des compétences
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/4</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/duodays">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/duodays">
+                      <span>
+                        Duodays
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/2</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/skills-notebook">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/skills-notebook">
+                      <span>
+                        Carnet parcours et compétences
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/4</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/retirement">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/retirement">
+                      <span>
+                        Préparation à la retraite
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/4</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/language-accessibility">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/language-accessibility">
+                      <span>
+                        Adaptation du langage écrit et oral
+                        <span class="badge badge-xs bg-success-lighter text-success rounded-pill">1/1</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/working-conditions">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/working-conditions">
+                      <span>
+                        Pouvoir d'agir sur les conditions de travail
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/5</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/profit-sharing">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/profit-sharing">
+                      <span>
+                        Rémunération et prime d'intéressement
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/2</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/insurance-policy">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/insurance-policy">
+                      <span>
+                        Régime de prévoyance
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/2</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/mobility-program">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/mobility-program">
+                      <span>
+                        Aide à la mobilité
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/5</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/vouchers">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/vouchers">
+                      <span>
+                        Chèques vacances et chèques cadeaux
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/4</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/sunday-work">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/sunday-work">
+                      <span>
+                        Travail le dimanche
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/1</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/partnership-agreements">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/partnership-agreements">
+                      <span>
+                        Conventions de partenariats
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/5</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/staff">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/staff">
+                      <span>
+                        Conseillers en parcours d'insertion ou chargé(e)s d'inclusion professionnelle
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/3</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/commercial-operation">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/commercial-operation">
+                      <span>
+                        Section d'Exploitation Commerciale
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/8</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/social-activity-budget">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/social-activity-budget">
+                      <span>
+                        Budget de fonctionnement ou budget social
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/3</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/investments">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/investments">
+                      <span>
+                        Investissements
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/2</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/comments">
+                    <a class="nav-link" href="/survey/esat-2025/019cbe35-aeca-7930-9579-072a180ee93a/comments">
+                      <span>
+                        Commentaires
+                        <span class="badge badge-xs bg-warning-lighter text-warning rounded-pill">0/1</span>
+                      </span>
+                    </a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo" id="footer">
+      <section class="s-footer-quick">
+        <div class="s-footer-quick__container container">
+          <div class="s-footer-quick__row row">
+            <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
+              <strong>Accès rapides</strong>
+              <ul>
+                <li>
+                  <a href="/">Accueil</a>
+                </li>
+                <li>
+                  <a href="/tableaux-de-bord/">Statistiques publiques</a>
+                </li>
+                <li>
+                  <a href="/tableaux-de-bord-prives/">Statistiques de mon organisation</a>
+                </li>
+                <li>
+                  <a href="/inscription-lettre-information/">Infolettre</a>
+                </li>
+              </ul>
+            </div>
+            <div class="s-footer-quick__col col-12 col-md-6 col-lg-auto">
+              <strong>Ressources</strong>
+              <ul>
+                <li>
+                  <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/categories/16881943905297--Actualités-et-journal-des-évolutions-techniques" target="_blank" aria-label="Nouveautés (lien externe)">Nouveautés</a>
+                </li>
+                <li>
+                  <a href="https://youtube.com/playlist?list=PLbjxvanoh-KbY_ku7d_MbIhDLgLWBxDTp&feature=shared" target="_blank" aria-label="Tutoriels et replays (lien externe)">Tutoriels et replays</a>
+                </li>
+                <li>
+                  <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/categories/16881947647889--Webinaires-supports-et-replays" target="_blank" aria-label="Webinaires (lien externe)">Webinaires</a>
+                </li>
+                <li>
+                  <a href="https://inclusion.gouv.fr/kits-de-communication/pilotage-de-linclusion/" target="_blank" aria-label="Kit de communication (lien externe)">Kit de communication</a>
+                </li>
+              </ul>
+            </div>
+            <div class="s-footer-quick__col col-12 col-lg-auto">
+              <strong>Réseaux sociaux</strong>
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/company/inclusion-gouv/" target="_blank" aria-label="La plateforme de l'inclusion sur sur Linkedin (lien externe)"><i class="ri-linkedin-box-fill text-dark" aria-hidden="true"></i> LinkedIn</a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/communaute.inclusion.gouv/" target="_blank" aria-label="La communaute de l'inclusion sur Facebook (lien externe)"><i class="ri-facebook-box-fill text-dark" aria-hidden="true"></i> Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@LaPlateformedelinclusion/videos" target="_blank" aria-label="La plateforme de l'inclusion sur Youtube (lien externe)"><i class="ri-youtube-fill text-dark" aria-hidden="true"></i> Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-footer-gip">
+        <div class="s-footer-gip__container container">
+          <div class="s-footer-gip__row row">
+            <div class="s-footer-gip__col s-footer-gip__col--logo col-12 col-md-6 col-lg-auto">
+              <a href="https://inclusion.gouv.fr/" target="_blank" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">
+                <img src="/static/vendor/theme-inclusion/images/logo-plateforme-inclusion.0e273451450d.svg" height="80" alt="Logo de plateforme de l'inclusion">
+              </a>
+            </div>
+            <div class="s-footer-gip__col col-12 col-md-6 col-lg">
+              <p class="mb-1">
+                <strong>Ce service fait partie de la Plateforme de l’inclusion</strong>
+              </p>
+              <p class="m-0">
+                Découvrez les outils qui portent l'inclusion au
+                <br class="d-none d-md-inline">
+                coeur de leur service. A chaque service, son objectif.
+                <br>
+                <a href="https://inclusion.gouv.fr/" target="_blank" class="has-external-link" aria-label="Découvrez les services de la plateforme de l'inclusion (lien externe)">Découvrez nos services</a>
+              </p>
+            </div>
+            <div class="s-footer-gip__col s-footer-gip__col--links col-12 col-lg-auto">
+              <ul>
+                <li>
+                  <a href="https://beta.gouv.fr/" target="_blank" aria-label="Incubateur de services publics numériques — beta.gouv.fr (lien externe)">beta.gouv.fr</a>
+                </li>
+                <li>
+                  <a href="https://www.data.gouv.fr/fr/" target="_blank" aria-label="Data.gouv.fr (lien externe)">data.gouv.fr</a>
+                </li>
+                <li>
+                  <a href="https://api.gouv.fr/" target="_blank" aria-label="Simplifiez le partage et la circulation des données administratives grace à api.gouv.fr (lien externe)">api.gouv.fr</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-footer-legal">
+        <div class="s-footer-legal__container container">
+          <div class="s-footer-legal__row row">
+            <div class="s-footer-legal__col col-12">
+              <ul>
+                <li>
+                  <a href="/mentions-legales/">Mentions légales</a>
+                </li>
+                <li>
+                  <a href="/politique-de-confidentialite/">Politique de confidentialité</a>
+                </li>
+                <li>
+                  <a href="/accessibilite/">Accessibilité : partiellement conforme</a>
+                </li>
+                <li>
+                  <a href="/stats/">Statistiques</a>
+                </li>
+              </ul>
+              <p>
+                Sauf mention contraire, tous les contenus de ce site sont sous licence <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" aria-label="Licence ouverte Etalab (lien externe)">etalab-2.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <div class="visually-hidden visually-hidden-focusable">
+      <a href="#header">Retour au début de la page</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/index.js"></script>
+
+  </body>
+</html>

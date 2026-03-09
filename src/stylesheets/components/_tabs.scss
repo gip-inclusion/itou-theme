@@ -28,8 +28,8 @@
 
       &:hover {
         color: $button;
-        background-color: $nuance-09;
         border-color: $nuance-08;
+        background-color: $nuance-09;
       }
 
       &.active {
@@ -48,7 +48,8 @@
 
   &-sm {
     .nav-item .nav-link {
-      padding: $nav-link-padding-y-sm $nav-link-padding-x;
+      padding: $nav-link-padding-y-sm $nav-link-padding-x-sm;
+      min-height: initial;
     }
   }
 
@@ -61,8 +62,8 @@
         &:hover,
         &:focus {
           color: $button;
-          background-color: $nuance-09;
           border-color: $nuance-08;
+          background-color: $nuance-09;
         }
 
         &.active {
