@@ -9,6 +9,24 @@ export default {
         component: `
 La classe \`.badge-group\` espace automatiquement les badges horizontalement et verticalement.
 Utile pour afficher plusieurs badges côte à côte avec un espacement cohérent.
+
+### Anatomie
+1. **Conteneur** - Bloc parent \`.badge-group\`
+2. **Badge** - Élément enfant \`.badge\` (souvent avec \`.rounded-pill\`)
+3. **Contenu** - Libellé textuel et éventuellement une icône décorative
+
+### Classes CSS
+| Classe | Description |
+|--------|-------------|
+| \`.badge-group\` | Gère l'espacement des badges dans le groupe |
+| \`.badge\` | Élément badge de base |
+| \`.badge-sm\` | Taille compacte du badge |
+| \`.rounded-pill\` | Forme arrondie du badge |
+
+### Accessibilité
+- Les badges doivent rester informatifs, pas interactifs.
+- Si une icône est décorative, ajouter \`aria-hidden="true"\`.
+- Vérifier le contraste texte/fond pour chaque variante utilisée.
 `,
       },
     },

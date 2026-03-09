@@ -90,14 +90,6 @@ Le composant \`.alert\` est utilisé pour mettre en avant une information ou fou
       control: "boolean",
       description: "Affiche un bouton d'action",
     },
-    title: {
-      control: "text",
-      description: "Titre de l'alerte",
-    },
-    message: {
-      control: "text",
-      description: "Message de l'alerte",
-    },
   },
 };
 
@@ -117,7 +109,7 @@ const textColorByVariant = {
   important: "text-important",
 };
 
-const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, title, message }) => {
+const render = ({ variant, role, dismissible, withIcon, withTitle, withAction }) => {
   const dismissibleClass = dismissible ? " alert-dismissible fade show" : "";
   const closeButton = dismissible
     ? `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>`
@@ -128,7 +120,7 @@ const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, t
     return `
 <div class="alert alert-${variant}${dismissibleClass}" role="${role}">
   ${closeButton}
-  ${withTitle ? `<p class="mb-2"><strong>${title}</strong></p> : ` : ""}<p class="mb-0">${message}</p>
+  ${withTitle ? `<p class="mb-2"><strong>Titre de l'alerte</strong></p> : ` : ""}<p class="mb-0">Ceci est un message d'information simple.</p>
 </div>`;
   }
 
@@ -147,7 +139,7 @@ const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, t
         </div>`
     : "";
 
-  const titleBlock = withTitle ? `<p class="mb-2"><strong>${title}</strong></p>` : "";
+  const titleBlock = withTitle ? `<p class="mb-2"><strong>Titre de l'alerte</strong></p>` : "";
 
   return `
 <div class="alert alert-${variant}${dismissibleClass}" role="${role}">
@@ -156,7 +148,7 @@ const render = ({ variant, role, dismissible, withIcon, withTitle, withAction, t
     ${iconBlock}
     <div class="col">
       ${titleBlock}
-      <p class="mb-0">${message}</p>
+      <p class="mb-0">Ceci est un message d'information simple.</p>
     </div>
     ${actionBlock}
   </div>
@@ -179,8 +171,6 @@ export const Default = {
     withIcon: false,
     withTitle: false,
     withAction: false,
-    title: "Titre de l'alerte",
-    message: "Ceci est un message d'information simple.",
   },
 };
 
@@ -202,8 +192,6 @@ export const WithIcon = {
     withIcon: true,
     withTitle: true,
     withAction: false,
-    title: "Information",
-    message: "Voici un message informatif avec une icône pour attirer l'attention.",
   },
 };
 
@@ -225,8 +213,6 @@ export const WithAction = {
     withIcon: true,
     withTitle: true,
     withAction: true,
-    title: "Nouvelle fonctionnalité",
-    message: "Une nouvelle fonctionnalité est disponible. Découvrez-la maintenant car elle trop top de chez top !",
   },
 };
 
@@ -248,8 +234,6 @@ export const Success = {
     withIcon: true,
     withTitle: true,
     withAction: false,
-    title: "Succès",
-    message: "Votre action a été effectuée avec succès.",
   },
 };
 
@@ -271,8 +255,6 @@ export const Danger = {
     withIcon: true,
     withTitle: true,
     withAction: false,
-    title: "Erreur",
-    message: "Une erreur s'est produite. Veuillez réessayer ultérieurement.",
   },
 };
 
@@ -294,20 +276,18 @@ export const Dismissible = {
     withIcon: true,
     withTitle: true,
     withAction: false,
-    title: "Attention",
-    message: "Cette alerte peut être fermée en cliquant sur le bouton ×.",
   },
 };
 
 // Render spécifique pour DismissibleOnce
-const renderDismissibleOnce = ({ variant, title, message }) => {
+const renderDismissibleOnce = ({ variant }) => {
   const alertId = "alertDismissibleOnceDemo";
 
   return `
 <div class="alert alert-${variant} alert-dismissible-once d-none" role="status" id="${alertId}">
   <button type="button" class="btn-close" aria-label="Fermer"></button>
-  <p class="mb-2"><strong>${title}</strong></p>
-  <p class="mb-0">${message}</p>
+  <p class="mb-2"><strong>Information importante</strong></p>
+  <p class="mb-0">Ce message ne s'affichera qu'une seule fois. Une fois fermé, il ne réapparaîtra plus.</p>
 </div>
 <hr />
 <button type="button" class="btn btn-ico btn-link btn-sm" onclick="localStorage.removeItem('${alertId}'); location.reload();">
@@ -342,15 +322,12 @@ Une fois fermée par l'utilisateur, l'alerte ne réapparaîtra plus lors des vis
   },
   args: {
     variant: "info",
-    title: "Information importante",
-    message: "Ce message ne s'affichera qu'une seule fois. Une fois fermé, il ne réapparaîtra plus.",
   },
   argTypes: {
     variant: {
       control: { type: "select" },
       options: ["info", "success", "warning", "danger", "important"],
+      description: "Variante de couleur de l'alerte affichée une seule fois",
     },
-    title: { control: "text" },
-    message: { control: "text" },
   },
 };

@@ -42,7 +42,31 @@ export default {
     layout: "padded",
     docs: {
       description: {
-        component: `Quelques autres liens ou boutons à utilisation spécifique`,
+        component: `Composants de boutons et liens spécifiques au thème Itou pour des usages métiers (partenaire, copie, filtres dropdown).
+
+### Anatomie
+1. **Conteneur** - Bouton ou lien principal selon le cas d'usage
+2. **Libellé** - Texte d'action explicite
+3. **Icône** (optionnelle) - Renforce la compréhension de l'action
+4. **Comportement JS** (optionnel) - Tooltip et copie presse-papiers, ouverture de dropdown
+5. **Regroupement** (optionnel) - Groupe de filtres avec alignement automatique
+
+### Classes CSS
+| Classe | Description |
+|--------|-------------|
+| \`.btn-partner\` | Bouton partenaire pour rediriger vers un service externe |
+| \`.btn-partner--diagoriente\` | Variante partenaire Diagoriente |
+| \`.btn-link\` | Bouton/lien texte discret |
+| \`.btn-dropdown-filter\` | Bouton dropdown utilisé pour les filtres |
+| \`.btn-dropdown-filter-group\` | Conteneur de plusieurs filtres avec espacements gérés |
+| \`.btn-ico\` | Bouton avec icône et texte |
+
+### Accessibilité
+- Les icônes décoratives doivent être marquées avec \`aria-hidden="true"\`.
+- Les boutons dropdown doivent exposer l'état via \`aria-expanded\`.
+- Les actions de copie doivent conserver un retour utilisateur non bloquant (tooltip/texte) et un focus clavier cohérent.
+- Vérifier que les libellés des filtres et options restent explicites pour les lecteurs d'écran.
+`,
       },
     },
   },

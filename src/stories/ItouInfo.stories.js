@@ -22,6 +22,11 @@ Le composant \`.c-info\` sert à mettre une information en avant. Il peut être 
 | \`.c-info__summary\` | Titre/résumé de l'info |
 | \`.c-info__detail\` | Contenu détaillé (avec collapse) |
 | \`.c-info--borderless\` | Variante sans bordure et sans icone |
+
+### Accessibilité
+- Le bouton \`.c-info__summary\` doit exposer \`aria-expanded\` et \`aria-controls\` si le détail est repliable.
+- Les icônes purement décoratives doivent rester masquées aux lecteurs d'écran avec \`aria-hidden="true"\`.
+- Le libellé du résumé doit être explicite, surtout lorsque le détail est masqué par défaut.
 `,
       },
     },

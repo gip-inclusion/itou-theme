@@ -30,12 +30,14 @@ Un bouton peut contenir :
    Attribut \`disabled\` sur \`<button>\` (et classe \`.disabled\` pour \`<a>\` si besoin visuel).
 
 ### Classes CSS
-- \`.btn\` : classe de base obligatoire.
-- \`.btn-{variant}\` : variante visuelle du bouton.
-- \`.btn-sm\` / \`.btn-lg\` : tailles alternatives.
-- \`.btn-block\` : bouton pleine largeur.
-- \`.btn-ico\` : bouton avec icône + texte.
-- \`.btn-ico-only\` : bouton icône seule (avec \`aria-label\` obligatoire).
+| Classe | Description |
+|--------|-------------|
+| \`.btn\` | Classe de base obligatoire |
+| \`.btn-{variant}\` | Variante visuelle du bouton |
+| \`.btn-sm\` / \`.btn-lg\` | Tailles alternatives |
+| \`.btn-block\` | Bouton pleine largeur |
+| \`.btn-ico\` | Bouton avec icône + texte |
+| \`.btn-ico-only\` | Bouton icône seule (avec \`aria-label\` obligatoire) |
 
 ### Accessibilité
 - Les icônes doivent posséder \`aria-hidden="true"\` si elles sont décoratives.
@@ -51,21 +53,31 @@ Un bouton peut contenir :
     element: {
       control: { type: "select" },
       options: ["button", "link"],
+      description: "Type d'élément HTML rendu : bouton natif ou lien stylisé",
     },
     variant: {
       control: { type: "select" },
       options: ["primary", "outline-primary", "secondary", "success", "danger", "link", "white", "outline-white", "link-white"],
+      description: "Variante visuelle du bouton",
     },
     size: {
       control: { type: "select" },
       options: ["default", "sm", "lg"],
+      description: "Taille du bouton : standard, petit ou grand",
     },
     width: {
       control: { type: "select" },
       options: ["inline", "block"],
+      description: "Largeur du bouton : inline ou pleine largeur avec `.btn-block`",
     },
-    withIcon: { control: "boolean" },
-    disabled: { control: "boolean" },
+    withIcon: {
+      control: "boolean",
+      description: "Affiche une icône décorative à gauche du libellé",
+    },
+    disabled: {
+      control: "boolean",
+      description: "Désactive l'interaction du bouton (ou applique l'état visuel disabled sur un lien)",
+    },
   },
 };
 

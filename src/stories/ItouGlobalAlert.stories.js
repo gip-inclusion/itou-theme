@@ -10,6 +10,13 @@ L'**alerte globale** est une alerte en haut de page, placée directement à la r
 
 Elle affiche une information concernant **l'ensemble du site** et pas seulement une page ou un formulaire.
 
+### Anatomie
+1. **Conteneur global** - Bloc \`.global-messages-container\`
+2. **Alerte** - Élément \`.alert\` avec variante contextuelle
+3. **Message** - Texte principal, éventuellement préfixé par une date
+4. **Action de fermeture** (optionnelle) - Bouton \`.btn-close\`
+5. **Lien d'action** (optionnel) - Lien contextuel en fin de message
+
 ### Recommandations
 - Essayer de toujours mettre le texte sur **une seule ligne**
 - Utiliser pour les annonces importantes, maintenances, événements

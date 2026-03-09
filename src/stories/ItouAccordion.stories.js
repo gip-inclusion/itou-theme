@@ -12,6 +12,12 @@ export default {
 Accordéons rétractables verticalement basés sur Bootstrap.
 L'accordéon utilise le composant \`collapse\` pour le rendre pliable.
 
+### Anatomie
+1. **Conteneur** - Bloc parent \`.accordion\`
+2. **Item** - Élément \`.accordion-item\` regroupant un bouton et un panneau
+3. **Déclencheur** - Bouton \`.accordion-button\` qui ouvre/ferme le panneau
+4. **Panneau** - Zone de contenu \`.accordion-collapse\` contenant \`.accordion-body\`
+
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
@@ -20,6 +26,12 @@ L'accordéon utilise le composant \`collapse\` pour le rendre pliable.
 | \`.accordion-item\` | Élément individuel |
 | \`.accordion-button\` | Bouton déclencheur |
 | \`.accordion-body\` | Contenu de l'accordéon |
+
+### Accessibilité
+- Associer chaque bouton à son panneau via \`aria-controls\` et \`id\`.
+- Maintenir \`aria-expanded\` à jour selon l'état ouvert/fermé.
+- Utiliser des libellés de boutons explicites pour décrire le contenu de chaque section.
+
 **Documentation Bootstrap**: <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank" rel="noopener noreferrer" class="has-external-link">Accordion</a>
 `,
       },
