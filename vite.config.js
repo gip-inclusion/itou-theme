@@ -21,7 +21,6 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        content: resolve(__dirname, "src/content.html"),
         components: resolve(__dirname, "src/components.html"),
         forms: resolve(__dirname, "src/forms.html"),
         content_itou: resolve(__dirname, "src/content-itou.html"),
