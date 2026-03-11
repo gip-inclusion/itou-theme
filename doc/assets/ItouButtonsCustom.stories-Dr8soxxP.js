@@ -1,4 +1,28 @@
-function c(){const e=document.querySelectorAll("[data-it-clipboard-button=copy]");for(let t=0,d=e.length;t<d;t+=1){const r=e[t],l=r.dataset.itCopyToClipboard,i=bootstrap.Tooltip.getOrCreateInstance(r);r.addEventListener("click",function(){r.hasAttribute("aria-describedby")||(i.show(),navigator.clipboard.writeText(l).then(()=>{}).catch(()=>{}))}),r.addEventListener("blur",function(){i.hide()})}}const f={title:"Forms/Buttons Custom",decorators:[e=>{const t=`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{c()},0),t}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"Quelques autres liens ou boutons à utilisation spécifique"}}},argTypes:{}},p=()=>`
+function c(){const e=document.querySelectorAll("[data-it-clipboard-button=copy]");for(let t=0,d=e.length;t<d;t+=1){const r=e[t],l=r.dataset.itCopyToClipboard,i=bootstrap.Tooltip.getOrCreateInstance(r);r.addEventListener("click",function(){r.hasAttribute("aria-describedby")||(i.show(),navigator.clipboard.writeText(l).then(()=>{}).catch(()=>{}))}),r.addEventListener("blur",function(){i.hide()})}}const f={title:"Forms/Buttons Custom",decorators:[e=>{const t=`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{c()},0),t}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`Composants de boutons et liens spécifiques au thème Itou pour des usages métiers (partenaire, copie, filtres dropdown).
+
+### Anatomie
+1. **Conteneur** - Bouton ou lien principal selon le cas d'usage
+2. **Libellé** - Texte d'action explicite
+3. **Icône** (optionnelle) - Renforce la compréhension de l'action
+4. **Comportement JS** (optionnel) - Tooltip et copie presse-papiers, ouverture de dropdown
+5. **Regroupement** (optionnel) - Groupe de filtres avec alignement automatique
+
+### Classes CSS
+| Classe | Description |
+|--------|-------------|
+| \`.btn-partner\` | Bouton partenaire pour rediriger vers un service externe |
+| \`.btn-partner--diagoriente\` | Variante partenaire Diagoriente |
+| \`.btn-link\` | Bouton/lien texte discret |
+| \`.btn-dropdown-filter\` | Bouton dropdown utilisé pour les filtres |
+| \`.btn-dropdown-filter-group\` | Conteneur de plusieurs filtres avec espacements gérés |
+| \`.btn-ico\` | Bouton avec icône et texte |
+
+### Accessibilité
+- Les icônes décoratives doivent être marquées avec \`aria-hidden="true"\`.
+- Les boutons dropdown doivent exposer l'état via \`aria-expanded\`.
+- Les actions de copie doivent conserver un retour utilisateur non bloquant (tooltip/texte) et un focus clavier cohérent.
+- Vérifier que les libellés des filtres et options restent explicites pour les lecteurs d'écran.
+`}}},argTypes:{}},p=()=>`
   <a href="" target="_blank" class="btn btn-partner btn-partner--diagoriente">
     Créer un CV avec Diagoriente
   </a>
@@ -163,4 +187,4 @@ function c(){const e=document.querySelectorAll("[data-it-clipboard-button=copy]"
     }
   },
   args: {}
-}`,...a.parameters?.docs?.source}}};const h=["Partner","CopyToClipboard","DropdownFilter","DropdownFilterGroup"];export{s as CopyToClipboard,n as DropdownFilter,a as DropdownFilterGroup,o as Partner,h as __namedExportsOrder,f as default};
+}`,...a.parameters?.docs?.source}}};const g=["Partner","CopyToClipboard","DropdownFilter","DropdownFilterGroup"];export{s as CopyToClipboard,n as DropdownFilter,a as DropdownFilterGroup,o as Partner,g as __namedExportsOrder,f as default};

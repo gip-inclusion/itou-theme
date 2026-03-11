@@ -1,6 +1,24 @@
 const t={title:"Components/BadgesGroup",decorators:[a=>`<div style="max-width: 1000px; margin: 0 auto;">${a()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 La classe \`.badge-group\` espace automatiquement les badges horizontalement et verticalement.
 Utile pour afficher plusieurs badges côte à côte avec un espacement cohérent.
+
+### Anatomie
+1. **Conteneur** - Bloc parent \`.badge-group\`
+2. **Badge** - Élément enfant \`.badge\` (souvent avec \`.rounded-pill\`)
+3. **Contenu** - Libellé textuel et éventuellement une icône décorative
+
+### Classes CSS
+| Classe | Description |
+|--------|-------------|
+| \`.badge-group\` | Gère l'espacement des badges dans le groupe |
+| \`.badge\` | Élément badge de base |
+| \`.badge-sm\` | Taille compacte du badge |
+| \`.rounded-pill\` | Forme arrondie du badge |
+
+### Accessibilité
+- Les badges doivent rester informatifs, pas interactifs.
+- Si une icône est décorative, ajouter \`aria-hidden="true"\`.
+- Vérifier le contraste texte/fond pour chaque variante utilisée.
 `}}}},s=()=>`
 <div class="badge-group">
   <span class="badge badge-sm rounded-pill bg-info text-white">Badge 1</span>
@@ -22,4 +40,4 @@ Utile pour afficher plusieurs badges côte à côte avec un espacement cohérent
       description: {}
     }
   }
-}`,...e.parameters?.docs?.source}}};const d=["Default"];export{e as Default,d as __namedExportsOrder,t as default};
+}`,...e.parameters?.docs?.source}}};const n=["Default"];export{e as Default,n as __namedExportsOrder,t as default};
