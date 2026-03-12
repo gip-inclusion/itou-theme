@@ -19,6 +19,20 @@
     /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url("/fonts/remixicon/remixicon.svg?t=1760071648894#remixicon") format("svg"); /* iOS 4.1- */
 }
 
+@keyframes ri-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ri-spinner {
+  display: inline-block;
+  animation: ri-spin 2s linear infinite;
+}
+
 [class^="ri-"],
 [class*=" ri-"] {
   font-family: "remixicon" !important;
