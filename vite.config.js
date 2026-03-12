@@ -23,7 +23,6 @@ export default {
         main: resolve(__dirname, "src/index.html"),
         components: resolve(__dirname, "src/components.html"),
         forms: resolve(__dirname, "src/forms.html"),
-        content_itou: resolve(__dirname, "src/content-itou.html"),
         components_itou: resolve(__dirname, "src/components-itou.html"),
         sections_itou_01: resolve(__dirname, "src/sections-itou-01.html"),
         sections_itou_02: resolve(__dirname, "src/sections-itou-02.html"),
