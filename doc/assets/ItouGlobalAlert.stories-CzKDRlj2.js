@@ -1,4 +1,4 @@
-const g={title:"Components/Global Alert",tags:["autodocs"],parameters:{layout:"fullwidth",docs:{description:{component:`
+const b={title:"Components/Global Alert",tags:["autodocs"],parameters:{layout:"fullwidth",docs:{description:{component:`
 L'**alerte globale** est une alerte en haut de page, placée directement à la racine du \`<body>\` ou dans le container \`<div class="global-messages-container">\`.
 
 Elle affiche une information concernant **l'ensemble du site** et pas seulement une page ou un formulaire.
@@ -31,7 +31,7 @@ Elle affiche une information concernant **l'ensemble du site** et pas seulement 
 <div class="global-messages-container">
   <div class="alert alert-${a}${e?" alert-dismissible fade show":""}" role="status">
     ${e?'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>':""}
-    <p class="mb-0"><strong>Jeudi 01 février 2024</strong> : les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable. <a href="#" class="has-external-link">S'inscrire</a></p>
+    <div><strong>Jeudi 01 février 2024</strong> : les professionnels de l'inclusion ont rendez-vous de 09h à 17h pour un événement en ligne incontournable. <a href="#" class="has-external-link">S'inscrire</a></div>
   </div>
 </div>`,n={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Alerte globale critique pour les annonces urgentes ou les maintenances."}}},args:{variant:"danger",dismissible:!0}},r={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Alerte globale d'avertissement pour les informations importantes."}}},args:{variant:"warning",dismissible:!0}},t={render:o,parameters:{docs:{description:{story:"Alerte globale informative pour les annonces générales."}}},args:{variant:"info",dismissible:!0}},i=({title:a,exitLabel:e})=>`
 <div class="global-messages-container">
@@ -69,7 +69,6 @@ Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu
   args: {
     variant: "danger",
     dismissible: true
-    // message, linkText et date supprimés
   }
 }`,...n.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
   render,
@@ -89,7 +88,6 @@ Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu
   args: {
     variant: "warning",
     dismissible: true
-    // message, linkText et date supprimés
   }
 }`,...r.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render,
@@ -103,7 +101,6 @@ Cette variante utilise \`.alert-primary\` et affiche un bouton "Quitter" au lieu
   args: {
     variant: "info",
     dismissible: true
-    // message, linkText et date supprimés
   }
 }`,...t.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render: renderProcedure,
@@ -138,4 +135,4 @@ Cette variante utilise \\\`.alert-primary\\\` et affiche un bouton "Quitter" au 
       description: "Libellé du bouton de sortie"
     }
   }
-}`,...s.parameters?.docs?.source}}};const b=["Danger","Warning","Info","ProcedureEnCours"];export{n as Danger,t as Info,s as ProcedureEnCours,r as Warning,b as __namedExportsOrder,g as default};
+}`,...s.parameters?.docs?.source}}};const g=["Danger","Warning","Info","ProcedureEnCours"];export{n as Danger,t as Info,s as ProcedureEnCours,r as Warning,g as __namedExportsOrder,b as default};
