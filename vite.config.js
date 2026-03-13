@@ -65,11 +65,8 @@ export default {
         layout_nexus_pilotage_active: resolve(__dirname, "src/layout-nexus-pilotage-active.html"),
         layout_nexus_communaute_active: resolve(__dirname, "src/layout-nexus-communaute-active.html"),
         layout_nexus_dropdown_dsfr: resolve(__dirname, "src/layout-nexus-dropdown-dsfr.html"),
-        external_libs_itou_ac: resolve(__dirname, "src/external-libs-itou-ac.html"),
         external_libs_itou_ddp: resolve(__dirname, "src/external-libs-itou-ddp.html"),
         external_libs_itou_in: resolve(__dirname, "src/external-libs-itou-in.html"),
-        external_libs_itou_lt: resolve(__dirname, "src/external-libs-itou-lt.html"),
-        external_libs_itou_ri: resolve(__dirname, "src/external-libs-itou-ri.html"),
         external_libs_itou_s2: resolve(__dirname, "src/external-libs-itou-s2.html"),
         external_libs_itou_slider: resolve(__dirname, "src/external-libs-itou-slider.html"),
         external_libs_itou_tac: resolve(__dirname, "src/external-libs-itou-tac.html")

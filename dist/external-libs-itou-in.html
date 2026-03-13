@@ -126,13 +126,10 @@
                 <option value="./layout-nexus-dropdown-dsfr.html">Dropdown DSFR</option>
               </optgroup>
               <optgroup label="External libraries">
-                <option value="./external-libs-itou-ac.html">Accessible Autocomplete</option>
                 <option value="./external-libs-itou-ddp.html">Duet Date Picker</option>
-                <option value="./external-libs-itou-ri.html">Remix Icon</option>
                 <option value="./external-libs-itou-tac.html">Tarte au citron</option>
                 <option value="./external-libs-itou-slider.html">Tiny Slider 2</option>
                 <option value="./external-libs-itou-s2.html">Select 2</option>
-                <option value="./external-libs-itou-lt.html">Lottie</option>
                 <option value="./external-libs-itou-in.html">Intro JS</option>
               </optgroup>
             </select>
@@ -226,12 +223,16 @@
         setTimeout(function () {
           introJs().setOptions({
             disableInteraction: true,
+            dontShowAgain: true,
+            dontShowAgainCookie: "introjsDemoDontShowAgain",
+            dontShowAgainCookieDays: 90,
+            dontShowAgainLabel: "Ne plus afficher",
             showProgress: false,
             showBullets: false,
             skipLabel: '',
             nextLabel: 'Suivant',
             prevLabel: 'Précédent',
-            doneLabel: 'Fin',
+            doneLabel: 'J’ai compris',
             steps: [{
               title: 'Bonjour 👋',
               intro: 'Découvrez votre nouvelle box de PASS IAE'
@@ -251,10 +252,7 @@
               intro: 'Vous pouvez l\'afficher en cliquant ici'
             }]
           })
-            .onexit(() => {
-              //document.cookie = `introJsBtnPassDontShowAgain=true; max-age=${90 * 24 * 60 * 60}; samesite=Lax;`;
-            })
-            .start();
+          .start();
         }, 600)
       }
     </script>

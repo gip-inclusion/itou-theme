@@ -114,12 +114,16 @@
         setTimeout(function () {
           introJs().setOptions({
             disableInteraction: true,
+            dontShowAgain: true,
+            dontShowAgainCookie: "introjsDemoDontShowAgain",
+            dontShowAgainCookieDays: 90,
+            dontShowAgainLabel: "Ne plus afficher",
             showProgress: false,
             showBullets: false,
             skipLabel: '',
             nextLabel: 'Suivant',
             prevLabel: 'Précédent',
-            doneLabel: 'Fin',
+            doneLabel: 'J’ai compris',
             steps: [{
               title: 'Bonjour 👋',
               intro: 'Découvrez votre nouvelle box de PASS IAE'
@@ -139,10 +143,7 @@
               intro: 'Vous pouvez l\'afficher en cliquant ici'
             }]
           })
-            .onexit(() => {
-              //document.cookie = `introJsBtnPassDontShowAgain=true; max-age=${90 * 24 * 60 * 60}; samesite=Lax;`;
-            })
-            .start();
+          .start();
         }, 600)
       }
     </script>
