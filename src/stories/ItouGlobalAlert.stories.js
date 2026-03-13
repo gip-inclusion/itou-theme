@@ -64,7 +64,7 @@ const render = ({ variant, dismissible }) => {
 <div class="global-messages-container">
   <div class="alert alert-${variant}${dismissibleClass}" role="status">
     ${closeButton}
-    <p class="mb-0"><strong>${date}</strong> : ${message}${linkBlock}</p>
+    <div><strong>${date}</strong> : ${message}${linkBlock}</div>
   </div>
 </div>`;
 };
@@ -83,7 +83,6 @@ export const Danger = {
   args: {
     variant: "danger",
     dismissible: true,
-    // message, linkText et date supprimés
   },
 };
 
@@ -101,7 +100,6 @@ export const Warning = {
   args: {
     variant: "warning",
     dismissible: true,
-    // message, linkText et date supprimés
   },
 };
 
@@ -117,7 +115,6 @@ export const Info = {
   args: {
     variant: "info",
     dismissible: true,
-    // message, linkText et date supprimés
   },
 };
 
