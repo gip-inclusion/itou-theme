@@ -194,6 +194,50 @@ export const IconOnly = {
   },
 };
 
+const renderWithDropdown = ({size}) => {
+  const sizeClass = size === "default" ? "" : `btn-${size}`;
+  return `
+  <div class="dropdown">
+    <button class="btn ${sizeClass} btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Exporter
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="dropdown-item" href="#">
+          <i class="ri-download-line ri-sm fw-medium" aria-hidden="true"></i>
+          <span>Exporter tous les contrats</span>
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">
+          <i class="ri-download-line ri-sm fw-medium" aria-hidden="true"></i>
+          <span>Exporter seulement certains types de contrats</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  `;
+};
+
+export const WithDropdown = {
+  render: renderWithDropdown,
+  decorators: [
+    (Story) => `<div style="min-height: 180px;">${Story()}</div>`,
+  ],
+  parameters: {
+    controls: { exclude: ["variant", "element", "width", "withIcon", "disabled"] },
+    docs: {
+      controls: { exclude: ["variant", "element", "width", "withIcon", "disabled"] },
+      description: {
+        story: "Les boutons avec dropdown ne doivent pas contenir d'icône autres que celle qui vient déjà avec la classe `dropdown-toggle` .",
+      },
+    },
+  },
+  args: {
+    size: "default",
+  },
+};
+
 const renderAllVersions = () => {
   return `
 <div class="d-flex flex-wrap gap-3 align-items-center">
