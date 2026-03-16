@@ -1,6 +1,6 @@
 export default {
   title: "Components/Stepper",
-  decorators: [(Story) => `<div style="max-width: 800px; margin: 0 auto;">${Story()}</div>`],
+  decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],
   tags: ["autodocs"],
   parameters: {
     layout: "padded",
