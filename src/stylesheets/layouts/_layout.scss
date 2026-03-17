@@ -115,7 +115,7 @@
       visibility: visible;
     }
 
-    .dropdown-structure .dropdown-toggle__summary::after {
+    .dropdown-organization .dropdown-toggle__summary::after {
       @include media-breakpoint-up(xl) {
         margin-right: 0;
       }
