@@ -32,6 +32,8 @@ const preview = {
       test: "todo",
     },
   },
+
+  tags: ["autodocs"]
 };
 
 export default preview;
