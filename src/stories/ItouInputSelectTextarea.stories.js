@@ -1,6 +1,103 @@
+const autoExpendableTextarea = () => {
+  const textareaExpandableList = document.querySelectorAll("[data-it-expandable=true]");
+  for (let i = 0, ii = textareaExpandableList.length; i < ii; i += 1) {
+    const thisTextarea = textareaExpandableList[i];
+
+    if (thisTextarea.dataset.itExpandableInitialized === "true") {
+      continue;
+    }
+
+    const expandTextarea = function () {
+      if (thisTextarea.scrollHeight !== 0) {
+        thisTextarea.style.removeProperty("height");
+        thisTextarea.style.height = `${this.scrollHeight + 3}px`;
+      }
+    };
+
+    thisTextarea.addEventListener("input", expandTextarea, false);
+    thisTextarea.addEventListener("focus", expandTextarea, false);
+    thisTextarea.dataset.itExpandableInitialized = "true";
+    expandTextarea.call(thisTextarea);
+  }
+};
+
+function loadStyle(href, id) {
+  return new Promise((resolve, reject) => {
+    if (document.getElementById(id)) {
+      resolve();
+      return;
+    }
+    const link = document.createElement("link");
+    link.id = id;
+    link.rel = "stylesheet";
+    link.href = href;
+    link.addEventListener("load", () => resolve(), { once: true });
+    link.addEventListener("error", () => reject(new Error(`Failed to load: ${href}`)), { once: true });
+    document.head.appendChild(link);
+  });
+}
+
+function loadScript(src, id) {
+  return new Promise((resolve, reject) => {
+    if (document.getElementById(id)) {
+      resolve();
+      return;
+    }
+    const script = document.createElement("script");
+    script.id = id;
+    script.src = src;
+    script.addEventListener("load", () => resolve(), { once: true });
+    script.addEventListener("error", () => reject(new Error(`Failed to load: ${src}`)), { once: true });
+    document.head.appendChild(script);
+  });
+}
+
+const initEasyMDETextarea = (scope = document) => {
+  if (typeof window.EasyMDE === "undefined") {
+    return;
+  }
+
+  const textareaList = scope.querySelectorAll("[data-it-easymde=true]");
+  for (let i = 0, ii = textareaList.length; i < ii; i += 1) {
+    const textarea = textareaList[i];
+
+    if (textarea.dataset.itEasyMdeInitialized === "true") {
+      continue;
+    }
+
+    new window.EasyMDE({
+      element: textarea,
+      status: false,
+    });
+    textarea.dataset.itEasyMdeInitialized = "true";
+  }
+};
+
 export default {
   title: "Forms/Input Select Textarea",
-  decorators: [(Story) => `<div style="max-width: 800px; margin: 0 auto;">${Story()}</div>`],
+  decorators: [
+    (Story) => {
+      const html = `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`;
+
+      setTimeout(() => {
+        autoExpendableTextarea();
+        loadStyle(
+          "https://unpkg.com/easymde/dist/easymde.min.css",
+          "itou-easymde-style-loader"
+        )
+          .then(() =>
+            loadScript(
+              "https://unpkg.com/easymde/dist/easymde.min.js",
+              "itou-easymde-script-loader"
+            )
+          )
+          .then(() => initEasyMDETextarea(document))
+          .catch(console.error);
+      }, 0);
+
+      return html;
+    },
+  ],
   tags: ["autodocs"],
   parameters: {
     layout: "padded",
@@ -283,6 +380,29 @@ export const TextareaExpandable = {
     docs: {
       description: {
         story: "Textarea avec l'attribut `data-it-expandable=\"true\"` : la hauteur s'adapte automatiquement au contenu saisi.",
+      },
+    },
+  },
+};
+
+export const TextareaEasyMDE = {
+  render: () => `
+<div class="form-group">
+  <label class="form-label" for="textarea-easymde">Textarea avec EasyMDE</label>
+  <textarea
+    class="form-control"
+    id="textarea-easymde"
+    rows="3"
+    data-it-easymde="true"
+  ></textarea>
+  <div class="form-text">Exemple d'intégration d'un éditeur Markdown EasyMDE sur un textarea.</div>
+</div>
+  `.trim(),
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      description: {
+        story: "Textarea initialisé avec EasyMDE, comme sur la page de démonstration des formulaires.",
       },
     },
   },
