@@ -25,7 +25,7 @@ Le composant \`.alert\` est utilisé pour mettre en avant une information ou fou
 - Utiliser \`role="status"\` pour les messages informatifs
 - Utiliser \`role="alert"\` pour les erreurs critiques
 
-**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank" rel="noopener noreferrer">Alerts</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank" rel="noopener noreferrer" class="has-external-link">Alerts</a>
 `}}},argTypes:{variant:{control:{type:"select"},options:["info","success","warning","danger","important"],description:"Variante de couleur de l'alerte"},role:{control:{type:"select"},options:["status","alert"],description:"Rôle ARIA : 'status' pour info, 'alert' pour erreurs critiques"},dismissible:{control:"boolean",description:"Affiche un bouton de fermeture"},withIcon:{control:"boolean",description:"Affiche une icône correspondant à la variante"},withTitle:{control:"boolean",description:"Affiche un titre en plus du message"},withAction:{control:"boolean",description:"Affiche un bouton d'action"}}},h={info:"ri-information-line",success:"ri-checkbox-circle-line",warning:"ri-error-warning-line",danger:"ri-close-circle-line",important:"ri-alert-line"},v={info:"text-info",success:"text-success",warning:"text-warning",danger:"text-danger",important:"text-important"},s=({variant:e,role:r,dismissible:t,withIcon:n,withTitle:i,withAction:p})=>{const b=t?" alert-dismissible fade show":"",f=t?'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>':"";if(!n&&!p)return`
 <div class="alert alert-${e}${b}" role="${r}">
   ${f}

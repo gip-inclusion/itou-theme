@@ -19,7 +19,7 @@ Documentation et exemples des classes utilitaires de typographie, basée sur Boo
 | <code>.list-inline</code> + <code>.list-inline-item</code> | Liste en ligne |
 | <code>.blockquote</code> + <code>.blockquote-footer</code> | Citation standard |
 
-**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/content/typography/" target="_blank" rel="noopener noreferrer">Typography</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/content/typography/" target="_blank" rel="noopener noreferrer" class="has-external-link">Typography</a>
 `}}}},r=()=>`
 <section class="vstack gap-3">
   <h1>h1. Titre sémantique</h1>

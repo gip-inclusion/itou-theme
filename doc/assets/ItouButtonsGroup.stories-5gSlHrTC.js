@@ -31,7 +31,7 @@ Les tailles suivent les mêmes règles que les boutons :
 - Ajouter un \`role="group"\` sur le conteneur.
 - Fournir un \`aria-label\` explicite pour décrire le groupe.
 
-**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank" rel="noopener noreferrer">Button group</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank" rel="noopener noreferrer" class="has-external-link">Button group</a>
 `}}},argTypes:{size:{control:{type:"select"},options:["default","sm","lg"],description:"Taille du groupe de boutons : standard, petit (`btn-group-sm`) ou grand (`btn-group-lg`)"}}},o=({size:e})=>`
   <div class="btn-group ${e==="default"?"":`btn-group-${e}`}">
     <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
