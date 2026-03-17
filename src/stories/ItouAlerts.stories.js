@@ -58,7 +58,7 @@ Le composant \`.alert\` est utilisé pour mettre en avant une information ou fou
 - Utiliser \`role="status"\` pour les messages informatifs
 - Utiliser \`role="alert"\` pour les erreurs critiques
 
-**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank" rel="noopener noreferrer">Alerts</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank" rel="noopener noreferrer" class="has-external-link">Alerts</a>
 `,
       },
     },

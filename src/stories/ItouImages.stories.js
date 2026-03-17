@@ -28,8 +28,8 @@ Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitai
 | <code>.img-muted</code> | Utilitaire custom itou (grayscale + opacité) |
 
 **Documentation Bootstrap** :
-- <a href="https://getbootstrap.com/docs/5.3/content/images/#responsive-images" target="_blank" rel="noopener noreferrer">Responsive images</a>
-- <a href="https://getbootstrap.com/docs/5.3/utilities/object-fit/" target="_blank" rel="noopener noreferrer">Object fit</a>
+- <a href="https://getbootstrap.com/docs/5.3/content/images/#responsive-images" target="_blank" rel="noopener noreferrer" class="has-external-link">Responsive images</a>
+- <a href="https://getbootstrap.com/docs/5.3/utilities/object-fit/" target="_blank" rel="noopener noreferrer" class="has-external-link">Object fit</a>
 `,
       },
     },

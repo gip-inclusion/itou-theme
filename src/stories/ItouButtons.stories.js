@@ -44,7 +44,7 @@ Un bouton peut contenir :
 - Pour un bouton icône seule, ajouter un \`aria-label\` explicite.
 - Si le libellé visible est trop court, ajouter un \`aria-label\` plus descriptif.
 
-**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank" rel="noopener noreferrer">Buttons</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank" rel="noopener noreferrer" class="has-external-link">Buttons</a>
 `,
       },
     },

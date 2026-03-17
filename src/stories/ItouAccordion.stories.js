@@ -32,7 +32,7 @@ L'accordéon utilise le composant \`collapse\` pour le rendre pliable.
 - Maintenir \`aria-expanded\` à jour selon l'état ouvert/fermé.
 - Utiliser des libellés de boutons explicites pour décrire le contenu de chaque section.
 
-**Documentation Bootstrap**: <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank" rel="noopener noreferrer" class="has-external-link">Accordion</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank" rel="noopener noreferrer" class="has-external-link">Accordion</a>
 `,
       },
     },

@@ -39,7 +39,7 @@ Les tailles suivent les mêmes règles que les boutons :
 - Ajouter un \`role="group"\` sur le conteneur.
 - Fournir un \`aria-label\` explicite pour décrire le groupe.
 
-**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank" rel="noopener noreferrer">Button group</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank" rel="noopener noreferrer" class="has-external-link">Button group</a>
 `,
       },
     },

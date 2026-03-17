@@ -30,7 +30,7 @@ Le composant HTML \`<table>\` permet de representer des donnees tabulaires.
 - Utiliser \`scope\` sur les cellules d'en-tete.
 - En mode triable, utiliser \`aria-sort\` et des boutons avec libelles explicites.
 
-**Documentation Bootstrap**: <a href="https://getbootstrap.com/docs/5.3/content/tables/" target="_blank" rel="noopener noreferrer" class="has-external-link">Tables</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/content/tables/" target="_blank" rel="noopener noreferrer" class="has-external-link">Tables</a>
 `,
       },
     },

@@ -27,7 +27,7 @@ Documentation et exemples des utilitaires de type texte, basée sur Bootstrap 5.
 | <code>.text-muted</code>, <code>.text-disabled</code> | États visuels du texte |
 | <code>.white-space-nowrap</code>, <code>.white-space-normal</code> | White-space custom itou |
 
-**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/utilities/text/" target="_blank" rel="noopener noreferrer">Text utilities</a>
+**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/utilities/text/" target="_blank" rel="noopener noreferrer" class="has-external-link">Text utilities</a>
 `,
       },
     },
