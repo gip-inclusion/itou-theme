@@ -1,5 +1,5 @@
 const y={title:"Components/Alerts",decorators:[e=>{const r=`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{document.querySelectorAll(".alert-dismissible-once:not([data-it-initialized])").forEach(t=>{const n=t.getAttribute("id"),i=t.querySelector(".btn-close");t.setAttribute("data-it-initialized","true"),localStorage.getItem(n)===null&&t.classList.remove("d-none"),i?.addEventListener("click",()=>{localStorage.setItem(n,"seen"),t.classList.add("d-none")})})},0),r}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
-Le composant \`.alert\` est utilisé pour mettre en avant une information ou fournir des messages de retour contextuels pour les actions utilisateur.
+Le composant \`.alert\` est utilisé pour mettre en avant une information ou fournir des messages de retour contextuels pour les actions utilisateur.  Il peut être utilisé dans des formulaires, des sections ou la zone de titre.
 
 ### Anatomie
 1. **Bordure** - Indicateur visuel de la variante

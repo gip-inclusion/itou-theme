@@ -1,4 +1,4 @@
-import{j as e,M as o}from"./blocks-D5DRiwJ4.js";import{useMDXComponents as i}from"./index-Cww_Prhj.js";import"./preload-helper-PPVm8Dsz.js";import"./iframe-C1nTBWDm.js";function t(n){const s={a:"a",h1:"h1",h2:"h2",li:"li",p:"p",strong:"strong",ul:"ul",...i(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(o,{title:"Bienvenue"}),`
+import{u as i,j as e,M as o}from"./blocks-C0q0S13P.js";import"./preload-helper-PPVm8Dsz.js";import"./iframe-BJq6iwp8.js";function t(n){const s={a:"a",h1:"h1",h2:"h2",li:"li",p:"p",strong:"strong",ul:"ul",...i(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(o,{title:"Bienvenue"}),`
 `,e.jsx(s.h1,{id:"documentation-du-thème-itou",children:"Documentation du thème Itou"}),`
 `,e.jsxs(s.p,{children:["Bienvenue sur le Storybook du ",e.jsx(s.strong,{children:"theme-itou"}),"."]}),`
 `,e.jsxs(s.p,{children:[`Cette documentation présente les composants, les styles et les patterns utilisés dans l’écosystème de la plateforme de l’inclusion.
@@ -20,4 +20,4 @@ Les classes standards de Bootstrap respectent le naming de Bootstrap 5.3. Les cl
 `,e.jsx(s.li,{children:"navigation clavier"}),`
 `,e.jsx(s.li,{children:"contrastes suffisants"}),`
 `,e.jsx(s.li,{children:"libellés explicites pour les éléments interactifs"}),`
-`]})]})}function d(n={}){const{wrapper:s}={...i(),...n.components};return s?e.jsx(s,{...n,children:e.jsx(t,{...n})}):t(n)}export{d as default};
+`]})]})}function a(n={}){const{wrapper:s}={...i(),...n.components};return s?e.jsx(s,{...n,children:e.jsx(t,{...n})}):t(n)}export{a as default};
