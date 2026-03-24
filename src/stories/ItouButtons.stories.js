@@ -198,8 +198,9 @@ const renderWithDropdown = ({size}) => {
   const sizeClass = size === "default" ? "" : `btn-${size}`;
   return `
   <div class="dropdown">
-    <button class="btn ${sizeClass} btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Exporter
+    <button class="btn ${sizeClass} btn-secondary btn-ico dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="ri-download-line ri-sm fw-medium" aria-hidden="true"></i>
+      <span>Exporter</spa>
     </button>
     <ul class="dropdown-menu">
       <li>
@@ -229,7 +230,7 @@ export const WithDropdown = {
     docs: {
       controls: { exclude: ["variant", "element", "width", "withIcon", "disabled"] },
       description: {
-        story: "Les boutons avec dropdown ne doivent pas contenir d'icône autres que celle qui vient déjà avec la classe `dropdown-toggle` .",
+        story: "Les boutons dropdown contiennent l'icône avec la classe `dropdown-toggle` .",
       },
     },
   },

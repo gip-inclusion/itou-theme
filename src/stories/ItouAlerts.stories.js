@@ -32,7 +32,7 @@ export default {
     docs: {
       description: {
         component: `
-Le composant \`.alert\` est utilisé pour mettre en avant une information ou fournir des messages de retour contextuels pour les actions utilisateur.
+Le composant \`.alert\` est utilisé pour mettre en avant une information ou fournir des messages de retour contextuels pour les actions utilisateur.  Il peut être utilisé dans des formulaires, des sections ou la zone de titre.
 
 ### Anatomie
 1. **Bordure** - Indicateur visuel de la variante
