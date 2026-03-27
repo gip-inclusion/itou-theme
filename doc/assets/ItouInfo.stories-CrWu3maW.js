@@ -1,5 +1,5 @@
 const p={title:"Components/Info",decorators:[e=>`<div style="max-width: 800px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
-Le composant \`.c-info\` sert à mettre une information "compacte" en avant. Il peut être utilisé dans des formulaires (c-form) ou dans des boxes (c-box).
+Le composant \`.c-info\` sert à mettre une information "compacte" en avant. Le message doit donner une information utile à tous les utilisateurs concernée par cette interface.
 
 ### Anatomie
 1. **Icône** - Indicateur visuel (automatique via CSS)
