@@ -50,15 +50,12 @@ a.badge {
 }
 
 .badge-group {
-  display: block;
-  margin-bottom: -0.25rem;
+  @extend .d-flex;
+  @extend .flex-wrap;
+  @extend .gap-1;
+  @extend .mb-1;
 
-  .badge {
-    @extend .me-1;
-    @extend .mb-1;
-
-    & + .badge {
-      @extend .ms-0;
-    }
+  .badge + .badge {
+    @extend .ms-0;
   }
 }
