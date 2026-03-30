@@ -39,8 +39,10 @@
 }
 
 .dropdown-header {
-  @extend .fs-base;
+  @extend .fs-sm;
+  text-transform: uppercase;
   font-weight: $font-weight-bold;
+  padding-bottom: 0;
 }
 
 .dropdown {
