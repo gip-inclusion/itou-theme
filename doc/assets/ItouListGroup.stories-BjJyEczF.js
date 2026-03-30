@@ -10,7 +10,7 @@ ${f}
     <div class="d-flex flex-column flex-lg-row">
       <span class="d-flex align-items-center">
         <i class="ri-checkbox-blank-circle-fill ri-xs me-2 text-success" aria-hidden="true"></i>
-        <a href="" class="fw-bold stretched-link">Preparateur/preparatrice de commande</a>
+        <a href="" class="fw-bold text-decoration-none stretched-link">Preparateur/preparatrice de commande</a>
       </span>
       <span class="fs-sm mt-1 mt-lg-0 ms-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm me-1" aria-hidden="true"></i>Le Bouscat - 33</span>
     </div>
@@ -19,7 +19,7 @@ ${f}
     <div class="d-flex flex-column flex-lg-row">
       <span class="d-flex align-items-center">
         <i class="ri-checkbox-blank-circle-fill ri-xs me-2 text-success" aria-hidden="true"></i>
-        <a href="" class="fw-bold stretched-link">Charge(e) d'affaires commerciales et marketing operationnel</a>
+        <a href="" class="fw-bold text-decoration-none stretched-link">Charge(e) d'affaires commerciales et marketing operationnel</a>
       </span>
       <span class="fs-sm mt-1 mt-lg-0 ms-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm me-1" aria-hidden="true"></i>Beychac-et-Caillau - 72</span>
     </div>
@@ -28,7 +28,7 @@ ${f}
     <div class="d-flex flex-column flex-lg-row">
       <span class="d-flex align-items-center">
         <i class="ri-checkbox-blank-circle-fill ri-xs me-2 text-success" aria-hidden="true"></i>
-        <a href="" class="fw-bold stretched-link">Preparateur/preparatrice de commande</a>
+        <a href="" class="fw-bold text-decoration-none stretched-link">Preparateur/preparatrice de commande</a>
       </span>
       <span class="fs-sm mt-1 mt-lg-0 ms-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm me-1" aria-hidden="true"></i>Belves-de-Castillon - 33</span>
     </div>
@@ -139,7 +139,7 @@ ${f}
       <span class="badge badge-xs rounded-pill bg-accent-02-light text-primary">26h/semaine</span>
     </div>
   </li>
-</ul>`.trim(),l={render:k,parameters:{docs:{description:{story:"List group basique configurable (taille, flush, mode actionnable et item actif)."}}},args:{size:"default",flush:!1,actionable:!1,activeIndex:-1}},i={render:v,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante itou `.list-group-link` avec `.stretched-link` pour rendre tout l'item cliquable."}}}},r={render:()=>b({asForm:!1,idPrefix:"story-listgroup-collapse"}),parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante itou `.list-group-collapse` avec contenu repliable."}}}},o={render:()=>b({asForm:!0,idPrefix:"story-listgroup-collapse-form"}),parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante `.list-group-collapse.list-group-form` pour un rendu proche des champs de formulaire."}}}},n={render:x,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemple charge de `.list-group.list-group-flush.list-group-link` avec badges et meta-informations."}}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+</ul>`.trim(),i={render:k,parameters:{docs:{description:{story:"List group basique configurable (taille, flush, mode actionnable et item actif)."}}},args:{size:"default",flush:!1,actionable:!1,activeIndex:-1}},l={render:v,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante itou `.list-group-link` avec `.stretched-link` pour rendre tout l'item cliquable."}}}},r={render:()=>b({asForm:!1,idPrefix:"story-listgroup-collapse"}),parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante itou `.list-group-collapse` avec contenu repliable."}}}},o={render:()=>b({asForm:!0,idPrefix:"story-listgroup-collapse-form"}),parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante `.list-group-collapse.list-group-form` pour un rendu proche des champs de formulaire."}}}},n={render:x,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemple charge de `.list-group.list-group-flush.list-group-link` avec badges et meta-informations."}}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: renderBasic,
   parameters: {
     docs: {
@@ -154,7 +154,7 @@ ${f}
     actionable: false,
     activeIndex: -1
   }
-}`,...l.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+}`,...i.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: renderGlobalLink,
   parameters: {
     controls: {
@@ -169,7 +169,7 @@ ${f}
       }
     }
   }
-}`,...i.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
   render: () => renderCollapse({
     asForm: false,
     idPrefix: "story-listgroup-collapse"
@@ -220,4 +220,4 @@ ${f}
       }
     }
   }
-}`,...n.parameters?.docs?.source}}};const $=["Default","GlobalLink","Collapse","CollapseForm","RichContent"];export{r as Collapse,o as CollapseForm,l as Default,i as GlobalLink,n as RichContent,$ as __namedExportsOrder,y as default};
+}`,...n.parameters?.docs?.source}}};const $=["Default","GlobalLink","Collapse","CollapseForm","RichContent"];export{r as Collapse,o as CollapseForm,i as Default,l as GlobalLink,n as RichContent,$ as __namedExportsOrder,y as default};
