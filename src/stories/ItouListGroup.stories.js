@@ -111,7 +111,7 @@ const renderGlobalLink = () => `
     <div class="d-flex flex-column flex-lg-row">
       <span class="d-flex align-items-center">
         <i class="ri-checkbox-blank-circle-fill ri-xs me-2 text-success" aria-hidden="true"></i>
-        <a href="" class="fw-bold stretched-link">Preparateur/preparatrice de commande</a>
+        <a href="" class="fw-bold text-decoration-none stretched-link">Preparateur/preparatrice de commande</a>
       </span>
       <span class="fs-sm mt-1 mt-lg-0 ms-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm me-1" aria-hidden="true"></i>Le Bouscat - 33</span>
     </div>
@@ -120,7 +120,7 @@ const renderGlobalLink = () => `
     <div class="d-flex flex-column flex-lg-row">
       <span class="d-flex align-items-center">
         <i class="ri-checkbox-blank-circle-fill ri-xs me-2 text-success" aria-hidden="true"></i>
-        <a href="" class="fw-bold stretched-link">Charge(e) d'affaires commerciales et marketing operationnel</a>
+        <a href="" class="fw-bold text-decoration-none stretched-link">Charge(e) d'affaires commerciales et marketing operationnel</a>
       </span>
       <span class="fs-sm mt-1 mt-lg-0 ms-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm me-1" aria-hidden="true"></i>Beychac-et-Caillau - 72</span>
     </div>
@@ -129,7 +129,7 @@ const renderGlobalLink = () => `
     <div class="d-flex flex-column flex-lg-row">
       <span class="d-flex align-items-center">
         <i class="ri-checkbox-blank-circle-fill ri-xs me-2 text-success" aria-hidden="true"></i>
-        <a href="" class="fw-bold stretched-link">Preparateur/preparatrice de commande</a>
+        <a href="" class="fw-bold text-decoration-none stretched-link">Preparateur/preparatrice de commande</a>
       </span>
       <span class="fs-sm mt-1 mt-lg-0 ms-lg-auto d-flex align-items-center"><i class="ri-map-pin-2-line ri-sm me-1" aria-hidden="true"></i>Belves-de-Castillon - 33</span>
     </div>
