@@ -46,13 +46,6 @@
     }
   }
 
-  &-sm {
-    .nav-item .nav-link {
-      padding: $nav-link-padding-y-sm $nav-link-padding-x-sm;
-      min-height: initial;
-    }
-  }
-
   &.flex-column {
     .nav-item {
       .nav-link {
