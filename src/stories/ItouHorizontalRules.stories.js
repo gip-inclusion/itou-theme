@@ -1,5 +1,5 @@
 export default {
-  title: "Components/Horizontal Rules",
+  title: "Utilities/Horizontal Rules",
   decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],
   tags: ["autodocs"],
   parameters: {
