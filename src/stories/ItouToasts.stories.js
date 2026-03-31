@@ -1,12 +1,24 @@
 function buttonLaunchToast() {
-  document.getElementById('liveToastBtn').addEventListener('click', function () {
+  const liveToastBtn = document.getElementById('liveToastBtn');
+
+  if (!liveToastBtn || liveToastBtn.dataset.itToastBound === 'true') {
+    return;
+  }
+
+  liveToastBtn.addEventListener('click', function () {
     const toastContainer = document.querySelector('.toast-container');
+    if (!toastContainer) {
+      return;
+    }
+
     const toastElList = [].slice.call(toastContainer.querySelectorAll('.toast'));
     let toastList = toastElList.map(function (toastEl) {
       return new bootstrap.Toast(toastEl);
     });
     toastList.forEach(toast => toast.show());
   });
+
+  liveToastBtn.dataset.itToastBound = 'true';
 }
 
 
