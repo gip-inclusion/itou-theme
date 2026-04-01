@@ -17,13 +17,17 @@ export default {
   ],
   tags: ["autodocs"],
   argTypes: {
+    hasTitleBadge: {
+      control: "boolean",
+      description: "Affiche un badge complementaire a droite du titre (optionnel).",
+    },
     hasMainLink: {
       control: "boolean",
       description: "Affiche le bouton principal de la box (optionnel).",
     },
-    hasTitleBadge: {
+    hasExtraBoxes: {
       control: "boolean",
-      description: "Affiche un badge complementaire a droite du titre (optionnel).",
+      description: "Affiche un box custom ou plusieurs apres la lsite des liens (optionnel).",
     },
     hasBottomInfo: {
       control: "boolean",
@@ -35,7 +39,7 @@ export default {
     docs: {
       description: {
         component: `
-Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'actions et de suivi.
+Le composant \`.c-box--dashboard\` en contexte dashboard permet d'afficher des blocs d'actions et de suivi.
 
 ### Anatomie
 1. **Entete** - titre du bloc, eventuellement badge/contextualisation
@@ -52,15 +56,31 @@ Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'acti
   },
 };
 
-const render = ({ hasBottomInfo, hasMainLink, hasTitleBadge }) => {
+const render = ({ hasBottomInfo, hasMainLink, hasTitleBadge, hasExtraBoxes }) => {
+  const listSpacingClass = hasBottomInfo || hasExtraBoxes ? "" : " mb-lg-5";
+
+  const extraBoxes = hasExtraBoxes
+    ? `
+      <div class="c-box bg-warning-lightest border-warning mb-3 mb-lg-5">
+          <div class="d-flex justify-content-between align-items-center">
+              <a href="" class="text-warning fw-bold text-decoration-none btn-ico">
+                  <i class="ri-user-forbid-line fw-normal" aria-hidden="true"></i>
+                  <span>Candidat sans solution</span>
+              </a>
+              <span class="badge rounded-pill badge-xs bg-warning-light text-warning">1</span>
+          </div>
+      </div>
+      `
+    : "";
+
   const bottomInfo = hasBottomInfo
     ? `
       <hr class="mb-3">
-      <p class="fs-sm mb-lg-5">
+      <div class="fs-sm mb-3 mb-lg-5">
         France Travail - ARLES est une organisation habilitee. Vous pouvez realiser le
         <a href="https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14733750518161--Diagnostic-socio-professionnel-de-r%C3%A9f%C3%A9rence" target="_blank" rel="noopener noreferrer" class="has-external-link" aria-label="Diagnostic socio-professionnel des candidats (ouverture dans un nouvel onglet)">diagnostic socio-professionnel</a>
         des candidats que vous accompagnez.
-      </p>
+      </div>
       `
     : "";
 
@@ -91,11 +111,11 @@ const render = ({ hasBottomInfo, hasMainLink, hasTitleBadge }) => {
     `;
 
   return `
-  <div class="c-box p-0 h-100">
+  <div class="c-box c-box--dashboard p-0 h-100">
     ${titleBadge}
     <div class="px-3 px-lg-4">
       ${mainLink}
-      <ul class="list-unstyled mb-lg-5">
+      <ul class="list-unstyled${listSpacingClass}">
         <li class="d-flex justify-content-between align-items-center mb-3">
           <a href="#" class="btn-link btn-ico">
             <i class="ri-notification-4-line ri-lg fw-normal" aria-hidden="true"></i>
@@ -137,6 +157,7 @@ const render = ({ hasBottomInfo, hasMainLink, hasTitleBadge }) => {
           </a>
         </li>
       </ul>
+      ${extraBoxes}
       ${bottomInfo}
     </div>
   </div>
@@ -179,9 +200,10 @@ const renderServicesPartenaires = () => `
 export const Default = {
   render,
   args: {
-    hasMainLink: true,
-    hasBottomInfo: false,
     hasTitleBadge: false,
+    hasMainLink: true,
+    hasExtraBoxes: false,
+    hasBottomInfo: false,
   },
   parameters: {
     docs: {
