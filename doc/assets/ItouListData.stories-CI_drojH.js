@@ -50,10 +50,6 @@ function p(){const e=document.querySelectorAll("[data-it-clipboard-button=copy]"
     <small>CV</small>
     ${a?'<i class="text-disabled">Non renseigne</i>':'<a class="btn-link has-downloadable-file" href="" download="cv.pdf">CV_Jean_Dupont.pdf</a>'}
   </li>${t?`
-    <li class="has-forced-line-break">
-      <small>Traitement de la demande</small>
-      <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo, reiciendis natus soluta eveniet quis in consectetur odio est magnam iure tenetur at.</strong>
-    </li>
     <li>
       <small>Traitement de la demande</small>
       <ul>
@@ -61,7 +57,21 @@ function p(){const e=document.querySelectorAll("[data-it-clipboard-button=copy]"
         <li>Machin truc 02</li>
         <li>Machin truc 03</li>
       </ul>
-    </li>`:""}
+    </li>
+    <li>
+      <small>Horaires</small>
+      <ul>
+        <li>Lundi : 9h00 à 13h45</li>
+        <li>Mardi : 9h00 à 13h45</li>
+        <li>Mercredi : <i class="text-disabled fw-normal">Fermé</i></li>
+        <li>Jeudi : 9h00 à 13h45</li>
+      </ul>
+    </li>
+    <li class="has-forced-line-break">
+      <small>Traitement de la demande</small>
+      <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo, reiciendis natus soluta eveniet quis in consectetur odio est magnam iure tenetur at.</strong>
+    </li>
+    `:""}
 </ul>`.trim(),u=()=>`
 <div class="list-data-group">
   <ul class="list-data">

@@ -1,4 +1,4 @@
-const d={title:"Components/Box Dashboard",decorators:[n=>`
+const b={title:"Components/Box Dashboard",decorators:[e=>`
       <style>
         .c-box__header--dora {
           background-image: url("./images/card-header-bg-dora.png");
@@ -9,9 +9,9 @@ const d={title:"Components/Box Dashboard",decorators:[n=>`
           border-top-right-radius: 0.5rem;
         }
       </style>
-      <div style="max-width: 1000px; margin: 0 auto;">${n()}</div>
-    `],tags:["autodocs"],argTypes:{hasMainLink:{control:"boolean",description:"Affiche le bouton principal de la box (optionnel)."},hasTitleBadge:{control:"boolean",description:"Affiche un badge complementaire a droite du titre (optionnel)."},hasBottomInfo:{control:"boolean",description:"Affiche une information complementaire en bas de la box (optionnel)."}},parameters:{layout:"padded",docs:{description:{component:`
-Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'actions et de suivi.
+      <div style="max-width: 1000px; margin: 0 auto;">${e()}</div>
+    `],tags:["autodocs"],argTypes:{hasTitleBadge:{control:"boolean",description:"Affiche un badge complementaire a droite du titre (optionnel)."},hasMainLink:{control:"boolean",description:"Affiche le bouton principal de la box (optionnel)."},hasExtraBoxes:{control:"boolean",description:"Affiche un box custom ou plusieurs apres la lsite des liens (optionnel)."},hasBottomInfo:{control:"boolean",description:"Affiche une information complementaire en bas de la box (optionnel)."}},parameters:{layout:"padded",docs:{description:{component:`
+Le composant \`.c-box--dashboard\` en contexte dashboard permet d'afficher des blocs d'actions et de suivi.
 
 ### Anatomie
 1. **Entete** - titre du bloc, eventuellement badge/contextualisation
@@ -22,9 +22,9 @@ Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'acti
 - Garder des labels explicites sur les liens et boutons.
 - Marquer les icones decoratives avec \`aria-hidden="true"\`.
 - Conserver des contrastes suffisants pour les badges de statut.
-`}}}},r=({hasBottomInfo:n,hasMainLink:s,hasTitleBadge:i})=>`
-  <div class="c-box p-0 h-100">
-    ${i?`
+`}}}},t=({hasBottomInfo:e,hasMainLink:i,hasTitleBadge:r,hasExtraBoxes:s})=>`
+  <div class="c-box c-box--dashboard p-0 h-100">
+    ${r?`
       <div class="d-flex p-3 p-lg-4">
         <div class="flex-grow-1">
           <span class="h4 m-0">Candidatures</span>
@@ -39,13 +39,13 @@ Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'acti
       </div>
     `}
     <div class="px-3 px-lg-4">
-      ${s?`
+      ${i?`
       <a href="#" class="btn btn-outline-primary btn-block btn-ico mb-3">
         <i class="ri-file-user-line ri-lg fw-normal" aria-hidden="true"></i>
         <span>Voir toutes les candidatures</span>
       </a>
       `:""}
-      <ul class="list-unstyled mb-lg-5">
+      <ul class="list-unstyled${e||s?"":" mb-lg-5"}">
         <li class="d-flex justify-content-between align-items-center mb-3">
           <a href="#" class="btn-link btn-ico">
             <i class="ri-notification-4-line ri-lg fw-normal" aria-hidden="true"></i>
@@ -87,17 +87,28 @@ Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'acti
           </a>
         </li>
       </ul>
-      ${n?`
+      ${s?`
+      <div class="c-box bg-warning-lightest border-warning mb-3 mb-lg-5">
+          <div class="d-flex justify-content-between align-items-center">
+              <a href="" class="text-warning fw-bold text-decoration-none btn-ico">
+                  <i class="ri-user-forbid-line fw-normal" aria-hidden="true"></i>
+                  <span>Candidat sans solution</span>
+              </a>
+              <span class="badge rounded-pill badge-xs bg-warning-light text-warning">1</span>
+          </div>
+      </div>
+      `:""}
+      ${e?`
       <hr class="mb-3">
-      <p class="fs-sm mb-lg-5">
+      <div class="fs-sm mb-3 mb-lg-5">
         France Travail - ARLES est une organisation habilitee. Vous pouvez realiser le
         <a href="https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14733750518161--Diagnostic-socio-professionnel-de-r%C3%A9f%C3%A9rence" target="_blank" rel="noopener noreferrer" class="has-external-link" aria-label="Diagnostic socio-professionnel des candidats (ouverture dans un nouvel onglet)">diagnostic socio-professionnel</a>
         des candidats que vous accompagnez.
-      </p>
+      </div>
       `:""}
     </div>
   </div>
-`,t=()=>`
+`,l=()=>`
   <div class="c-box p-0 h-100">
     <div class="c-box__header--dora p-3 p-lg-4">
       <span class="h4 m-0">DORA</span>
@@ -128,12 +139,13 @@ Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'acti
       </ul>
     </div>
   </div>
-`,e={render:r,args:{hasMainLink:!0,hasBottomInfo:!1,hasTitleBadge:!1},parameters:{docs:{description:{story:"La Box Dashboard avec les options `hasMainLink`, `hasTitleBadge` et `hasBottomInfo` permettent d'activer les variantes."}}}},a={render:t,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante specifique DORA pour les services partenaires avec header `c-box__header--dora` et liste de liens externes d'action."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+`,a={render:t,args:{hasTitleBadge:!1,hasMainLink:!0,hasExtraBoxes:!1,hasBottomInfo:!1},parameters:{docs:{description:{story:"La Box Dashboard avec les options `hasMainLink`, `hasTitleBadge` et `hasBottomInfo` permettent d'activer les variantes."}}}},n={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante specifique DORA pour les services partenaires avec header `c-box__header--dora` et liste de liens externes d'action."}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render,
   args: {
+    hasTitleBadge: false,
     hasMainLink: true,
-    hasBottomInfo: false,
-    hasTitleBadge: false
+    hasExtraBoxes: false,
+    hasBottomInfo: false
   },
   parameters: {
     docs: {
@@ -142,7 +154,7 @@ Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'acti
       }
     }
   }
-}`,...e.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: renderServicesPartenaires,
   parameters: {
     controls: {
@@ -157,4 +169,4 @@ Le composant \`.c-box\` en contexte dashboard permet d'afficher des blocs d'acti
       }
     }
   }
-}`,...a.parameters?.docs?.source}}};const p=["Default","ServicesPartenaires"];export{e as Default,a as ServicesPartenaires,p as __namedExportsOrder,d as default};
+}`,...n.parameters?.docs?.source}}};const g=["Default","ServicesPartenaires"];export{a as Default,n as ServicesPartenaires,g as __namedExportsOrder,b as default};
