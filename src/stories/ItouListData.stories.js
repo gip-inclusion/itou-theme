@@ -66,10 +66,6 @@ const renderListData = ({
 
   const additionalContent = withLongText
     ? `
-    <li class="has-forced-line-break">
-      <small>Traitement de la demande</small>
-      <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo, reiciendis natus soluta eveniet quis in consectetur odio est magnam iure tenetur at.</strong>
-    </li>
     <li>
       <small>Traitement de la demande</small>
       <ul>
@@ -77,7 +73,21 @@ const renderListData = ({
         <li>Machin truc 02</li>
         <li>Machin truc 03</li>
       </ul>
-    </li>`
+    </li>
+    <li>
+      <small>Horaires</small>
+      <ul>
+        <li>Lundi : 9h00 à 13h45</li>
+        <li>Mardi : 9h00 à 13h45</li>
+        <li>Mercredi : <i class="text-disabled fw-normal">Fermé</i></li>
+        <li>Jeudi : 9h00 à 13h45</li>
+      </ul>
+    </li>
+    <li class="has-forced-line-break">
+      <small>Traitement de la demande</small>
+      <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo, reiciendis natus soluta eveniet quis in consectetur odio est magnam iure tenetur at.</strong>
+    </li>
+    `
     : "";
 
   return `
