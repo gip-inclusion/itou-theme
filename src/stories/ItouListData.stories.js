@@ -67,11 +67,17 @@ const renderListData = ({
   const additionalContent = withLongText
     ? `
     <li>
-      <small>Traitement de la demande</small>
+      <small>
+        Critères administratifs
+        <i class="ri-information-line text-info" data-bs-toggle="tooltip" data-bs-title="Ces critères reflètent la situation du candidat lors de l’établissement du diagnostic ayant permis la délivrance d’un PASS IAE, elle a peut-être changé depuis cette date." aria-label="Ces critères reflètent la situation du candidat lors de l’établissement du diagnostic, elle a peut-être changé depuis cette date." role="button" tabindex="0"></i>
+      </small>
       <ul>
-        <li>Machin truc 01</li>
-        <li>Machin truc 02</li>
-        <li>Machin truc 03</li>
+        <li>
+          Sortant de l'ASE
+        </li>
+        <li>
+          Réfugié statutaire, bénéficiaire d'une protection temporaire, protégé subsidiaire ou demandeur d'asile
+        </li>
       </ul>
     </li>
     <li>
@@ -200,6 +206,8 @@ export default {
       const html = `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`;
       setTimeout(() => {
         buttonCopyToClipboard();
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
       }, 0);
       return html;
     },
