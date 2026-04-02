@@ -60,6 +60,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     <p><span class="badge badge-base rounded-pill bg-danger text-white">danger</span></p>
     <p><span class="badge badge-base rounded-pill bg-info text-white">info</span></p>
     <p><span class="badge badge-base rounded-pill bg-important text-white">important</span></p>
+    <p><span class="badge badge-base rounded-pill bg-important text-white">important</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-01 text-white">accent-01</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-02 text-primary">accent-02</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-03 text-primary">accent-03</span></p>
@@ -72,6 +73,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     <p><span class="badge badge-base rounded-pill bg-danger-lighter text-danger">danger-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-info-lighter text-info">info-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-important-lighter text-important">important-lighter</span></p>
+    <p><span class="badge badge-base rounded-pill bg-important-lightest text-important"><i class="ri-flask-line" aria-hidden="true"></i>important-lightest</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-01-lighter text-accent-01">accent-01-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-02-lighter text-primary">accent-02-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-03-lighter text-primary">accent-03-lighter</span></p>
