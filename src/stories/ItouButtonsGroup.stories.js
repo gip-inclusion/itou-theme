@@ -1,6 +1,16 @@
 export default {
   title: "Forms/ButtonsGroup",
-  decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],
+  decorators: [(Story) => {
+    const html = `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`;
+
+    // Initialiser les tooltips
+    setTimeout(() => {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+    }, 0);
+
+    return html;
+  }],
   tags: ["autodocs"],
   parameters: {
     layout: "padded",
@@ -61,6 +71,23 @@ const render = ({ size }) => {
     <a href="#" class="btn btn-primary">Link</a>
     <a href="#" class="btn btn-secondary">Link</a>
   </div>
+  <hr />
+  <div class="btn-group ${sizeClass}" role="group" aria-label="Actions rapides sur le candidat">
+    <a class="btn btn-link btn-ico-only" href="" data-bs-toggle="tooltip" data-bs-title="Postuler pour ce candidat">
+      <i class="ri-draft-line" aria-label="Postuler pour BARACUS Boris"></i>
+    </a>
+    <button class="btn btn-link btn-ico-only" type="button" id="dropdown_3_action_menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
+      <i class="ri-more-2-fill" aria-hidden="true"></i>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdown_3_action_menu">
+      <a href="" class="dropdown-item">
+        Valider son éligibilité IAE
+      </a>
+      <a href="" class="dropdown-item">
+        Invalider son éligibilité IAE
+      </a>
+    </div>
+  </div>
   `;
 };
 
@@ -69,27 +96,29 @@ export const Default = {
   parameters: {
     docs: {
       description: {
-        story: "Démonstration des tailles `.btn-group-lg`, défaut et `.btn-group-sm`.",
+        story: "Démonstration des tailles `.btn-group-lg`, défaut et `.btn-group-sm` et un exemple de `.btn-group` présent dans les tablaux de résultats.",
       },
     },
   },
-  args: {},
+  args: {
+    size: "sm",
+  },
 };
 
 const renderActionGroup = ({ size }) => {
     const sizeClass = size === "default" ? "" : `btn-group-${size}`;
   return `
-<div class="btn-group btn-group-action ${sizeClass}" role="group" aria-label="Actions rapides">
-  <button type="button" class="btn btn-success btn-ico-only" aria-label="Voir les détails">
-    <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
-  </button>
-  <button type="button" class="btn btn-warning btn-ico-only" aria-label="Modifier l'élément">
-    <i class="ri-edit-line ri-lg fw-normal" aria-hidden="true"></i>
-  </button>
-  <button type="button" class="btn btn-danger btn-ico-only" aria-label="Supprimer l'élément">
-    <i class="ri-delete-bin-line ri-lg fw-normal" aria-hidden="true"></i>
-  </button>
-</div>
+  <div class="btn-group btn-group-action ${sizeClass}" role="group" aria-label="Actions rapides">
+    <button type="button" class="btn btn-success btn-ico-only" aria-label="Voir les détails">
+      <i class="ri-eye-2-line ri-lg fw-normal" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="btn btn-warning btn-ico-only" aria-label="Modifier l'élément">
+      <i class="ri-edit-line ri-lg fw-normal" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="btn btn-danger btn-ico-only" aria-label="Supprimer l'élément">
+      <i class="ri-delete-bin-line ri-lg fw-normal" aria-hidden="true"></i>
+    </button>
+  </div>
   `;
 };
 
@@ -105,6 +134,6 @@ export const ActionGroup = {
     },
   },
   args: {
-    size: "default",
+    size: "sm",
   },
 };

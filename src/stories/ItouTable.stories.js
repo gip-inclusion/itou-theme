@@ -141,6 +141,7 @@ const renderTable = ({ compact, striped, hover, bordered, responsive, responsive
           <th scope="col">Statut du PASS IAE</th>
           <th scope="col">Numero de PASS IAE</th>
           <th scope="col">Duree de validite</th>
+          <th scope="col" class="text-end w-100px"></th>
         </tr>
       </thead>`;
 
@@ -157,12 +158,30 @@ const renderTable = ({ compact, striped, hover, bordered, responsive, responsive
         .join("")
     : rows
         .map(
-          (row) => `
+          (row, index) => `
         <tr>
           <th scope="row"><a href="#" class="btn-link">${row.name}</a></th>
           <td>${row.status}</td>
           <td>${row.passNumber}</td>
           <td>${row.validity}</td>
+          <td class="text-end w-100px">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Actions rapides sur le candidat">
+              <a class="btn btn-link btn-ico-only" href="" data-bs-toggle="tooltip" data-bs-title="Postuler pour ce candidat">
+                <i class="ri-draft-line" aria-label="Postuler pour BARACUS Boris"></i>
+              </a>
+              <button class="btn btn-link btn-ico-only" type="button" id="dropdown_${index}_action_menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
+                <i class="ri-more-2-fill" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdown_${index}_action_menu">
+                <a href="" class="dropdown-item">
+                  Valider son éligibilité IAE
+                </a>
+                <a href="" class="dropdown-item">
+                  Invalider son éligibilité IAE
+                </a>
+              </div>
+            </div>
+          </td>
         </tr>`,
         )
         .join("");
