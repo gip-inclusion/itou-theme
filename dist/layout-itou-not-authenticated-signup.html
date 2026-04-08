@@ -254,75 +254,118 @@
         </div>
       </section>
 
-      <section class="s-section">
+      <section class="s-section mb-5">
         <div class="s-section__container container">
           <div class="s-section__row row">
-            <div class="s-section__col col-12 col-xxl-8 col-xxxl-9">
-              <div class="c-form">
-                <h2>Sélectionnez votre profil *</h2>
-
-                <div class="c-card card has-one-link-inside my-3">
-                  <div class="card-body">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="kind" value="job_seeker" id="kind_job_seeker" required="">
-                      <label class="form-check-label stretched-link" for="kind_job_seeker">
-                        <strong>Professionnel de l'inclusion</strong>
-                        <br>
-                        Vous accompagnez des candidats vers l'emploi, ou vous recrutez dans une structure inclusive (SIAE, GEIQ, EA…).
-                      </label>
-                      <br>
-                      <span class="tag bg-info-lighter text-info">Prescripteur</span>
-                      <span class="tag bg-info-lighter text-info">Orienteur</span>
-                      <span class="tag bg-info-lighter text-info">Employeur</span>
-                    </div>
+            <div class="s-section__col col-12">
+              <h2>Sélectionnez votre profil *</h2>
+            </div>
+            <div class="s-section__col col-12 col-lg-6 mb-3 mb-md-4">
+              <div class="c-card card has-one-link-inside has-rich-radio h-100">
+                <div class="card-header pb-3 pb-me-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kind" value="job_seeker" id="kind_job_seeker_rr" required>
+                    <label class="form-check-label stretched-link" for="kind_job_seeker_rr">
+                      <strong>Candidat</strong>
+                    </label>
                   </div>
                 </div>
-
-                <div class="c-card card has-one-link-inside my-3">
-                  <div class="card-body">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="kind" value="prescriber" id="kind_prescriber" required="">
-                      <label class="form-check-label stretched-link" for="kind_prescriber">
-                        <strong>Candidat</strong>
-                        <br>
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div>
+                      <p>
                         Vous êtes à la recherche d'un emploi inclusif et souhaitez être accompagné dans votre parcours.
-                      </label>
-                      <br>
-                      <span class="tag tag bg-accent-03-lighter text-accent-03">Parcours simplifié</span>
+                      </p>
+                      <div class="tag-group">
+                        <span class="tag bg-info-lighter text-info">Prescripteur</span>
+                        <span class="tag bg-info-lighter text-info">Orienteur</span>
+                        <span class="tag bg-important-lighter text-important">Parcours simplifié</span>
+                      </div>
                     </div>
+                    <figure class="d-none d-md-inline-flex">
+                      <img src="./images/illustration-signup-01.png" alt="" width="150">
+                    </figure>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-12">
-                    <hr class="mb-3">
-                    <small class="d-inline-block mb-3">* champs obligatoires</small>
-                    <div class="form-row align-items-center justify-content-end gx-3">
-                      <div class="form-group col-12 col-lg order-3 order-lg-1">
-                        <a href="" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto" aria-label="Annuler la saisie de ce formulaire">
-                          <i class="ri-close-line ri-lg" aria-hidden="true"></i>
-                          <span>Annuler</span>
-                        </a>
-                      </div>
-                      <div class="form-group col col-lg-auto order-2 order-lg-3">
-                        <button type="submit" class="btn btn-block btn-primary" aria-label="Passer à l’étape suivante">
-                          <span>Suivant</span>
-                        </button>
-                      </div>
+              </div>
+            </div>
+            <div class="s-section__col col-12 col-lg-6 mb-3 mb-md-4">
+              <div class="c-card card has-links-inside has-rich-radio h-100">
+                <div class="card-header pb-3 pb-me-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kind" value="pro" id="kind_pro_rr" required>
+                    <label class="form-check-label stretched-link" for="kind_pro_rr">
+                      <strong>Professionnel de l'inclusion</strong>
+                    </label>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Par nom, SIRET ou code SAFIR (France Travail)
+                  </p>
+                  <div class="input-group input-group-xl input-group-search mb-3">
+                    <select class="form-select form-select-xl" id="apprend-button-single-field" data-placeholder="Renseignez votre structure">
+                      <option></option>
+                      <option>Reactive</option>
+                      <option>Solution</option>
+                      <option>Conglomeration</option>
+                      <option>Algoritm</option>
+                      <option>Holistic</option>
+                    </select>
+                    <div class="input-group-text p-0 bg-white">
+                      <button class="btn btn-link btn-ico" type="button" id="button-addon22">
+                        <i class="ri-search-line fw-bold" aria-hidden="true"></i>
+                        <span>Rechercher</span>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="s-section__col col-12">
+              <div class="c-card card has-links-inside mb-3 mb-md-4">
+                <div class="card-body">
+                  <h5 class="mb-0">Vous êtes membre d’une institution partenaire ?</h5>
+                  <p class="fs-sm">
+                    <strong>(DDETS, DREETS, DGEFP, DIHAL, DRIHL, Réseaux IAE ...)</strong>
+                  </p>
+                  <p>
+                    Pour rejoindre une institution, un membre existant doit vous ajouter directement. Il n'est pas possible de s'inscrire en autonomie via ce formulaire.
+                  </p>
+                  <a href="" class="btn-link has-external-link" target="_blank">En savoir plus sur les institutions partenaires</a>
+                </div>
+              </div>
 
-              <div class="c-box mt-3 mt-md-4">
-                <h2 class="m-0">Vous êtes membre d’une institution partenaire ?</h2>
-                <p>
-                  <strong>(DDETS, DREETS, DGEFP, DIHAL, DRIHL, Réseaux IAE ...)</strong>
-                </p>
-                <p>
-                  Pour rejoindre une institution, un membre existant doit vous ajouter directement. Il n'est pas possible de s'inscrire en autonomie via ce formulaire.
-                </p>
-                <a href="" class="btn btn-link ps-0 has-external-link" target="_blank">En savoir plus sur les institutions partenaires</a>
+              <div class="c-info">
+                <button class="c-info__summary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseInfoSignup" aria-expanded="false" aria-controls="collapseInfoSignup">
+                  <span>Vous êtes membre d’une institution partenaire ?</span>
+                </button>
+                <div class="c-info__detail collapse" id="collapseInfoSignup">
+                  <p>
+                    DDETS, DREETS, DGEFP, DIHAL, DRIHL, Réseaux IAE… Pour rejoindre une institution, un membre existant doit vous ajouter directement. Il n'est pas possible de s'inscrire en autonomie via ce formulaire.
+                    <a href="" class="has-external-link">En savoir plus sur les institutions partenaires</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <hr class="mb-3">
+                  <small class="d-inline-block mb-3">* champs obligatoires</small>
+                  <div class="form-row align-items-center justify-content-end gx-3">
+                    <div class="form-group col-12 col-lg order-3 order-lg-1">
+                      <a href="" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto" aria-label="Annuler la saisie de ce formulaire">
+                        <i class="ri-close-line ri-lg" aria-hidden="true"></i>
+                        <span>Annuler</span>
+                      </a>
+                    </div>
+                    <div class="form-group col col-lg-auto order-2 order-lg-3">
+                      <button type="submit" class="btn btn-block btn-primary" aria-label="Passer à l’étape suivante">
+                        <span>Suivant</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -428,6 +471,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+
+    <script>
+      $('#apprend-button-single-field').select2({
+        theme: "bootstrap-5",
+        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+        placeholder: $(this).data('placeholder'),
+      });
+    </script>
   </body>
 
 </html>

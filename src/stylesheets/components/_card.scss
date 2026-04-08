@@ -43,6 +43,19 @@
     }
   }
 
+  &.has-rich-radio {
+    .card-header {
+      border-bottom: 1px solid $border-color !important;
+    }
+
+    &:has(input[type="radio"]:checked) {
+      .card-header {
+        border-bottom: 1px solid $button-lightest !important;
+        background-color: $button-lightest;
+      }
+    }
+  }
+
   &--plateforme {
     &::after {
       content: '';
