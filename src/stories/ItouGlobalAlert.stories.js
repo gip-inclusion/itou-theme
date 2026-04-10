@@ -1,5 +1,6 @@
 export default {
   title: "Components/Global Alert",
+  decorators: [(Story) => `<div style="max-width: 1200px; margin: 0 auto;">${Story()}</div>`],
   tags: ["autodocs"],
   parameters: {
     layout: "fullwidth",

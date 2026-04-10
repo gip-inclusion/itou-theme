@@ -27,7 +27,7 @@ function buttonCopyToClipboard() {
 }
 
 export default {
-  title: "Components/Box Form",
+  title: "Components/Box",
   decorators: [
     (Story) => {
       const html = `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`;
@@ -43,18 +43,8 @@ export default {
     docs: {
       description: {
         component: `
-Les composants \`.c-box\` et \`.c-form\` servent a structurer et mettre en valeur du contenu.
-\`.c-box\` est un conteneur de lecture (resume, informations, bloc contextuel), alors que \`.c-form\` est dedie a l'encapsulation des formulaires.
-
-### Anatomie
-1. **Conteneur** - \`.c-box\` ou \`.c-form\`
-2. **Contenu** - paragraphes, listes, composants d'information, actions; formulaire
-
-### Classes CSS
-| Classe | Description |
-|--------|-------------|
-| \`.c-box\` | Bloc de contenu generique avec fond, bordure et espacements |
-| \`.c-form\` | Variante orientee formulaire avec styles descendants pour les champs |
+Les composants \`.c-box\` sert a structurer et mettre en valeur du contenu.
+\`.c-box\` est un conteneur de lecture (resume, informations, bloc contextuel).
 
 `,
       },
@@ -143,51 +133,6 @@ const renderBox = () => `
 
 `;
 
-const renderForm = () => `
-  <div class="c-form">
-    <form method="post">
-      <fieldset>
-        <legend class="h3">Informations générales</legend>
-        <div class="form-group form-group-required"><label class="form-label" for="id_brand">Nom à afficher</label><input type="text" name="brand" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_brand_helptext" id="id_brand">
-          <div id="id_brand_helptext" class="form-text">Nom présent sur la fiche et dans les résultats de recherche.</div>
-        </div>
-        <div class="form-group form-group-required"><label class="form-label" for="id_address_line_1">Adresse</label><input type="text" name="address_line_1" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_address_line_1_helptext" id="id_address_line_1">
-          <div id="id_address_line_1_helptext" class="form-text">Appartement, suite, bloc, bâtiment, boite postale, etc.</div>
-        </div>
-        <div class="form-group"><label class="form-label" for="id_address_line_2">Complément d'adresse</label><input type="text" name="address_line_2" maxlength="255" placeholder="" class="form-control" id="id_address_line_2"></div>
-        <div class="form-group form-group-input-w-lg-33 form-group-required"><label class="form-label" for="id_post_code">Code postal</label><input type="text" name="post_code" maxlength="5" class="form-control" required="" id="id_post_code"></div>
-        <div class="form-group form-group-required"><label class="form-label" for="id_city">Ville</label><input type="text" name="city" maxlength="255" class="form-control" required="" id="id_city"></div>
-        <div class="form-group form-group-input-w-lg-33"><label class="form-label" for="id_phone">Téléphone</label><input type="tel" name="phone" maxlength="20" class="form-control" id="id_phone"></div>
-        <div class="form-group form-group-input-w-lg-66"><label class="form-label" for="id_email">Adresse e-mail</label><input type="email" name="email" maxlength="254" class="form-control" id="id_email"></div>
-        <div class="form-group"><label class="form-label" for="id_website">Site web</label><input type="url" name="website" maxlength="200" class="form-control" aria-describedby="id_website_helptext" id="id_website">
-          <div id="id_website_helptext" class="form-text">Votre site web doit commencer par http:// ou https://</div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <hr class="mb-3">
-            <small class="d-inline-block mb-3">* champs obligatoires</small>
-            <div class="form-row align-items-center justify-content-end gx-3">
-              <div class="form-group col-12 col-lg order-3 order-lg-1">
-                <a href="" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto" aria-label="Annuler la saisie de ce formulaire">
-                  <i class="ri-close-line ri-lg" aria-hidden="true"></i>
-                  <span>Annuler</span>
-                </a>
-              </div>
-              <div class="form-group col col-lg-auto order-2 order-lg-3">
-                <button type="submit" class="btn btn-block btn-primary" aria-label="Passer à l’étape suivante" data-matomo-event="true" data-matomo-category="employeurs" data-matomo-action="submit" data-matomo-option="maj-contact-structure">
-                  <span>Suivant</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-  </div>
-`;
-
-
-
 export const Box = {
   render: renderBox,
   parameters: {
@@ -196,20 +141,6 @@ export const Box = {
       controls: { disable: true },
       description: {
         story: "Le `.c-box` est utilisé pour enrober du contenu et créer une zone délimitée.",
-      },
-    },
-  },
-};
-
-
-export const Form = {
-  render: renderForm,
-  parameters: {
-    controls: { disable: true },
-    docs: {
-      controls: { disable: true },
-      description: {
-        story: "Le `.c-form` est utilisé pour enrober un formulaire, il possède de nombreuses sous-classes et règles descendantes pour les éléments de formulaires qu'il contient.",
       },
     },
   },

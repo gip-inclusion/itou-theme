@@ -49,17 +49,15 @@ const render = () => {
   <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip sur un bouton">
     Tooltip sur un bouton
   </button>
-  <span tabindex="0" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Tooltip sur un bouton disabled">
-    <button disabled class="btn btn-primary">
-      Tooltip sur un bouton disabled
-    </button>
+  <span tabindex="0" class="btn btn-link disabled" data-bs-toggle="tooltip" data-bs-title="Tooltip sur un lien disabled">
+    Tooltip sur un "faux" bouton disabled
   </span>
 </div>
 <hr />
 <div class="d-flex gap-3">
   <a href="#" class="btn btn-link" data-bs-toggle="tooltip" data-bs-title="Tooltip sur un lien">Tooltip sur un lien</a>
   <span tabindex="0" class="btn btn-link disabled" data-bs-toggle="tooltip" data-bs-title="Tooltip sur un lien disabled">
-    Tooltip sur un lien disabled
+    Tooltip sur un "faux" lien disabled
   </span>
 </div>
 <hr />
