@@ -100,7 +100,7 @@ Documentation et exemples des classes utilitaires de typographie, basée sur Boo
   `,a={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Citations Bootstrap (`.blockquote`) et variante custom itou (`.testimonial`)."}}}},d=()=>`
 <section class="vstack gap-3">
   <p class="mb-0">Il n'y a besoin d'<a href="#">aucune classe particulière</a> pour les liens simples</p>
-  <p class="mb-0">Il faut <code>.has-external-link</code> <a href="#" class="has-external-link">pour les liens externes</a></p>
+  <p class="mb-0">Il faut <code>.has-external-link</code> <a href="#" rel="noopener" target="_blank">pour les liens externes</a></p>
   <p class="mb-0">Il faut <code>.has-downloadable-file</code> <a href="#" class="has-downloadable-file">pour les liens vers des fichiers téléchargeables</a></p>
   <p class="mb-0 position-relative">Il faut <code>.stretched-link</code> (avec un parent <code>.position-relative</code>) <a href="#" class="stretched-link">pour étendre la zone cliquable à tout le bloc</a></p>
   <p class="mb-0">Il faut <code>.btn-link</code> <a href="#" class="btn-link">pour les liens d'action importants</a></p>
