@@ -45,7 +45,7 @@
       window.LOGLEVEL = 'info';
       window.FRAMEWORK_OPTIONS = {};
       window.CHANNEL_OPTIONS = {};
-      window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true,"viewport":true,"highlight":true,"controls":true,"interactions":true,"actions":true,"backgrounds":true,"outline":true,"measure":true,"sidebarOnboardingChecklist":true,"componentsManifest":true};
+      window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true,"viewport":true,"highlight":true,"controls":true,"interactions":true,"actions":true,"backgrounds":true,"outline":true,"measure":true,"sidebarOnboardingChecklist":true,"componentsManifest":false};
       window.STORIES = [{"titlePrefix":"","directory":"./src","files":"**/*.mdx","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.mdx)$"},{"titlePrefix":"","directory":"./src","files":"**/*.stories.@(js|jsx|mjs|ts|tsx)","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(js|jsx|mjs|ts|tsx))$"}];
       window.DOCS_OPTIONS = {"defaultName":"Docs"};
       window.TAGS_OPTIONS = {};
@@ -549,9 +549,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
-    <script type="module" crossorigin src="./assets/iframe--fI-_joE.js"></script>
+    <script type="module" crossorigin src="./assets/iframe-u5b0dHo_.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-PPVm8Dsz.js">
-    <link rel="stylesheet" crossorigin href="./assets/iframe-n4HwkzMr.css">
+    <link rel="stylesheet" crossorigin href="./assets/iframe-BrucO7Bc.css">
   </head>
 
   <body>
@@ -683,10 +683,10 @@
         if (hostname !== 'localhost' && globalThis.CONFIG_TYPE === 'DEVELOPMENT') {
           const message = `Failed to load the Storybook preview file 'vite-app.js':
 
-It looks like you're visiting the Storybook development server on another hostname than localhost: '${hostname}', but you haven't configured the necessary security features to support this.
-Please re-run your Storybook development server with the '--host ${hostname}' flag, or manually configure your Vite allowedHosts configuration with viteFinal.
+      It looks like you're visiting the Storybook development server on another hostname than localhost: '${hostname}', but you haven't configured the necessary security features to support this.
+      Please re-run your Storybook development server with the '--host ${hostname}' flag, or manually configure your Vite allowedHosts configuration with viteFinal.
 
-See:`;
+      See:`;
           const docs = [
             'https://storybook.js.org/docs/api/cli-options#dev',
             'https://storybook.js.org/docs/api/main-config/main-config-vite-final',
@@ -698,7 +698,7 @@ See:`;
             `<p style="color: red; max-width: 70ch">${message.replaceAll(
               '\n',
               '<br/>'
-            )}<ul>${docs.map((doc) => `<li><a href='${doc}' target='_blank'>${doc}</a></li>`).join('')}<ul></p>`;
+            )}<ul>${docs.map((doc) => `<li><a href='${doc}' target='_blank'>${doc}</a></li>`).join('')}</ul></p>`;
           return;
         }
       }
