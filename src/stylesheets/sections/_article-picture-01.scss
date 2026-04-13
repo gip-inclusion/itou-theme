@@ -144,46 +144,6 @@
     }
   }
 
-  &--marche {
-    .s-article-picture-01__col--article h2::after {
-      background-color: $marche;
-    }
-
-    .s-article-picture-01__col figure > div > div {
-      border-bottom-color: $marche;
-    }
-  }
-
-  &--emploi {
-    .s-article-picture-01__col--article h2::after {
-      background-color: $emploi;
-    }
-
-    .s-article-picture-01__col figure > div > div {
-      border-bottom-color: $emploi;
-    }
-  }
-
-  &--pilotage {
-    .s-article-picture-01__col--article h2::after {
-      background-color: $pilotage;
-    }
-
-    .s-article-picture-01__col figure > div > div {
-      border-bottom-color: $pilotage;
-    }
-  }
-
-  &--communaute {
-    .s-article-picture-01__col--article h2::after {
-      background-color: $communaute;
-    }
-
-    .s-article-picture-01__col figure > div > div {
-      border-bottom-color: $communaute;
-    }
-  }
-
   &--ltr {
     .s-article-picture-01__col--picture,
     .s-article-picture-01__col--figure {
