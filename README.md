@@ -1,6 +1,6 @@
 # itou-theme
 
-[Documentation](https://zeroheight.com/85c89893b/p/57b152-theme)
+👉 [Documentation](https://gip-inclusion.github.io/itou-theme/)
 
 ## Remarques
 
