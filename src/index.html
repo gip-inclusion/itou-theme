@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="title" content="Itou Theme">
+    <meta name="description" content="Index des pages de demonstration du theme itou.">
+    <meta name="keywords" content="itou, theme, bootstrap, inclusion, demonstration">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:title" content="Itou Theme">
@@ -26,23 +28,82 @@
 
   <body id="top">
 
-    {{> _partials/header-theme }}
-
-    <main class="s-main py-8 d-flex justify-content-center" role="main">
-      <article class="container-max-lg text-center">
-
-        <h1 class="h2 mt-8">
-          Documentation du thème de la Plateforme de l'Inclusion
-        </h1>
-        <ul class="list-unstyled lead mb-5">
-          <li>
-            👉 <a href="https://zeroheight.com/85c89893b/p/57b152-thme" target="_blank">Zeroheight (ancienne version)</a>
-          </li>
-          <li>
-            👉 <a href="./doc" target="_blank">Storybook (nouvelle version, en cours de rédaction)</a>
-          </li>
-        </ul>
+    <main class="container container-max-lg py-5" role="main">
+      <article class="mb-7 bg-primary text-white p-5">
+        <div class="text-white text-center">
+          <h1 class="text-white mb-0">
+            Documentation du "thème itou"
+          </h1>
+          <p>Thème basé sur Bootstrap (en v5.3)</p>
+          <div class="mt-5">
+            👉 <a href="./doc" target="_blank" rel="noopener noreferrer" class="text-white h3">Documentation Storybook</a> 👈
+            <br>
+            <a href="https://zeroheight.com/85c89893b/p/57b152-thme" target="_blank" rel="noopener noreferrer" class="text-white"><small>Zeroheight (ancienne version)</small></a>
+            <p class="small mt-3 mb-0">Tous les liens de pages ci-dessous s'ouvrent dans un nouvel onglet.</p>
+          </div>
+        </div>
       </article>
+      <div class="row">
+        <h2 class="h3 mb-5 text-center">
+          👇 Quelques pages statiques données en exemple 👇
+        </h2>
+        <div class="col-12 col-md-4 mb-5">
+          <h3 class="h4">Pages Empois - Non connecté</h3>
+          <ul>
+            <li><a href="./layout-itou-not-authenticated-homepage.html" target="_blank" rel="noopener noreferrer">Homepage</a></li>
+            <li><a href="./layout-itou-not-authenticated-search-result.html" target="_blank" rel="noopener noreferrer">Résultats de recherche</a></li>
+            <li><a href="./layout-itou-not-authenticated-mentions.html" target="_blank" rel="noopener noreferrer">Mentions légales</a></li>
+            <li><a href="./layout-itou-not-authenticated-test.html" target="_blank" rel="noopener noreferrer">Test</a></li>
+            <li><a href="./layout-itou-not-authenticated-signup.html" target="_blank" rel="noopener noreferrer">Inscription</a></li>
+            <li><a href="./layout-itou-not-emplois-pilotage-form.html" target="_blank" rel="noopener noreferrer">Pilotage - Form</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-5">
+          <h3 class="h4">Pages Empois - Connecté</h3>
+          <ul>
+            <li><a href="./layout-itou-authenticated-dashboard.html" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
+            <li><a href="./layout-itou-authenticated-search-result.html" target="_blank" rel="noopener noreferrer">Résultats de recherche</a></li>
+            <li><a href="./layout-itou-authenticated-candidature-result.html" target="_blank" rel="noopener noreferrer">Candidatures reçues</a></li>
+            <li><a href="./layout-itou-authenticated-mentions.html" target="_blank" rel="noopener noreferrer">Mentions légales</a></li>
+            <li><a href="./layout-itou-authenticated-form.html" target="_blank" rel="noopener noreferrer">Formulaire</a></li>
+            <li><a href="./layout-itou-authenticated-cms.html" target="_blank" rel="noopener noreferrer">CMS</a></li>
+            <li><a href="./layout-itou-authenticated-test.html" target="_blank" rel="noopener noreferrer">Test</a></li>
+            <li><a href="./layout-itou-authenticated-detail-pass.html" target="_blank" rel="noopener noreferrer">Detail Pass IAE</a></li>
+            <li><a href="./layout-itou-authenticated-detail-candidature.html" target="_blank" rel="noopener noreferrer">Detail Candidature</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-5">
+          <h3 class="h4">Pages Commu - Pilotage</h3>
+          <ul>
+            <li><a href="./layout-not-itou-pilotage-form.html" target="_blank" rel="noopener noreferrer">Pilotage - Form</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-5">
+          <h3 class="h4">Pages Nexus - Demo</h3>
+          <ul>
+            <li><a href="./layout-nexus-connect.html" target="_blank" rel="noopener noreferrer">Connect</a></li>
+            <li><a href="./layout-nexus-dashboard.html" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
+            <li><a href="./layout-nexus-emplois.html" target="_blank" rel="noopener noreferrer">Les emplois</a></li>
+            <li><a href="./layout-nexus-emplois-active.html" target="_blank" rel="noopener noreferrer">Les emplois - Activé</a></li>
+            <li><a href="./layout-nexus-emplois-active-2.html" target="_blank" rel="noopener noreferrer">Les emplois - Activé 2</a></li>
+            <li><a href="./layout-nexus-emplois-attente.html" target="_blank" rel="noopener noreferrer">Les emplois - Attente</a></li>
+            <li><a href="./layout-nexus-emplois-liste.html" target="_blank" rel="noopener noreferrer">Les emplois - Liste</a></li>
+            <li><a href="./layout-nexus-dora.html" target="_blank" rel="noopener noreferrer">Dora</a></li>
+            <li><a href="./layout-nexus-dora-attente.html" target="_blank" rel="noopener noreferrer">Dora - Attente</a></li>
+            <li><a href="./layout-nexus-dora-active.html" target="_blank" rel="noopener noreferrer">Dora - Activé</a></li>
+            <li><a href="./layout-nexus-dora-active-2.html" target="_blank" rel="noopener noreferrer">Dora - Activé 2</a></li>
+            <li><a href="./layout-nexus-communaute.html" target="_blank" rel="noopener noreferrer">La communauté</a></li>
+            <li><a href="./layout-nexus-communaute-active.html" target="_blank" rel="noopener noreferrer">La communauté - Activé</a></li>
+            <li><a href="./layout-nexus-marche.html" target="_blank" rel="noopener noreferrer">Le marché</a></li>
+            <li><a href="./layout-nexus-marche-active.html" target="_blank" rel="noopener noreferrer">Le marché - Activé</a></li>
+            <li><a href="./layout-nexus-pilotage.html" target="_blank" rel="noopener noreferrer">Le pilotage</a></li>
+            <li><a href="./layout-nexus-pilotage-active.html" target="_blank" rel="noopener noreferrer">Le pilotage - Activé</a></li>
+            <li><a href="./layout-nexus-monrecap.html" target="_blank" rel="noopener noreferrer">Mon récap</a></li>
+            <li><a href="./layout-nexus-monrecap-active.html" target="_blank" rel="noopener noreferrer">Mon récap - Activé</a></li>
+            <li><a href="./layout-nexus-dropdown-dsfr.html" target="_blank" rel="noopener noreferrer">Dropdown DSFR</a></li>
+          </ul>
+        </div>
+      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
