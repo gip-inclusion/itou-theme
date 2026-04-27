@@ -35,10 +35,10 @@
     "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-prettier": "^5.0.3",
     "svgo": "^4.0.1",
-    "vite": "^7.3.1",
+    "vite": "^7.3.2",
     "vite-plugin-commonjs": "^0.10.4",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-handlebars": "^2.0.3",
     "vite-plugin-image-optimizer": "^2.0.3",
     "vitest": "^4.0.18"
   },
