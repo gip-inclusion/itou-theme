@@ -6,6 +6,56 @@
     padding-bottom: 0;
   }
 
+  .card-header__summary {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: map-get($spacers, 2);
+    text-align: left;
+
+    > i {
+      grid-area: 1 / 1 / 3 / 2;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: $info-lightest;
+      border-radius: $border-radius-lg;
+      font-size: $h3-font-size;
+      font-weight: $font-weight-medium;
+      color: $info;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    div {
+      grid-area: 1 / 2 / 2 / 3;
+      font-size: $font-size-sm;
+      line-height: $line-height-sm;
+    }
+
+    h3 {
+      margin-bottom: 0;
+      line-height: $line-height-sm;
+    }
+
+    &[data-bs-toggle="collapse"] {
+      @extend .has-collapse-caret;
+      padding-right: map-get($spacers, 5);
+
+      &::after {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
   .card-header,
   .card-footer {
     background-color: transparent;
@@ -44,65 +94,18 @@
   }
 
   &.has-rich-radio {
-    .card-header {
+    .card-header:has(+ .card-body) {
       border-bottom: 1px solid $border-color !important;
     }
 
     &:has(input[type="radio"]:checked) {
       .card-header {
-        border-bottom: 1px solid $button-lightest !important;
         background-color: $button-lightest;
+
+        &:has(+ .card-body) {
+          border-bottom: 1px solid $button-lightest !important;
+        }
       }
-    }
-  }
-
-  &--plateforme {
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $primary;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--marche {
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $marche;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--pilotage {
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $pilotage;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--communaute {
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $communaute;
-      @include border-bottom-radius($card-inner-border-radius);
-    }
-  }
-
-  &--emploi {
-    &::after {
-      content: '';
-      width: 100%;
-      height: 10px;
-      background-color: $emploi;
-      @include border-bottom-radius($card-inner-border-radius);
     }
   }
 }
