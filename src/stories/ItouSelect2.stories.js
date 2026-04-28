@@ -99,7 +99,7 @@ export default {
     docs: {
       description: {
         component: `
-Integration de <a href="https://select2.org/" target="_blank" rel="noopener noreferrer" class="has-external-link">Select2 4.0.x</a> avec son <a href="https://apalfrey.github.io/select2-bootstrap-5-theme/" target="_blank" rel="noopener noreferrer" class="has-external-link">thème Bootstrap 5</a>.
+Intégration de <a href="https://select2.org/" target="_blank" rel="noopener noreferrer" class="has-external-link">Select2 4.0.x</a> avec son <a href="https://apalfrey.github.io/select2-bootstrap-5-theme/" target="_blank" rel="noopener noreferrer" class="has-external-link">thème Bootstrap 5</a>.
 
 Pour l'utiliser, inclure jQuery et Select2 via CDN :
 
@@ -108,7 +108,7 @@ Pour l'utiliser, inclure jQuery et Select2 via CDN :
 <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"</script>
 </pre>
 
-Les styles Select2 et son thème Bootstrap 5 sont pris en charge par le theme Itou.
+Les styles Select2 et son thème Bootstrap 5 sont pris en charge par le thème Itou.
 `,
       },
     },

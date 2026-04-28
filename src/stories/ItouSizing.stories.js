@@ -10,16 +10,16 @@ export default {
 Classes utilitaires de dimensionnement (largeur et hauteurs max).
 
 ### Anatomie
-1. **Width** — Classes <code>.w-*</code> pour définir la largeur.
-2. **Max-width** — Classes <code>.mw-*</code> pour borner la largeur maximale.
-3. **Max-height** — Classes <code>.mh-*</code> pour borner la hauteur maximale.
+1. **Width** — Classes \`.w-*\` pour définir la largeur.
+2. **Max-width** — Classes \`.mw-*\` pour borner la largeur maximale.
+3. **Max-height** — Classes \`.mh-*\` pour borner la hauteur maximale.
 4. **Responsive** — Variantes disponibles par breakpoint (<code>-sm-</code>, <code>-md-</code>, <code>-lg-</code>, <code>-xl-</code>, <code>-xxl-</code>, <code>-xxxl-</code>).
 
 ### Notation
-- <code>.w-{value}</code>
-- <code>.mw-{value}</code>
-- <code>.mh-{value}</code>
-- Version responsive : <code>.w-md-50</code>, <code>.mw-lg-75</code>, <code>.mh-xl-50vh</code>, etc.
+- \`.w-{value}\`
+- \`.mw-{value}\`
+- \`.mh-{value}\`
+- Version responsive : \`.w-md-50\`, \`.mw-lg-75\`, \`.mh-xl-50vh\`, etc.
 
 ### Valeurs custom ajoutées dans l'API Utilities
 - <code>width</code> : <code>25</code>, <code>33</code>, <code>40</code>, <code>50</code>, <code>66</code>, <code>75</code>, <code>50px</code>, <code>100px</code>, <code>200px</code>, <code>300px</code>, <code>400px</code>

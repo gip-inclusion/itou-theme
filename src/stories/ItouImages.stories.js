@@ -7,25 +7,25 @@ export default {
     docs: {
       description: {
         component: `
-Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitaire custom <code>.img-muted</code> du thème itou.
+Documentation et exemples des utilitaires d'image Bootstrap 5.3 et de l'utilitaire custom \`.img-muted\` du thème itou.
 
 ### Anatomie
-1. **Image responsive** — Utiliser <code>.img-fluid</code> pour appliquer <code>max-width: 100%</code> et <code>height: auto</code>.
-2. **Object fit** — Utiliser les classes <code>.object-fit-*</code> pour contrôler le recadrage dans un conteneur contraint.
-3. **Utilitaire custom itou** — Utiliser <code>.img-muted</code> pour atténuer visuellement une image (niveaux de gris + opacité).
+1. **Image responsive** — Utiliser \`.img-fluid\` pour appliquer <code>max-width: 100%</code> et <code>height: auto</code>.
+2. **Object fit** — Utiliser les classes \`.object-fit-*\` pour contrôler le recadrage dans un conteneur contraint.
+3. **Utilitaire custom itou** — Utiliser \`.img-muted\` pour atténuer visuellement une image (niveaux de gris + opacité).
 4. **Accessibilité** — Fournir un attribut <code>alt</code> pertinent pour les images informatives.
-5. **Performance** — Utiliser <code>loading="lazy"</code> pour differer le chargement des images hors ecran.
+5. **Performance** — Utiliser <code>loading="lazy"</code> pour differer le chargement des images hors écran.
 
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
-| <code>.img-fluid</code> | Rend l'image responsive |
-| <code>.object-fit-contain</code> | Garde toute l'image visible dans son conteneur |
-| <code>.object-fit-cover</code> | Remplit le conteneur, avec recadrage possible |
-| <code>.object-fit-fill</code> | Étire l'image pour remplir le conteneur |
-| <code>.object-fit-scale</code> | Préserve le ratio et limite l'agrandissement |
-| <code>.object-fit-none</code> | Aucun ajustement de type object-fit |
-| <code>.img-muted</code> | Utilitaire custom itou (grayscale + opacité) |
+| \`.img-fluid\` | Rend l'image responsive |
+| \`.object-fit-contain\` | Garde toute l'image visible dans son conteneur |
+| \`.object-fit-cover\` | Remplit le conteneur, avec recadrage possible |
+| \`.object-fit-fill\` | Étire l'image pour remplir le conteneur |
+| \`.object-fit-scale\` | Préserve le ratio et limite l'agrandissement |
+| \`.object-fit-none\` | Aucun ajustement de type object-fit |
+| \`.img-muted\` | Utilitaire custom itou (grayscale + opacité) |
 
 **Documentation Bootstrap** :
 - <a href="https://getbootstrap.com/docs/5.3/content/images/#responsive-images" target="_blank" rel="noopener noreferrer" class="has-external-link">Responsive images</a>

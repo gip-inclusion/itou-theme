@@ -12,8 +12,8 @@ Le composant \`radio\` permet de proposer un choix exclusif au sein d'un groupe 
 ### Anatomie
 1. **Conteneur** - \`.form-check\` entoure chaque option.
 2. **Contrôle** - \`<input class="form-check-input" type="radio">\`.
-3. **Libellé** - \`<label class="form-check-label">\` lié via \`for\` / \`id\`.
-4. **Groupe** - Les options liées sont regroupées dans un \`<fieldset>\` avec un \`<legend>\`.
+3. **Libellé** - \`<label class="form-check-label">\` \`<li>\`é via \`for\` / \`id\`.
+4. **Groupe** - Les options \`<li>\`ées sont regroupées dans un \`<fieldset>\` avec un \`<legend>\`.
 
 ### États
 | État | Description |
@@ -37,7 +37,7 @@ Le composant \`radio\` permet de proposer un choix exclusif au sein d'un groupe 
 ### Accessibilité
 - Toujours associer le libellé au contrôle avec \`for\` et \`id\`.
 - Les boutons radio d'un même groupe doivent partager la même valeur de \`name\`.
-- Grouper les boutons radio liés dans un \`<fieldset>\` avec un \`<legend>\` explicite.
+- Grouper les boutons radio \`<li>\`és dans un \`<fieldset>\` avec un \`<legend>\` explicite.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/forms/checks-radios/#radios" target="_blank" rel="noopener noreferrer" class="has-external-link">Radios</a>
 `,

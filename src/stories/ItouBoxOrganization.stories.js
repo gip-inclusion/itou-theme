@@ -7,28 +7,28 @@ export default {
     docs: {
       description: {
         component: `
-Cette story presente la variante metier \`.c-box--organization\` pour afficher les informations de contact d'une structure.
+Cette story présenté la variante metier \`.c-box--organization\` pour afficher les informations de contact d'une structure.
 
 ### Anatomie
-1. **Resume** - icone, type de structure, nom de l'organisation
-2. **Bloc details** - liste de contacts (adresse, email, telephone, site)
+1. **Résumé** - icône, type de structure, nom de l'organisation
+2. **Bloc details** - liste de contacts (adresse, email, téléphone, site)
 3. **Actions contextuelles** - boutons de copie + lien externe
-4. **Action finale** - bouton vers la fiche detaillee
+4. **Action finale** - bouton vers la fiche détaillée
 
 ### Classes CSS principales
 | Classe | Description |
 |--------|-------------|
 | \`.c-box\` | Structure de base de la box |
 | \`.c-box--organization\` | Variante visuelle fiche organisation |
-| \`.c-box--organization__summary\` | Entete / resume de la structure |
+| \`.c-box--organization__summary\` | Entete / résumé de la structure |
 | \`.c-box--organization__list-contact\` | Liste des informations de contact |
 | \`.c-box--organization__detail\` | Zone repliable de details |
 | \`.has-external-link\` | Marqueur visuel de lien externe |
 
-### Accessibilite
-- Fournir un libelle explicite pour chaque bouton d'action et de copie (\`aria-label\`).
-- Conserver \`aria-hidden="true"\` sur les icones purement decoratives.
-- Dans la version repliable, maintenir la coherence entre \`aria-expanded\` et l'etat du panneau.
+### Accessibilité
+- Fournir un libellé explicite pour chaque bouton d'action et de copie (\`aria-label\`).
+- Conserver \`aria-hidden="true"\` sur les icônes purement decoratives.
+- Dans la version repliable, maintenir la cohérence entre \`aria-expanded\` et l'etat du panneau.
 `,
       },
     },
@@ -73,7 +73,7 @@ const renderOrganization = ({ collapsible }) => {
         <li>
           <i class="ri-phone-line fw-normal me-2" aria-hidden="true"></i>
           05 39 55 97 24
-          <button class="btn-link fw-medium ms-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="05 39 55 97 24" aria-label="Copier le numero de telephone">
+          <button class="btn-link fw-medium ms-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="05 39 55 97 24" aria-label="Copier le numero de téléphone">
             <i class="ri-file-copy-line" aria-hidden="true"></i>
           </button>
         </li>
@@ -107,7 +107,7 @@ export const Default = {
     docs: {
       description: {
         story: `
-Version complete de fiche organisation. Passer \`Collapsible\` a \`true\` pour activer l'affichage repliable Bootstrap.
+Version complète de fiche organisation. Passer \`Collapsible\` à \`true\` pour activer l'affichage repliable Bootstrap.
 `,
       },
     },

@@ -35,7 +35,7 @@ Le composant \`.badge\` est utile pour le comptage, l'étiquetage et la mise en 
 | \`.bg-accent-01\` / \`.bg-accent-02\` / \`.bg-accent-03\` | Cas spéciaux |
 
 ### Accessibilité
-L'icone dans le badge doit posséder un \`aria-hidden=true\`
+L'icône dans le badge doit posséder un \`aria-hidden=true\`
 `,
       },
     },

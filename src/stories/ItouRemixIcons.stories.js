@@ -7,12 +7,12 @@ export default {
     docs: {
       description: {
         component: `
-Les icones <a href="https://remixicon.com" target="_blank" rel="noopener noreferrer" class="has-external-link">Remix Icons 4.7</a> sont incluses dans le theme Itou — aucun CDN externe n'est nécessaire.
+Les icônes <a href="https://remixicon.com" target="_blank" rel="noopener noreferrer" class="has-external-link">Remix Icons 4.7</a> sont incluses dans le thème Itou — aucun CDN externe n'est nécessaire.
 
-La classe de base s'utilise avec le préfixe <code>ri-</code> suivi du nom de l'icone. Les modificateurs de taille disponibles sont :
+La classe de base s'utilise avec le préfixe <code>ri-</code> suivi du nom de l'icône. Les modificateurs de taille disponibles sont :
 <code>ri-xs</code>, <code>ri-sm</code>, <code>ri-lg</code>, <code>ri-xl</code>, <code>ri-xxl</code>.
 
-Les suffixes <code>-line</code> (contour) et <code>-fill</code> (plein) permettent de choisir le style de l'icone.
+Les suffixes <code>-line</code> (contour) et <code>-fill</code> (plein) permettent de choisir le style de l'icône.
 `,
       },
     },

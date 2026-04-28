@@ -7,10 +7,10 @@ export default {
     docs: {
       description: {
         component: `
-La section \`.s-title-01\` structure un en-tete de titre principal de page, avec un sous-titre et un paragraphe introductif.
+La \`<section>\` \`.s-title-01\` structure un en-tête de titre principal de page, avec un sous-titre et un paragraphe introductif.
 
 ### Variations
-1. **Default** : version standard de la section.
+1. **Default** : version standard de la \`<section>\`.
 
 ### Anatomie
 1. **Section** - \`.s-title-01\`
@@ -19,9 +19,9 @@ La section \`.s-title-01\` structure un en-tete de titre principal de page, avec
 4. **Colonne contenu** - \`.s-title-01__col\`
 5. **Contenu editorial** - \`h1\`, \`h2\`, \`p\`
 
-### Accessibilite
-- Conserver une hierarchie de titres coherente dans la page (h1 puis h2).
-- Veiller a la clarte semantique du texte d'introduction.
+### Accessibilité
+- Conserver une hiérarchie de titres cohérente dans la page (\`<h1>\` puis \`<h2>\`).
+- Veiller a la clarté sémantique du texte d'introduction.
 - Garder un ordre de lecture lineaire sur tous les breakpoints.
 `,
       },

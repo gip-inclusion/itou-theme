@@ -93,7 +93,7 @@ function configureDatePickerInstance(pickerInstance) {
     nextMonthLabel: "Mois suivant",
     monthSelectLabel: "Mois",
     yearSelectLabel: "Annee",
-    closeLabel: "Fermer la fenetre",
+    closeLabel: "Fermer la fenêtre",
     calendarHeading: "Choisir une date",
     dayNames: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
     monthNames: [
@@ -146,9 +146,9 @@ export default {
     docs: {
       description: {
         component: `
-Integration de <a href="https://github.com/duetds/date-picker" target="_blank" rel="noopener noreferrer" class="has-external-link">Duet Date Picker 1.4.0</a> avec le theme Itou.
+Intégration de <a href="https://github.com/duetds/date-picker" target="_blank" rel="noopener noreferrer" class="has-external-link">Duet Date Picker 1.4.0</a> avec le thème Itou.
 
-Les styles Duet ne sont pas charges car le theme Itou couvre deja le rendu visuel.
+Les styles Duet ne sont pas charges car le thème Itou couvre déjà le rendu visuel.
 `,
       },
     },

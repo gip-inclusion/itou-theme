@@ -8,24 +8,24 @@ export default {
       description: {
         component: `
 Le composant \`.collapse\` permet d'afficher/masquer du contenu a la demande via Bootstrap.
-Le theme itou ajoute la classe utilitaire \`.has-collapse-caret\` pour afficher un chevron qui change d'etat selon \`aria-expanded\`.
+Le thème itou ajoute la classe utilitaire \`.has-collapse-caret\` pour afficher un chevron qui change d'etat selon \`aria-expanded\`.
 
 ### Anatomie
-1. **Declencheur** - \`<button>\` (recommande) ou \`<a role="button">\` avec \`data-bs-toggle="collapse"\`
+1. **Déclencheur** - \`<button>\` (recommandé) ou \`<a role="button">\` avec \`data-bs-toggle="collapse"\`
 2. **Cible** - Bloc \`<div class="collapse">\` associe via \`id\`
 3. **Etat** - \`aria-expanded\` et classes dynamiques appliquees par Bootstrap
 
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
-| \`.collapse\` | Contenu masque par defaut |
+| \`.collapse\` | Contenu masque par défaut |
 | \`.collapsing\` | Etat transitoire pendant l'animation |
 | \`.collapse.show\` | Contenu visible |
 | \`.has-collapse-caret\` | Chevron itou auto (ferme/ouvert) |
 
-### Accessibilite
-- Associer le declencheur et le panneau via \`aria-controls\` et \`id\`.
-- Laisser Bootstrap maintenir \`aria-expanded\` sur le declencheur.
+### Accessibilité
+- Associer le déclencheur et le panneau via \`aria-controls\` et \`id\`.
+- Laisser Bootstrap maintenir \`aria-expanded\` sur le déclencheur.
 - Sur un lien, ajouter \`role="button"\` pour expliciter l'intention.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/collapse/#how-it-works" target="_blank" rel="noopener noreferrer" class="has-external-link">Collapse</a>
@@ -37,7 +37,7 @@ Le theme itou ajoute la classe utilitaire \`.has-collapse-caret\` pour afficher 
     triggerType: {
       control: { type: "select" },
       options: ["button", "link"],
-      description: "Type de declencheur utilise pour ouvrir/fermer le panneau",
+      description: "Type de déclencheur utilise pour ouvrir/fermer le panneau",
     },
   },
 };
@@ -84,7 +84,7 @@ const render = ({
           aria-expanded="${defaultOpen}"
           aria-controls="${collapseId}"
         >
-          ${withCaret && caretPosition === "right" ? "Lien avec caret a droite" : withCaret ? "Link with has-collapse-caret" : "Link with href"}
+          ${withCaret && caretPosition === "right" ? "Lien avec caret à droite" : withCaret ? "Link with has-collapse-caret" : "Link with href"}
         </a>`;
 
   return `
@@ -175,7 +175,7 @@ export const WithCaretRight = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Variante itou avec `.d-flex.justify-content-between.has-collapse-caret` pour aligner le caret a droite.",
+        story: "Variante itou avec `.d-flex.justify-content-between.has-collapse-caret` pour aligner le caret à droite.",
       },
     },
   },
@@ -188,7 +188,7 @@ export const ShowMore = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Pattern `show more` : un extrait est visible par defaut, puis la version complete est affichee apres interaction.",
+        story: "Pattern `show more` : un extrait est visible par défaut, puis la version complète est affichee apres interaction.",
       },
     },
   },

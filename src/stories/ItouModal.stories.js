@@ -11,7 +11,7 @@ Le composant \`.modal\` affiche un dialogue superpose pour presenter un contenu 
 Il est base sur Bootstrap et gere automatiquement l'ouverture, la fermeture et l'isolation visuelle de l'arriere-plan.
 
 ### Anatomie
-1. **Declencheur** - Bouton/lien avec \`data-bs-toggle="modal"\` et \`data-bs-target\`
+1. **Déclencheur** - Bouton/lien avec \`data-bs-toggle="modal"\` et \`data-bs-target\`
 2. **Conteneur modal** - \`.modal\` avec \`aria-hidden\` et \`tabindex="-1"\`
 3. **Dialogue** - \`.modal-dialog\` (optionnellement \`.modal-dialog-centered\`)
 4. **Contenu** - \`.modal-content\` avec \`.modal-header\`, \`.modal-body\`, \`.modal-footer\`
@@ -27,10 +27,10 @@ Il est base sur Bootstrap et gere automatiquement l'ouverture, la fermeture et l
 | \`.modal-body\` | Contenu principal |
 | \`.modal-footer\` | Zone d'actions |
 
-### Accessibilite
-- Associer le titre au dialogue via \`aria-labelledby\`.
+### Accessibilité
+- Associer le titre au dialogue via \`aria-labeledby\`.
 - Conserver un bouton de fermeture explicite avec \`aria-label\`.
-- Utiliser des libelles d'actions explicites dans le footer.
+- Utiliser des libelles d'actions explicites dans le \`<footer>\`.
 - Eviter les contenus trop longs sans structure (titres, listes, paragraphes).
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/modal/" target="_blank" rel="noopener noreferrer" class="has-external-link">Modal</a>
@@ -49,7 +49,7 @@ const renderDefault = () => {
       Launch example .modal
     </button>
 
-    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labelledby="${titleId}" aria-hidden="true">
+    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labeledby="${titleId}" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <form action="">
           <div class="modal-content">
@@ -88,7 +88,7 @@ const renderMarketingModal = () => {
       Launch exemple .modal marketing
     </button>
 
-    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labelledby="${titleId}" aria-hidden="true">
+    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labeledby="${titleId}" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">

@@ -12,7 +12,7 @@ Le composant \`switch\` permet de représenter un état binaire activé / désac
 ### Anatomie
 1. **Conteneur** - \`.form-check.form-switch\` entoure le composant.
 2. **Contrôle** - \`<input class="form-check-input" type="checkbox" role="switch">\`.
-3. **Libellé** - \`<label class="form-check-label">\` lié via \`for\` / \`id\`.
+3. **Libellé** - \`<label class="form-check-label">\` \`<li>\`é via \`for\` / \`id\`.
 4. **État textuel** (optionnel) - Variante \`.has-state-label\` avec \`data-it-state-label-off\` et \`data-it-state-label-on\`.
 
 ### États

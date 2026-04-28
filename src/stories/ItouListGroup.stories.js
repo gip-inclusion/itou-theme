@@ -14,14 +14,14 @@ export default {
       description: {
         component: `
 Le composant \`.list-group\` est un composant flexible pour afficher une serie de contenus.
-Le theme itou ajoute des variantes supplementaires: \`.list-group-sm\`, \`.list-group-link\`, \`.list-group-collapse\` et \`.list-group-form\`.
+Le thème itou ajoute des variantes supplementaires: \`.list-group-sm\`, \`.list-group-link\`, \`.list-group-collapse\` et \`.list-group-form\`.
 
 ### Anatomie
 1. **Zone titre** (optionnelle) - Intitule principal de l'item
 2. **Badge principal** (optionnel) - Statut ou volume associe
 3. **Conteneur** - Element \`<li class="list-group-item">\` ou lien actionnable
 4. **Badges secondaires** (optionnels) - Meta-informations (contrat, duree, etc.)
-5. **Icone** (optionnelle) - Renforce la comprehension
+5. **Icone** (optionnelle) - Renforce la compréhension
 6. **Informations secondaires** (optionnelles) - Localisation, details contextuels
 
 ### Classes CSS
@@ -36,11 +36,11 @@ Le theme itou ajoute des variantes supplementaires: \`.list-group-sm\`, \`.list-
 | \`.list-group-collapse\` | Variante itou avec sous-contenu repliable |
 | \`.list-group-form\` | Variante itou pour un rendu proche des champs de formulaire |
 
-### Accessibilite
+### Accessibilité
 - Utiliser \`aria-current="true"\` sur l'item actif des listes de navigation.
 - Pour les liens desactives, ajouter \`.disabled\` et \`aria-disabled="true"\`.
 - En version collapse, relier le bouton et le panneau via \`aria-controls\` et \`id\`.
-- En version lien global, conserver un libelle de lien explicite (ou un \`aria-label\` si necessaire).
+- En version lien global, conserver un libellé de lien explicite (ou un \`aria-label\` si nécessaire).
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/list-group/#basic-example" target="_blank" rel="noopener noreferrer" class="has-external-link">List group</a>
 `,

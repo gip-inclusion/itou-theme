@@ -33,7 +33,7 @@ const renderArticleCols01 = () => `
           <p>Le facilitateur offre un appui pour mettre en oeuvre des clauses sociales dans la commande publique. Cette fonction est exercee par plus de 300 professionnels.</p>
           <p>
             <a href="#" target="_blank" rel="noopener" class="text-decoration-none">
-              <strong>Acceder a une documentation sur les facilitateurs</strong>
+              <strong>Accéder a une documentation sur les facilitateurs</strong>
               <i class="ri-arrow-right-up-line fw-bold" aria-hidden="true"></i>
             </a>
           </p>
@@ -84,10 +84,10 @@ export default {
     docs: {
       description: {
         component: `
-La section \`.s-articles-cols-01\` est utile a la mise en forme multicolonne d'articles au contenu different.
+La \`<section>\` \`.s-articles-cols-01\` est utile a la mise en forme multicolonne d'articles au contenu different.
 
 ### Variations
-1. **Default** : section multicolonne standard.
+1. **Default** : \`<section>\` multicolonne standard.
 
 ### Anatomie
 1. **Section** - \`.s-articles-cols-01\`
@@ -96,10 +96,10 @@ La section \`.s-articles-cols-01\` est utile a la mise en forme multicolonne d'a
 4. **Colonne titre** - \`.s-articles-cols-01__col--title\`
 5. **Colonne article** - \`.s-articles-cols-01__col--article\`
 
-### Accessibilite
-- Conserver une hierarchie de titres coherente selon le contexte de page.
+### Accessibilité
+- Conserver une hiérarchie de titres cohérente selon le contexte de page.
 - Fournir des libelles de liens explicites (eviter les liens generiques).
-- Marquer les icones decoratives avec \`aria-hidden="true"\`.
+- Marquer les icônes decoratives avec \`aria-hidden="true"\`.
 `,
       },
     },

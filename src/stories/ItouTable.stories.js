@@ -11,7 +11,7 @@ Le composant HTML \`<table>\` permet de representer des donnees tabulaires.
 
 ### Anatomie
 1. **Table** - Balise \`<table class="table">\` (base)
-2. **Caption** - Legende concise du tableau (recommandee en accessibilite)
+2. **Caption** - Légende concise du tableau (recommandée en accessibilité)
 3. **En-tete** - Colonnes dans \`<thead>\` avec \`scope="col"\`
 4. **Corps** - Lignes de donnees dans \`<tbody>\` avec \`scope="row"\` sur la premiere cellule
 
@@ -25,9 +25,9 @@ Le composant HTML \`<table>\` permet de representer des donnees tabulaires.
 | \`.table-bordered\` | Bordures sur le tableau et les cellules |
 | \`.table-sortable\` | Style du mode triable |
 
-### Accessibilite
+### Accessibilité
 - Ajouter un \`<caption>\` explicite pour decrire le contenu.
-- Utiliser \`scope\` sur les cellules d'en-tete.
+- Utiliser \`scope\` sur les cellules d'en-tête.
 - En mode triable, utiliser \`aria-sort\` et des boutons avec libelles explicites.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/content/tables/" target="_blank" rel="noopener noreferrer" class="has-external-link">Tables</a>
@@ -172,7 +172,7 @@ const renderTable = ({ compact, striped, hover, bordered, responsive, responsive
               <button class="btn btn-link btn-ico-only" type="button" id="dropdown_${index}_action_menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
                 <i class="ri-more-2-fill" aria-hidden="true"></i>
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdown_${index}_action_menu">
+              <div class="dropdown-menu" aria-labeledby="dropdown_${index}_action_menu">
                 <a href="" class="dropdown-item">
                   Valider son éligibilité IAE
                 </a>
@@ -203,7 +203,7 @@ export const Default = {
   parameters: {
     docs: {
       description: {
-        story: "Table de base parametree par args (compacte, zebra, hover, bordures, responsive, triable).",
+        story: "Table de base paramétrée par args (compacte, zebra, hover, bordures, responsive, triable).",
       },
     },
   },
@@ -269,7 +269,7 @@ export const Responsive = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Table avec conteneur responsive (scroll horizontal sur petits ecrans).",
+        story: "Table avec conteneur responsive (scroll horizontal sur petits écrans).",
       },
     },
   },

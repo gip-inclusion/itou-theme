@@ -12,8 +12,8 @@ Il repose sur le plugin JavaScript Bootstrap (Popper) pour la gestion du positio
 
 ### Anatomie
 1. **Conteneur** - Bloc parent \`.dropdown\`
-2. **Declencheur** - \`<button class="dropdown-toggle">\` avec \`data-bs-toggle="dropdown"\`
-3. **Menu** - \`.dropdown-menu\` associe au declencheur
+2. **Déclencheur** - \`<button class="dropdown-toggle">\` avec \`data-bs-toggle="dropdown"\`
+3. **Menu** - \`.dropdown-menu\` associe au déclencheur
 4. **Items** - \`.dropdown-item\` (liens, boutons, contenus custom)
 
 ### Classes CSS
@@ -23,14 +23,14 @@ Il repose sur le plugin JavaScript Bootstrap (Popper) pour la gestion du positio
 | \`.dropdown-toggle\` | Bouton de declenchement |
 | \`.dropdown-menu\` | Panneau du menu |
 | \`.dropdown-item\` | Entree actionnable |
-| \`.dropdown-header\` | Titre de section |
-| \`.dropdown-divider\` | Separateur visuel |
+| \`.dropdown-header\` | Titre de \`<section>\` |
+| \`.dropdown-divider\` | Séparateur visuel |
 | \`.dropdown-organization\` | Variante itou pour les listes de structures |
 
-### Accessibilite
-- Conserver \`aria-expanded\` sur le declencheur (mis a jour par Bootstrap).
-- Relier le bouton et le menu via \`aria-controls\` ou \`aria-labelledby\`.
-- Sur les icones decoratives, utiliser \`aria-hidden="true"\`.
+### Accessibilité
+- Conserver \`aria-expanded\` sur le déclencheur (mis a jour par Bootstrap).
+- Relier le bouton et le menu via \`aria-controls\` ou \`aria-labeledby\`.
+- Sur les icônes decoratives, utiliser \`aria-hidden="true"\`.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank" rel="noopener noreferrer" class="has-external-link">Dropdowns</a>
 `,
@@ -41,11 +41,11 @@ Il repose sur le plugin JavaScript Bootstrap (Popper) pour la gestion du positio
     triggerVariant: {
       control: { type: "select" },
       options: ["btn-primary", "btn-outline-primary", "btn-link"],
-      description: "Style visuel du bouton declencheur",
+      description: "Style visuel du bouton déclencheur",
     },
     triggerLabel: {
       control: "text",
-      description: "Libelle du bouton declencheur",
+      description: "Libelle du bouton déclencheur",
     },
   },
 };
@@ -58,7 +58,7 @@ const renderBasic = ({ triggerVariant, triggerLabel }) => {
       <button class="btn ${triggerVariant} dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         ${triggerLabel}
       </button>
-      <div class="dropdown-menu" aria-labelledby="${dropdownId}">
+      <div class="dropdown-menu" aria-labeledby="${dropdownId}">
         <a class="dropdown-item active" href="">Action active</a>
         <a class="dropdown-item" href="">Another action</a>
         <a class="dropdown-item" href="">Something else here</a>
@@ -152,7 +152,7 @@ const renderOrganizationTransfer = () => {
         <button class="btn btn-link btn-block dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Transferer cette candidature vers
         </button>
-        <div class="dropdown-menu" aria-labelledby="${dropdownId}">
+        <div class="dropdown-menu" aria-labeledby="${dropdownId}">
           <a class="dropdown-item dropdown-item__summary active" href="">
             <i class="ri-community-line" aria-hidden="true"></i>
             <span>ETTI</span>
@@ -191,13 +191,13 @@ const renderNexusDefault = () => {
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labelledby="${dropdownId}">
+        <div class="dropdown-menu w-100" aria-labeledby="${dropdownId}">
           <div class="dropdown-item dropdown-item__profil">
             <span>
               <strong>Antoine P.</strong><br>
               <span class="fs-sm lh-sm has-ellipsis d-inline-block w-100">antoine.poindron@inclusion.gouv.fr</span>
             </span>
-            <a href="" class="btn btn-block btn-outline-primary">Acceder a mon portail</a>
+            <a href="" class="btn btn-block btn-outline-primary">Accéder a mon portail</a>
           </div>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item dropdown-item__service active" href="">
@@ -250,15 +250,15 @@ const renderNexusNoProConnect = () => {
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labelledby="${dropdownId}">
+        <div class="dropdown-menu w-100" aria-labeledby="${dropdownId}">
           <div class="mx-4 mt-3 text-center">
             <img src="./images/logo-nexus.png" class="img-fluid" width="200" alt="Nexus">
           </div>
           <div class="mx-4 my-3 fs-sm lh-sm">
             <p class="fs-base mb-2"><strong>Decouvrez votre nouveau portail unifie.</strong></p>
-            <p>Accedez bientot a l'ensemble de votre offre et de vos informations.</p>
+            <p>Accedez bientôt a l'ensemble de votre offre et de vos informations.</p>
             <hr>
-            <p>Pour acceder a votre portail, vous devez avoir un compte ProConnect.</p>
+            <p>Pour accéder a votre portail, vous devez avoir un compte ProConnect.</p>
           </div>
           <div class="mx-4 mb-3 text-center">
             <a href="" class="proconnect-button">
@@ -281,15 +281,15 @@ const renderNexusNoAccount = () => {
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labelledby="${dropdownId}">
+        <div class="dropdown-menu w-100" aria-labeledby="${dropdownId}">
           <div class="mx-4 mt-3 text-center">
             <img src="./images/logo-nexus.png" class="img-fluid" width="200" alt="Nexus">
           </div>
           <div class="mx-4 my-3 fs-sm lh-sm">
             <p class="fs-base mb-2"><strong>Decouvrez votre nouveau portail unifie.</strong></p>
-            <p>Accedez bientot a l'ensemble de votre offre et de vos informations.</p>
+            <p>Accedez bientôt a l'ensemble de votre offre et de vos informations.</p>
             <hr>
-            <p>Pour acceder a votre portail, vous devez avoir un compte ProConnect.</p>
+            <p>Pour accéder a votre portail, vous devez avoir un compte ProConnect.</p>
           </div>
           <div class="mx-4 mb-3 text-center">
             <button class="btn btn-primary">S'inscrire aux Emplois de l'inclusion</button>
@@ -310,7 +310,7 @@ export const Default = {
   parameters: {
     docs: {
       description: {
-        story: "Exemple de base configurable avec menu d'actions, item actif et separateur.",
+        story: "Exemple de base configurable avec menu d'actions, item actif et séparateur.",
       },
     },
   },
@@ -323,7 +323,7 @@ export const WithHeaderAndDivider = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Variante avec sections de menu, titres (`.dropdown-header`) et separateur (`.dropdown-divider`).",
+        story: "Variante avec sections de menu, titres (`.dropdown-header`) et séparateur (`.dropdown-divider`).",
       },
     },
   },

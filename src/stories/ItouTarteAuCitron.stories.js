@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component: `
-Integration de <a href="https://tarteaucitron.io/fr/" target="_blank" rel="noopener noreferrer" class="has-external-link">Tarte au citron 1.29.0</a> avec le theme Itou.
+Intégration de <a href="https://tarteaucitron.io/fr/" target="_blank" rel="noopener noreferrer" class="has-external-link">Tarte au citron 1.29.0</a> avec le thème Itou.
 
 Pour l'utiliser, inclure le script via CDN :
 
@@ -15,7 +15,7 @@ Pour l'utiliser, inclure le script via CDN :
 
 Puis appeler <code>tarteaucitron.init({...})</code> avec la configuration souhaitée.
 
-Les styles Tarte au citron sont pris en charge par le theme Itou — passer <code>useExternalCss: true</code> pour ne pas charger le CSS par défaut de la librairie.
+Les styles Tarte au citron sont pris en charge par le thème Itou — passer <code>useExternalCss: true</code> pour ne pas charger le CSS par défaut de la librairie.
 `,
       },
     },

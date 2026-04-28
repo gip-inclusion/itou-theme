@@ -45,19 +45,19 @@ export default {
     docs: {
       description: {
         component: `
-La section .s-title-02 compose un en-tete de page a partir des composants:
-- Components/Title pour le bloc .c-title
+La \`<section>\` \`.s-title-02\` compose un en-tête de page à partir des composants:
+- Components/Title pour le bloc \`.c-title\`
 - Components/Navinfo pour la navigation contextuelle (optionnelle)
 
-### Regles d'integration
-1. Afficher Components/Navinfo ou, a minima, un bloc .c-prevstep.
-2. Inserer Components/Title avec .c-title__main obligatoire.
+### Règles d'intégration
+1. Afficher Components/Navinfo ou, à minima, un bloc \`.c-prevstep\`.
+2. Insérer Components/Title avec \`.c-title__main\` obligatoire.
 3. Ajouter ensuite des blocs contextuels selon le besoin: alert, tabs, c-box--action.
 
-### Accessibilite
-- Conserver une hierarchie de titres coherente (h1 puis h2, etc.).
+### Accessibilité
+- Conserver une hiérarchie de titres cohérente (\`<h1>\` puis \`<h2>\`, etc.).
 - Renseigner des aria-label explicites sur les actions et la navigation retour.
-- Marquer les icones decoratives avec aria-hidden="true".
+- Marquer les icônes decoratives avec aria-hidden="true".
 `,
       },
     },
@@ -205,7 +205,7 @@ const renderWithActionBox = () => {
           <button id="title02-transfer-to" class="btn btn-lg btn-link-white btn-block w-lg-auto dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
             Transferer vers
           </button>
-          <div class="dropdown-menu" aria-labelledby="title02-transfer-to">
+          <div class="dropdown-menu" aria-labeledby="title02-transfer-to">
             <a class="dropdown-item" href="#">
               <div>
                 <span class="badge badge-xs rounded-pill bg-primary">EI</span> <span>Tata auto</span>

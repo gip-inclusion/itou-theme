@@ -32,7 +32,7 @@ export default {
     docs: {
       description: {
         component: `
-La section \`.s-page-menu-01\` organise un titre de page et une grille de liens d'ancrage.
+La \`<section>\` \`.s-page-menu-01\` organise un titre de page et une grille de liens d'ancrage.
 
 ### Variations
 1. **Default** : version standard.
@@ -44,10 +44,10 @@ La section \`.s-page-menu-01\` organise un titre de page et une grille de liens 
 4. **Colonne grille** - \`.s-page-menu-01__col--grid\`
 5. **Liste de navigation** - \`ul > li > a\`
 
-### Accessibilite
-- Verifier que chaque lien pointe vers un identifiant de section existant.
+### Accessibilité
+- Verifier que chaque lien pointe vers un identifiant de \`<section>\` existant.
 - Garder des libelles de liens explicites et comprensibles hors contexte.
-- Marquer les icones decoratives avec \`aria-hidden="true"\`.
+- Marquer les icônes decoratives avec \`aria-hidden="true"\`.
 `,
       },
     },

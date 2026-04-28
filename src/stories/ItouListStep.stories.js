@@ -30,20 +30,20 @@ Le premier element de la liste (souvent le plus recent) est mis en avant par une
 
 ### Anatomie
 1. **Conteneur** - Liste \`<ul class="list-step">\`
-2. **Date/heure** - Balise semantique \`<time datetime="...">\`
-3. **Evenement** - Description de l'etape dans un \`<span>\`
+2. **Date/heure** - Balise sémantique \`<time datetime="...">\`
+3. **Événement** - Description de l'étape dans un \`<span>\`
 4. **Mise en avant** - Le premier \`<li>\` est visuellement prioritaire
 
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
 | \`.list-step\` | Liste chronologique |
-| \`.list-step > li\` | Etape individuelle avec bordure laterale |
-| \`.list-step > li:first-of-type\` | Etape la plus recente mise en avant |
+| \`.list-step > li\` | Étape individuelle avec bordure latérale |
+| \`.list-step > li:first-of-type\` | Étape la plus récente mise en avant |
 
-### Accessibilite
-- Renseigner systematiquement l'attribut \`datetime\` du \`<time>\`.
-- Conserver un texte d'evenement explicite et comprehensible hors contexte visuel.
+### Accessibilité
+- Renseigner systématiquement l'attribut \`datetime\` du \`<time>\`.
+- Conserver un texte d'événement explicite et compréhensible hors contexte visuel.
 - Respecter l'ordre chronologique affiche pour limiter l'ambiguite de lecture.
 `,
       },
@@ -79,7 +79,7 @@ export const Default = {
   parameters: {
     docs: {
       description: {
-        story: "Liste chronologique standard avec mise en avant du premier evenement.",
+        story: "Liste chronologique standard avec mise en avant du premier événement.",
       },
     },
   },

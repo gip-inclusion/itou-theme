@@ -9,10 +9,10 @@ export default {
         component: `
 Le composant \`.c-title\` structure la zone de titre principale d'une page.
 
-Il est concu pour etre utilise dans \`.s-title-02\`.
+Il est concu pour être utilise dans \`.s-title-02\`.
 
-### Contraintes du composant slippers
-1. \`.c-title__main\` est obligatoire et doit contenir un \`<h1>\` (eventuellement badge et paragraphe de contexte).
+### Contraintes du composant
+1. \`.c-title__main\` est obligatoire et doit contenir un \`<h1>\` (éventuellement badge et paragraphe de contexte).
 2. \`.c-title__cta\` est optionnel et devrait contenir 1 a 2 actions.
 3. \`.c-title__secondary\` est optionnel et devrait contenir des \`<h2>/<h3>\` et/ou paragraphes.
 
@@ -29,10 +29,10 @@ Il est concu pour etre utilise dans \`.s-title-02\`.
 | \`.c-title__cta\` | Zone d'actions (optionnelle) |
 | \`.c-title__secondary\` | Zone de contexte/intro (optionnelle) |
 
-### Accessibilite
-- Respecter la hierarchie des titres (\`h1\` puis \`h2\`/\`h3\`).
+### Accessibilité
+- Respecter la hiérarchie des titres (\`h1\` puis \`h2\`/\`h3\`).
 - Donner un \`aria-label\` explicite a \`.c-title__cta\` quand des actions sont presentes.
-- Marquer les icones decoratives avec \`aria-hidden="true"\`.
+- Marquer les icônes decoratives avec \`aria-hidden="true"\`.
 `,
       },
     },
@@ -154,7 +154,7 @@ export const Default = {
   parameters: {
     docs: {
       description: {
-        story: "Version parametrable du composant `c-title` (badge, paragraphe de contexte, CTA, contenu secondaire).",
+        story: "Version paramétrable du composant `c-title` (badge, paragraphe de contexte, CTA, contenu secondaire).",
       },
     },
   },

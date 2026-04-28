@@ -12,7 +12,7 @@ Le composant \`checkbox\` permet de proposer un choix binaire indépendant dans 
 ### Anatomie
 1. **Conteneur** - \`.form-check\` entoure l'option.
 2. **Contrôle** - \`<input class="form-check-input" type="checkbox">\`.
-3. **Libellé** - \`<label class="form-check-label">\` lié via \`for\` / \`id\`.
+3. **Libellé** - \`<label class="form-check-label">\` \`<li>\`é via \`for\` / \`id\`.
 4. **Texte d'aide** (optionnel) - \`<div class="form-text">\` après le libellé.
 
 ### États

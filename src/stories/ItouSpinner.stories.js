@@ -10,23 +10,23 @@ export default {
 Classe utilitaire permettant d'afficher un spinner de chargement.
 
 ### Anatomie
-1. **Spinner simple** — Utiliser le composant Bootstrap <code>.spinner-border</code> pour indiquer un chargement.
-2. **Spinner utilitaire** — Utiliser <code>.has-spinner-loading</code> pour masquer temporairement le contenu et afficher un overlay de chargement.
-3. **Cas bouton** — Sur les <code>.btn</code>, prévoir deux conteneurs <code>.stable-text</code> et <code>.loading-text</code>.
+1. **Spinner simple** — Utiliser le composant Bootstrap \`.spinner-border\` pour indiquer un chargement.
+2. **Spinner utilitaire** — Utiliser \`.has-spinner-loading\` pour masquer temporairement le contenu et afficher un overlay de chargement.
+3. **Cas bouton** — Sur les \`.btn\`, prévoir deux conteneurs \`.stable-text\` et \`.loading-text\`.
 
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
-| <code>.spinner-border</code> | Spinner Bootstrap circulaire |
-| <code>.spinner-border-sm</code> | Variante compacte du spinner |
-| <code>.text-tertiary</code> | Couleur du spinner |
-| <code>.has-spinner-loading</code> | Utilitaire itou pour état de chargement (overlay) |
-| <code>.stable-text</code> | Contenu visible hors chargement (cas bouton) |
-| <code>.loading-text</code> | Contenu visible pendant le chargement (cas bouton) |
+| \`.spinner-border\` | Spinner Bootstrap circulaire |
+| \`.spinner-border-sm\` | Variante compacte du spinner |
+| \`.text-tertiary\` | Couleur du spinner |
+| \`.has-spinner-loading\` | Utilitaire itou pour état de chargement (overlay) |
+| \`.stable-text\` | Contenu visible hors chargement (cas bouton) |
+| \`.loading-text\` | Contenu visible pendant le chargement (cas bouton) |
 
 ### Accessibilité
 - Ajouter un texte de statut lisible (ex: <code>role="status"</code>) pour annoncer le chargement.
-- Utiliser <code>.visually-hidden</code> si l'information de chargement n'est portée que visuellement.
+- Utiliser \`.visually-hidden\` si l'information de chargement n'est portée que visuellement.
 - Conserver un libellé actionnable clair sur les boutons désactivés pendant le chargement.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/spinners/#about" target="_blank" rel="noopener noreferrer" class="has-external-link">Spinners</a>

@@ -11,21 +11,21 @@ Documentation et exemples des utilitaires de type texte, basée sur Bootstrap 5.
 
 ### Anatomie
 1. **Utilitaire Bootstrap** — Appliquer une classe utilitaire pour l'alignement, la casse, le style ou le wrapping.
-2. **Contrainte de conteneur** — Certains utilitaires nécessitent une largeur contrainte (ex: <code>.text-break</code>, <code>.text-nowrap</code>).
-3. **Utilitaire custom itou** — Compléter avec les classes thème pour les besoins spécifiques (<code>.text-decoration-dashed</code> etc.).
+2. **Contrainte de conteneur** — Certains utilitaires nécessitent une largeur contrainte (ex: \`.text-break\`, \`.text-nowrap\`).
+3. **Utilitaire custom itou** — Compléter avec les classes thème pour les besoins spécifiques (\`.text-decoration-dashed\` etc.).
 4. **Accessibilité** — Conserver un contraste lisible et éviter la perte d'information en cas de troncature.
 
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
-| <code>.text-start</code>, <code>.text-center</code>, <code>.text-end</code> | Alignement du texte |
-| <code>.text-lowercase</code>, <code>.text-uppercase</code>, <code>.text-capitalize</code> | Transformation de casse |
-| <code>.text-wrap</code>, <code>.text-nowrap</code>, <code>.text-break</code> | Gestion des retours à la ligne |
-| <code>.fst-italic</code>, <code>.fst-normal</code> | Style italique/normal |
-| <code>.text-decoration-underline</code>, <code>.text-decoration-line-through</code> | Décoration du texte |
-| <code>.text-decoration-dashed</code> | Soulignement pointillé custom itou |
-| <code>.text-muted</code>, <code>.text-disabled</code> | États visuels du texte |
-| <code>.white-space-nowrap</code>, <code>.white-space-normal</code> | White-space custom itou |
+| \`.text-start\`, \`.text-center\`, \`.text-end\` | Alignement du texte |
+| \`.text-lowercase\`, \`.text-uppercase\`, \`.text-capitalize\` | Transformation de casse |
+| \`.text-wrap\`, \`.text-nowrap\`, \`.text-break\` | Gestion des retours à la ligne |
+| \`.fst-italic\`, \`.fst-normal\` | Style italique/normal |
+| \`.text-decoration-underline\`, \`.text-decoration-line-through\` | Décoration du texte |
+| \`.text-decoration-dashed\` | Soulignement pointillé custom itou |
+| \`.text-muted\`, \`.text-disabled\` | États visuels du texte |
+| \`.white-space-nowrap\`, \`.white-space-normal\` | White-space custom itou |
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/utilities/text/" target="_blank" rel="noopener noreferrer" class="has-external-link">Text utilities</a>
 `,

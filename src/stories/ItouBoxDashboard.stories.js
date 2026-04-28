@@ -19,7 +19,7 @@ export default {
   argTypes: {
     hasTitleBadge: {
       control: "boolean",
-      description: "Affiche un badge complementaire a droite du titre (optionnel).",
+      description: "Affiche un badge complémentaire à droite du titre (optionnel).",
     },
     hasMainLink: {
       control: "boolean",
@@ -31,7 +31,7 @@ export default {
     },
     hasBottomInfo: {
       control: "boolean",
-      description: "Affiche une information complementaire en bas de la box (optionnel).",
+      description: "Affiche une information complémentaire en bas de la box (optionnel).",
     },
   },
   parameters: {
@@ -42,13 +42,13 @@ export default {
 Le composant \`.c-box--dashboard\` en contexte dashboard permet d'afficher des blocs d'actions et de suivi.
 
 ### Anatomie
-1. **Entete** - titre du bloc, eventuellement badge/contextualisation
+1. **Entete** - titre du bloc, éventuellement badge/contextualisation
 2. **Corps** - liste d'actions principales et secondaires
-3. **Pied optionnel** - information complementaire ou lien externe
+3. **Pied optionnel** - information complémentaire ou lien externe
 
-### Accessibilite
+### Accessibilité
 - Garder des labels explicites sur les liens et boutons.
-- Marquer les icones decoratives avec \`aria-hidden="true"\`.
+- Marquer les icônes decoratives avec \`aria-hidden="true"\`.
 - Conserver des contrastes suffisants pour les badges de statut.
 `,
       },
@@ -77,7 +77,7 @@ const render = ({ hasBottomInfo, hasMainLink, hasTitleBadge, hasExtraBoxes }) =>
     ? `
       <hr class="mb-3">
       <div class="fs-sm mb-3 mb-lg-5">
-        France Travail - ARLES est une organisation habilitee. Vous pouvez realiser le
+        France Travail - ARLES est une organisation habilitee. Vous pouvez réaliser le
         <a href="https://aide.emplois.inclusion.beta.gouv.fr/hc/fr/articles/14733750518161--Diagnostic-socio-professionnel-de-r%C3%A9f%C3%A9rence" target="_blank" rel="noopener noreferrer" class="has-external-link" aria-label="Diagnostic socio-professionnel des candidats (ouverture dans un nouvel onglet)">diagnostic socio-professionnel</a>
         des candidats que vous accompagnez.
       </div>

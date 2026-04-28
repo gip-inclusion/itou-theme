@@ -95,7 +95,7 @@ const renderFigureBlock = ({ modifier = "" }) => `
           <p>Les emplois de l'inclusion est un service numerique de delivrance des PASS IAE et de mise en relation d'employeurs solidaires avec des candidats eloignes de l'emploi par le biais de tiers ou en autoprescription.</p>
           <p class="s-article-picture-01__col--article__cta">
             <a href="#" rel="noopener" target="_blank" class="btn btn-primary btn-ico">
-              <span>Acceder aux emplois</span>
+              <span>Accéder aux emplois</span>
               <i class="ri-arrow-right-line ri-lg" aria-hidden="true"></i>
             </a>
           </p>
@@ -115,11 +115,11 @@ export default {
     docs: {
       description: {
         component: `
-La section \`.s-article-picture-01\` met en forme un contenu editorial en deux colonnes, avec une zone media (\`.s-article-picture-01__col--picture\` ou \`.s-article-picture-01__col--figure\`) et une zone article.
+La \`<section>\` \`.s-article-picture-01\` met en forme un contenu editorial en deux colonnes, avec une zone media (\`.s-article-picture-01__col--picture\` ou \`.s-article-picture-01__col--figure\`) et une zone article.
 
 ### Variations
 1. **Default** : structure standard.
-2. **Modifieur** \`.s-article-picture-01--ltr\` : inverse l'ordre visuel des colonnes a partir du breakpoint \`lg\`.
+2. **Modifieur** \`.s-article-picture-01--ltr\` : inverse l'ordre visuel des colonnes à partir du breakpoint \`lg\`.
 
 ### Anatomie
 1. **Section** - \`.s-article-picture-01\`
@@ -129,10 +129,10 @@ La section \`.s-article-picture-01\` met en forme un contenu editorial en deux c
 5. **Colonne article** - \`.s-article-picture-01__col--article\`
 6. **CTA** - \`.s-article-picture-01__col--article__cta\`
 
-### Accessibilite
+### Accessibilité
 - Renseigner un texte alternatif pertinent pour les images informatives.
 - Conserver un ordre de titres coherent selon le niveau de page.
-- Marquer les icones decoratives avec \`aria-hidden="true"\`.
+- Marquer les icônes decoratives avec \`aria-hidden="true"\`.
 `,
       },
     },
@@ -151,7 +151,7 @@ export const Default = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Exemple par defaut.",
+        story: "Exemple par défaut.",
       },
     },
   },

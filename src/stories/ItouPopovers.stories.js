@@ -16,11 +16,11 @@ export default {
     docs: {
       description: {
         component: `
-Le composant \`.popover\` affiche un contenu d'information complementaire associe a un element declencheur.
+Le composant \`.popover\` affiche un contenu d'information complémentaire associe a un element déclencheur.
 Il repose sur Bootstrap et Popper pour le positionnement, et necessite une initialisation JavaScript explicite.
 
 ### Anatomie
-1. **Declencheur** - Bouton, lien ou wrapper focusable avec \`data-bs-toggle="popover"\`
+1. **Déclencheur** - Bouton, lien ou wrapper focusable avec \`data-bs-toggle="popover"\`
 2. **Titre** (optionnel) - Defini via \`data-bs-title\` ou \`title\`
 3. **Contenu** - Defini via \`data-bs-content\`
 4. **Bulle** - Element genere par Bootstrap avec \`.popover\`, \`.popover-header\` et \`.popover-body\`
@@ -32,11 +32,11 @@ Il repose sur Bootstrap et Popper pour le positionnement, et necessite une initi
 | \`.popover-header\` | Titre optionnel du popover |
 | \`.popover-body\` | Corps du popover |
 
-### Accessibilite
+### Accessibilité
 - Utiliser de preference des elements nativement interactifs (boutons, liens, controles de formulaire).
-- Ne pas s'appuyer uniquement sur le survol, afin de conserver un acces clavier.
-- Eviter les contenus trop longs ou interactifs dans le popover ; si necessaire, preferer une modale.
-- Pour un element desactive, placer le popover sur un wrapper focusable.
+- Ne pas s'appuyer uniquement sur le survol, afin de conserver un accès clavier.
+- Eviter les contenus trop longs ou interactifs dans le popover ; si nécessaire, preferer une modale.
+- Pour un element désactivé, placer le popover sur un wrapper focusable.
 - Ajouter \`data-bs-container="body"\` pour eviter les problemes de rendu dans des conteneurs complexes.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/popovers/#overview" target="_blank" rel="noopener noreferrer" class="has-external-link">Popovers</a>
@@ -55,7 +55,7 @@ const renderDefault = () => {
         data-bs-container="body"
         data-bs-toggle="popover"
         data-bs-placement="bottom"
-        data-bs-content="Ceci est un texte d'information complementaire affiche dans un popover."
+        data-bs-content="Ceci est un texte d'information complémentaire affiche dans un popover."
       >
         Click to toggle popover
       </button>
@@ -157,7 +157,7 @@ export const Directions = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Le popover peut etre positionne en haut, a droite, en bas ou a gauche via `data-bs-placement`.",
+        story: "Le popover peut être positionne en haut, à droite, en bas ou à gauche via `data-bs-placement`.",
       },
     },
   },
@@ -170,7 +170,7 @@ export const HoverTrigger = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Cas historique de l'ancienne documentation : ouverture au survol. La story utilise `hover focus` pour conserver un acces clavier minimal.",
+        story: "Cas historique de l'ancienne documentation : ouverture au survol. La story utilise `hover focus` pour conserver un accès clavier minimal.",
       },
     },
   },
@@ -183,7 +183,7 @@ export const DismissOnNextClick = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Pattern Bootstrap avec `data-bs-trigger=\"focus\"` pour fermer le popover au prochain clic hors du declencheur.",
+        story: "Pattern Bootstrap avec `data-bs-trigger=\"focus\"` pour fermer le popover au prochain clic hors du déclencheur.",
       },
     },
   },
@@ -196,7 +196,7 @@ export const DisabledElement = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Pour un element desactive, le popover doit etre porte par un wrapper focusable, et non par le bouton `disabled` lui-meme.",
+        story: "Pour un element désactivé, le popover doit être porte par un wrapper focusable, et non par le bouton `disabled` lui-meme.",
       },
     },
   },

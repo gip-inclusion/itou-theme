@@ -29,15 +29,15 @@ Classes utilitaires d'espacement de blocs.
 ### Tailles
 - <code>0</code> à <code>10</code> selon la map <code>$spacers</code>
 - <code>auto</code> pour certaines marges
-- marges négatives : préfixe <code>n</code> (ex: <code>.mt-n1</code>)
+- marges négatives : préfixe <code>n</code> (ex: \`.mt-n1\`)
 
 ### Exemples de notation
-- <code>.p-3</code> → padding sur 4 côtés
-- <code>.mt-4</code> → margin-top
-- <code>.mx-2</code> → margin start + end
-- <code>.py-lg-5</code> → padding vertical à partir de <code>lg</code>
-- <code>.ms-auto</code> → marge auto à gauche (start)
-- <code>.mt-n1</code> → marge négative top
+- \`.p-3\` → padding sur 4 côtés
+- \`.mt-4\` → margin-top
+- \`.mx-2\` → margin start + end
+- \`.py-lg-5\` → padding vertical à partir de <code>lg</code>
+- \`.ms-auto\` → marge auto à gauche (start)
+- \`.mt-n1\` → marge négative top
 
 ### Valeurs de la map <code>$spacers</code>
 - Base : <code>$spacer: 1rem</code> (soit 16px)

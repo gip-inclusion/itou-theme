@@ -79,7 +79,7 @@ const render = ({ size }) => {
     <button class="btn btn-link btn-ico-only" type="button" id="dropdown_3_action_menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
       <i class="ri-more-2-fill" aria-hidden="true"></i>
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdown_3_action_menu">
+    <div class="dropdown-menu" aria-labeledby="dropdown_3_action_menu">
       <a href="" class="dropdown-item">
         Valider son éligibilité IAE
       </a>

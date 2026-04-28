@@ -12,7 +12,7 @@ Le composant \`.c-stepper\` est utile pour afficher la progression dans un formu
 ### Anatomie
 1. **Conteneur** - Bloc principal \`.c-stepper\`
 2. **Barre de progression** - Composant Bootstrap \`.progress\` + \`.progress-bar\`
-3. **Texte d'etape** - Resume de l'etape courante
+3. **Texte d'étape** - Résumé de l'étape courante
 
 ### Classes CSS
 | Classe | Description |
@@ -21,9 +21,9 @@ Le composant \`.c-stepper\` est utile pour afficher la progression dans un formu
 | \`.progress\` | Barre de progression Bootstrap |
 | \`.progress-bar\` | Niveau de progression |
 
-### Accessibilite
+### Accessibilité
 Le \`role="progressbar"\` et les attributs \`aria-valuenow\`, \`aria-valuemin\`, \`aria-valuemax\` sont indispensables.
-Le texte de l'etape est relie a la barre via \`aria-labelledby\`.
+Le texte de l'étape est relié a la barre via \`aria-labeledby\`.
 `,
       },
     },
@@ -40,9 +40,9 @@ const render = ({ progressPercent }) => {
   return `
 <div class="c-stepper">
   <div class="progress progress--emploi">
-    <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${progressPercent}" aria-valuemin="0" aria-valuemax="100" aria-labelledby="informationsEntreprise"></div>
+    <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${progressPercent}" aria-valuemin="0" aria-valuemax="100" aria-labeledby="informationsEntreprise"></div>
   </div>
-  <p id="informationsEntreprise"><strong>Etape 1</strong>/3 : Informations entreprise</p>
+  <p id="informationsEntreprise"><strong>Étape 1</strong>/3 : Informations entreprise</p>
 </div>`;
 };
 
@@ -51,7 +51,7 @@ export const Default = {
   parameters: {
     docs: {
       description: {
-        story: "Version par defaut avec pourcentage libre configurable via l'arg `progressPercent`.",
+        story: "Version par défaut avec pourcentage libre configurable via l'arg `progressPercent`.",
       },
     },
   },

@@ -43,7 +43,7 @@ const renderHomeTitle01 = ({ modifier = "s-home-title-01--communaute", title, le
               <img src="./images/home-title-01-illu-card-02.png" class="img-fluid" alt="Illustration action 2">
             </div>
             <div class="ps-3">
-              <a href="#" class="btn-link stretched-link">Je veux realiser <br class="d-none d-md-inline">un diagnostic</a>
+              <a href="#" class="btn-link stretched-link">Je veux réaliser <br class="d-none d-md-inline">un diagnostic</a>
             </div>
           </div>
           <div class="s-home-title-01__btn p-3 py-md-4">
@@ -70,7 +70,7 @@ export default {
     docs: {
       description: {
         component: `
-La section \`.s-home-title-01\` est une section hero de homepage/landing page avec:
+La \`<section>\` \`.s-home-title-01\` est une \`<section>\` hero de homepage/landing page avec:
 - un titre editorial,
 - un moteur de recherche,
 - un groupe de raccourcis d'action.
@@ -90,7 +90,7 @@ Elle est themable pour les differents sites de la plateforme via des modifieurs 
 4. **Groupe d'actions** - \`.s-home-title-01__btn-group\`
 5. **Carte action** - \`.s-home-title-01__btn\`
 
-### Accessibilite
+### Accessibilité
 - Associer correctement le \`label\` au champ de recherche.
 - Fournir des alternatives textuelles pertinentes pour les illustrations.
 - Verifier le contraste du texte blanc sur chaque variation de couleur.
@@ -123,7 +123,7 @@ export const Emploi = {
   render: () => renderHomeTitle01({
     modifier: "s-home-title-01--emploi",
     title: "Trouvez un emploi inclusif pres de chez vous",
-    lead: "Explorez les offres et les parcours adaptes pour accelerer le retour a l'emploi.",
+    lead: "Explorez les offres et les parcours adaptés pour accelerer le retour a l'emploi.",
     placeholder: "Rechercher un emploi inclusif",
     searchLabel: "Rechercher un emploi inclusif",
   }),

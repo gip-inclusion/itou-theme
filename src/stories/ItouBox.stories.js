@@ -44,7 +44,7 @@ export default {
       description: {
         component: `
 Les composants \`.c-box\` sert a structurer et mettre en valeur du contenu.
-\`.c-box\` est un conteneur de lecture (resume, informations, bloc contextuel).
+\`.c-box\` est un conteneur de lecture (résumé, informations, bloc contextuel).
 
 `,
       },

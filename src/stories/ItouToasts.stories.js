@@ -59,11 +59,11 @@ Pour le positionnement et le staking des Toasts il faut placer les \`.toast\` da
 | \`.toast--danger\` | Variante erreur |
 | \`.toast--success\` | Variante succes |
 
-### Accessibilite
+### Accessibilité
 - Placer les toasts dans une region live existante en amont de l'affichage.
 - Utiliser \`role="status" aria-live="polite"\` pour les messages non critiques.
 - Utiliser \`role="alert" aria-live="assertive"\` pour les messages importants.
-- Si \`autohide\` est desactive, fournir un bouton de fermeture explicite.
+- Si \`autohide\` est désactivé, fournir un bouton de fermeture explicite.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank" rel="noopener noreferrer" class="has-external-link">Toasts</a>
 `,

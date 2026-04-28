@@ -162,7 +162,7 @@ export const WithIcon = {
     docs: {
       controls: { disable: true }, // masque aussi le bloc Controls (Docs)
       description: {
-        story: "Créez des boutons avec une icone et du texte en `.btn-ico` et en enrobant le texte dans un `<span>`. Les icônes sont généralement à la gauche du texte.",
+        story: "Créez des boutons avec une icône et du texte en `.btn-ico` et en enrobant le texte dans un `<span>`. Les icônes sont généralement à la gauche du texte.",
       },
     },
   },

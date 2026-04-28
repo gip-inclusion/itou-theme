@@ -11,8 +11,8 @@ Documentation des conteneurs, breakpoints, grilles.
 
 ### Anatomie
 1. **Container** — Le conteneur structure la largeur du contenu suivant les breakpoints.
-2. **Row / Col** — Le système de grille Flex repose sur <code>.row</code> et les classes <code>.col-*</code>.
-3. **CSS Grid** — Alternative via <code>.grid</code> et <code>.g-col-*</code>.
+2. **Row / Col** — Le système de grille Flex repose sur \`.row\` et les classes \`.col-*\`.
+3. **CSS Grid** — Alternative via \`.grid\` et \`.g-col-*\`.
 
 **Documentation Bootstrap** :
 - <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank" rel="noopener noreferrer" class="has-external-link">Breakpoints</a>

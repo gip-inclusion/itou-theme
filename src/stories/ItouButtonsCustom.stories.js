@@ -88,7 +88,7 @@ export const Partner = {
     docs: {
       controls: { disable: true }, // masque aussi le bloc Controls (Docs)
       description: {
-        story: 'Un bouton qui permet de copier du contenu en mémoire. A utiliser à la manière des "List data".  <br>le JS est pris en charge par le thème',
+        story: 'Un bouton qui permet de copier du contenu en mémoire. À utiliser à la manière des "List data". <br>Le JS est pris en charge par le thème.',
       },
     },
   },

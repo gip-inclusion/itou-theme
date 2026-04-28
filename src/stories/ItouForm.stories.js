@@ -16,23 +16,23 @@ Le composant \`.c-form\` structure un formulaire complet avec des styles descend
 
 ### Anatomie
 1. **Conteneur principal** - \`<div class="c-form">\`
-2. **Formulaire** - \`<form>\` et regroupement semantique via \`<fieldset>\` + \`<legend>\`
+2. **Formulaire** - \`<form>\` et regroupement sémantique via \`<fieldset>\` + \`<legend>\`
 3. **Groupes de champs** - \`.form-group\` avec \`.form-label\`, \`.form-control\` ou \`.form-select\`
 4. **Aides a la saisie** - \`.form-text\` liees via \`aria-describedby\`
-5. **Actions de fin** - boutons Reset/Submit alignes a droite
+5. **Actions de fin** - boutons Reset/Submit alignes à droite
 
 ### Classes CSS principales
 | Classe | Description |
 |--------|-------------|
 | \`.c-form\` | Conteneur thematique du formulaire |
 | \`.form-group\` | Bloc de champ (label + controle + aide) |
-| \`.form-group-input-w-lg-50\` | Limite la largeur de certains champs sur grand ecran |
+| \`.form-group-input-w-lg-50\` | Limite la largeur de certains champs sur grand écran |
 | \`.form-label\` | Libelle du champ |
 | \`.form-control\` | Inputs et textarea |
 | \`.form-select\` | Select natif |
 | \`.form-text\` | Texte d'aide |
 
-### Accessibilite
+### Accessibilité
 - Associer chaque \`label\` au controle via \`for\`/\`id\`.
 - Utiliser \`aria-describedby\` pour rattacher les textes d'aide.
 - Conserver \`fieldset\`/\`legend\` pour les groupes de champs.

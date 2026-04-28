@@ -72,7 +72,7 @@ export const Default = {
   parameters: {
     docs: {
       description: {
-        story: "L'infobulle peut être affichée sur un bouton, un lien ou une icône (sur une icone il faut rendre le texte du tooltip accessible avec un aria-labe et un tabindex).",
+        story: "L'infobulle peut être affichée sur un bouton, un lien ou une icône (sur une icône il faut rendre le texte du tooltip accessible avec un aria-label et un tabindex).",
       },
     },
   },
@@ -85,14 +85,14 @@ const renderDirections = () => {
     <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip en haut">
       Tooltip en haut
     </button>
-    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip a droite">
-      Tooltip a droite
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip à droite">
+      Tooltip à droite
     </button>
     <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip en bas">
       Tooltip en bas
     </button>
-    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip a gauche">
-      Tooltip a gauche
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip à gauche">
+      Tooltip à gauche
     </button>
   </div>
 `;

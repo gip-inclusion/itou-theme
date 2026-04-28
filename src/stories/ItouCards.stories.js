@@ -29,7 +29,7 @@ Il permet de combiner image, titre, sous-titre, texte, liens, listes et zones d'
 | \`.card-header\` | En-tete de carte |
 | \`.card-footer\` | Pied de carte |
 
-### Accessibilite
+### Accessibilité
 - Fournir un attribut \`alt\` pertinent pour les images informatives.
 - Ne pas porter une information uniquement par la couleur.
 - Conserver un ordre de lecture logique (titre puis contenu puis actions).
@@ -208,7 +208,7 @@ export const Default = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Version kitchen sink alignee sur la structure presente dans components.html (image, body, list-group, liens, footer).",
+        story: "Version kitchen sink alignee sur la structure présenté dans components.html (image, body, list-group, liens, footer).",
       },
     },
   },

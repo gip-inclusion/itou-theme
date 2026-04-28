@@ -125,7 +125,7 @@ const renderListData = ({
     ${websiteValue}
   </li>
   <li>
-    <small>Telephone</small>
+    <small>Téléphone</small>
     ${phoneValue}
   </li>
   <li>
@@ -167,7 +167,7 @@ const renderListDataGroup = () => `
       </button>
     </li>
     <li>
-      <small>Telephone</small>
+      <small>Téléphone</small>
       <i class="text-disabled">Non renseigne</i>
     </li>
     <li>
@@ -236,10 +236,10 @@ Il est adapte a la restitution d'informations de profil, de contact ou de suivi 
 | \`.has-forced-line-break\` | Ligne forcee sur toute la largeur pour les contenus longs |
 | \`.list-data-group\` | Regroupe plusieurs listes \`.list-data\` cote a cote (responsive) |
 
-### Accessibilite
+### Accessibilité
 - Utiliser des labels explicites et non ambigus dans les balises \`<small>\`.
-- Conserver un texte lisible pour les actions de copie (icone seule accompagnee d'un texte \`.visually-hidden\`).
-- Pour les liens externes, garder un libelle comprehensible hors contexte.
+- Conserver un texte lisible pour les actions de copie (icône seule accompagnee d'un texte \`.visually-hidden\`).
+- Pour les liens externes, garder un libellé compréhensible hors contexte.
 `,
       },
     },

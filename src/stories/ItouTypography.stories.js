@@ -10,22 +10,22 @@ export default {
 Documentation et exemples des classes utilitaires de typographie, basée sur Bootstrap 5.3 et les utilitaires custom du thème itou.
 
 ### Anatomie
-1. **Balise sémantique** — Utiliser en priorité les balises HTML (<code>h1…h6</code>, <code>p</code>, <code>blockquote</code>, <code>abbr</code>, <code>ul</code>, <code>dl</code>, etc.).
-2. **Classe typographique** — Appliquer ensuite les classes utilitaires (<code>.h1</code>, <code>.lead</code>, <code>.list-inline</code>, etc.).
-3. **Utilitaires custom itou** — En complément, utiliser les classes thème (<code>.fs-xs</code>, <code>.ff-extra-01</code>, <code>.text-decoration-dashed</code>, etc.).
+1. **Balise sémantique** — Utiliser en priorité les balises HTML (\`<h1>\`…\`<h6>\`, \`<p>\`, \`<blockquote>\`, \`<abbr>\`, \`<ul>\`, \`<dl>\`, etc.).
+2. **Classe typographique** — Appliquer ensuite les classes utilitaires (\`.h1\`, \`.lead\`, \`.list-inline\`, etc.).
+3. **Utilitaires custom itou** — En complément, utiliser les classes thème (\`.fs-xs\`, \`.ff-extra-01\`, \`.text-decoration-dashed\`, etc.).
 4. **Accessibilité** — Préserver la hiérarchie des titres, un contraste suffisant et des libellés explicites.
 
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
-| <code>.h1</code> à <code>.h6</code> | Style de titres appliqué sur un élément non-heading |
-| <code>.lead</code> | Paragraphe d'introduction |
-| <code>.fs-lg</code>, <code>.fs-base</code>, <code>.fs-sm</code>, <code>.fs-xs</code> | Tailles de police custom itou |
-| <code>.ff-base</code>, <code>.ff-extra-01</code> | Familles de polices du thème |
-| <code>.lh-lg</code>, <code>.lh-base</code>, <code>.lh-sm</code> | Interlignage custom itou |
-| <code>.list-unstyled</code> | Liste sans puces |
-| <code>.list-inline</code> + <code>.list-inline-item</code> | Liste en ligne |
-| <code>.blockquote</code> + <code>.blockquote-footer</code> | Citation standard |
+| \`.h1\` à \`.h6\` | Style de titres appliqué sur un élément non-heading |
+| \`.lead\` | Paragraphe d'introduction |
+| \`.fs-lg\`, \`.fs-base\`, \`.fs-sm\`, \`.fs-xs\` | Tailles de police custom itou |
+| \`.ff-base\`, \`.ff-extra-01\` | Familles de polices du thème |
+| \`.lh-lg\`, \`.lh-base\`, \`.lh-sm\` | Interlignage custom itou |
+| \`.list-unstyled\` | Liste sans puces |
+| \`.list-inline\` + \`.list-inline-item\` | Liste en ligne |
+| \`.blockquote\` + \`.blockquote-footer\` | Citation standard |
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/content/typography/" target="_blank" rel="noopener noreferrer" class="has-external-link">Typography</a>
 `,

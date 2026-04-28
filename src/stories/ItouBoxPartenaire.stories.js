@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component: `
-Cette story presente la variante metier \`.c-box--promo-partenaire\` pour mettre en avant un partenariat ou une campagne ponctuelle.
+Cette story présenté la variante metier \`.c-box--promo-partenaire\` pour mettre en avant un partenariat ou une campagne ponctuelle.
 
 ### Anatomie
 1. **Conteneur** - \`.c-box.c-box--promo-partenaire\`
@@ -22,9 +22,9 @@ Cette story presente la variante metier \`.c-box--promo-partenaire\` pour mettre
 | \`.c-box--promo-partenaire\` | Variante visuelle de promotion partenaire |
 | \`.has-external-link\` | Marqueur visuel de lien externe |
 
-### Accessibilite
-- Fournir un libelle explicite pour le bouton d'action (\`aria-label\`).
-- Conserver \`aria-hidden="true"\` sur les icones purement decoratives.
+### Accessibilité
+- Fournir un libellé explicite pour le bouton d'action (\`aria-label\`).
+- Conserver \`aria-hidden="true"\` sur les icônes purement decoratives.
 `,
       },
     },
@@ -36,8 +36,8 @@ const render = () => `
     <div class="row g-0">
       <div class="col-12 col-md pe-3 pe-md-4 py-3 py-md-4">
         <h3 class="text-tertiary">Un suivi clair pour vos beneficiaires</h3>
-        <p><strong>Equipez vos beneficiaires maintenant et simplifiez vos prochains entretiens</strong></p>
-        <p class="fs-sm mb-4">Mon Recap est un carnet papier qui aide vos beneficiaires a suivre leurs demarches, preparer leurs rendez-vous et gagner en autonomie dans leur parcours d'insertion.</p>
+        <p><strong>Équipez vos beneficiaires maintenant et simplifiez vos prochains entretiens</strong></p>
+        <p class="fs-sm mb-4">Mon Recap est un carnet papier qui aide vos beneficiaires a suivre leurs démarches, préparer leurs rendez-vous et gagner en autonomie dans leur parcours d'insertion.</p>
         <a href="#" rel="noopener noreferrer" target="_blank" class="btn btn-block w-100 w-md-auto btn-outline-primary has-external-link" aria-label="Commander des carnets (ouverture dans un nouvel onglet)">
           Commander des carnets
         </a>

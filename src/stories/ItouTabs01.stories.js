@@ -79,22 +79,22 @@ const renderTabs01 = () => {
           </li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane fade show active" id="home-${token}" role="tabpanel" aria-labelledby="home-tab-${token}">
+          <div class="tab-pane fade show active" id="home-${token}" role="tabpanel" aria-labeledby="home-tab-${token}">
             <p>home-tab content ...</p>
           </div>
-          <div class="tab-pane fade" id="profile-${token}" role="tabpanel" aria-labelledby="profile-tab-${token}">
+          <div class="tab-pane fade" id="profile-${token}" role="tabpanel" aria-labeledby="profile-tab-${token}">
             <p>profile-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="contact-${token}" role="tabpanel" aria-labelledby="contact-tab-${token}">
+          <div class="tab-pane fade" id="contact-${token}" role="tabpanel" aria-labeledby="contact-tab-${token}">
             <p>contact-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-01-${token}" role="tabpanel" aria-labelledby="exemple-01-tab-${token}">
+          <div class="tab-pane fade" id="exemple-01-${token}" role="tabpanel" aria-labeledby="exemple-01-tab-${token}">
             <p>exemple-01-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-02-${token}" role="tabpanel" aria-labelledby="exemple-02-tab-${token}">
+          <div class="tab-pane fade" id="exemple-02-${token}" role="tabpanel" aria-labeledby="exemple-02-tab-${token}">
             <p>exemple-02-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-03-${token}" role="tabpanel" aria-labelledby="exemple-03-tab-${token}">
+          <div class="tab-pane fade" id="exemple-03-${token}" role="tabpanel" aria-labeledby="exemple-03-tab-${token}">
             <p>exemple-03-tab content...</p>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default {
     docs: {
       description: {
         component: `
-La section \`.s-tabs-01\` structure une navigation par onglets et le contenu associe dans des panneaux \`.tab-pane\`.
+La \`<section>\` \`.s-tabs-01\` structure une navigation par onglets et le contenu associe dans des panneaux \`.tab-pane\`.
 
 ### Comportement responsive (sliding tabs)
 Quand la largeur disponible ne permet plus d'afficher tous les onglets sur une ligne, la navigation bascule en mode slider horizontal grace a **tiny-slider.js**.
@@ -137,7 +137,7 @@ Ce comportement est active sur la liste d'onglets via l'attribut \`data-it-slidi
 L'initialisation reprend la configuration de la maquette HTML (\`autoWidth\`, \`slideBy: "page"\`, \`controls: true\`, etc.) pour conserver la meme experience mobile/tablette.
 
 ### Variations
-1. **Default** : version standard avec onglets, badge et icone.
+1. **Default** : version standard avec onglets, badge et icône.
 
 ### Anatomie
 1. **Section** - \`.s-tabs-01\`
@@ -146,10 +146,10 @@ L'initialisation reprend la configuration de la maquette HTML (\`autoWidth\`, \`
 4. **Elements d'onglets** - \`.nav-item > .nav-link\`
 5. **Contenus** - \`.tab-content > .tab-pane\`
 
-### Accessibilite
-- Associer chaque onglet a son panneau via \`aria-controls\` et \`aria-labelledby\`.
+### Accessibilité
+- Associer chaque onglet a son panneau via \`aria-controls\` et \`aria-labeledby\`.
 - Conserver \`role="tablist"\`, \`role="tab"\` et \`role="tabpanel"\`.
-- Marquer les icones decoratives avec \`aria-hidden="true"\`.
+- Marquer les icônes decoratives avec \`aria-hidden="true"\`.
 `,
       },
     },

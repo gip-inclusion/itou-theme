@@ -143,7 +143,7 @@ Les éléments \`<input>\`, \`<textarea>\` et \`<select>\` permettent de créer 
 - Ne pas utiliser de \`placeholder\` , privilégier le texte d'aide.
 - Pour un champ obligatoire, ajouter \`required\` sur le contrôle ET \`aria-required="true"\` si le contexte le nécessite.
 - Utiliser \`aria-describedby\` pour lier les textes d'aide au contrôle.
-- Préférer \`<fieldset>\` + \`<legend>\` pour regrouper des champs liés.
+- Préférer \`<fieldset>\` + \`<legend>\` pour regrouper des champs \`<li>\`és.
 
 **Documentation Bootstrap** :
 - <a href="https://getbootstrap.com/docs/5.3/forms/form-control/" target="_blank" rel="noopener noreferrer" class="has-external-link">Form Control</a>

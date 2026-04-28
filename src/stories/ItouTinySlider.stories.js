@@ -73,15 +73,15 @@ export default {
     docs: {
       description: {
         component: `
-Integration de <a href="https://github.com/ganlanyuan/tiny-slider" target="_blank" rel="noopener noreferrer" class="has-external-link">Tiny Slider 2.9.4</a> avec le theme Itou.
+Intégration de <a href="https://github.com/ganlanyuan/tiny-slider" target="_blank" rel="noopener noreferrer" class="has-external-link">Tiny Slider 2.9.4</a> avec le thème Itou.
 
 Pour l'utiliser, inclure le script via CDN :
 
 <pre><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script></pre>
 
-Puis instancier <code>tns({ container: '.mon-slider', ... })</code>.
+Puis instancier <code>tns({ container: '\`.mon-slider\`', ... })</code>.
 
-Les styles Tiny Slider sont pris en charge par le theme Itou.
+Les styles Tiny Slider sont pris en charge par le thème Itou.
 `,
       },
     },

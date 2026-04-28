@@ -79,15 +79,15 @@ export default {
     docs: {
       description: {
         component: `
-Integration de <a href="https://introjs.com/docs" target="_blank" rel="noopener noreferrer" class="has-external-link">Intro.js 8.3.2</a> avec le theme Itou.
+Intégration de <a href="https://introjs.com/docs" target="_blank" rel="noopener noreferrer" class="has-external-link">Intro.js 8.3.2</a> avec le thème Itou.
 
 Pour l'utiliser, il suffit d'inclure le script via CDN :
 
 <pre><script src="https://cdn.jsdelivr.net/npm/intro.js@8.3.2/intro.min.js"></script></pre>
 
-Puis d'instancier <code>introJs().setOptions({...}).start()</code>.
+Puis d'instancier <code>introJs()\`.setOptions\`({...})\`.start\`()</code>.
 
-Les styles Intro.js sont pris en charge par le theme Itou.
+Les styles Intro.js sont pris en charge par le thème Itou.
 `,
       },
     },

@@ -89,10 +89,10 @@ export default {
 Le composant Input Group permet d'ajouter des actions ou des informations contextuelles autour d'un champ de saisie.
 
 ### Anatomie
-1. Conteneur principal : .input-group
+1. Conteneur principal : \`.input-group\`
 2. Champ : input.form-control ou select.form-select
-3. Addon : .input-group-text (texte, symbole, bouton)
-4. Variante : tailles .input-group-sm, .input-group-lg, .input-group-xl
+3. Addon : \`.input-group-text\` (texte, symbole, bouton)
+4. Variante : tailles \`.input-group-sm\`, \`.input-group-lg\`, \`.input-group-xl\`
 
 ### Cas d'usage
 - Préfixe/suffixe textuel (ex: @, URL, devise)
@@ -102,13 +102,13 @@ Le composant Input Group permet d'ajouter des actions ou des informations contex
 ### Classes CSS
 | Classe | Description |
 |--------|-------------|
-| .input-group | Conteneur principal |
-| .input-group-text | Addon texte/bouton |
-| .input-group-sm/lg/xl | Tailles disponibles |
-| .input-group-search | Variante de recherche du thème |
+| \`.input-group\` | Conteneur principal |
+| \`.input-group-text\` | Addon texte/bouton |
+| \`.input-group-sm\`/lg/xl | Tailles disponibles |
+| \`.input-group-search\` | Variante de recherche du thème |
 
 ### Accessibilité
-- Garder les labels hors du .input-group.
+- Garder les labels hors du \`.input-group\`.
 - Les boutons icône seule doivent inclure un texte lisible ou un aria-label.
 - Les icônes décoratives doivent utiliser aria-hidden="true".
 

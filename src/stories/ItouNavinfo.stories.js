@@ -12,7 +12,7 @@ export default {
 Le composant \`.c-navinfo\` permet de revenir en arrière dans l'historique de navigation, da naviguer entre les fiches candidats.
 Il permet accessoirement d'ajouter une information complémentaire (date, auteur, etc)
 
-Il ne peut se situer que dans la section titre \`.s-title-02\` d'un template
+Il ne peut se situer que dans la \`<section>\` titre \`.s-title-02\` d'un template
 
 ### Anatomie
 1. **Lien "< Retour" ** — Information principale

@@ -12,7 +12,7 @@ Les icônes "utilitaires" sont issues de la bibliothèque <a href="http://remixi
 Elles sont à utiliser généralement en 16px (par défaut) et en 18px dans les boutons avec la classe \`.ri-lg\`.
 
 ### Anatomie
-1. **Élément** - Balise \`<i>\` avec classe \`.ri-{nom-icone}\`
+1. **Élément** - Balise \`<i>\` avec classe \`.ri-{nom-icône}\`
 2. **Poids** - Contrôlé par \`.fw-normal\`, \`.fw-medium\`, \`.fw-bold\` sur le parent ou l'icône
 3. **Taille** - Contrôlée par les classes \`.ri-xs\`, \`.ri-sm\`, \`.ri-lg\`, \`.ri-xl\`, \`.ri-xxl\`, \`.ri-2x\`
 4. **Animation** (optionnel) - Classe \`.ri-spinner\` pour les icônes de rotation
@@ -20,8 +20,8 @@ Elles sont à utiliser généralement en 16px (par défaut) et en 18px dans les 
 ### Classes de taille
 | Classe | Taille | Équivalent |
 |--------|--------|-----------|
-| \`.ri-xs\` | 12px | extra-small |
-| \`.ri-sm\` | 14px | small |
+| \`.ri-xs\` | 12px | extra-\`<small>\` |
+| \`.ri-sm\` | 14px | \`<small>\` |
 | (aucune) | 16px | default |
 | \`.ri-lg\` | 18px | large |
 | \`.ri-xl\` | 20px | extra-large |

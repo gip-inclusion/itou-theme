@@ -29,11 +29,11 @@ export default {
     docs: {
       description: {
         component: `
-La section \`.s-article-figure-01\` met en page un bloc editorial compose d'une illustration et d'un article associe.
+La \`<section>\` \`.s-article-figure-01\` met en page un bloc editorial compose d'une illustration et d'un article associe.
 
 ### Variations
-1. **Par defaut** : image a gauche, texte a droite.
-2. **Modifieur** \`.s-article-figure-01--ltr\` : inverse visuellement les colonnes a partir du breakpoint \`md\`.
+1. **Par défaut** : image à gauche, texte à droite.
+2. **Modifieur** \`.s-article-figure-01--ltr\` : inverse visuellement les colonnes à partir du breakpoint \`md\`.
 
 ### Anatomie
 1. **Section** - \`.s-article-figure-01\`
@@ -41,9 +41,9 @@ La section \`.s-article-figure-01\` met en page un bloc editorial compose d'une 
 3. **Figure** - \`.s-article-figure-01__col--figure\`
 4. **Article** - \`.s-article-figure-01__col--article\`
 
-### Accessibilite
+### Accessibilité
 - Ajouter un texte alternatif pertinent si l'image est informative.
-- Conserver une hierarchie de titres coherente selon le contexte de page.
+- Conserver une hiérarchie de titres cohérente selon le contexte de page.
 - Verifier l'ordre de lecture et la navigation clavier sur mobile et desktop.
 `,
       },
@@ -58,7 +58,7 @@ export const Default = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Version par defaut sans CTA, conforme a la structure de base de la section.",
+        story: "Version par défaut sans CTA, conforme à la structure de base de la section.",
       },
     },
   },
