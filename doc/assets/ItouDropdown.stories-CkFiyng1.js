@@ -1,9 +1,9 @@
-const v={title:"Components/Dropdown",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:'\nLe composant `.dropdown` permet d\'afficher un menu contextuel declenche par un bouton.\nIl repose sur le plugin JavaScript Bootstrap (Popper) pour la gestion du positionnement et de l\'ouverture/fermeture.\n\n### Anatomie\n1. **Conteneur** - Bloc parent `.dropdown`\n2. **Déclencheur** - `<button class="dropdown-toggle">` avec `data-bs-toggle="dropdown"`\n3. **Menu** - `.dropdown-menu` associe au déclencheur\n4. **Items** - `.dropdown-item` (liens, boutons, contenus custom)\n\n### Classes CSS\n| Classe | Description |\n|--------|-------------|\n| `.dropdown` | Conteneur principal |\n| `.dropdown-toggle` | Bouton de declenchement |\n| `.dropdown-menu` | Panneau du menu |\n| `.dropdown-item` | Entree actionnable |\n| `.dropdown-header` | Titre de `<section>` |\n| `.dropdown-divider` | Séparateur visuel |\n| `.dropdown-organization` | Variante itou pour les listes de structures |\n\n### Accessibilité\n- Conserver `aria-expanded` sur le déclencheur (mis a jour par Bootstrap).\n- Relier le bouton et le menu via `aria-controls` ou `aria-labeledby`.\n- Sur les icônes decoratives, utiliser `aria-hidden="true"`.\n\n**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank" rel="noopener noreferrer" class="has-external-link">Dropdowns</a>\n'}}},argTypes:{triggerVariant:{control:{type:"select"},options:["btn-primary","btn-outline-primary","btn-link"],description:"Style visuel du bouton déclencheur"},triggerLabel:{control:"text",description:"Libelle du bouton déclencheur"}}},c=({triggerVariant:e,triggerLabel:l})=>{const d=`dropdown-${Math.random().toString(36).slice(2,10)}`;return`
+const v={title:"Components/Dropdown",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:'\nLe composant `.dropdown` permet d\'afficher un menu contextuel declenche par un bouton.\nIl repose sur le plugin JavaScript Bootstrap (Popper) pour la gestion du positionnement et de l\'ouverture/fermeture.\n\n### Anatomie\n1. **Conteneur** - Bloc parent `.dropdown`\n2. **Déclencheur** - `<button class="dropdown-toggle">` avec `data-bs-toggle="dropdown"`\n3. **Menu** - `.dropdown-menu` associe au déclencheur\n4. **Items** - `.dropdown-item` (liens, boutons, contenus custom)\n\n### Classes CSS\n| Classe | Description |\n|--------|-------------|\n| `.dropdown` | Conteneur principal |\n| `.dropdown-toggle` | Bouton de declenchement |\n| `.dropdown-menu` | Panneau du menu |\n| `.dropdown-item` | Entree actionnable |\n| `.dropdown-header` | Titre de `<section>` |\n| `.dropdown-divider` | Séparateur visuel |\n| `.dropdown-organization` | Variante itou pour les listes de structures |\n\n### Accessibilité\n- Conserver `aria-expanded` sur le déclencheur (mis a jour par Bootstrap).\n- Relier le bouton et le menu via `aria-controls` ou `aria-labelledby`.\n- Sur les icônes decoratives, utiliser `aria-hidden="true"`.\n\n**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank" rel="noopener noreferrer" class="has-external-link">Dropdowns</a>\n'}}},argTypes:{triggerVariant:{control:{type:"select"},options:["btn-primary","btn-outline-primary","btn-link"],description:"Style visuel du bouton déclencheur"},triggerLabel:{control:"text",description:"Libelle du bouton déclencheur"}}},c=({triggerVariant:e,triggerLabel:l})=>{const d=`dropdown-${Math.random().toString(36).slice(2,10)}`;return`
     <div class="dropdown" style="min-height: 220px;">
       <button class="btn ${e} dropdown-toggle" type="button" id="${d}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         ${l}
       </button>
-      <div class="dropdown-menu" aria-labeledby="${d}">
+      <div class="dropdown-menu" aria-labelledby="${d}">
         <a class="dropdown-item active" href="">Action active</a>
         <a class="dropdown-item" href="">Another action</a>
         <a class="dropdown-item" href="">Something else here</a>
@@ -79,7 +79,7 @@ const v={title:"Components/Dropdown",decorators:[e=>`<div style="max-width: 1000
         <button class="btn btn-link btn-block dropdown-toggle" type="button" id="${e}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Transferer cette candidature vers
         </button>
-        <div class="dropdown-menu" aria-labeledby="${e}">
+        <div class="dropdown-menu" aria-labelledby="${e}">
           <a class="dropdown-item dropdown-item__summary active" href="">
             <i class="ri-community-line" aria-hidden="true"></i>
             <span>ETTI</span>
@@ -112,7 +112,7 @@ const v={title:"Components/Dropdown",decorators:[e=>`<div style="max-width: 1000
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${e}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labeledby="${e}">
+        <div class="dropdown-menu w-100" aria-labelledby="${e}">
           <div class="dropdown-item dropdown-item__profil">
             <span>
               <strong>Antoine P.</strong><br>
@@ -165,7 +165,7 @@ const v={title:"Components/Dropdown",decorators:[e=>`<div style="max-width: 1000
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${e}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labeledby="${e}">
+        <div class="dropdown-menu w-100" aria-labelledby="${e}">
           <div class="mx-4 mt-3 text-center">
             <img src="./images/logo-nexus.png" class="img-fluid" width="200" alt="Nexus">
           </div>
@@ -190,7 +190,7 @@ const v={title:"Components/Dropdown",decorators:[e=>`<div style="max-width: 1000
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${e}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labeledby="${e}">
+        <div class="dropdown-menu w-100" aria-labelledby="${e}">
           <div class="mx-4 mt-3 text-center">
             <img src="./images/logo-nexus.png" class="img-fluid" width="200" alt="Nexus">
           </div>

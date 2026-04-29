@@ -124,7 +124,7 @@ La \`<section>\` \`.s-title-02\` compose un en-tête de page à partir des compo
           <button id="title02-transfer-to" class="btn btn-lg btn-link-white btn-block w-lg-auto dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
             Transferer vers
           </button>
-          <div class="dropdown-menu" aria-labeledby="title02-transfer-to">
+          <div class="dropdown-menu" aria-labelledby="title02-transfer-to">
             <a class="dropdown-item" href="#">
               <div>
                 <span class="badge badge-xs rounded-pill bg-primary">EI</span> <span>Tata auto</span>

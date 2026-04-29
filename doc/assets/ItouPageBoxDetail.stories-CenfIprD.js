@@ -1,4 +1,4 @@
-function l(){const t=document.querySelector("#commentaires-btn"),i=document.querySelector("#commentaires-tab");t.addEventListener("click",function(){bootstrap.Tab.getOrCreateInstance(i).show()})}const d={title:"Templates/Page Detail",decorators:[t=>{const i=`<div style="max-width: 1600px; margin: 0 auto;">${t()}</div>`;return setTimeout(()=>{l()},0),i}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nDifférents exemples de \"Fiche Détail\" reprenant les règles UX/UI de mise en forme.\n\n### Règles d'intégration\n- Pour chaque \"sous-page\" en onglet, ajouter un titre en `<h2>` afin de répéter le libellé d'onglet et de laisser de l'espace à droite pour un cta d'action principale.\n- Pour chaque page sans onglet, conserver un titre en `<h2>` mais le masquer avec `.visually-hidden` afin de maintenir une hiérarchie de titre cohérente.\n- Dans chaque `.c-box`, ajouter systématiquement un titre en `<h3>`.\n- Privilégier la séparation des contenus en plusieurs `.c-box`.\n- N'utiliser un séparateur `<hr>` de séparation de contenu uniquement quand la séparation par `.c-box` n'est pas possible ou pas pertinente.\n- Dans une `.c-box`, pour une action principale, placer un lien `.btn-outline-primary` à droite du titre `<h3>`.\n- Dans une `.c-box`, pour une action complémentaire, utiliser `.btn-link` pour un lien simple et `.btn-secondary` pour une action de type bouton.\n- Utiliser `.c-info` pour une information toujours visible.\n- Utiliser `.alert` pour une information conditionnelle (type d'utilisateur, étape en cours, nouvelle règle de gestion).\n"}}}},n=()=>`
+function l(){const e=document.querySelector("#commentaires-btn"),s=document.querySelector("#commentaires-tab");!e||!s||e.dataset.ongletsInit!=="true"&&(e.dataset.ongletsInit="true",window.bootstrap?.Tab&&e.addEventListener("click",function(){bootstrap.Tab.getOrCreateInstance(s).show()}))}const d={title:"Pages/Box Detail",decorators:[e=>{const s=`<div style="max-width: 1600px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{l()},0),s}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nDifférents exemples de \"Fiche Détail\" reprenant les règles UX/UI de mise en forme.\n\n### Règles d'intégration\n- Pour chaque \"sous-page\" en onglet, ajouter un titre en `<h2>` afin de répéter le libellé d'onglet et de laisser de l'espace à droite pour un cta d'action principale.\n- Pour chaque page sans onglet, conserver un titre en `<h2>` mais le masquer avec `.visually-hidden` afin de maintenir une hiérarchie de titre cohérente.\n- Dans chaque `.c-box`, ajouter systématiquement un titre en `<h3>`.\n- Privilégier la séparation des contenus en plusieurs `.c-box`.\n- N'utiliser un séparateur `<hr>` de séparation de contenu uniquement quand la séparation par `.c-box` n'est pas possible ou pas pertinente.\n- Dans une `.c-box`, pour une action principale, placer un lien `.btn-outline-primary` à droite du titre `<h3>`.\n- Dans une `.c-box`, pour une action complémentaire, utiliser `.btn-link` pour un lien simple et `.btn-secondary` pour une action de type bouton.\n- Utiliser `.c-info` pour une information toujours visible.\n- Utiliser `.alert` pour une information conditionnelle (type d'utilisateur, étape en cours, nouvelle règle de gestion).\n"}}}},n=()=>`
 <main class="s-main" role="main">
   <section class="s-title-02">
     <div class="s-title-02__container container">
@@ -15,7 +15,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
           </div>
           <div class="c-title">
             <div class="c-title__main">
-              <h1>Salarié&nbsp;: DALLEAU Demba</h1>
+              <h1>Titre de la page en h1</h1>
               <p id="copy_public_id">
                 Copier l'ID du candidat
                 <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_public_id" data-it-clipboard-button="copy" data-it-copy-to-clipboard="710f2736-501f-4eef-967c-e43096d834fc" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
@@ -33,16 +33,16 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
     <div class="s-section__container container">
       <div class="s-section__row row">
         <div class="s-section__col col-12 col-xxl-8 col-xxxl-9 order-3 order-xxl-2">
-          <h2 class="visually-hidden">Informations générales du Salarié&nbsp;: DALLEAU Demba</h2>
+          <h2 class="visually-hidden">Sous-titre de la page en h2</h2>
           <div class="c-box mb-3 mb-md-4">
             <div class="row mb-3">
               <div class="col-12 col-sm">
-                <h3 class="mb-0">Informations personnelles</h3>
+                <h3 class="mb-0">Titre de la box en h3</h3>
               </div>
               <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
                 <a href="" class="btn btn-ico btn-outline-primary" data-matomo-event="true" data-matomo-category="salaries" data-matomo-action="clic" data-matomo-option="edit_jobseeker_infos" aria-label="Modifier les informations personnelles de DALLEAU Demba">
                   <i class="ri-pencil-line fw-medium" aria-hidden="true"></i>
-                  <span>Modifier</span>
+                  <span>CTA principal de la box</span>
                 </a>
               </div>
             </div>
@@ -96,7 +96,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
           <div class="c-box mb-3 mb-md-4">
             <div class="row">
               <div class="col-12 col-sm">
-                <h3 class="mb-2 mb-md-0">Éligibilité à l'IAE</h3>
+                <h3 class="mb-2 mb-md-0">Titre de la box en h3</h3>
               </div>
               <div class="col-12 col-sm-auto">
                 <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
@@ -197,7 +197,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
           <div class="c-title">
             <div class="c-title__main">
               <h1>
-                Fiche salarié ASP : FOOTSALL Djordan
+                Titre de la page en h1
                 <span class="badge rounded-pill badge-base text-nowrap bg-emploi">Nouvelle à compléter</span>
               </h1>
             </div>
@@ -226,21 +226,21 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
     <div class="s-section__container container">
       <div class="s-section__row row">
         <div class="s-section__col col-12 col-xxl-8 col-xxxl-9 order-3 order-xxl-2">
-          <h2 class="visually-hidden">Informations de la Fiche salarié ASP : FOOTSALL Djordan</h2>
+          <h2 class="visually-hidden">Sous-titre de la box en h2</h2>
           <div class="c-box mb-3 mb-md-4">
-            <h3>Etat civil</h3>
+            <h3>Titre de la box en h3</h3>
             <ul class="list-data">
               <li>
                 <small>Prénom</small>
-                <strong>DJAMILA</strong>
+                <strong>DJADJA</strong>
               </li>
               <li>
                 <small>Nom</small>
-                <strong>FOTSO TAGATIO</strong>
+                <strong>YAPAMOYEN</strong>
               </li>
               <li>
                 <small>Date de naissance</small>
-                <strong>1 juin 1998</strong>
+                <strong>11 juin 1998</strong>
               </li>
               <li>
                 <small>Lieu de naissance</small>
@@ -252,29 +252,30 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
               </li>
               <li>
                 <small>Numéro de sécurité sociale</small>
-                <strong><span>2</span><span class="ms-1">98</span><span class="ms-1">06</span><span class="ms-1">98</span><span class="ms-1">511</span><span class="ms-1">071</span><span class="ms-1">39</span></strong>
+                <strong><span>4</span><span class="ms-1">98</span><span class="ms-1">06</span><span class="ms-1">98</span><span class="ms-1">533</span><span class="ms-1">071</span><span class="ms-1">39</span></strong>
               </li>
             </ul>
             <hr class="my-4">
-            <h3>Domiciliation</h3>
+            <h3>Titre de la box en h3</h3>
             <ul class="list-data">
               <li>
                 <small>Adresse</small>
                 <address>Promenade des Anglais - 06200 NICE</address>
               </li>
-            </ul>
-            <hr class="my-4">
-            <h3>Situation du salarié</h3>
-            <ul class="mb-0 fs-sm">
-              <li>Pas de formation au-delà de la scolarité obligatoire</li>
-              <li>Le salarié ne dispose d'aucune ressource</li>
               <li>
-                Salarié sans emploi depuis moins de 6 mois
+                <small>Situation du salarié</small>
+                <ul>
+                  <li>Pas de formation au-delà de la scolarité obligatoire</li>
+                  <li>Le salarié ne dispose d'aucune ressource</li>
+                  <li>
+                    Salarié sans emploi depuis moins de 6 mois
+                  </li>
+                  <li>Titulaire de la RQTH</li>
+                </ul>
               </li>
-              <li>Titulaire de la RQTH</li>
             </ul>
             <hr class="my-4">
-            <h3>Annexe financière</h3>
+            <h3>Titre de la box en h3</h3>
             <p class="mb-0 fs-sm">
               ETTI656320221A2M2 (validée)
             </p>
@@ -320,8 +321,8 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
           <div class="c-title">
             <div class="c-title__main">
               <h1>
-                Candidature de Truc MUCHE
-                <span id="state_d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df" class="badge rounded-pill text-nowrap badge-base bg-success">Candidature acceptée</span>
+                Titre de la box en h1
+                <span class="badge rounded-pill text-nowrap badge-base bg-success">Candidature acceptée</span>
               </h1>
             </div>
             <div class="c-title__cta">
@@ -330,29 +331,21 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
               </button>
               <button class="btn btn-danger btn-lg btn-ico" data-bs-toggle="modal" data-bs-target="#cancel_hire_modal">
                 <i class="ri-arrow-go-back-line fw-medium" aria-hidden="true"></i>
-                <span>Annuler l’embauche</span>
+                <span>CTA principal de la page</span>
               </button>
             </div>
           </div>
-          <div class="tns-outer" id="tns1-ow">
-            <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0" style="display: none;"><button type="button" data-controls="prev" tabindex="-1" aria-controls="tns1">prev</button><button type="button" data-controls="next" tabindex="-1" aria-controls="tns1">next</button></div>
-            <div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">1 to 2</span> of 2</div>
-            <div id="tns1-mw" class="tns-ovh">
-              <div class="tns-inner" id="tns1-iw">
-                <ul class="s-tabs-01__nav nav nav-tabs mb-0  tns-slider tns-carousel tns-subpixel tns-calc tns-autowidth tns-horizontal" role="tablist" data-it-sliding-tabs="true" id="tns1" style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
-                  <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item0">
-                    <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="informations-generales">Informations générales</a>
-                  </li>
-                  <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
-                    <a class="nav-link" id="commentaires-tab" data-bs-toggle="tab" href="#commentaires" role="tab" aria-controls="commentaires" aria-selected="false" tabindex="-1">Commentaires</a>
-                  </li>
-                  <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
-                    <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="historique" tabindex="-1">Historique</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true">Titre de la sous-page en onglet</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="commentaires-tab" data-bs-toggle="tab" href="#commentaires" role="tab" aria-controls="commentaires" aria-selected="false" tabindex="-1">Commentaires</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false" tabindex="-1">Historique</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -360,15 +353,15 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
   <section class="s-section">
     <div class="s-section__container container">
       <div class="tab-content">
-        <div class="tab-pane fade show active" id="informations" role="tabpanel" aria-labeledby="informations-tab">
+        <div class="tab-pane fade show active" id="informations" role="tabpanel" aria-labelledby="informations-tab">
           <div class="s-section__row row">
             <div class="s-section__col col-12 col-xxl-12 order-1 order-xxl-1">
               <div class="d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-md-between mb-3">
-                <h2 class="mb-0">Informations générales</h2>
+                <h2 class="mb-0">Titre de la sous-page en onglet en h2</h2>
                 <div class="d-flex flex-column flex-md-row gap-2" id="copy_public_id">
                   <button class="btn btn-ico btn-secondary" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_public_id" data-it-clipboard-button="copy" data-it-copy-to-clipboard="46d882ce-39b9-4969-ac33-e8e6db3f2270" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
                     <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
-                    <span>Copier l'ID du candidat</span>
+                    <span>CTA principal de la sous-page en onglet</span>
                   </button>
                 </div>
               </div>
@@ -377,12 +370,12 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
               <div class="c-box mb-3 mb-md-4">
                 <div class="row mb-3">
                   <div class="col-12 col-sm">
-                    <h3 class="mb-0">Informations personnelles</h3>
+                    <h3 class="mb-0">Titre de la box</h3>
                   </div>
                   <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
                     <a href="" class="btn btn-ico btn-outline-primary" aria-label="Modifier les informations personnelles de HENRY Jacques">
                       <i class="ri-pencil-line fw-medium" aria-hidden="true"></i>
-                      <span>Modifier</span>
+                      <span>CTA principal de la box</span>
                     </a>
                   </div>
                 </div>
@@ -511,7 +504,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
                 <ul class="list-data mb-3">
                   <li>
                     <small>Employeur destinataire</small>
-                    <a class="btn-link" href="/company/3850/card?back_url=/apply/50adc687-ac2d-4f5a-b95f-e67f87506c65/prescriber/details%3Fback_url%3D/apply/prescriptions/list"><strong>EI Garage Martinet Siège</strong></a>
+                    <a class="btn-link" href=""><strong>CTA secondaire en lien</strong></a>
                   </li>
                 </ul>
                 <span class="d-block fs-sm">
@@ -698,7 +691,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="historique" role="tabpanel" aria-labeledby="historique-tab">
+        <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
           <div class="s-section__row  row">
             <div class="col-12 col-xxl-8 col-xxxl-9 order-2 order-xxl-1">
               <h2>Historique des modifications</h2>
@@ -732,7 +725,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="commentaires" role="tabpanel" aria-labeledby="commentaires-tab">
+        <div class="tab-pane fade" id="commentaires" role="tabpanel" aria-labelledby="commentaires-tab">
           <div class="s-section__row  row">
             <div class="col-12 col-xxl-8 col-xxxl-9 order-2 order-xxl-1">
               <h2>Commentaires</h2>
@@ -802,7 +795,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
     </div>
   </section>
 </main>
-`,a={render:n,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets et avec plusieurs `.c-box` de contenu séparé."}}}},s={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets mais avec une seule `.c-box` et du contenu séparé par `<hr>` et titre en `<h3>`."}}}},e={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo avec onglets avec plusieurs `.c-box` de contenu séparé."}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+`,a={render:n,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets et avec plusieurs `.c-box` de contenu séparé."}}}},i={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets mais avec une seule `.c-box` et du contenu séparé par `<hr>` et titre en `<h3>`."}}}},t={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo avec onglets avec plusieurs `.c-box` de contenu séparé."}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render: renderSansOngletsMultiBox,
   parameters: {
     controls: {
@@ -817,7 +810,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
       }
     }
   }
-}`,...a.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: renderSansOngletsMonoBox,
   parameters: {
     controls: {
@@ -832,7 +825,7 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
       }
     }
   }
-}`,...s.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+}`,...i.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: renderAvecOnglets,
   parameters: {
     controls: {
@@ -847,4 +840,4 @@ function l(){const t=document.querySelector("#commentaires-btn"),i=document.quer
       }
     }
   }
-}`,...e.parameters?.docs?.source}}};const c=["SansOngletsMultiBox","SansOngletsMonoBox","AvecOngletsMultibox"];export{e as AvecOngletsMultibox,s as SansOngletsMonoBox,a as SansOngletsMultiBox,c as __namedExportsOrder,d as default};
+}`,...t.parameters?.docs?.source}}};const c=["SansOngletsMultiBox","SansOngletsMonoBox","AvecOngletsMultibox"];export{t as AvecOngletsMultibox,i as SansOngletsMonoBox,a as SansOngletsMultiBox,c as __namedExportsOrder,d as default};

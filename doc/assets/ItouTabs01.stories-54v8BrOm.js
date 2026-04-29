@@ -30,22 +30,22 @@ function i(e,a){return new Promise((n,l)=>{if(document.getElementById(a)){n();re
           </li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane fade show active" id="home-${e}" role="tabpanel" aria-labeledby="home-tab-${e}">
+          <div class="tab-pane fade show active" id="home-${e}" role="tabpanel" aria-labelledby="home-tab-${e}">
             <p>home-tab content ...</p>
           </div>
-          <div class="tab-pane fade" id="profile-${e}" role="tabpanel" aria-labeledby="profile-tab-${e}">
+          <div class="tab-pane fade" id="profile-${e}" role="tabpanel" aria-labelledby="profile-tab-${e}">
             <p>profile-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="contact-${e}" role="tabpanel" aria-labeledby="contact-tab-${e}">
+          <div class="tab-pane fade" id="contact-${e}" role="tabpanel" aria-labelledby="contact-tab-${e}">
             <p>contact-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-01-${e}" role="tabpanel" aria-labeledby="exemple-01-tab-${e}">
+          <div class="tab-pane fade" id="exemple-01-${e}" role="tabpanel" aria-labelledby="exemple-01-tab-${e}">
             <p>exemple-01-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-02-${e}" role="tabpanel" aria-labeledby="exemple-02-tab-${e}">
+          <div class="tab-pane fade" id="exemple-02-${e}" role="tabpanel" aria-labelledby="exemple-02-tab-${e}">
             <p>exemple-02-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-03-${e}" role="tabpanel" aria-labeledby="exemple-03-tab-${e}">
+          <div class="tab-pane fade" id="exemple-03-${e}" role="tabpanel" aria-labelledby="exemple-03-tab-${e}">
             <p>exemple-03-tab content...</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ function i(e,a){return new Promise((n,l)=>{if(document.getElementById(a)){n();re
     </div>
   </div>
 </section>
-`},d={title:"Sections/Tabs01",decorators:[e=>{const a=`<div style="max-width: 1200px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{i("https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js","itou-tinyslider-loader").then(()=>r(document)).catch(console.error)},0),a}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:'\nLa `<section>` `.s-tabs-01` structure une navigation par onglets et le contenu associe dans des panneaux `.tab-pane`.\n\n### Comportement responsive (sliding tabs)\nQuand la largeur disponible ne permet plus d\'afficher tous les onglets sur une ligne, la navigation bascule en mode slider horizontal grace a **tiny-slider.js**.\nCe comportement est active sur la liste d\'onglets via l\'attribut `data-it-sliding-tabs="true"`.\nL\'initialisation reprend la configuration de la maquette HTML (`autoWidth`, `slideBy: "page"`, `controls: true`, etc.) pour conserver la meme experience mobile/tablette.\n\n### Variations\n1. **Default** : version standard avec onglets, badge et icône.\n\n### Anatomie\n1. **Section** - `.s-tabs-01`\n2. **Container** - `.s-tabs-01__container`\n3. **Navigation** - `.s-tabs-01__nav.nav.nav-tabs`\n4. **Elements d\'onglets** - `.nav-item > .nav-link`\n5. **Contenus** - `.tab-content > .tab-pane`\n\n### Accessibilité\n- Associer chaque onglet a son panneau via `aria-controls` et `aria-labeledby`.\n- Conserver `role="tablist"`, `role="tab"` et `role="tabpanel"`.\n- Marquer les icônes decoratives avec `aria-hidden="true"`.\n'}}}},s={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Version de base."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+`},d={title:"Sections/Tabs01",decorators:[e=>{const a=`<div style="max-width: 1200px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{i("https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js","itou-tinyslider-loader").then(()=>r(document)).catch(console.error)},0),a}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:'\nLa `<section>` `.s-tabs-01` structure une navigation par onglets et le contenu associe dans des panneaux `.tab-pane`.\n\n### Comportement responsive (sliding tabs)\nQuand la largeur disponible ne permet plus d\'afficher tous les onglets sur une ligne, la navigation bascule en mode slider horizontal grace a **tiny-slider.js**.\nCe comportement est active sur la liste d\'onglets via l\'attribut `data-it-sliding-tabs="true"`.\nL\'initialisation reprend la configuration de la maquette HTML (`autoWidth`, `slideBy: "page"`, `controls: true`, etc.) pour conserver la meme experience mobile/tablette.\n\n### Variations\n1. **Default** : version standard avec onglets, badge et icône.\n\n### Anatomie\n1. **Section** - `.s-tabs-01`\n2. **Container** - `.s-tabs-01__container`\n3. **Navigation** - `.s-tabs-01__nav.nav.nav-tabs`\n4. **Elements d\'onglets** - `.nav-item > .nav-link`\n5. **Contenus** - `.tab-content > .tab-pane`\n\n### Accessibilité\n- Associer chaque onglet a son panneau via `aria-controls` et `aria-labelledby`.\n- Conserver `role="tablist"`, `role="tab"` et `role="tabpanel"`.\n- Marquer les icônes decoratives avec `aria-hidden="true"`.\n'}}}},s={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Version de base."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render: renderTabs01,
   parameters: {
     controls: {

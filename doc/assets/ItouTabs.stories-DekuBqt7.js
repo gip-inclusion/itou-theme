@@ -1,4 +1,4 @@
-const c={title:"Components/Tabs",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:'\nLe composant `.nav-tabs` permet d\'afficher des onglets de navigation et, si besoin, de piloter des panneaux de contenu via le plugin JavaScript Bootstrap.\n\n### Anatomie\n1. **Conteneur d\'onglets** - `<ul class="nav nav-tabs">`\n2. **Item** - `<li class="nav-item">`\n3. **Lien/Bouton d\'onglet** - `.nav-link` (+ `.active` / `.disabled`)\n4. **Panneaux (optionnel)** - `.tab-content > .tab-pane` avec `data-bs-toggle="tab"`\n\n### Classes CSS\n| Classe | Description |\n|--------|-------------|\n| `.nav` | Base navigation Bootstrap |\n| `.nav-tabs` | Style onglets |\n| `.nav-link` | Lien/bouton d\'onglet |\n| `.active` | Onglet actif |\n| `.disabled` | Onglet inactif |\n\n### Accessibilité\n- Utiliser `aria-current="page"` ou `.active` de maniere cohérente pour l\'etat actif.\n- Sur un onglet inactif, conserver `aria-disabled="true"` et `tabindex="-1"`.\n- En mode panneaux dynamiques (plugin tabs), ajouter `role="tablist"`, `role="tab"`, `role="tabpanel"`, `aria-controls` et `aria-labeledby`.\n\n**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#tabs" target="_blank" rel="noopener noreferrer" class="has-external-link">Navs and Tabs</a>\n'}}}},r=()=>`
+const c={title:"Components/Tabs",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:'\nLe composant `.nav-tabs` permet d\'afficher des onglets de navigation et, si besoin, de piloter des panneaux de contenu via le plugin JavaScript Bootstrap.\n\n### Anatomie\n1. **Conteneur d\'onglets** - `<ul class="nav nav-tabs">`\n2. **Item** - `<li class="nav-item">`\n3. **Lien/Bouton d\'onglet** - `.nav-link` (+ `.active` / `.disabled`)\n4. **Panneaux (optionnel)** - `.tab-content > .tab-pane` avec `data-bs-toggle="tab"`\n\n### Classes CSS\n| Classe | Description |\n|--------|-------------|\n| `.nav` | Base navigation Bootstrap |\n| `.nav-tabs` | Style onglets |\n| `.nav-link` | Lien/bouton d\'onglet |\n| `.active` | Onglet actif |\n| `.disabled` | Onglet inactif |\n\n### Accessibilité\n- Utiliser `aria-current="page"` ou `.active` de maniere cohérente pour l\'etat actif.\n- Sur un onglet inactif, conserver `aria-disabled="true"` et `tabindex="-1"`.\n- En mode panneaux dynamiques (plugin tabs), ajouter `role="tablist"`, `role="tab"`, `role="tabpanel"`, `aria-controls` et `aria-labelledby`.\n\n**Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#tabs" target="_blank" rel="noopener noreferrer" class="has-external-link">Navs and Tabs</a>\n'}}}},r=()=>`
   <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" href="#">Active</a>
@@ -19,7 +19,7 @@ const c={title:"Components/Tabs",decorators:[e=>`<div style="max-width: 1000px; 
       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </li>
   </ul>
-`,i=()=>{const e=Math.random().toString(36).slice(2,10);return`
+`,l=()=>{const e=Math.random().toString(36).slice(2,10);return`
     <ul class="nav nav-tabs" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="home-tab-${e}" data-bs-toggle="tab" data-bs-target="#home-pane-${e}" type="button" role="tab" aria-controls="home-pane-${e}" aria-selected="true">
@@ -39,17 +39,17 @@ const c={title:"Components/Tabs",decorators:[e=>`<div style="max-width: 1000px; 
     </ul>
 
     <div class="tab-content p-3" style="min-height: 140px;">
-      <div class="tab-pane fade show active" id="home-pane-${e}" role="tabpanel" aria-labeledby="home-tab-${e}" tabindex="0">
+      <div class="tab-pane fade show active" id="home-pane-${e}" role="tabpanel" aria-labelledby="home-tab-${e}" tabindex="0">
         Contenu de l'onglet Home.
       </div>
-      <div class="tab-pane fade" id="profile-pane-${e}" role="tabpanel" aria-labeledby="profile-tab-${e}" tabindex="0">
+      <div class="tab-pane fade" id="profile-pane-${e}" role="tabpanel" aria-labelledby="profile-tab-${e}" tabindex="0">
         Contenu de l'onglet Profile.
       </div>
-      <div class="tab-pane fade" id="contact-pane-${e}" role="tabpanel" aria-labeledby="contact-tab-${e}" tabindex="0">
+      <div class="tab-pane fade" id="contact-pane-${e}" role="tabpanel" aria-labelledby="contact-tab-${e}" tabindex="0">
         Contenu de l'onglet Contact.
       </div>
     </div>
-  `},l=()=>`
+  `},i=()=>`
   <ul class="nav nav-tabs flex-column" style="max-width: 420px;">
     <li class="nav-item">
       <a href="#" class="nav-link">Les prescripteurs habilites</a>
@@ -91,7 +91,7 @@ const c={title:"Components/Tabs",decorators:[e=>`<div style="max-width: 1000px; 
       </a>
     </li>
   </ol>
-`,a={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Version issue de `components.html` avec onglet actif, item avec badge, item avec icône et item désactivé."}}}},t={render:i,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:'Exemple Bootstrap complet avec `data-bs-toggle="tab"` et panneaux `.tab-pane` relies en ARIA.'}}}},n={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante verticale avec `.flex-column`, conforme à la doc HTML du theme."}}}},s={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante verticale ordonnee sur `ol` avec `.nav-tabs-sm` et badges d'avancement."}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+`,a={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Version issue de `components.html` avec onglet actif, item avec badge, item avec icône et item désactivé."}}}},t={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:'Exemple Bootstrap complet avec `data-bs-toggle="tab"` et panneaux `.tab-pane` relies en ARIA.'}}}},n={render:i,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante verticale avec `.flex-column`, conforme à la doc HTML du theme."}}}},s={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Variante verticale ordonnee sur `ol` avec `.nav-tabs-sm` et badges d'avancement."}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render: renderBasic,
   parameters: {
     controls: {

@@ -1,4 +1,4 @@
-import{u as i,j as e,M as o}from"./blocks-ILuwBFx0.js";import"./preload-helper-PPVm8Dsz.js";import"./iframe-BDM20mzu.js";function n(t){const s={a:"a",h1:"h1",h2:"h2",li:"li",p:"p",strong:"strong",ul:"ul",...i(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(o,{title:"Bienvenue"}),`
+import{u as i,j as e,M as o}from"./blocks-DxdgOTqy.js";import"./preload-helper-PPVm8Dsz.js";import"./iframe-Du7gFAdr.js";function n(t){const s={a:"a",h1:"h1",h2:"h2",li:"li",p:"p",strong:"strong",ul:"ul",...i(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(o,{title:"Bienvenue"}),`
 `,e.jsx(s.h1,{id:"documentation-du-thème-itou",children:"Documentation du thème Itou"}),`
 `,e.jsxs(s.p,{children:["Bienvenue sur le Storybook du ",e.jsx(s.strong,{children:"theme-itou"}),"."]}),`
 `,e.jsxs(s.p,{children:[`Cette documentation présente les composants, les styles et les patterns utilisés dans l’écosystème de la plateforme de l’inclusion.
