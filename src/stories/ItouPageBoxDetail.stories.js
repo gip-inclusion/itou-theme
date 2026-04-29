@@ -2,13 +2,27 @@ function initOnglets() {
   const commentairesBtn = document.querySelector("#commentaires-btn");
   const commentairesTab = document.querySelector("#commentaires-tab");
 
+  if (!commentairesBtn || !commentairesTab) {
+    return;
+  }
+
+  if (commentairesBtn.dataset.ongletsInit === "true") {
+    return;
+  }
+
+  commentairesBtn.dataset.ongletsInit = "true";
+
+  if (!window.bootstrap?.Tab) {
+    return;
+  }
+
   commentairesBtn.addEventListener("click", function () {
     bootstrap.Tab.getOrCreateInstance(commentairesTab).show();
   });
 }
 
 export default {
-  title: "Templates/Page Detail",
+  title: "Pages/Box Detail",
   decorators: [
     (Story) => {
       const html = `<div style="max-width: 1600px; margin: 0 auto;">${Story()}</div>`;
@@ -59,7 +73,7 @@ const renderSansOngletsMultiBox = () => `
           </div>
           <div class="c-title">
             <div class="c-title__main">
-              <h1>Salarié&nbsp;: DALLEAU Demba</h1>
+              <h1>Titre de la page en h1</h1>
               <p id="copy_public_id">
                 Copier l'ID du candidat
                 <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_public_id" data-it-clipboard-button="copy" data-it-copy-to-clipboard="710f2736-501f-4eef-967c-e43096d834fc" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
@@ -77,16 +91,16 @@ const renderSansOngletsMultiBox = () => `
     <div class="s-section__container container">
       <div class="s-section__row row">
         <div class="s-section__col col-12 col-xxl-8 col-xxxl-9 order-3 order-xxl-2">
-          <h2 class="visually-hidden">Informations générales du Salarié&nbsp;: DALLEAU Demba</h2>
+          <h2 class="visually-hidden">Sous-titre de la page en h2</h2>
           <div class="c-box mb-3 mb-md-4">
             <div class="row mb-3">
               <div class="col-12 col-sm">
-                <h3 class="mb-0">Informations personnelles</h3>
+                <h3 class="mb-0">Titre de la box en h3</h3>
               </div>
               <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
                 <a href="" class="btn btn-ico btn-outline-primary" data-matomo-event="true" data-matomo-category="salaries" data-matomo-action="clic" data-matomo-option="edit_jobseeker_infos" aria-label="Modifier les informations personnelles de DALLEAU Demba">
                   <i class="ri-pencil-line fw-medium" aria-hidden="true"></i>
-                  <span>Modifier</span>
+                  <span>CTA principal de la box</span>
                 </a>
               </div>
             </div>
@@ -140,7 +154,7 @@ const renderSansOngletsMultiBox = () => `
           <div class="c-box mb-3 mb-md-4">
             <div class="row">
               <div class="col-12 col-sm">
-                <h3 class="mb-2 mb-md-0">Éligibilité à l'IAE</h3>
+                <h3 class="mb-2 mb-md-0">Titre de la box en h3</h3>
               </div>
               <div class="col-12 col-sm-auto">
                 <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
@@ -243,7 +257,7 @@ const renderSansOngletsMonoBox = () => `
           <div class="c-title">
             <div class="c-title__main">
               <h1>
-                Fiche salarié ASP : FOOTSALL Djordan
+                Titre de la page en h1
                 <span class="badge rounded-pill badge-base text-nowrap bg-emploi">Nouvelle à compléter</span>
               </h1>
             </div>
@@ -272,21 +286,21 @@ const renderSansOngletsMonoBox = () => `
     <div class="s-section__container container">
       <div class="s-section__row row">
         <div class="s-section__col col-12 col-xxl-8 col-xxxl-9 order-3 order-xxl-2">
-          <h2 class="visually-hidden">Informations de la Fiche salarié ASP : FOOTSALL Djordan</h2>
+          <h2 class="visually-hidden">Sous-titre de la box en h2</h2>
           <div class="c-box mb-3 mb-md-4">
-            <h3>Etat civil</h3>
+            <h3>Titre de la box en h3</h3>
             <ul class="list-data">
               <li>
                 <small>Prénom</small>
-                <strong>DJAMILA</strong>
+                <strong>DJADJA</strong>
               </li>
               <li>
                 <small>Nom</small>
-                <strong>FOTSO TAGATIO</strong>
+                <strong>YAPAMOYEN</strong>
               </li>
               <li>
                 <small>Date de naissance</small>
-                <strong>1 juin 1998</strong>
+                <strong>11 juin 1998</strong>
               </li>
               <li>
                 <small>Lieu de naissance</small>
@@ -298,29 +312,30 @@ const renderSansOngletsMonoBox = () => `
               </li>
               <li>
                 <small>Numéro de sécurité sociale</small>
-                <strong><span>2</span><span class="ms-1">98</span><span class="ms-1">06</span><span class="ms-1">98</span><span class="ms-1">511</span><span class="ms-1">071</span><span class="ms-1">39</span></strong>
+                <strong><span>4</span><span class="ms-1">98</span><span class="ms-1">06</span><span class="ms-1">98</span><span class="ms-1">533</span><span class="ms-1">071</span><span class="ms-1">39</span></strong>
               </li>
             </ul>
             <hr class="my-4">
-            <h3>Domiciliation</h3>
+            <h3>Titre de la box en h3</h3>
             <ul class="list-data">
               <li>
                 <small>Adresse</small>
                 <address>Promenade des Anglais - 06200 NICE</address>
               </li>
-            </ul>
-            <hr class="my-4">
-            <h3>Situation du salarié</h3>
-            <ul class="mb-0 fs-sm">
-              <li>Pas de formation au-delà de la scolarité obligatoire</li>
-              <li>Le salarié ne dispose d'aucune ressource</li>
               <li>
-                Salarié sans emploi depuis moins de 6 mois
+                <small>Situation du salarié</small>
+                <ul>
+                  <li>Pas de formation au-delà de la scolarité obligatoire</li>
+                  <li>Le salarié ne dispose d'aucune ressource</li>
+                  <li>
+                    Salarié sans emploi depuis moins de 6 mois
+                  </li>
+                  <li>Titulaire de la RQTH</li>
+                </ul>
               </li>
-              <li>Titulaire de la RQTH</li>
             </ul>
             <hr class="my-4">
-            <h3>Annexe financière</h3>
+            <h3>Titre de la box en h3</h3>
             <p class="mb-0 fs-sm">
               ETTI656320221A2M2 (validée)
             </p>
@@ -368,8 +383,8 @@ const renderAvecOnglets = () => `
           <div class="c-title">
             <div class="c-title__main">
               <h1>
-                Candidature de Truc MUCHE
-                <span id="state_d6f63cf6-37f2-4ad7-9c69-5c4fe3afd3df" class="badge rounded-pill text-nowrap badge-base bg-success">Candidature acceptée</span>
+                Titre de la box en h1
+                <span class="badge rounded-pill text-nowrap badge-base bg-success">Candidature acceptée</span>
               </h1>
             </div>
             <div class="c-title__cta">
@@ -378,29 +393,21 @@ const renderAvecOnglets = () => `
               </button>
               <button class="btn btn-danger btn-lg btn-ico" data-bs-toggle="modal" data-bs-target="#cancel_hire_modal">
                 <i class="ri-arrow-go-back-line fw-medium" aria-hidden="true"></i>
-                <span>Annuler l’embauche</span>
+                <span>CTA principal de la page</span>
               </button>
             </div>
           </div>
-          <div class="tns-outer" id="tns1-ow">
-            <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0" style="display: none;"><button type="button" data-controls="prev" tabindex="-1" aria-controls="tns1">prev</button><button type="button" data-controls="next" tabindex="-1" aria-controls="tns1">next</button></div>
-            <div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">1 to 2</span> of 2</div>
-            <div id="tns1-mw" class="tns-ovh">
-              <div class="tns-inner" id="tns1-iw">
-                <ul class="s-tabs-01__nav nav nav-tabs mb-0  tns-slider tns-carousel tns-subpixel tns-calc tns-autowidth tns-horizontal" role="tablist" data-it-sliding-tabs="true" id="tns1" style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
-                  <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item0">
-                    <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="informations-generales">Informations générales</a>
-                  </li>
-                  <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
-                    <a class="nav-link" id="commentaires-tab" data-bs-toggle="tab" href="#commentaires" role="tab" aria-controls="commentaires" aria-selected="false" tabindex="-1">Commentaires</a>
-                  </li>
-                  <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
-                    <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="historique" tabindex="-1">Historique</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true">Titre de la sous-page en onglet</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="commentaires-tab" data-bs-toggle="tab" href="#commentaires" role="tab" aria-controls="commentaires" aria-selected="false" tabindex="-1">Commentaires</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false" tabindex="-1">Historique</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -408,15 +415,15 @@ const renderAvecOnglets = () => `
   <section class="s-section">
     <div class="s-section__container container">
       <div class="tab-content">
-        <div class="tab-pane fade show active" id="informations" role="tabpanel" aria-labeledby="informations-tab">
+        <div class="tab-pane fade show active" id="informations" role="tabpanel" aria-labelledby="informations-tab">
           <div class="s-section__row row">
             <div class="s-section__col col-12 col-xxl-12 order-1 order-xxl-1">
               <div class="d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-md-between mb-3">
-                <h2 class="mb-0">Informations générales</h2>
+                <h2 class="mb-0">Titre de la sous-page en onglet en h2</h2>
                 <div class="d-flex flex-column flex-md-row gap-2" id="copy_public_id">
                   <button class="btn btn-ico btn-secondary" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_public_id" data-it-clipboard-button="copy" data-it-copy-to-clipboard="46d882ce-39b9-4969-ac33-e8e6db3f2270" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
                     <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
-                    <span>Copier l'ID du candidat</span>
+                    <span>CTA principal de la sous-page en onglet</span>
                   </button>
                 </div>
               </div>
@@ -425,12 +432,12 @@ const renderAvecOnglets = () => `
               <div class="c-box mb-3 mb-md-4">
                 <div class="row mb-3">
                   <div class="col-12 col-sm">
-                    <h3 class="mb-0">Informations personnelles</h3>
+                    <h3 class="mb-0">Titre de la box</h3>
                   </div>
                   <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
                     <a href="" class="btn btn-ico btn-outline-primary" aria-label="Modifier les informations personnelles de HENRY Jacques">
                       <i class="ri-pencil-line fw-medium" aria-hidden="true"></i>
-                      <span>Modifier</span>
+                      <span>CTA principal de la box</span>
                     </a>
                   </div>
                 </div>
@@ -559,7 +566,7 @@ const renderAvecOnglets = () => `
                 <ul class="list-data mb-3">
                   <li>
                     <small>Employeur destinataire</small>
-                    <a class="btn-link" href="/company/3850/card?back_url=/apply/50adc687-ac2d-4f5a-b95f-e67f87506c65/prescriber/details%3Fback_url%3D/apply/prescriptions/list"><strong>EI Garage Martinet Siège</strong></a>
+                    <a class="btn-link" href=""><strong>CTA secondaire en lien</strong></a>
                   </li>
                 </ul>
                 <span class="d-block fs-sm">
@@ -746,7 +753,7 @@ const renderAvecOnglets = () => `
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="historique" role="tabpanel" aria-labeledby="historique-tab">
+        <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
           <div class="s-section__row  row">
             <div class="col-12 col-xxl-8 col-xxxl-9 order-2 order-xxl-1">
               <h2>Historique des modifications</h2>
@@ -780,7 +787,7 @@ const renderAvecOnglets = () => `
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="commentaires" role="tabpanel" aria-labeledby="commentaires-tab">
+        <div class="tab-pane fade" id="commentaires" role="tabpanel" aria-labelledby="commentaires-tab">
           <div class="s-section__row  row">
             <div class="col-12 col-xxl-8 col-xxxl-9 order-2 order-xxl-1">
               <h2>Commentaires</h2>
