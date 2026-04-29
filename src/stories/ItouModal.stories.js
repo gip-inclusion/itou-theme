@@ -28,7 +28,7 @@ Il est base sur Bootstrap et gere automatiquement l'ouverture, la fermeture et l
 | \`.modal-footer\` | Zone d'actions |
 
 ### Accessibilité
-- Associer le titre au dialogue via \`aria-labeledby\`.
+- Associer le titre au dialogue via \`aria-labelledby\`.
 - Conserver un bouton de fermeture explicite avec \`aria-label\`.
 - Utiliser des libelles d'actions explicites dans le \`<footer>\`.
 - Eviter les contenus trop longs sans structure (titres, listes, paragraphes).
@@ -49,7 +49,7 @@ const renderDefault = () => {
       Launch example .modal
     </button>
 
-    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labeledby="${titleId}" aria-hidden="true">
+    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labelledby="${titleId}" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <form action="">
           <div class="modal-content">
@@ -88,7 +88,7 @@ const renderMarketingModal = () => {
       Launch exemple .modal marketing
     </button>
 
-    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labeledby="${titleId}" aria-hidden="true">
+    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labelledby="${titleId}" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">

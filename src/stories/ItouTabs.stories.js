@@ -27,7 +27,7 @@ Le composant \`.nav-tabs\` permet d'afficher des onglets de navigation et, si be
 ### Accessibilité
 - Utiliser \`aria-current="page"\` ou \`.active\` de maniere cohérente pour l'etat actif.
 - Sur un onglet inactif, conserver \`aria-disabled="true"\` et \`tabindex="-1"\`.
-- En mode panneaux dynamiques (plugin tabs), ajouter \`role="tablist"\`, \`role="tab"\`, \`role="tabpanel"\`, \`aria-controls\` et \`aria-labeledby\`.
+- En mode panneaux dynamiques (plugin tabs), ajouter \`role="tablist"\`, \`role="tab"\`, \`role="tabpanel"\`, \`aria-controls\` et \`aria-labelledby\`.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#tabs" target="_blank" rel="noopener noreferrer" class="has-external-link">Navs and Tabs</a>
 `,
@@ -82,13 +82,13 @@ const renderWithPanels = () => {
     </ul>
 
     <div class="tab-content p-3" style="min-height: 140px;">
-      <div class="tab-pane fade show active" id="home-pane-${token}" role="tabpanel" aria-labeledby="home-tab-${token}" tabindex="0">
+      <div class="tab-pane fade show active" id="home-pane-${token}" role="tabpanel" aria-labelledby="home-tab-${token}" tabindex="0">
         Contenu de l'onglet Home.
       </div>
-      <div class="tab-pane fade" id="profile-pane-${token}" role="tabpanel" aria-labeledby="profile-tab-${token}" tabindex="0">
+      <div class="tab-pane fade" id="profile-pane-${token}" role="tabpanel" aria-labelledby="profile-tab-${token}" tabindex="0">
         Contenu de l'onglet Profile.
       </div>
-      <div class="tab-pane fade" id="contact-pane-${token}" role="tabpanel" aria-labeledby="contact-tab-${token}" tabindex="0">
+      <div class="tab-pane fade" id="contact-pane-${token}" role="tabpanel" aria-labelledby="contact-tab-${token}" tabindex="0">
         Contenu de l'onglet Contact.
       </div>
     </div>

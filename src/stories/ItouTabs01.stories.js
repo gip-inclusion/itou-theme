@@ -79,22 +79,22 @@ const renderTabs01 = () => {
           </li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane fade show active" id="home-${token}" role="tabpanel" aria-labeledby="home-tab-${token}">
+          <div class="tab-pane fade show active" id="home-${token}" role="tabpanel" aria-labelledby="home-tab-${token}">
             <p>home-tab content ...</p>
           </div>
-          <div class="tab-pane fade" id="profile-${token}" role="tabpanel" aria-labeledby="profile-tab-${token}">
+          <div class="tab-pane fade" id="profile-${token}" role="tabpanel" aria-labelledby="profile-tab-${token}">
             <p>profile-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="contact-${token}" role="tabpanel" aria-labeledby="contact-tab-${token}">
+          <div class="tab-pane fade" id="contact-${token}" role="tabpanel" aria-labelledby="contact-tab-${token}">
             <p>contact-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-01-${token}" role="tabpanel" aria-labeledby="exemple-01-tab-${token}">
+          <div class="tab-pane fade" id="exemple-01-${token}" role="tabpanel" aria-labelledby="exemple-01-tab-${token}">
             <p>exemple-01-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-02-${token}" role="tabpanel" aria-labeledby="exemple-02-tab-${token}">
+          <div class="tab-pane fade" id="exemple-02-${token}" role="tabpanel" aria-labelledby="exemple-02-tab-${token}">
             <p>exemple-02-tab content...</p>
           </div>
-          <div class="tab-pane fade" id="exemple-03-${token}" role="tabpanel" aria-labeledby="exemple-03-tab-${token}">
+          <div class="tab-pane fade" id="exemple-03-${token}" role="tabpanel" aria-labelledby="exemple-03-tab-${token}">
             <p>exemple-03-tab content...</p>
           </div>
         </div>
@@ -147,7 +147,7 @@ L'initialisation reprend la configuration de la maquette HTML (\`autoWidth\`, \`
 5. **Contenus** - \`.tab-content > .tab-pane\`
 
 ### Accessibilité
-- Associer chaque onglet a son panneau via \`aria-controls\` et \`aria-labeledby\`.
+- Associer chaque onglet a son panneau via \`aria-controls\` et \`aria-labelledby\`.
 - Conserver \`role="tablist"\`, \`role="tab"\` et \`role="tabpanel"\`.
 - Marquer les icônes decoratives avec \`aria-hidden="true"\`.
 `,

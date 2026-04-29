@@ -23,7 +23,7 @@ Le composant \`.c-stepper\` est utile pour afficher la progression dans un formu
 
 ### Accessibilité
 Le \`role="progressbar"\` et les attributs \`aria-valuenow\`, \`aria-valuemin\`, \`aria-valuemax\` sont indispensables.
-Le texte de l'étape est relié a la barre via \`aria-labeledby\`.
+Le texte de l'étape est relié a la barre via \`aria-labelledby\`.
 `,
       },
     },
@@ -40,7 +40,7 @@ const render = ({ progressPercent }) => {
   return `
 <div class="c-stepper">
   <div class="progress progress--emploi">
-    <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${progressPercent}" aria-valuemin="0" aria-valuemax="100" aria-labeledby="informationsEntreprise"></div>
+    <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${progressPercent}" aria-valuemin="0" aria-valuemax="100" aria-labelledby="informationsEntreprise"></div>
   </div>
   <p id="informationsEntreprise"><strong>Étape 1</strong>/3 : Informations entreprise</p>
 </div>`;

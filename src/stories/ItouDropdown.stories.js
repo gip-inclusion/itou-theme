@@ -29,7 +29,7 @@ Il repose sur le plugin JavaScript Bootstrap (Popper) pour la gestion du positio
 
 ### Accessibilité
 - Conserver \`aria-expanded\` sur le déclencheur (mis a jour par Bootstrap).
-- Relier le bouton et le menu via \`aria-controls\` ou \`aria-labeledby\`.
+- Relier le bouton et le menu via \`aria-controls\` ou \`aria-labelledby\`.
 - Sur les icônes decoratives, utiliser \`aria-hidden="true"\`.
 
 **Documentation Bootstrap** : <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank" rel="noopener noreferrer" class="has-external-link">Dropdowns</a>
@@ -58,7 +58,7 @@ const renderBasic = ({ triggerVariant, triggerLabel }) => {
       <button class="btn ${triggerVariant} dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         ${triggerLabel}
       </button>
-      <div class="dropdown-menu" aria-labeledby="${dropdownId}">
+      <div class="dropdown-menu" aria-labelledby="${dropdownId}">
         <a class="dropdown-item active" href="">Action active</a>
         <a class="dropdown-item" href="">Another action</a>
         <a class="dropdown-item" href="">Something else here</a>
@@ -152,7 +152,7 @@ const renderOrganizationTransfer = () => {
         <button class="btn btn-link btn-block dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Transferer cette candidature vers
         </button>
-        <div class="dropdown-menu" aria-labeledby="${dropdownId}">
+        <div class="dropdown-menu" aria-labelledby="${dropdownId}">
           <a class="dropdown-item dropdown-item__summary active" href="">
             <i class="ri-community-line" aria-hidden="true"></i>
             <span>ETTI</span>
@@ -191,7 +191,7 @@ const renderNexusDefault = () => {
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labeledby="${dropdownId}">
+        <div class="dropdown-menu w-100" aria-labelledby="${dropdownId}">
           <div class="dropdown-item dropdown-item__profil">
             <span>
               <strong>Antoine P.</strong><br>
@@ -250,7 +250,7 @@ const renderNexusNoProConnect = () => {
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labeledby="${dropdownId}">
+        <div class="dropdown-menu w-100" aria-labelledby="${dropdownId}">
           <div class="mx-4 mt-3 text-center">
             <img src="./images/logo-nexus.png" class="img-fluid" width="200" alt="Nexus">
           </div>
@@ -281,7 +281,7 @@ const renderNexusNoAccount = () => {
         <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="${dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span>Mon portail</span>
         </button>
-        <div class="dropdown-menu w-100" aria-labeledby="${dropdownId}">
+        <div class="dropdown-menu w-100" aria-labelledby="${dropdownId}">
           <div class="mx-4 mt-3 text-center">
             <img src="./images/logo-nexus.png" class="img-fluid" width="200" alt="Nexus">
           </div>

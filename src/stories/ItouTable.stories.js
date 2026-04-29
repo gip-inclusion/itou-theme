@@ -172,7 +172,7 @@ const renderTable = ({ compact, striped, hover, bordered, responsive, responsive
               <button class="btn btn-link btn-ico-only" type="button" id="dropdown_${index}_action_menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
                 <i class="ri-more-2-fill" aria-hidden="true"></i>
               </button>
-              <div class="dropdown-menu" aria-labeledby="dropdown_${index}_action_menu">
+              <div class="dropdown-menu" aria-labelledby="dropdown_${index}_action_menu">
                 <a href="" class="dropdown-item">
                   Valider son éligibilité IAE
                 </a>
