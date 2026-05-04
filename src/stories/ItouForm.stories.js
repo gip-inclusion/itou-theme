@@ -46,10 +46,9 @@ Le composant \`.c-form\` structure un formulaire complet avec des styles descend
 
 const renderForm = () => `
 <div class="c-form">
-  <h3>Exemple de formulaire dans un c-form</h3>
   <form>
     <fieldset>
-      <legend class="h4">Informations générales</legend>
+      <legend>Informations générales</legend>
       <div class="form-group form-group-required form-group-input-w-lg-50"><label class="form-label" for="id_brand">Nom à afficher</label><input type="text" name="brand" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_brand_helptext" id="id_brand">
         <div id="id_brand_helptext" class="form-text">Nom présent sur la fiche et dans les résultats de recherche.</div>
       </div>
@@ -65,7 +64,7 @@ const renderForm = () => `
         <div id="id_website_helptext" class="form-text">Votre site web doit commencer par http:// ou https://</div>
       </div>
     </fieldset>
-    <hr class="my-3" />
+    <hr class="my-3">
     <fieldset>
       <legend>Titre de ce fieldset 2 (Optionnel)</legend>
       <div class="form-group form-group-input-w-lg-50">
@@ -159,7 +158,7 @@ export const Default = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Exemple complet du composant `.c-form`, base sur le markup de reference de `forms.html`.",
+        story: "Exemple d'un formulaire dans une box `.c-form`.",
       },
     },
   },
