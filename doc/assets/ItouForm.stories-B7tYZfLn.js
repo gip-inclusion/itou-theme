@@ -1,9 +1,8 @@
 const o={title:"Components/Form",decorators:[l=>`<div style="max-width: 1000px; margin: 0 auto;">${l()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nLe composant `.c-form` structure un formulaire complet avec des styles descendants pour les controles de saisie, les groupes de champs et les actions.\n\n### Anatomie\n1. **Conteneur principal** - `<div class=\"c-form\">`\n2. **Formulaire** - `<form>` et regroupement sémantique via `<fieldset>` + `<legend>`\n3. **Groupes de champs** - `.form-group` avec `.form-label`, `.form-control` ou `.form-select`\n4. **Aides a la saisie** - `.form-text` liees via `aria-describedby`\n5. **Actions de fin** - boutons Reset/Submit alignes à droite\n\n### Classes CSS principales\n| Classe | Description |\n|--------|-------------|\n| `.c-form` | Conteneur thematique du formulaire |\n| `.form-group` | Bloc de champ (label + controle + aide) |\n| `.form-group-input-w-lg-50` | Limite la largeur de certains champs sur grand écran |\n| `.form-label` | Libelle du champ |\n| `.form-control` | Inputs et textarea |\n| `.form-select` | Select natif |\n| `.form-text` | Texte d'aide |\n\n### Accessibilité\n- Associer chaque `label` au controle via `for`/`id`.\n- Utiliser `aria-describedby` pour rattacher les textes d'aide.\n- Conserver `fieldset`/`legend` pour les groupes de champs.\n- Preferer des libelles explicites plutot que de s'appuyer uniquement sur les placeholders.\n- Utiliser les classes `.form-group-input-w-lg-xx` pour adapter la longueur du champ a son contenu attendu et aider l'utilisateur à la saisie.\n"}}}},r=()=>`
 <div class="c-form">
-  <h3>Exemple de formulaire dans un c-form</h3>
   <form>
     <fieldset>
-      <legend class="h4">Informations générales</legend>
+      <legend>Informations générales</legend>
       <div class="form-group form-group-required form-group-input-w-lg-50"><label class="form-label" for="id_brand">Nom à afficher</label><input type="text" name="brand" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_brand_helptext" id="id_brand">
         <div id="id_brand_helptext" class="form-text">Nom présent sur la fiche et dans les résultats de recherche.</div>
       </div>
@@ -19,7 +18,7 @@ const o={title:"Components/Form",decorators:[l=>`<div style="max-width: 1000px; 
         <div id="id_website_helptext" class="form-text">Votre site web doit commencer par http:// ou https://</div>
       </div>
     </fieldset>
-    <hr class="my-3" />
+    <hr class="my-3">
     <fieldset>
       <legend>Titre de ce fieldset 2 (Optionnel)</legend>
       <div class="form-group form-group-input-w-lg-50">
@@ -104,7 +103,7 @@ const o={title:"Components/Form",decorators:[l=>`<div style="max-width: 1000px; 
     </div>
   </form>
 </div>
-`,e={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemple complet du composant `.c-form`, base sur le markup de reference de `forms.html`."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+`,e={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemple d'un formulaire dans une box `.c-form`."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: renderForm,
   parameters: {
     controls: {
@@ -115,7 +114,7 @@ const o={title:"Components/Form",decorators:[l=>`<div style="max-width: 1000px; 
         disable: true
       },
       description: {
-        story: "Exemple complet du composant \`.c-form\`, base sur le markup de reference de \`forms.html\`."
+        story: "Exemple d'un formulaire dans une box \`.c-form\`."
       }
     }
   }
