@@ -38,7 +38,7 @@ export default {
     docs: {
       description: {
         component: `
-Différents exemples de "Fiche Détail" reprenant les règles UX/UI de mise en forme.
+Différents exemples de "Fiche Détail".
 
 ### Règles d'intégration
 - Pour chaque "sous-page" en onglet, ajouter un titre en \`<h2>\` afin de répéter le libellé d'onglet et de laisser de l'espace à droite pour un cta d'action principale.
