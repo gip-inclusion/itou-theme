@@ -127,7 +127,7 @@ export const StateLabel = {
 <div class="d-flex flex-column gap-4">
   <div class="form-check form-switch has-state-label">
     <input class="form-check-input" type="checkbox" role="switch" id="switch-state-label-default">
-    <label class="form-check-label" for="switch-state-label-default" data-it-state-label-off="Fermé" data-it-state-label-on="Ouvert"></label>
+    <label class="form-check-label" for="switch-state-label-default" data-it-state-label-off="Fermé" data-it-state-label-on="Ouvert"><span class="visually-hidden">Ouvert ou Fermé</span></label>
   </div>
 
   <div class="form-check form-switch form-switch-lg has-state-label">

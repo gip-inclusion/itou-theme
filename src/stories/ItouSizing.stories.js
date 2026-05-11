@@ -147,17 +147,17 @@ const renderMaxHeightExamples = () => {
     <div class="row g-3">
       <div class="col-12 col-md-6 col-xl-4">
         <div class="border rounded p-2" style="height: 220px;">
-          <div class="mh-25 bg-light border rounded p-2 overflow-auto">.mh-25<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
+          <div class="mh-25 bg-light border rounded p-2 overflow-auto" tabindex="0">.mh-25<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-4">
         <div class="border rounded p-2" style="height: 220px;">
-          <div class="mh-50 bg-light border rounded p-2 overflow-auto">.mh-50<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
+          <div class="mh-50 bg-light border rounded p-2 overflow-auto" tabindex="0">.mh-50<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-4">
         <div class="border rounded p-2" style="height: 220px;">
-          <div class="mh-50vh bg-light border rounded p-2 overflow-auto">.mh-50vh<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
+          <div class="mh-50vh bg-light border rounded p-2 overflow-auto" tabindex="0">.mh-50vh<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
         </div>
       </div>
     </div>

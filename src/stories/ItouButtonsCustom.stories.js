@@ -98,7 +98,7 @@ export const Partner = {
 const renderCopyToClipboard = () => {
   return `
     <strong><span>05/11/1997</span></strong>
-    <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="05/11/1997"><i class="ri-file-copy-line"></i></button>
+    <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Copié!" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="05/11/1997"><i class="ri-file-copy-line"></i></button>
   `;
 };
 

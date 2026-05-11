@@ -29,14 +29,32 @@ const renderPassBox = ({
     <li>
       <small>
         Date de fin previsionnelle
-        <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible de changer." data-bs-title="Cette date de fin est susceptible de changer."></i>
+        <span
+          class="d-inline-flex align-items-center"
+          role="img"
+          tabindex="0"
+          data-bs-toggle="tooltip"
+          aria-label="Cette date de fin est susceptible de changer."
+          data-bs-title="Cette date de fin est susceptible de changer."
+        >
+          <i class="ri-information-line ri-xl text-info" aria-hidden="true"></i>
+        </span>
       </small>
       <strong class="${endDateClass}">04/07/2026</strong>
     </li>
     <li>
       <small>
         ${validiteLabel}
-        <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette duree depend de la situation du PASS." data-bs-title="Cette duree depend de la situation du PASS."></i>
+        <span
+          class="d-inline-flex align-items-center"
+          role="img"
+          tabindex="0"
+          data-bs-toggle="tooltip"
+          aria-label="Cette duree depend de la situation du PASS."
+          data-bs-title="Cette duree depend de la situation du PASS."
+        >
+          <i class="ri-information-line ri-xl text-info" aria-hidden="true"></i>
+        </span>
       </small>
       <strong class="${validityClass}">${validiteValue}</strong>
     </li>

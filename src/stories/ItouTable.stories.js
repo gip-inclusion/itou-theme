@@ -141,7 +141,7 @@ const renderTable = ({ compact, striped, hover, bordered, responsive, responsive
           <th scope="col">Statut du PASS IAE</th>
           <th scope="col">Numero de PASS IAE</th>
           <th scope="col">Duree de validite</th>
-          <th scope="col" class="text-end w-100px"></th>
+          <th scope="col" class="text-end w-100px"><span class="visually-hidden">Actions rapides sur le candidat</span></th>
         </tr>
       </thead>`;
 
