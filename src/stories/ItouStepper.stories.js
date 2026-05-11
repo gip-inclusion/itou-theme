@@ -40,9 +40,9 @@ const render = ({ progressPercent }) => {
   return `
 <div class="c-stepper">
   <div class="progress progress--emploi">
-    <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${progressPercent}" aria-valuemin="0" aria-valuemax="100" aria-labelledby="informationsEntreprise"></div>
+    <div class="progress-bar" role="progressbar" style="width: ${progressPercent}%" aria-valuenow="${progressPercent}" aria-valuemin="0" aria-valuemax="100" aria-labelledby="currentProgressState"></div>
   </div>
-  <p id="informationsEntreprise"><strong>Étape 1</strong>/3 : Informations entreprise</p>
+  <p id="currentProgressState"><strong>Étape 1</strong>/3 : Informations entreprise</p>
 </div>`;
 };
 
