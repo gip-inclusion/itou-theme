@@ -1,5 +1,5 @@
-const a=({boxClasses:e,badgeClasses:t,badgeIcon:l,badgeLabel:i,endDateClass:n="",validityClass:r="",extraBlock:o="",validiteLabel:d="Duree de validite",validiteValue:c="721 jours (environ 1 an, 2 mois, 12 jours)"})=>`
-<div class="c-box c-box--pass ${e}">
+const a=({boxClasses:s,badgeClasses:t,badgeIcon:l,badgeLabel:i,endDateClass:n="",validityClass:r="",extraBlock:d="",validiteLabel:o="Duree de validite",validiteValue:c="721 jours (environ 1 an, 2 mois, 12 jours)"})=>`
+<div class="c-box c-box--pass ${s}">
   <div class="mb-3 mb-md-4">
     <span class="badge badge-base rounded-pill ${t}">
       <i class="${l}" aria-hidden="true"></i>
@@ -19,27 +19,45 @@ const a=({boxClasses:e,badgeClasses:t,badgeIcon:l,badgeLabel:i,endDateClass:n=""
     <li>
       <small>
         Date de fin previsionnelle
-        <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette date de fin est susceptible de changer." data-bs-title="Cette date de fin est susceptible de changer."></i>
+        <span
+          class="d-inline-flex align-items-center"
+          role="img"
+          tabindex="0"
+          data-bs-toggle="tooltip"
+          aria-label="Cette date de fin est susceptible de changer."
+          data-bs-title="Cette date de fin est susceptible de changer."
+        >
+          <i class="ri-information-line ri-xl text-info" aria-hidden="true"></i>
+        </span>
       </small>
       <strong class="${n}">04/07/2026</strong>
     </li>
     <li>
       <small>
-        ${d}
-        <i class="ri-information-line ri-xl text-info" data-bs-toggle="tooltip" aria-label="Cette duree depend de la situation du PASS." data-bs-title="Cette duree depend de la situation du PASS."></i>
+        ${o}
+        <span
+          class="d-inline-flex align-items-center"
+          role="img"
+          tabindex="0"
+          data-bs-toggle="tooltip"
+          aria-label="Cette duree depend de la situation du PASS."
+          data-bs-title="Cette duree depend de la situation du PASS."
+        >
+          <i class="ri-information-line ri-xl text-info" aria-hidden="true"></i>
+        </span>
       </small>
       <strong class="${r}">${c}</strong>
     </li>
   </ul>
 
-  ${o}
+  ${d}
 
   <a href="#" class="btn btn-outline-primary btn-block btn-ico bg-white">
     <i class="ri-eye-line fw-medium" aria-hidden="true"></i>
     <span>Afficher le PASS IAE</span>
   </a>
 </div>
-`,b={title:"Components/Box PASS",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+`,b={title:"Components/Box PASS",decorators:[s=>`<div style="max-width: 1000px; margin: 0 auto;">${s()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 La variante \`.c-box--pass\` présente les informations d'un PASS IAE et son état métier.
 
 ### États courants
@@ -107,7 +125,7 @@ La variante \`.c-box--pass\` présente les informations d'un PASS IAE et son ét
       </a>
     </div>
   </div>
-`,s={render:u,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Vue de référence regroupant les états métier les plus courants de `.c-box--pass`."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+`,e={render:u,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Vue de référence regroupant les états métier les plus courants de `.c-box--pass`."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: renderAllStates,
   parameters: {
     controls: {
@@ -122,4 +140,4 @@ La variante \`.c-box--pass\` présente les informations d'un PASS IAE et son ét
       }
     }
   }
-}`,...s.parameters?.docs?.source}}};const m=["AllStates"];export{s as AllStates,m as __namedExportsOrder,b as default};
+}`,...e.parameters?.docs?.source}}};const m=["AllStates"];export{e as AllStates,m as __namedExportsOrder,b as default};

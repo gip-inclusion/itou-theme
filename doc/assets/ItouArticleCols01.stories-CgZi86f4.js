@@ -65,7 +65,7 @@ const i=()=>`
       </div>
       <div class="s-articles-cols-01__col s-articles-cols-01__col--article col-12 col-lg-3">
         <article>
-          <h5 class="h3"><strong>Entreprises de travail temporaire d'insertion (ETTI)</strong></h5>
+          <h4 class="h3"><strong>Entreprises de travail temporaire d'insertion (ETTI)</strong></h4>
           <p>Les ETTI proposent des missions d'interim accompagnees pour lever progressivement les freins a l'emploi.</p>
           <p><strong>Source Avise</strong></p>
         </article>

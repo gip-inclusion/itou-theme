@@ -59,7 +59,7 @@ Cette story présenté la variante metier \`.c-box--organization\` pour afficher
           <a href="" rel="noopener" target="_blank" class="btn-link fw-medium has-external-link" aria-label="Site web (ouverture dans un nouvel onglet)">avenir.etti.com</a>
         </li>
       </ul>
-      <a href="#" class="btn btn-secondary btn-block mt-4">Voir la fiche de l'entreprise</a>
+      <a href="#" class="btn btn-secondary btn-block mt-3">Voir la fiche de l'entreprise</a>
     </div>
   </div>
 `,a={render:t,args:{collapsible:!1},argTypes:{collapsible:{name:"Collapsible",control:{type:"boolean"},description:"Active la version repliable de la box organization.",table:{category:"Options"}}},parameters:{docs:{description:{story:"\nVersion complète de fiche organisation. Passer `Collapsible` à `true` pour activer l'affichage repliable Bootstrap.\n"}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{

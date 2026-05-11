@@ -28,7 +28,7 @@ function c(){const e=document.querySelectorAll("[data-it-clipboard-button=copy]"
   </a>
   `,o={render:p,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:'Un bouton qui permet de copier du contenu en mémoire. À utiliser à la manière des "List data". <br>Le JS est pris en charge par le thème.'}}},args:{}},u=()=>`
     <strong><span>05/11/1997</span></strong>
-    <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="05/11/1997"><i class="ri-file-copy-line"></i></button>
+    <button class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Copié!" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="05/11/1997"><i class="ri-file-copy-line"></i></button>
   `,s={render:u,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Le `.btn-partner` et ses variations (.btn-partner--diagoriente pour l'instant)"}}},args:{}},b=()=>`
 <div class="dropdown">
   <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">

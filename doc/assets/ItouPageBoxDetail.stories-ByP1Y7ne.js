@@ -1,4 +1,4 @@
-function l(){const e=document.querySelector("#commentaires-btn"),s=document.querySelector("#commentaires-tab");!e||!s||e.dataset.ongletsInit!=="true"&&(e.dataset.ongletsInit="true",window.bootstrap?.Tab&&e.addEventListener("click",function(){bootstrap.Tab.getOrCreateInstance(s).show()}))}const d={title:"Pages/Box Detail",decorators:[e=>{const s=`<div style="max-width: 1600px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{l()},0),s}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nDifférents exemples de \"Fiche Détail\" reprenant les règles UX/UI de mise en forme.\n\n### Règles d'intégration\n- Pour chaque \"sous-page\" en onglet, ajouter un titre en `<h2>` afin de répéter le libellé d'onglet et de laisser de l'espace à droite pour un cta d'action principale.\n- Pour chaque page sans onglet, conserver un titre en `<h2>` mais le masquer avec `.visually-hidden` afin de maintenir une hiérarchie de titre cohérente.\n- Dans chaque `.c-box`, ajouter systématiquement un titre en `<h3>`.\n- Privilégier la séparation des contenus en plusieurs `.c-box`.\n- N'utiliser un séparateur `<hr>` de séparation de contenu uniquement quand la séparation par `.c-box` n'est pas possible ou pas pertinente.\n- Dans une `.c-box`, pour une action principale, placer un lien `.btn-outline-primary` à droite du titre `<h3>`.\n- Dans une `.c-box`, pour une action complémentaire, utiliser `.btn-link` pour un lien simple et `.btn-secondary` pour une action de type bouton.\n- Utiliser `.c-info` pour une information toujours visible.\n- Utiliser `.alert` pour une information conditionnelle (type d'utilisateur, étape en cours, nouvelle règle de gestion).\n"}}}},n=()=>`
+function l(){const e=document.querySelector("#commentaires-btn"),a=document.querySelector("#commentaires-tab");!e||!a||e.dataset.ongletsInit!=="true"&&(e.dataset.ongletsInit="true",window.bootstrap?.Tab&&e.addEventListener("click",function(){bootstrap.Tab.getOrCreateInstance(a).show()}))}const d={title:"Pages/Box Detail",decorators:[e=>{const a=`<div style="max-width: 1600px; margin: 0 auto;">${e()}</div>`;return setTimeout(()=>{l()},0),a}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nDifférents exemples de \"Fiche Détail\".\n\n### Règles d'intégration\n- Pour chaque \"sous-page\" en onglet, ajouter un titre en `<h2>` afin de répéter le libellé d'onglet et de laisser de l'espace à droite pour un cta d'action principale.\n- Pour chaque page sans onglet, conserver un titre en `<h2>` mais le masquer avec `.visually-hidden` afin de maintenir une hiérarchie de titre cohérente.\n- Dans chaque `.c-box`, ajouter systématiquement un titre en `<h3>`.\n- Privilégier la séparation des contenus en plusieurs `.c-box`.\n- N'utiliser un séparateur `<hr>` de séparation de contenu uniquement quand la séparation par `.c-box` n'est pas possible ou pas pertinente.\n- Dans une `.c-box`, pour une action principale, placer un lien `.btn-outline-primary` à droite du titre `<h3>`.\n- Dans une `.c-box`, pour une action complémentaire, utiliser `.btn-link` pour un lien simple et `.btn-secondary` pour une action de type bouton.\n- Utiliser `.c-info` pour une information toujours visible.\n- Utiliser `.alert` pour une information conditionnelle (type d'utilisateur, étape en cours, nouvelle règle de gestion).\n"}}}},n=()=>`
 <main class="s-main" role="main">
   <section class="s-title-02">
     <div class="s-title-02__container container">
@@ -795,7 +795,7 @@ function l(){const e=document.querySelector("#commentaires-btn"),s=document.quer
     </div>
   </section>
 </main>
-`,a={render:n,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets et avec plusieurs `.c-box` de contenu séparé."}}}},i={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets mais avec une seule `.c-box` et du contenu séparé par `<hr>` et titre en `<h3>`."}}}},t={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo avec onglets avec plusieurs `.c-box` de contenu séparé."}}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+`,s={render:n,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets et avec plusieurs `.c-box` de contenu séparé."}}}},i={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo en page simple, sans onglets mais avec une seule `.c-box` et du contenu séparé par `<hr>` et titre en `<h3>`."}}}},t={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Démo avec onglets avec plusieurs `.c-box` de contenu séparé."}}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render: renderSansOngletsMultiBox,
   parameters: {
     controls: {
@@ -810,7 +810,7 @@ function l(){const e=document.querySelector("#commentaires-btn"),s=document.quer
       }
     }
   }
-}`,...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+}`,...s.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: renderSansOngletsMonoBox,
   parameters: {
     controls: {
@@ -840,4 +840,4 @@ function l(){const e=document.querySelector("#commentaires-btn"),s=document.quer
       }
     }
   }
-}`,...t.parameters?.docs?.source}}};const c=["SansOngletsMultiBox","SansOngletsMonoBox","AvecOngletsMultibox"];export{t as AvecOngletsMultibox,i as SansOngletsMonoBox,a as SansOngletsMultiBox,c as __namedExportsOrder,d as default};
+}`,...t.parameters?.docs?.source}}};const c=["SansOngletsMultiBox","SansOngletsMonoBox","AvecOngletsMultibox"];export{t as AvecOngletsMultibox,i as SansOngletsMonoBox,s as SansOngletsMultiBox,c as __namedExportsOrder,d as default};

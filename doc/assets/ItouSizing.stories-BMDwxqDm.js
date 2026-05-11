@@ -54,7 +54,7 @@ Classes utilitaires de dimensionnement (largeur et hauteurs max).
     <div class="w-md-50 w-lg-33 bg-light border rounded p-2">.w-md-50 .w-lg-33 (responsive)</div>
   </div>
 </div>
-  `,p=()=>`
+  `,b=()=>`
 <div class="card">
   <div class="card-header"><strong>Exemples max-width (.mw-*)</strong></div>
   <div class="card-body vstack gap-3">
@@ -69,24 +69,24 @@ Classes utilitaires de dimensionnement (largeur et hauteurs max).
     </div>
   </div>
 </div>
-  `,b=()=>`
+  `,p=()=>`
 <div class="card">
   <div class="card-header"><strong>Exemples max-height (.mh-*)</strong></div>
   <div class="card-body">
     <div class="row g-3">
       <div class="col-12 col-md-6 col-xl-4">
         <div class="border rounded p-2" style="height: 220px;">
-          <div class="mh-25 bg-light border rounded p-2 overflow-auto">.mh-25<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
+          <div class="mh-25 bg-light border rounded p-2 overflow-auto" tabindex="0">.mh-25<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-4">
         <div class="border rounded p-2" style="height: 220px;">
-          <div class="mh-50 bg-light border rounded p-2 overflow-auto">.mh-50<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
+          <div class="mh-50 bg-light border rounded p-2 overflow-auto" tabindex="0">.mh-50<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-xl-4">
         <div class="border rounded p-2" style="height: 220px;">
-          <div class="mh-50vh bg-light border rounded p-2 overflow-auto">.mh-50vh<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
+          <div class="mh-50vh bg-light border rounded p-2 overflow-auto" tabindex="0">.mh-50vh<br><br>Contenu<br>long<br>pour<br>visualiser<br>la<br>limite.</div>
         </div>
       </div>
     </div>
@@ -96,8 +96,8 @@ Classes utilitaires de dimensionnement (largeur et hauteurs max).
 <section class="vstack gap-4">
   ${v()}
   ${h()}
-  ${p()}
   ${b()}
+  ${p()}
 </section>
   `,e={render:u,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Référence des utilitaires de dimensionnement et exemples visuels (`w-*`, `mw-*`, `mh-*`)."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render,
