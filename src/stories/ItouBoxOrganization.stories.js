@@ -82,7 +82,7 @@ const renderOrganization = ({ collapsible }) => {
           <a href="" rel="noopener" target="_blank" class="btn-link fw-medium has-external-link" aria-label="Site web (ouverture dans un nouvel onglet)">avenir.etti.com</a>
         </li>
       </ul>
-      <a href="#" class="btn btn-secondary btn-block mt-4">Voir la fiche de l'entreprise</a>
+      <a href="#" class="btn btn-secondary btn-block mt-3">Voir la fiche de l'entreprise</a>
     </div>
   </div>
 `;
