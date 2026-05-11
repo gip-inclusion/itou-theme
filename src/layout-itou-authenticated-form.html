@@ -42,11 +42,11 @@
         <div class="s-title-02__container container">
           <div class="s-title-02__row row">
             <div class="s-title-02__col col-12">
-              <div class="c-prevstep">
-                <a href="" class="btn btn-ico btn-link ps-0" aria-label="Retour vers la page xxxx / vers la liste de xxx">
-                  <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
-                  <span>Retour</span>
-                </a>
+              <div class="c-title">
+                <div class="c-title__main">
+                  <h1>Modifier les informations de ma structure</h1>
+                  <p>SIRET 50010961600027</p>
+                </div>
               </div>
             </div>
           </div>
@@ -55,121 +55,108 @@
 
       <section class="s-section">
         <div class="s-section__container container">
-          <div class="row">
-            <div class="col-12 col-xxl-8 col-xxxl-9">
-              <div class="c-stepper mb-3 mb-lg-5">
-                <div class="progress progress--emploi">
-                  <div class="progress-bar progress-bar-33" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+          <div class="s-section__row row">
+            <div class="s-section__col col-12">
+              <h2 class="visually-hidden">Modifier les informations générales</h2>
+              <div class="c-stepper mb-3 mb-md-4">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-33" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" aria-labelledby="currentProgressState">
                   </div>
                 </div>
-                <p>
+                <p id="currentProgressState">
                   <strong>Étape 1</strong>/3 : Informations générales
                 </p>
               </div>
-
+            </div>
+          </div>
+          <div class="s-section__row row">
+            <div class="s-section__col col-12 col-xxl-8 col-xxxl-9 order-2 order-xxl-1">
               <div class="c-form">
-                <div class="text-center mb-3 mb-lg-5">
-                  <div class="mb-2">
-                    <img src="https://demo.emplois.inclusion.beta.gouv.fr/static/img/edit_siae_header.e8a5646281f0.svg" alt="En-tête édition SIAE" class="edit-siae-header-image">
-                  </div>
-                  <h1>
-                    Informations générales
-                    <br class="d-none d-lg-inline">
-                    de ma structure
-                  </h1>
-                </div>
-
-                <div class="c-box c-box--organization mb-3 mb-lg-5">
-                  <div class="c-box--organization__summary">
-                    <i class="ri-community-line"></i>
-                    <div>
-                      <span data-bs-toggle="tooltip" data-bs-title="Entreprise d'insertion">EI</span>
-                      <h3>Garage Martinet Siège</h3>
-                    </div>
-                  </div>
-                  <div class="c-box--organization__detail">
-                    <hr class="my-4">
-                    <ul class="c-box--organization__list-contact">
-                      <li>
-                        SIRET :&nbsp;<strong>34445638900016</strong>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
                 <form method="post" class="js-prevent-multiple-submit">
-                  <input type="hidden" name="csrfmiddlewaretoken" value="NMiPiuJeHxXBZiSJNj0BG8dGtagod10pbelO4zwK70RCM7zaCUtxZegbO2Dqy1oe">
-
-
-                  <div class="form-group form-group-required"><label class="form-label" for="id_brand">Nom à afficher</label><input type="text" name="brand" value="Garage Martinet Siège" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_brand_helptext" id="id_brand">
-                    <div class="form-text">Nom présent sur la fiche et dans les résultats de recherche.</div>
-                  </div>
-                  <hr>
-                  <div class="form-group form-group-required"><label class="form-label" for="id_address_line_1">Adresse</label><input type="text" name="address_line_1" value="Route d'Altaves" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_address_line_1_helptext" id="id_address_line_1">
-                    <div class="form-text">Appartement, suite, bloc, bâtiment, boite postale, etc.</div>
-                  </div>
-                  <div class="form-group"><label class="form-label" for="id_address_line_2">Complément d'adresse</label><input type="text" name="address_line_2" maxlength="255" placeholder="" class="form-control" id="id_address_line_2"></div>
-                  <div class="form-row">
-                    <div class="form-group col-md-3 form-group-required"><label class="form-label" for="id_post_code">Code postal</label><input type="text" name="post_code" value="13103" maxlength="5" class="form-control" placeholder="Code postal" required="" id="id_post_code"></div>
-                    <div class="form-group col-md-9 form-group-required"><label class="form-label" for="id_city">Ville</label><input type="text" name="city" value="Saint-Étienne-du-Grès" maxlength="255" class="form-control" placeholder="Ville" required="" id="id_city"></div>
-                  </div>
-                  <hr>
-                  <div class="form-group form-group-required"><label class="form-label" for="id_phone">Téléphone</label><input type="text" name="phone" value="+33 (0)1 92 00 69 52" maxlength="20" class="form-control" placeholder="Téléphone" required="" id="id_phone"></div>
-                  <div class="form-group form-group-required"><label class="form-label" for="id_email">Email</label><input type="email" name="email" value="contact+ei@inclusion.beta.gouv.fr" maxlength="254" class="form-control" placeholder="Email" required="" id="id_email"></div>
-                  <div class="form-group"><label class="form-label" for="id_website">Site web</label><input type="url" name="website" value="http://www.garage-martinet.com" maxlength="200" class="form-control" placeholder="Site web" aria-describedby="id_website_helptext" id="id_website">
-                    <div class="form-text">Votre site web doit commencer par http:// ou https://</div>
-                  </div>
-
-
-
-                  <div class="row">
-                    <div class="col-12">
-                      <hr class="mb-3">
-                      <small class="d-inline-block mb-3">* champs obligatoires</small>
-                      <div class="form-row align-items-center justify-content-end gx-3">
-                        <div class="form-group col-12 col-lg order-3 order-lg-1">
-
-                          <a href="/dashboard/" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto" aria-label="Annuler la saisie de ce formulaire">
-                            <i class="ri-close-line ri-lg" aria-hidden="true"></i>
-                            <span>Annuler</span>
-                          </a>
-
-                        </div>
-
-                        <div class="form-group col col-lg-auto order-2 order-lg-3">
-
-                          <button type="submit" class="btn btn-block btn-primary" aria-label="Passer à l’étape suivante" data-matomo-event="true" data-matomo-category="employeurs" data-matomo-action="submit" data-matomo-option="maj-contact-structure">
-                            <span>Suivant</span>
-                          </button>
-
+                  <fieldset>
+                    <legend class="h3">Informations générales</legend>
+                    <div class="form-group form-group-required"><label class="form-label" for="id_brand">Nom à afficher</label><input type="text" name="brand" value="ETTI Une nouvelle chance" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_brand_helptext" id="id_brand">
+                      <div id="id_brand_helptext" class="form-text">Nom présent sur la fiche et dans les résultats de recherche.</div>
+                    </div>
+                    <div class="form-group form-group-required"><label class="form-label" for="id_address_line_1">Adresse</label><input type="text" name="address_line_1" value="14 Avenue de la Plaine" maxlength="255" placeholder="" class="form-control" required="" aria-describedby="id_address_line_1_helptext" id="id_address_line_1">
+                      <div id="id_address_line_1_helptext" class="form-text">Appartement, suite, bloc, bâtiment, boite postale, etc.</div>
+                    </div>
+                    <div class="form-group"><label class="form-label" for="id_address_line_2">Complément d'adresse</label><input type="text" name="address_line_2" maxlength="255" placeholder="" class="form-control" id="id_address_line_2"></div>
+                    <div class="form-group form-group-input-w-lg-33 form-group-required"><label class="form-label" for="id_post_code">Code postal</label><input type="text" name="post_code" value="30300" maxlength="5" class="form-control" required="" id="id_post_code"></div>
+                    <div class="form-group form-group-input-w-lg-66 form-group-required"><label class="form-label" for="id_city">Ville</label><input type="text" name="city" value="beaucaire" maxlength="255" class="form-control" required="" id="id_city"></div>
+                    <div class="form-group form-group-input-w-lg-33"><label class="form-label" for="id_phone">Téléphone</label><input type="tel" name="phone" value="0539559724" maxlength="20" class="form-control" id="id_phone"></div>
+                    <div class="form-group form-group-input-w-lg-66"><label class="form-label" for="id_email">Adresse e-mail</label><input type="email" name="email" value="contact+etti@inclusion.gouv.fr" maxlength="254" class="form-control" id="id_email"></div>
+                    <div class="form-group form-group-input-w-lg-66"><label class="form-label" for="id_website">Site web</label><input type="url" name="website" value="http://avenir.etti.com" maxlength="200" class="form-control" aria-describedby="id_website_helptext" id="id_website">
+                      <div id="id_website_helptext" class="form-text">Votre site web doit commencer par http:// ou https://</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <hr class="mb-3">
+                        <small class="d-inline-block mb-3">* champs obligatoires</small>
+                        <div class="form-row align-items-center justify-content-end gx-3">
+                          <div class="form-group col-12 col-lg order-3 order-lg-1">
+                            <a href="" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto" aria-label="Annuler la saisie de ce formulaire">
+                              <i class="ri-close-line ri-lg" aria-hidden="true"></i>
+                              <span>Annuler</span>
+                            </a>
+                          </div>
+                          <div class="form-group col col-lg-auto order-2 order-lg-3">
+                            <button type="submit" class="btn btn-block btn-primary" aria-label="Passer à l’étape suivante">
+                              <span>Suivant</span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div id="confirm_reset_modal" class="modal fade" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-
-                        <div class="modal-header">
-                          <h3 class="modal-title">Êtes-vous sûr de vouloir annuler ?</h3>
-                        </div>
-                        <div class="modal-body">
-                          Les informations renseignées ne seront pas enregistrées.
-                          <br>
-                          Cette action est irréversible.
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="modal">Retour</button>
-                          <a href="/dashboard/" class="btn btn-sm btn-danger">Confirmer l'annulation</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-
+                  </fieldset>
                 </form>
-
+              </div>
+            </div>
+            <div class="s-section__col col-12 col-xxl-4 col-xxxl-3 order-1 order-xxl-2">
+              <div class="c-box c-box--organization mb-3 mb-md-4">
+                <button class="c-box--organization__summary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoxOrganization" aria-expanded="true" aria-controls="collapseBoxOrganization">
+                  <i class="ri-community-line" aria-hidden="true"></i>
+                  <div>
+                    <span data-bs-toggle="tooltip" data-bs-title="Entreprise de travail temporaire d'insertion">ETTI</span>
+                    <span class="d-block h3">ETTI Une nouvelle chance</span>
+                  </div>
+                </button>
+                <div class="c-box--organization__detail collapse show" id="collapseBoxOrganization">
+                  <hr class="my-4">
+                  <ul class="c-box--organization__list-contact">
+                    <li>
+                      <i class="ri-map-pin-2-line fw-normal me-2" aria-hidden="true"></i>
+                      <address class="m-0">14 Avenue de la Plaine, 30300 beaucaire</address>
+                      <button class="btn-link fw-medium ms-1" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="14 Avenue de la Plaine, 30300 beaucaire" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                        <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                        <span class="visually-hidden">Copier</span>
+                      </button>
+                    </li>
+                    <li>
+                      <i class="ri-mail-line fw-normal me-2" aria-hidden="true"></i>
+                      <a href="mailto:contact+etti@inclusion.gouv.fr" aria-label="Contact par mail" class="text-break">contact+etti@inclusion.gouv.fr</a>
+                      <button class="btn-link fw-medium ms-1" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="contact+etti@inclusion.gouv.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                        <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                        <span class="visually-hidden">Copier</span>
+                      </button>
+                    </li>
+                    <li>
+                      <i class="ri-phone-line fw-normal me-2" aria-hidden="true"></i>
+                      05 39 55 97 24
+                      <button class="btn-link fw-medium ms-1" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0539559724" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                        <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                        <span class="visually-hidden">Copier</span>
+                      </button>
+                    </li>
+                    <li>
+                      <i class="ri-global-line fw-normal me-2" aria-hidden="true"></i>
+                      <a href="http://avenir.etti.com" rel="noopener" target="_blank" class="btn-link fw-medium has-external-link" aria-label="Site web (ouverture dans un nouvel onglet)">
+                        http://avenir.etti.com
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="" class="btn btn-secondary btn-block mt-3">Voir la fiche de l'entreprise</a>
+                </div>
               </div>
             </div>
           </div>
