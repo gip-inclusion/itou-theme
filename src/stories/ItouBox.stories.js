@@ -43,7 +43,7 @@ export default {
     docs: {
       description: {
         component: `
-Les composants \`.c-box\` sert a structurer et mettre en valeur du contenu.
+Les composants \`.c-box\` sert a structurer et mettre en valeur du contenu en enrobant le contenu dans une zone délimitée.
 \`.c-box\` est un conteneur de lecture (résumé, informations, bloc contextuel).
 
 `,
@@ -133,14 +133,51 @@ const renderBox = () => `
 
 `;
 
-export const Box = {
+export const BoxDetail = {
   render: renderBox,
   parameters: {
     controls: { disable: true },
     docs: {
       controls: { disable: true },
       description: {
-        story: "Le `.c-box` est utilisé pour enrober du contenu et créer une zone délimitée.",
+        story: "Un exemple avec une box de type \"détail\"",
+      },
+    },
+  },
+};
+
+const renderBoxDescription = () => `
+<div class="c-box">
+  <article>
+    <h2 class="h3">Son activité</h2>
+    <p>La structure à vocation sociale propose des services d'entretien, de réparation et de location de véhicule, à tarifs solidaires, principalement destinés à des publics en difficulté.<br>
+      L'objectif est de favoriser la mobilité, condition souvent indispensable pour trouver ou garder un emploi</p>
+    <p>Les activités :<br>
+      - Réparation et entretien à tarifs solidaires : mécanique générale, contrôle technique, vidanges, freins, pneus, etc.<br>
+      - Location de véhicules : courte ou moyenne durée, à tarifs adaptés aux ressources.<br>
+      - Accompagnement à la mobilité : aide à la gestion administrative, au financement du permis de conduire, etc.</p>
+  </article>
+  <hr class="my-4">
+  <article>
+    <h2 class="h3">L'accompagnement proposé</h2>
+    <p>Les postes proposés :<br>
+      * Mécanicien(ne) automobile<br>
+      * Agent(e) de maintenance de véhicules<br>
+      * Magasinier(e), gestionnaire de stock<br>
+      * Chargé(e) d'accueil</p>
+    <p>Les salariés en insertion sont accompagnés par un encadrant technique qui joue un rôle de formateur et de superviseur.</p>
+  </article>
+</div>
+`;
+
+export const BoxDescription = {
+  render: renderBoxDescription,
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      controls: { disable: true },
+      description: {
+        story: "Un exemple avec une box de type \"description\"",
       },
     },
   },
