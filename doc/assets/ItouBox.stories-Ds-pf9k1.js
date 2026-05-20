@@ -1,4 +1,4 @@
-function r(){const a=document.querySelectorAll("[data-it-clipboard-button=copy]");for(let t=0,s=a.length;t<s;t+=1){const e=a[t],n=e.dataset.itCopyToClipboard,i=bootstrap.Tooltip.getOrCreateInstance(e);e.addEventListener("click",function(){e.hasAttribute("aria-describedby")||(i.show(),navigator.clipboard.writeText(n).then(()=>{}).catch(()=>{}))}),e.addEventListener("blur",function(){i.hide()})}}const d={title:"Components/Box",decorators:[a=>{const t=`<div style="max-width: 1000px; margin: 0 auto;">${a()}</div>`;return setTimeout(()=>{r()},0),t}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nLes composants `.c-box` sert a structurer et mettre en valeur du contenu.\n`.c-box` est un conteneur de lecture (résumé, informations, bloc contextuel).\n\n"}}}},l=()=>`
+function l(){const a=document.querySelectorAll("[data-it-clipboard-button=copy]");for(let e=0,s=a.length;e<s;e+=1){const t=a[e],r=t.dataset.itCopyToClipboard,n=bootstrap.Tooltip.getOrCreateInstance(t);t.addEventListener("click",function(){t.hasAttribute("aria-describedby")||(n.show(),navigator.clipboard.writeText(r).then(()=>{}).catch(()=>{}))}),t.addEventListener("blur",function(){n.hide()})}}const p={title:"Components/Box",decorators:[a=>{const e=`<div style="max-width: 1000px; margin: 0 auto;">${a()}</div>`;return setTimeout(()=>{l()},0),e}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nLes composants `.c-box` sert a structurer et mettre en valeur du contenu en enrobant le contenu dans une zone délimitée.\n`.c-box` est un conteneur de lecture (résumé, informations, bloc contextuel).\n\n"}}}},d=()=>`
 <div class="c-box">
   <div class="row mb-3">
     <div class="col-12 col-sm">
@@ -77,7 +77,29 @@ function r(){const a=document.querySelectorAll("[data-it-clipboard-button=copy]"
   </div>
 </div>
 
-`,o={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Le `.c-box` est utilisé pour enrober du contenu et créer une zone délimitée."}}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+`,o={render:d,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:'Un exemple avec une box de type "détail"'}}}},c=()=>`
+<div class="c-box">
+  <article>
+    <h2 class="h3">Son activité</h2>
+    <p>La structure à vocation sociale propose des services d'entretien, de réparation et de location de véhicule, à tarifs solidaires, principalement destinés à des publics en difficulté.<br>
+      L'objectif est de favoriser la mobilité, condition souvent indispensable pour trouver ou garder un emploi</p>
+    <p>Les activités :<br>
+      - Réparation et entretien à tarifs solidaires : mécanique générale, contrôle technique, vidanges, freins, pneus, etc.<br>
+      - Location de véhicules : courte ou moyenne durée, à tarifs adaptés aux ressources.<br>
+      - Accompagnement à la mobilité : aide à la gestion administrative, au financement du permis de conduire, etc.</p>
+  </article>
+  <hr class="my-4">
+  <article>
+    <h2 class="h3">L'accompagnement proposé</h2>
+    <p>Les postes proposés :<br>
+      * Mécanicien(ne) automobile<br>
+      * Agent(e) de maintenance de véhicules<br>
+      * Magasinier(e), gestionnaire de stock<br>
+      * Chargé(e) d'accueil</p>
+    <p>Les salariés en insertion sont accompagnés par un encadrant technique qui joue un rôle de formateur et de superviseur.</p>
+  </article>
+</div>
+`,i={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:'Un exemple avec une box de type "description"'}}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   render: renderBox,
   parameters: {
     controls: {
@@ -88,8 +110,23 @@ function r(){const a=document.querySelectorAll("[data-it-clipboard-button=copy]"
         disable: true
       },
       description: {
-        story: "Le \`.c-box\` est utilisé pour enrober du contenu et créer une zone délimitée."
+        story: "Un exemple avec une box de type \\"détail\\""
       }
     }
   }
-}`,...o.parameters?.docs?.source}}};const c=["Box"];export{o as Box,c as __namedExportsOrder,d as default};
+}`,...o.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+  render: renderBoxDescription,
+  parameters: {
+    controls: {
+      disable: true
+    },
+    docs: {
+      controls: {
+        disable: true
+      },
+      description: {
+        story: "Un exemple avec une box de type \\"description\\""
+      }
+    }
+  }
+}`,...i.parameters?.docs?.source}}};const m=["BoxDetail","BoxDescription"];export{i as BoxDescription,o as BoxDetail,m as __namedExportsOrder,p as default};

@@ -1,4 +1,4 @@
-const r={title:"Pages/Form Detail",decorators:[l=>`<div style="max-width: 1600px; margin: 0 auto;">${l()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nExemple de mise en forme d'une page \"Formulaire\".\n\n### Règles d'intégration\n- Conserver un titre en `<h2>` et le masquer avec `.visually-hidden` afin de préserver une hiérarchie de titres cohérente et d'éviter les erreurs d'accessibilité.\n- Dans chaque `.c-form`, regrouper les champs dans un ou plusieurs couples `<fieldset>` + `<legend class=\"h3\">`.\n- Le titre du formulaire doit toujours être porté par ce `legend.h3`.\n- Pour une action complémentaire dans un `.c-form`, utiliser `.btn-link` pour un lien simple et `.btn-secondary` pour une action portée par un bouton.\n- Utiliser `.c-info` pour une information toujours visible.\n- Utiliser `.alert` pour une information conditionnelle, liée par exemple au type d'utilisateur, à l'étape en cours ou à une nouvelle règle de gestion.\n"}}}},s=()=>`
+const n={title:"Pages/Form Detail",decorators:[i=>`<div style="max-width: 1600px; margin: 0 auto;">${i()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nExemple de mise en forme d'une page \"Formulaire\".\n\n### Règles d'intégration\n- Conserver un titre en `<h2>` et le masquer avec `.visually-hidden` afin de préserver une hiérarchie de titres cohérente et d'éviter les erreurs d'accessibilité.\n- Dans chaque `.c-form`, regrouper les champs dans un ou plusieurs couples `<fieldset>` + `<legend class=\"h3\">`.\n- Le titre du formulaire doit toujours être porté par ce `legend.h3`.\n- Pour une action complémentaire dans un `.c-form`, utiliser `.btn-link` pour un lien simple et `.btn-secondary` pour une action portée par un bouton.\n- Utiliser `.c-info` pour une information toujours visible.\n- Utiliser `.alert` pour une information conditionnelle, liée par exemple au type d'utilisateur, à l'étape en cours ou à une nouvelle règle de gestion.\n"}}}},s=()=>`
 <main class="s-main" role="main">
   <section class="s-title-02">
     <div class="s-title-02__container container">
@@ -124,7 +124,7 @@ const r={title:"Pages/Form Detail",decorators:[l=>`<div style="max-width: 1600px
     </div>
   </section>
 </main>
-`,i=()=>`
+`,o=()=>`
 <main id="main" role="main" class="s-main">
   <section class="s-title-02">
     <div class="s-title-02__container container">
@@ -246,7 +246,178 @@ const r={title:"Pages/Form Detail",decorators:[l=>`<div style="max-width: 1600px
     </div>
   </section>
 </main>
-`,e={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Version detail de la page formulaire avec stepper, formulaire principal et box organization latérale."}}}},a={render:i,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemple de formulaire de modification d'informations personnelles avec alerte contextuelle et champs d'identification."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+`,e={render:s,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Version detail de la page formulaire avec stepper, formulaire principal et box organization latérale."}}}},a={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemple de formulaire de modification d'informations personnelles avec alerte contextuelle et champs d'identification."}}}},r=()=>`
+<main id="main" role="main" class="s-main">
+  <section class="s-title-02">
+    <div class="s-title-02__container container">
+      <div class="s-title-02__row row">
+        <div class="s-title-02__col col-12">
+          <div class="c-title">
+            <div class="c-title__main">
+              <h1>Fiches salarié ASP : MARTIN Sylvie</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-section">
+    <div class="s-section__container container">
+      <div class="s-section__row row mb-3 mb-md-5">
+        <div class="s-section__col col-12 col-xxl-8 col-xxxl-9">
+          <div class="c-stepper">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-labelledby="currentProgressState">
+              </div>
+            </div>
+            <p id="currentProgressState">
+              <strong>Étape 3</strong>/5 : Situation
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-section__row row">
+        <div class="s-section__col col-12 col-xxl-8 col-xxxl-9">
+          <h2 class="visually-hidden">Situation du salarié</h2>
+          <div class="c-form">
+            <form method="post" class="js-prevent-multiple-submit">
+              <fieldset>
+                <legend class="h3">Qualification et maîtrise du français</legend>
+                <div class="form-group form-group-required"><label class="form-label" for="id_education_level">Niveau de formation</label><select name="education_level" class="form-select" required="" id="id_education_level">
+                    <option value="" selected="">---------</option>
+                    <option value="00">Personne avec qualifications non-certifiantes</option>
+                    <option value="01">Jamais scolarisé</option>
+                    <option value="10">Troisième cycle ou école d'ingénieur</option>
+                    <option value="20">Formation de niveau licence</option>
+                    <option value="30">Formation de niveau BTS ou DUT</option>
+                    <option value="40">Formation de niveau BAC</option>
+                    <option value="41">Brevet de technicien ou baccalauréat professionnel</option>
+                    <option value="50">Formation de niveau BEP ou CAP</option>
+                    <option value="51">Diplôme obtenu CAP ou BEP</option>
+                    <option value="60">Formation courte d'une durée d'un an</option>
+                    <option value="70">Pas de formation au-delà de la scolarité obligatoire</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="low_level_in_french" class="form-check-input" id="id_low_level_in_french"><label class="form-check-label" for="id_low_level_in_french">Maîtrise de la langue française inférieure au niveau A1</label></div>
+                </div>
+              </fieldset>
+              <hr class="mt-2 mb-3">
+              <fieldset>
+                <legend class="h3">Ressources</legend>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="resourceless" class="form-check-input" id="id_resourceless"><label class="form-check-label" for="id_resourceless">Sans ressource</label></div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="rsa_allocation" data-bs-toggle="collapse" data-bs-target="#collapse_rsa_allocation" aria-controls="collapse_rsa_allocation" aria-expanded="false" class="form-check-input" aria-describedby="id_rsa_allocation_helptext" id="id_rsa_allocation"><label class="form-check-label" for="id_rsa_allocation">Bénéficiaire du RSA</label>
+                    <div id="id_rsa_allocation_helptext" class="form-text">Revenu de solidarité active</div>
+                  </div>
+                </div>
+                <div id="collapse_rsa_allocation" class="ps-3 pb-1 mb-3 border-start border-primary collapse">
+                  <div class="form-group"><label class="form-label" for="id_rsa_markup">Majoration du RSA</label><select name="rsa_markup" class="form-select" id="id_rsa_markup">
+                      <option value="OUI-M">Bénéficiaire du RSA et majoré</option>
+                      <option value="OUI-NM">Bénéficiaire du RSA et non-majoré</option>
+                    </select></div>
+                  <div class="form-group form-group-input-w-lg-66"><label class="form-label" for="id_rsa_allocation_since">Bénéficiaire du RSA depuis</label><select name="rsa_allocation_since" class="form-select" id="id_rsa_allocation_since">
+                      <option value="" selected="">---------</option>
+                      <option value="01">Moins de 6 mois</option>
+                      <option value="02">De 6 à 11 mois</option>
+                      <option value="03">De 12 à 23 mois</option>
+                      <option value="04">24 mois et plus</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+              <hr class="mt-2 mb-3">
+              <fieldset>
+                <legend class="h3">Situation professionnelle</legend>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="unemployed" data-bs-toggle="collapse" data-bs-target="#collapse_unemployed" aria-controls="collapse_unemployed" aria-expanded="false" class="form-check-input" id="id_unemployed"><label class="form-check-label" for="id_unemployed">Sans emploi à l'embauche</label></div>
+                </div>
+                <div id="collapse_unemployed" class="ps-3 pb-1 mb-3 border-start border-primary collapse">
+                  <div class="form-group form-group-input-w-lg-66"><label class="form-label" for="id_unemployed_since">Sans emploi depuis</label><select name="unemployed_since" class="form-select" id="id_unemployed_since">
+                      <option value="" selected="">---------</option>
+                      <option value="01">Moins de 6 mois</option>
+                      <option value="02">De 6 à 11 mois</option>
+                      <option value="03">De 12 à 23 mois</option>
+                      <option value="04">24 mois et plus</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+              <hr class="mt-2 mb-3">
+              <fieldset>
+                <legend class="h3">Situation de handicap</legend>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="rqth_employee" class="form-check-input" aria-describedby="id_rqth_employee_helptext" id="id_rqth_employee"><label class="form-check-label" for="id_rqth_employee">Titulaire de la RQTH</label>
+                    <div id="id_rqth_employee_helptext" class="form-text">Reconnaissance de la qualité de travailleur handicapé</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="oeth_employee" class="form-check-input" aria-describedby="id_oeth_employee_helptext" id="id_oeth_employee"><label class="form-check-label" for="id_oeth_employee">Bénéficiaire de la loi handicap (OETH)</label>
+                    <div id="id_oeth_employee_helptext" class="form-text">L'obligation d'emploi des travailleurs handicapés</div>
+                  </div>
+                </div>
+              </fieldset>
+              <hr class="mt-2 mb-3">
+              <fieldset>
+                <legend class="h3">Situation familiale</legend>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="isolated_parent" class="form-check-input" id="id_isolated_parent"><label class="form-check-label" for="id_isolated_parent">Parent isolé</label></div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="ase_exit" class="form-check-input" id="id_ase_exit"><label class="form-check-label" for="id_ase_exit">Sortant de l'ASE (Aide Sociale à l'Enfance)</label></div>
+                </div>
+              </fieldset>
+              <hr class="mt-2 mb-3">
+              <fieldset>
+                <legend class="h3">Autres situations</legend>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="housing_issue" class="form-check-input" id="id_housing_issue"><label class="form-check-label" for="id_housing_issue">Personne sans hébergement ou hébergée ou ayant un parcours de rue</label></div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="refugee" class="form-check-input" id="id_refugee"><label class="form-check-label" for="id_refugee">Réfugié statutaire ou bénéficiaire de la protection subsidiaire</label></div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="detention_exit_or_ppsmj" class="form-check-input" id="id_detention_exit_or_ppsmj"><label class="form-check-label" for="id_detention_exit_or_ppsmj">Sortant de détention ou personne placée sous main de justice</label></div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" name="mobility_issue" class="form-check-input" id="id_mobility_issue"><label class="form-check-label" for="id_mobility_issue">Problème de mobilité</label></div>
+                </div>
+              </fieldset>
+              <div class="row">
+                <div class="col-12">
+                  <hr class="mt-2 mb-3">
+                  <small class="d-inline-block mb-3">* champs obligatoires</small>
+                  <div class="form-row align-items-center justify-content-end gx-3">
+                    <div class="form-group col-12 col-lg order-3 order-lg-1">
+                      <button type="button" class="btn btn-link btn-ico ps-lg-0 w-100 w-lg-auto" aria-label="Annuler la saisie de ce formulaire">
+                        <i class="ri-close-line ri-lg" aria-hidden="true"></i>
+                        <span>Annuler</span>
+                      </button>
+                    </div>
+                    <div class="form-group col col-lg-auto order-1 order-lg-2">
+                      <a href="" class="btn btn-block btn-outline-primary" aria-label="Retourner à l'étape précédente">
+                        <span>Retour</span>
+                      </a>
+                    </div>
+                    <div class="form-group col col-lg-auto order-2 order-lg-3">
+                      <button type="submit" class="btn btn-block btn-primary" aria-label="Passer à l'étape suivante">
+                        <span>Suivant</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+`,l={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemple avec plusieurs `<fieldset>` séparés par des lignes `<hr>`. Pour les formulaires organisés en sections multiples (Qualification, Ressources, Situation professionnelle, Handicap, etc.)."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     controls: {
@@ -276,4 +447,19 @@ const r={title:"Pages/Form Detail",decorators:[l=>`<div style="max-width: 1600px
       }
     }
   }
-}`,...a.parameters?.docs?.source}}};const t=["Default","InformationsPersonnelles"];export{e as Default,a as InformationsPersonnelles,t as __namedExportsOrder,r as default};
+}`,...a.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  render: renderMultipleFieldsets,
+  parameters: {
+    controls: {
+      disable: true
+    },
+    docs: {
+      controls: {
+        disable: true
+      },
+      description: {
+        story: "Exemple avec plusieurs \`<fieldset>\` séparés par des lignes \`<hr>\`. Pour les formulaires organisés en sections multiples (Qualification, Ressources, Situation professionnelle, Handicap, etc.)."
+      }
+    }
+  }
+}`,...l.parameters?.docs?.source}}};const d=["Default","InformationsPersonnelles","AvecPlusieursFieldsets"];export{l as AvecPlusieursFieldsets,e as Default,a as InformationsPersonnelles,d as __namedExportsOrder,n as default};
