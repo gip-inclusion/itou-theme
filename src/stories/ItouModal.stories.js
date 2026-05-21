@@ -66,11 +66,10 @@ const renderDefault = () => {
                 <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
                 <span>Retour</span>
               </a>
-              <button type="button" class="btn btn-sm btn-ico btn-outline-primary" disabled data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Vous devez d'abord decliner la candidature pour pouvoir la transferer a un autre employeur.">
-                <i class="ri-home-smile-line" aria-hidden="true"></i>
-                <strong>Une autre structure</strong>
+              <button type="button" class="btn btn-sm btn-outline-primary">
+                Action secondaire
               </button>
-              <button type="button" class="btn btn-sm btn-primary">Sauvegarder</button>
+              <button type="button" class="btn btn-sm btn-primary">Action pricicipale</button>
             </div>
           </div>
         </form>
@@ -132,6 +131,44 @@ const renderMarketingModal = () => {
   `;
 };
 
+const renderDeleteCommentModal = () => {
+  const modalId = `modal-delete-comment-${Math.random().toString(36).slice(2, 10)}`;
+  const titleId = `delete-comment-title-${Math.random().toString(36).slice(2, 10)}`;
+
+  return `
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${modalId}">
+      Launch exemple .modal suppression
+    </button>
+
+    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labelledby="${titleId}" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="${titleId}" class="modal-title">Suppression du commentaire</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p>Voulez-vous supprimer ce commentaire ?</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal" aria-label="Annuler la suppression du commentaire" type="button">
+              Annuler
+            </button>
+            <button class="btn btn-ico btn-primary btn-sm" data-bs-dismiss="modal" aria-label="Supprimer le commentaire" type="button">
+              <i class="ri-delete-bin-line fw-normal" aria-hidden="true"></i>
+              <span>Supprimer</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
 export const Default = {
   render: renderDefault,
   parameters: {
@@ -153,6 +190,19 @@ export const MarketingModal = {
       controls: { disable: true },
       description: {
         story: "Variante de modale orientee contenu marketing (liste de benefices et double CTA).",
+      },
+    },
+  },
+};
+
+export const DeleteCommentModal = {
+  render: renderDeleteCommentModal,
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      controls: { disable: true },
+      description: {
+        story: "Variante de modale de confirmation pour suppression d'un commentaire.",
       },
     },
   },
