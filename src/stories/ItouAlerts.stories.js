@@ -69,6 +69,10 @@ Le composant \`.alert\` est utilisé pour mettre en avant une information ou fou
       options: ["info", "success", "warning", "danger", "important"],
       description: "Variante de couleur de l'alerte",
     },
+    customIcon: {
+      control: "text",
+      description: "Classe d'une icône Remixicon spécifique à afficher à la place de l'icône par défaut (ex: ri-file-warning-line)",
+    },
     role: {
       control: { type: "select" },
       options: ["status", "alert"],
@@ -109,14 +113,22 @@ const textColorByVariant = {
   important: "text-important",
 };
 
-const render = ({ variant, role, dismissible, withIcon, withTitle, withAction }) => {
+const render = ({ variant, customIcon, role, dismissible, withIcon, withTitle, withAction }) => {
   const dismissibleClass = dismissible ? " alert-dismissible fade show" : "";
   const closeButton = dismissible
     ? `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>`
     : "";
+  const normalizedCustomIcon = (customIcon || "").trim();
+  const customIconClass = normalizedCustomIcon
+    ? normalizedCustomIcon.startsWith("ri-")
+      ? normalizedCustomIcon
+      : `ri-${normalizedCustomIcon}`
+    : "";
+  const iconClass = customIconClass || iconByVariant[variant];
+  const showIcon = withIcon;
 
   // Alerte simple sans icône ni action
-  if (!withIcon && !withAction) {
+  if (!showIcon && !withAction) {
     return `
 <div class="alert alert-${variant}${dismissibleClass}" role="${role}">
   ${closeButton}
@@ -125,10 +137,10 @@ const render = ({ variant, role, dismissible, withIcon, withTitle, withAction })
   }
 
   // Alerte avec icône et/ou action
-  const iconBlock = withIcon
+  const iconBlock = showIcon
     ? `
         <div class="col-auto pe-0">
-          <i class="${iconByVariant[variant]} ri-xl ${textColorByVariant[variant]}" aria-hidden="true"></i>
+          <i class="${iconClass} ri-xl ${textColorByVariant[variant]}" aria-hidden="true"></i>
         </div>`
     : "";
 
@@ -166,6 +178,7 @@ export const Default = {
   },
   args: {
     variant: "info",
+    customIcon: "",
     role: "status",
     dismissible: false,
     withIcon: false,
@@ -187,6 +200,7 @@ export const WithIcon = {
   },
   args: {
     variant: "info",
+    customIcon: "",
     role: "status",
     dismissible: false,
     withIcon: true,
@@ -208,6 +222,7 @@ export const WithAction = {
   },
   args: {
     variant: "important",
+    customIcon: "",
     role: "status",
     dismissible: true,
     withIcon: true,
@@ -229,6 +244,7 @@ export const Success = {
   },
   args: {
     variant: "success",
+    customIcon: "",
     role: "status",
     dismissible: true,
     withIcon: true,
@@ -250,6 +266,7 @@ export const Danger = {
   },
   args: {
     variant: "danger",
+    customIcon: "",
     role: "alert",
     dismissible: true,
     withIcon: true,
@@ -271,6 +288,7 @@ export const Dismissible = {
   },
   args: {
     variant: "warning",
+    customIcon: "",
     role: "alert",
     dismissible: true,
     withIcon: true,
@@ -322,12 +340,17 @@ Une fois fermée par l'utilisateur, l'alerte ne réapparaîtra plus lors des vis
   },
   args: {
     variant: "info",
+    customIcon: "",
   },
   argTypes: {
     variant: {
       control: { type: "select" },
       options: ["info", "success", "warning", "danger", "important"],
       description: "Variante de couleur de l'alerte affichée une seule fois",
+    },
+    customIcon: {
+      control: "text",
+      description: "Nom d'une icône Remixicon spécifique à afficher à la place de l'icône par défaut",
     },
   },
 };
