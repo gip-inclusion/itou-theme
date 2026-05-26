@@ -21,7 +21,6 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        components_itou: resolve(__dirname, "src/components-itou.html"),
         sections_itou_01: resolve(__dirname, "src/sections-itou-01.html"),
         sections_itou_03: resolve(__dirname, "src/sections-itou-03.html"),
         sections_itou_06: resolve(__dirname, "src/sections-itou-06.html"),
