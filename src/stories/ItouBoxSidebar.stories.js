@@ -49,7 +49,8 @@ Chaque box de sidebar **doit obligatoirement comporter un titre en \`<h3>\`** po
 
 Par défaut, la box est blanche avec une bordure grise. Elle peut également prendre des variantes colorées selon le contexte :
 - \`bg-info-lightest border-info-light\` — information ou alerte douce
-- \`bg-warning-lightest border-warning-light\` — avertissement
+- \`bg-warning-lightest border-warning-light\` — rappel, à faire
+- \`bg-success-lightest border-success-light\` — réussite
 `,
       },
     },
@@ -195,6 +196,29 @@ export const BoxWarning = {
       controls: { disable: true },
       description: {
         story: "Box d'avertissement (variante `bg-warning-lightest`) pour signaler un point d'attention sur un contrat.",
+      },
+    },
+  },
+};
+
+const renderBoxSuccess = () => `
+  <div class="c-box mb-3 mb-md-4 bg-success-lightest border-success-light">
+      <h3>Votre dossier a été traité le JJ/MM/AAAA</h3>
+      <p>Retrouvez le détail de la décision en cliquant ici.</p>
+      <a class="btn btn-primary btn-block" href="">
+        Voir le résultat
+      </a>
+  </div>
+`;
+
+export const BoxSuccess = {
+  render: renderBoxSuccess,
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      controls: { disable: true },
+      description: {
+        story: "Box de succès (variante `bg-success-lightest`) pour signaler que le dossier a été traité avec succès.",
       },
     },
   },
