@@ -1,6 +1,6 @@
 export default {
   title: "Components/Box Organization",
-  decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],
+  decorators: [(Story) => `<div style="max-width: 480px; margin: 0 auto;">${Story()}</div>`],
   tags: ["autodocs"],
   parameters: {
     layout: "padded",
