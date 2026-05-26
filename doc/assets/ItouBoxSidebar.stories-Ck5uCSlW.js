@@ -1,4 +1,4 @@
-function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]");for(let e=0,l=n.length;e<l;e+=1){const t=n[e],d=t.dataset.itCopyToClipboard,i=bootstrap.Tooltip.getOrCreateInstance(t);t.addEventListener("click",function(){t.hasAttribute("aria-describedby")||(i.show(),navigator.clipboard.writeText(d).then(()=>{}).catch(()=>{}))}),t.addEventListener("blur",function(){i.hide()})}}const g={title:"Components/Box Sidebar",decorators:[n=>{const e=`<div style="max-width: 480px; margin: 0 auto;">${n()}</div>`;return setTimeout(()=>{c()},0),e}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nCes exemples illustrent l'utilisation du composant `.c-box` dans la **sidebar principale du contenu** (colonne de droite).\n\nChaque box de sidebar **doit obligatoirement comporter un titre en `<h3>`** pour structurer l'information.\n\nPar défaut, la box est blanche avec une bordure grise. Elle peut également prendre des variantes colorées selon le contexte :\n- `bg-info-lightest border-info-light` — information ou alerte douce\n- `bg-warning-lightest border-warning-light` — avertissement\n"}}}},u=()=>`
+function u(){const r=document.querySelectorAll("[data-it-clipboard-button=copy]");for(let e=0,c=r.length;e<c;e+=1){const t=r[e],d=t.dataset.itCopyToClipboard,l=bootstrap.Tooltip.getOrCreateInstance(t);t.addEventListener("click",function(){t.hasAttribute("aria-describedby")||(l.show(),navigator.clipboard.writeText(d).then(()=>{}).catch(()=>{}))}),t.addEventListener("blur",function(){l.hide()})}}const h={title:"Components/Box Sidebar",decorators:[r=>{const e=`<div style="max-width: 480px; margin: 0 auto;">${r()}</div>`;return setTimeout(()=>{u()},0),e}],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:"\nCes exemples illustrent l'utilisation du composant `.c-box` dans la **sidebar principale du contenu** (colonne de droite).\n\nChaque box de sidebar **doit obligatoirement comporter un titre en `<h3>`** pour structurer l'information.\n\nPar défaut, la box est blanche avec une bordure grise. Elle peut également prendre des variantes colorées selon le contexte :\n- `bg-info-lightest border-info-light` — information ou alerte douce\n- `bg-warning-lightest border-warning-light` — rappel, à faire\n- `bg-success-lightest border-success-light` — réussite\n"}}}},p=()=>`
 <div class="c-box mb-3 mb-md-4">
   <h3>Coordonnées</h3>
   <div class="d-flex text-secondary fs-sm">
@@ -31,7 +31,7 @@ function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]"
     </li>
   </ul>
 </div>
-`,o={render:u,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box de coordonnées avec adresse, email, téléphone et site web."}}}},p=()=>`
+`,n={render:p,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box de coordonnées avec adresse, email, téléphone et site web."}}}},b=()=>`
 <div class="c-box mb-3 mb-md-4">
   <h3>Informations générales</h3>
   <strong>Structures concernées par la convention</strong>
@@ -46,7 +46,7 @@ function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]"
     <li>demo.emplois+ddets19@inclusion.gouv.fr</li>
   </ul>
 </div>
-`,r={render:p,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box d'informations générales avec structures et contacts DDETS."}}}},b=()=>`
+`,o={render:b,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box d'informations générales avec structures et contacts DDETS."}}}},m=()=>`
 <div class="c-box mb-3 mb-md-4 bg-info-lightest border-info-light">
   <h3>Votre dossier n'est pas encore complet</h3>
   <p class="mb-0">Actions restantes&nbsp;:</p>
@@ -74,7 +74,7 @@ function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]"
     <span>Envoyer le bilan d'exécution</span>
   </button>
 </div>
-`,s={render:b,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box d'information (variante `bg-info-lightest`) pour signaler un dossier incomplet avec les actions restantes."}}}},m=()=>`
+`,s={render:m,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box d'information (variante `bg-info-lightest`) pour signaler un dossier incomplet avec les actions restantes."}}}},g=()=>`
 <div class="c-box mb-3 mb-md-4 bg-warning-lightest border-warning-light">
   <h3>Aide sollicitée pour ce contrat</h3>
   <p>La durée du contrat est inférieure à xxx</p>
@@ -82,7 +82,15 @@ function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]"
     Justifier la demande d'aide
   </a>
 </div>
-`,a={render:m,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box d'avertissement (variante `bg-warning-lightest`) pour signaler un point d'attention sur un contrat."}}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+`,a={render:g,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box d'avertissement (variante `bg-warning-lightest`) pour signaler un point d'attention sur un contrat."}}}},x=()=>`
+  <div class="c-box mb-3 mb-md-4 bg-success-lightest border-success-light">
+      <h3>Votre dossier a été traité le JJ/MM/AAAA</h3>
+      <p>Retrouvez le détail de la décision en cliquant ici.</p>
+      <a class="btn btn-primary btn-block" href="">
+        Voir le résultat
+      </a>
+  </div>
+`,i={render:x,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Box de succès (variante `bg-success-lightest`) pour signaler que le dossier a été traité avec succès."}}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: renderBoxCoordonnees,
   parameters: {
     controls: {
@@ -97,7 +105,7 @@ function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]"
       }
     }
   }
-}`,...o.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   render: renderBoxInformations,
   parameters: {
     controls: {
@@ -112,7 +120,7 @@ function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]"
       }
     }
   }
-}`,...r.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+}`,...o.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render: renderBoxInfo,
   parameters: {
     controls: {
@@ -142,4 +150,19 @@ function c(){const n=document.querySelectorAll("[data-it-clipboard-button=copy]"
       }
     }
   }
-}`,...a.parameters?.docs?.source}}};const h=["BoxCoordonnees","BoxInformations","BoxInfo","BoxWarning"];export{o as BoxCoordonnees,s as BoxInfo,r as BoxInformations,a as BoxWarning,h as __namedExportsOrder,g as default};
+}`,...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+  render: renderBoxSuccess,
+  parameters: {
+    controls: {
+      disable: true
+    },
+    docs: {
+      controls: {
+        disable: true
+      },
+      description: {
+        story: "Box de succès (variante \`bg-success-lightest\`) pour signaler que le dossier a été traité avec succès."
+      }
+    }
+  }
+}`,...i.parameters?.docs?.source}}};const f=["BoxCoordonnees","BoxInformations","BoxInfo","BoxWarning","BoxSuccess"];export{n as BoxCoordonnees,s as BoxInfo,o as BoxInformations,i as BoxSuccess,a as BoxWarning,f as __namedExportsOrder,h as default};

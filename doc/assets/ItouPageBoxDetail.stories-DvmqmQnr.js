@@ -758,7 +758,7 @@ function l(){const e=document.querySelector("#commentaires-btn"),a=document.quer
                         <strong>Miguel CORTEZ (vous)</strong>
                       </div>
                       <button class="btn btn-sm btn-link btn-ico-only" type="button">
-                        <i class="ri-delete-bin-line" data-bs-toggle="tooltip" data-bs-title="Supprimer" aria-label="Supprimer ce commentaire"></i>
+                        <i class="ri-delete-bin-line" data-bs-toggle="tooltip" data-bs-title="Supprimer" aria-label="Supprimer ce commentaire" role="button" tabindex="0"></i>
                       </button>
                     </div>
                     <blockquote class="blockquote">
