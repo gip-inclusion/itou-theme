@@ -1,4 +1,4 @@
-const r={title:"Components/Box Organization",decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
+const r={title:"Components/Box Organization",decorators:[e=>`<div style="max-width: 480px; margin: 0 auto;">${e()}</div>`],tags:["autodocs"],parameters:{layout:"padded",docs:{description:{component:`
 Cette story présenté la variante metier \`.c-box--organization\` pour afficher les informations de contact d'une structure.
 
 ### Anatomie
