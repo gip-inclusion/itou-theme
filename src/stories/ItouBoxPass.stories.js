@@ -1,3 +1,36 @@
+export default {
+  title: "Components/Box PASS",
+  decorators: [(Story) => `<div style="max-width: 480px; margin: 0 auto;">${Story()}</div>`],
+  tags: ["autodocs"],
+  parameters: {
+    layout: "padded",
+    docs: {
+      description: {
+        component: `
+La variante \`.c-box--pass\` présente les informations d'un PASS IAE et son état métier.
+
+### États courants
+1. PASS IAE valide (non démarré ou en cours)
+2. PASS IAE valide (suspendu)
+3. PASS IAE expiré
+
+### Anatomie
+1. **Conteneur** - \`.c-box.c-box--pass\`
+2. **Statut** - badge en tête avec icône d'état
+3. **Données clés** - liste \`.list-data\` (numéro, dates, validité)
+4. **Bloc contextuel optionnel** - suspension ou demande de prolongation
+5. **Action** - bouton "Afficher le PASS IAE"
+
+### Accessibilité
+- Marquer les icônes décoratives avec \`aria-hidden="true"\`.
+- Fournir des \`aria-label\` explicites pour les pictogrammes d'information (tooltips).
+- Vérifier le contraste entre badge de statut et texte.
+`,
+      },
+    },
+  },
+};
+
 const renderPassBox = ({
   boxClasses,
   badgeClasses,
@@ -68,39 +101,6 @@ const renderPassBox = ({
   </a>
 </div>
 `;
-
-export default {
-  title: "Components/Box PASS",
-  decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],
-  tags: ["autodocs"],
-  parameters: {
-    layout: "padded",
-    docs: {
-      description: {
-        component: `
-La variante \`.c-box--pass\` présente les informations d'un PASS IAE et son état métier.
-
-### États courants
-1. PASS IAE valide (non démarré ou en cours)
-2. PASS IAE valide (suspendu)
-3. PASS IAE expiré
-
-### Anatomie
-1. **Conteneur** - \`.c-box.c-box--pass\`
-2. **Statut** - badge en tête avec icône d'état
-3. **Données clés** - liste \`.list-data\` (numéro, dates, validité)
-4. **Bloc contextuel optionnel** - suspension ou demande de prolongation
-5. **Action** - bouton "Afficher le PASS IAE"
-
-### Accessibilité
-- Marquer les icônes décoratives avec \`aria-hidden="true"\`.
-- Fournir des \`aria-label\` explicites pour les pictogrammes d'information (tooltips).
-- Vérifier le contraste entre badge de statut et texte.
-`,
-      },
-    },
-  },
-};
 
 const renderAllStates = () => `
   <div class="vstack gap-4">
