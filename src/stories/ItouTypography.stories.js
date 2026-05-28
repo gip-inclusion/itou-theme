@@ -105,34 +105,59 @@ export const SizesWeightsAndLineHeight = {
   },
 };
 
-const renderInlineTextAndLists = () => {
+const renderLists = () => {
   return `
-<section class="vstack gap-3">
-  <p class="mb-0">Texte avec <mark>&lt;mark&gt;</mark>, <span class="mark">.mark</span>, <small>&lt;small&gt;</small> et <span class="small">.small</span>.</p>
-  <p class="mb-0"><abbr title="attribut">attr</abbr> et <abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
-  <hr>
-  <ul class="list-unstyled mb-0">
-    <li>.list-unstyled — item 1</li>
-    <li>.list-unstyled — item 2</li>
-  </ul>
-  <ul class="list-inline mb-0">
-    <li class="list-inline-item">.list-inline-item 1</li>
-    <li class="list-inline-item">.list-inline-item 2</li>
-    <li class="list-inline-item">.list-inline-item 3</li>
-  </ul>
-  <dl class="row mb-0">
-    <dt class="col-sm-3">Terme</dt>
-    <dd class="col-sm-9">Définition en liste descriptive.</dd>
-    <dt class="col-sm-3 text-truncate">Terme tronqué en largeur réduite</dt>
-    <dd class="col-sm-9">Exemple avec <code>.text-truncate</code>.</dd>
-    <dd class="col-sm-6 has-ellipsis"><code>.has-ellipsis</code> — utilitaire custom itou de troncature sur une ligne qui ajoute les 3 points</dd>
-  </dl>
-</section>
+  <div class="vstack gap-4">
+    <div>
+      <h3 class="h5">Liste sans puces</h3>
+      <ul class="list-unstyled mb-0">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h3 class="h5">Liste en ligne</h3>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h3 class="h5">Liste descriptive</h3>
+      <dl class="row mb-0">
+        <dt class="col-sm-3">Terme</dt>
+        <dd class="col-sm-9">Définition en liste descriptive.</dd>
+        <dt class="col-sm-3 text-truncate">Terme tronqué en largeur réduite</dt>
+        <dd class="col-sm-9">Exemple avec <code>.text-truncate</code>.</dd>
+        <dd class="col-sm-6 has-ellipsis"><code>.has-ellipsis</code> — utilitaire custom itou de troncature sur une ligne qui ajoute les 3 points.</dd>
+      </dl>
+    </div>
+    <hr />
+    <div>
+      <h3 class="h5">Liste ordonnée custom itou</h3>
+      <ol class="list-ordered mb-0">
+        <li>Un premier item</li>
+        <li>
+          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique amet voluptatem vero incidunt fugiat.</p>
+        </li>
+        <li>
+          <div class="form-group form-group-input-w-lg-33">
+            <label class="form-label" for="id_phone_typo_story">Téléphone</label>
+            <input type="tel" name="phone" value="0539559724" maxlength="20" class="form-control" id="id_phone_typo_story">
+          </div>
+        </li>
+        <li>Encore un item</li>
+      </ol>
+    </div>
+  </div>
   `;
 };
 
-export const InlineTextAndLists = {
-  render: renderInlineTextAndLists,
+export const Lists = {
+  render: renderLists,
   parameters: {
     controls: { disable: true },
     docs: {
