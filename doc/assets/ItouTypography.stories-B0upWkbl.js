@@ -14,7 +14,7 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
   <p class="h5">.h5 sur un paragraphe</p>
   <p class="h6">.h6 sur un paragraphe</p>
 </section>
-  `,e={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Titres sémantiques et classes `.h*` Bootstrap."}}}},n=()=>`
+  `,e={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Titres sémantiques et classes `.h*` Bootstrap."}}}},o=()=>`
 <section class="vstack gap-3">
   <p class="lead mb-0">.lead — paragraphe d'introduction</p>
   <p class="fs-lg mb-0">.fs-lg — taille large custom</p>
@@ -35,29 +35,54 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
   <p class="ff-base mb-0">.ff-base — police principale du thème</p>
   <p class="ff-extra-01 mb-0">.ff-extra-01 — police illustrative du thème</p>
 </section>
-  `,s={render:n,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemples de tailles, graissages, interlignage et familles de polices (Bootstrap + custom itou)."}}}},o=()=>`
-<section class="vstack gap-3">
-  <p class="mb-0">Texte avec <mark>&lt;mark&gt;</mark>, <span class="mark">.mark</span>, <small>&lt;small&gt;</small> et <span class="small">.small</span>.</p>
-  <p class="mb-0"><abbr title="attribut">attr</abbr> et <abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
-  <hr>
-  <ul class="list-unstyled mb-0">
-    <li>.list-unstyled — item 1</li>
-    <li>.list-unstyled — item 2</li>
-  </ul>
-  <ul class="list-inline mb-0">
-    <li class="list-inline-item">.list-inline-item 1</li>
-    <li class="list-inline-item">.list-inline-item 2</li>
-    <li class="list-inline-item">.list-inline-item 3</li>
-  </ul>
-  <dl class="row mb-0">
-    <dt class="col-sm-3">Terme</dt>
-    <dd class="col-sm-9">Définition en liste descriptive.</dd>
-    <dt class="col-sm-3 text-truncate">Terme tronqué en largeur réduite</dt>
-    <dd class="col-sm-9">Exemple avec <code>.text-truncate</code>.</dd>
-    <dd class="col-sm-6 has-ellipsis"><code>.has-ellipsis</code> — utilitaire custom itou de troncature sur une ligne qui ajoute les 3 points</dd>
-  </dl>
-</section>
-  `,t={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Éléments inline et formats de listes de la documentation typographique Bootstrap."}}}},c=()=>`
+  `,s={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Exemples de tailles, graissages, interlignage et familles de polices (Bootstrap + custom itou)."}}}},n=()=>`
+  <div class="vstack gap-4">
+    <div>
+      <h3 class="h5">Liste sans puces</h3>
+      <ul class="list-unstyled mb-0">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h3 class="h5">Liste en ligne</h3>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h3 class="h5">Liste descriptive</h3>
+      <dl class="row mb-0">
+        <dt class="col-sm-3">Terme</dt>
+        <dd class="col-sm-9">Définition en liste descriptive.</dd>
+        <dt class="col-sm-3 text-truncate">Terme tronqué en largeur réduite</dt>
+        <dd class="col-sm-9">Exemple avec <code>.text-truncate</code>.</dd>
+        <dd class="col-sm-6 has-ellipsis"><code>.has-ellipsis</code> — utilitaire custom itou de troncature sur une ligne qui ajoute les 3 points.</dd>
+      </dl>
+    </div>
+    <hr />
+    <div>
+      <h3 class="h5">Liste ordonnée custom itou</h3>
+      <ol class="list-ordered mb-0">
+        <li>Un premier item</li>
+        <li>
+          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique amet voluptatem vero incidunt fugiat.</p>
+        </li>
+        <li>
+          <div class="form-group form-group-input-w-lg-33">
+            <label class="form-label" for="id_phone_typo_story">Téléphone</label>
+            <input type="tel" name="phone" value="0539559724" maxlength="20" class="form-control" id="id_phone_typo_story">
+          </div>
+        </li>
+        <li>Encore un item</li>
+      </ol>
+    </div>
+  </div>
+  `,t={render:n,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Éléments inline et formats de listes de la documentation typographique Bootstrap."}}}},c=()=>`
 <section class="vstack gap-4">
   <figure class="mb-0">
     <blockquote class="blockquote mb-2">
@@ -75,7 +100,7 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
 
   <p class="mb-0">Exemple de balise <q>citation inline avec guillemets typographiques</q>.</p>
 </section>
-  `,a={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Citations Bootstrap (`.blockquote`) et variante custom itou (`.testimonial`)."}}}},p=()=>`
+  `,i={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Citations Bootstrap (`.blockquote`) et variante custom itou (`.testimonial`)."}}}},p=()=>`
 <section class="vstack gap-3">
   <p class="mb-0">Il n'y a besoin d'<a href="#">aucune classe particulière</a> pour les liens simples</p>
   <p class="mb-0">Il faut <code>.has-external-link</code> <a href="#" rel="noopener" target="_blank">pour les liens externes</a></p>
@@ -83,7 +108,7 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
   <p class="mb-0 position-relative">Il faut <code>.stretched-link</code> (avec un parent <code>.position-relative</code>) <a href="#" class="stretched-link">pour étendre la zone cliquable à tout le bloc</a></p>
   <p class="mb-0">Il faut <code>.btn-link</code> <a href="#" class="btn-link">pour les liens d'action importants</a></p>
 </section>
-  `,i={render:p,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Type de liens possibles."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  `,a={render:p,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Type de liens possibles."}}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: renderHeadings,
   parameters: {
     controls: {
@@ -114,7 +139,7 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
     }
   }
 }`,...s.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
-  render: renderInlineTextAndLists,
+  render: renderLists,
   parameters: {
     controls: {
       disable: true
@@ -128,7 +153,7 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
       }
     }
   }
-}`,...t.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: renderQuotes,
   parameters: {
     controls: {
@@ -143,7 +168,7 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
       }
     }
   }
-}`,...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+}`,...i.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render: renderLinks,
   parameters: {
     controls: {
@@ -158,4 +183,4 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
       }
     }
   }
-}`,...i.parameters?.docs?.source}}};const u=["Headings","SizesWeightsAndLineHeight","InlineTextAndLists","Quotes","Links"];export{e as Headings,t as InlineTextAndLists,i as Links,a as Quotes,s as SizesWeightsAndLineHeight,u as __namedExportsOrder,d as default};
+}`,...a.parameters?.docs?.source}}};const u=["Headings","SizesWeightsAndLineHeight","Lists","Quotes","Links"];export{e as Headings,a as Links,t as Lists,i as Quotes,s as SizesWeightsAndLineHeight,u as __namedExportsOrder,d as default};
