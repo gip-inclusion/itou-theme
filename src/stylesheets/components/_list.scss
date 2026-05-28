@@ -183,3 +183,37 @@
     }
   }
 }
+
+.list-ordered {
+  padding: 0;
+  counter-reset: step;
+
+  > li {
+    counter-increment: step;
+    list-style: none;
+    position: relative;
+    display: flex;
+    column-gap: 1rem;
+    width: 100%;
+
+    > * {
+      flex: 1 1 auto;
+    }
+
+    &:before {
+      content: counter(step);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 1.5rem;
+      width: 1.5rem;
+      min-width: 1.5rem;
+      flex: 0 0 1.5rem;
+      color: $white;
+      background-color: $tertiary;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-bold;
+      @extend .rounded-circle;
+    }
+  }
+}
