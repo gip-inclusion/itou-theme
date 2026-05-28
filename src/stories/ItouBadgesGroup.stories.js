@@ -19,9 +19,13 @@ Utile pour afficher plusieurs badges côte à côte avec un espacement cohérent
 | Classe | Description |
 |--------|-------------|
 | \`.badge-group\` | Gère l'espacement des badges dans le groupe |
-| \`.badge\` | Élément badge de base |
-| \`.badge-sm\` | Taille compacte du badge |
+| \`.badge\` | Taille héritée du parent |
+| \`.badge-base\` | Taille fixe standard |
+| \`.badge-sm\` | Taille fixe petite |
+| \`.badge-xs\` | Taille fixe extra-petite |
+| \`.badge-xl\` | Taille fixe extra-large |
 | \`.rounded-pill\` | Forme arrondie du badge |
+| \`.rounded-circle\` | Forme rounde du badge |
 
 ### Accessibilité
 - Les badges doivent rester informatifs, pas interactifs.

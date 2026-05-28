@@ -22,6 +22,7 @@ Le composant \`.badge\` est utile pour le comptage, l'étiquetage et la mise en 
 | \`.badge-base\` | Taille fixe standard |
 | \`.badge-sm\` | Taille fixe petite |
 | \`.badge-xs\` | Taille fixe extra-petite |
+| \`.badge-xl\` | Taille fixe extra-large |
 
 ### Classes CSS - Couleurs
 | Classe | Usage |
@@ -43,7 +44,7 @@ L'icône dans le badge doit posséder un \`aria-hidden=true\`
   argTypes: {
     size: {
       control: { type: "select" },
-      options: ["badge-base", "badge-sm", "badge-xs"],
+      options: ["badge-xl", "badge-base", "badge-sm", "badge-xs"],
       description: "Taille du badge",
     },
     variant: {
@@ -291,6 +292,7 @@ const renderAllVersions = () => {
     <p><span class="badge badge-base rounded-pill bg-accent-01 text-white">accent-01</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-02 text-primary">accent-02</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-03 text-primary">accent-03</span></p>
+    <p><span class="badge badge-xl rounded-circle bg-tertiary text-white">5</span></p>
   </div>
   <div class="col-6">
     <p class="fw-bold mb-3">Couleurs claires</p>
