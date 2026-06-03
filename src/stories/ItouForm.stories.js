@@ -12,32 +12,33 @@ export default {
     docs: {
       description: {
         component: `
-Le composant \`.c-form\` structure un formulaire complet avec des styles descendants pour les controles de saisie, les groupes de champs et les actions.
+Le composant \`.c-form\` structure un formulaire complet avec des styles descendants pour les contrôles de saisie, les groupes de champs et les actions.
 
 ### Anatomie
 1. **Conteneur principal** - \`<div class="c-form">\`
 2. **Formulaire** - \`<form>\` et regroupement sémantique via \`<fieldset>\` + \`<legend>\`
 3. **Groupes de champs** - \`.form-group\` avec \`.form-label\`, \`.form-control\` ou \`.form-select\`
-4. **Aides a la saisie** - \`.form-text\` liees via \`aria-describedby\`
-5. **Actions de fin** - boutons Reset/Submit alignes à droite
+4. **Aides à la saisie** - \`.form-text\` liées via \`aria-describedby\`
+5. **Actions de fin** - boutons Reset/Submit alignés à droite
 
 ### Classes CSS principales
 | Classe | Description |
 |--------|-------------|
-| \`.c-form\` | Conteneur thematique du formulaire |
-| \`.form-group\` | Bloc de champ (label + controle + aide) |
+| \`.c-form\` | Conteneur thématique du formulaire |
+| \`.form-group\` | Bloc de champ (label + contrôle + aide) |
 | \`.form-group-input-w-lg-50\` | Limite la largeur de certains champs sur grand écran |
-| \`.form-label\` | Libelle du champ |
+| \`.form-label\` | Libellé du champ |
 | \`.form-control\` | Inputs et textarea |
 | \`.form-select\` | Select natif |
 | \`.form-text\` | Texte d'aide |
 
 ### Accessibilité
-- Associer chaque \`label\` au controle via \`for\`/\`id\`.
+- Associer chaque \`label\` au contrôle via \`for\`/\`id\`.
 - Utiliser \`aria-describedby\` pour rattacher les textes d'aide.
-- Conserver \`fieldset\`/\`legend\` pour les groupes de champs.
-- Preferer des libelles explicites plutot que de s'appuyer uniquement sur les placeholders.
-- Utiliser les classes \`.form-group-input-w-lg-xx\` pour adapter la longueur du champ a son contenu attendu et aider l'utilisateur à la saisie.
+- Conserver autant que possible, \`fieldset\`/\`legend\` pour les groupes de champs.
+- Ne jamais utiliser de \`placeholders\` à la place d'un libellé explicite.
+- Si une information complémentaire est nécessaire, préférer les \`help-text\` aux \`placeholders\`.
+- Utiliser les classes \`.form-group-input-w-lg-xx\` pour adapter la longueur du champ à son contenu attendu et aider l'utilisateur à la saisie.
 `,
       },
     },
