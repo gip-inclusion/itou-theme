@@ -1965,8 +1965,8 @@ $spinner-vertical-align: -0.125em !default;
 $spinner-border-width: 0.25em;
 $spinner-animation-speed: 0.75s !default;
 
-$spinner-width-sm: 1rem;
-$spinner-height-sm: $spinner-width-sm !default;
+$spinner-width-sm: 0.85rem;
+$spinner-height-sm: $spinner-width-sm;
 $spinner-border-width-sm: 0.188em;
 // scss-docs-end spinner-variables
 
