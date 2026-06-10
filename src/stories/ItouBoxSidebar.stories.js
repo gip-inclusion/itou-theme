@@ -110,14 +110,21 @@ const renderBoxInformations = () => `
   <h3>Informations générales</h3>
   <strong>Structures concernées par la convention</strong>
   <br>
-  <ul class="mb-0">
+  <ul class="fs-sm mt-1 mb-0">
     <li>Siège (19)</li>
   </ul>
   <hr class="my-3">
   <strong>Contact(s) DDETS</strong>
   <br>
-  <ul class="mb-0">
-    <li>demo.emplois+ddets19@inclusion.gouv.fr</li>
+  <ul class="fs-sm mt-1 mb-0 list-unstyled">
+    <li class="d-flex">
+      <i class="ri-mail-line fw-normal me-2" aria-hidden="true"></i>
+      <a href="mailto:demo.emplois+ddets19@inclusion.gouv.fr" aria-label="Contact par mail" class="text-break">demo.emplois+ddets19@inclusion.gouv.fr</a>
+      <button class="btn-link fw-medium ms-1" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="demo.emplois+ddets19@inclusion.gouv.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+        <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+        <span class="visually-hidden">Copier</span>
+      </button>
+    </li>
   </ul>
 </div>
 `;

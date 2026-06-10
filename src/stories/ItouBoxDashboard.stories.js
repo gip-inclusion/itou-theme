@@ -12,7 +12,7 @@ export default {
           border-top-right-radius: 0.5rem;
         }
       </style>
-      <div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>
+      <div style="max-width: 480px; margin: 0 auto;">${Story()}</div>
     `,
   ],
   tags: ["autodocs"],
