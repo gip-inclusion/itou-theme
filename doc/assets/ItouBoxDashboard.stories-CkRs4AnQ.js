@@ -9,7 +9,7 @@ const b={title:"Components/Box Dashboard",decorators:[e=>`
           border-top-right-radius: 0.5rem;
         }
       </style>
-      <div style="max-width: 1000px; margin: 0 auto;">${e()}</div>
+      <div style="max-width: 480px; margin: 0 auto;">${e()}</div>
     `],tags:["autodocs"],argTypes:{hasTitleBadge:{control:"boolean",description:"Affiche un badge complémentaire à droite du titre (optionnel)."},hasMainLink:{control:"boolean",description:"Affiche le bouton principal de la box (optionnel)."},hasExtraBoxes:{control:"boolean",description:"Affiche un box custom ou plusieurs apres la lsite des liens (optionnel)."},hasBottomInfo:{control:"boolean",description:"Affiche une information complémentaire en bas de la box (optionnel)."}},parameters:{layout:"padded",docs:{description:{component:`
 Le composant \`.c-box--dashboard\` en contexte dashboard permet d'afficher des blocs d'actions et de suivi.
 
