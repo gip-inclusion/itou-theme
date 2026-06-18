@@ -89,10 +89,12 @@ const renderForm = () => `
         </div>
       </div>
       <div class="form-group">
-        <div>
-          <label for="customRange1" class="form-label">Range</label>
-          <input type="range" class="form-range" id="customRange1">
-        </div>
+        <label for="customRange1" class="form-label">Range</label>
+        <input type="range" class="form-range" id="customRange1">
+      </div>
+      <div class="form-group">
+        <label for="formFile" class="form-label">File input</label>
+        <input class="form-control" type="file" id="formFile">
       </div>
       <div class="form-group">
         <div class="js-display-if-javascript-enabled d-block">
