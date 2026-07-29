@@ -98,9 +98,9 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
     <figcaption class="testimonial-footer">Personne interviewée dans <cite title="Retours utilisateurs">Retours utilisateurs</cite></figcaption>
   </figure>
 
-  <p class="mb-0">Exemple de balise <q>citation inline avec guillemets typographiques</q>.</p>
+  <p class="mb-0">Exemple de balise &lt;q&gt; <q>citation inline avec guillemets typographiques</q>.</p>
 </section>
-  `,i={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Citations Bootstrap (`.blockquote`) et variante custom itou (`.testimonial`)."}}}},p=()=>`
+  `,i={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Citations Bootstrap `.blockquote`, `<q>` et variante custom itou `.testimonial`."}}}},p=()=>`
 <section class="vstack gap-3">
   <p class="mb-0">Il n'y a besoin d'<a href="#">aucune classe particulière</a> pour les liens simples</p>
   <p class="mb-0">Il faut <code>.has-external-link</code> <a href="#" rel="noopener" target="_blank">pour les liens externes</a></p>
@@ -164,7 +164,7 @@ const d={title:"Utilities/Typography",decorators:[r=>`<div style="max-width: 100
         disable: true
       },
       description: {
-        story: "Citations Bootstrap (\`.blockquote\`) et variante custom itou (\`.testimonial\`)."
+        story: "Citations Bootstrap \`.blockquote\`, \`<q>\` et variante custom itou \`.testimonial\`."
       }
     }
   }
