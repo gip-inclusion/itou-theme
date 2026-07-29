@@ -186,7 +186,7 @@ const renderQuotes = () => {
     <figcaption class="testimonial-footer">Personne interviewée dans <cite title="Retours utilisateurs">Retours utilisateurs</cite></figcaption>
   </figure>
 
-  <p class="mb-0">Exemple de balise <q>citation inline avec guillemets typographiques</q>.</p>
+  <p class="mb-0">Exemple de balise &lt;q&gt; <q>citation inline avec guillemets typographiques</q>.</p>
 </section>
   `;
 };
@@ -198,7 +198,7 @@ export const Quotes = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Citations Bootstrap (`.blockquote`) et variante custom itou (`.testimonial`).",
+        story: "Citations Bootstrap `.blockquote`, `<q>` et variante custom itou `.testimonial`.",
       },
     },
   },
