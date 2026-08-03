@@ -46,7 +46,7 @@
     .s-title-02 {
       background-color: $white;
 
-      @include media-breakpoint-up(xl) {
+      @include media-breakpoint-up(xxl) {
         position: sticky;
         top: 0;
         z-index: $zindex-sticky;
