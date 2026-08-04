@@ -84,7 +84,8 @@
 
         // Selected Item
         &.select2-results__option--selected,
-        &[aria-selected='true']:not(.select2-results__option--highlighted) {
+        &[aria-selected='true'].select2-results__option,
+        &[aria-selected='true'].select2-results__option--highlighted {
           color: color-contrast($s2bs5-item-active-bg);
           background-color: $s2bs5-item-active-bg;
         }

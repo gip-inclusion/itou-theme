@@ -90,4 +90,9 @@
       }
     }
   }
+
+  .select2-selection__rendered .select2-selection__clear {
+    border: 8px solid $white;
+    right: 0.5rem;
+  }
 }
