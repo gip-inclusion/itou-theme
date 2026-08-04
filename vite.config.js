@@ -21,9 +21,6 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        sections_itou_01: resolve(__dirname, "src/sections-itou-01.html"),
-        sections_itou_03: resolve(__dirname, "src/sections-itou-03.html"),
-        sections_itou_06: resolve(__dirname, "src/sections-itou-06.html"),
         layout_itou_authenticated_cms: resolve(__dirname, "src/layout-itou-authenticated-cms.html"),
         layout_itou_authenticated_dashboard: resolve(__dirname, "src/layout-itou-authenticated-dashboard.html"),
         layout_itou_authenticated_detail_candidature: resolve(__dirname, "src/layout-itou-authenticated-detail-candidature.html"),
