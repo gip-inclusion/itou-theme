@@ -67,6 +67,7 @@ L'icône dans le badge doit posséder un \`aria-hidden=true\`
         "accent-02-lighter",
         "accent-03",
         "accent-03-lighter",
+        "disabled-color-light"
       ],
       description: "Variante de couleur",
     },
@@ -78,7 +79,7 @@ L'icône dans le badge doit posséder un \`aria-hidden=true\`
 };
 
 const getTextColor = (variant) => {
-  if (["accent-02", "accent-02-lighter", "accent-03", "accent-03-lighter"].includes(variant)) return "text-primary";
+  if (["accent-02", "accent-02-lighter", "accent-03", "accent-03-lighter", "disabled-color-light"].includes(variant)) return "text-primary";
   if (["success-lighter"].includes(variant)) return "text-success";
   if (["warning-lighter"].includes(variant)) return "text-warning";
   if (["danger-lighter"].includes(variant)) return "text-danger";
@@ -306,6 +307,7 @@ const renderAllVersions = () => {
     <p><span class="badge badge-base rounded-pill bg-accent-01-lighter text-accent-01">accent-01-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-02-lighter text-primary">accent-02-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-accent-03-lighter text-primary">accent-03-lighter</span></p>
+    <p><span class="badge badge-base rounded-pill bg-disabled-color-light text-primary">Du 12/03/2024 au 04/08/2026</p>
   </div>
 </div>`;
 };
