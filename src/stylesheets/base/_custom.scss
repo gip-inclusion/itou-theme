@@ -221,7 +221,7 @@ ul.pagination {
 
 hr {
   position: relative;
-  color: $primary;
+  color: $muted-color;
   box-sizing: border-box;
   height: 0;
   overflow: visible;
@@ -230,6 +230,7 @@ hr {
     content: attr(data-it-text);
     display: inline-block;
     position: absolute;
+    white-space: nowrap;
     top: -9px;
     left: 50%;
     transform: translateX(-50%);
