@@ -119,6 +119,10 @@
           left: 50%;
           transform: translate(-50%, -50%);
         }
+
+        &.disabled {
+          background-color: $border-color;
+        }
       }
 
       div {
@@ -130,18 +134,6 @@
       .h5 {
         margin-bottom: 0;
         line-height: $line-height-sm;
-      }
-
-
-      &.disabled {
-        span:not(.badge),
-        > i {
-          color: $disabled-color;
-        }
-
-        > i {
-          background-color: $border-color;
-        }
       }
     }
   }
@@ -211,6 +203,10 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+        }
+
+        &.disabled {
+          background-color: $border-color;
         }
       }
 

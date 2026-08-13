@@ -94,17 +94,17 @@
     }
 
     &.has-forced-line-break {
-      margin-bottom: map-get($spacers, 3);
-
-      @include media-breakpoint-up(md) {
-        margin-bottom: map-get($spacers, 4);
-      }
 
       @media not print {
         @container list-data (min-width: 560px) {
           display: inline-block !important;
           width: 100%;
         }
+      }
+
+      > small {
+        display: block;
+        margin-bottom: map-get($spacers, 1);
       }
     }
   }

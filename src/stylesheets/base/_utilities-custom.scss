@@ -100,6 +100,13 @@
   transition: none !important;
 }
 
+.has-no-transition.collapse,
+.has-no-transition.collapse.collapsing {
+  transition: none !important;
+  height: auto !important;
+  overflow: initial !important;
+}
+
 .has-collapse-caret {
   position: relative;
   text-decoration: none;
