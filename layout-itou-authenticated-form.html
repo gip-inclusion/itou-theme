@@ -451,6 +451,13 @@
                     <div class="form-group form-group-input-w-lg-66"><label class="form-label" for="id_website">Site web</label><input type="url" name="website" value="http://avenir.etti.com" maxlength="200" class="form-control" aria-describedby="id_website_helptext" id="id_website">
                       <div id="id_website_helptext" class="form-text">Votre site web doit commencer par http:// ou https://</div>
                     </div>
+                    <div class="form-group form-group-input-w-lg-66 is-invalid form-group-required"><label class="form-label" for="id_email">Adresse e-mail du prescripteur habilité sollicité pour cette prolongation</label><input type="email" name="email" value="moi@free" maxlength="320" placeholder="Adresse e-mail du prescripteur habilité" class="form-control is-invalid" required="" aria-invalid="true" aria-describedby="id_email_helptext id_email_error" id="id_email">
+                      <div id="id_email_error" class="w-100">
+                        <div class="invalid-feedback d-block">Cet utilisateur n’est pas inscrit en tant que prescripteur habilité sur machin, vous pouvez <a href="" class="has-external-link" rel="noopener" target="_blank" aria-label="Rechercher des prescripteurs (ouverture dans une nouvelle fenêtre)">retrouver ici</a>.
+                        </div>
+                      </div>
+                      <div id="id_email_helptext" class="form-text">Attention&nbsp;: l'adresse e-mail doit correspondre à un compte utilisateur de type prescripteur habilité</div>
+                    </div>
                     <div class="row">
                       <div class="col-12">
                         <hr class="mb-3">

@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{i as t,r as n}from"./react-Bl2r1tuC.js";import{a as r}from"./chunk-W22LQPXL-CZSqvyX6.js";import{a as i,o as a}from"./blocks-BNc-2SPQ.js";function o(e){let n={a:`a`,h1:`h1`,h2:`h2`,li:`li`,p:`p`,strong:`strong`,ul:`ul`,...t(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(i,{title:`Bienvenue`}),`
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{i as t,r as n}from"./react-Bl2r1tuC.js";import{a as r}from"./chunk-W22LQPXL-CZSqvyX6.js";import{a as i,o as a}from"./blocks-CEKFU1Fs.js";function o(e){let n={a:`a`,h1:`h1`,h2:`h2`,li:`li`,p:`p`,strong:`strong`,ul:`ul`,...t(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(i,{title:`Bienvenue`}),`
 `,(0,c.jsx)(n.h1,{id:`documentation-du-thème-itou`,children:`Documentation du thème Itou`}),`
 `,(0,c.jsxs)(n.p,{children:[`Bienvenue sur le Storybook du `,(0,c.jsx)(n.strong,{children:`theme-itou`}),`.`]}),`
 `,(0,c.jsxs)(n.p,{children:[`Cette documentation présente les composants, les styles et les patterns utilisés dans l’écosystème de la plateforme de l’inclusion.

@@ -103,7 +103,7 @@ import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t,n,r,i,a,o,s,c,l,u,d,f;f
   `,l={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Citations Bootstrap `.blockquote`, `<q>` et variante custom itou `.testimonial`."}}}},u=()=>`
 <section class="vstack gap-3">
   <p class="mb-0">Il n'y a besoin d'<a href="#">aucune classe particulière</a> pour les liens simples</p>
-  <p class="mb-0">Il faut <code>.has-external-link</code> <a href="#" rel="noopener" target="_blank">pour les liens externes</a></p>
+  <p class="mb-0">Il faut <code>.has-external-link</code> <a href="#" class="has-external-link" rel="noopener" target="_blank">pour les liens externes</a></p>
   <p class="mb-0">Il faut <code>.has-downloadable-file</code> <a href="#" class="has-downloadable-file">pour les liens vers des fichiers téléchargeables</a></p>
   <p class="mb-0 position-relative">Il faut <code>.stretched-link</code> (avec un parent <code>.position-relative</code>) <a href="#" class="stretched-link">pour étendre la zone cliquable à tout le bloc</a></p>
   <p class="mb-0">Il faut <code>.btn-link</code> <a href="#" class="btn-link">pour les liens d'action importants</a></p>
