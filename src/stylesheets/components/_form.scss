@@ -166,6 +166,12 @@ select.form-select {
   border-bottom-right-radius: 0 !important;
 }
 
+.invalid-feedback {
+  > a {
+    color: $form-invalid-color;
+  }
+}
+
 .form-group > label,
 .input-group > label {
   @extend .form-label;
