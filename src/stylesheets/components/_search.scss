@@ -45,7 +45,7 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         grid-row-gap: map-get($spacers, 2);
         grid-template-columns: repeat(var(--gridChild), 1fr) auto;
         grid-template-rows: 1fr;
@@ -55,7 +55,7 @@
         padding: map-get($spacers, 2);
         border-bottom: 1px solid $border-color;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(md) {
           border-right: 1px solid $border-color;
           border-bottom: none;
         }

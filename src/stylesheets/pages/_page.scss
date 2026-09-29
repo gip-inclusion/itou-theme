@@ -3,59 +3,116 @@
     max-width: map-get($container-max-widths, "lg");
   }
 
-  .has-bg-communaute {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
-    background-image: url("/images/home/bg-communaute-mobile.png");
-
-    @include media-breakpoint-up(lg) {
-      background-image: url("/images/home/bg-communaute.png");
-    }
-  }
-
-  .s-title-02 {
-    margin-bottom: 0 !important;
-  }
-
-  .s-title-02__row::after {
-    display: none !important;
-  }
-
   .s-home-search {
-    background-position:
-      center left,
-      center right;
-    background-repeat: no-repeat;
-    background-color: $emploi-lighter;
-    background-image: none;
+    position: relative;
+    isolation: isolate;
+    z-index: 10;
+    padding: map-get($spacers, 6) map-get($spacers, 3);
+    color: $white;
+    background: radial-gradient(1100px 520px at 12% -15%, rgba($tertiary, 0.65), transparent 60%), radial-gradient(900px 480px at 108% 6%, rgba($accent-02, 0.16), transparent 55%), radial-gradient(760px 620px at 88% 120%, rgba($important, 0.42), transparent 62%), linear-gradient(158deg, $primary 0%, $primary 52%, $primary 100%);
 
-    @include media-breakpoint-up(md) {
-      background-image: url("/images/home/search-bg-left.png"), url("/images/home/search-bg-right.png");
-    }
-  }
-
-  .s-home-search__row {
-    display: flex;
-    align-content: center;
-    min-height: initial;
-
-    @include media-breakpoint-up(lg) {
-      min-height: 20rem;
+    h1 {
+      font-size: clamp(1.6rem, 4.2vw, 2.5rem);
+      font-weight: $font-weight-semibold;
+      line-height: $headings-line-height;
+      color: $white;
+      margin-bottom: map-get($spacers, 5);
+      text-align: center;
     }
 
-    @include media-breakpoint-up(xl) {
-      min-height: 25rem;
+    &__visuel {
+      display: block;
+      width: 100%;
+      max-width: 26rem;
+      height: auto;
+      margin: 0 auto 1.75rem;
     }
-  }
 
-  .c-search__bar {
-    border: 1px solid $white;
+    &__note {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-light;
+      color: $text-muted;
+      text-align: center;
+      padding-top: map-get($spacers, 3);
+    }
 
-    &__grid {
-      > .input-group {
-        padding: map-get($spacers, 3);
+    &__badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: map-get($spacers, 1);
+      padding: map-get($spacers, 2) $input-btn-padding-x-sm;
+      border: 1px solid rgba($white, 0.25);
+      border-radius: 999px;
+      background: transparent;
+      color: $white;
+      font-weight: $font-weight-light;
+      font-size: $font-size-xs;
+      white-space: nowrap;
+      transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+
+      @media (min-width: 40rem) {
+        padding: map-get($spacers, 2) map-get($spacers, 3);
+        font-size: $font-size-sm;
       }
+
+      &:hover {
+        border-color: rgba($white, 0.55);
+        background: rgba($white, 0.08);
+        color: $white;
+      }
+
+      &.active {
+        background: $white;
+        color: $primary;
+        border-color: $white;
+        font-weight: $font-weight-bold;
+        box-shadow: $box-shadow-sm;
+      }
+    }
+  }
+
+  .c-search {
+    max-width: 46rem;
+    margin: 0 auto;
+
+    &__bar {
+      padding: map-get($spacers, 1);
+
+      @include media-breakpoint-up(md) {
+        border-radius: 999px;
+      }
+
+      &__grid {
+        grid-column-gap: 0;
+
+        > .input-group {
+          padding: map-get($spacers, 1);
+          border-bottom: none;
+
+          @include media-breakpoint-up(md) {
+            border-right: none;
+            border-bottom: none;
+          }
+        }
+
+        .input-group-text {
+          border: none !important;
+        }
+        .btn-primary {
+          @include media-breakpoint-up(md) {
+            border-radius: 999px;
+          }
+        }
+      }
+    }
+
+    .input-group.input-group-lg .btn,
+    .input-group.input-group-lg .select2-selection {
+      height: 58px;
     }
   }
 }

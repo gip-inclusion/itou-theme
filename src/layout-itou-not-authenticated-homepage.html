@@ -43,98 +43,124 @@
 
     <main class="s-main" role="main" id="main">
 
-      <section class="s-title-02">
-        <div class="s-title-02__container container">
-          <div class="s-title-02__row row">
-            <div class="s-title-02__col col-12"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="s-home-search pt-5 pb-6 pt-lg-0">
+      <section class="s-home-search">
         <div class="s-home-search__container container">
           <div class="s-home-search__row row">
             <div class="s-home-search__col col-12">
-              <h1 class="lh-sm text-center text-tertiary">Rechercher un emploi inclusif</h1>
+              <img class="s-home-search__visuel" src="https://s3.fr-par.scw.cloud/plateforme-accueil-medias/uploads/113fb86b5851e930.webp" alt="" width="1305" height="870">
+              <h1>Tous les emplois, les services d'insertion, <br class="d-none d-md-inline">et les accompagnateurs autour de vous</h1>
 
-              <div class="c-search mt-3 mt-md-4">
-                <div class="c-search__bar">
-                  <form method="get" action="" role="search">
-                    <div class="c-search__bar__grid">
-                      <div class="input-group input-group-lg flex-nowrap align-items-center">
-                        <div class="input-group-text ps-0 pe-2">
-                          <i class="ri-map-pin-line ri-lg text-tertiary" aria-hidden="true"></i>
+              <!-- Nav tabs -->
+              <ul class="nav justify-content-center gap-2 mb-3" id="searchTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="s-home-search__badge active" id="company-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    <i class="ri-briefcase-line mr-1 d-none d-md-inline" aria-hidden="true"></i>
+                    <span class="d-none d-md-inline">Un emploi inclusif</span>
+                    <span class="d-md-none">Emploi inclusif</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="s-home-search__badge" id="services-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <i class="ri-compass-3-line me-1 d-none d-md-inline" aria-hidden="true"></i>
+                    <span class="d-none d-md-inline">Un service d'insertion</span>
+                    <span class="d-md-none">Service d'insertion</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="s-home-search__badge" id="prescribers-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
+                    <i class="ri-user-line me-1 d-none d-md-inline" aria-hidden="true"></i>
+                    <span class="d-none d-md-inline">Un accompagnateur</span>
+                    <span class="d-md-none">Accompagnateur</span>
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="company-tab" tabindex="0">
+                  <div class="c-search">
+                    <div class="c-search__bar">
+                      <form method="get" action="" role="search">
+                        <div class="c-search__bar__grid">
+                          <div class="input-group input-group-lg flex-nowrap align-items-center dropdown-toggle">
+                            <div class="input-group-text py-2">
+                              <i class="ri-map-pin-line ri-lg text-tertiary" aria-hidden="true"></i>
+                            </div>
+                            <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Ville ou code postal" multiple>
+                              <option>Christmas Island</option>
+                              <option>South Sudan</option>
+                              <option>Jamaica</option>
+                              <option>Kenya</option>
+                              <option>French Guiana</option>
+                              <option>Mayotta</option>
+                              <option>Liechtenstein</option>
+                              <option>Denmark</option>
+                              <option>Eritrea</option>
+                            </select>
+                          </div>
+                          <div class="input-group input-group-lg">
+                            <button type="button" class="btn btn-block btn-ico btn-primary" aria-label="Rechercher un emploi inclusif par ville ou code postal">
+                              <i class="ri-search-line ri-xl fw-bold" aria-hidden="true"></i>
+                              <span class="me-1">Rechercher</span>
+                            </button>
+                          </div>
                         </div>
-                        <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Rechercher un emploi autour de..." multiple>
-                          <option>Christmas Island</option>
-                          <option>South Sudan</option>
-                          <option>Jamaica</option>
-                          <option>Kenya</option>
-                          <option>French Guiana</option>
-                          <option>Mayotta</option>
-                          <option>Liechtenstein</option>
-                          <option>Denmark</option>
-                          <option>Eritrea</option>
-                        </select>
-                      </div>
-                      <div class="input-group input-group-lg">
-                        <button class="btn btn-block btn-ico btn-primary" aria-label="Rechercher un emploi inclusif">
-                          <i class="ri-search-line ri-xl fw-bold" aria-hidden="true"></i>
-                          <span class="me-1">Rechercher</span>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-
-              <hr>
-
-              <div class="c-search__bar">
-                <form method="get" action="" role="search">
-                  <div class="c-search__bar__grid">
-                    <div class="input-group input-group-lg flex-nowrap align-items-center">
-                      <div class="input-group-text rounded-start ps-0 pe-2">
-                        <i class="ri-map-pin-line ri-lg text-tertiary" aria-hidden="true"></i>
-                      </div>
-                      <select class="form-select" id="cityMultiple2" name="cityMultipe2" data-placeholder="Rechercher un service d'insertion…" multiple>
-                        <option>Christmas Island</option>
-                        <option>South Sudan</option>
-                        <option>Jamaica</option>
-                        <option>Kenya</option>
-                        <option>French Guiana</option>
-                        <option>Mayotta</option>
-                        <option>Liechtenstein</option>
-                        <option>Denmark</option>
-                        <option>Eritrea</option>
-                      </select>
-                    </div>
-                    <div class="input-group input-group-lg flex-nowrap align-items-center">
-                      <div class="input-group-text rounded-start ps-0 pe-2">
-                        <i class="ri-list-unordered ri-lg text-tertiary" aria-hidden="true"></i>
-                      </div>
-                      <select class="form-select" id="cityMultiple3" name="cityMultipe3" data-placeholder="Sélectionnez une thématique" multiple>
-                        <option>Christmas Island</option>
-                        <option>South Sudan</option>
-                        <option>Jamaica</option>
-                        <option>Kenya</option>
-                        <option>French Guiana</option>
-                        <option>Mayotta</option>
-                        <option>Liechtenstein</option>
-                        <option>Denmark</option>
-                        <option>Eritrea</option>
-                      </select>
-                    </div>
-                    <div class="input-group input-group-lg">
-                      <button class="btn btn-block btn-ico btn-primary js-search-button" aria-label="Rechercher un prescripteur">
-                        <i class="ri-search-line ri-xl fw-bold" aria-hidden="true"></i>
-                        <span class="me-1">Rechercher</span>
-                      </button>
+                      </form>
                     </div>
                   </div>
-                </form>
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="services-tab" tabindex="0">
+                  <div class="c-search">
+                    <div class="c-search__bar">
+                      <form method="get" action="" role="search">
+                        <div class="c-search__bar__grid">
+                          <div class="input-group input-group-lg flex-nowrap align-items-center">
+                            <div class="input-group-text rounded-start py-2">
+                              <i class="ri-map-pin-line ri-lg text-tertiary" aria-hidden="true"></i>
+                            </div>
+                            <select class="form-select" id="cityMultiple2" name="cityMultipe2" data-placeholder="Ville ou code postal" multiple>
+                              <option>Christmas Island</option>
+                              <option>South Sudan</option>
+                              <option>Jamaica</option>
+                              <option>Kenya</option>
+                              <option>French Guiana</option>
+                              <option>Mayotta</option>
+                              <option>Liechtenstein</option>
+                              <option>Denmark</option>
+                              <option>Eritrea</option>
+                            </select>
+                          </div>
+                          <div class="input-group input-group-lg flex-nowrap align-items-center">
+                            <div class="input-group-text rounded-start ps-0 pe-2">
+                              <i class="ri-compass-3-line ri-lg text-tertiary" aria-hidden="true"></i>
+                            </div>
+                            <select class="form-select" id="cityMultiple3" name="cityMultipe3" data-placeholder="Thématique" multiple>
+                              <option>Christmas Island</option>
+                              <option>South Sudan</option>
+                              <option>Jamaica</option>
+                              <option>Kenya</option>
+                              <option>French Guiana</option>
+                              <option>Mayotta</option>
+                              <option>Liechtenstein</option>
+                              <option>Denmark</option>
+                              <option>Eritrea</option>
+                            </select>
+                          </div>
+                          <div class="input-group input-group-lg">
+                            <button type="button" class="btn btn-block btn-ico btn-primary js-search-button" aria-label="Rechercher un prescripteur">
+                              <i class="ri-search-line ri-xl fw-bold" aria-hidden="true"></i>
+                              <span class="me-1">Rechercher</span>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="prescribers-tab" tabindex="0">3...</div>
               </div>
 
+              <p class="s-home-search__note">Recherche libre et sans compte. Créez un compte pour postuler, orienter ou publier.</p>
             </div>
           </div>
         </div>
@@ -215,32 +241,42 @@
     {{> _partials/footer }}
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
     <script type="module" src="./javascripts/index.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
     <script>
-      $('#cityMultiple').select2({
-        theme: "bootstrap-5",
-        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-        placeholder: $(this).data('placeholder'),
-        closeOnSelect: false,
-        allowClear: true,
+      function initSelect2(select) {
+        const $select = $(select);
+
+        if ($select.hasClass("select2-hidden-accessible")) {
+          $select.select2("destroy");
+        }
+
+        $select.select2({
+          theme: "bootstrap-5",
+          width: $select.data("width") || ($select.hasClass("w-100") ? "100%" : "style"),
+          placeholder: $select.data("placeholder"),
+          closeOnSelect: false,
+          allowClear: true,
+        });
+      }
+
+      $(".c-search select").each(function () {
+        initSelect2(this);
       });
-      $('#cityMultiple2').select2({
-        theme: "bootstrap-5",
-        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-        placeholder: $(this).data('placeholder'),
-        closeOnSelect: false,
-        allowClear: true,
-      });
-      $('#cityMultiple3').select2({
-        theme: "bootstrap-5",
-        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-        placeholder: $(this).data('placeholder'),
-        closeOnSelect: false,
-        allowClear: true,
+
+      document.querySelectorAll('[data-bs-toggle="tab"]').forEach(function (tab) {
+        tab.addEventListener("shown.bs.tab", function (event) {
+          const target = document.querySelector(event.target.dataset.bsTarget);
+
+          if (target) {
+            $(target).find("select").each(function () {
+              initSelect2(this);
+            });
+          }
+        });
       });
     </script>
   </body>
