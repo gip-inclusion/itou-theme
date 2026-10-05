@@ -82,21 +82,11 @@
                     <div class="c-search__bar">
                       <form method="get" action="" role="search">
                         <div class="c-search__bar__grid">
-                          <div class="input-group input-group-lg flex-nowrap align-items-center dropdown-toggle">
+                          <div class="input-group input-group-lg flex-nowrap align-items-center">
                             <div class="input-group-text py-2">
                               <i class="ri-map-pin-line ri-lg text-tertiary" aria-hidden="true"></i>
                             </div>
-                            <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Ville ou code postal" multiple>
-                              <option>Christmas Island</option>
-                              <option>South Sudan</option>
-                              <option>Jamaica</option>
-                              <option>Kenya</option>
-                              <option>French Guiana</option>
-                              <option>Mayotta</option>
-                              <option>Liechtenstein</option>
-                              <option>Denmark</option>
-                              <option>Eritrea</option>
-                            </select>
+                            <select class="form-select" id="cityMultiple" name="cityMultipe" data-placeholder="Ville ou code postal"></select>
                           </div>
                           <div class="input-group input-group-lg">
                             <button type="button" class="btn btn-block btn-ico btn-primary" aria-label="Rechercher un emploi inclusif par ville ou code postal">
@@ -118,33 +108,13 @@
                             <div class="input-group-text py-2">
                               <i class="ri-map-pin-line ri-lg text-tertiary" aria-hidden="true"></i>
                             </div>
-                            <select class="form-select" id="cityMultiple2" name="cityMultipe2" data-placeholder="Ville ou code postal" multiple>
-                              <option>Christmas Island</option>
-                              <option>South Sudan</option>
-                              <option>Jamaica</option>
-                              <option>Kenya</option>
-                              <option>French Guiana</option>
-                              <option>Mayotta</option>
-                              <option>Liechtenstein</option>
-                              <option>Denmark</option>
-                              <option>Eritrea</option>
-                            </select>
+                            <select class="form-select" id="cityMultiple2" name="cityMultipe2" data-placeholder="Ville ou code postal"></select>
                           </div>
                           <div class="input-group input-group-lg flex-nowrap align-items-center">
                             <div class="input-group-text input-group-text-compass">
                               <i class="ri-compass-3-line ri-lg text-tertiary" aria-hidden="true"></i>
                             </div>
-                            <select class="form-select" id="cityMultiple3" name="cityMultipe3" data-placeholder="Thématique" multiple>
-                              <option>Christmas Island</option>
-                              <option>South Sudan</option>
-                              <option>Jamaica</option>
-                              <option>Kenya</option>
-                              <option>French Guiana</option>
-                              <option>Mayotta</option>
-                              <option>Liechtenstein</option>
-                              <option>Denmark</option>
-                              <option>Eritrea</option>
-                            </select>
+                            <select class="form-select" id="cityMultiple3" name="cityMultipe3" data-placeholder="Thématique"></select>
                           </div>
                           <div class="input-group input-group-lg">
                             <button type="button" class="btn btn-block btn-ico btn-primary js-search-button" aria-label="Rechercher un prescripteur">
@@ -247,6 +217,12 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
     <script>
+      const select2Data = {
+        cityMultiple: ["Lyon", "Bordeaux", "Grenoble", "Marseille", "Nantes", "Beaujeu-Saint-Vallier-Pierrejux-et-Quitteur"],
+        cityMultiple2: ["Lyon", "Bordeaux", "Grenoble", "Marseille", "Nantes", "Beaujeu-Saint-Vallier-Pierrejux-et-Quitteur"],
+        cityMultiple3: ["Accompagnement social", "Formation", "Mobilité", "Logement", "Difficultés administratives ou juridiques"],
+      };
+
       function initSelect2(select) {
         const $select = $(select);
 
@@ -258,8 +234,9 @@
           theme: "bootstrap-5",
           width: $select.data("width") || ($select.hasClass("w-100") ? "100%" : "style"),
           placeholder: $select.data("placeholder"),
-          closeOnSelect: false,
-          allowClear: true,
+          minimumInputLength: 1,
+          closeOnSelect: true,
+          data: [{ id: "", text: "" }, ...select2Data[select.id].map((text, index) => ({ id: index + 1, text }))],
         });
       }
 
