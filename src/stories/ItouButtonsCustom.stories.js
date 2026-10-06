@@ -133,9 +133,7 @@ const renderDropdownFilter = () => {
 
 export const DropdownFilter = {
   render: renderDropdownFilter,
-  decorators: [
-    (Story) => `<div style="min-height: 180px;">${Story()}</div>`,
-  ],
+  decorators: [(Story) => `<div style="min-height: 180px;">${Story()}</div>`],
   parameters: {
     controls: { disable: true },
     docs: {
@@ -152,18 +150,45 @@ const renderDropdownFilterGroup = () => {
   return `
 <div class="btn-dropdown-filter-group">
   <div class="dropdown">
-    <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-      Un filtre
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
+      <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Usagers sans solution</button>
+      <ul class="dropdown-menu">
+          <li>
+            <div class="dropdown-item">
+              <div class="form-check">
+                <input type="checkbox" name="is_stalled" class="form-check-input is-valid" id="id_is_stalled">
+                <label class="form-check-label" for="id_is_stalled">N’afficher que les usagers sans solution</label>
+              </div>
+            </div>
+          </li>
+          <li>
+              <hr class="dropdown-divider">
+          </li>
+          <li>
+              <a href="" class="btn btn-link has-external-link" target="_blank" rel="noopener">Qu’est-ce qu’un usager sans solution</a>
+          </li>
+      </ul>
+  </div>
+  <div class="dropdown">
+      <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Avec helptext</button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="assignments" id="id_assignments_0" value="" checked="">
+                <label class="form-check-label" for="id_assignments_0">Usagers accompagnés</label>
+            </div>
+        </li>
+        <li class="dropdown-item">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="assignments" id="id_assignments_1" value="archived">
+                <label class="form-check-label" for="id_assignments_1">Usagers archivés</label>
+                <div id="id_assignments_1-helptext" class="form-text">Votre structure n'accompagne plus cet usager.</div>
+            </div>
+        </li>
+      </ul>
   </div>
   <div class="dropdown">
     <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-      Un filtre avec checkbox
+      Avec checkbox
     </button>
     <ul class="dropdown-menu">
       <li><strong class="dropdown-header">Eligibilité IAE</strong></li>
@@ -231,9 +256,7 @@ const renderDropdownFilterGroup = () => {
 
 export const DropdownFilterGroup = {
   render: renderDropdownFilterGroup,
-  decorators: [
-    (Story) => `<div style="min-height: 380px;">${Story()}</div>`,
-  ],
+  decorators: [(Story) => `<div style="min-height: 380px;">${Story()}</div>`],
   parameters: {
     controls: { disable: true },
     docs: {
