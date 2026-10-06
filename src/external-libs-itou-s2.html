@@ -63,8 +63,8 @@
           <h5>Exemples</h5>
 
           <div class="form-group form-group-input-w-md-50">
-            <label>Basic single select</label><br>
-            <select class="form-select" id="single-select-field" data-placeholder="Choose one thing">
+            <label>Nom de l'usager</label><br>
+            <select class="form-select" id="single-select-field" data-placeholder="Nom de l'usager">
               <option></option>
               <option>Reactive</option>
               <option>Solution</option>
@@ -182,6 +182,25 @@
         theme: "bootstrap-5",
         width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
         placeholder: $(this).data('placeholder'),
+        language: {
+          noResults: function () {
+            const term = document.querySelector(
+              ".select2-container--open .select2-search__field"
+            )?.value.trim() || "";
+            const linkText = term
+              ? `Créer un compte usager pour « ${term} »`
+              : "Créer un compte usager";
+
+            return $("<span>").append(
+              "Aucun résultat trouvé. ",
+              $("<a>", {
+                href: "https://www.google.com/",
+                class: "btn-link",
+                text: linkText,
+              })
+            );
+          }
+        }
       });
 
       $('#single-select-optgroup-field').select2({
