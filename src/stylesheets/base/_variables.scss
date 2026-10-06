@@ -1130,7 +1130,7 @@ $form-text-margin-top: 0.25rem !default;
 $form-text-font-size: $small-font-size !default;
 $form-text-font-style: null !default;
 $form-text-font-weight: null !default;
-$form-text-color: var(--#{$prefix}secondary-color) !default;
+$form-text-color: var(--#{$prefix}muted-color);
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables

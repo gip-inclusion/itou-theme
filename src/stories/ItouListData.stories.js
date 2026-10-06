@@ -67,6 +67,13 @@ const renderListData = ({
   const additionalContent = withLongText
     ? `
     <li>
+      <small>Public concerné</small>
+      <div>
+        <strong>Tous publics</strong>
+        <small class="d-block text-muted">L’âge minimum est de 15 ans. L’âge maximum est de 30 ans.</small>
+      </div>
+    </li>
+    <li>
       <small>
         Critères administratifs
         <i class="ri-information-line text-info" data-bs-toggle="tooltip" data-bs-title="Ces critères reflètent la situation du candidat lors de l’établissement du diagnostic ayant permis la délivrance d’un PASS IAE, elle a peut-être changé depuis cette date." aria-label="Ces critères reflètent la situation du candidat lors de l’établissement du diagnostic, elle a peut-être changé depuis cette date." role="button" tabindex="0"></i>
