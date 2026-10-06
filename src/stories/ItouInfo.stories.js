@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component: `
-Le composant \`.c-info\` sert à mettre une information "compacte" en avant. Le message doit donner une information utile à tous les utilisateurs concernée par cette interface.
+Le composant \`.c-info\` sert à mettre une information "compacte" en avant. Le message doit donner une information utile à tous les utilisateurs concernée par cette interface. Par exemple, il peut être utilisé en complément ou à la place d'une help_text associé à un champ de formulaire.
 
 ### Anatomie
 1. **Icône** - Indicateur visuel (automatique via CSS)
@@ -83,7 +83,7 @@ export const Borderless = {
     docs: {
       controls: { disable: true },
       description: {
-        story: "Variante sans bordures. Elle doit être utilisée quand le composant est déjà imbriqué dans un `.c-box` afin d'éviter trop de \"box bordurées\" imbriquées",
+        story: 'Variante sans bordures. Elle doit être utilisée quand le composant est déjà imbriqué dans un `.c-box` afin d\'éviter trop de "box bordurées" imbriquées',
       },
     },
   },
