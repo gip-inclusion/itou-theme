@@ -35,7 +35,7 @@ Le composant \`.tag\` est utilisé pour indiquer un statut ou un état. Il peut 
     },
     variant: {
       control: { type: "select" },
-      options: ["info", "important", "accent-01"],
+      options: ["info", "important", "accent-01", "nuance-09"],
       description: "Variante de couleur",
     },
     size: {
@@ -58,6 +58,7 @@ const variantClasses = {
   info: ["bg-info-lighter", "text-info"],
   important: ["bg-important-lighter", "text-important"],
   "accent-01": ["bg-accent-01-lighter", "text-accent-01"],
+  "nuance-09": ["bg-nuance-09", "text-primary"],
 };
 
 const render = ({ label, variant, size, withIcon, clickable }) => {
@@ -147,7 +148,8 @@ export const Large = {
   },
 };
 
-const renderAllVariants = () => `
+const renderAllVariants = () =>
+  `
 <div class="tag-group">
   <span class="tag bg-info-lighter text-info">info</span>
   <span class="tag bg-info-lighter text-info"><i class="ri-check-line ri-xs" aria-hidden="true"></i>info + ico</span>
@@ -165,6 +167,12 @@ const renderAllVariants = () => `
   <span class="tag bg-accent-01-lighter text-accent-01"><i class="ri-check-line ri-xs" aria-hidden="true"></i>accent-01 + ico</span>
   <a href="" class="tag bg-accent-01-lighter text-accent-01">accent-01 cliquable</a>
   <a href="" class="tag bg-accent-01-lighter text-accent-01"><i class="ri-check-line ri-xs" aria-hidden="true"></i>accent-01 cliquable + ico</a>
+</div>
+<div class="tag-group">
+  <span class="tag bg-nuance-09 text-primary">nuance-09</span>
+  <span class="tag bg-nuance-09 text-primary"><i class="ri-check-line ri-xs" aria-hidden="true"></i>nuance-09 + ico</span>
+  <a href="" class="tag bg-nuance-09 text-primary">nuance-09 cliquable</a>
+  <a href="" class="tag bg-nuance-09 text-primary"><i class="ri-check-line ri-xs" aria-hidden="true"></i>nuance-09 cliquable + ico</a>
 </div>`.trim();
 
 export const AllVariants = {
@@ -180,7 +188,8 @@ export const AllVariants = {
   },
 };
 
-const renderTagGroup = () => `
+const renderTagGroup = () =>
+  `
 <div class="tag-group">
   <span class="tag bg-info-lighter text-info">Prescripteur</span><span class="tag bg-info-lighter text-info">Orienteur</span><span class="tag bg-info-lighter text-info">Employeur</span><span class="tag bg-important-lighter text-important">Prioritaire</span><span class="tag bg-accent-01-lighter text-accent-01">IAE</span>
 </div>`.trim();
