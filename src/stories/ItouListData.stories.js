@@ -26,27 +26,14 @@ function buttonCopyToClipboard() {
   }
 }
 
-const renderListData = ({
-  withCopyButtons = true,
-  withWebsiteLink = true,
-  withMissingValues,
-  withLongText,
-}) => {
-  const websiteValue = withWebsiteLink
-    ? '<a href="" class="btn-link has-external-link">siteweb.com</a>'
-    : '<strong>siteweb.com</strong>';
+const renderListData = ({ withCopyButtons = true, withWebsiteLink = true, withMissingValues, withLongText }) => {
+  const websiteValue = withWebsiteLink ? '<a href="" class="btn-link has-external-link">siteweb.com</a>' : "<strong>siteweb.com</strong>";
 
-  const phoneValue = withMissingValues
-    ? '<i class="text-disabled">Non renseigne</i>'
-    : '<strong>01 23 45 67 89</strong>';
+  const phoneValue = withMissingValues ? '<i class="text-disabled">Non renseigne</i>' : "<strong>01 23 45 67 89</strong>";
 
-  const peIdValue = withMissingValues
-    ? '<i class="text-disabled">Non renseigne</i>'
-    : '<strong>1234567A</strong>';
+  const peIdValue = withMissingValues ? '<i class="text-disabled">Non renseigne</i>' : "<strong>1234567A</strong>";
 
-  const cvValue = withMissingValues
-    ? '<i class="text-disabled">Non renseigne</i>'
-    : '<a class="btn-link has-downloadable-file" href="" download="cv.pdf">CV_Jean_Dupont.pdf</a>';
+  const cvValue = withMissingValues ? '<i class="text-disabled">Non renseigne</i>' : '<a class="btn-link has-downloadable-file" href="" download="cv.pdf">CV_Jean_Dupont.pdf</a>';
 
   const copyEmailButton = withCopyButtons
     ? `
@@ -67,11 +54,35 @@ const renderListData = ({
   const additionalContent = withLongText
     ? `
     <li>
+      <small>Avec des tags</small>
+      <div>
+        <div class="tag-group align-items-baseline">
+          <strong>Plusieurs</strong>
+          <span class="tag bg-important-lighter text-important">Prioritaire</span><span class="tag bg-accent-01-lighter text-accent-01">IAE</span>
+        </div>
+      </div>
+    </li>
+    <li>
       <small>Public concerné</small>
       <div>
         <strong>Tous publics</strong>
-        <small class="d-block text-muted">L’âge minimum est de 15 ans. L’âge maximum est de 30 ans.</small>
+        <span class="d-block text-muted fs-sm">L’âge minimum est de 15 ans. L’âge maximum est de 30 ans.</span>
       </div>
+    </li>
+    <li id="collapseMail01Show" class="collapse has-no-transition show collapseMail01">
+      <small>Adresse e-mail</small>
+      <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseMail01" aria-expanded="false" aria-controls="collapseMail01Show collapseMail01Hide">
+        <i class="ri-mail-send-line" aria-hidden="true"></i>
+        <span>Afficher l’adresse e-mail</span>
+      </button>
+    </li>
+    <li id="collapseMail01Hide" class="collapse has-no-transition collapseMail01">
+      <small>Adresse e-mail</small>
+      <strong>sophie.martin@email.fr</strong>
+      <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="sophie.martin@email.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+        <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+        <span class="visually-hidden">Copier</span>
+      </button>
     </li>
     <li>
       <small>
@@ -92,7 +103,7 @@ const renderListData = ({
       <ul>
         <li>Lundi : 9h00 à 13h45</li>
         <li>Mardi : 9h00 à 13h45</li>
-        <li>Mercredi : <i class="text-disabled fw-normal">Fermé</i></li>
+        <li>Mercredi : <i class="text-muted fw-normal">Fermé</i></li>
         <li>Jeudi : 9h00 à 13h45</li>
       </ul>
     </li>
@@ -150,7 +161,8 @@ const renderListData = ({
 </ul>`.trim();
 };
 
-const renderListDataGroup = () => `
+const renderListDataGroup = () =>
+  `
 <div class="list-data-group">
   <ul class="list-data">
     <li>
@@ -214,7 +226,7 @@ export default {
       setTimeout(() => {
         buttonCopyToClipboard();
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+        [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
       }, 0);
       return html;
     },

@@ -2,7 +2,7 @@
   display: inline-block;
   padding: 0.25rem $badge-padding-x;
   font-size: $font-size-xs;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-normal;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -10,7 +10,6 @@
   @include border-radius($badge-border-radius);
   height: 20px;
   white-space: nowrap;
-  text-transform: uppercase;
   text-decoration: none;
 
   > i {
