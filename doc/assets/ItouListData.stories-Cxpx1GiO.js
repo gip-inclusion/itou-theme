@@ -51,11 +51,35 @@ import{n as e}from"./rolldown-runtime-DkW27tQK.js";function t(){let e=document.q
     ${n?`<i class="text-disabled">Non renseigne</i>`:`<a class="btn-link has-downloadable-file" href="" download="cv.pdf">CV_Jean_Dupont.pdf</a>`}
   </li>${r?`
     <li>
+      <small>Avec des tags</small>
+      <div>
+        <div class="tag-group align-items-baseline">
+          <strong>Plusieurs</strong>
+          <span class="tag bg-important-lighter text-important">Prioritaire</span><span class="tag bg-accent-01-lighter text-accent-01">IAE</span>
+        </div>
+      </div>
+    </li>
+    <li>
       <small>Public concerné</small>
       <div>
         <strong>Tous publics</strong>
-        <small class="d-block text-muted">L’âge minimum est de 15 ans. L’âge maximum est de 30 ans.</small>
+        <span class="d-block text-muted fs-sm">L’âge minimum est de 15 ans. L’âge maximum est de 30 ans.</span>
       </div>
+    </li>
+    <li id="collapseMail01Show" class="collapse has-no-transition show collapseMail01">
+      <small>Adresse e-mail</small>
+      <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseMail01" aria-expanded="false" aria-controls="collapseMail01Show collapseMail01Hide">
+        <i class="ri-mail-send-line" aria-hidden="true"></i>
+        <span>Afficher l’adresse e-mail</span>
+      </button>
+    </li>
+    <li id="collapseMail01Hide" class="collapse has-no-transition collapseMail01">
+      <small>Adresse e-mail</small>
+      <strong>sophie.martin@email.fr</strong>
+      <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="sophie.martin@email.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+        <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+        <span class="visually-hidden">Copier</span>
+      </button>
     </li>
     <li>
       <small>
@@ -76,7 +100,7 @@ import{n as e}from"./rolldown-runtime-DkW27tQK.js";function t(){let e=document.q
       <ul>
         <li>Lundi : 9h00 à 13h45</li>
         <li>Mardi : 9h00 à 13h45</li>
-        <li>Mercredi : <i class="text-disabled fw-normal">Fermé</i></li>
+        <li>Mercredi : <i class="text-muted fw-normal">Fermé</i></li>
         <li>Jeudi : 9h00 à 13h45</li>
       </ul>
     </li>
