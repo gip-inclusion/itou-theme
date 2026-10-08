@@ -383,6 +383,22 @@ select:disabled {
       border-color: $black !important;
     }
   }
+
+  &--info {
+    color: $white !important;
+    background-color: $info !important;
+
+    &.active,
+    &.focus,
+    &.hover,
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white !important;
+      background-color: $info !important;
+      border-color: $info !important;
+    }
+  }
 }
 
 .btn-dropdown-filter-group {
