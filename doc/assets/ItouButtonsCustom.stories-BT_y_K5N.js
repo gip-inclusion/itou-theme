@@ -40,7 +40,18 @@ import{n as e}from"./rolldown-runtime-DkW27tQK.js";function t(){let e=document.q
     <li><a class="dropdown-item" href="#">Something else here</a></li>
   </ul>
 </div>
-  `,c={render:s,decorators:[e=>`<div style="min-height: 180px;">${e()}</div>`],parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Le `.btn-dropdown-filter` permets d'afficher des filtres en dropdown. Généralement utilisé pour filtrer les listes de résultats."}}},args:{}},l=()=>`
+<br />
+<div class="dropdown">
+  <button type="button" class="btn btn-sm btn-dropdown-filter btn-dropdown-filter--info dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+    En version small et info
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+  `,c={render:s,decorators:[e=>`<div style="min-height: 180px;">${e()}</div>`],parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Le `.btn-dropdown-filter` permets d'afficher des filtres en dropdown. Généralement utilisé pour filtrer les listes de résultats. <br>Ce boutton existe aussi en version info avec la classe `btn-dropdown-filter--info`"}}},args:{}},l=()=>`
 <div class="btn-dropdown-filter-group">
   <div class="dropdown">
       <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Usagers sans solution</button>
@@ -192,7 +203,7 @@ import{n as e}from"./rolldown-runtime-DkW27tQK.js";function t(){let e=document.q
         disable: true
       },
       description: {
-        story: "Le \`.btn-dropdown-filter\` permets d'afficher des filtres en dropdown. Généralement utilisé pour filtrer les listes de résultats."
+        story: "Le \`.btn-dropdown-filter\` permets d'afficher des filtres en dropdown. Généralement utilisé pour filtrer les listes de résultats. <br>Ce boutton existe aussi en version info avec la classe \`btn-dropdown-filter--info\`"
       }
     }
   },
