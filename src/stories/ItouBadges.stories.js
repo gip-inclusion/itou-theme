@@ -49,26 +49,7 @@ L'icône dans le badge doit posséder un \`aria-hidden=true\`
     },
     variant: {
       control: { type: "select" },
-      options: [
-        "primary",
-        "success",
-        "success-lighter",
-        "warning",
-        "warning-lighter",
-        "danger",
-        "danger-lighter",
-        "info",
-        "info-lighter",
-        "important",
-        "important-lighter",
-        "accent-01",
-        "accent-01-lighter",
-        "accent-02",
-        "accent-02-lighter",
-        "accent-03",
-        "accent-03-lighter",
-        "disabled-color-light"
-      ],
+      options: ["primary", "success", "success-lighter", "warning", "warning-lighter", "danger", "danger-lighter", "info", "info-lighter", "important", "important-lighter", "accent-01", "accent-01-lighter", "accent-02", "accent-02-lighter", "accent-03", "accent-03-lighter", "disabled-color-light"],
       description: "Variante de couleur",
     },
     withIcon: {
@@ -132,6 +113,53 @@ export const WithIcon = {
     size: "badge-base",
     variant: "info",
     withIcon: true,
+  },
+};
+
+const renderWithDropdown = () => {
+  const dropdownId = `badge-dropdown-${Math.random().toString(36).slice(2, 10)}`;
+
+  return `
+<div class="dropdown" style="min-height: 220px;">
+  <button type="button" class="badge badge-base rounded-pill bg-info dropdown-toggle" id="${dropdownId}-trigger" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="${dropdownId}">
+    Prise de contact
+  </button>
+  <ul class="dropdown-menu" id="${dropdownId}" aria-labelledby="${dropdownId}-trigger">
+    <li><button type="button" class="dropdown-item">Action</button></li>
+    <li><button type="button" class="dropdown-item">Another action</button></li>
+    <li><button type="button" class="dropdown-item">Something else here</button></li>
+  </ul>
+</div>`;
+};
+
+export const WithDropdown = {
+  render: renderWithDropdown,
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      controls: { disable: true },
+      description: {
+        story: "Badge utilisé comme bouton déclencheur d'un menu déroulant. Ce cas ne doit être utilisé qu'avec la taille `.badge-base`",
+      },
+    },
+  },
+};
+
+const renderWithSmallText = () => `
+<span class="badge badge-base rounded-pill bg-important text-white">
+Nouveau <small>Expire le 12/08/26</small>
+</span>`;
+
+export const WithSmallText = {
+  render: renderWithSmallText,
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      controls: { disable: true },
+      description: {
+        story: "Badge avec une information secondaire en texte réduit. Ce cas ne doit être utilisé qu'avec la taille `.badge-base`",
+      },
+    },
   },
 };
 

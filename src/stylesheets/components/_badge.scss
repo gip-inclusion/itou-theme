@@ -54,10 +54,23 @@
     justify-content: center;
     aspect-ratio: 1/1;
   }
+
+  &.dropdown-toggle::after {
+    margin-left: 0;
+  }
 }
 
-a.badge {
+a.badge,
+button.badge {
   text-decoration: none;
+  transition: $btn-transition;
+}
+
+@each $name, $color in $theme-colors {
+  a.badge.bg-#{$name}:hover,
+  button.badge.bg-#{$name}:hover {
+    background-color: shade-color($color, $btn-hover-bg-shade-amount) !important;
+  }
 }
 
 .badge-group {
