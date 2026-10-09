@@ -1,7 +1,20 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t,n,r,i,a,o,s,c,l,u,d,f,p,m,h;function g(){return(g=e((()=>{t={title:`Components/Badges`,decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:[`autodocs`],parameters:{layout:`padded`,docs:{description:{component:"\nLe composant `.badge` est utile pour le comptage, l'étiquetage et la mise en avant d'une information.\n**Il n'est pas cliquable.**\n\n### Anatomie\n1. **Label** - Texte du badge\n2. **Icône** (optionnel) - Renforce la compréhension\n3. **Conteneur** - Fond coloré arrondi\n\n### Classes CSS - Tailles\n| Classe | Description |\n|--------|-------------|\n| `.badge` | Taille héritée du parent |\n| `.badge-base` | Taille fixe standard |\n| `.badge-sm` | Taille fixe petite |\n| `.badge-xs` | Taille fixe extra-petite |\n| `.badge-xl` | Taille fixe extra-large |\n\n### Classes CSS - Couleurs\n| Classe | Usage |\n|--------|-------|\n| `.bg-success` | Succès, Valide, Éligible, Accepté |\n| `.bg-warning` | Attention, En cours, En attente |\n| `.bg-danger` | Erreur, Expiré, Annulé, Décliné |\n| `.bg-info` | Information, Nouveau |\n| `.bg-primary` | Multi-usage |\n| `.bg-important` | Mise en avant |\n| `.bg-accent-01` / `.bg-accent-02` / `.bg-accent-03` | Cas spéciaux |\n\n### Accessibilité\nL'icône dans le badge doit posséder un `aria-hidden=true`\n"}}},argTypes:{size:{control:{type:`select`},options:[`badge-xl`,`badge-base`,`badge-sm`,`badge-xs`],description:`Taille du badge`},variant:{control:{type:`select`},options:[`primary`,`success`,`success-lighter`,`warning`,`warning-lighter`,`danger`,`danger-lighter`,`info`,`info-lighter`,`important`,`important-lighter`,`accent-01`,`accent-01-lighter`,`accent-02`,`accent-02-lighter`,`accent-03`,`accent-03-lighter`,`disabled-color-light`],description:`Variante de couleur`},withIcon:{control:`boolean`,description:`Affiche une icône`}}},n=e=>[`accent-02`,`accent-02-lighter`,`accent-03`,`accent-03-lighter`,`disabled-color-light`].includes(e)?`text-primary`:[`success-lighter`].includes(e)?`text-success`:[`warning-lighter`].includes(e)?`text-warning`:[`danger-lighter`].includes(e)?`text-danger`:[`info-lighter`].includes(e)?`text-info`:[`accent-01-lighter`].includes(e)?`text-accent-01`:[`important-lighter`].includes(e)?`text-important`:`text-white`,r=({label:e,size:t,variant:r,withIcon:i})=>`
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t,n,r,i,a,o,s,c,l,u,d,f,p,m,h,g,_,v,y;function b(){return(b=e((()=>{t={title:`Components/Badges`,decorators:[e=>`<div style="max-width: 1000px; margin: 0 auto;">${e()}</div>`],tags:[`autodocs`],parameters:{layout:`padded`,docs:{description:{component:"\nLe composant `.badge` est utile pour le comptage, l'étiquetage et la mise en avant d'une information.\n**Il n'est pas cliquable.**\n\n### Anatomie\n1. **Label** - Texte du badge\n2. **Icône** (optionnel) - Renforce la compréhension\n3. **Conteneur** - Fond coloré arrondi\n\n### Classes CSS - Tailles\n| Classe | Description |\n|--------|-------------|\n| `.badge` | Taille héritée du parent |\n| `.badge-base` | Taille fixe standard |\n| `.badge-sm` | Taille fixe petite |\n| `.badge-xs` | Taille fixe extra-petite |\n| `.badge-xl` | Taille fixe extra-large |\n\n### Classes CSS - Couleurs\n| Classe | Usage |\n|--------|-------|\n| `.bg-success` | Succès, Valide, Éligible, Accepté |\n| `.bg-warning` | Attention, En cours, En attente |\n| `.bg-danger` | Erreur, Expiré, Annulé, Décliné |\n| `.bg-info` | Information, Nouveau |\n| `.bg-primary` | Multi-usage |\n| `.bg-important` | Mise en avant |\n| `.bg-accent-01` / `.bg-accent-02` / `.bg-accent-03` | Cas spéciaux |\n\n### Accessibilité\nL'icône dans le badge doit posséder un `aria-hidden=true`\n"}}},argTypes:{size:{control:{type:`select`},options:[`badge-xl`,`badge-base`,`badge-sm`,`badge-xs`],description:`Taille du badge`},variant:{control:{type:`select`},options:[`primary`,`success`,`success-lighter`,`warning`,`warning-lighter`,`danger`,`danger-lighter`,`info`,`info-lighter`,`important`,`important-lighter`,`accent-01`,`accent-01-lighter`,`accent-02`,`accent-02-lighter`,`accent-03`,`accent-03-lighter`,`disabled-color-light`],description:`Variante de couleur`},withIcon:{control:`boolean`,description:`Affiche une icône`}}},n=e=>[`accent-02`,`accent-02-lighter`,`accent-03`,`accent-03-lighter`,`disabled-color-light`].includes(e)?`text-primary`:[`success-lighter`].includes(e)?`text-success`:[`warning-lighter`].includes(e)?`text-warning`:[`danger-lighter`].includes(e)?`text-danger`:[`info-lighter`].includes(e)?`text-info`:[`accent-01-lighter`].includes(e)?`text-accent-01`:[`important-lighter`].includes(e)?`text-important`:`text-white`,r=({label:e,size:t,variant:r,withIcon:i})=>`
 <span class="badge ${t} rounded-pill ${`bg-${r}`} ${n(r)}">
   ${i?`<i class="ri-global-line" aria-hidden="true"></i> `:``}${e}
-</span>`,i={render:r,parameters:{docs:{description:{story:`Badge standard avec couleur primaire.`}}},args:{label:`Badge`,size:`badge-base`,variant:`primary`,withIcon:!1}},a={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge avec icône pour renforcer visuellement le message.`}}},args:{label:`Avec icône`,size:`badge-base`,variant:`info`,withIcon:!0}},o={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge succès pour les états valides, éligibles ou acceptés.`}}},args:{label:`Candidature acceptée`,size:`badge-sm`,variant:`success`,withIcon:!1}},s={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge avertissement pour les états en cours ou en attente.`}}},args:{label:`En attente`,size:`badge-sm`,variant:`warning`,withIcon:!1}},c={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge danger pour les états expirés, annulés ou déclinés.`}}},args:{label:`Candidature déclinée`,size:`badge-sm`,variant:`danger`,withIcon:!1}},l=()=>`
+</span>`,i={render:r,parameters:{docs:{description:{story:`Badge standard avec couleur primaire.`}}},args:{label:`Badge`,size:`badge-base`,variant:`primary`,withIcon:!1}},a={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge avec icône pour renforcer visuellement le message.`}}},args:{label:`Avec icône`,size:`badge-base`,variant:`info`,withIcon:!0}},o=()=>{let e=`badge-dropdown-${Math.random().toString(36).slice(2,10)}`;return`
+<div class="dropdown" style="min-height: 220px;">
+  <button type="button" class="badge badge-base rounded-pill bg-info dropdown-toggle" id="${e}-trigger" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="${e}">
+    Prise de contact
+  </button>
+  <ul class="dropdown-menu" id="${e}" aria-labelledby="${e}-trigger">
+    <li><button type="button" class="dropdown-item">Action</button></li>
+    <li><button type="button" class="dropdown-item">Another action</button></li>
+    <li><button type="button" class="dropdown-item">Something else here</button></li>
+  </ul>
+</div>`},s={render:o,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Badge utilisé comme bouton déclencheur d'un menu déroulant. Ce cas ne doit être utilisé qu'avec la taille `.badge-base`"}}}},c=()=>`
+<span class="badge badge-base rounded-pill bg-important text-white">
+Nouveau <small>Expire le 12/08/26</small>
+</span>`,l={render:c,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:"Badge avec une information secondaire en texte réduit. Ce cas ne doit être utilisé qu'avec la taille `.badge-base`"}}}},u={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge succès pour les états valides, éligibles ou acceptés.`}}},args:{label:`Candidature acceptée`,size:`badge-sm`,variant:`success`,withIcon:!1}},d={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge avertissement pour les états en cours ou en attente.`}}},args:{label:`En attente`,size:`badge-sm`,variant:`warning`,withIcon:!1}},f={render:r,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Badge danger pour les états expirés, annulés ou déclinés.`}}},args:{label:`Candidature déclinée`,size:`badge-sm`,variant:`danger`,withIcon:!1}},p=()=>`
 <div class="d-flex flex-column gap-2">
   <p><span class="badge badge-sm rounded-pill bg-info text-white">Nouvelle candidature</span></p>
   <p><span class="badge badge-sm rounded-pill bg-accent-03 text-primary">Candidature à l'étude</span></p>
@@ -10,11 +23,11 @@ import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t,n,r,i,a,o,s,c,l,u,d,f,p
   <p><span class="badge badge-sm rounded-pill bg-danger text-white">Candidature déclinée</span></p>
   <p><span class="badge badge-sm rounded-pill bg-primary text-white">Embauché ailleurs</span></p>
   <p><span class="badge badge-sm rounded-pill bg-primary text-white">Embauche annulée</span></p>
-</div>`,u={render:l,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`
+</div>`,m={render:p,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`
 **Badges pour les statuts de candidature**
 
 Badges prédéfinis pour les différents statuts d'une candidature dans le parcours utilisateur.
-`}}}},d=()=>`
+`}}}},h=()=>`
 <div class="d-flex flex-column gap-2">
   <p>
     <span class="badge badge-sm rounded-pill bg-accent-02-lighter text-primary">
@@ -46,11 +59,11 @@ Badges prédéfinis pour les différents statuts d'une candidature dans le parco
       <i class="ri-pass-expired-line" aria-hidden="true"></i> PASS IAE expiré
     </span>
   </p>
-</div>`,f={render:d,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`
+</div>`,g={render:h,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`
 **Badges pour l'Éligibilité**
 
 Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
-`}}}},p=()=>`
+`}}}},_=()=>`
 <div class="row">
   <div class="col-6">
     <p class="fw-bold mb-3">Couleurs pleines</p>
@@ -80,7 +93,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     <p><span class="badge badge-base rounded-pill bg-accent-03-lighter text-primary">accent-03-lighter</span></p>
     <p><span class="badge badge-base rounded-pill bg-disabled-color-light text-primary">Du 12/03/2024 au 04/08/2026</p>
   </div>
-</div>`,m={render:p,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Palette complète des couleurs disponibles pour les badges.`}}}},h=[`Default`,`WithIcon`,`Success`,`Warning`,`Danger`,`Candidature`,`Eligibilite`,`AllVersions`],i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+</div>`,v={render:_,parameters:{controls:{disable:!0},docs:{controls:{disable:!0},description:{story:`Palette complète des couleurs disponibles pour les badges.`}}}},y=[`Default`,`WithIcon`,`WithDropdown`,`WithSmallText`,`Success`,`Warning`,`Danger`,`Candidature`,`Eligibilite`,`AllVersions`],i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     docs: {
@@ -116,7 +129,37 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     variant: "info",
     withIcon: true
   }
-}`,...a.parameters?.docs?.source}}},o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  render: renderWithDropdown,
+  parameters: {
+    controls: {
+      disable: true
+    },
+    docs: {
+      controls: {
+        disable: true
+      },
+      description: {
+        story: "Badge utilisé comme bouton déclencheur d'un menu déroulant. Ce cas ne doit être utilisé qu'avec la taille \`.badge-base\`"
+      }
+    }
+  }
+}`,...s.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  render: renderWithSmallText,
+  parameters: {
+    controls: {
+      disable: true
+    },
+    docs: {
+      controls: {
+        disable: true
+      },
+      description: {
+        story: "Badge avec une information secondaire en texte réduit. Ce cas ne doit être utilisé qu'avec la taille \`.badge-base\`"
+      }
+    }
+  }
+}`,...l.parameters?.docs?.source}}},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     controls: {
@@ -137,7 +180,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     variant: "success",
     withIcon: false
   }
-}`,...o.parameters?.docs?.source}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+}`,...u.parameters?.docs?.source}}},d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     controls: {
@@ -158,7 +201,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     variant: "warning",
     withIcon: false
   }
-}`,...s.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+}`,...d.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
   render,
   parameters: {
     controls: {
@@ -179,7 +222,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
     variant: "danger",
     withIcon: false
   }
-}`,...c.parameters?.docs?.source}}},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
+}`,...f.parameters?.docs?.source}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{
   render: renderCandidatures,
   parameters: {
     controls: {
@@ -198,7 +241,7 @@ Badges prédéfinis pour les différents statuts d'une candidature dans le parco
       }
     }
   }
-}`,...u.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
+}`,...m.parameters?.docs?.source}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:`{
   render: renderEligibilite,
   parameters: {
     controls: {
@@ -217,7 +260,7 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
       }
     }
   }
-}`,...f.parameters?.docs?.source}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{
+}`,...g.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:`{
   render: renderAllVersions,
   parameters: {
     controls: {
@@ -232,4 +275,4 @@ Badges prédéfinis pour les différents états d'éligibilité IAE et PASS IAE.
       }
     }
   }
-}`,...m.parameters?.docs?.source}}}})))()}g();export{m as AllVersions,u as Candidature,c as Danger,i as Default,f as Eligibilite,o as Success,s as Warning,a as WithIcon,h as __namedExportsOrder,t as default};
+}`,...v.parameters?.docs?.source}}}})))()}b();export{v as AllVersions,m as Candidature,f as Danger,i as Default,g as Eligibilite,u as Success,d as Warning,s as WithDropdown,a as WithIcon,l as WithSmallText,y as __namedExportsOrder,t as default};
