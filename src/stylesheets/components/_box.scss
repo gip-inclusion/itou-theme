@@ -266,19 +266,6 @@
         }
       }
     }
-
-    .btn.has-collapse-caret {
-      position: relative;
-
-      &::before {
-        margin-right: map-get($spacers, 1);
-        content: attr(data-it-collapse-text-show);
-      }
-
-      &[aria-expanded="true"]::before {
-        content: attr(data-it-collapse-text-hide);
-      }
-    }
   }
 
   &--summary {
