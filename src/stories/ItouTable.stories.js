@@ -1,6 +1,6 @@
 export default {
   title: "Components/Table",
-  decorators: [(Story) => `<div style="max-width: 1000px; margin: 0 auto;">${Story()}</div>`],
+  decorators: [(Story) => `<div style="max-width: 1600px; margin: 0 auto;">${Story()}</div>`],
   tags: ["autodocs"],
   parameters: {
     layout: "padded",
@@ -165,11 +165,11 @@ const renderTable = ({ compact, striped, hover, bordered, responsive, responsive
           <td>${row.passNumber}</td>
           <td>${row.validity}</td>
           <td class="text-end w-100px">
-            <div class="btn-group btn-group-sm" role="group" aria-label="Actions rapides sur le candidat">
-              <a class="btn btn-link btn-ico-only" href="" data-bs-toggle="tooltip" data-bs-title="Postuler pour ce candidat">
+            <div class="d-flex justify-content-end gap-2" role="group" aria-label="Actions rapides sur le candidat">
+              <a class="btn btn-sm btn-secondary btn-ico-only" href="" data-bs-toggle="tooltip" data-bs-title="Postuler pour ce candidat">
                 <i class="ri-draft-line" aria-label="Postuler pour BARACUS Boris"></i>
               </a>
-              <button class="btn btn-link btn-ico-only" type="button" id="dropdown_${index}_action_menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
+              <button class="btn btn-sm btn-secondary btn-ico-only" type="button" id="dropdown_${index}_action_menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'actions">
                 <i class="ri-more-2-fill" aria-hidden="true"></i>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdown_${index}_action_menu">
@@ -303,5 +303,214 @@ export const Sortable = {
     responsive: false,
     responsiveBreakpoint: "all",
     sortable: true,
+  },
+};
+
+export const DemandesRecues = {
+  render: () => `
+    <table class="table table-hover table-sortable">
+      <caption class="visually-hidden">Liste des candidatures (les colonnes disposant d’un bouton dans leur entête peuvent être triées en cliquant sur le bouton)</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="text-start w-50px">
+            <input class="form-check-input" type="checkbox" id="select-all-applications" data-emplois-select-all-target-input-name="selected-application" autocomplete="off" />
+            <label class="visually-hidden" for="select-all-applications">Sélectionner toutes les candidatures</label>
+          </th>
+          <th scope="col" aria-sort="none">
+            <button type="button" data-emplois-setter-target="#id_order" data-emplois-setter-value="job_seeker_full_name" data-emplois-elements-visibility-on-selection="disabled">Candidature de</button>
+          </th>
+          <th scope="col" aria-sort="descending">
+            <button type="button" data-emplois-setter-target="#id_order" data-emplois-setter-value="created_at" data-emplois-elements-visibility-on-selection="disabled">Émise le</button>
+          </th>
+          <th scope="col">Poste</th>
+          <th scope="col">Émetteur</th>
+          <th scope="col" class="text-nowrap">Critères administratifs</th>
+          <th scope="col">Statut éligibilité</th>
+          <th scope="col" class="text-end w-50px">
+            <span class="visually-hidden">Actions possibles sur les candidatures</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="align-top">
+          <th scope="row" class="text-start w-50px">
+            <input class="form-check-input" type="checkbox" name="selected-application" value="90bc0025-7003-4673-b44f-0ce72daf4628" id="select-90bc0025-7003-4673-b44f-0ce72daf4628" autocomplete="off" />
+            <label class="visually-hidden" for="select-90bc0025-7003-4673-b44f-0ce72daf4628">Sélectionner cette candidature</label>
+          </th>
+          <td>
+            <a class="btn-link" href="" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">Personne Anonyme</a>
+            <span class="d-block"> </span>
+            <span id="state_90bc0025-7003-4673-b44f-0ce72daf4628" class="badge rounded-pill text-nowrap badge-sm bg-success">Candidature acceptée</span>
+          </td>
+          <td>31/08/2026</td>
+          <td>Candidature spontanée</td>
+          <td><i class="ri-community-line" aria-hidden="true"></i> ETTI Une nouvelle chance</td>
+          <td>
+            <ul class="mb-0">
+              <li>Allocataire ASS</li>
+            </ul>
+          </td>
+          <td>
+            <div class="d-flex align-items-center">
+              <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                PASS&nbsp;IAE valide
+              </span>
+            </div>
+            <span class="d-block">Éligibilité validée par votre entreprise</span>
+          </td>
+          <td class="text-end w-50px">
+            <a class="btn btn-sm btn-secondary btn-ico-only" href="" aria-label="Voir sa candidature" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+              <i class="ri-arrow-drop-right-line fs-lg" aria-hidden="true"></i>
+            </a>
+          </td>
+        </tr>
+        <tr class="align-top">
+          <th scope="row" class="text-start w-50px">
+            <input class="form-check-input" type="checkbox" name="selected-application" value="7178d000-aace-4b3e-9f36-1831ad98f4f4" id="select-7178d000-aace-4b3e-9f36-1831ad98f4f4" autocomplete="off" />
+            <label class="visually-hidden" for="select-7178d000-aace-4b3e-9f36-1831ad98f4f4">Sélectionner cette candidature</label>
+          </th>
+          <td>
+            <a class="btn-link" href="" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">Personne Anonyme</a>
+            <span class="d-block"> </span>
+            <span id="state_7178d000-aace-4b3e-9f36-1831ad98f4f4" class="badge rounded-pill text-nowrap badge-sm bg-success">Candidature acceptée</span>
+          </td>
+          <td>31/08/2026</td>
+          <td>Candidature spontanée</td>
+          <td><i class="ri-community-line" aria-hidden="true"></i> ETTI Une nouvelle chance</td>
+          <td>
+            <ul class="mb-0">
+              <li>Jeune (-26 ans)</li>
+              <li>Maîtrise de la langue française inférieure au niveau A1</li>
+              <li>Niveau d'étude 3 (CAP, BEP) ou infra</li>
+              <li>Résident ZRR/ZFRR</li>
+            </ul>
+          </td>
+          <td>
+            <div class="d-flex align-items-center">
+              <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                PASS&nbsp;IAE valide
+              </span>
+            </div>
+            <span class="d-block">Éligibilité validée par votre entreprise</span>
+          </td>
+          <td class="text-end w-50px">
+            <a class="btn btn-sm btn-secondary btn-ico-only" href="" aria-label="Voir sa candidature" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+              <i class="ri-arrow-drop-right-line fs-lg" aria-hidden="true"></i>
+            </a>
+          </td>
+        </tr>
+        <tr class="align-top">
+          <th scope="row" class="text-start w-50px">
+            <input class="form-check-input" type="checkbox" name="selected-application" value="4baf347b-0d1c-4c24-ad8c-192a0a38792a" id="select-4baf347b-0d1c-4c24-ad8c-192a0a38792a" autocomplete="off" />
+            <label class="visually-hidden" for="select-4baf347b-0d1c-4c24-ad8c-192a0a38792a">Sélectionner cette candidature</label>
+          </th>
+          <td>
+            <a class="btn-link" href="" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">Personne Anonyme</a>
+            <span class="d-block"> </span>
+            <span id="state_4baf347b-0d1c-4c24-ad8c-192a0a38792a" class="badge rounded-pill text-nowrap badge-sm bg-success">Candidature acceptée</span>
+          </td>
+          <td>31/08/2026</td>
+          <td>Candidature spontanée</td>
+          <td><i class="ri-community-line" aria-hidden="true"></i> ETTI Une nouvelle chance</td>
+          <td>
+            <ul class="mb-0">
+              <li>Maîtrise de la langue française inférieure au niveau A1</li>
+              <li>Réfugié statutaire, bénéficiaire d'une protection temporaire, protégé subsidiaire ou demandeur d'asile</li>
+              <li>Travailleur handicapé</li>
+            </ul>
+          </td>
+          <td>
+            <div class="d-flex align-items-center">
+              <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                PASS&nbsp;IAE valide
+              </span>
+            </div>
+            <span class="d-block">Éligibilité validée par votre entreprise</span>
+          </td>
+          <td class="text-end w-50px">
+            <a class="btn btn-sm btn-secondary btn-ico-only" href="" aria-label="Voir sa candidature" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+              <i class="ri-arrow-drop-right-line fs-lg" aria-hidden="true"></i>
+            </a>
+          </td>
+        </tr>
+        <tr class="align-top">
+          <th scope="row" class="text-start w-50px">
+            <input class="form-check-input" type="checkbox" name="selected-application" value="5929baf1-f6d6-4750-9842-aed96a4b544c" id="select-5929baf1-f6d6-4750-9842-aed96a4b544c" autocomplete="off" />
+            <label class="visually-hidden" for="select-5929baf1-f6d6-4750-9842-aed96a4b544c">Sélectionner cette candidature</label>
+          </th>
+          <td>
+            <a class="btn-link" href="" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">Personne Anonyme</a>
+            <span class="d-block"> 13 - Tarascon </span>
+            <span id="state_5929baf1-f6d6-4750-9842-aed96a4b544c" class="badge rounded-pill text-nowrap badge-sm bg-info">Nouvelle candidature</span>
+          </td>
+          <td>31/07/2025</td>
+          <td>
+            <ul class="list-unstyled">
+              <li>Figurant / Figurante</li>
+            </ul>
+          </td>
+          <td><i class="ri-home-smile-line" aria-hidden="true"></i> CENTRE COMMUNAL D'ACTION SOCIALE</td>
+          <td><i class="text-disabled">Aucun critère sélectionné</i></td>
+          <td>
+            <div class="d-flex align-items-center">
+              <span class="badge badge-sm rounded-pill bg-warning-lighter text-warning">
+                <i class="ri-error-warning-line" aria-hidden="true"></i>
+                Éligibilité IAE à valider
+              </span>
+            </div>
+            <span class="d-block">Un diagnostic doit être réalisé</span>
+          </td>
+          <td class="text-end w-50px">
+            <a class="btn btn-sm btn-secondary btn-ico-only" href="" aria-label="Voir sa candidature" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+              <i class="ri-arrow-drop-right-line fs-lg" aria-hidden="true"></i>
+            </a>
+          </td>
+        </tr>
+        <tr class="align-top">
+          <th scope="row" class="text-start w-50px">
+            <input class="form-check-input" type="checkbox" name="selected-application" value="7f2ff00a-cf74-4e6c-b762-466f212c4b19" id="select-7f2ff00a-cf74-4e6c-b762-466f212c4b19" autocomplete="off" />
+            <label class="visually-hidden" for="select-7f2ff00a-cf74-4e6c-b762-466f212c4b19">Sélectionner cette candidature</label>
+          </th>
+          <td>
+            <a class="btn-link" href="" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">Personne Anonyme</a>
+            <span class="d-block"> 90 - Belfort </span>
+            <span id="state_7f2ff00a-cf74-4e6c-b762-466f212c4b19" class="badge rounded-pill text-nowrap badge-sm bg-info">Nouvelle candidature</span>
+          </td>
+          <td>31/07/2025</td>
+          <td>
+            <ul class="list-unstyled">
+              <li>Figurant / Figurante</li>
+            </ul>
+          </td>
+          <td><i class="ri-community-line" aria-hidden="true"></i> Job insertion 90</td>
+          <td><i class="text-disabled">Aucun critère sélectionné</i></td>
+          <td>
+            <div class="d-flex align-items-center">
+              <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                <i class="ri-pass-valid-line" aria-hidden="true"></i>
+                PASS&nbsp;IAE valide
+              </span>
+            </div>
+            <span class="d-block">Éligibilité validée par un prescripteur habilité</span>
+          </td>
+          <td class="text-end w-50px">
+            <a class="btn btn-sm btn-secondary btn-ico-only" href="" aria-label="Voir sa candidature" data-bs-toggle="tooltip" data-bs-title="Voir sa candidature" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="voir-candidature-employeur">
+              <i class="ri-arrow-drop-right-line fs-lg" aria-hidden="true"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>`,
+  parameters: {
+    controls: { disable: true },
+    docs: {
+      controls: { disable: true },
+      description: {
+        story: "Exemple de tableau de candidatures reçues avec tri, sélection et critères d’éligibilité.",
+      },
+    },
   },
 };
