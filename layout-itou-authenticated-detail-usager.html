@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Itou Theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="Itou Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Itou Theme">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Itou Theme">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+
+    <link rel="stylesheet" href="https://emplois.inclusion.beta.gouv.fr/static/css/itou.css">
+
+    <script type="module" crossorigin src="./javascripts/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./stylesheets/app.css">
+  </head>
+
+  <body id="top" class="l-authenticated">
+    <nav role="navigation" aria-label="Accès rapide" tabindex="0" class="c-skiplinks">
+      <ul>
+        <li><a href="#nav-primary">Aller au menu principal</a></li>
+        <li><a href="#main">Aller au contenu principal</a></li>
+      </ul>
+    </nav>
+
+    <div class="global-messages-container"></div>
+
+    <header role="banner" id="header">
+      <section class="s-header-print">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto d-flex align-items-center py-2">
+              <img src="./images/logo-republique-francaise.svg" height="70" alt="Rébublique Française">
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="./images/logo-emploi-inclusion.svg" height="60" alt="Les emplois de l'inclusion">
+            </div>
+            <div class="col-auto d-flex align-items-center">imprimé le xx/xx/xxxx</div>
+          </div>
+        </div>
+      </section>
+      <section class="s-header-authenticated">
+        <div class="s-header-authenticated__container container">
+          <div class="s-header-authenticated__row row">
+            <div class="s-header-authenticated__col s-header-authenticated__col--logo-service col-auto d-flex align-items-center pe-0">
+              <a href=""><img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="90"></a>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--nav col d-flex align-items-center justify-content-end pe-0">
+              <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+                <ul>
+                  <li class="dropdown">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdown" aria-expanded="false">
+                      <i class="ri-account-circle-line" aria-hidden="true"></i>
+                      <span class="d-none d-sm-inline-block ms-0 ms-sm-2">Mon espace</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end" id="dashboardUserDropdown">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item">
+                          <div class="d-flex align-items-center">
+                            <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                            <div class="flex-grow-1 ms-2 lh-sm">
+                              <span>Machin TRUC</span>
+                              <br>
+                              <span class="fs-sm lh-sm text-muted">test+etti@inclusion.beta.gouv.fr</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-divider"></div>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Tableau de bord</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="">Mes notifications</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="">Modifier mon profil</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item">
+                          <button class="text-danger">Déconnexion</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="d-none d-lg-inline-block dropdown dropdown-organization">
+                    <button type="button" class="btn btn-outline-primary btn-ico bg-white dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI - Une nouvelle chance</span>
+                    </button>
+                    <div class="dropdown-menu w-100" id="switchUserDropdown">
+                      <form action="" method="post">
+                        <ul class="list-unstyled">
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>ETTI</span>
+                              <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                              <i class="ri-community-line" aria-hidden="true"></i>
+                              <span>EITI</span>
+                              <strong>Terre &amp; mer</strong>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                      <a href="" class="dropdown-item dropdown-item__summary is-last-sticky">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                        <span>Créer ou rejoindre</span>
+                        <strong>une nouvelle structure</strong>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="s-header-authenticated__col s-header-authenticated__col--burger col-auto d-flex align-items-center ps-0">
+              <button type="button" class="btn btn-link btn-ico pe-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Ouvrir le menu de navigation principale pour mobile">
+                <i class="ri-menu-line" id="open" aria-hidden="true"></i>
+                <span>Menu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="offcanvas" id="offcanvasNav" aria-label="Navigation principale pour mobile">
+        <div class="offcanvas-header offcanvas-header--organization">
+          <div class="dropdown dropdown-organization flex-grow-1 py-4">
+            <button type="button" class="dropdown-toggle dropdown-toggle__summary" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="switchUserDropdown" aria-expanded="false">
+              <i class="ri-community-line" aria-hidden="true"></i>
+              <span>ETTI</span>
+              <strong>Une nouvelle chance</strong>
+            </button>
+            <div class="dropdown-menu" id="switchUserDropdown">
+              <form method="post">
+                <ul class="list-unstyled">
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3853">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="El Garage Martinet Nord">El Garage Martinet Nord</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3854">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Ouest">Garage Martinet Ouest</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3850">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Garage Martinet Siège">Garage Martinet Siège</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary active" name="organization_id" value="2653">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>ETTI</span>
+                      <strong data-bs-toggle="tooltip" data-bs-title="Une nouvelle chance">Une nouvelle chance</strong>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item dropdown-item__summary" name="organization_id" value="3611">
+                      <i class="ri-community-line" aria-hidden="true"></i>
+                      <span>EITI</span>
+                      <strong>Terre &amp; mer</strong>
+                    </button>
+                  </li>
+                </ul>
+              </form>
+              <a href="" class="dropdown-item dropdown-item__summary is-last-sticky">
+                <i class="ri-add-line" aria-hidden="true"></i>
+                <span>Créer ou rejoindre</span>
+                <strong>une nouvelle structure</strong>
+              </a>
+            </div>
+          </div>
+          <div class="border-start border-nuance-08 d-xl-none">
+            <button type="button" class="btn-link ps-4 pt-5 pe-2 me-n2" data-bs-dismiss="offcanvas" aria-label="Fermer">
+              <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <nav class="flex-grow-1" role="navigation" aria-label="Navigation principale pour mobile">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link active">
+                  <i class="ri-home-line fw-medium" aria-hidden="true"></i>
+                  <span>Accueil</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
+                  <span>Candidatures</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" data-bs-target="#collapseNavSalaries" type="button" aria-expanded="false" aria-controls="collapseNavSalaries">
+                  <i class="ri-team-line fw-medium" aria-hidden="true"></i>
+                  <span>Salariés</span>
+                </button>
+                <div class="collapse" id="collapseNavSalaries">
+                  <ul>
+                    <li>
+                      <a href="">Salariés et PASS IAE</a>
+                    </li>
+                    <li>
+                      <a href="" class="active">Fiches salariés ASP</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <button type="button" data-bs-target="#collapseNavStructure" class="nav-link has-collapse-caret w-100 text-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseNavStructure">
+                  <i class="ri-community-line fw-medium" aria-hidden="true"></i>
+                  <span>Structure</span>
+                </button>
+                <div class="collapse" id="collapseNavStructure">
+                  <ul>
+                    <li>
+                      <a href="">Présentation</a>
+                    </li>
+                    <li>
+                      <a href="" class="active">Métiers et recrutements</a>
+                    </li>
+                    <li>
+                      <a href="">Collaborateurs</a>
+                    </li>
+                    <li>
+                      <a href="">Annexes financières</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="dropup dropup-center dropdown-nexus">
+            <button class="btn btn-outline-primary btn-block bg-white dropdown-toggle" type="button" id="dropdownNexusMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Mon portail</span>
+            </button>
+            <div class="dropdown-menu w-100" aria-labelledby="dropdownNexusMenuButton">
+              <div class="dropdown-item dropdown-item__profil">
+                <span>
+                  <strong>Antoine P.</strong><br>
+                  <span class="fs-sm lh-sm has-ellipsis d-inline-block w-100">antoine.poindron@inclusion.gouv.fr</span>
+                </span>
+                <a href="" class="btn btn-block btn-outline-primary">Accéder à mon portail</a>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item dropdown-item__service active" href="#">
+                <img src="./images/logo-emploi-inclusion.svg" height="35" alt="Les emplois de l'inclusion">
+                <span class="badge badge-xs rounded-pill bg-info-lighter text-info">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  Activé
+                </span>
+              </a>
+              <a class="dropdown-item dropdown-item__service" href="#">
+                <img src="./images/logo-dora.svg" height="35" alt="DORA">
+                <span class="badge badge-xs rounded-pill bg-info-lighter text-info">
+                  <i class="ri-check-line" aria-hidden="true"></i>
+                  Activé
+                </span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item dropdown-item__service" href="#">
+                <img src="./images/logo-pilotage-inclusion.svg" height="35" alt="Le pilotage de l'inclusion">
+                <span class="badge badge-xs rounded-pill bg-success-lighter text-success">
+                  <i class="ri-timer-flash-line" aria-hidden="true"></i>
+                  Activable en 1 clic
+                </span>
+              </a>
+              <a class="dropdown-item dropdown-item__service" href="#">
+                <img src="./images/logo-monrecap.svg" height="35" alt="Mon récap">
+              </a>
+              <a class="dropdown-item dropdown-item__service" href="#">
+                <img src="./images/logo-marche-inclusion.svg" height="35" alt="Le marché de l'inclusion">
+              </a>
+            </div>
+          </div>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-outline-primary btn-ico btn-block bg-white dropdown-toggle my-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="dashboardUserDropdownMobile" aria-expanded="false">
+              <i class="ri-account-circle-line" aria-hidden="true"></i>
+              <span>Mon espace</span>
+            </button>
+            <div class="dropdown-menu" id="dashboardUserDropdownMobile">
+              <ul class="list-unstyled">
+                <li class="dropdown-item">
+                  <div class="d-flex align-items-center">
+                    <span class="flex-shrink-0"><i class="ri-user-line ri-2x"></i></span>
+                    <div class="flex-grow-1 ms-2 lh-sm w-75">
+                      <span>Machin TRUC</span>
+                      <br>
+                      <span class="fs-sm lh-sm text-muted has-ellipsis d-inline-block w-100">test+etti@inclusion.beta.gouv.frinclusion.beta.gouv.fr</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Tableau de bord</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Mes notifications</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="">Modifier mon profil</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item text-primary" href="">Accès aux APIs</a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <button class="text-danger">Déconnexion</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropup dropup-center">
+            <button type="button" class="btn btn-link btn-block dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdownMobile" aria-expanded="false">Besoin d'aide ?</button>
+            <div class="dropdown-menu" id="helpDropdownMobile">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_documentation">Documentation</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Qui peut bénéficier des contrats d'IAE ? (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_comprendre-liae">Qui peut bénéficier des contrats d'IAE&nbsp;?</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Prescrire un parcours IAE (guide pratique) (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_prescrire-parcours-iae-guide">Prescrire un parcours IAE (guide pratique)</a>
+                </li>
+                <li>
+                  <a href="" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Les nouveautés du site des emplois de l'inclusion (ouverture dans un nouvel onglet)" data-matomo-event="true" data-matomo-category="help" data-matomo-action="clic" data-matomo-option="header_nouveautes">Nouveautés</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-footer flex-column align-items-stretch">
+          <div class="offcanvas-footer__legal">
+            <div class="d-none d-xl-block">
+              <img src="./images/logo-emploi-inclusion.svg" alt="Les emplois de l'inclusion" height="50">
+            </div>
+            <ul>
+              <li><a href="">Accessibilité : partiellement conforme</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">CGU</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="s-main" role="main">
+
+      <section class="s-title-02">
+        <div class="s-title-02__container container">
+          <div class="s-title-02__row row">
+            <div class="s-title-02__col col-12">
+              <div class="c-title">
+                <div class="c-title__main">
+                  <h1>BENALI Karima</h1>
+                  <p>
+                    32 ans · Lyon 8e (QPV) · Identifiant France Travail 4589712B
+                    <button type="button" class="btn-link" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Copié!" data-bs-trigger="manual" data-bs-title="Copié!" data-it-clipboard-button="copy" data-it-copy-to-clipboard="4589712B">
+                      <i class="ri-file-copy-line fw-medium"></i>
+                    </button>
+                  </p>
+                </div>
+                <div class="c-title__cta">
+                  <a href="" class="btn btn-lg btn-ico btn-secondary">
+                    <i aria-hidden="true" class="ri-user-location-line ri-lg"></i>
+                    <span>Orienter vers un service</span>
+                  </a>
+                  <a href="" class="btn btn-lg btn-primary btn-ico">
+                    <i class="ri-draft-line fw-medium" aria-hidden="true"></i>
+                    <span>Postuler pour cet usager</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-tabs-synthesis-01">
+        <div class="s-tabs-synthesis-01__container container">
+          <div class="s-tabs-synthesis-01__row row">
+            <div class="s-tabs-synthesis-01__col col-12">
+              <ul class="s-tabs-synthesis-01__nav nav nav-tabs" role="tablist" data-it-sliding-tabs="true">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="emploi-tab-title" data-bs-toggle="tab" href="#emploi-tab" role="tab" aria-controls="emploi-tab" aria-selected="true">
+                    <div class="flex-grow-1">
+                      <span class="h4 mb-0">Emploi & PASS IAE</span>
+                      <hr>
+                      <strong class="mb-1">Contrat terminé</strong>
+                      <span class="text-muted fs-sm lh-sm">Envoyée le 20/02/2026 par Sophie MARTIN · a mené au contrat terminé le 31/10/2026.</span>
+                    </div>
+                    <div class="mt-3 mt-md-4 d-flex justify-content-between">
+                      <span class="badge badge-sm rounded-pill bg-warning-lighter text-warning">Action attendue</span>
+                      <i class="ri-arrow-down-line ri-xl" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="diagnostic-tab-title" data-bs-toggle="tab" href="#diagnostic-tab" role="tab" aria-controls="diagnostic-tab" aria-selected="false" tabindex="-1">
+                    <div class="flex-grow-1">
+                      <span class="h4 mb-0">Diagnostic, freins et orientation</span>
+                      <hr>
+                      <strong class="mb-1"><span class="badge badge-sm rounded-pill bg-primary text-white">2</span> freins identifiés</strong>
+                      <span class="text-muted fs-sm lh-sm">Mobilité · Logement · le 02/05/2026.</span>
+                    </div>
+                    <div class="mt-3 mt-md-4 d-flex justify-content-end">
+                      <i class="ri-arrow-down-line ri-xl" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="accompagnement-tab-title" data-bs-toggle="tab" href="#accompagnement-tab" role="tab" aria-controls="accompagnement-tab" aria-selected="false" tabindex="-1">
+                    <div class="flex-grow-1">
+                      <span class="h4 mb-0">Accompagnement</span>
+                      <hr>
+                      <strong class="mb-1"><span class="badge badge-sm rounded-pill bg-primary text-white">2</span> intervenants</strong>
+                      <span class="text-muted fs-sm lh-sm">dont Sophie MARTIN · 04 72 10 20 30.</span>
+                    </div>
+                    <div class="mt-3 mt-md-4 d-flex justify-content-end">
+                      <i class="ri-arrow-down-line ri-xl" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="informations" data-bs-toggle="tab" href="#informations-tab" role="tab" aria-controls="informations-tab" aria-selected="false" tabindex="-1">
+                    <div class="flex-grow-1">
+                      <span class="h4 mb-0">Informations personnelles</span>
+                      <hr>
+                      <strong>06 12 34 56 78</strong>
+                      <span class="text-muted fs-sm lh-sm text-break">karima.benali@exemple.fr</span>
+                    </div>
+                    <div class="mt-3 mt-md-4 d-flex justify-content-end">
+                      <i class="ri-arrow-down-line ri-xl" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="emploi-tab" role="tabpanel" aria-labelledby="emploi-tab-title">
+                  <h2 class="visually-hidden">Emploi & PASS IAE</h2>
+                  <div class="c-box mb-3 mb-md-4">
+                    <h3>
+                      Contrat et PASS IAE
+                      <i class="ri-information-line ri-xl text-info fw-medium" data-bs-toggle="tooltip" data-bs-title="Contrats : Extranet IAE 2.0 de l’ASP, données du 04/11/2026 (quelques jours de décalage possibles) · PASS IAE : les emplois de l’inclusion, à jour." aria-label="Contrats : Extranet IAE 2.0 de l’ASP, données du 04/11/2026 (quelques jours de décalage possibles) · PASS IAE : les emplois de l’inclusion, à jour." role="button" tabindex="0"></i>
+                    </h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Employeur</small>
+                        <strong>Ressourcerie du Rhône (ACI)</strong>
+                      </li>
+                      <li>
+                        <small>Poste</small>
+                        <strong>Agent·e de tri et de valorisation</strong>
+                      </li>
+                      <li>
+                        <small>
+                          Contrat
+                        </small>
+                        <div>
+                          <div class="progress mb-1" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-muted-color w-100"></div>
+                          </div>
+                          <span class="badge badge-xs rounded-pill bg-disabled-color-light text-primary">Terminé</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>
+                          PASS IAE
+                        </small>
+                        <div>
+                          <div class="progress mb-1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success w-75"></div>
+                          </div>
+                          <span class="badge badge-xs rounded-pill bg-success-lighter text-success">Valide</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="alert alert-warning mt-3" role="status">
+                      <div class="row">
+                        <div class="col-auto pe-0">
+                          <i class="ri-error-warning-line ri-xl text-warning" aria-hidden="true"></i>
+                        </div>
+                        <div class="col">
+                          <p class="mb-2"><strong>Le PASS IAE est toujours actif</strong></p>
+                          <p class="mb-0">Le contrat est terminé depuis le 31/10/2026 mais le PASS IAE reste actif : suspendez-le pour ne pas consommer ses jours.</p>
+                        </div>
+                        <div class="col-12 col-md-auto mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                          <button type="button" class="btn btn-sm btn-primary">Suspendre le PASS IAE</button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-4">
+                    <h3>Candidatures</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Dernière candidature</small>
+                        <div>
+                          <strong>Acceptée le 05/03/2026 par Ressourcerie du Rhône</strong>
+                          <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN · a mené au contrat terminé le 31/10/2026.</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>Autres candidatures en cours</small>
+                        <strong>Aucune</strong>
+                      </li>
+                      <li>
+                        <small>Autres candidatures en cours</small>
+                        <strong>Aucune</strong>
+                      </li>
+                      <li>
+                        <small>Toutes les candidatures</small>
+                        <div>
+                          <div class="collapse mb-3" id="collapse-more-candidatures">
+                            <ul class="list-group">
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 05/03/2026</span>
+                                  <strong class="d-block">Ressourcerie du Rhône (ACI) · Agent·e de tri et de valorisation</strong>
+                                  <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN (Mission locale de Lyon)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-success text-white">Candidature acceptée</span>
+                              </li>
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 05/03/2026</span>
+                                  <strong class="d-block">Le Relais Rhône (EI) · Agent·e de collecte</strong>
+                                  <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN (Mission locale de Lyon)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-danger text-white">Candidature déclinée</span>
+                              </li>
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 05/03/2026</span>
+                                  <strong class="d-block">Envie Rhône (EI) · Opérateur·rice de démantèlement</strong>
+                                  <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN (Mission locale de Lyon)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-primary text-white">Embauché ailleurs</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-candidatures" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
+                            toutes les candidatures
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                    <hr class="my-4">
+                    <h3>Contrats IAE</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Sur les 2 dernières années</small>
+                        <strong>1 contrat (terminé le 31/10/2026)</strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="diagnostic-tab" role="tabpanel" aria-labelledby="diagnostic-tab-title">
+                  <h2 class="visually-hidden">Diagnostic, freins et orientation</h2>
+                  <div class="c-box mb-3 mb-md-4">
+                    <h3>Bilan d’accompagnement</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Rempli par</small>
+                        <div>
+                          <strong>Victor LACOSTE (Ressourcerie du Rhône)</strong>
+                          <span class="d-block text-muted fs-sm">Le 10/03/2026 · contrat terminé le 28/02/2026</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>Freins périphériques</small>
+                        <strong>Situation financière · Situation administrative ou juridique</strong>
+                      </li>
+                      <li>
+                        <small>Autres freins identifiés</small>
+                        <strong>Hébergement chez un tiers</strong>
+                      </li>
+                      <li>
+                        <small>Autonomie dans la recherche d’emploi</small>
+                        <div>
+                          <strong>3 sur 5</strong>
+                          <span class="d-block text-muted fs-sm">Il mène la plupart des démarches seul, mais sollicite un accompagnement ponctuel.</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>Orientation la plus adaptée</small>
+                        <strong>Socio-professionnelle</strong>
+                      </li>
+                    </ul>
+                    <hr class="my-4">
+                    <div class="row mb-3">
+                      <div class="col-12 col-sm">
+                        <h3 class="mb-0">Diagnostic d’éligibilité</h3>
+                      </div>
+                      <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
+                        <a href="" class="btn btn-ico btn-outline-primary" aria-label="Mettre à jour l’éligibilité de DALLEAU Demba">
+                          <i class="ri-pencil-line fw-medium" aria-hidden="true"></i>
+                          <span>Mettre à jour l’éligibilité</span>
+                        </a>
+                      </div>
+                    </div>
+                    <ul class="list-data">
+                      <li>
+                        <small>Confirmé par</small>
+                        <div>
+                          <strong>Sophie MARTIN (Mission locale de Lyon)</strong>
+                          <span class="d-block text-muted fs-sm">Le 18/09/2026</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>
+                          Validité
+                          <i class="ri-information-line text-info" data-bs-toggle="tooltip" data-bs-title="Ces critères reflètent la situation du candidat lors de l’établissement du diagnostic ayant permis la délivrance d’un PASS IAE, elle a peut-être changé depuis cette date." aria-label="Ces critères reflètent la situation du candidat lors de l’établissement du diagnostic, elle a peut-être changé depuis cette date." role="button" tabindex="0"></i>
+                        </small>
+                        <strong>Du 18/09/2026 au 18/03/2027</strong>
+                      </li>
+                    </ul>
+                    <hr class="my-4">
+                    <div class="row mb-3">
+                      <div class="col-12 col-sm">
+                        <h3 class="mb-0">Freins</h3>
+                      </div>
+                      <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
+                        <a href="" class="btn btn-ico btn-outline-primary" aria-label="Ajouter un frein pour DALLEAU Demba">
+                          <i aria-hidden="true" class="ri-add-line ri-lg"></i>
+                          <span>Ajouter un frein</span>
+                        </a>
+                      </div>
+                    </div>
+                    <ul class="list-data">
+                      <li>
+                        <small>Critères administratifs</small>
+                        <strong>Bénéficiaire du RSA · Résident QPV · DELD (12 à 24 mois)</strong>
+                      </li>
+                      <li>
+                        <small>Freins</small>
+                        <ul>
+                          <li>
+                            <div class="tag-group align-items-baseline">
+                              <strong>Mobilité</strong>
+                              <span class="tag bg-info-lighter text-info">Actif</span>
+                            </div>
+                            <span class="d-block text-muted fs-sm fw-normal">Mis en avant le 02/05/2026</span>
+                          </li>
+                          <li>
+                            <div class="tag-group align-items-baseline">
+                              <strong>Logement</strong>
+                              <span class="tag bg-info-lighter text-info">Actif</span>
+                            </div>
+                            <span class="d-block text-muted fs-sm fw-normal">Mise en avant le 02/05/2026</span>
+                          </li>
+                          <li>
+                            <div class="tag-group align-items-baseline">
+                              <strong>Garde d’enfant</strong>
+                              <span class="tag bg-success-lighter text-success">Levé</span>
+                            </div>
+                            <span class="d-block text-muted fs-sm fw-normal">Levé le 15/06/2026 grâce à une place en crèche obtenue via le CCAS de Lyon 8e</span>
+                            <a href="" class="fs-sm fw-normal">Voir l’acte associé</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <hr class="my-4">
+                    <h3>Orientation</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Parcours recommandé</small>
+                        <div>
+                          <strong>Victor LACOSTE (Ressourcerie du Rhône)</strong>
+                          <span class="d-block text-muted fs-sm">Selon le bilan du 03/11/2026</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>Orientations vers des services</small>
+                        <div>
+                          <strong>1 orientation en cours</strong>
+                          <span class="d-block text-muted fs-sm">Atelier mobilité, Wimoov Lyon · envoyée le 12/10/2026</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>Toutes les orientations</small>
+                        <div>
+                          <div class="collapse mb-3" id="collapse-more-orientations">
+                            <ul class="list-group">
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 12/10/2026 · par Sophie MARTIN</span>
+                                  <strong class="d-block">Atelier mobilité · Wimoov Lyon</strong>
+                                  <span class="d-block text-muted fs-sm">Atelier prévu le 20/11/2026</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-success text-white">Validée</span>
+                              </li>
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 10/09/2026 · par Sophie MARTIN</span>
+                                  <strong class="d-block">Accompagnement logement · Action Logement Rhône</strong>
+                                  <span class="d-block text-muted fs-sm">La structure n’a pas répondu dans le délai</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-disabled-color-light text-primary">Expirée</span>
+                              </li>
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 03/04/2025 · par Paul ROUX (France Travail)</span>
+                                  <strong class="d-block">Formation CACES · AFPA Vénissieux</strong>
+                                  <span class="d-block text-muted fs-sm">Motif : Usager non éligible (ne répond pas aux pré-requis)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-danger text-white">Déclinée</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-orientations" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
+                            toutes les orientations
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="accompagnement-tab" role="tabpanel" aria-labelledby="accompagnement-tab-title">
+                  <h2 class="visually-hidden">Accompagnement</h2>
+                  <div class="c-box mb-3 mb-md-4">
+                    <div class="row mb-3">
+                      <div class="col-12 col-sm">
+                        <h3 class="mb-0">Intervenants actuels</h3>
+                      </div>
+                      <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
+                        <a href="" class="btn btn-ico btn-outline-primary" aria-label="Ajouter votre intervention pour DALLEAU Demba">
+                          <i aria-hidden="true" class="ri-add-line ri-lg"></i>
+                          <span>Ajouter votre intervention</span>
+                        </a>
+                      </div>
+                    </div>
+                    <ul class="list-data">
+                      <li>
+                        <small>
+                          Accompagnatrice
+                          <i class="ri-information-line text-info" data-bs-toggle="tooltip" data-bs-title="Depuis le 20/02/2026" aria-label="Depuis le 20/02/2026" role="button" tabindex="0"></i>
+                        </small>
+                        <ul>
+                          <li>
+                            Sophie MARTIN · Mission locale de Lyon
+                          </li>
+                          <li>
+                            <strong>06 00 00 00 00</strong>
+                            <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_sender_phone" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0600000000" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                          <li>
+                            <strong>s.martin@exemple.fr</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="s.martin@exemple.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <small>
+                          Employeur
+                          <span class="badge badge-xs rounded-pill bg-info-light text-info">c’est vous</span>
+                          <i class="ri-information-line text-info" data-bs-toggle="tooltip" data-bs-title="Contrat depuis le 01/09/2026" aria-label="Contrat depuis le 01/09/2026" role="button" tabindex="0"></i>
+                        </small>
+                        <ul>
+                          <li>
+                            Victor LACOSTE · Ressourcerie du Rhône (ACI)
+                          </li>
+                          <li>
+                            <strong>06 00 00 00 00</strong>
+                            <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_sender_phone" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0600000000" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                          <li>
+                            <strong>s.martin@exemple.fr</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="s.martin@exemple.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <hr class="my-4">
+                    <h3>Accompagnements passés</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Sur les 2 dernières années</small>
+                        <strong>1 accompagnement terminé</strong>
+                      </li>
+                      <li>
+                        <small>Toutes les accompagnements</small>
+                        <div>
+                          <div class="collapse mb-3" id="collapse-more-accompagnements">
+                            <ul class="list-group">
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 12/10/2026 · par Sophie MARTIN</span>
+                                  <strong class="d-block">Atelier mobilité · Wimoov Lyon</strong>
+                                  <span class="d-block text-muted fs-sm">Atelier prévu le 20/11/2026</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-success text-white">Validée</span>
+                              </li>
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 10/09/2026 · par Sophie MARTIN</span>
+                                  <strong class="d-block">Accompagnement logement · Action Logement Rhône</strong>
+                                  <span class="d-block text-muted fs-sm">La structure n’a pas répondu dans le délai</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-disabled-color-light text-primary">Expirée</span>
+                              </li>
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                                <div class="mb-1 mb-lg-0">
+                                  <span class="d-block text-muted fs-sm">Le 03/04/2025 · par Paul ROUX (France Travail)</span>
+                                  <strong class="d-block">Formation CACES · AFPA Vénissieux</strong>
+                                  <span class="d-block text-muted fs-sm">Motif : Usager non éligible (ne répond pas aux pré-requis)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-danger text-white">Déclinée</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-accompagnements" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
+                            tous les accompagnements
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                    <hr class="my-4">
+                    <h3>Rendez-vous</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Les rendez-vous à venir</small>
+                        <div>
+                          <div class="collapse mb-3" id="collapse-more-a-venir">
+                            <ul class="list-group">
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-start align-items-lg-start">
+                                <div class="mb-1 mb-lg-0 w-100px">
+                                  <strong class="d-block">20/11/2026</strong>
+                                  <span class="d-block text-muted fs-sm">14h00</span>
+                                </div>
+                                <div class="mb-1 mb-lg-0 me-auto">
+                                  <strong class="d-block">Point de suivi à 2 mois</strong>
+                                  <span class="d-block text-muted fs-sm">Suivi SIAE · Ressourcerie du Rhône · Sur place · reçu par Victor LACOSTE (c’est vous)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-info-lighter text-info">RDV à venir</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-a-venir" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
+                            tous les rendez-vous à venir
+                          </button>
+                        </div>
+                      </li>
+                      <li>
+                        <small>Les rendez-vous passés</small>
+                        <div>
+                          <div class="collapse mb-3" id="collapse-more-rdv-passes">
+                            <ul class="list-group">
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-start align-items-lg-start">
+                                <div class="mb-1 mb-lg-0 w-100px">
+                                  <strong class="d-block">20/11/2026</strong>
+                                  <span class="d-block text-muted fs-sm">14h00</span>
+                                </div>
+                                <div class="mb-1 mb-lg-0 me-auto">
+                                  <strong class="d-block">Entretien d’embauche</strong>
+                                  <span class="d-block text-muted fs-sm">Entretien SIAE · Ressourcerie du Rhône · Sur place · reçu par Victor LACOSTE (c’est vous)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-success-lighter text-success">RDV honoré</span>
+                              </li>
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-start align-items-lg-start">
+                                <div class="mb-1 mb-lg-0 w-100px">
+                                  <strong class="d-block">20/11/2026</strong>
+                                  <span class="d-block text-muted fs-sm">14h00</span>
+                                </div>
+                                <div class="mb-1 mb-lg-0 me-auto">
+                                  <strong class="d-block">Réunion d’information collective</strong>
+                                  <span class="d-block text-muted fs-sm">Info coll. SIAE · Ressourcerie du Rhône · Sur place · reçu par Claire DUBOIS</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-success-lighter text-success">RDV honoré</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-rdv-passes" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
+                            tous les rendez-vous passés
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="informations-tab" role="tabpanel" aria-labelledby="informations-tab-title">
+                  <h2 class="visually-hidden">Informations personnelles</h2>
+                  <div class="c-box mb-3 mb-md-4">
+                    <h3>Coordonnées</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Prénom</small>
+                        <strong>Demba</strong>
+                      </li>
+                      <li>
+                        <small>Nom</small>
+                        <strong>DALLEAU</strong>
+                      </li>
+                      <li>
+                        <small>Téléphone</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                      <li>
+                        <small>Adresse e-mail</small>
+                        <strong>dkzjafkhzakfh@gmail.com</strong>
+                        <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_email" data-it-clipboard-button="copy" data-it-copy-to-clipboard="dkzjafkhzakfh@gmail.com" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                          <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                          <span class="visually-hidden">Copier</span>
+                        </button>
+                      </li>
+                      <li>
+                        <small>Date de naissance</small>
+                        <strong>01/01/1999</strong>
+                      </li>
+                      <li>
+                        <small>Adresse</small>
+                        <div>
+                          <address>Promenade des Anglais, 06200 Nice</address>
+                          <span class="d-block text-muted fs-sm">Quartier prioritaire de la ville (QPV)</span>
+                        </div>
+                      </li>
+                      <li>
+                        <small>Numéro de sécurité sociale</small>
+                        <strong><span>2</span><span class="ms-1">99</span><span class="ms-1">01</span><span class="ms-1">80</span><span class="ms-1">782</span><span class="ms-1">002</span><span class="ms-1">95</span></strong>
+                        <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_jobseeker_email" data-it-clipboard-button="copy" data-it-copy-to-clipboard="299018078200295" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                          <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                          <span class="visually-hidden">Copier</span>
+                        </button>
+                      </li>
+                      <li>
+                        <small>Identifiant France Travail</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                      <li>
+                        <small>Curriculum vitae</small>
+                        <i class="text-disabled">Non renseigné</i>
+                      </li>
+                    </ul>
+                    <hr class="my-4">
+                    <h3>Identité et identifiants</h3>
+                    <ul class="list-data">
+                      <li>
+                        <small>Adresse</small>
+                        <address>Promenade des Anglais - 06200 NICE</address>
+                      </li>
+                      <li>
+                        <small>Situation du salarié</small>
+                        <ul>
+                          <li>Pas de formation au-delà de la scolarité obligatoire</li>
+                          <li>Le salarié ne dispose d'aucune ressource</li>
+                          <li>
+                            Salarié sans emploi depuis moins de 6 mois
+                          </li>
+                          <li>Titulaire de la RQTH</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+
+</html>
