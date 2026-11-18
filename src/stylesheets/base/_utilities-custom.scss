@@ -130,7 +130,7 @@
 
 .has-collapse-caret[data-it-collapse-text-show] {
   &::before {
-    margin-right: map-get($spacers, 1);
+    //margin-right: map-get($spacers, 1);
     content: attr(data-it-collapse-text-show);
   }
 

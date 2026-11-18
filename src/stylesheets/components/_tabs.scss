@@ -32,7 +32,8 @@
         background-color: $nuance-09;
       }
 
-      &.active {
+      &.active,
+      &:active {
         border-color: $button;
       }
 

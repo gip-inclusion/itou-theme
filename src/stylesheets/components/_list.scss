@@ -57,7 +57,7 @@
     @extend .align-items-start;
 
     @media not print {
-      @container list-data (min-width: 560px) {
+      @container list-data (min-width: 768px) {
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -78,7 +78,7 @@
       gap: map-get($spacers, 1);
 
       @media not print {
-        @container list-data (min-width: 560px) {
+        @container list-data (min-width: 768px) {
           flex: 0 0 260px;
         }
       }
@@ -86,17 +86,34 @@
 
     > strong,
     > address,
-    > p,
-    > ul {
+    > p {
       margin-bottom: 0;
       font-weight: $font-weight-bold;
       line-height: $line-height-sm;
     }
 
-    &.has-forced-line-break {
+    > div:not(:first-child),
+    > ul {
+      flex: 1;
+      min-width: 0;
 
+      > strong,
+      > address,
+      > p,
+      > li {
+        margin-bottom: 0;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-sm;
+      }
+    }
+
+    > ul > li:not(:last-child) {
+      margin-bottom: 0.25rem;
+    }
+
+    &.has-forced-line-break {
       @media not print {
-        @container list-data (min-width: 560px) {
+        @container list-data (min-width: 768px) {
           display: inline-block !important;
           width: 100%;
         }

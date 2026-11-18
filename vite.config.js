@@ -27,6 +27,7 @@ export default {
         layout_itou_authenticated_cms: resolve(import.meta.dirname, "src/layout-itou-authenticated-cms.html"),
         layout_itou_authenticated_dashboard: resolve(import.meta.dirname, "src/layout-itou-authenticated-dashboard.html"),
         layout_itou_authenticated_detail_candidature: resolve(import.meta.dirname, "src/layout-itou-authenticated-detail-candidature.html"),
+        layout_itou_authenticated_detail_usager: resolve(import.meta.dirname, "src/layout-itou-authenticated-detail-usager.html"),
         layout_itou_authenticated_form: resolve(import.meta.dirname, "src/layout-itou-authenticated-form.html"),
         layout_itou_authenticated_mentions: resolve(import.meta.dirname, "src/layout-itou-authenticated-mentions.html"),
         layout_itou_authenticated_search_result: resolve(import.meta.dirname, "src/layout-itou-authenticated-search-result.html"),
