@@ -60,11 +60,74 @@ import{n as e}from"./rolldown-runtime-DkW27tQK.js";function t(){let e=document.q
       </div>
     </li>
     <li>
+      <small>Toutes les candidatures</small>
+        <div class="mt-1 mt-lg-0">
+          <div class="collapse mb-3" id="collapse-more-candidatures">
+            <ul class="list-group">
+              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                <div class="mb-1 mb-lg-0">
+                  <span class="d-block text-muted fs-sm">Le 05/03/2026</span>
+                  <strong class="d-block">Ressourcerie du Rhône (ACI) · Agent·e de tri et de valorisation</strong>
+                  <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN (Mission locale de Lyon)</span>
+                </div>
+                <span class="badge badge-sm rounded-pill bg-success text-white">Candidature acceptée</span>
+              </li>
+              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                <div class="mb-1 mb-lg-0">
+                  <span class="d-block text-muted fs-sm">Le 05/03/2026</span>
+                  <strong class="d-block">Le Relais Rhône (EI) · Agent·e de collecte</strong>
+                  <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN (Mission locale de Lyon)</span>
+                </div>
+                <span class="badge badge-sm rounded-pill bg-danger text-white">Candidature déclinée</span>
+              </li>
+              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
+                <div class="mb-1 mb-lg-0">
+                  <span class="d-block text-muted fs-sm">Le 05/03/2026</span>
+                  <strong class="d-block">Envie Rhône (EI) · Opérateur·rice de démantèlement</strong>
+                  <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN (Mission locale de Lyon)</span>
+                </div>
+                <span class="badge badge-sm rounded-pill bg-primary text-white">Embauché ailleurs</span>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-candidatures" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
+            toutes les candidatures
+          </button>
+        </div>
+      </li>
+    <li>
       <small>Public concerné</small>
       <div>
         <strong>Tous publics</strong>
         <span class="d-block text-muted fs-sm">L’âge minimum est de 15 ans. L’âge maximum est de 30 ans.</span>
       </div>
+    </li>
+    <li>
+      <small>Freins</small>
+      <ul>
+        <li>
+          <div class="tag-group align-items-center">
+            <strong>Mobilité</strong>
+            <span class="badge badge-xs rounded-pill bg-info-lighter text-info">Actif</span>
+          </div>
+          <span class="d-block text-muted fs-sm fw-normal">Mis en avant le 02/05/2026</span>
+        </li>
+        <li>
+          <div class="tag-group align-items-center">
+            <strong>Logement</strong>
+            <span class="badge badge-xs rounded-pill bg-info-lighter text-info">Actif</span>
+          </div>
+          <span class="d-block text-muted fs-sm fw-normal">Mise en avant le 02/05/2026</span>
+        </li>
+        <li>
+          <div class="tag-group align-items-center">
+            <strong>Garde d’enfant</strong>
+            <span class="badge badge-xs rounded-pill bg-success-lighter text-success">Levé</span>
+          </div>
+          <span class="d-block text-muted fs-sm fw-normal">Levé le 15/06/2026 grâce à une place en crèche obtenue via le CCAS de Lyon 8e</span>
+          <a href="" class="fs-sm fw-normal">Voir l’acte associé</a>
+        </li>
+      </ul>
     </li>
     <li id="collapseMail01Show" class="collapse has-no-transition show collapseMail01">
       <small>Adresse e-mail</small>
