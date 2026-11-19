@@ -116,6 +116,20 @@ input.form-control {
   }
 }
 
+.input-group-auth {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: map-get($spacers, 2);
+
+  > .form-control {
+    position: relative;
+    flex: 0 0 44px;
+    min-width: 0;
+  }
+}
+
 select.form-select {
   min-height: $input-height;
 
