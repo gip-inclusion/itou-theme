@@ -433,25 +433,19 @@
                   </button>
                 </div>
               </div>
-              <div class="tns-outer" id="tns1-ow">
-                <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0" style="display: none;"><button type="button" data-controls="prev" tabindex="-1" aria-controls="tns1">prev</button><button type="button" data-controls="next" tabindex="-1" aria-controls="tns1">next</button></div>
-                <div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">1 to 2</span> of 2</div>
-                <div id="tns1-mw" class="tns-ovh">
-                  <div class="tns-inner" id="tns1-iw">
-                    <ul class="s-tabs-01__nav nav nav-tabs mb-0  tns-slider tns-carousel tns-subpixel tns-calc tns-autowidth tns-horizontal" role="tablist" data-it-sliding-tabs="true" id="tns1" style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
-                      <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item0">
-                        <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="informations-generales">Informations générales</a>
-                      </li>
-                      <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
-                        <a class="nav-link" id="commentaires-tab" data-bs-toggle="tab" href="#commentaires" role="tab" aria-controls="commentaires" aria-selected="false" tabindex="-1">Commentaires</a>
-                      </li>
-                      <li class="nav-item tns-item tns-slide-active" role="presentation" id="tns1-item1">
-                        <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic-onglet" data-matomo-option="historique" tabindex="-1">Historique</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <ul class="s-tabs-01__nav nav nav-tabs mb-0" role="tablist" data-it-sliding-tabs="true">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="informations-tab" data-bs-toggle="tab" href="#informations" role="tab" aria-controls="informations" aria-selected="true">Informations générales</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="commentaires-tab" data-bs-toggle="tab" href="#commentaires" role="tab" aria-controls="commentaires" aria-selected="false">
+                    Commentaires
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="historique-tab" data-bs-toggle="tab" href="#historique" role="tab" aria-controls="historique" aria-selected="false">Historique</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -911,12 +905,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <script>
-      const commentairesBtn = document.querySelector('#commentaires-btn');
-      const commentairesTab = document.querySelector('#commentaires-tab');
+      document.addEventListener('DOMContentLoaded', () => {
+        if (typeof tns === 'undefined') {
+          console.error('tiny-slider (tns) is not loaded');
+          return;
+        }
 
-      commentairesBtn.addEventListener("click", function () {
-        bootstrap.Tab.getOrCreateInstance(commentairesTab).show();
+        const slidingTabs = document.querySelectorAll('[data-it-sliding-tabs="true"]');
+        for (let i = 0, ii = slidingTabs.length; i < ii; i += 1) {
+          const slidingTabsStartIndex = Number.parseInt(slidingTabs[i].getAttribute("data-it-sliding-tabs-startindex")) || 0;
+          tns({
+            container: slidingTabs[i],
+            slideBy: "page",
+            autoWidth: true,
+            arrowKeys: true,
+            loop: false,
+            mouseDrag: true,
+            swipeAngle: false,
+            speed: 300,
+            nav: false,
+            controls: true,
+            startIndex: slidingTabsStartIndex,
+          });
+        }
       });
     </script>
   </body>
