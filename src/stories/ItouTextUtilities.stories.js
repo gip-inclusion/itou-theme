@@ -21,6 +21,7 @@ Documentation et exemples des utilitaires de type texte, basée sur Bootstrap 5.
 | \`.text-start\`, \`.text-center\`, \`.text-end\` | Alignement du texte |
 | \`.text-lowercase\`, \`.text-uppercase\`, \`.text-capitalize\` | Transformation de casse |
 | \`.text-wrap\`, \`.text-nowrap\`, \`.text-break\` | Gestion des retours à la ligne |
+| \`.text-balance\` | Répartition équilibrée du texte sur plusieurs lignes |
 | \`.fst-italic\`, \`.fst-normal\` | Style italique/normal |
 | \`.text-decoration-underline\`, \`.text-decoration-line-through\` | Décoration du texte |
 | \`.text-decoration-dashed\` | Soulignement pointillé custom itou |
@@ -62,6 +63,15 @@ const renderTextUtilities = () => {
   <p class="mb-0 text-disabled"><code>.text-disabled</code> — utilitaire d'état désactivé</p>
   <p class="mb-0 white-space-nowrap"><code>.white-space-nowrap</code> — utilitaire custom itou (nowrap)</p>
   <p class="mb-0 white-space-normal"><code>.white-space-normal</code> — utilitaire custom itou (normal)</p>
+
+  <hr>
+
+  <div style="max-width: 24rem;">
+    <p class="mb-1">Sans <code>.text-balance</code></p>
+    <p class="fs-lg">Découvrez les services de la plateforme de l'inclusion pour vous accompagner</p>
+    <p class="mb-1">Avec <code>.text-balance</code></p>
+    <p class="fs-lg text-balance mb-0">Découvrez les services de la plateforme de l'inclusion pour vous accompagner</p>
+  </div>
 
   <hr>
 
