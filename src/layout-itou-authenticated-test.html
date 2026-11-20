@@ -73,57 +73,9 @@
                   <span>Retour</span>
                 </a>
               </div>
-              <h1>Title 011</h1>
+              <h1>Annuaire</h1>
               <h2 class="h3">Nous transférons vos fiches salarié à l'ASP afin de vous faire gagner du temps</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia, maiores atque provident soluta nam tenetur cupiditate corrupti quisquam eveniet hic iusto necessitatibus aperiam, rerum ex, quia molestias doloribus officiis.</p>
-
-              <div class="c-box c-box--action">
-                <h2 class="visually-hidden">Actions rapides</h2>
-                <div class="form-row align-items-center gx-3">
-                  <div class="form-group col-12 col-lg-auto">
-                    <form method="post" action="/apply/3e9aeefc-960b-4e93-bd23-423fb375dcf6/siae/process" class="js-prevent-multiple-submit">
-                      <input type="hidden" name="csrfmiddlewaretoken" value="TBEdMMBEz2ryS8BHpjb9oUsb8VoWE83t6FuIePwUywQ6CjUKj7YGfju0YAQGFo1M">
-                      <button class="btn btn-lg btn-white btn-block btn-ico" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="submit" data-matomo-option="processing_application">
-                        <i class="ri-file-search-line fw-medium" aria-hidden="true"></i>
-                        <span>Étudier</span>
-                      </button>
-                    </form>
-                  </div>
-                  <div class="form-group col-12 col-lg-auto">
-                    <a href="/apply/3e9aeefc-960b-4e93-bd23-423fb375dcf6/siae/refuse/reason" class="btn btn-lg btn-outline-white btn-block btn-ico" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="refuse_application">
-                      <i class="ri-close-line fw-medium" aria-hidden="true"></i>
-                      <span>Décliner</span>
-                    </a>
-                  </div>
-                  <div class="form-group col-12 col-lg d-lg-flex justify-content-lg-end">
-                    <div class="dropdown dropdown-organization">
-                      <button id="transfer_to_button" class="btn btn-lg btn-link-white btn-block w-lg-auto dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
-                        Transférer la candidature
-                      </button>
-                      <div class="dropdown-menu w-100" aria-labelledby="transfer_to_button">
-                        <a class="dropdown-item dropdown-item__summary" data-bs-toggle="modal" data-bs-target="#transfer_confirmation_modal_3853">
-                          <i class="ri-community-line"></i>
-                          <span>EI</span>
-                          <strong>El Garage Martinet Nord</strong>
-                        </a>
-                        <a class="dropdown-item dropdown-item__summary" data-bs-toggle="modal" data-bs-target="#transfer_confirmation_modal_3854">
-                          <i class="ri-community-line"></i>
-                          <span>EI</span>
-                          <strong>Garage Martinet Ouest</strong>
-                        </a>
-                        <hr class="m-0">
-                        <div data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Vous devez d’abord décliner la candidature pour pouvoir la transférer à un autre employeur">
-                          <div class="dropdown-item disabled">
-                            <i class="ri-home-smile-line"></i>
-                            <strong>Une autre structure</strong>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -133,44 +85,80 @@
         <div class="s-section__container container">
           <div class="s-section__row row">
             <div class="s-section__col col-12">
-              <div class="btn-dropdown-filter-group mb-3 mb-md-4">
-                <div class="dropdown">
-                  <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Un filtre
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Un autre filtre
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-                <button type="button" class="btn btn-ico btn-dropdown-filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters">
-                  <i class="ri-sound-module-fill fw-bold" aria-hidden="true"></i>
-                  <span>Tous les filtres</span>
-                </button>
-                <div class="ms-md-auto">
-                  <button type="button" class="btn btn-ico btn-dropdown-filter">
-                    <i class="ri-eraser-line fw-bold" aria-hidden="true"></i>
-                    <span>Effacer tout</span>
-                  </button>
+              <h2 class="mb-3 mb-md-4">Personnes</h2>
+
+              <div class="c-search mb-3 mb-md-4">
+                <div class="c-search__bar">
+                  <form>
+                    <div class="c-search__bar__grid">
+                      <div class="input-group input-group-search">
+                        <input type="text" id="search-annuaire" class="form-control" placeholder="Prénom et le nom de la personne" aria-label="Prénom et le nom de la personne">
+                      </div>
+                      <div class="input-group input-group-dropdown-filters">
+                        <div class=" dropdown">
+                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false">Types de structure</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="distance" id="id_distance_0-top" value="2" data-emplois-sync-with="id_distance_0">
+                                <label class="form-check-label" for="id_distance_0-top">2 km</label>
+                              </div>
+                            </li>
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="distance" id="id_distance_1-top" value="5" data-emplois-sync-with="id_distance_1">
+                                <label class="form-check-label" for="id_distance_1-top">5 km</label>
+                              </div>
+                            </li>
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="distance" id="id_distance_2-top" value="10" data-emplois-sync-with="id_distance_2">
+                                <label class="form-check-label" for="id_distance_2-top">10 km</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false">Moyen de contact</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="distance" id="id_distance_0-top" value="2" data-emplois-sync-with="id_distance_0">
+                                <label class="form-check-label" for="id_distance_0-top">2 km</label>
+                              </div>
+                            </li>
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="distance" id="id_distance_1-top" value="5" data-emplois-sync-with="id_distance_1">
+                                <label class="form-check-label" for="id_distance_1-top">5 km</label>
+                              </div>
+                            </li>
+                            <li class="dropdown-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="distance" id="id_distance_2-top" value="10" data-emplois-sync-with="id_distance_2">
+                                <label class="form-check-label" for="id_distance_2-top">10 km</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <button type="submit" class="btn btn-block btn-ico btn-link" aria-label="Rechercher un emploi inclusif par ville ou code postal">
+                          <i class="ri-search-line fw-bold" aria-hidden="true"></i>
+                          <span class="me-1">Rechercher</span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
+
+              <p class="mb-3 mb-md-4">XX résultats</p>
             </div>
           </div>
+
           <div class="s-section__row row">
             <div class="s-section__col col-12 col-xxl-8 col-xxxl-9 order-3 order-xxl-2">
-
-              <h3>Autre accompagnateur</h3>
               <div class="c-box c-box--results has-links-inside mb-3 mb-md-4">
                 <div class="c-box--results__header">
                   <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3">
