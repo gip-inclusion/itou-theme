@@ -454,6 +454,43 @@
                     </div>
                   </form>
                 </div>
+                <!-- <div class="c-search__list">
+                  <div class="c-search__list__title">Recherches enregistrées :</div>
+                  <div class="c-search__list__slider">
+                    <div data-it-sliding-search="true">
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Lyon 2ème arrondissement</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Bordeaux</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Grenoble</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="btn-link btn-ico">
+                          <i class="ri-star-line" aria-hidden="true"></i>
+                          <span>Loison-sous-Lens</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-search__list__settings">
+                    <button class="btn btn-link btn-sm btn-ico-only" type="button" aria-label="ici le label A11Y du bouton" data-bs-toggle="modal" data-bs-target="#savedListSettingsModal">
+                      <i class="ri-equalizer-fill fw-medium" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div> -->
+              </div>
 
               <ul id="job-search-tabs" class="s-tabs-01__nav nav nav-tabs mt-3 mt-md-4 mb-0">
                 <li class="nav-item">
@@ -549,7 +586,6 @@
                             </ul>
                           </div>
 
-
                           <div class="dropdown">
                             <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                               Types de structure
@@ -639,235 +675,225 @@
                             </ul>
                           </div>
 
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              Départements
+                            </button>
+                            <ul class="dropdown-menu">
 
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_departments_0" class="form-check-input" name="departments" type="checkbox" value="75">
+                                  <label for="id_departments_0" class="form-check-label">
+                                    75 - Paris
+                                  </label>
+                                </div>
+                              </li>
 
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_departments_1" class="form-check-input" name="departments" type="checkbox" value="92">
+                                  <label for="id_departments_1" class="form-check-label">
+                                    92 - Hauts-de-Seine
+                                  </label>
+                                </div>
+                              </li>
 
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_departments_2" class="form-check-input" name="departments" type="checkbox" value="93">
+                                  <label for="id_departments_2" class="form-check-label">
+                                    93 - Seine-Saint-Denis
+                                  </label>
+                                </div>
+                              </li>
 
-                          <div class="d-flex flex-column flex-md-row gap-1">
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_departments_3" class="form-check-input" name="departments" type="checkbox" value="94">
+                                  <label for="id_departments_3" class="form-check-label">
+                                    94 - Val-de-Marne
+                                  </label>
+                                </div>
+                              </li>
 
-
-                            <div class="dropdown">
-                              <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                Départements
-                              </button>
-                              <ul class="dropdown-menu">
-
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_departments_0" class="form-check-input" name="departments" type="checkbox" value="75">
-                                    <label for="id_departments_0" class="form-check-label">
-                                      75 - Paris
-                                    </label>
-                                  </div>
-                                </li>
-
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_departments_1" class="form-check-input" name="departments" type="checkbox" value="92">
-                                    <label for="id_departments_1" class="form-check-label">
-                                      92 - Hauts-de-Seine
-                                    </label>
-                                  </div>
-                                </li>
-
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_departments_2" class="form-check-input" name="departments" type="checkbox" value="93">
-                                    <label for="id_departments_2" class="form-check-label">
-                                      93 - Seine-Saint-Denis
-                                    </label>
-                                  </div>
-                                </li>
-
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_departments_3" class="form-check-input" name="departments" type="checkbox" value="94">
-                                    <label for="id_departments_3" class="form-check-label">
-                                      94 - Val-de-Marne
-                                    </label>
-                                  </div>
-                                </li>
-
-                              </ul>
-                            </div>
+                            </ul>
+                          </div>
 
 
 
 
 
 
-                            <div class="dropdown">
-                              <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                Arrondissements de Paris
-                              </button>
-                              <ul class="dropdown-menu">
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              Arrondissements de Paris
+                            </button>
+                            <ul class="dropdown-menu">
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_0" class="form-check-input" name="districts_75" type="checkbox" value="75001">
-                                    <label for="id_districts_75_0" class="form-check-label">
-                                      1er
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_0" class="form-check-input" name="districts_75" type="checkbox" value="75001">
+                                  <label for="id_districts_75_0" class="form-check-label">
+                                    1er
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_1" class="form-check-input" name="districts_75" type="checkbox" value="75002">
-                                    <label for="id_districts_75_1" class="form-check-label">
-                                      2e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_1" class="form-check-input" name="districts_75" type="checkbox" value="75002">
+                                  <label for="id_districts_75_1" class="form-check-label">
+                                    2e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_2" class="form-check-input" name="districts_75" type="checkbox" value="75003">
-                                    <label for="id_districts_75_2" class="form-check-label">
-                                      3e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_2" class="form-check-input" name="districts_75" type="checkbox" value="75003">
+                                  <label for="id_districts_75_2" class="form-check-label">
+                                    3e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_3" class="form-check-input" name="districts_75" type="checkbox" value="75004">
-                                    <label for="id_districts_75_3" class="form-check-label">
-                                      4e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_3" class="form-check-input" name="districts_75" type="checkbox" value="75004">
+                                  <label for="id_districts_75_3" class="form-check-label">
+                                    4e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_4" class="form-check-input" name="districts_75" type="checkbox" value="75005">
-                                    <label for="id_districts_75_4" class="form-check-label">
-                                      5e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_4" class="form-check-input" name="districts_75" type="checkbox" value="75005">
+                                  <label for="id_districts_75_4" class="form-check-label">
+                                    5e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_5" class="form-check-input" name="districts_75" type="checkbox" value="75008">
-                                    <label for="id_districts_75_5" class="form-check-label">
-                                      8e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_5" class="form-check-input" name="districts_75" type="checkbox" value="75008">
+                                  <label for="id_districts_75_5" class="form-check-label">
+                                    8e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_6" class="form-check-input" name="districts_75" type="checkbox" value="75009">
-                                    <label for="id_districts_75_6" class="form-check-label">
-                                      9e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_6" class="form-check-input" name="districts_75" type="checkbox" value="75009">
+                                  <label for="id_districts_75_6" class="form-check-label">
+                                    9e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_7" class="form-check-input" name="districts_75" type="checkbox" value="75010">
-                                    <label for="id_districts_75_7" class="form-check-label">
-                                      10e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_7" class="form-check-input" name="districts_75" type="checkbox" value="75010">
+                                  <label for="id_districts_75_7" class="form-check-label">
+                                    10e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_8" class="form-check-input" name="districts_75" type="checkbox" value="75011">
-                                    <label for="id_districts_75_8" class="form-check-label">
-                                      11e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_8" class="form-check-input" name="districts_75" type="checkbox" value="75011">
+                                  <label for="id_districts_75_8" class="form-check-label">
+                                    11e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_9" class="form-check-input" name="districts_75" type="checkbox" value="75012">
-                                    <label for="id_districts_75_9" class="form-check-label">
-                                      12e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_9" class="form-check-input" name="districts_75" type="checkbox" value="75012">
+                                  <label for="id_districts_75_9" class="form-check-label">
+                                    12e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_10" class="form-check-input" name="districts_75" type="checkbox" value="75013">
-                                    <label for="id_districts_75_10" class="form-check-label">
-                                      13e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_10" class="form-check-input" name="districts_75" type="checkbox" value="75013">
+                                  <label for="id_districts_75_10" class="form-check-label">
+                                    13e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_11" class="form-check-input" name="districts_75" type="checkbox" value="75014">
-                                    <label for="id_districts_75_11" class="form-check-label">
-                                      14e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_11" class="form-check-input" name="districts_75" type="checkbox" value="75014">
+                                  <label for="id_districts_75_11" class="form-check-label">
+                                    14e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_12" class="form-check-input" name="districts_75" type="checkbox" value="75015">
-                                    <label for="id_districts_75_12" class="form-check-label">
-                                      15e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_12" class="form-check-input" name="districts_75" type="checkbox" value="75015">
+                                  <label for="id_districts_75_12" class="form-check-label">
+                                    15e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_13" class="form-check-input" name="districts_75" type="checkbox" value="75016">
-                                    <label for="id_districts_75_13" class="form-check-label">
-                                      16e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_13" class="form-check-input" name="districts_75" type="checkbox" value="75016">
+                                  <label for="id_districts_75_13" class="form-check-label">
+                                    16e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_14" class="form-check-input" name="districts_75" type="checkbox" value="75017">
-                                    <label for="id_districts_75_14" class="form-check-label">
-                                      17e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_14" class="form-check-input" name="districts_75" type="checkbox" value="75017">
+                                  <label for="id_districts_75_14" class="form-check-label">
+                                    17e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_15" class="form-check-input" name="districts_75" type="checkbox" value="75018">
-                                    <label for="id_districts_75_15" class="form-check-label">
-                                      18e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_15" class="form-check-input" name="districts_75" type="checkbox" value="75018">
+                                  <label for="id_districts_75_15" class="form-check-label">
+                                    18e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_16" class="form-check-input" name="districts_75" type="checkbox" value="75019">
-                                    <label for="id_districts_75_16" class="form-check-label">
-                                      19e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_16" class="form-check-input" name="districts_75" type="checkbox" value="75019">
+                                  <label for="id_districts_75_16" class="form-check-label">
+                                    19e
+                                  </label>
+                                </div>
+                              </li>
 
-                                <li class="dropdown-item">
-                                  <div class="form-check">
-                                    <input id="id_districts_75_17" class="form-check-input" name="districts_75" type="checkbox" value="75020">
-                                    <label for="id_districts_75_17" class="form-check-label">
-                                      20e
-                                    </label>
-                                  </div>
-                                </li>
+                              <li class="dropdown-item">
+                                <div class="form-check">
+                                  <input id="id_districts_75_17" class="form-check-input" name="districts_75" type="checkbox" value="75020">
+                                  <label for="id_districts_75_17" class="form-check-label">
+                                    20e
+                                  </label>
+                                </div>
+                              </li>
 
-                              </ul>
-                            </div>
-
-
+                            </ul>
                           </div>
 
                           <div class="ms-lg-auto">
@@ -3420,7 +3446,7 @@
       });
     </script>
     
-    
+    <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <script>
       document.querySelectorAll("[data-it-sliding-search=true]").forEach(function (slidingSearch) {
@@ -3439,7 +3465,7 @@
           startIndex: 0,
         });
       })
-    </script>
+    </script> -->
   </body>
 
 </html>
