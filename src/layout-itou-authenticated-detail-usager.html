@@ -82,8 +82,12 @@
                       <div class="flex-grow-1">
                         <span class="h4 mb-0">Emploi & PASS IAE</span>
                         <hr>
-                        <strong class="mb-1">Contrat terminé</strong>
-                        <span class="text-muted fs-sm lh-sm">Envoyée le 20/02/2026 par Sophie MARTIN · a mené au contrat terminé le 31/10/2026.</span>
+                        <strong class="d-block text-success mb-1">Contrat en cours</strong>
+                        <span class="d-block text-muted fs-sm lh-sm">Le 31/10/2026.</span>
+                        <div class="mt-3">
+                          <strong class="d-block text-success mb-1">PASS IAE valide</strong>
+                          <span class="d-block text-muted fs-sm lh-sm">16 mois restants</span>
+                        </div>
                       </div>
                       <div class="mt-3 mt-md-4 d-flex justify-content-between">
                         <span class="badge badge-sm rounded-pill bg-warning-lighter text-warning">Action attendue</span>
@@ -97,7 +101,7 @@
                         <span class="h4 mb-0">Diagnostic, freins et orientation</span>
                         <hr>
                         <strong class="mb-1 d-flex align-items-center gap-1">Freins identifiés<span class="badge rounded-pill badge-sm bg-info-lighter text-info">3</span></strong>
-                        <span class="text-muted fs-sm lh-sm">Mobilité · Logement · le 02/05/2026.</span>
+                        <span class="d-block text-muted fs-sm lh-sm">Mobilité · Logement · le 02/05/2026.</span>
                       </div>
                       <div class="mt-3 mt-md-4 d-flex justify-content-end">
                         <i class="ri-arrow-down-line ri-xl" aria-hidden="true"></i>
@@ -110,7 +114,7 @@
                         <span class="h4 mb-0">Accompagnement</span>
                         <hr>
                         <strong class="mb-1 d-flex align-items-center gap-1">Intervenants<span class="badge rounded-pill badge-sm bg-info-lighter text-info">2</span></strong>
-                        <span class="text-muted fs-sm lh-sm">dont Sophie MARTIN · 04 72 10 20 30.</span>
+                        <span class="d-block text-muted fs-sm lh-sm">dont Sophie MARTIN · 04 72 10 20 30.</span>
                       </div>
                       <div class="mt-3 mt-md-4 d-flex justify-content-end">
                         <i class="ri-arrow-down-line ri-xl" aria-hidden="true"></i>
@@ -154,10 +158,14 @@
                           Contrat
                         </small>
                         <div>
-                          <div class="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-muted-color w-100"></div>
+                          <div class="d-flex justify-content-between">
+                            <strong>01/12/2025</strong>
+                            <strong>30/11/2026</strong>
                           </div>
-                          <span class="badge badge-xs rounded-pill bg-disabled-color-light text-primary">Terminé</span>
+                          <div class="progress my-1" role="progressbar" aria-label="progression du contrat" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success w-33"></div>
+                          </div>
+                          <span class="d-block text-muted fs-sm">9 mois et 22 jours restants</span>
                         </div>
                       </li>
                     </ul>
@@ -168,10 +176,14 @@
                           PASS IAE
                         </small>
                         <div>
-                          <div class="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="d-flex justify-content-between">
+                            <strong>01/12/2025</strong>
+                            <strong>30/11/2026</strong>
+                          </div>
+                          <div class="progress my-1" role="progressbar" aria-label="progression du pass iae" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar bg-success w-75"></div>
                           </div>
-                          <span class="badge badge-xs rounded-pill bg-success-lighter text-success">Valide</span>
+                          <span class="d-block text-muted fs-sm">13 mois restants · n° 99999 25 11870.</span>
                         </div>
                       </li>
                     </ul>
@@ -192,21 +204,6 @@
                     <hr class="my-4">
                     <h3>Candidatures</h3>
                     <ul class="list-data">
-                      <li>
-                        <small>Dernière candidature</small>
-                        <div>
-                          <strong>Acceptée le 05/03/2026 par Ressourcerie du Rhône</strong>
-                          <span class="d-block text-muted fs-sm">Envoyée le 20/02/2026 par Sophie MARTIN · a mené au contrat terminé le 31/10/2026.</span>
-                        </div>
-                      </li>
-                      <li>
-                        <small>Autres candidatures en cours</small>
-                        <strong>Aucune</strong>
-                      </li>
-                      <li>
-                        <small>Autres candidatures en cours</small>
-                        <strong>Aucune</strong>
-                      </li>
                       <li>
                         <small>Toutes les candidatures</small>
                         <div>
@@ -248,8 +245,24 @@
                     <h3>Contrats IAE</h3>
                     <ul class="list-data">
                       <li>
-                        <small>Sur les 2 dernières années</small>
-                        <strong>1 contrat (terminé le 31/10/2026)</strong>
+                        <small>Tous les contrats</small>
+                        <div>
+                          <div class="collapse mb-3" id="collapse-more-contrats">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <span class="d-block text-muted fs-sm">Du 01/09/2026 au 31/08/2027</span>
+                                <strong class="d-block">Ressourcerie du Rhône (ACI) · Agent·e de tri et de valorisation</strong>
+                              </li>
+                              <li class="list-group-item">
+                                <span class="d-block text-muted fs-sm">Du 01/09/2026 au 31/08/2027</span>
+                                <strong class="d-block">Rhône Insertion Environnement (EI)</strong>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-contrats" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
+                            tous les contrats
+                          </button>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -313,69 +326,24 @@
                         </small>
                         <strong>Du 18/09/2026 au 18/03/2027</strong>
                       </li>
+                      <li>
+                        <small>
+                          Tyoe
+                        </small>
+                        <strong>Prescripteur habilité</strong>
+                      </li>
                     </ul>
                     <hr class="my-4">
-                    <div class="row mb-3">
-                      <div class="col-12 col-sm">
-                        <h3 class="mb-0">Freins</h3>
-                      </div>
-                      <div class="col-12 col-sm-auto mt-2 mt-sm-0 d-flex align-items-center">
-                        <a href="" class="btn btn-ico btn-outline-primary" aria-label="Ajouter un frein pour DALLEAU Demba">
-                          <i aria-hidden="true" class="ri-add-line ri-lg"></i>
-                          <span>Ajouter un frein</span>
-                        </a>
-                      </div>
-                    </div>
+                    <h3>Freins</h3>
                     <ul class="list-data">
                       <li>
-                        <small>Critères administratifs</small>
-                        <strong>Bénéficiaire du RSA · Résident QPV · DELD (12 à 24 mois)</strong>
-                      </li>
-                      <li>
                         <small>Freins</small>
-                        <ul>
-                          <li>
-                            <div class="tag-group align-items-center">
-                              <strong>Mobilité</strong>
-                              <span class="badge badge-xs rounded-pill bg-info-lighter text-info">Actif</span>
-                            </div>
-                            <span class="d-block text-muted fs-sm fw-normal">Mis en avant le 02/05/2026</span>
-                          </li>
-                          <li>
-                            <div class="tag-group align-items-center">
-                              <strong>Logement</strong>
-                              <span class="badge badge-xs rounded-pill bg-info-lighter text-info">Actif</span>
-                            </div>
-                            <span class="d-block text-muted fs-sm fw-normal">Mise en avant le 02/05/2026</span>
-                          </li>
-                          <li>
-                            <div class="tag-group align-items-center">
-                              <strong>Garde d’enfant</strong>
-                              <span class="badge badge-xs rounded-pill bg-success-lighter text-success">Levé</span>
-                            </div>
-                            <span class="d-block text-muted fs-sm fw-normal">Levé le 15/06/2026 grâce à une place en crèche obtenue via le CCAS de Lyon 8e</span>
-                            <a href="" class="fs-sm fw-normal">Voir l’acte associé</a>
-                          </li>
-                        </ul>
+                        <strong>Prochainement, vous retrouverez ici tous les freins identifiés et levés pour cet usager.</strong>
                       </li>
                     </ul>
                     <hr class="my-4">
                     <h3>Orientation</h3>
                     <ul class="list-data">
-                      <li>
-                        <small>Parcours recommandé</small>
-                        <div>
-                          <strong>Victor LACOSTE (Ressourcerie du Rhône)</strong>
-                          <span class="d-block text-muted fs-sm">Selon le bilan du 03/11/2026</span>
-                        </div>
-                      </li>
-                      <li>
-                        <small>Orientations vers des services</small>
-                        <div>
-                          <strong>1 orientation en cours</strong>
-                          <span class="d-block text-muted fs-sm">Atelier mobilité, Wimoov Lyon · envoyée le 12/10/2026</span>
-                        </div>
-                      </li>
                       <li>
                         <small>Toutes les orientations</small>
                         <div>
@@ -429,131 +397,219 @@
                         </a>
                       </div>
                     </div>
-                    <ul class="list-data">
-                      <li>
-                        <small>Accompagnatrice</small>
-                        <ul>
-                          <li>
+                    <div class="c-box c-box--results has-links-inside mb-3">
+                      <div class="c-box--results__header">
+                        <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3">
+                          <div class="c-box--results__summary flex-grow-1">
+                            <i class="ri-home-smile-line" aria-hidden="true"></i>
                             <div>
-                              Sophie MARTIN · Mission locale de Lyon
-                              <span class="d-block text-muted fs-sm fw-normal">Depuis le 20/02/2026</span>
+                              <h3>Jean-Pierre de la Pateliere</h3>
+                              <div class="d-flex flex-column flex-md-row align-items-start align-items-md-end gap-1 gap-md-2">
+                                <span>Prescripteur habilité pour France Travail Lyon 8e</span>
+                                <span class="badge badge-xs rounded-pill bg-info-light text-info">c’est vous</span>
+                              </div>
                             </div>
+                          </div>
+                          <div>
+                            <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                              Depuis le 12/03/2025
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="m-0">
+                      <div class="c-box--results__body">
+                        <ul class="list-data">
+                          <li id="collapseMail01Show" class="collapse has-no-transition show collapseMail01">
+                            <small>Adresse e-mail</small>
+                            <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseMail01" aria-expanded="false" aria-controls="collapseMail01Show collapseMail01Hide">
+                              <i class="ri-mail-send-line" aria-hidden="true"></i>
+                              <span>Afficher l’adresse e-mail</span>
+                            </button>
                           </li>
-                          <li>
-                            <strong>06 00 00 00 00</strong>
-                            <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_sender_phone" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0600000000" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                          <li id="collapseMail01Hide" class="collapse has-no-transition collapseMail01">
+                            <small>Adresse e-mail</small>
+                            <strong>sophie.martin@email.fr</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="sophie.martin@email.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                          <li id="collapseTel01Show" class="collapse has-no-transition show collapseTel01">
+                            <small>Téléphone</small>
+                            <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTel01" aria-expanded="false" aria-controls="collapseTel01Show collapseTel01Hide">
+                              <i class="ri-phone-line" aria-hidden="true"></i>
+                              <span>Afficher le téléphone</span>
+                            </button>
+                          </li>
+                          <li id="collapseTel01Hide" class="collapse has-no-transition collapseTel01">
+                            <small>Téléphone</small>
+                            <strong>0320202020</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0320202020" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
                               <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
                               <span class="visually-hidden">Copier</span>
                             </button>
                           </li>
                           <li>
-                            <strong>s.martin@exemple.fr</strong>
-                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="s.martin@exemple.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
-                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
-                              <span class="visually-hidden">Copier</span>
-                            </button>
+                            <small>Dernière action</small>
+                            <strong>Orientation vers un service · 12/10/2026</strong>
+                          </li>
+                          <li class="has-forced-line-break">
+                            <small>Traitement de la demande</small>
+                            <blockquote class="blockquote mb-0">Accompagnement vers l’emploi, préparation de l’embauche en insertion.</blockquote>
                           </li>
                         </ul>
-                      </li>
-                      <li>
-                        <small>Employeur</small>
-                        <ul>
-                          <li>
+                      </div>
+                    </div>
+                    <div class="c-box c-box--results has-links-inside mb-3">
+                      <div class="c-box--results__header">
+                        <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3">
+                          <div class="c-box--results__summary flex-grow-1">
+                            <i class="ri-home-smile-line" aria-hidden="true"></i>
                             <div>
-                              Victor LACOSTE · Ressourcerie du Rhône (ACI)
-                              <span class="d-block text-muted fs-sm fw-normal">Contrat depuis le 01/09/2026</span>
+                              <h3>Vivtor Lacoste</h3>
+                              <span>Employeur pour Ressourcerie du Rhône (ACI)</span>
                             </div>
+                          </div>
+                          <div>
+                            <span class="badge badge-sm rounded-pill bg-success-lighter text-success">
+                              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                              Depuis le 12/03/2025
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="m-0">
+                      <div class="c-box--results__body">
+                        <ul class="list-data">
+                          <li id="collapseMail02Show" class="collapse has-no-transition show collapseMail02">
+                            <small>Adresse e-mail</small>
+                            <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseMail02" aria-expanded="false" aria-controls="collapseMail02Show collapseMail02Hide">
+                              <i class="ri-mail-send-line" aria-hidden="true"></i>
+                              <span>Afficher l’adresse e-mail</span>
+                            </button>
                           </li>
-                          <li>
-                            <strong>06 00 00 00 00</strong>
-                            <button class="btn-link" type="button" data-matomo-event="true" data-matomo-category="candidature" data-matomo-action="clic" data-matomo-option="copied_sender_phone" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0600000000" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copié !">
+                          <li id="collapseMail02Hide" class="collapse has-no-transition collapseMail02">
+                            <small>Adresse e-mail</small>
+                            <strong>sophie.martin@email.fr</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="sophie.martin@email.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                          <li id="collapseTel02Show" class="collapse has-no-transition show collapseTel02">
+                            <small>Téléphone</small>
+                            <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTel02" aria-expanded="false" aria-controls="collapseTel02Show collapseTel02Hide">
+                              <i class="ri-phone-line" aria-hidden="true"></i>
+                              <span>Afficher le téléphone</span>
+                            </button>
+                          </li>
+                          <li id="collapseTel02Hide" class="collapse has-no-transition collapseTel02">
+                            <small>Téléphone</small>
+                            <strong>0320202020</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0320202020" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
                               <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
                               <span class="visually-hidden">Copier</span>
                             </button>
                           </li>
                           <li>
-                            <strong>s.martin@exemple.fr</strong>
-                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="s.martin@exemple.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
-                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
-                              <span class="visually-hidden">Copier</span>
-                            </button>
+                            <small>Dernière action</small>
+                            <strong>Orientation vers un service · 12/10/2026</strong>
+                          </li>
+                          <li class="has-forced-line-break">
+                            <small>Traitement de la demande</small>
+                            <blockquote class="blockquote mb-0">Accompagnement vers l’emploi, préparation de l’embauche en insertion.</blockquote>
                           </li>
                         </ul>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                     <hr class="my-4">
                     <h3>Accompagnements passés</h3>
-                    <ul class="list-data">
-                      <li>
-                        <small>Sur les 2 dernières années</small>
-                        <strong>1 accompagnement terminé</strong>
-                      </li>
-                      <li>
-                        <small>Toutes les accompagnements</small>
-                        <div>
-                          <div class="collapse mb-3" id="collapse-more-accompagnements">
-                            <ul class="list-group">
-                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
-                                <div class="mb-1 mb-lg-0">
-                                  <span class="d-block text-muted fs-sm">Le 12/10/2026 · par Sophie MARTIN</span>
-                                  <strong class="d-block">Atelier mobilité · Wimoov Lyon</strong>
-                                  <span class="d-block text-muted fs-sm">Atelier prévu le 20/11/2026</span>
-                                </div>
-                                <span class="badge badge-sm rounded-pill bg-success text-white">Validée</span>
-                              </li>
-                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
-                                <div class="mb-1 mb-lg-0">
-                                  <span class="d-block text-muted fs-sm">Le 10/09/2026 · par Sophie MARTIN</span>
-                                  <strong class="d-block">Accompagnement logement · Action Logement Rhône</strong>
-                                  <span class="d-block text-muted fs-sm">La structure n’a pas répondu dans le délai</span>
-                                </div>
-                                <span class="badge badge-sm rounded-pill bg-disabled-color-light text-primary">Expirée</span>
-                              </li>
-                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-start">
-                                <div class="mb-1 mb-lg-0">
-                                  <span class="d-block text-muted fs-sm">Le 03/04/2025 · par Paul ROUX (France Travail)</span>
-                                  <strong class="d-block">Formation CACES · AFPA Vénissieux</strong>
-                                  <span class="d-block text-muted fs-sm">Motif : Usager non éligible (ne répond pas aux pré-requis)</span>
-                                </div>
-                                <span class="badge badge-sm rounded-pill bg-danger text-white">Déclinée</span>
-                              </li>
-                            </ul>
+                    <div class="c-box c-box--results has-links-inside mb-3">
+                      <div class="c-box--results__header">
+                        <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3">
+                          <div class="c-box--results__summary flex-grow-1">
+                            <i class="ri-home-smile-line" aria-hidden="true"></i>
+                            <div>
+                              <h3>Jean-Pierre de la Pateliere</h3>
+                              <div class="d-flex flex-column flex-md-row align-items-start align-items-md-end gap-1 gap-md-2">
+                                <span>Prescripteur habilité pour France Travail Lyon 8e</span>
+                                <span class="badge badge-xs rounded-pill bg-info-light text-info">c’est vous</span>
+                              </div>
+                            </div>
                           </div>
-                          <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-accompagnements" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
-                            tous les accompagnements
-                          </button>
+                          <div>
+                            <span class="badge badge-sm rounded-pill bg-disabled-color-light text-primary">
+                              <i class="ri-time-line" aria-hidden="true"></i>
+                              Du 04/01/2024 au 15/12/2025
+                            </span>
+                          </div>
                         </div>
-                      </li>
-                    </ul>
+                      </div>
+                      <hr class="m-0">
+                      <div class="c-box--results__body">
+                        <ul class="list-data">
+                          <li id="collapseMail03Show" class="collapse has-no-transition show collapseMail03">
+                            <small>Adresse e-mail</small>
+                            <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseMail03" aria-expanded="false" aria-controls="collapseMail03Show collapseMail03Hide">
+                              <i class="ri-mail-send-line" aria-hidden="true"></i>
+                              <span>Afficher l’adresse e-mail</span>
+                            </button>
+                          </li>
+                          <li id="collapseMail03Hide" class="collapse has-no-transition collapseMail03">
+                            <small>Adresse e-mail</small>
+                            <strong>sophie.martin@email.fr</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="sophie.martin@email.fr" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                          <li id="collapseTel03Show" class="collapse has-no-transition show collapseTel03">
+                            <small>Téléphone</small>
+                            <button class="btn-link btn-ico" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTel03" aria-expanded="false" aria-controls="collapseTel03Show collapseTel03Hide">
+                              <i class="ri-phone-line" aria-hidden="true"></i>
+                              <span>Afficher le téléphone</span>
+                            </button>
+                          </li>
+                          <li id="collapseTel03Hide" class="collapse has-no-transition collapseTel03">
+                            <small>Téléphone</small>
+                            <strong>0320202020</strong>
+                            <button class="btn-link" type="button" data-it-clipboard-button="copy" data-it-copy-to-clipboard="0320202020" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="manual" data-bs-title="Copie !">
+                              <i class="ri-file-copy-line fw-normal" aria-hidden="true"></i>
+                              <span class="visually-hidden">Copier</span>
+                            </button>
+                          </li>
+                          <li>
+                            <small>Dernière action</small>
+                            <strong>Orientation vers un service · 12/10/2026</strong>
+                          </li>
+                          <li class="has-forced-line-break">
+                            <small>Traitement de la demande</small>
+                            <blockquote class="blockquote mb-0">Accompagnement vers l’emploi, préparation de l’embauche en insertion.</blockquote>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                     <hr class="my-4">
                     <h3>Rendez-vous</h3>
                     <ul class="list-data">
                       <li>
-                        <small>Les rendez-vous à venir</small>
-                        <div>
-                          <ul class="list-group">
-                            <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-start align-items-lg-start">
-                              <div class="mb-1 mb-lg-0 w-100px">
-                                <strong class="d-block">20/11/2026</strong>
-                                <span class="d-block text-muted fs-sm">14h00</span>
-                              </div>
-                              <div class="mb-1 mb-lg-0 me-auto">
-                                <strong class="d-block">Point de suivi à 2 mois</strong>
-                                <span class="d-block text-muted fs-sm">Suivi SIAE · Ressourcerie du Rhône · Sur place · reçu par Victor LACOSTE (c’est vous)</span>
-                              </div>
-                              <span class="badge badge-sm rounded-pill bg-info-lighter text-info">RDV à venir</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                    <hr class="my-3">
-                    <ul class="list-data">
-                      <li>
-                        <small>Les rendez-vous passés</small>
+                        <small>Tous les rendez-vous</small>
                         <div>
                           <div class="collapse mb-3" id="collapse-more-rdv-passes">
                             <ul class="list-group">
+                              <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-start align-items-lg-start">
+                                <div class="mb-1 mb-lg-0 w-100px">
+                                  <strong class="d-block">20/11/2026</strong>
+                                  <span class="d-block text-muted fs-sm">14h00</span>
+                                </div>
+                                <div class="mb-1 mb-lg-0 me-auto">
+                                  <strong class="d-block">Point de suivi à 2 mois</strong>
+                                  <span class="d-block text-muted fs-sm">Suivi SIAE · Ressourcerie du Rhône · Sur place · reçu par Victor LACOSTE (c’est vous)</span>
+                                </div>
+                                <span class="badge badge-sm rounded-pill bg-info-lighter text-info">RDV à venir</span>
+                              </li>
                               <li class="list-group-item d-lg-flex flex-lg-row justify-content-lg-start align-items-lg-start">
                                 <div class="mb-1 mb-lg-0 w-100px">
                                   <strong class="d-block">20/11/2026</strong>
@@ -579,7 +635,7 @@
                             </ul>
                           </div>
                           <button class="btn-link has-collapse-caret collapsed" type="button" data-it-collapse-text-show="Voir" data-it-collapse-text-hide="Masquer" data-bs-toggle="collapse" data-bs-target="#collapse-more-rdv-passes" aria-expanded="false" aria-controls="collapse-more-memberships" aria-label="Voir ou masquer les autres structures">
-                            tous les rendez-vous passés
+                            tous les rendez-vous
                           </button>
                         </div>
                       </li>
