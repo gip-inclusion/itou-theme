@@ -209,7 +209,7 @@ $blues: (
   "blue-600": $blue-600,
   "blue-700": $blue-700,
   "blue-800": $blue-800,
-  "blue-900": $blue-900
+  "blue-900": $blue-900,
 ) !default;
 
 $indigos: (
@@ -221,7 +221,7 @@ $indigos: (
   "indigo-600": $indigo-600,
   "indigo-700": $indigo-700,
   "indigo-800": $indigo-800,
-  "indigo-900": $indigo-900
+  "indigo-900": $indigo-900,
 ) !default;
 
 $purples: (
@@ -233,7 +233,7 @@ $purples: (
   "purple-600": $purple-600,
   "purple-700": $purple-700,
   "purple-800": $purple-800,
-  "purple-900": $purple-900
+  "purple-900": $purple-900,
 ) !default;
 
 $pinks: (
@@ -245,7 +245,7 @@ $pinks: (
   "pink-600": $pink-600,
   "pink-700": $pink-700,
   "pink-800": $pink-800,
-  "pink-900": $pink-900
+  "pink-900": $pink-900,
 ) !default;
 
 $reds: (
@@ -257,7 +257,7 @@ $reds: (
   "red-600": $red-600,
   "red-700": $red-700,
   "red-800": $red-800,
-  "red-900": $red-900
+  "red-900": $red-900,
 ) !default;
 
 $oranges: (
@@ -269,7 +269,7 @@ $oranges: (
   "orange-600": $orange-600,
   "orange-700": $orange-700,
   "orange-800": $orange-800,
-  "orange-900": $orange-900
+  "orange-900": $orange-900,
 ) !default;
 
 $yellows: (
@@ -281,7 +281,7 @@ $yellows: (
   "yellow-600": $yellow-600,
   "yellow-700": $yellow-700,
   "yellow-800": $yellow-800,
-  "yellow-900": $yellow-900
+  "yellow-900": $yellow-900,
 ) !default;
 
 $greens: (
@@ -293,7 +293,7 @@ $greens: (
   "green-600": $green-600,
   "green-700": $green-700,
   "green-800": $green-800,
-  "green-900": $green-900
+  "green-900": $green-900,
 ) !default;
 
 $teals: (
@@ -305,7 +305,7 @@ $teals: (
   "teal-600": $teal-600,
   "teal-700": $teal-700,
   "teal-800": $teal-800,
-  "teal-900": $teal-900
+  "teal-900": $teal-900,
 ) !default;
 
 $cyans: (
@@ -317,7 +317,7 @@ $cyans: (
   "cyan-600": $cyan-600,
   "cyan-700": $cyan-700,
   "cyan-800": $cyan-800,
-  "cyan-900": $cyan-900
+  "cyan-900": $cyan-900,
 ) !default;
 // fusv-enable
 
@@ -371,7 +371,7 @@ $accent-02-lightest: #ebf9ff;
 $accent-03: #ffbe18;
 $accent-03-light: #ffe8ad;
 $accent-03-lighter: #fff2cf;
-$accent-03-lightest: #FFFDF9;
+$accent-03-lightest: #fffdf9;
 
 $marche: #fe5455;
 $marche-light: #ffdddd;
@@ -1375,7 +1375,7 @@ $form-feedback-valid-color: $success !default;
 $form-feedback-invalid-color: $danger !default;
 
 $form-feedback-icon-valid-color: $form-feedback-valid-color !default;
-$form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1'/></svg>") !default;
+$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1'/></svg>") !default;
 $form-feedback-icon-invalid-color: $form-feedback-invalid-color !default;
 $form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$form-feedback-icon-invalid-color}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$form-feedback-icon-invalid-color}' stroke='none'/></svg>") !default;
 // scss-docs-end form-feedback-variables
@@ -1679,7 +1679,6 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
 $accordion-button-active-icon: $accordion-button-icon;
 // scss-docs-end accordion-variables
 
-
 // Tooltips
 
 // scss-docs-start tooltip-variables
@@ -1925,7 +1924,7 @@ $carousel-control-width: 15% !default;
 $carousel-control-opacity: 0.5 !default;
 $carousel-control-hover-opacity: 0.9 !default;
 $carousel-control-transition: opacity 0.15s ease !default;
-$carousel-control-icon-filter:       null !default;
+$carousel-control-icon-filter: null !default;
 
 $carousel-indicator-width: 30px !default;
 $carousel-indicator-height: 3px !default;
@@ -1943,17 +1942,17 @@ $carousel-caption-spacer: 1.25rem !default;
 
 $carousel-control-icon-width: 2rem !default;
 
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>") !default;
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>") !default;
+$carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>") !default;
+$carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>") !default;
 
 $carousel-transition-duration: 0.6s !default;
 $carousel-transition: transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 // scss-docs-end carousel-variables
 
 // scss-docs-start carousel-dark-variables
-$carousel-dark-indicator-active-bg:  $black !default; // Deprecated in v5.3.4
-$carousel-dark-caption-color:        $black !default; // Deprecated in v5.3.4
-$carousel-dark-control-icon-filter:  invert(1) grayscale(100) !default; // Deprecated in v5.3.4
+$carousel-dark-indicator-active-bg: $black !default; // Deprecated in v5.3.4
+$carousel-dark-caption-color: $black !default; // Deprecated in v5.3.4
+$carousel-dark-control-icon-filter: invert(1) grayscale(100) !default; // Deprecated in v5.3.4
 // scss-docs-end carousel-dark-variables
 
 // Spinners
@@ -1984,8 +1983,8 @@ $btn-close-opacity: 0.75;
 $btn-close-hover-opacity: 1;
 $btn-close-focus-opacity: 1;
 $btn-close-disabled-opacity: 0.25 !default;
-$btn-close-filter:           null !default;
-$btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default; // Deprecated in v5.3.4
+$btn-close-filter: null !default;
+$btn-close-white-filter: invert(1) grayscale(100%) brightness(200%) !default; // Deprecated in v5.3.4
 // scss-docs-end close-variables
 
 // Offcanvas
