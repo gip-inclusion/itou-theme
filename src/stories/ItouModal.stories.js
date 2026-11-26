@@ -66,7 +66,7 @@ const renderDefault = () => {
                 <i class="ri-arrow-drop-left-line ri-xl fw-medium" aria-hidden="true"></i>
                 <span>Retour</span>
               </a>
-              <button type="button" class="btn btn-sm btn-outline-primary">
+              <button type="button" class="btn btn-outline-primary">
                 Action secondaire
               </button>
               <button type="button" class="btn btn-sm btn-primary">Action pricicipale</button>
@@ -117,12 +117,12 @@ const renderMarketingModal = () => {
               </li>
             </ul>
             <p class="text-center">
-              <a href="" class="btn btn-sm btn-primary">Se connecter</a>
+              <a href="" class="btn btn-primary">Se connecter</a>
             </p>
             <hr class="my-5" data-it-text="ou" />
             <div class="text-center">
               <p class="mb-0">Vous n'avez pas de compte ?</p>
-              <a href="" class="btn btn-sm btn-link">Creer un compte</a>
+              <a href="" class="btn btn-link">Creer un compte</a>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ const renderDeleteCommentModal = () => {
             </div>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal" aria-label="Annuler la suppression du commentaire" type="button">
+            <button class="btn btn-outline-primary" data-bs-dismiss="modal" aria-label="Annuler la suppression du commentaire" type="button">
               Annuler
             </button>
             <button class="btn btn-ico btn-primary btn-sm" data-bs-dismiss="modal" aria-label="Supprimer le commentaire" type="button">
