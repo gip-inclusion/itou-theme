@@ -124,33 +124,261 @@
                     </li>
                   </ul>
                 </div>
-                <div class="dropdown">
+                <div class="dropdown dropdown-wide">
                   <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                    Types de structure
+                    Type de structure
                   </button>
                   <ul class="dropdown-menu">
                     <li class="dropdown-item">
                       <div class="form-check">
-                        <input id="id_kinds_2" class="form-check-input" name="kinds" type="checkbox" value="EA">
-                        <label for="id_kinds_2" class="form-check-label">
-                          EA - Entreprise adaptée
-                        </label>
+                        <input id="id_kind_0" class="form-check-input" name="kind" type="checkbox" value="ACI">
+                        <label for="id_kind_0" class="form-check-label">Atelier chantier d'insertion</label>
                       </div>
                     </li>
                     <li class="dropdown-item">
                       <div class="form-check">
-                        <input id="id_kinds_6" class="form-check-input" name="kinds" type="checkbox" value="ETTI">
-                        <label for="id_kinds_6" class="form-check-label">
-                          ETTI - Entreprise de travail temporaire d'insertion
-                        </label>
+                        <input id="id_kind_1" class="form-check-input" name="kind" type="checkbox" value="AFPA">
+                        <label for="id_kind_1" class="form-check-label">AFPA - Agence nationale pour la formation professionnelle des adultes</label>
                       </div>
                     </li>
                     <li class="dropdown-item">
                       <div class="form-check">
-                        <input id="id_kinds_8" class="form-check-input" name="kinds" type="checkbox" value="OPCS">
-                        <label for="id_kinds_8" class="form-check-label">
-                          OPCS - Organisation porteuse de la clause sociale
-                        </label>
+                        <input id="id_kind_2" class="form-check-input" name="kind" type="checkbox" value="AI">
+                        <label for="id_kind_2" class="form-check-label">Association intermédiaire</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_3" class="form-check-input" name="kind" type="checkbox" value="ASE">
+                        <label for="id_kind_3" class="form-check-label">ASE - Aide sociale à l'enfance</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_4" class="form-check-input" name="kind" type="checkbox" value="Autre">
+                        <label for="id_kind_4" class="form-check-label">Autre</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_5" class="form-check-input" name="kind" type="checkbox" value="CAARUD">
+                        <label for="id_kind_5" class="form-check-label">CAARUD - Centre d'accueil et d'accompagnement à la réduction de risques pour usagers de drogues</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_6" class="form-check-input" name="kind" type="checkbox" value="CADA">
+                        <label for="id_kind_6" class="form-check-label">CADA - Centre d'accueil de demandeurs d'asile</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_7" class="form-check-input" name="kind" type="checkbox" value="CAF">
+                        <label for="id_kind_7" class="form-check-label">CAF - Caisse d'allocations familiales</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_8" class="form-check-input" name="kind" type="checkbox" value="CAP_EMPLOI">
+                        <label for="id_kind_8" class="form-check-label">Cap emploi</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_9" class="form-check-input" name="kind" type="checkbox" value="CAVA">
+                        <label for="id_kind_9" class="form-check-label">CAVA - Centre d'adaptation à la vie active</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_10" class="form-check-input" name="kind" type="checkbox" value="CCAS">
+                        <label for="id_kind_10" class="form-check-label">CCAS - Centre communal d'action sociale ou centre intercommunal d'action sociale</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_11" class="form-check-input" name="kind" type="checkbox" value="CHRS">
+                        <label for="id_kind_11" class="form-check-label">CHRS - Centre d'hébergement et de réinsertion sociale</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_12" class="form-check-input" name="kind" type="checkbox" value="CHU">
+                        <label for="id_kind_12" class="form-check-label">CHU - Centre d'hébergement d'urgence</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_13" class="form-check-input" name="kind" type="checkbox" value="CIDFF">
+                        <label for="id_kind_13" class="form-check-label">CIDFF - Centre d'information sur les droits des femmes et des familles</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_14" class="form-check-input" name="kind" type="checkbox" value="CPH">
+                        <label for="id_kind_14" class="form-check-label">CPH - Centre provisoire d'hébergement</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_15" class="form-check-input" name="kind" type="checkbox" value="CSAPA">
+                        <label for="id_kind_15" class="form-check-label">CSAPA - Centre de soins, d'accompagnement et de prévention en addictologie</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_16" class="form-check-input" name="kind" type="checkbox" value="DEPT">
+                        <label for="id_kind_16" class="form-check-label">Service social du conseil départemental</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_17" class="form-check-input" name="kind" type="checkbox" value="E2C">
+                        <label for="id_kind_17" class="form-check-label">E2C - École de la deuxième chance</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_18" class="form-check-input" name="kind" type="checkbox" value="EA">
+                        <label for="id_kind_18" class="form-check-label">Entreprise adaptée</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_19" class="form-check-input" name="kind" type="checkbox" value="EATT">
+                        <label for="id_kind_19" class="form-check-label">Entreprise adaptée de travail temporaire</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_20" class="form-check-input" name="kind" type="checkbox" value="EI">
+                        <label for="id_kind_20" class="form-check-label">Entreprise d'insertion</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_21" class="form-check-input" name="kind" type="checkbox" value="EITI">
+                        <label for="id_kind_21" class="form-check-label">Entreprise d'insertion par le travail indépendant</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_22" class="form-check-input" name="kind" type="checkbox" value="EPIDE">
+                        <label for="id_kind_22" class="form-check-label">EPIDE - Établissement pour l'insertion dans l'emploi</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_23" class="form-check-input" name="kind" type="checkbox" value="ETTI">
+                        <label for="id_kind_23" class="form-check-label">Entreprise de travail temporaire d'insertion</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_24" class="form-check-input" name="kind" type="checkbox" value="FT">
+                        <label for="id_kind_24" class="form-check-label">France Travail</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_25" class="form-check-input" name="kind" type="checkbox" value="GEIQ">
+                        <label for="id_kind_25" class="form-check-label">Groupement d'employeurs pour l'insertion et la qualification</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_26" class="form-check-input" name="kind" type="checkbox" value="HUDA">
+                        <label for="id_kind_26" class="form-check-label">HUDA - Hébergement d'urgence pour demandeurs d'asile</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_27" class="form-check-input" name="kind" type="checkbox" value="ML">
+                        <label for="id_kind_27" class="form-check-label">Mission locale</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_28" class="form-check-input" name="kind" type="checkbox" value="MSA">
+                        <label for="id_kind_28" class="form-check-label">MSA - Mutualité Sociale Agricole</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_29" class="form-check-input" name="kind" type="checkbox" value="OACAS">
+                        <label for="id_kind_29" class="form-check-label">OACAS - Structure porteuse d'un agrément national organisme d'accueil communautaire et d'activité solidaire</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_30" class="form-check-input" name="kind" type="checkbox" value="OCASF">
+                        <label for="id_kind_30" class="form-check-label">Organisme mentionné au 8° du I de l’article L. 312-1 du code de l’action sociale et des familles</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_31" class="form-check-input" name="kind" type="checkbox" value="ODC">
+                        <label for="id_kind_31" class="form-check-label">Organisation délégataire d'un Conseil Départemental (Orientation et suivi des BRSA)</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_32" class="form-check-input" name="kind" type="checkbox" value="OHPD">
+                        <label for="id_kind_32" class="form-check-label">Organisme habilité par le préfet de département</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_33" class="form-check-input" name="kind" type="checkbox" value="OIL">
+                        <label for="id_kind_33" class="form-check-label">Opérateur d'intermédiation locative</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_34" class="form-check-input" name="kind" type="checkbox" value="OPCS">
+                        <label for="id_kind_34" class="form-check-label">Organisation porteuse de la clause sociale</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_35" class="form-check-input" name="kind" type="checkbox" value="PENSION">
+                        <label for="id_kind_35" class="form-check-label">Pension de famille / résidence accueil</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_36" class="form-check-input" name="kind" type="checkbox" value="PIJ_BIJ">
+                        <label for="id_kind_36" class="form-check-label">PIJ-BIJ - Point/Bureau information jeunesse</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_37" class="form-check-input" name="kind" type="checkbox" value="PJJ">
+                        <label for="id_kind_37" class="form-check-label">PJJ - Protection judiciaire de la jeunesse</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_38" class="form-check-input" name="kind" type="checkbox" value="PLIE">
+                        <label for="id_kind_38" class="form-check-label">PLIE - Plan local pour l'insertion et l'emploi</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_39" class="form-check-input" name="kind" type="checkbox" value="PREVENTION">
+                        <label for="id_kind_39" class="form-check-label">Service ou club de prévention</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_40" class="form-check-input" name="kind" type="checkbox" value="RS_FJT">
+                        <label for="id_kind_40" class="form-check-label">Résidence sociale / FJT - Foyer de Jeunes Travailleurs</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="form-check">
+                        <input id="id_kind_41" class="form-check-input" name="kind" type="checkbox" value="SPIP">
+                        <label for="id_kind_41" class="form-check-label">SPIP - Service pénitentiaire d'insertion et de probation</label>
                       </div>
                     </li>
                   </ul>
@@ -162,7 +390,7 @@
                   </a>
                 </div>
               </div>
-              <p class="mb-3 mb-md-4">XX résultats</p>
+              <p class="mb-3 mb-md-4" role="status" aria-atomic="true">XX résultats</p>
             </div>
           </div>
 
