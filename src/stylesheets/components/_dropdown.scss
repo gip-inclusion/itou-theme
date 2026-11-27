@@ -307,52 +307,18 @@
     }
   }
 
-  &-nexus {
-    max-width: 340px;
+  &-wide {
+    // Bootstrap sets `white-space: nowrap` on .dropdown-item, which makes long labels
+    // overflow the viewport on small devices: allow wrapping there only.
+    min-width: 17.5rem;
 
-    .dropdown-toggle {
-      &::before {
-        content: "";
-        line-height: 1;
-        vertical-align: middle;
-        margin-right: map-get($spacers, 2);
-        width: 20px;
-        height: 20px;
-        background-image: url("/images/logo-plateforme-inclusion-mono.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-    }
-
-    .dropdown-menu {
-      min-width: 200px;
-      max-width: 320px;
-    }
-
-    .dropdown-item {
-      @extend .py-3;
-
-      &:hover,
-      &:focus {
-        color: inherit;
+    @include media-breakpoint-down(lg) {
+      .dropdown-menu {
+        max-width: calc(100vw - 2rem);
       }
 
-      &__profil {
-        > span {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          display: block;
-          line-height: $line-height-sm;
-          margin-bottom: map-get($spacers, 2);
-        }
-      }
-
-      &__service {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      .dropdown-item {
+        white-space: normal;
       }
     }
   }
