@@ -383,6 +383,35 @@
                     </li>
                   </ul>
                 </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-dropdown-filter dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false">Statut du contrat</button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item" data-matomo-event="true" data-matomo-category="salaries" data-matomo-action="clic" data-matomo-option="filtre-salaries-statut-contrat-ongoing">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contract_status" id="id_contract_status_0" value="ongoing">
+                        <label class="form-check-label" for="id_contract_status_0">Contrats en cours ou terminés il y a moins de 3 mois</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item" data-matomo-event="true" data-matomo-category="salaries" data-matomo-action="clic" data-matomo-option="filtre-salaries-statut-contrat-ended">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contract_status" id="id_contract_status_1" value="ended">
+                        <label class="form-check-label" for="id_contract_status_1">Contrats terminés il y a plus de 3 mois</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item" data-matomo-event="true" data-matomo-category="salaries" data-matomo-action="clic" data-matomo-option="filtre-salaries-statut-contrat-all">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contract_status" id="id_contract_status_2" value="" checked="">
+                        <label class="form-check-label" for="id_contract_status_2">Tous</label>
+                      </div>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a href="" class="btn btn-link has-external-link" target="_blank" rel="noopener">Comment fonctionne ce filtre ?</a>
+                    </li>
+                  </ul>
+                </div>
                 <div class="ms-md-auto">
                   <a href="" class="btn btn-ico btn-dropdown-filter" aria-label="Réinitialiser les filtres actifs">
                     <i class="ri-eraser-line fw-bold" aria-hidden="true"></i>

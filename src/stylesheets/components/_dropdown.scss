@@ -310,10 +310,9 @@
   &-wide {
     // Bootstrap sets `white-space: nowrap` on .dropdown-item, which makes long labels
     // overflow the viewport on small devices: allow wrapping there only.
-    min-width: 17.5rem;
-
     @include media-breakpoint-down(lg) {
       .dropdown-menu {
+        min-width: min(calc($dropdown-min-width * 2), calc(100vw - 2rem));
         max-width: calc(100vw - 2rem);
       }
 
